@@ -368,6 +368,24 @@ module Google
               updater_proc = credentials.updater_proc
             end
 
+            service = Class.New do
+              include GRPC::GenericService
+              self.marshal_class_method = :encode
+              self.unmarshal_class_method = :decode
+              self.service_name = "google.cloud.speech.v1.Speech"
+              rpc :Recognize, RecognizeRequest, RecognizeResponse
+              rpc(
+                :LongRunningRecognize,
+                LongRunningRecognizeRequest,
+                Google::Longrunning::Operation
+              )
+              rpc(
+                :StreamingRecognize,
+                stream(StreamingRecognizeRequest),
+                stream(StreamingRecognizeResponse)
+              )
+            end
+
             # Allow overriding the service path/port in subclasses.
             service_path = self.class::SERVICE_ADDRESS
             port = self.class::DEFAULT_SERVICE_PORT
@@ -380,7 +398,7 @@ module Google
               updater_proc: updater_proc,
               scopes: scopes,
               interceptors: interceptors,
-              rpc_stub_class.method(:new)
+              service.rpc_stub_class.method(:new)
             )
           end
 
@@ -409,31 +427,6 @@ module Google
                 metadata: headers
               )
             end
-          end
-
-          ##
-          # Returns the stub class who's instances handle the actual gRPC
-          # requests.
-          # @return [Class(GRPC::ClientStub)]
-          def rpc_stub_class
-            service = Class.New do
-              include GRPC::GenericService
-              self.marshal_class_method = :encode
-              self.unmarshal_class_method = :decode
-              self.service_name = "google.cloud.speech.v1.Speech"
-              rpc :Recognize, RecognizeRequest, RecognizeResponse
-              rpc(
-                :LongRunningRecognize,
-                LongRunningRecognizeRequest,
-                Google::Longrunning::Operation
-              )
-              rpc(
-                :StreamingRecognize,
-                stream(StreamingRecognizeRequest),
-                stream(StreamingRecognizeResponse)
-              )
-            end
-            service.rpc_stub_class
           end
         end
       end
