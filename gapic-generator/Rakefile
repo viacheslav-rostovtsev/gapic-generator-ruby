@@ -31,24 +31,19 @@ desc "Compile the necessary protobuf files."
 task :compile_protos do
   Rake::Task[:clean_protos].invoke
 
-  # TODO: Add check to ensure protoc-gen-ruby and protoc are installed.
-
-  plugin_executable = find_executable "protoc-gen-ruby"
-  plugin = "protoc-gen-ruby-protobuf=#{plugin_executable}"
+  # TODO: Add check to ensure protoc is installed.
 
   command = []
   command << "grpc_tools_ruby_protoc"
-  command << "--plugin=#{plugin}"
-  command << "--ruby-protobuf_out=lib"
+  command << "--ruby_out=lib"
   command << "-I ../shared/api-common-protos"
-  command << "-I ../shared/protobuf/src"
+  command << "-I ../shared/protos"
   command << "../shared/api-common-protos/google/api/annotations.proto"
   command << "../shared/api-common-protos/google/api/client.proto"
   command << "../shared/api-common-protos/google/api/field_behavior.proto"
   command << "../shared/api-common-protos/google/api/resource.proto"
   command << "../shared/api-common-protos/google/longrunning/operations.proto"
-  command << "../shared/protobuf/src/google/protobuf/descriptor.proto"
-  command << "../shared/protobuf/src/google/protobuf/compiler/plugin.proto"
+  command << "../shared/protos/google/protobuf/compiler/plugin.proto"
   full_command = command.join " "
 
   puts full_command
@@ -57,12 +52,12 @@ end
 
 desc "Remove the compiled protos."
 task :clean_protos do
-  FileUtils.rm Dir.glob(File.join("lib", "**", "*.pb.rb"))
+  FileUtils.rm Dir.glob(File.join("lib", "**", "*pb.rb"))
 end
 
 desc "Check that the necessary protobuf files exist."
 task :check_protos do
-  unless File.exist? "lib/google/api/annotations.pb.rb"
+  unless File.exist? "lib/google/api/annotations_pb.rb"
     Rake::Task[:compile_protos].invoke
   end
 end

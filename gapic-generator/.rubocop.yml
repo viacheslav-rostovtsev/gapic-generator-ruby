@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.5
   Exclude:
     - Rakefile
-    - lib/**/*.pb.rb
+    - lib/**/*_pb.rb
     - expected_output/**/*
     - test/google/gapic/annotations/**/*
 

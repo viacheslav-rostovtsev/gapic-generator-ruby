@@ -17,7 +17,7 @@
 
 gem "gapic-generator"
 require "google/gapic/runner"
-require "google/protobuf/compiler/plugin.pb"
+require "google/protobuf/compiler/plugin_pb"
 
 # Ensure that no encoding conversions are done on STDIN and STDOUT
 # since we are passing binary data back and forth. Otherwise these

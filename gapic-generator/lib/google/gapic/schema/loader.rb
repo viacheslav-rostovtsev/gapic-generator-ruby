@@ -14,12 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "google/api/annotations.pb"
-require "google/api/client.pb"
-require "google/api/field_behavior.pb"
-require "google/api/resource.pb"
-require "google/longrunning/operations.pb"
-require "google/protobuf/descriptor.pb"
+require "google/api/annotations_pb"
+require "google/api/client_pb"
+require "google/api/field_behavior_pb"
+require "google/api/resource_pb"
+require "google/longrunning/operations_pb"
+require "google/protobuf"
 require "google/gapic/schema/wrappers"
 
 module Google
@@ -30,7 +30,7 @@ module Google
       # Loader
       class Loader
         # Empty location for things with no comments.
-        EMPTY = Google::Protobuf::SourceCodeInfo::Location.new
+        EMPTY = nil
 
         # Initializes the loader
         def initialize

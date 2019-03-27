@@ -36,13 +36,14 @@ Gem::Specification.new do |spec|
       f.match %r{^(test|spec|features)/}
     end
   end
-  spec.files += Dir.glob "lib/**/*.pb.rb"
+  spec.files += Dir.glob "lib/**/*_pb.rb"
   spec.bindir        = "bin"
   spec.executables   = ["gapic-generator", "protoc-gen-ruby_gapic"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "actionpack", "~> 5.2"
-  spec.add_dependency "protobuf", "~> 3.8"
+  spec.add_dependency "google-protobuf", "~> 3.7"
+  spec.add_dependency "googleapis-common-protos-types", "~> 1.0"
   spec.add_dependency "rubocop", "~> 0.61"
 
   spec.add_development_dependency "bundler", "~> 1.17"

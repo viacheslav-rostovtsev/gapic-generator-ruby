@@ -16,7 +16,7 @@
 
 require "google/gapic/generator"
 require "google/gapic/schema"
-require "google/protobuf/compiler/plugin.pb"
+require "google/protobuf/compiler/plugin_pb"
 
 module Google
   module Gapic

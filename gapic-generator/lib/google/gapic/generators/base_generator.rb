@@ -15,7 +15,8 @@
 # limitations under the License.
 
 require "action_controller"
-require "google/protobuf/compiler/plugin.pb"
+require "google/protobuf/compiler/plugin_pb"
+require "google/protobuf"
 require "tempfile"
 
 module Google

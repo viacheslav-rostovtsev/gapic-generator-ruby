@@ -15,6 +15,7 @@
 # limitations under the License.
 
 require "google/gapic/schema/loader"
+require "google/protobuf"
 
 module Google
   module Gapic
@@ -43,7 +44,10 @@ module Google
         def initialize request
           @request = request
           loader = Loader.new
-          @files = request.proto_file.map do |fd|
+          file_descriptors = request.proto_file.map do |bytes|
+            Google::Protobuf::FileDescriptor.new bytes
+          end
+          @files = file_descriptors.map do |fd|
             loader.load_file fd, request.file_to_generate.include?(fd.name)
           end
           @files.each { |f| f.parent = self }
