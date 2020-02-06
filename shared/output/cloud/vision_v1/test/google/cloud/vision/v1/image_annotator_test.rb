@@ -60,7 +60,7 @@ class Google::Cloud::Vision::V1::ImageAnnotator::ClientTest < Minitest::Test
       assert_equal :batch_annotate_images, name
       assert_kind_of Google::Cloud::Vision::V1::BatchAnnotateImagesRequest, request
       assert_kind_of Google::Cloud::Vision::V1::AnnotateImageRequest, request.requests.first
-      assert_equal "hello world", request.parent
+      assert_equal parent, request.parent
       refute_nil options
     end
 
@@ -120,7 +120,7 @@ class Google::Cloud::Vision::V1::ImageAnnotator::ClientTest < Minitest::Test
       assert_equal :batch_annotate_files, name
       assert_kind_of Google::Cloud::Vision::V1::BatchAnnotateFilesRequest, request
       assert_kind_of Google::Cloud::Vision::V1::AnnotateFileRequest, request.requests.first
-      assert_equal "hello world", request.parent
+      assert_equal parent, request.parent
       refute_nil options
     end
 
@@ -181,8 +181,8 @@ class Google::Cloud::Vision::V1::ImageAnnotator::ClientTest < Minitest::Test
       assert_equal :async_batch_annotate_images, name
       assert_kind_of Google::Cloud::Vision::V1::AsyncBatchAnnotateImagesRequest, request
       assert_kind_of Google::Cloud::Vision::V1::AnnotateImageRequest, request.requests.first
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Vision::V1::OutputConfig), request.output_config
-      assert_equal "hello world", request.parent
+      assert_equal Gapic::Protobuf.coerce(output_config, to: Google::Cloud::Vision::V1::OutputConfig), request.output_config
+      assert_equal parent, request.parent
       refute_nil options
     end
 
@@ -247,7 +247,7 @@ class Google::Cloud::Vision::V1::ImageAnnotator::ClientTest < Minitest::Test
       assert_equal :async_batch_annotate_files, name
       assert_kind_of Google::Cloud::Vision::V1::AsyncBatchAnnotateFilesRequest, request
       assert_kind_of Google::Cloud::Vision::V1::AsyncAnnotateFileRequest, request.requests.first
-      assert_equal "hello world", request.parent
+      assert_equal parent, request.parent
       refute_nil options
     end
 

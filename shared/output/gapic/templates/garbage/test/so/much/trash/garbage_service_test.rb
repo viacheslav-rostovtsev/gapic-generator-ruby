@@ -66,7 +66,7 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_simple_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_simple_garbage, name
       assert_kind_of So::Much::Trash::SimpleGarbage, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 
@@ -135,18 +135,18 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_specific_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_specific_garbage, name
       assert_kind_of So::Much::Trash::SpecificGarbage, request
-      assert_equal "hello world", request.name
-      assert_equal 42, request.int32
-      assert_equal 42, request.int64
-      assert_equal 42, request.uint32
-      assert_equal 42, request.uint64
-      assert_equal true, request.bool
-      assert_equal 3.5, request.float
-      assert_equal 3.5, request.double
-      assert_equal "hello world", request.bytes
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::GarbageMap), request.msg
-      assert_equal :Default, request.enum
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::SpecificGarbage::NestedGarbage), request.nested
+      assert_equal name, request.name
+      assert_equal int32, request.int32
+      assert_equal int64, request.int64
+      assert_equal uint32, request.uint32
+      assert_equal uint64, request.uint64
+      assert_equal bool, request.bool
+      assert_equal float, request.float
+      assert_equal double, request.double
+      assert_equal bytes, request.bytes
+      assert_equal Gapic::Protobuf.coerce(msg, to: So::Much::Trash::GarbageMap), request.msg
+      assert_equal enum, request.enum
+      assert_equal Gapic::Protobuf.coerce(nested, to: So::Much::Trash::SpecificGarbage::NestedGarbage), request.nested
       refute_nil options
     end
 
@@ -214,17 +214,17 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_nested_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_nested_garbage, name
       assert_kind_of So::Much::Trash::SpecificGarbage::NestedGarbage, request
-      assert_equal "hello world", request.name
-      assert_equal 42, request.int32
-      assert_equal 42, request.int64
-      assert_equal 42, request.uint32
-      assert_equal 42, request.uint64
-      assert_equal true, request.bool
-      assert_equal 3.5, request.float
-      assert_equal 3.5, request.double
-      assert_equal "hello world", request.bytes
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::GarbageMap), request.msg
-      assert_equal :Default, request.enum
+      assert_equal name, request.name
+      assert_equal int32, request.int32
+      assert_equal int64, request.int64
+      assert_equal uint32, request.uint32
+      assert_equal uint64, request.uint64
+      assert_equal bool, request.bool
+      assert_equal float, request.float
+      assert_equal double, request.double
+      assert_equal bytes, request.bytes
+      assert_equal Gapic::Protobuf.coerce(msg, to: So::Much::Trash::GarbageMap), request.msg
+      assert_equal enum, request.enum
       refute_nil options
     end
 
@@ -292,17 +292,17 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_repeated_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_repeated_garbage, name
       assert_kind_of So::Much::Trash::RepeatedGarbage, request
-      assert_equal ["hello world"], request.repeated_name
-      assert_equal [42], request.repeated_int32
-      assert_equal [42], request.repeated_int64
-      assert_equal [42], request.repeated_uint32
-      assert_equal [42], request.repeated_uint64
-      assert_equal [true], request.repeated_bool
-      assert_equal [3.5], request.repeated_float
-      assert_equal [3.5], request.repeated_double
-      assert_equal ["hello world"], request.repeated_bytes
+      assert_equal repeated_name, request.repeated_name
+      assert_equal repeated_int32, request.repeated_int32
+      assert_equal repeated_int64, request.repeated_int64
+      assert_equal repeated_uint32, request.repeated_uint32
+      assert_equal repeated_uint64, request.repeated_uint64
+      assert_equal repeated_bool, request.repeated_bool
+      assert_equal repeated_float, request.repeated_float
+      assert_equal repeated_double, request.repeated_double
+      assert_equal repeated_bytes, request.repeated_bytes
       assert_kind_of So::Much::Trash::GarbageMap, request.repeated_msg.first
-      assert_equal [:Default], request.repeated_enum
+      assert_equal repeated_enum, request.repeated_enum
       refute_nil options
     end
 
@@ -373,20 +373,20 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_typical_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_typical_garbage, name
       assert_kind_of So::Much::Trash::TypicalGarbage, request
-      assert_equal "hello world", request.name
-      assert_equal 42, request.int32
-      assert_equal 42, request.int64
-      assert_equal 42, request.uint32
-      assert_equal 42, request.uint64
-      assert_equal true, request.bool
-      assert_equal 3.5, request.float
-      assert_equal 3.5, request.double
-      assert_equal "hello world", request.bytes
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Protobuf::Timestamp), request.timeout
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Protobuf::Duration), request.duration
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::GarbageMap), request.msg
-      assert_equal :Default, request.enum
-      assert_equal({}, request.amap.to_h)
+      assert_equal name, request.name
+      assert_equal int32, request.int32
+      assert_equal int64, request.int64
+      assert_equal uint32, request.uint32
+      assert_equal uint64, request.uint64
+      assert_equal bool, request.bool
+      assert_equal float, request.float
+      assert_equal double, request.double
+      assert_equal bytes, request.bytes
+      assert_equal Gapic::Protobuf.coerce(timeout, to: Google::Protobuf::Timestamp), request.timeout
+      assert_equal Gapic::Protobuf.coerce(duration, to: Google::Protobuf::Duration), request.duration
+      assert_equal Gapic::Protobuf.coerce(msg, to: So::Much::Trash::GarbageMap), request.msg
+      assert_equal enum, request.enum
+      assert_equal amap, request.amap.to_h
       refute_nil options
     end
 
@@ -444,7 +444,7 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_complex_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_complex_garbage, name
       assert_kind_of So::Much::Trash::ComplexGarbage, request
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::ComplexGarbage::Layer1Garbage), request.layer1
+      assert_equal Gapic::Protobuf.coerce(layer1, to: So::Much::Trash::ComplexGarbage::Layer1Garbage), request.layer1
       refute_nil options
     end
 
@@ -503,8 +503,8 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_garbage_node_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_garbage_node, name
       assert_kind_of So::Much::Trash::GarbageNode, request
-      assert_equal "hello world", request.data
-      assert_equal Gapic::Protobuf.coerce({}, to: So::Much::Trash::GarbageNode), request.parent
+      assert_equal data, request.data
+      assert_equal Gapic::Protobuf.coerce(parent, to: So::Much::Trash::GarbageNode), request.parent
       refute_nil options
     end
 
@@ -564,9 +564,9 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     get_paged_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_paged_garbage, name
       assert_kind_of So::Much::Trash::PagedGarbageRequest, request
-      assert_equal "hello world", request.garbage
-      assert_equal 42, request.page_size
-      assert_equal "hello world", request.page_token
+      assert_equal garbage, request.garbage
+      assert_equal page_size, request.page_size
+      assert_equal page_token, request.page_token
       refute_nil options
     end
 
@@ -629,7 +629,7 @@ class So::Much::Trash::GarbageService::ClientTest < Minitest::Test
     long_running_garbage_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :long_running_garbage, name
       assert_kind_of So::Much::Trash::LongRunningGarbageRequest, request
-      assert_equal "hello world", request.garbage
+      assert_equal garbage, request.garbage
       refute_nil options
     end
 

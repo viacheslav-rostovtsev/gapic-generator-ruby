@@ -61,10 +61,10 @@ class Google::Cloud::Speech::V1::Speech::OperationsTest < Minitest::Test
     list_operations_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :list_operations, name
       assert_kind_of Google::Longrunning::ListOperationsRequest, request
-      assert_equal "hello world", request.name
-      assert_equal "hello world", request.filter
-      assert_equal 42, request.page_size
-      assert_equal "hello world", request.page_token
+      assert_equal name, request.name
+      assert_equal filter, request.filter
+      assert_equal page_size, request.page_size
+      assert_equal page_token, request.page_token
       refute_nil options
     end
 
@@ -127,7 +127,7 @@ class Google::Cloud::Speech::V1::Speech::OperationsTest < Minitest::Test
     get_operation_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_operation, name
       assert_kind_of Google::Longrunning::GetOperationRequest, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 
@@ -190,7 +190,7 @@ class Google::Cloud::Speech::V1::Speech::OperationsTest < Minitest::Test
     delete_operation_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :delete_operation, name
       assert_kind_of Google::Longrunning::DeleteOperationRequest, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 
@@ -248,7 +248,7 @@ class Google::Cloud::Speech::V1::Speech::OperationsTest < Minitest::Test
     cancel_operation_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :cancel_operation, name
       assert_kind_of Google::Longrunning::CancelOperationRequest, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 

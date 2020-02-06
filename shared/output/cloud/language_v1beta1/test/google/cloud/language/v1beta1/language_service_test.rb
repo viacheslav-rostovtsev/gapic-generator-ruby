@@ -59,8 +59,8 @@ class Google::Cloud::Language::V1beta1::LanguageService::ClientTest < Minitest::
     analyze_sentiment_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :analyze_sentiment, name
       assert_kind_of Google::Cloud::Language::V1beta1::AnalyzeSentimentRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Language::V1beta1::Document), request.document
-      assert_equal :NONE, request.encoding_type
+      assert_equal Gapic::Protobuf.coerce(document, to: Google::Cloud::Language::V1beta1::Document), request.document
+      assert_equal encoding_type, request.encoding_type
       refute_nil options
     end
 
@@ -119,8 +119,8 @@ class Google::Cloud::Language::V1beta1::LanguageService::ClientTest < Minitest::
     analyze_entities_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :analyze_entities, name
       assert_kind_of Google::Cloud::Language::V1beta1::AnalyzeEntitiesRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Language::V1beta1::Document), request.document
-      assert_equal :NONE, request.encoding_type
+      assert_equal Gapic::Protobuf.coerce(document, to: Google::Cloud::Language::V1beta1::Document), request.document
+      assert_equal encoding_type, request.encoding_type
       refute_nil options
     end
 
@@ -179,8 +179,8 @@ class Google::Cloud::Language::V1beta1::LanguageService::ClientTest < Minitest::
     analyze_syntax_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :analyze_syntax, name
       assert_kind_of Google::Cloud::Language::V1beta1::AnalyzeSyntaxRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Language::V1beta1::Document), request.document
-      assert_equal :NONE, request.encoding_type
+      assert_equal Gapic::Protobuf.coerce(document, to: Google::Cloud::Language::V1beta1::Document), request.document
+      assert_equal encoding_type, request.encoding_type
       refute_nil options
     end
 
@@ -240,9 +240,9 @@ class Google::Cloud::Language::V1beta1::LanguageService::ClientTest < Minitest::
     annotate_text_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :annotate_text, name
       assert_kind_of Google::Cloud::Language::V1beta1::AnnotateTextRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Language::V1beta1::Document), request.document
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Language::V1beta1::AnnotateTextRequest::Features), request.features
-      assert_equal :NONE, request.encoding_type
+      assert_equal Gapic::Protobuf.coerce(document, to: Google::Cloud::Language::V1beta1::Document), request.document
+      assert_equal Gapic::Protobuf.coerce(features, to: Google::Cloud::Language::V1beta1::AnnotateTextRequest::Features), request.features
+      assert_equal encoding_type, request.encoding_type
       refute_nil options
     end
 

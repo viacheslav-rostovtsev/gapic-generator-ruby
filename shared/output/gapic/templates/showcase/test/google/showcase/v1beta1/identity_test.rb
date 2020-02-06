@@ -66,7 +66,7 @@ class Google::Showcase::V1beta1::Identity::ClientTest < Minitest::Test
     create_user_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :create_user, name
       assert_kind_of Google::Showcase::V1beta1::CreateUserRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Showcase::V1beta1::User), request.user
+      assert_equal Gapic::Protobuf.coerce(user, to: Google::Showcase::V1beta1::User), request.user
       refute_nil options
     end
 
@@ -124,7 +124,7 @@ class Google::Showcase::V1beta1::Identity::ClientTest < Minitest::Test
     get_user_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :get_user, name
       assert_kind_of Google::Showcase::V1beta1::GetUserRequest, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 
@@ -183,8 +183,8 @@ class Google::Showcase::V1beta1::Identity::ClientTest < Minitest::Test
     update_user_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :update_user, name
       assert_kind_of Google::Showcase::V1beta1::UpdateUserRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Showcase::V1beta1::User), request.user
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Protobuf::FieldMask), request.update_mask
+      assert_equal Gapic::Protobuf.coerce(user, to: Google::Showcase::V1beta1::User), request.user
+      assert_equal Gapic::Protobuf.coerce(update_mask, to: Google::Protobuf::FieldMask), request.update_mask
       refute_nil options
     end
 
@@ -242,7 +242,7 @@ class Google::Showcase::V1beta1::Identity::ClientTest < Minitest::Test
     delete_user_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :delete_user, name
       assert_kind_of Google::Showcase::V1beta1::DeleteUserRequest, request
-      assert_equal "hello world", request.name
+      assert_equal name, request.name
       refute_nil options
     end
 
@@ -301,8 +301,8 @@ class Google::Showcase::V1beta1::Identity::ClientTest < Minitest::Test
     list_users_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :list_users, name
       assert_kind_of Google::Showcase::V1beta1::ListUsersRequest, request
-      assert_equal 42, request.page_size
-      assert_equal "hello world", request.page_token
+      assert_equal page_size, request.page_size
+      assert_equal page_token, request.page_token
       refute_nil options
     end
 

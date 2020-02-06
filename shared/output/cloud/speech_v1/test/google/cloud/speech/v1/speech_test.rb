@@ -59,8 +59,8 @@ class Google::Cloud::Speech::V1::Speech::ClientTest < Minitest::Test
     recognize_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :recognize, name
       assert_kind_of Google::Cloud::Speech::V1::RecognizeRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Speech::V1::RecognitionConfig), request.config
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Speech::V1::RecognitionAudio), request.audio
+      assert_equal Gapic::Protobuf.coerce(config, to: Google::Cloud::Speech::V1::RecognitionConfig), request.config
+      assert_equal Gapic::Protobuf.coerce(audio, to: Google::Cloud::Speech::V1::RecognitionAudio), request.audio
       refute_nil options
     end
 
@@ -119,8 +119,8 @@ class Google::Cloud::Speech::V1::Speech::ClientTest < Minitest::Test
     long_running_recognize_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :long_running_recognize, name
       assert_kind_of Google::Cloud::Speech::V1::LongRunningRecognizeRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Speech::V1::RecognitionConfig), request.config
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Cloud::Speech::V1::RecognitionAudio), request.audio
+      assert_equal Gapic::Protobuf.coerce(config, to: Google::Cloud::Speech::V1::RecognitionConfig), request.config
+      assert_equal Gapic::Protobuf.coerce(audio, to: Google::Cloud::Speech::V1::RecognitionAudio), request.audio
       refute_nil options
     end
 

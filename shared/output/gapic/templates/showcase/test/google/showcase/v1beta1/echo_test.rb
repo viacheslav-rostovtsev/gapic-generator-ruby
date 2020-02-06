@@ -66,7 +66,7 @@ class Google::Showcase::V1beta1::Echo::ClientTest < Minitest::Test
     echo_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :echo, name
       assert_kind_of Google::Showcase::V1beta1::EchoRequest, request
-      assert_equal "hello world", request.content
+      assert_equal content, request.content
       refute_nil options
     end
 
@@ -365,9 +365,9 @@ class Google::Showcase::V1beta1::Echo::ClientTest < Minitest::Test
     paged_expand_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :paged_expand, name
       assert_kind_of Google::Showcase::V1beta1::PagedExpandRequest, request
-      assert_equal "hello world", request.content
-      assert_equal 42, request.page_size
-      assert_equal "hello world", request.page_token
+      assert_equal content, request.content
+      assert_equal page_size, request.page_size
+      assert_equal page_token, request.page_token
       refute_nil options
     end
 
@@ -431,8 +431,8 @@ class Google::Showcase::V1beta1::Echo::ClientTest < Minitest::Test
     wait_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :wait, name
       assert_kind_of Google::Showcase::V1beta1::WaitRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Protobuf::Timestamp), request.end_time
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Rpc::Status), request.error
+      assert_equal Gapic::Protobuf.coerce(end_time, to: Google::Protobuf::Timestamp), request.end_time
+      assert_equal Gapic::Protobuf.coerce(error, to: Google::Rpc::Status), request.error
       refute_nil options
     end
 
@@ -495,7 +495,7 @@ class Google::Showcase::V1beta1::Echo::ClientTest < Minitest::Test
     block_client_stub = ClientStub.new grpc_response, grpc_operation do |name, request, options:|
       assert_equal :block, name
       assert_kind_of Google::Showcase::V1beta1::BlockRequest, request
-      assert_equal Gapic::Protobuf.coerce({}, to: Google::Protobuf::Duration), request.response_delay
+      assert_equal Gapic::Protobuf.coerce(response_delay, to: Google::Protobuf::Duration), request.response_delay
       refute_nil options
     end
 
