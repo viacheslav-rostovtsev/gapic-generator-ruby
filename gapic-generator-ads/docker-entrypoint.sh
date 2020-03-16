@@ -24,7 +24,7 @@ while true; do
     * ) break ;;
   esac
 done
-
+                                 
 mkdir -p /workspace/out/lib
 grpc_tools_ruby_protoc \
   --proto_path=/workspace/common-protos/ --proto_path=/workspace/in/ \
@@ -33,6 +33,8 @@ grpc_tools_ruby_protoc \
   --ruby_ads_out=/workspace/out/ \
   --ruby_ads_opt="configuration=/workspace/config.yml" \
   `find /workspace/in/ -name *.proto`
+
+bash
 
 # Fix file paths
 # Ensure google_ads exists
