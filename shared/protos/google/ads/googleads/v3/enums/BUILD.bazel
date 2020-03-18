@@ -1,0 +1,1719 @@
+# This file was automatically generated.
+# This is an API workspace, having public visibility by default makes perfect sense.
+package(default_visibility = ["//visibility:public"])
+
+################################################################################
+# Common
+################################################################################
+
+proto_library(
+    name = "access_reason_proto",
+    srcs = [
+        "access_reason.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "access_role_proto",
+    srcs = [
+        "access_role.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "account_budget_proposal_status_proto",
+    srcs = [
+        "account_budget_proposal_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "account_budget_proposal_type_proto",
+    srcs = [
+        "account_budget_proposal_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "account_budget_status_proto",
+    srcs = [
+        "account_budget_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_customizer_placeholder_field_proto",
+    srcs = [
+        "ad_customizer_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_ad_rotation_mode_proto",
+    srcs = [
+        "ad_group_ad_rotation_mode.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_ad_status_proto",
+    srcs = [
+        "ad_group_ad_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_criterion_approval_status_proto",
+    srcs = [
+        "ad_group_criterion_approval_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_criterion_status_proto",
+    srcs = [
+        "ad_group_criterion_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_status_proto",
+    srcs = [
+        "ad_group_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_type_proto",
+    srcs = [
+        "ad_group_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_network_type_proto",
+    srcs = [
+        "ad_network_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_serving_optimization_status_proto",
+    srcs = [
+        "ad_serving_optimization_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_strength_proto",
+    srcs = [
+        "ad_strength.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_type_proto",
+    srcs = [
+        "ad_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "advertising_channel_sub_type_proto",
+    srcs = [
+        "advertising_channel_sub_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "advertising_channel_type_proto",
+    srcs = [
+        "advertising_channel_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "affiliate_location_feed_relationship_type_proto",
+    srcs = [
+        "affiliate_location_feed_relationship_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "affiliate_location_placeholder_field_proto",
+    srcs = [
+        "affiliate_location_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "age_range_type_proto",
+    srcs = [
+        "age_range_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_campaign_app_store_proto",
+    srcs = [
+        "app_campaign_app_store.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_campaign_bidding_strategy_goal_type_proto",
+    srcs = [
+        "app_campaign_bidding_strategy_goal_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_payment_model_type_proto",
+    srcs = [
+        "app_payment_model_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_placeholder_field_proto",
+    srcs = [
+        "app_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_store_proto",
+    srcs = [
+        "app_store.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "app_url_operating_system_type_proto",
+    srcs = [
+        "app_url_operating_system_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "asset_field_type_proto",
+    srcs = [
+        "asset_field_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "asset_performance_label_proto",
+    srcs = [
+        "asset_performance_label.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "asset_type_proto",
+    srcs = [
+        "asset_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "attribution_model_proto",
+    srcs = [
+        "attribution_model.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bid_modifier_source_proto",
+    srcs = [
+        "bid_modifier_source.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bidding_source_proto",
+    srcs = [
+        "bidding_source.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bidding_strategy_status_proto",
+    srcs = [
+        "bidding_strategy_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bidding_strategy_type_proto",
+    srcs = [
+        "bidding_strategy_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "billing_setup_status_proto",
+    srcs = [
+        "billing_setup_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "brand_safety_suitability_proto",
+    srcs = [
+        "brand_safety_suitability.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "budget_delivery_method_proto",
+    srcs = [
+        "budget_delivery_method.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "budget_period_proto",
+    srcs = [
+        "budget_period.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "budget_status_proto",
+    srcs = [
+        "budget_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "budget_type_proto",
+    srcs = [
+        "budget_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "call_conversion_reporting_state_proto",
+    srcs = [
+        "call_conversion_reporting_state.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "call_placeholder_field_proto",
+    srcs = [
+        "call_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "callout_placeholder_field_proto",
+    srcs = [
+        "callout_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_criterion_status_proto",
+    srcs = [
+        "campaign_criterion_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_draft_status_proto",
+    srcs = [
+        "campaign_draft_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_experiment_status_proto",
+    srcs = [
+        "campaign_experiment_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_experiment_traffic_split_type_proto",
+    srcs = [
+        "campaign_experiment_traffic_split_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_experiment_type_proto",
+    srcs = [
+        "campaign_experiment_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_serving_status_proto",
+    srcs = [
+        "campaign_serving_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_shared_set_status_proto",
+    srcs = [
+        "campaign_shared_set_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_status_proto",
+    srcs = [
+        "campaign_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "change_status_operation_proto",
+    srcs = [
+        "change_status_operation.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "change_status_resource_type_proto",
+    srcs = [
+        "change_status_resource_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "click_type_proto",
+    srcs = [
+        "click_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "content_label_type_proto",
+    srcs = [
+        "content_label_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_action_category_proto",
+    srcs = [
+        "conversion_action_category.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_action_counting_type_proto",
+    srcs = [
+        "conversion_action_counting_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_action_status_proto",
+    srcs = [
+        "conversion_action_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_action_type_proto",
+    srcs = [
+        "conversion_action_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_adjustment_type_proto",
+    srcs = [
+        "conversion_adjustment_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_attribution_event_type_proto",
+    srcs = [
+        "conversion_attribution_event_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_lag_bucket_proto",
+    srcs = [
+        "conversion_lag_bucket.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_or_adjustment_lag_bucket_proto",
+    srcs = [
+        "conversion_or_adjustment_lag_bucket.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "criterion_category_channel_availability_mode_proto",
+    srcs = [
+        "criterion_category_channel_availability_mode.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "criterion_category_locale_availability_mode_proto",
+    srcs = [
+        "criterion_category_locale_availability_mode.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "criterion_system_serving_status_proto",
+    srcs = [
+        "criterion_system_serving_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "criterion_type_proto",
+    srcs = [
+        "criterion_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "custom_interest_member_type_proto",
+    srcs = [
+        "custom_interest_member_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "custom_interest_status_proto",
+    srcs = [
+        "custom_interest_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "custom_interest_type_proto",
+    srcs = [
+        "custom_interest_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "custom_placeholder_field_proto",
+    srcs = [
+        "custom_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_match_upload_key_type_proto",
+    srcs = [
+        "customer_match_upload_key_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_pay_per_conversion_eligibility_failure_reason_proto",
+    srcs = [
+        "customer_pay_per_conversion_eligibility_failure_reason.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "data_driven_model_status_proto",
+    srcs = [
+        "data_driven_model_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "day_of_week_proto",
+    srcs = [
+        "day_of_week.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "device_proto",
+    srcs = [
+        "device.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "display_ad_format_setting_proto",
+    srcs = [
+        "display_ad_format_setting.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "display_upload_product_type_proto",
+    srcs = [
+        "display_upload_product_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "distance_bucket_proto",
+    srcs = [
+        "distance_bucket.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "dsa_page_feed_criterion_field_proto",
+    srcs = [
+        "dsa_page_feed_criterion_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "education_placeholder_field_proto",
+    srcs = [
+        "education_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "extension_setting_device_proto",
+    srcs = [
+        "extension_setting_device.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "extension_type_proto",
+    srcs = [
+        "extension_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "external_conversion_source_proto",
+    srcs = [
+        "external_conversion_source.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_attribute_type_proto",
+    srcs = [
+        "feed_attribute_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_quality_approval_status_proto",
+    srcs = [
+        "feed_item_quality_approval_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_quality_disapproval_reason_proto",
+    srcs = [
+        "feed_item_quality_disapproval_reason.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_status_proto",
+    srcs = [
+        "feed_item_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_target_device_proto",
+    srcs = [
+        "feed_item_target_device.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_target_status_proto",
+    srcs = [
+        "feed_item_target_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_target_type_proto",
+    srcs = [
+        "feed_item_target_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_validation_status_proto",
+    srcs = [
+        "feed_item_validation_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_link_status_proto",
+    srcs = [
+        "feed_link_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_mapping_criterion_type_proto",
+    srcs = [
+        "feed_mapping_criterion_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_mapping_status_proto",
+    srcs = [
+        "feed_mapping_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_origin_proto",
+    srcs = [
+        "feed_origin.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_status_proto",
+    srcs = [
+        "feed_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "flight_placeholder_field_proto",
+    srcs = [
+        "flight_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "frequency_cap_event_type_proto",
+    srcs = [
+        "frequency_cap_event_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "frequency_cap_level_proto",
+    srcs = [
+        "frequency_cap_level.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "frequency_cap_time_unit_proto",
+    srcs = [
+        "frequency_cap_time_unit.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "gender_type_proto",
+    srcs = [
+        "gender_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "geo_target_constant_status_proto",
+    srcs = [
+        "geo_target_constant_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "geo_targeting_restriction_proto",
+    srcs = [
+        "geo_targeting_restriction.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "geo_targeting_type_proto",
+    srcs = [
+        "geo_targeting_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "google_ads_field_category_proto",
+    srcs = [
+        "google_ads_field_category.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "google_ads_field_data_type_proto",
+    srcs = [
+        "google_ads_field_data_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "hotel_date_selection_type_proto",
+    srcs = [
+        "hotel_date_selection_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "hotel_placeholder_field_proto",
+    srcs = [
+        "hotel_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "hotel_price_bucket_proto",
+    srcs = [
+        "hotel_price_bucket.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "hotel_rate_type_proto",
+    srcs = [
+        "hotel_rate_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "income_range_type_proto",
+    srcs = [
+        "income_range_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "interaction_event_type_proto",
+    srcs = [
+        "interaction_event_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "interaction_type_proto",
+    srcs = [
+        "interaction_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "invoice_type_proto",
+    srcs = [
+        "invoice_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "job_placeholder_field_proto",
+    srcs = [
+        "job_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_match_type_proto",
+    srcs = [
+        "keyword_match_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_competition_level_proto",
+    srcs = [
+        "keyword_plan_competition_level.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_forecast_interval_proto",
+    srcs = [
+        "keyword_plan_forecast_interval.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_network_proto",
+    srcs = [
+        "keyword_plan_network.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "label_status_proto",
+    srcs = [
+        "label_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "legacy_app_install_ad_app_store_proto",
+    srcs = [
+        "legacy_app_install_ad_app_store.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "listing_group_type_proto",
+    srcs = [
+        "listing_group_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "local_placeholder_field_proto",
+    srcs = [
+        "local_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "location_extension_targeting_criterion_field_proto",
+    srcs = [
+        "location_extension_targeting_criterion_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "location_group_radius_units_proto",
+    srcs = [
+        "location_group_radius_units.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "location_placeholder_field_proto",
+    srcs = [
+        "location_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "manager_link_status_proto",
+    srcs = [
+        "manager_link_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "matching_function_context_type_proto",
+    srcs = [
+        "matching_function_context_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "matching_function_operator_proto",
+    srcs = [
+        "matching_function_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "media_type_proto",
+    srcs = [
+        "media_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "merchant_center_link_status_proto",
+    srcs = [
+        "merchant_center_link_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "message_placeholder_field_proto",
+    srcs = [
+        "message_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "mime_type_proto",
+    srcs = [
+        "mime_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "minute_of_hour_proto",
+    srcs = [
+        "minute_of_hour.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "mobile_device_type_proto",
+    srcs = [
+        "mobile_device_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "month_of_year_proto",
+    srcs = [
+        "month_of_year.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "mutate_job_status_proto",
+    srcs = [
+        "mutate_job_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "negative_geo_target_type_proto",
+    srcs = [
+        "negative_geo_target_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "operating_system_version_operator_type_proto",
+    srcs = [
+        "operating_system_version_operator_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "page_one_promoted_strategy_goal_proto",
+    srcs = [
+        "page_one_promoted_strategy_goal.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "parental_status_type_proto",
+    srcs = [
+        "parental_status_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "payment_mode_proto",
+    srcs = [
+        "payment_mode.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "placeholder_type_proto",
+    srcs = [
+        "placeholder_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "placement_type_proto",
+    srcs = [
+        "placement_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_approval_status_proto",
+    srcs = [
+        "policy_approval_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_review_status_proto",
+    srcs = [
+        "policy_review_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_topic_entry_type_proto",
+    srcs = [
+        "policy_topic_entry_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_topic_evidence_destination_mismatch_url_type_proto",
+    srcs = [
+        "policy_topic_evidence_destination_mismatch_url_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_topic_evidence_destination_not_working_device_proto",
+    srcs = [
+        "policy_topic_evidence_destination_not_working_device.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_topic_evidence_destination_not_working_dns_error_type_proto",
+    srcs = [
+        "policy_topic_evidence_destination_not_working_dns_error_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "positive_geo_target_type_proto",
+    srcs = [
+        "positive_geo_target_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "preferred_content_type_proto",
+    srcs = [
+        "preferred_content_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "price_extension_price_qualifier_proto",
+    srcs = [
+        "price_extension_price_qualifier.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "price_extension_price_unit_proto",
+    srcs = [
+        "price_extension_price_unit.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "price_extension_type_proto",
+    srcs = [
+        "price_extension_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "price_placeholder_field_proto",
+    srcs = [
+        "price_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_bidding_category_level_proto",
+    srcs = [
+        "product_bidding_category_level.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_bidding_category_status_proto",
+    srcs = [
+        "product_bidding_category_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_channel_proto",
+    srcs = [
+        "product_channel.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_channel_exclusivity_proto",
+    srcs = [
+        "product_channel_exclusivity.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_condition_proto",
+    srcs = [
+        "product_condition.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_custom_attribute_index_proto",
+    srcs = [
+        "product_custom_attribute_index.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "product_type_level_proto",
+    srcs = [
+        "product_type_level.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "promotion_extension_discount_modifier_proto",
+    srcs = [
+        "promotion_extension_discount_modifier.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "promotion_extension_occasion_proto",
+    srcs = [
+        "promotion_extension_occasion.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "promotion_placeholder_field_proto",
+    srcs = [
+        "promotion_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "proximity_radius_units_proto",
+    srcs = [
+        "proximity_radius_units.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "quality_score_bucket_proto",
+    srcs = [
+        "quality_score_bucket.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "reach_plan_ad_length_proto",
+    srcs = [
+        "reach_plan_ad_length.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "reach_plan_age_range_proto",
+    srcs = [
+        "reach_plan_age_range.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "reach_plan_network_proto",
+    srcs = [
+        "reach_plan_network.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "real_estate_placeholder_field_proto",
+    srcs = [
+        "real_estate_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "recommendation_type_proto",
+    srcs = [
+        "recommendation_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "search_engine_results_page_type_proto",
+    srcs = [
+        "search_engine_results_page_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "search_term_match_type_proto",
+    srcs = [
+        "search_term_match_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "search_term_targeting_status_proto",
+    srcs = [
+        "search_term_targeting_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "served_asset_field_type_proto",
+    srcs = [
+        "served_asset_field_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "shared_set_status_proto",
+    srcs = [
+        "shared_set_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "shared_set_type_proto",
+    srcs = [
+        "shared_set_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "simulation_modification_method_proto",
+    srcs = [
+        "simulation_modification_method.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "simulation_type_proto",
+    srcs = [
+        "simulation_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "sitelink_placeholder_field_proto",
+    srcs = [
+        "sitelink_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "slot_proto",
+    srcs = [
+        "slot.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "spending_limit_type_proto",
+    srcs = [
+        "spending_limit_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "structured_snippet_placeholder_field_proto",
+    srcs = [
+        "structured_snippet_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "summary_row_setting_proto",
+    srcs = [
+        "summary_row_setting.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "system_managed_entity_source_proto",
+    srcs = [
+        "system_managed_entity_source.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "target_cpa_opt_in_recommendation_goal_proto",
+    srcs = [
+        "target_cpa_opt_in_recommendation_goal.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "target_impression_share_location_proto",
+    srcs = [
+        "target_impression_share_location.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "targeting_dimension_proto",
+    srcs = [
+        "targeting_dimension.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "time_type_proto",
+    srcs = [
+        "time_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "tracking_code_page_format_proto",
+    srcs = [
+        "tracking_code_page_format.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "tracking_code_type_proto",
+    srcs = [
+        "tracking_code_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "travel_placeholder_field_proto",
+    srcs = [
+        "travel_placeholder_field.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_interest_taxonomy_type_proto",
+    srcs = [
+        "user_interest_taxonomy_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_access_status_proto",
+    srcs = [
+        "user_list_access_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_closing_reason_proto",
+    srcs = [
+        "user_list_closing_reason.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_combined_rule_operator_proto",
+    srcs = [
+        "user_list_combined_rule_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_crm_data_source_type_proto",
+    srcs = [
+        "user_list_crm_data_source_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_date_rule_item_operator_proto",
+    srcs = [
+        "user_list_date_rule_item_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_logical_rule_operator_proto",
+    srcs = [
+        "user_list_logical_rule_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_membership_status_proto",
+    srcs = [
+        "user_list_membership_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_number_rule_item_operator_proto",
+    srcs = [
+        "user_list_number_rule_item_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_prepopulation_status_proto",
+    srcs = [
+        "user_list_prepopulation_status.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_rule_type_proto",
+    srcs = [
+        "user_list_rule_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_size_range_proto",
+    srcs = [
+        "user_list_size_range.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_string_rule_item_operator_proto",
+    srcs = [
+        "user_list_string_rule_item_operator.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_type_proto",
+    srcs = [
+        "user_list_type.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "vanity_pharma_display_url_mode_proto",
+    srcs = [
+        "vanity_pharma_display_url_mode.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "vanity_pharma_text_proto",
+    srcs = [
+        "vanity_pharma_text.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "webpage_condition_operand_proto",
+    srcs = [
+        "webpage_condition_operand.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "webpage_condition_operator_proto",
+    srcs = [
+        "webpage_condition_operator.proto",
+    ],
+    deps = [],
+)

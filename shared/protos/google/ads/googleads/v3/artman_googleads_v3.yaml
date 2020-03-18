@@ -1,0 +1,42 @@
+# FIXME: This file is auto-generated based on service config and could be
+# incorrect. The API producer can manually edit it. Remove all the FIXMEs
+# before sending this file out for review.
+common:
+  api_name: googleads
+  api_version: v3
+  # FIXME: Optional: change the value to match your PA if your API is not a cloud API.
+  organization_name: google-cloud
+  proto_deps:
+  - name: google-common-protos
+  src_proto_paths:
+  - common
+  - enums
+  - errors
+  - resources
+  - services
+  service_yaml: googleads_v3.yaml
+  gapic_yaml: common/googleads_gapic.yaml
+artifacts:
+- name: gapic_config
+  type: GAPIC_CONFIG
+- name: java_gapic
+  type: GAPIC
+  language: JAVA
+- name: python_gapic
+  type: GAPIC
+  language: PYTHON
+- name: nodejs_gapic
+  type: GAPIC
+  language: NODEJS
+- name: php_gapic
+  type: GAPIC
+  language: PHP
+- name: go_gapic
+  type: GAPIC
+  language: GO
+- name: ruby_gapic
+  type: GAPIC
+  language: RUBY
+- name: csharp_gapic
+  type: GAPIC
+  language: CSHARP

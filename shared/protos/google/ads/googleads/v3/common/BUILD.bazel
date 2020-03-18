@@ -1,0 +1,458 @@
+# This file was automatically generated.
+# This is an API workspace, having public visibility by default makes perfect sense.
+package(default_visibility = ["//visibility:public"])
+
+################################################################################
+# Common
+################################################################################
+
+_PROTO_SUBPACKAGE_DEPS = [
+    "//google/ads/googleads/v3/enums:ad_network_type_proto",
+    "//google/ads/googleads/v3/enums:advertising_channel_sub_type_proto",
+    "//google/ads/googleads/v3/enums:advertising_channel_type_proto",
+    "//google/ads/googleads/v3/enums:age_range_type_proto",
+    "//google/ads/googleads/v3/enums:app_payment_model_type_proto",
+    "//google/ads/googleads/v3/enums:app_store_proto",
+    "//google/ads/googleads/v3/enums:app_url_operating_system_type_proto",
+    "//google/ads/googleads/v3/enums:call_conversion_reporting_state_proto",
+    "//google/ads/googleads/v3/enums:call_conversion_reporting_state_proto",
+    "//google/ads/googleads/v3/enums:click_type_proto",
+    "//google/ads/googleads/v3/enums:content_label_type_proto",
+    "//google/ads/googleads/v3/enums:conversion_action_category_proto",
+    "//google/ads/googleads/v3/enums:conversion_attribution_event_type_proto",
+    "//google/ads/googleads/v3/enums:conversion_lag_bucket_proto",
+    "//google/ads/googleads/v3/enums:conversion_or_adjustment_lag_bucket_proto",
+    "//google/ads/googleads/v3/enums:criterion_category_channel_availability_mode_proto",
+    "//google/ads/googleads/v3/enums:criterion_category_locale_availability_mode_proto",
+    "//google/ads/googleads/v3/enums:customer_match_upload_key_type_proto",
+    "//google/ads/googleads/v3/enums:day_of_week_proto",
+    "//google/ads/googleads/v3/enums:day_of_week_proto",
+    "//google/ads/googleads/v3/enums:device_proto",
+    "//google/ads/googleads/v3/enums:device_proto",
+    "//google/ads/googleads/v3/enums:display_ad_format_setting_proto",
+    "//google/ads/googleads/v3/enums:display_upload_product_type_proto",
+    "//google/ads/googleads/v3/enums:external_conversion_source_proto",
+    "//google/ads/googleads/v3/enums:frequency_cap_event_type_proto",
+    "//google/ads/googleads/v3/enums:frequency_cap_level_proto",
+    "//google/ads/googleads/v3/enums:frequency_cap_time_unit_proto",
+    "//google/ads/googleads/v3/enums:gender_type_proto",
+    "//google/ads/googleads/v3/enums:hotel_date_selection_type_proto",
+    "//google/ads/googleads/v3/enums:hotel_date_selection_type_proto",
+    "//google/ads/googleads/v3/enums:hotel_price_bucket_proto",
+    "//google/ads/googleads/v3/enums:hotel_rate_type_proto",
+    "//google/ads/googleads/v3/enums:income_range_type_proto",
+    "//google/ads/googleads/v3/enums:interaction_event_type_proto",
+    "//google/ads/googleads/v3/enums:interaction_type_proto",
+    "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+    "//google/ads/googleads/v3/enums:keyword_plan_competition_level_proto",
+    "//google/ads/googleads/v3/enums:legacy_app_install_ad_app_store_proto",
+    "//google/ads/googleads/v3/enums:listing_group_type_proto",
+    "//google/ads/googleads/v3/enums:location_group_radius_units_proto",
+    "//google/ads/googleads/v3/enums:matching_function_context_type_proto",
+    "//google/ads/googleads/v3/enums:matching_function_operator_proto",
+    "//google/ads/googleads/v3/enums:mime_type_proto",
+    "//google/ads/googleads/v3/enums:mime_type_proto",
+    "//google/ads/googleads/v3/enums:minute_of_hour_proto",
+    "//google/ads/googleads/v3/enums:month_of_year_proto",
+    "//google/ads/googleads/v3/enums:parental_status_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:policy_topic_entry_type_proto",
+    "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_mismatch_url_type_proto",
+    "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_not_working_device_proto",
+    "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_not_working_dns_error_type_proto",
+    "//google/ads/googleads/v3/enums:preferred_content_type_proto",
+    "//google/ads/googleads/v3/enums:price_extension_price_qualifier_proto",
+    "//google/ads/googleads/v3/enums:price_extension_price_unit_proto",
+    "//google/ads/googleads/v3/enums:price_extension_type_proto",
+    "//google/ads/googleads/v3/enums:product_bidding_category_level_proto",
+    "//google/ads/googleads/v3/enums:product_channel_proto",
+    "//google/ads/googleads/v3/enums:product_channel_proto",
+    "//google/ads/googleads/v3/enums:product_channel_exclusivity_proto",
+    "//google/ads/googleads/v3/enums:product_channel_exclusivity_proto",
+    "//google/ads/googleads/v3/enums:product_condition_proto",
+    "//google/ads/googleads/v3/enums:product_condition_proto",
+    "//google/ads/googleads/v3/enums:product_custom_attribute_index_proto",
+    "//google/ads/googleads/v3/enums:product_type_level_proto",
+    "//google/ads/googleads/v3/enums:promotion_extension_discount_modifier_proto",
+    "//google/ads/googleads/v3/enums:promotion_extension_occasion_proto",
+    "//google/ads/googleads/v3/enums:proximity_radius_units_proto",
+    "//google/ads/googleads/v3/enums:quality_score_bucket_proto",
+    "//google/ads/googleads/v3/enums:search_engine_results_page_type_proto",
+    "//google/ads/googleads/v3/enums:search_term_match_type_proto",
+    "//google/ads/googleads/v3/enums:served_asset_field_type_proto",
+    "//google/ads/googleads/v3/enums:slot_proto",
+    "//google/ads/googleads/v3/enums:target_impression_share_location_proto",
+    "//google/ads/googleads/v3/enums:targeting_dimension_proto",
+    "//google/ads/googleads/v3/enums:tracking_code_page_format_proto",
+    "//google/ads/googleads/v3/enums:tracking_code_type_proto",
+    "//google/ads/googleads/v3/enums:user_list_combined_rule_operator_proto",
+    "//google/ads/googleads/v3/enums:user_list_crm_data_source_type_proto",
+    "//google/ads/googleads/v3/enums:user_list_date_rule_item_operator_proto",
+    "//google/ads/googleads/v3/enums:user_list_logical_rule_operator_proto",
+    "//google/ads/googleads/v3/enums:user_list_number_rule_item_operator_proto",
+    "//google/ads/googleads/v3/enums:user_list_prepopulation_status_proto",
+    "//google/ads/googleads/v3/enums:user_list_rule_type_proto",
+    "//google/ads/googleads/v3/enums:user_list_string_rule_item_operator_proto",
+    "//google/ads/googleads/v3/enums:webpage_condition_operand_proto",
+    "//google/ads/googleads/v3/enums:webpage_condition_operator_proto",
+]
+
+proto_library(
+    name = "ad_asset_proto",
+    srcs = [
+        "ad_asset.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:served_asset_field_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_type_infos_proto",
+    srcs = [
+        "ad_type_infos.proto",
+    ],
+    deps = [
+        ":ad_asset_proto",
+        "//google/ads/googleads/v3/enums:call_conversion_reporting_state_proto",
+        "//google/ads/googleads/v3/enums:display_ad_format_setting_proto",
+        "//google/ads/googleads/v3/enums:display_upload_product_type_proto",
+        "//google/ads/googleads/v3/enums:legacy_app_install_ad_app_store_proto",
+        "//google/ads/googleads/v3/enums:mime_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "asset_types_proto",
+    srcs = [
+        "asset_types.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:mime_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "bidding_proto",
+    srcs = [
+        "bidding.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:target_impression_share_location_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "click_location_proto",
+    srcs = [
+        "click_location.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "criteria_proto",
+    srcs = [
+        "criteria.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:age_range_type_proto",
+        "//google/ads/googleads/v3/enums:app_payment_model_type_proto",
+        "//google/ads/googleads/v3/enums:content_label_type_proto",
+        "//google/ads/googleads/v3/enums:day_of_week_proto",
+        "//google/ads/googleads/v3/enums:device_proto",
+        "//google/ads/googleads/v3/enums:gender_type_proto",
+        "//google/ads/googleads/v3/enums:hotel_date_selection_type_proto",
+        "//google/ads/googleads/v3/enums:income_range_type_proto",
+        "//google/ads/googleads/v3/enums:interaction_type_proto",
+        "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+        "//google/ads/googleads/v3/enums:listing_group_type_proto",
+        "//google/ads/googleads/v3/enums:location_group_radius_units_proto",
+        "//google/ads/googleads/v3/enums:minute_of_hour_proto",
+        "//google/ads/googleads/v3/enums:parental_status_type_proto",
+        "//google/ads/googleads/v3/enums:preferred_content_type_proto",
+        "//google/ads/googleads/v3/enums:product_bidding_category_level_proto",
+        "//google/ads/googleads/v3/enums:product_channel_exclusivity_proto",
+        "//google/ads/googleads/v3/enums:product_channel_proto",
+        "//google/ads/googleads/v3/enums:product_condition_proto",
+        "//google/ads/googleads/v3/enums:product_custom_attribute_index_proto",
+        "//google/ads/googleads/v3/enums:product_type_level_proto",
+        "//google/ads/googleads/v3/enums:proximity_radius_units_proto",
+        "//google/ads/googleads/v3/enums:webpage_condition_operand_proto",
+        "//google/ads/googleads/v3/enums:webpage_condition_operator_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "criterion_category_availability_proto",
+    srcs = [
+        "criterion_category_availability.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:advertising_channel_sub_type_proto",
+        "//google/ads/googleads/v3/enums:advertising_channel_type_proto",
+        "//google/ads/googleads/v3/enums:criterion_category_channel_availability_mode_proto",
+        "//google/ads/googleads/v3/enums:criterion_category_locale_availability_mode_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "custom_parameter_proto",
+    srcs = [
+        "custom_parameter.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "dates_proto",
+    srcs = [
+        "dates.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "explorer_auto_optimizer_setting_proto",
+    srcs = [
+        "explorer_auto_optimizer_setting.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "extensions_proto",
+    srcs = [
+        "extensions.proto",
+    ],
+    deps = [
+        ":custom_parameter_proto",
+        ":feed_common_proto",
+        "//google/ads/googleads/v3/enums:app_store_proto",
+        "//google/ads/googleads/v3/enums:call_conversion_reporting_state_proto",
+        "//google/ads/googleads/v3/enums:price_extension_price_qualifier_proto",
+        "//google/ads/googleads/v3/enums:price_extension_price_unit_proto",
+        "//google/ads/googleads/v3/enums:price_extension_type_proto",
+        "//google/ads/googleads/v3/enums:promotion_extension_discount_modifier_proto",
+        "//google/ads/googleads/v3/enums:promotion_extension_occasion_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_common_proto",
+    srcs = [
+        "feed_common.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "final_app_url_proto",
+    srcs = [
+        "final_app_url.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:app_url_operating_system_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "frequency_cap_proto",
+    srcs = [
+        "frequency_cap.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:frequency_cap_event_type_proto",
+        "//google/ads/googleads/v3/enums:frequency_cap_level_proto",
+        "//google/ads/googleads/v3/enums:frequency_cap_time_unit_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_common_proto",
+    srcs = [
+        "keyword_plan_common.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:keyword_plan_competition_level_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "matching_function_proto",
+    srcs = [
+        "matching_function.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:matching_function_context_type_proto",
+        "//google/ads/googleads/v3/enums:matching_function_operator_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "metrics_proto",
+    srcs = [
+        "metrics.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:interaction_event_type_proto",
+        "//google/ads/googleads/v3/enums:quality_score_bucket_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "policy_proto",
+    srcs = [
+        "policy.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:policy_topic_entry_type_proto",
+        "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_mismatch_url_type_proto",
+        "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_not_working_device_proto",
+        "//google/ads/googleads/v3/enums:policy_topic_evidence_destination_not_working_dns_error_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "real_time_bidding_setting_proto",
+    srcs = [
+        "real_time_bidding_setting.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "segments_proto",
+    srcs = [
+        "segments.proto",
+    ],
+    deps = [
+        ":criteria_proto",
+        "//google/ads/googleads/v3/enums:ad_network_type_proto",
+        "//google/ads/googleads/v3/enums:click_type_proto",
+        "//google/ads/googleads/v3/enums:conversion_action_category_proto",
+        "//google/ads/googleads/v3/enums:conversion_attribution_event_type_proto",
+        "//google/ads/googleads/v3/enums:conversion_lag_bucket_proto",
+        "//google/ads/googleads/v3/enums:conversion_or_adjustment_lag_bucket_proto",
+        "//google/ads/googleads/v3/enums:day_of_week_proto",
+        "//google/ads/googleads/v3/enums:device_proto",
+        "//google/ads/googleads/v3/enums:external_conversion_source_proto",
+        "//google/ads/googleads/v3/enums:hotel_date_selection_type_proto",
+        "//google/ads/googleads/v3/enums:hotel_price_bucket_proto",
+        "//google/ads/googleads/v3/enums:hotel_rate_type_proto",
+        "//google/ads/googleads/v3/enums:month_of_year_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/ads/googleads/v3/enums:product_channel_exclusivity_proto",
+        "//google/ads/googleads/v3/enums:product_channel_proto",
+        "//google/ads/googleads/v3/enums:product_condition_proto",
+        "//google/ads/googleads/v3/enums:search_engine_results_page_type_proto",
+        "//google/ads/googleads/v3/enums:search_term_match_type_proto",
+        "//google/ads/googleads/v3/enums:slot_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "simulation_proto",
+    srcs = [
+        "simulation.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "tag_snippet_proto",
+    srcs = [
+        "tag_snippet.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:tracking_code_page_format_proto",
+        "//google/ads/googleads/v3/enums:tracking_code_type_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "targeting_setting_proto",
+    srcs = [
+        "targeting_setting.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:targeting_dimension_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "text_label_proto",
+    srcs = [
+        "text_label.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "url_collection_proto",
+    srcs = [
+        "url_collection.proto",
+    ],
+    deps = [
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "user_lists_proto",
+    srcs = [
+        "user_lists.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:customer_match_upload_key_type_proto",
+        "//google/ads/googleads/v3/enums:user_list_combined_rule_operator_proto",
+        "//google/ads/googleads/v3/enums:user_list_crm_data_source_type_proto",
+        "//google/ads/googleads/v3/enums:user_list_date_rule_item_operator_proto",
+        "//google/ads/googleads/v3/enums:user_list_logical_rule_operator_proto",
+        "//google/ads/googleads/v3/enums:user_list_number_rule_item_operator_proto",
+        "//google/ads/googleads/v3/enums:user_list_prepopulation_status_proto",
+        "//google/ads/googleads/v3/enums:user_list_rule_type_proto",
+        "//google/ads/googleads/v3/enums:user_list_string_rule_item_operator_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "value_proto",
+    srcs = [
+        "value.proto",
+    ],
+    deps = [],
+)

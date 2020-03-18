@@ -101,6 +101,11 @@ def gem_defaults
         "../shared/protos/testing/grpc_service_config/grpc_service_config.json",
         "../shared/protos/testing/grpc_service_config/grpc_service_config2.json"
       ]
+    },
+    ads_stuff: {
+      protos: Dir.glob([
+        "../shared/protos/google/ads/**/*.proto",
+      ])
     }
   }
 end

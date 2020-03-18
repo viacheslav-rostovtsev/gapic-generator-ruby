@@ -37,6 +37,13 @@ namespace :test do
     t.test_files = FileList["test/**/*grpc_service_config*_test.rb"]
   end
 
+  desc "Run tests on ads_stuff only"
+  Rake::TestTask.new :ads_stuff do |t|
+    t.libs << "test"
+    t.libs << "lib"
+    t.test_files = FileList["test/**/*ads_stuff*_test.rb"]
+  end
+
   desc "Run tests on parsing the grpc_service_config json"
   Rake::TestTask.new :grpc_service_config_parsing do |t|
     t.libs << "test"
@@ -86,6 +93,11 @@ namespace :gen do
   desc "Generate the expected output for testing/grpc_service_config"
   task :grpc_service_config do
     generate_default_templates :grpc_service_config
+  end
+
+  desc "Generate the expected output for ads stuff"
+  task :ads_stuff do
+    generate_default_templates :ads_stuff
   end
 
   desc "Generate the expected output for gem creation tests"

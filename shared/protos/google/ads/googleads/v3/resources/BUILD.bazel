@@ -1,0 +1,1656 @@
+# This file was automatically generated.
+# This is an API workspace, having public visibility by default makes perfect sense.
+package(default_visibility = ["//visibility:public"])
+
+################################################################################
+# Common
+################################################################################
+
+_PROTO_SUBPACKAGE_DEPS = [
+    "//google/ads/googleads/v3/common:ad_type_infos_proto",
+    "//google/ads/googleads/v3/common:asset_types_proto",
+    "//google/ads/googleads/v3/common:bidding_proto",
+    "//google/ads/googleads/v3/common:bidding_proto",
+    "//google/ads/googleads/v3/common:click_location_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criteria_proto",
+    "//google/ads/googleads/v3/common:criterion_category_availability_proto",
+    "//google/ads/googleads/v3/common:custom_parameter_proto",
+    "//google/ads/googleads/v3/common:custom_parameter_proto",
+    "//google/ads/googleads/v3/common:custom_parameter_proto",
+    "//google/ads/googleads/v3/common:custom_parameter_proto",
+    "//google/ads/googleads/v3/common:custom_parameter_proto",
+    "//google/ads/googleads/v3/common:dates_proto",
+    "//google/ads/googleads/v3/common:dates_proto",
+    "//google/ads/googleads/v3/common:explorer_auto_optimizer_setting_proto",
+    "//google/ads/googleads/v3/common:extensions_proto",
+    "//google/ads/googleads/v3/common:extensions_proto",
+    "//google/ads/googleads/v3/common:feed_common_proto",
+    "//google/ads/googleads/v3/common:final_app_url_proto",
+    "//google/ads/googleads/v3/common:frequency_cap_proto",
+    "//google/ads/googleads/v3/common:matching_function_proto",
+    "//google/ads/googleads/v3/common:matching_function_proto",
+    "//google/ads/googleads/v3/common:matching_function_proto",
+    "//google/ads/googleads/v3/common:policy_proto",
+    "//google/ads/googleads/v3/common:policy_proto",
+    "//google/ads/googleads/v3/common:policy_proto",
+    "//google/ads/googleads/v3/common:real_time_bidding_setting_proto",
+    "//google/ads/googleads/v3/common:simulation_proto",
+    "//google/ads/googleads/v3/common:simulation_proto",
+    "//google/ads/googleads/v3/common:simulation_proto",
+    "//google/ads/googleads/v3/common:tag_snippet_proto",
+    "//google/ads/googleads/v3/common:tag_snippet_proto",
+    "//google/ads/googleads/v3/common:targeting_setting_proto",
+    "//google/ads/googleads/v3/common:targeting_setting_proto",
+    "//google/ads/googleads/v3/common:text_label_proto",
+    "//google/ads/googleads/v3/common:url_collection_proto",
+    "//google/ads/googleads/v3/common:user_lists_proto",
+    "//google/ads/googleads/v3/enums:access_reason_proto",
+    "//google/ads/googleads/v3/enums:account_budget_proposal_status_proto",
+    "//google/ads/googleads/v3/enums:account_budget_proposal_type_proto",
+    "//google/ads/googleads/v3/enums:account_budget_proposal_type_proto",
+    "//google/ads/googleads/v3/enums:account_budget_status_proto",
+    "//google/ads/googleads/v3/enums:ad_customizer_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:ad_group_ad_rotation_mode_proto",
+    "//google/ads/googleads/v3/enums:ad_group_ad_status_proto",
+    "//google/ads/googleads/v3/enums:ad_group_criterion_approval_status_proto",
+    "//google/ads/googleads/v3/enums:ad_group_criterion_status_proto",
+    "//google/ads/googleads/v3/enums:ad_group_status_proto",
+    "//google/ads/googleads/v3/enums:ad_group_type_proto",
+    "//google/ads/googleads/v3/enums:ad_serving_optimization_status_proto",
+    "//google/ads/googleads/v3/enums:ad_strength_proto",
+    "//google/ads/googleads/v3/enums:ad_type_proto",
+    "//google/ads/googleads/v3/enums:advertising_channel_sub_type_proto",
+    "//google/ads/googleads/v3/enums:advertising_channel_type_proto",
+    "//google/ads/googleads/v3/enums:affiliate_location_feed_relationship_type_proto",
+    "//google/ads/googleads/v3/enums:affiliate_location_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:app_campaign_app_store_proto",
+    "//google/ads/googleads/v3/enums:app_campaign_bidding_strategy_goal_type_proto",
+    "//google/ads/googleads/v3/enums:app_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:asset_field_type_proto",
+    "//google/ads/googleads/v3/enums:asset_performance_label_proto",
+    "//google/ads/googleads/v3/enums:asset_type_proto",
+    "//google/ads/googleads/v3/enums:attribution_model_proto",
+    "//google/ads/googleads/v3/enums:bid_modifier_source_proto",
+    "//google/ads/googleads/v3/enums:bidding_source_proto",
+    "//google/ads/googleads/v3/enums:bidding_source_proto",
+    "//google/ads/googleads/v3/enums:bidding_strategy_status_proto",
+    "//google/ads/googleads/v3/enums:bidding_strategy_type_proto",
+    "//google/ads/googleads/v3/enums:bidding_strategy_type_proto",
+    "//google/ads/googleads/v3/enums:billing_setup_status_proto",
+    "//google/ads/googleads/v3/enums:brand_safety_suitability_proto",
+    "//google/ads/googleads/v3/enums:budget_delivery_method_proto",
+    "//google/ads/googleads/v3/enums:budget_period_proto",
+    "//google/ads/googleads/v3/enums:budget_status_proto",
+    "//google/ads/googleads/v3/enums:budget_type_proto",
+    "//google/ads/googleads/v3/enums:call_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:callout_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:campaign_criterion_status_proto",
+    "//google/ads/googleads/v3/enums:campaign_draft_status_proto",
+    "//google/ads/googleads/v3/enums:campaign_experiment_status_proto",
+    "//google/ads/googleads/v3/enums:campaign_experiment_traffic_split_type_proto",
+    "//google/ads/googleads/v3/enums:campaign_experiment_type_proto",
+    "//google/ads/googleads/v3/enums:campaign_serving_status_proto",
+    "//google/ads/googleads/v3/enums:campaign_shared_set_status_proto",
+    "//google/ads/googleads/v3/enums:campaign_status_proto",
+    "//google/ads/googleads/v3/enums:change_status_operation_proto",
+    "//google/ads/googleads/v3/enums:change_status_resource_type_proto",
+    "//google/ads/googleads/v3/enums:conversion_action_category_proto",
+    "//google/ads/googleads/v3/enums:conversion_action_counting_type_proto",
+    "//google/ads/googleads/v3/enums:conversion_action_status_proto",
+    "//google/ads/googleads/v3/enums:conversion_action_type_proto",
+    "//google/ads/googleads/v3/enums:criterion_system_serving_status_proto",
+    "//google/ads/googleads/v3/enums:criterion_type_proto",
+    "//google/ads/googleads/v3/enums:criterion_type_proto",
+    "//google/ads/googleads/v3/enums:criterion_type_proto",
+    "//google/ads/googleads/v3/enums:criterion_type_proto",
+    "//google/ads/googleads/v3/enums:custom_interest_member_type_proto",
+    "//google/ads/googleads/v3/enums:custom_interest_status_proto",
+    "//google/ads/googleads/v3/enums:custom_interest_type_proto",
+    "//google/ads/googleads/v3/enums:custom_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:customer_pay_per_conversion_eligibility_failure_reason_proto",
+    "//google/ads/googleads/v3/enums:data_driven_model_status_proto",
+    "//google/ads/googleads/v3/enums:device_proto",
+    "//google/ads/googleads/v3/enums:distance_bucket_proto",
+    "//google/ads/googleads/v3/enums:dsa_page_feed_criterion_field_proto",
+    "//google/ads/googleads/v3/enums:education_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+    "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+    "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+    "//google/ads/googleads/v3/enums:extension_type_proto",
+    "//google/ads/googleads/v3/enums:extension_type_proto",
+    "//google/ads/googleads/v3/enums:extension_type_proto",
+    "//google/ads/googleads/v3/enums:extension_type_proto",
+    "//google/ads/googleads/v3/enums:feed_attribute_type_proto",
+    "//google/ads/googleads/v3/enums:feed_item_quality_approval_status_proto",
+    "//google/ads/googleads/v3/enums:feed_item_quality_disapproval_reason_proto",
+    "//google/ads/googleads/v3/enums:feed_item_status_proto",
+    "//google/ads/googleads/v3/enums:feed_item_status_proto",
+    "//google/ads/googleads/v3/enums:feed_item_target_device_proto",
+    "//google/ads/googleads/v3/enums:feed_item_target_device_proto",
+    "//google/ads/googleads/v3/enums:feed_item_target_status_proto",
+    "//google/ads/googleads/v3/enums:feed_item_target_type_proto",
+    "//google/ads/googleads/v3/enums:feed_item_validation_status_proto",
+    "//google/ads/googleads/v3/enums:feed_link_status_proto",
+    "//google/ads/googleads/v3/enums:feed_link_status_proto",
+    "//google/ads/googleads/v3/enums:feed_link_status_proto",
+    "//google/ads/googleads/v3/enums:feed_mapping_criterion_type_proto",
+    "//google/ads/googleads/v3/enums:feed_mapping_status_proto",
+    "//google/ads/googleads/v3/enums:feed_origin_proto",
+    "//google/ads/googleads/v3/enums:feed_status_proto",
+    "//google/ads/googleads/v3/enums:flight_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:geo_target_constant_status_proto",
+    "//google/ads/googleads/v3/enums:geo_targeting_restriction_proto",
+    "//google/ads/googleads/v3/enums:geo_targeting_type_proto",
+    "//google/ads/googleads/v3/enums:google_ads_field_category_proto",
+    "//google/ads/googleads/v3/enums:google_ads_field_data_type_proto",
+    "//google/ads/googleads/v3/enums:hotel_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:invoice_type_proto",
+    "//google/ads/googleads/v3/enums:job_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+    "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+    "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+    "//google/ads/googleads/v3/enums:keyword_plan_forecast_interval_proto",
+    "//google/ads/googleads/v3/enums:keyword_plan_network_proto",
+    "//google/ads/googleads/v3/enums:label_status_proto",
+    "//google/ads/googleads/v3/enums:local_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:location_extension_targeting_criterion_field_proto",
+    "//google/ads/googleads/v3/enums:location_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:manager_link_status_proto",
+    "//google/ads/googleads/v3/enums:manager_link_status_proto",
+    "//google/ads/googleads/v3/enums:media_type_proto",
+    "//google/ads/googleads/v3/enums:merchant_center_link_status_proto",
+    "//google/ads/googleads/v3/enums:message_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:mime_type_proto",
+    "//google/ads/googleads/v3/enums:mobile_device_type_proto",
+    "//google/ads/googleads/v3/enums:mutate_job_status_proto",
+    "//google/ads/googleads/v3/enums:negative_geo_target_type_proto",
+    "//google/ads/googleads/v3/enums:operating_system_version_operator_type_proto",
+    "//google/ads/googleads/v3/enums:payment_mode_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placeholder_type_proto",
+    "//google/ads/googleads/v3/enums:placement_type_proto",
+    "//google/ads/googleads/v3/enums:placement_type_proto",
+    "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+    "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+    "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+    "//google/ads/googleads/v3/enums:policy_review_status_proto",
+    "//google/ads/googleads/v3/enums:policy_review_status_proto",
+    "//google/ads/googleads/v3/enums:policy_review_status_proto",
+    "//google/ads/googleads/v3/enums:positive_geo_target_type_proto",
+    "//google/ads/googleads/v3/enums:price_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:product_bidding_category_level_proto",
+    "//google/ads/googleads/v3/enums:product_bidding_category_status_proto",
+    "//google/ads/googleads/v3/enums:promotion_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:quality_score_bucket_proto",
+    "//google/ads/googleads/v3/enums:real_estate_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:recommendation_type_proto",
+    "//google/ads/googleads/v3/enums:search_term_targeting_status_proto",
+    "//google/ads/googleads/v3/enums:shared_set_status_proto",
+    "//google/ads/googleads/v3/enums:shared_set_type_proto",
+    "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+    "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+    "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+    "//google/ads/googleads/v3/enums:simulation_type_proto",
+    "//google/ads/googleads/v3/enums:simulation_type_proto",
+    "//google/ads/googleads/v3/enums:simulation_type_proto",
+    "//google/ads/googleads/v3/enums:sitelink_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:spending_limit_type_proto",
+    "//google/ads/googleads/v3/enums:spending_limit_type_proto",
+    "//google/ads/googleads/v3/enums:structured_snippet_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:system_managed_entity_source_proto",
+    "//google/ads/googleads/v3/enums:target_cpa_opt_in_recommendation_goal_proto",
+    "//google/ads/googleads/v3/enums:targeting_dimension_proto",
+    "//google/ads/googleads/v3/enums:time_type_proto",
+    "//google/ads/googleads/v3/enums:time_type_proto",
+    "//google/ads/googleads/v3/enums:time_type_proto",
+    "//google/ads/googleads/v3/enums:travel_placeholder_field_proto",
+    "//google/ads/googleads/v3/enums:user_interest_taxonomy_type_proto",
+    "//google/ads/googleads/v3/enums:user_list_access_status_proto",
+    "//google/ads/googleads/v3/enums:user_list_closing_reason_proto",
+    "//google/ads/googleads/v3/enums:user_list_membership_status_proto",
+    "//google/ads/googleads/v3/enums:user_list_size_range_proto",
+    "//google/ads/googleads/v3/enums:user_list_type_proto",
+    "//google/ads/googleads/v3/enums:vanity_pharma_display_url_mode_proto",
+    "//google/ads/googleads/v3/enums:vanity_pharma_text_proto",
+    "//google/ads/googleads/v3/errors:feed_item_validation_error_proto",
+]
+
+proto_library(
+    name = "account_budget_proto",
+    srcs = [
+        "account_budget.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:account_budget_proposal_type_proto",
+        "//google/ads/googleads/v3/enums:account_budget_status_proto",
+        "//google/ads/googleads/v3/enums:spending_limit_type_proto",
+        "//google/ads/googleads/v3/enums:time_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "account_budget_proposal_proto",
+    srcs = [
+        "account_budget_proposal.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:account_budget_proposal_status_proto",
+        "//google/ads/googleads/v3/enums:account_budget_proposal_type_proto",
+        "//google/ads/googleads/v3/enums:spending_limit_type_proto",
+        "//google/ads/googleads/v3/enums:time_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_proto",
+    srcs = [
+        "ad.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:ad_type_infos_proto",
+        "//google/ads/googleads/v3/common:custom_parameter_proto",
+        "//google/ads/googleads/v3/common:final_app_url_proto",
+        "//google/ads/googleads/v3/common:url_collection_proto",
+        "//google/ads/googleads/v3/enums:ad_type_proto",
+        "//google/ads/googleads/v3/enums:device_proto",
+        "//google/ads/googleads/v3/enums:system_managed_entity_source_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_proto",
+    srcs = [
+        "ad_group.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:custom_parameter_proto",
+        "//google/ads/googleads/v3/common:explorer_auto_optimizer_setting_proto",
+        "//google/ads/googleads/v3/common:targeting_setting_proto",
+        "//google/ads/googleads/v3/enums:ad_group_ad_rotation_mode_proto",
+        "//google/ads/googleads/v3/enums:ad_group_status_proto",
+        "//google/ads/googleads/v3/enums:ad_group_type_proto",
+        "//google/ads/googleads/v3/enums:bidding_source_proto",
+        "//google/ads/googleads/v3/enums:targeting_dimension_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_ad_proto",
+    srcs = [
+        "ad_group_ad.proto",
+    ],
+    deps = [
+        ":ad_proto",
+        "//google/ads/googleads/v3/common:policy_proto",
+        "//google/ads/googleads/v3/enums:ad_group_ad_status_proto",
+        "//google/ads/googleads/v3/enums:ad_strength_proto",
+        "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+        "//google/ads/googleads/v3/enums:policy_review_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_ad_asset_view_proto",
+    srcs = [
+        "ad_group_ad_asset_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:policy_proto",
+        "//google/ads/googleads/v3/enums:asset_field_type_proto",
+        "//google/ads/googleads/v3/enums:asset_performance_label_proto",
+        "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+        "//google/ads/googleads/v3/enums:policy_review_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_ad_label_proto",
+    srcs = [
+        "ad_group_ad_label.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_audience_view_proto",
+    srcs = [
+        "ad_group_audience_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_bid_modifier_proto",
+    srcs = [
+        "ad_group_bid_modifier.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/enums:bid_modifier_source_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_criterion_proto",
+    srcs = [
+        "ad_group_criterion.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/common:custom_parameter_proto",
+        "//google/ads/googleads/v3/enums:ad_group_criterion_approval_status_proto",
+        "//google/ads/googleads/v3/enums:ad_group_criterion_status_proto",
+        "//google/ads/googleads/v3/enums:bidding_source_proto",
+        "//google/ads/googleads/v3/enums:criterion_system_serving_status_proto",
+        "//google/ads/googleads/v3/enums:criterion_type_proto",
+        "//google/ads/googleads/v3/enums:quality_score_bucket_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_criterion_label_proto",
+    srcs = [
+        "ad_group_criterion_label.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_criterion_simulation_proto",
+    srcs = [
+        "ad_group_criterion_simulation.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:simulation_proto",
+        "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+        "//google/ads/googleads/v3/enums:simulation_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_extension_setting_proto",
+    srcs = [
+        "ad_group_extension_setting.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+        "//google/ads/googleads/v3/enums:extension_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_feed_proto",
+    srcs = [
+        "ad_group_feed.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:matching_function_proto",
+        "//google/ads/googleads/v3/enums:feed_link_status_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_label_proto",
+    srcs = [
+        "ad_group_label.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_group_simulation_proto",
+    srcs = [
+        "ad_group_simulation.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:simulation_proto",
+        "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+        "//google/ads/googleads/v3/enums:simulation_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_parameter_proto",
+    srcs = [
+        "ad_parameter.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "ad_schedule_view_proto",
+    srcs = [
+        "ad_schedule_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "age_range_view_proto",
+    srcs = [
+        "age_range_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "asset_proto",
+    srcs = [
+        "asset.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:asset_types_proto",
+        "//google/ads/googleads/v3/enums:asset_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "bidding_strategy_proto",
+    srcs = [
+        "bidding_strategy.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:bidding_proto",
+        "//google/ads/googleads/v3/enums:bidding_strategy_status_proto",
+        "//google/ads/googleads/v3/enums:bidding_strategy_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "billing_setup_proto",
+    srcs = [
+        "billing_setup.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:billing_setup_status_proto",
+        "//google/ads/googleads/v3/enums:time_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_proto",
+    srcs = [
+        "campaign.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:bidding_proto",
+        "//google/ads/googleads/v3/common:custom_parameter_proto",
+        "//google/ads/googleads/v3/common:frequency_cap_proto",
+        "//google/ads/googleads/v3/common:real_time_bidding_setting_proto",
+        "//google/ads/googleads/v3/common:targeting_setting_proto",
+        "//google/ads/googleads/v3/enums:ad_serving_optimization_status_proto",
+        "//google/ads/googleads/v3/enums:advertising_channel_sub_type_proto",
+        "//google/ads/googleads/v3/enums:advertising_channel_type_proto",
+        "//google/ads/googleads/v3/enums:app_campaign_app_store_proto",
+        "//google/ads/googleads/v3/enums:app_campaign_bidding_strategy_goal_type_proto",
+        "//google/ads/googleads/v3/enums:bidding_strategy_type_proto",
+        "//google/ads/googleads/v3/enums:brand_safety_suitability_proto",
+        "//google/ads/googleads/v3/enums:campaign_experiment_type_proto",
+        "//google/ads/googleads/v3/enums:campaign_serving_status_proto",
+        "//google/ads/googleads/v3/enums:campaign_status_proto",
+        "//google/ads/googleads/v3/enums:negative_geo_target_type_proto",
+        "//google/ads/googleads/v3/enums:payment_mode_proto",
+        "//google/ads/googleads/v3/enums:positive_geo_target_type_proto",
+        "//google/ads/googleads/v3/enums:vanity_pharma_display_url_mode_proto",
+        "//google/ads/googleads/v3/enums:vanity_pharma_text_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_audience_view_proto",
+    srcs = [
+        "campaign_audience_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_bid_modifier_proto",
+    srcs = [
+        "campaign_bid_modifier.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_budget_proto",
+    srcs = [
+        "campaign_budget.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:budget_delivery_method_proto",
+        "//google/ads/googleads/v3/enums:budget_period_proto",
+        "//google/ads/googleads/v3/enums:budget_status_proto",
+        "//google/ads/googleads/v3/enums:budget_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_criterion_proto",
+    srcs = [
+        "campaign_criterion.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/enums:campaign_criterion_status_proto",
+        "//google/ads/googleads/v3/enums:criterion_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_criterion_simulation_proto",
+    srcs = [
+        "campaign_criterion_simulation.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:simulation_proto",
+        "//google/ads/googleads/v3/enums:simulation_modification_method_proto",
+        "//google/ads/googleads/v3/enums:simulation_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_draft_proto",
+    srcs = [
+        "campaign_draft.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:campaign_draft_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_experiment_proto",
+    srcs = [
+        "campaign_experiment.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:campaign_experiment_status_proto",
+        "//google/ads/googleads/v3/enums:campaign_experiment_traffic_split_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_extension_setting_proto",
+    srcs = [
+        "campaign_extension_setting.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+        "//google/ads/googleads/v3/enums:extension_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_feed_proto",
+    srcs = [
+        "campaign_feed.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:matching_function_proto",
+        "//google/ads/googleads/v3/enums:feed_link_status_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_label_proto",
+    srcs = [
+        "campaign_label.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "campaign_shared_set_proto",
+    srcs = [
+        "campaign_shared_set.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:campaign_shared_set_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "carrier_constant_proto",
+    srcs = [
+        "carrier_constant.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "change_status_proto",
+    srcs = [
+        "change_status.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:change_status_operation_proto",
+        "//google/ads/googleads/v3/enums:change_status_resource_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "click_view_proto",
+    srcs = [
+        "click_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:click_location_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "conversion_action_proto",
+    srcs = [
+        "conversion_action.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:tag_snippet_proto",
+        "//google/ads/googleads/v3/enums:attribution_model_proto",
+        "//google/ads/googleads/v3/enums:conversion_action_category_proto",
+        "//google/ads/googleads/v3/enums:conversion_action_counting_type_proto",
+        "//google/ads/googleads/v3/enums:conversion_action_status_proto",
+        "//google/ads/googleads/v3/enums:conversion_action_type_proto",
+        "//google/ads/googleads/v3/enums:data_driven_model_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "currency_constant_proto",
+    srcs = [
+        "currency_constant.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "custom_interest_proto",
+    srcs = [
+        "custom_interest.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:custom_interest_member_type_proto",
+        "//google/ads/googleads/v3/enums:custom_interest_status_proto",
+        "//google/ads/googleads/v3/enums:custom_interest_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_proto",
+    srcs = [
+        "customer.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:customer_pay_per_conversion_eligibility_failure_reason_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_client_proto",
+    srcs = [
+        "customer_client.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_client_link_proto",
+    srcs = [
+        "customer_client_link.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:manager_link_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_extension_setting_proto",
+    srcs = [
+        "customer_extension_setting.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:extension_setting_device_proto",
+        "//google/ads/googleads/v3/enums:extension_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_feed_proto",
+    srcs = [
+        "customer_feed.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:matching_function_proto",
+        "//google/ads/googleads/v3/enums:feed_link_status_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_label_proto",
+    srcs = [
+        "customer_label.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_manager_link_proto",
+    srcs = [
+        "customer_manager_link.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:manager_link_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "customer_negative_criterion_proto",
+    srcs = [
+        "customer_negative_criterion.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/enums:criterion_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "detail_placement_view_proto",
+    srcs = [
+        "detail_placement_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:placement_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "display_keyword_view_proto",
+    srcs = [
+        "display_keyword_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "distance_view_proto",
+    srcs = [
+        "distance_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:distance_bucket_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "domain_category_proto",
+    srcs = [
+        "domain_category.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "dynamic_search_ads_search_term_view_proto",
+    srcs = [
+        "dynamic_search_ads_search_term_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "expanded_landing_page_view_proto",
+    srcs = [
+        "expanded_landing_page_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "extension_feed_item_proto",
+    srcs = [
+        "extension_feed_item.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/common:extensions_proto",
+        "//google/ads/googleads/v3/enums:extension_type_proto",
+        "//google/ads/googleads/v3/enums:feed_item_status_proto",
+        "//google/ads/googleads/v3/enums:feed_item_target_device_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_proto",
+    srcs = [
+        "feed.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:affiliate_location_feed_relationship_type_proto",
+        "//google/ads/googleads/v3/enums:feed_attribute_type_proto",
+        "//google/ads/googleads/v3/enums:feed_origin_proto",
+        "//google/ads/googleads/v3/enums:feed_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_item_proto",
+    srcs = [
+        "feed_item.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:custom_parameter_proto",
+        "//google/ads/googleads/v3/common:feed_common_proto",
+        "//google/ads/googleads/v3/common:policy_proto",
+        "//google/ads/googleads/v3/enums:feed_item_quality_approval_status_proto",
+        "//google/ads/googleads/v3/enums:feed_item_quality_disapproval_reason_proto",
+        "//google/ads/googleads/v3/enums:feed_item_status_proto",
+        "//google/ads/googleads/v3/enums:feed_item_validation_status_proto",
+        "//google/ads/googleads/v3/enums:geo_targeting_restriction_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/ads/googleads/v3/enums:policy_approval_status_proto",
+        "//google/ads/googleads/v3/enums:policy_review_status_proto",
+        "//google/ads/googleads/v3/errors:feed_item_validation_error_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_item_target_proto",
+    srcs = [
+        "feed_item_target.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/enums:feed_item_target_device_proto",
+        "//google/ads/googleads/v3/enums:feed_item_target_status_proto",
+        "//google/ads/googleads/v3/enums:feed_item_target_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_mapping_proto",
+    srcs = [
+        "feed_mapping.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:ad_customizer_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:affiliate_location_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:app_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:call_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:callout_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:custom_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:dsa_page_feed_criterion_field_proto",
+        "//google/ads/googleads/v3/enums:education_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:feed_mapping_criterion_type_proto",
+        "//google/ads/googleads/v3/enums:feed_mapping_status_proto",
+        "//google/ads/googleads/v3/enums:flight_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:hotel_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:job_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:local_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:location_extension_targeting_criterion_field_proto",
+        "//google/ads/googleads/v3/enums:location_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:message_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/ads/googleads/v3/enums:price_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:promotion_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:real_estate_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:sitelink_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:structured_snippet_placeholder_field_proto",
+        "//google/ads/googleads/v3/enums:travel_placeholder_field_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "feed_placeholder_view_proto",
+    srcs = [
+        "feed_placeholder_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:placeholder_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "gender_view_proto",
+    srcs = [
+        "gender_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "geo_target_constant_proto",
+    srcs = [
+        "geo_target_constant.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:geo_target_constant_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "geographic_view_proto",
+    srcs = [
+        "geographic_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:geo_targeting_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "google_ads_field_proto",
+    srcs = [
+        "google_ads_field.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:google_ads_field_category_proto",
+        "//google/ads/googleads/v3/enums:google_ads_field_data_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "group_placement_view_proto",
+    srcs = [
+        "group_placement_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:placement_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "hotel_group_view_proto",
+    srcs = [
+        "hotel_group_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "hotel_performance_view_proto",
+    srcs = [
+        "hotel_performance_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "invoice_proto",
+    srcs = [
+        "invoice.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:dates_proto",
+        "//google/ads/googleads/v3/enums:invoice_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_proto",
+    srcs = [
+        "keyword_plan.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:dates_proto",
+        "//google/ads/googleads/v3/enums:keyword_plan_forecast_interval_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_ad_group_proto",
+    srcs = [
+        "keyword_plan_ad_group.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_campaign_proto",
+    srcs = [
+        "keyword_plan_campaign.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:keyword_plan_network_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_keyword_proto",
+    srcs = [
+        "keyword_plan_keyword.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_plan_negative_keyword_proto",
+    srcs = [
+        "keyword_plan_negative_keyword.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "keyword_view_proto",
+    srcs = [
+        "keyword_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "label_proto",
+    srcs = [
+        "label.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:text_label_proto",
+        "//google/ads/googleads/v3/enums:label_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "landing_page_view_proto",
+    srcs = [
+        "landing_page_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "language_constant_proto",
+    srcs = [
+        "language_constant.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "location_view_proto",
+    srcs = [
+        "location_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "managed_placement_view_proto",
+    srcs = [
+        "managed_placement_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "media_file_proto",
+    srcs = [
+        "media_file.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:media_type_proto",
+        "//google/ads/googleads/v3/enums:mime_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "merchant_center_link_proto",
+    srcs = [
+        "merchant_center_link.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:merchant_center_link_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "mobile_app_category_constant_proto",
+    srcs = [
+        "mobile_app_category_constant.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "mobile_device_constant_proto",
+    srcs = [
+        "mobile_device_constant.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:mobile_device_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "mutate_job_proto",
+    srcs = [
+        "mutate_job.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:mutate_job_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "operating_system_version_constant_proto",
+    srcs = [
+        "operating_system_version_constant.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:operating_system_version_operator_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "paid_organic_search_term_view_proto",
+    srcs = [
+        "paid_organic_search_term_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "parental_status_view_proto",
+    srcs = [
+        "parental_status_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "payments_account_proto",
+    srcs = [
+        "payments_account.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "product_bidding_category_constant_proto",
+    srcs = [
+        "product_bidding_category_constant.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:product_bidding_category_level_proto",
+        "//google/ads/googleads/v3/enums:product_bidding_category_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "product_group_view_proto",
+    srcs = [
+        "product_group_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "recommendation_proto",
+    srcs = [
+        "recommendation.proto",
+    ],
+    deps = [
+        ":ad_proto",
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/common:extensions_proto",
+        "//google/ads/googleads/v3/enums:keyword_match_type_proto",
+        "//google/ads/googleads/v3/enums:recommendation_type_proto",
+        "//google/ads/googleads/v3/enums:target_cpa_opt_in_recommendation_goal_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "remarketing_action_proto",
+    srcs = [
+        "remarketing_action.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:tag_snippet_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "search_term_view_proto",
+    srcs = [
+        "search_term_view.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:search_term_targeting_status_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "shared_criterion_proto",
+    srcs = [
+        "shared_criterion.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criteria_proto",
+        "//google/ads/googleads/v3/enums:criterion_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "shared_set_proto",
+    srcs = [
+        "shared_set.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/enums:shared_set_status_proto",
+        "//google/ads/googleads/v3/enums:shared_set_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "shopping_performance_view_proto",
+    srcs = [
+        "shopping_performance_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "topic_constant_proto",
+    srcs = [
+        "topic_constant.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "topic_view_proto",
+    srcs = [
+        "topic_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+    ],
+)
+
+proto_library(
+    name = "user_interest_proto",
+    srcs = [
+        "user_interest.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:criterion_category_availability_proto",
+        "//google/ads/googleads/v3/enums:user_interest_taxonomy_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "user_list_proto",
+    srcs = [
+        "user_list.proto",
+    ],
+    deps = [
+        "//google/ads/googleads/v3/common:user_lists_proto",
+        "//google/ads/googleads/v3/enums:access_reason_proto",
+        "//google/ads/googleads/v3/enums:user_list_access_status_proto",
+        "//google/ads/googleads/v3/enums:user_list_closing_reason_proto",
+        "//google/ads/googleads/v3/enums:user_list_membership_status_proto",
+        "//google/ads/googleads/v3/enums:user_list_size_range_proto",
+        "//google/ads/googleads/v3/enums:user_list_type_proto",
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "user_location_view_proto",
+    srcs = [
+        "user_location_view.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "video_proto",
+    srcs = [
+        "video.proto",
+    ],
+    deps = [
+        "//google/api:field_behavior_proto",
+        "//google/api:resource_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)

@@ -1,0 +1,996 @@
+# This file was automatically generated.
+# This is an API workspace, having public visibility by default makes perfect sense.
+package(default_visibility = ["//visibility:public"])
+
+################################################################################
+# Common
+################################################################################
+
+_PROTO_SUBPACKAGE_DEPS = [
+    "//google/ads/googleads/v3/common:policy_proto",
+    "//google/ads/googleads/v3/common:value_proto",
+]
+
+proto_library(
+    name = "access_invitation_error_proto",
+    srcs = [
+        "access_invitation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "account_budget_proposal_error_proto",
+    srcs = [
+        "account_budget_proposal_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_customizer_error_proto",
+    srcs = [
+        "ad_customizer_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_error_proto",
+    srcs = [
+        "ad_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_ad_error_proto",
+    srcs = [
+        "ad_group_ad_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_bid_modifier_error_proto",
+    srcs = [
+        "ad_group_bid_modifier_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_criterion_error_proto",
+    srcs = [
+        "ad_group_criterion_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_error_proto",
+    srcs = [
+        "ad_group_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_group_feed_error_proto",
+    srcs = [
+        "ad_group_feed_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_parameter_error_proto",
+    srcs = [
+        "ad_parameter_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "ad_sharing_error_proto",
+    srcs = [
+        "ad_sharing_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "adx_error_proto",
+    srcs = [
+        "adx_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "asset_error_proto",
+    srcs = [
+        "asset_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "authentication_error_proto",
+    srcs = [
+        "authentication_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "authorization_error_proto",
+    srcs = [
+        "authorization_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bidding_error_proto",
+    srcs = [
+        "bidding_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "bidding_strategy_error_proto",
+    srcs = [
+        "bidding_strategy_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "billing_setup_error_proto",
+    srcs = [
+        "billing_setup_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_budget_error_proto",
+    srcs = [
+        "campaign_budget_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_criterion_error_proto",
+    srcs = [
+        "campaign_criterion_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_draft_error_proto",
+    srcs = [
+        "campaign_draft_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_error_proto",
+    srcs = [
+        "campaign_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_experiment_error_proto",
+    srcs = [
+        "campaign_experiment_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_feed_error_proto",
+    srcs = [
+        "campaign_feed_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "campaign_shared_set_error_proto",
+    srcs = [
+        "campaign_shared_set_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "change_status_error_proto",
+    srcs = [
+        "change_status_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "collection_size_error_proto",
+    srcs = [
+        "collection_size_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "context_error_proto",
+    srcs = [
+        "context_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_action_error_proto",
+    srcs = [
+        "conversion_action_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_adjustment_upload_error_proto",
+    srcs = [
+        "conversion_adjustment_upload_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "conversion_upload_error_proto",
+    srcs = [
+        "conversion_upload_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "country_code_error_proto",
+    srcs = [
+        "country_code_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "criterion_error_proto",
+    srcs = [
+        "criterion_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "currency_code_error_proto",
+    srcs = [
+        "currency_code_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "custom_interest_error_proto",
+    srcs = [
+        "custom_interest_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_client_link_error_proto",
+    srcs = [
+        "customer_client_link_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_error_proto",
+    srcs = [
+        "customer_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_feed_error_proto",
+    srcs = [
+        "customer_feed_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "customer_manager_link_error_proto",
+    srcs = [
+        "customer_manager_link_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "database_error_proto",
+    srcs = [
+        "database_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "date_error_proto",
+    srcs = [
+        "date_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "date_range_error_proto",
+    srcs = [
+        "date_range_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "distinct_error_proto",
+    srcs = [
+        "distinct_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "enum_error_proto",
+    srcs = [
+        "enum_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "errors_proto",
+    srcs = [
+        "errors.proto",
+    ],
+    deps = [
+        ":access_invitation_error_proto",
+        ":account_budget_proposal_error_proto",
+        ":ad_customizer_error_proto",
+        ":ad_error_proto",
+        ":ad_group_ad_error_proto",
+        ":ad_group_bid_modifier_error_proto",
+        ":ad_group_criterion_error_proto",
+        ":ad_group_error_proto",
+        ":ad_group_feed_error_proto",
+        ":ad_parameter_error_proto",
+        ":ad_sharing_error_proto",
+        ":adx_error_proto",
+        ":asset_error_proto",
+        ":authentication_error_proto",
+        ":authorization_error_proto",
+        ":bidding_error_proto",
+        ":bidding_strategy_error_proto",
+        ":billing_setup_error_proto",
+        ":campaign_budget_error_proto",
+        ":campaign_criterion_error_proto",
+        ":campaign_draft_error_proto",
+        ":campaign_error_proto",
+        ":campaign_experiment_error_proto",
+        ":campaign_feed_error_proto",
+        ":campaign_shared_set_error_proto",
+        ":change_status_error_proto",
+        ":collection_size_error_proto",
+        ":context_error_proto",
+        ":conversion_action_error_proto",
+        ":conversion_adjustment_upload_error_proto",
+        ":conversion_upload_error_proto",
+        ":country_code_error_proto",
+        ":criterion_error_proto",
+        ":currency_code_error_proto",
+        ":custom_interest_error_proto",
+        ":customer_client_link_error_proto",
+        ":customer_error_proto",
+        ":customer_feed_error_proto",
+        ":customer_manager_link_error_proto",
+        ":database_error_proto",
+        ":date_error_proto",
+        ":date_range_error_proto",
+        ":distinct_error_proto",
+        ":enum_error_proto",
+        ":extension_feed_item_error_proto",
+        ":extension_setting_error_proto",
+        ":feed_attribute_reference_error_proto",
+        ":feed_error_proto",
+        ":feed_item_error_proto",
+        ":feed_item_target_error_proto",
+        ":feed_item_validation_error_proto",
+        ":feed_mapping_error_proto",
+        ":field_error_proto",
+        ":field_mask_error_proto",
+        ":function_error_proto",
+        ":function_parsing_error_proto",
+        ":geo_target_constant_suggestion_error_proto",
+        ":header_error_proto",
+        ":id_error_proto",
+        ":image_error_proto",
+        ":internal_error_proto",
+        ":invoice_error_proto",
+        ":keyword_plan_ad_group_error_proto",
+        ":keyword_plan_campaign_error_proto",
+        ":keyword_plan_error_proto",
+        ":keyword_plan_idea_error_proto",
+        ":keyword_plan_keyword_error_proto",
+        ":keyword_plan_negative_keyword_error_proto",
+        ":label_error_proto",
+        ":language_code_error_proto",
+        ":list_operation_error_proto",
+        ":manager_link_error_proto",
+        ":media_bundle_error_proto",
+        ":media_file_error_proto",
+        ":media_upload_error_proto",
+        ":multiplier_error_proto",
+        ":mutate_error_proto",
+        ":mutate_job_error_proto",
+        ":new_resource_creation_error_proto",
+        ":not_empty_error_proto",
+        ":not_whitelisted_error_proto",
+        ":null_error_proto",
+        ":operation_access_denied_error_proto",
+        ":operator_error_proto",
+        ":partial_failure_error_proto",
+        ":payments_account_error_proto",
+        ":policy_finding_error_proto",
+        ":policy_validation_parameter_error_proto",
+        ":policy_violation_error_proto",
+        ":query_error_proto",
+        ":quota_error_proto",
+        ":range_error_proto",
+        ":reach_plan_error_proto",
+        ":recommendation_error_proto",
+        ":region_code_error_proto",
+        ":request_error_proto",
+        ":resource_access_denied_error_proto",
+        ":resource_count_limit_exceeded_error_proto",
+        ":setting_error_proto",
+        ":shared_criterion_error_proto",
+        ":shared_set_error_proto",
+        ":size_limit_error_proto",
+        ":string_format_error_proto",
+        ":string_length_error_proto",
+        ":time_zone_error_proto",
+        ":url_field_error_proto",
+        ":user_list_error_proto",
+        ":youtube_video_registration_error_proto",
+        "//google/ads/googleads/v3/common:policy_proto",
+        "//google/ads/googleads/v3/common:value_proto",
+        "@com_google_protobuf//:wrappers_proto",
+    ],
+)
+
+proto_library(
+    name = "extension_feed_item_error_proto",
+    srcs = [
+        "extension_feed_item_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "extension_setting_error_proto",
+    srcs = [
+        "extension_setting_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_attribute_reference_error_proto",
+    srcs = [
+        "feed_attribute_reference_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_error_proto",
+    srcs = [
+        "feed_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_error_proto",
+    srcs = [
+        "feed_item_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_target_error_proto",
+    srcs = [
+        "feed_item_target_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_item_validation_error_proto",
+    srcs = [
+        "feed_item_validation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "feed_mapping_error_proto",
+    srcs = [
+        "feed_mapping_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "field_error_proto",
+    srcs = [
+        "field_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "field_mask_error_proto",
+    srcs = [
+        "field_mask_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "function_error_proto",
+    srcs = [
+        "function_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "function_parsing_error_proto",
+    srcs = [
+        "function_parsing_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "geo_target_constant_suggestion_error_proto",
+    srcs = [
+        "geo_target_constant_suggestion_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "header_error_proto",
+    srcs = [
+        "header_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "id_error_proto",
+    srcs = [
+        "id_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "image_error_proto",
+    srcs = [
+        "image_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "internal_error_proto",
+    srcs = [
+        "internal_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "invoice_error_proto",
+    srcs = [
+        "invoice_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_ad_group_error_proto",
+    srcs = [
+        "keyword_plan_ad_group_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_campaign_error_proto",
+    srcs = [
+        "keyword_plan_campaign_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_error_proto",
+    srcs = [
+        "keyword_plan_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_idea_error_proto",
+    srcs = [
+        "keyword_plan_idea_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_keyword_error_proto",
+    srcs = [
+        "keyword_plan_keyword_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "keyword_plan_negative_keyword_error_proto",
+    srcs = [
+        "keyword_plan_negative_keyword_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "label_error_proto",
+    srcs = [
+        "label_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "language_code_error_proto",
+    srcs = [
+        "language_code_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "list_operation_error_proto",
+    srcs = [
+        "list_operation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "manager_link_error_proto",
+    srcs = [
+        "manager_link_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "media_bundle_error_proto",
+    srcs = [
+        "media_bundle_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "media_file_error_proto",
+    srcs = [
+        "media_file_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "media_upload_error_proto",
+    srcs = [
+        "media_upload_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "multiplier_error_proto",
+    srcs = [
+        "multiplier_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "mutate_error_proto",
+    srcs = [
+        "mutate_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "mutate_job_error_proto",
+    srcs = [
+        "mutate_job_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "new_resource_creation_error_proto",
+    srcs = [
+        "new_resource_creation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "not_empty_error_proto",
+    srcs = [
+        "not_empty_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "not_whitelisted_error_proto",
+    srcs = [
+        "not_whitelisted_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "null_error_proto",
+    srcs = [
+        "null_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "operation_access_denied_error_proto",
+    srcs = [
+        "operation_access_denied_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "operator_error_proto",
+    srcs = [
+        "operator_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "partial_failure_error_proto",
+    srcs = [
+        "partial_failure_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "payments_account_error_proto",
+    srcs = [
+        "payments_account_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_finding_error_proto",
+    srcs = [
+        "policy_finding_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_validation_parameter_error_proto",
+    srcs = [
+        "policy_validation_parameter_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "policy_violation_error_proto",
+    srcs = [
+        "policy_violation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "query_error_proto",
+    srcs = [
+        "query_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "quota_error_proto",
+    srcs = [
+        "quota_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "range_error_proto",
+    srcs = [
+        "range_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "reach_plan_error_proto",
+    srcs = [
+        "reach_plan_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "recommendation_error_proto",
+    srcs = [
+        "recommendation_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "region_code_error_proto",
+    srcs = [
+        "region_code_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "request_error_proto",
+    srcs = [
+        "request_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "resource_access_denied_error_proto",
+    srcs = [
+        "resource_access_denied_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "resource_count_limit_exceeded_error_proto",
+    srcs = [
+        "resource_count_limit_exceeded_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "setting_error_proto",
+    srcs = [
+        "setting_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "shared_criterion_error_proto",
+    srcs = [
+        "shared_criterion_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "shared_set_error_proto",
+    srcs = [
+        "shared_set_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "size_limit_error_proto",
+    srcs = [
+        "size_limit_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "string_format_error_proto",
+    srcs = [
+        "string_format_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "string_length_error_proto",
+    srcs = [
+        "string_length_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "time_zone_error_proto",
+    srcs = [
+        "time_zone_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "url_field_error_proto",
+    srcs = [
+        "url_field_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "user_list_error_proto",
+    srcs = [
+        "user_list_error.proto",
+    ],
+    deps = [],
+)
+
+proto_library(
+    name = "youtube_video_registration_error_proto",
+    srcs = [
+        "youtube_video_registration_error.proto",
+    ],
+    deps = [],
+)

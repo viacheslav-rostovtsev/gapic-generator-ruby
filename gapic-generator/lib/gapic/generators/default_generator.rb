@@ -48,9 +48,22 @@ module Gapic
 
         gem = gem_presenter @api
 
+        #  STDERR.puts "==============================================="
+        #  STDERR.puts gem.packages[0].services[0].paths?
+        #  STDERR.puts "==============================================="
+
+        #  STDERR.puts "==============================================="
+        #  STDERR.puts gem.packages[0].services[1].paths?
+        #  STDERR.puts "==============================================="
+
+        # require 'pry'
+        # binding.pry
+        # abort
+
         gem.packages.each do |package|
           # Package level files
           files << g("package.erb", "lib/#{package.package_file_path}", package: package)
+
 
           package.services.each do |service|
             # Service level files

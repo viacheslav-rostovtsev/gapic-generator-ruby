@@ -32,7 +32,7 @@ grpc_tools_ruby_protoc \
   --grpc_out=/workspace/out/lib \
   --ruby_ads_out=/workspace/out/ \
   --ruby_ads_opt="configuration=/workspace/config.yml" \
-  `find /workspace/in/ -name *.proto`
+  `find /workspace/in/google/cloud -name *.proto`
 
 bash
 
