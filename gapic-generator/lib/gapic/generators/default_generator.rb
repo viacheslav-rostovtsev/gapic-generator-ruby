@@ -26,7 +26,8 @@ module Gapic
       #   generate.
       def initialize api
         super
-
+        # only for this debug branch
+        api.generate_path_helpers_output= true unless api.generate_path_helpers_output_defined?
         # Configure to use a custom templates directory
         use_templates! File.join __dir__, "../../../templates/default"
 
