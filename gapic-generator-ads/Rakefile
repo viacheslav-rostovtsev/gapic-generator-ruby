@@ -45,6 +45,9 @@ namespace :gen do
   task :templates do
     generate_ads_templates :googleads
   end
+  task :ads_full do
+    generate_ads_templates :ads_full
+  end
 end
 
 desc "Start an interactive shell."
@@ -79,6 +82,7 @@ namespace :image do
 end
 
 def generate_ads_templates service
+  ENV["VERBOSE"] = "True"
   require "fileutils"
   require "gapic/generators/ads_generator"
 

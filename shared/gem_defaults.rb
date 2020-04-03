@@ -101,11 +101,13 @@ def gem_defaults
         "google/ads/googleads/v1/services/campaign_service.proto"
       ]
     },
+    ads_full: {
+      protos: Dir.glob([
+        "../shared/googleapis/google/ads/googleads/v3/**/*.proto",
+      ])
+    },
     grpc_service_config: {
       protos: [
-        "testing/grpc_service_config/grpc_service_config.proto"
-      ],
-      grpc_service_config: [
         "../shared/protos/testing/grpc_service_config/grpc_service_config.json",
         "../shared/protos/testing/grpc_service_config/grpc_service_config2.json"
       ]
