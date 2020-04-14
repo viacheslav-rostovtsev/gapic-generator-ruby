@@ -46,6 +46,15 @@ module Gapic
 
         gem = Gapic::Presenters.gem_presenter @api
 
+        STDERR.puts "==============================================="
+        STDERR.puts debugging is supposed to start
+        STDERR.puts "==============================================="
+
+        require 'pry'
+        binding.pry
+        
+        abort
+
         gem.packages.each do |package|
           # Package level files
           files << g("package.erb", "lib/#{package.package_file_path}", package: package)
