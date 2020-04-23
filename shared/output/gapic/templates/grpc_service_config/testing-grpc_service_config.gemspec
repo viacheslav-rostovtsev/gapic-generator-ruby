@@ -24,6 +24,8 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = ">= 2.4"
 
   gem.add_dependency "gapic-common", "~> 0.2"
+  gem.add_development_dependency "pry", "~> 0.12.2"
+  gem.add_development_dependency "pry-byebug", "~> 3.8.0"
 
   gem.add_development_dependency "google-style", "~> 1.24.0"
   gem.add_development_dependency "minitest", "~> 5.10"

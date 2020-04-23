@@ -54,6 +54,36 @@ class Testing::GrpcServiceConfig::ServiceNoRetry::ClientTest < Minitest::Test
     end
   end
 
+  FakeCredentials = Class.new Google::Auth::Credentials do
+    def initialize
+    end
+
+    def updater_proc
+      ->{}
+    end
+  end
+
+  FakeInterceptor = Class.new GRPC::ClientInterceptor do 
+    def initialize
+    end
+  end
+
+  def test_interceptors
+    request_id_interceptor = FakeInterceptor.new
+    credentials = FakeCredentials.new
+
+    ::Testing::GrpcServiceConfig::ServiceNoRetry::Client.configure do |conf|
+      conf.interceptors = [request_id_interceptor]
+      conf.credentials = credentials
+    end
+
+    cli = ::Testing::GrpcServiceConfig::ServiceNoRetry::Client.new
+    assert_kind_of(::Testing::GrpcServiceConfig::ServiceNoRetry::Client, cli)
+
+    require 'pry'
+    binding.pry
+  end
+
   def test_no_retry_method
     # Create GRPC objects.
     grpc_response = Testing::GrpcServiceConfig::Response.new
