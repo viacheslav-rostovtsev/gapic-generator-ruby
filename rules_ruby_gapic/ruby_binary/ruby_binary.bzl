@@ -27,9 +27,16 @@ def _ruby_binary_impl(ctx):
   run_result_file_path = "{name}".format(name = ctx.label.name)
   run_result_file = ctx.actions.declare_file(run_result_file_path)
 
+  run_log_file_path = "{name}.log".format(name = ctx.label.name)
+  run_log_file = ctx.actions.declare_file(run_log_file_path)
+  run_log_text = ""
+
   # entrypoint for our Ruby application
   entrypoint_dir = ctx.file.entrypoint.dirname
   entrypoint_path = ctx.file.entrypoint.path
+
+  run_log_text += "\nentrypoint_dir={entrypoint_dir}".format(entrypoint_dir = entrypoint_dir)
+  run_log_text += "\nentrypoint_path={entrypoint_path}".format(entrypoint_path = entrypoint_path)
 
   # Grabbing the RubyContext and extracting the binary from it
   ruby_context = ctx.attr.ruby_context[RubyContext]
@@ -37,6 +44,9 @@ def _ruby_binary_impl(ctx):
   ruby_bin_path = ruby_bin.path
   ruby_bin_dirpath = ruby_bin.dirname
   ruby_all_bins = ruby_context.all_bins
+
+  run_log_text += "\nruby_bin_path={ruby_bin_path}".format(ruby_bin_path = ruby_bin_path)
+  run_log_text += "\nruby_bin_dirpath={ruby_bin_dirpath}".format(ruby_bin_dirpath = ruby_bin_dirpath)
 
   # Same dependency also contains the Ruby StandardLibrary info packaged as RubyLibraryInfo
   ruby_standard_lib = ctx.attr.ruby_context[RubyLibraryInfo]
@@ -58,18 +68,58 @@ def _ruby_binary_impl(ctx):
 
   import_paths_string = "-I " + " -I ".join(deps_strings)
 
+  run_log_text += "\nimport_paths_string={import_paths_string}".format(import_paths_string = import_paths_string) 
+
   # 2. all the library files join the program sources in the set of inputs
   all_inputs = ctx.files.srcs[:]
   all_inputs.append(ctx.file.entrypoint)
   for dep in deps_set.to_list():
     all_inputs = all_inputs + dep.srcs  
 
+  # bundler
+  bundler_bin_path = ruby_bin_dirpath + "/bundler"
+  run_log_text += "\nbundler_bin_path={bundler_bin_path}".format(bundler_bin_path = bundler_bin_path)
+
+  # gemfile
+  gemfile_path = ctx.file.gemfile.path
+  gemfile_tmp_file = ctx.actions.declare_file("Gemfile")
+  gemfile_tmp_path = gemfile_tmp_file.path
+
+  run_log_text += "\ngemfile_path={gemfile_path}".format(gemfile_path = gemfile_path)
+  run_log_text += "\ngemfile_tmp_path={gemfile_tmp_path}".format(gemfile_tmp_path = gemfile_tmp_path)
+
+  ctx.actions.run_shell(
+    inputs = [ctx.file.gemfile],
+    command="cp {gemfile} {gemfile_tmp}".format(gemfile = gemfile_path, gemfile_tmp = gemfile_tmp_path), 
+    outputs=[gemfile_tmp_file])
+
+  # gemspec
+  gemspec_path = ctx.file.gemspec.path
+  gemspec_tmp_file = ctx.actions.declare_file("gapic-generator.gemspec")
+  gemspec_tmp_path = gemspec_tmp_file.path
+
+  run_log_text += "\ngemspec_path={gemspec_path}".format(gemspec_path = gemspec_path)
+  run_log_text += "\ngemspec_tmp_path={gemspec_tmp_path}".format(gemspec_tmp_path = gemspec_tmp_path)
+
+  ctx.actions.run_shell(
+    inputs = [ctx.file.gemspec],
+    command="cp {gemspec} {gemspec_tmp}".format(gemspec = gemspec_path, gemspec_tmp = gemspec_tmp_path), 
+    outputs=[gemspec_tmp_file])
+
+  # bundler gemfile export
+  bundler_export = "export HOME=/tmp/{newline}export BUNDLE_GEMFILE={gemfile_tmp_path}{newline}export BUNDLE_GEMFILE_LOCKFILE=/tmp/foo.lock".format(newline = "\n", gemfile_tmp_path = gemfile_tmp_path)
+  run_log_text += "\nbundler_export={bundler_export}".format(bundler_export = bundler_export)
+
   # the actual command: a ruby binary invocation of the entrypoint file with the correct imports
-  cmd_text = """{ruby_bin} -W0 -I {src_dir} {imports} {entrypoint}""".format(
+  cmd_text = """{bundler} exec {ruby} -W0 -I {src_dir} {imports} {entrypoint}""".format(
+    bundler = bundler_bin_path,
+    ruby = ruby_bin_path,
     src_dir = src_base_path,
-    ruby_bin = ruby_bin_path, 
-    imports = import_paths_string, 
+    imports = import_paths_string,
     entrypoint = entrypoint_path)
+
+  run_log_text += "\ncmd_text={cmd_text}".format(cmd_text = cmd_text)
+  ctx.actions.write(run_log_file, run_log_text)
 
   # the command text is prepended by some gapic-generator-ruby requirements:
   # * a path to a folder with the ruby binaries so that gapic-generator-ruby can systemcall rubocop
@@ -78,8 +128,9 @@ def _ruby_binary_impl(ctx):
   #
   # then the actual command follows 
   #
-  exec_text = "#!/bin/bash{newline}export PATH=$PATH:{ruby_bin_dirpath}{newline}export XDG_CACHE_HOME=/tmp{newline}export LANG=en_US.UTF-8{newline}export LANGUAGE=en_US:en{newline}{cmd_text}{newline}".format(
+  exec_text = "#!/bin/bash{newline}export PATH=$PATH:{ruby_bin_dirpath}{newline}export XDG_CACHE_HOME=/tmp{newline}export LANG=en_US.UTF-8{newline}export LANGUAGE=en_US:en{newline}{bundler_export}{newline}{cmd_text}{newline}".format(
     newline = "\n",
+    bundler_export = bundler_export,
     cmd_text = cmd_text,
     ruby_bin_dirpath = ruby_bin_dirpath,
   )
@@ -90,11 +141,14 @@ def _ruby_binary_impl(ctx):
   # collect everything that can be useful in a result
   direct = ctx.files.srcs[:]
   direct.append(run_result_file)
+  direct.append(run_log_file)
+  direct.append(gemfile_tmp_file)
+  direct.append(gemspec_tmp_file)
   direct.append(ruby_bin)
   direct = direct + ruby_all_bins
 
   # Everything goes into the runfiles since that's how bazel knows to simlink the files around the shellscript file
-  runfiles = ctx.runfiles(files=[run_result_file, ruby_bin] + ctx.files.srcs)
+  runfiles = ctx.runfiles(files=[run_result_file, gemfile_tmp_file, gemspec_tmp_file, ruby_bin] + ruby_all_bins + ctx.files.srcs)
 
   return [DefaultInfo(
     files = depset(direct=direct),
@@ -112,6 +166,8 @@ ruby_binary = rule(
     "srcs": attr.label_list(allow_files = True),
     "src_base": attr.label(allow_single_file=True),
     "ruby_context": attr.label(default = Label("//rules_ruby_gapic/ruby:ruby_context")),
+    "gemfile": attr.label(allow_single_file = True),
+    "gemspec": attr.label(allow_single_file = True),
     "entrypoint": attr.label( allow_single_file = True),
     "deps": attr.label_list(
       providers = [RubyLibraryInfo],

@@ -66,7 +66,7 @@ ruby_gapic_library(
 # * gapic-generator-ruby vanilla flavor output
 #
 ruby_gapic_assembly_pkg(
-  name = "example_ruby_library",
+  name = "example_ruby_library_pkg",
   deps = [
     ":example_ruby_gapic",
     ":example_ruby_proto",

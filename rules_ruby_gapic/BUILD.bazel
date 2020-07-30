@@ -25,6 +25,8 @@ load ("//rules_ruby_gapic:ruby_binary/ruby_binary.bzl", "ruby_binary")
 ruby_binary (
   name = "gapic_generator_ruby",
   entrypoint = "@gapic_generator_src//:gen_src/gapic-generator/bin/protoc-gen-ruby_gapic",
+  gemfile = "@gapic_generator_src//:gen_src/gapic-generator/Gemfile",
+  gemspec = "@gapic_generator_src//:gen_src/gapic-generator/gapic-generator.gemspec",
   srcs = ["@gapic_generator_src//:gen_src"],
   src_base = "@gapic_generator_src//:gen_src",
   visibility = ["//visibility:public"],
@@ -37,6 +39,8 @@ ruby_binary (
 ruby_binary (
   name = "gapic_generator_ads",
   entrypoint = "@gapic_generator_src//:gen_src/gapic-generator-ads/bin/protoc-gen-bazel_ruby_ads",
+  gemfile = "@gapic_generator_src//:gen_src/gapic-generator-ads/Gemfile",
+  gemspec = "@gapic_generator_src//:gen_src/gapic-generator-ads/gapic-generator-ads.gemspec",
   srcs = ["@gapic_generator_src//:gen_src"],
   src_base = "@gapic_generator_src//:gen_src",
   visibility = ["//visibility:public"],
@@ -49,6 +53,8 @@ ruby_binary (
 ruby_binary (
   name = "gapic_generator_cloud",
   entrypoint = "@gapic_generator_src//:gen_src/gapic-generator-cloud/bin/protoc-gen-bazel_ruby_cloud",
+  gemfile = "@gapic_generator_src//:gen_src/gapic-generator-cloud/Gemfile",
+  gemspec = "@gapic_generator_src//:gen_src/gapic-generator-cloud/gapic-generator-cloud.gemspec",
   srcs = ["@gapic_generator_src//:gen_src"],
   src_base = "@gapic_generator_src//:gen_src",
   visibility = ["//visibility:public"],

@@ -22,9 +22,8 @@ and then strips it from the softlinks so that bazel accepts it
 #
 def _gapic_generator_src_impl(ctx):
   ctx.download_and_extract(
-    url = "https://github.com/googleapis/gapic-generator-ruby/archive/gapic-generator/v0.6.4.zip",
-    stripPrefix = "gapic-generator-ruby-gapic-generator-v0.6.4",
-    sha256 = "a17f8a46f41cdadc33c9d732aa36a22b81b4488142570ca308ba7893e6f2ee0d",
+    url = "https://github.com/googleapis/gapic-generator-ruby/archive/4e9d65390e2ac45292a971df329466d554679c69.zip",
+    stripPrefix = "gapic-generator-ruby-4e9d65390e2ac45292a971df329466d554679c69",
     output = "gen_src",
   )
   ctx.file(
