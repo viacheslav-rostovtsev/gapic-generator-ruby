@@ -1,0 +1,8 @@
+<%- assert_locals package -%>
+<%- package.services.each do |service| -%>
+  <%- service.methods.each do |method| -%>
+    <%- method.rest.query_string_params.each do |qsp| -%>
+<%= service.name %>|<%= method.name %>|<%= qsp.name %>|<%= qsp.required? %>|<%= qsp.type_name %>|<%= qsp.doc_description_contains_default %>|<%= qsp.doc_description_delined %>
+    <% end %>
+  <% end %>
+<% end %>
