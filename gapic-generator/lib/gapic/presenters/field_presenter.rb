@@ -52,6 +52,14 @@ module Gapic
         @field.docs_leading_comments
       end
 
+      def doc_description_contains_default
+        doc_description.include? "default"
+      end
+
+      def doc_description_delined
+        doc_description.gsub(/\n\s+/, " ")
+      end
+
       def default_value
         single = default_singular_value
         return "[#{single}]" if @field.repeated? && !@field.map?
@@ -64,7 +72,20 @@ module Gapic
 
       # TODO: remove, only used in tests
       def type_name
-        @field.type_name
+        if @field.message?
+          "message"
+        elsif @field.enum?
+         "enum"
+        else
+          case @field.type
+          when 1, 2                              then "real"
+          when 3, 4, 5, 6, 7, 13, 15, 16, 17, 18 then "integer"
+          when 9, 12                             then "string"
+          when 8                                 then "boolean"
+          else
+            @field.type_name || "::Object"
+          end
+        end
       end
 
       def type_name_full
@@ -86,6 +107,10 @@ module Gapic
 
       def repeated?
         @field.repeated?
+      end
+
+      def required?
+        @field.required?
       end
 
       def map?
