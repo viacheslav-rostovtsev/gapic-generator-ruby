@@ -33,6 +33,9 @@ class ShowcaseTestingServiceTest < PresenterTest
   end
 
   def test_references
+    require 'pry'
+    binding.pry
+
     refute_empty presenter.references
     presenter.references.each { |ref| assert_kind_of Gapic::Presenters::ResourcePresenter, ref }
     assert_equal ["Session", "Test"], presenter.references.map(&:name)

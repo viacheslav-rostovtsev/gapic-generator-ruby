@@ -253,12 +253,12 @@ module Gapic
       #   (e.g. "foo.googleapis.com"). This should be specified with no
       #   prefix.
       def host
-        options[:".google.api.default_host"] if options
+        options[".google.api.default_host"] if options
       end
 
       # @return [Array<String>] The OAuth scopes information for the client.
       def scopes
-        String(options[:".google.api.oauth_scopes"]).split "," if options
+        String(options[".google.api.oauth_scopes"]).split "," if options
       end
 
       # @return [String] Ruby Package
@@ -321,7 +321,7 @@ module Gapic
       def signatures
         return [] if options.nil?
 
-        Array(options[:".google.api.method_signature"]).map do |sig|
+        Array(options[".google.api.method_signature"]).map do |sig|
           String(sig).split ","
         end
       end
@@ -333,13 +333,13 @@ module Gapic
       #   Required for methods that return `google.longrunning.Operation`;
       #   invalid otherwise.
       def operation_info
-        options[:".google.longrunning.operation_info"] if options
+        options[".google.longrunning.operation_info"] if options
       end
 
       # @return [Google::Api::HttpRule] The HTTP bindings for this method. See
       #   `google/api/http.proto`.
       def http
-        options[:".google.api.http"] if options
+        options[".google.api.http"] if options
       end
 
       # @!method name
@@ -429,7 +429,7 @@ module Gapic
 
       # @return [String] Ruby Package
       def ruby_package
-        options[:ruby_package] if options
+        options["ruby_package"] if options
       end
 
       # @!method name
@@ -644,14 +644,14 @@ module Gapic
       # @return [String] A reference to another resource message or resource
       #   definition. See `google/api/resource.proto`.
       def resource_reference
-        options[:".google.api.resource_reference"] if options
+        options[".google.api.resource_reference"] if options
       end
 
       # @return [Array<Google::Api::FieldBehavior>] A designation of a
       #   specific field behavior (required, output only, etc.) in protobuf
       #   messages.
       def field_behavior
-        return options[:".google.api.field_behavior"] if options
+        return options[".google.api.field_behavior"] if options
 
         []
       end

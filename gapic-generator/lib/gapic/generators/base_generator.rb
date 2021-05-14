@@ -16,7 +16,7 @@
 
 require "gapic/file_formatter"
 require "action_controller"
-require "google/protobuf/compiler/plugin.pb"
+require "google/protobuf/compiler/plugin_pb"
 require "tempfile"
 
 module Gapic

@@ -41,7 +41,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.5"
 
   spec.add_dependency "actionpack", "~> 5.2"
-  spec.add_dependency "protobuf", "~> 3.8"
+  spec.add_dependency "google-protobuf", "~> 3.15", ">= 3.15.2"
 
   spec.add_development_dependency "google-style", "~> 1.25.1"
   spec.add_development_dependency "grpc-tools", "~> 1.36.0"
@@ -51,4 +51,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 12.0"
   spec.add_development_dependency "redcarpet", "~> 3.0"
   spec.add_development_dependency "yard", "~> 0.9"
+
+  spec.add_development_dependency "pry", "~> 0.12.2"
+  spec.add_development_dependency "pry-byebug", "~> 3.8.0"
 end

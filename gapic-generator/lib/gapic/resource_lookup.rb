@@ -27,6 +27,10 @@ module Gapic
     # @private
     def lookup!
       resources = []
+      
+      require 'pry'
+      binding.pry
+
       @service.methods.each do |method|
         resources.concat resources_for_message(method.input)
         resources.concat resources_for_message(method.output) if @api.generate_path_helpers_output?
@@ -36,6 +40,9 @@ module Gapic
 
     # @private
     def resources_for_message message, seen_messages = []
+      require 'pry'
+      binding.pry
+
       resources = []
       return resources if seen_messages.include? message
       seen_messages << message

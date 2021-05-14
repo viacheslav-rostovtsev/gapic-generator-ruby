@@ -22,9 +22,11 @@ require "gapic/generator"
 require "gapic/path_pattern"
 require "gapic/presenters"
 require "gapic/resource_lookup"
+require "google/protobuf/compiler/plugin_pb"
 require "action_controller"
 require "action_view"
 require "ostruct"
+
 
 require "minitest/autorun"
 require "minitest/focus"

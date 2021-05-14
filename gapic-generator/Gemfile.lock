@@ -3,7 +3,7 @@ PATH
   specs:
     gapic-generator (0.7.4)
       actionpack (~> 5.2)
-      protobuf (~> 3.8)
+      google-protobuf (~> 3.15, >= 3.15.2)
 
 GEM
   remote: https://rubygems.org/
@@ -28,9 +28,13 @@ GEM
       tzinfo (~> 1.1)
     ast (2.4.2)
     builder (3.2.4)
+    byebug (11.1.3)
+    coderay (1.1.3)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     erubi (1.10.0)
+    google-protobuf (3.17.0)
+    google-protobuf (3.17.0-x86_64-linux)
     google-style (1.25.1)
       rubocop (~> 1.9)
     grpc-tools (1.36.0)
@@ -39,7 +43,7 @@ GEM
     loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    middleware (0.1.0)
+    method_source (0.9.2)
     mini_portile2 (2.5.1)
     minitest (5.14.4)
     minitest-autotest (1.1.1)
@@ -58,11 +62,12 @@ GEM
     parser (3.0.1.1)
       ast (~> 2.4.1)
     path_expander (1.1.0)
-    protobuf (3.10.3)
-      activesupport (>= 3.2)
-      middleware
-      thor
-      thread_safe
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-byebug (3.8.0)
+      byebug (~> 11.0)
+      pry (~> 0.10)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -89,7 +94,6 @@ GEM
     rubocop-ast (1.5.0)
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
-    thor (1.1.0)
     thread_safe (0.3.6)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
@@ -107,6 +111,8 @@ DEPENDENCIES
   minitest (~> 5.0)
   minitest-autotest (~> 1.0)
   minitest-focus (~> 1.0)
+  pry (~> 0.12.2)
+  pry-byebug (~> 3.8.0)
   rake (>= 12.0)
   redcarpet (~> 3.0)
   yard (~> 0.9)

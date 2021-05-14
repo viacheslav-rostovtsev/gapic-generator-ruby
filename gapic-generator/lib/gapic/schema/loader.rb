@@ -14,12 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "google/api/annotations.pb"
-require "google/api/client.pb"
-require "google/api/field_behavior.pb"
-require "google/api/resource.pb"
-require "google/longrunning/operations.pb"
-require "google/protobuf/descriptor.pb"
+require "google/api/annotations_pb"
+require "google/api/client_pb"
+require "google/api/field_behavior_pb"
+require "google/api/resource_pb"
+require "google/longrunning/operations_pb"
+require "google/protobuf/descriptor_pb"
 require "gapic/schema/wrappers"
 
 module Gapic
@@ -55,7 +55,7 @@ module Gapic
 
         # Load top-level messages.
         messages = file_descriptor.message_type.each_with_index.map do |m, i|
-          load_message registry, m, address, docs, [4, i]
+          load_message registry, m, address, docs, [4, i], file_descriptor
         end
         messages.each(&method(:update_fields!))
 
@@ -65,7 +65,7 @@ module Gapic
         end
 
         # Load top-level resources
-        resource_descriptors = file_descriptor.options[:".google.api.resource_definition"] if file_descriptor.options
+        resource_descriptors = file_descriptor.options[".google.api.resource_definition"] if file_descriptor.options
         resources = Array(resource_descriptors).map { |descriptor| Resource.new descriptor }
 
         # Construct and return the file.
@@ -144,13 +144,13 @@ module Gapic
       # @param path [Enumerable<Integer>] The current path. This is used to
       #   get the docs for a proto. See Proto#docs for more info.
       # @return [Message] The loaded message.
-      def load_message registry, descriptor, address, docs, path
+      def load_message registry, descriptor, address, docs, path, file_descriptor
         # Update Address.
         address = address.clone << descriptor.name
 
         # Load Children
         nested_messages = descriptor.nested_type.each_with_index.map do |m, i|
-          load_message registry, m, address, docs, path + [3, i]
+          load_message registry, m, address, docs, path + [3, i], file_descriptor
         end
         nested_enums = descriptor.enum_type.each_with_index.map do |e, i|
           load_enum registry, e, address, docs, path + [4, i]
@@ -162,7 +162,12 @@ module Gapic
           load_field registry, e, address, docs, path + [6, i]
         end
 
-        resource_descriptor = descriptor.options[:".google.api.resource"] if descriptor.options
+        if descriptor.name == "CreateSessionRequest"
+          require 'pry'
+          binding.pry
+        end
+
+        resource_descriptor = descriptor.options[".google.api.resource"] if descriptor.options
         resource = resource_descriptor ? Resource.new(resource_descriptor) : nil
 
         # Construct, cache, and return.
@@ -208,8 +213,10 @@ module Gapic
         # Update the address.
         address = address.clone << descriptor.name
 
+        desc_methods = descriptor.method_missing :method
+
         # Load children
-        methods = descriptor.method.each_with_index.map do |m, i|
+        methods = desc_methods.each_with_index.map do |m, i|
           load_method registry, m, address, docs, path + [2, i]
         end
 
