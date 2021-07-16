@@ -28,7 +28,7 @@ module Google
       ##
       # To load this package, including all its services, and instantiate a REST client:
       #
-      #     require "google/cloud/compute/v1"
+      #     require "google/cloud/compute/v1/rest"
       #     client = ::Google::Cloud::Compute::V1::Addresses::Rest::Client.new
       #
       module V1
@@ -37,5 +37,5 @@ module Google
   end
 end
 
-helper_path = ::File.join __dir__, "v1", "_helpers.rb"
-require "google/cloud/compute/v1/_helpers" if ::File.file? helper_path
+helper_path = ::File.join __dir__, "rest", "_helpers.rb"
+require "google/cloud/compute/v1/rest/_helpers" if ::File.file? helper_path

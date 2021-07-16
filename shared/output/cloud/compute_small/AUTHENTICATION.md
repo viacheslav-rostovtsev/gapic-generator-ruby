@@ -25,7 +25,7 @@ export COMPUTE_CREDENTIALS=path/to/keyfile.json
 3. Initialize the client.
 
 ```ruby
-require "google/cloud/compute/v1"
+require "google/cloud/compute/v1/rest"
 
 client = ::Google::Cloud::Compute::V1::Addresses::Client.new
 ```
@@ -73,7 +73,7 @@ checks for credentials are configured on the service Credentials class (such as
 5. `GOOGLE_APPLICATION_CREDENTIALS` - Path to JSON file
 
 ```ruby
-require "google/cloud/compute/v1"
+require "google/cloud/compute/v1/rest"
 
 ENV["COMPUTE_CREDENTIALS"] = "path/to/keyfile.json"
 
@@ -86,7 +86,7 @@ The **Credentials JSON** can be configured instead of placing them in
 environment variables. Either on an individual client initialization:
 
 ```ruby
-require "google/cloud/compute/v1"
+require "google/cloud/compute/v1/rest"
 
 client = ::Google::Cloud::Compute::V1::Addresses::Client.new do |config|
   config.credentials = "path/to/keyfile.json"
@@ -96,7 +96,7 @@ end
 Or configured globally for all clients:
 
 ```ruby
-require "google/cloud/compute/v1"
+require "google/cloud/compute/v1/rest"
 
 ::Google::Cloud::Compute::V1::Addresses::Client.configure do |config|
   config.credentials = "path/to/keyfile.json"

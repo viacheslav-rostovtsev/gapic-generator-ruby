@@ -43,8 +43,16 @@ module Gapic
 
       def namespace
         return services.first&.namespace if services.first&.namespace
+        
         ruby_namespace_for_address address
       end
+
+      def namespace_rest
+        return services.first&.rest&.namespace if services.first&.rest&.namespace
+        
+        ruby_namespace_for_address address
+      end
+
 
       def parent_namespace
         namespace.split("::")[0...-1].join("::")
@@ -76,7 +84,11 @@ module Gapic
       end
 
       def package_require
-        ruby_file_path @api, namespace
+        if @api.generate_grpc_clients?
+          ruby_file_path @api, namespace
+        else
+          ruby_file_path @api, namespace_rest
+        end
       end
 
       def package_file_path

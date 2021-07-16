@@ -23,7 +23,7 @@ In order to use this library, you first need to go through the following steps:
 ## Quick Start
 
 ```ruby
-require "google/cloud/compute/v1"
+require "google/cloud/compute/v1/rest"
 
 client = ::Google::Cloud::Compute::V1::Addresses::Client.new
 request = my_create_request

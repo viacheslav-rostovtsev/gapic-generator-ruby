@@ -36,6 +36,10 @@ module Gapic
         @api = api
       end
 
+      def namespace
+        "#{main_service.namespace}::Rest"
+      end
+
       ##
       # @return [String]
       #
