@@ -301,6 +301,9 @@ module Gapic
       attr_reader :input
       attr_reader :output
 
+      # @return [Gapic::Schema::Routing]
+      attr_accessor :routing
+
       # Initializes a method object.
       # @param descriptor [Google::Protobuf::MethodDescriptorProto] the
       #   protobuf representation of this service.
@@ -360,6 +363,18 @@ module Gapic
         :client_streaming,
         :server_streaming
       )
+    end
+
+    class Routing
+      # @return [Array<Gapic::Schema::HeaderParameter>]
+      attr_accessor :routing_parameters
+    end
+
+    class HeaderParameter
+      # @return [String]
+      attr_accessor :field
+      # @return [String]
+      attr_accessor :path_template
     end
 
     # Wrapper for a protobuf file.

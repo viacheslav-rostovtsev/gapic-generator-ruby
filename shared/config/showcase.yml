@@ -4,3 +4,10 @@
   :name: google-showcase
 :generate_metadata: true
 :generate_standalone_snippets: true
+:routing:
+  - name: ListBlurbs
+    params:
+      - field: parent
+        path_template: "rooms/{room=*}"
+      - field: page_token
+        path_template: "*"

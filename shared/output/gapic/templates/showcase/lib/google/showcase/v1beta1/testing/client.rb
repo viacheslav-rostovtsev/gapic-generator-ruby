@@ -255,10 +255,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "name" => request.name
-            }
+            header_params = get_session_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -272,6 +269,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def get_session_routing_params
+            params = {}
+            params["name"] = request.name
+
+            params
           end
 
           ##
@@ -381,10 +385,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "name" => request.name
-            }
+            header_params = delete_session_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -398,6 +399,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def delete_session_routing_params
+            params = {}
+            params["name"] = request.name
+
+            params
           end
 
           ##
@@ -447,10 +455,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "name" => request.name
-            }
+            header_params = report_session_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -464,6 +469,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def report_session_routing_params
+            params = {}
+            params["name"] = request.name
+
+            params
           end
 
           ##
@@ -515,10 +527,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "parent" => request.parent
-            }
+            header_params = list_tests_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -533,6 +542,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def list_tests_routing_params
+            params = {}
+            params["parent"] = request.parent
+
+            params
           end
 
           ##
@@ -585,10 +601,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "name" => request.name
-            }
+            header_params = delete_test_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -602,6 +615,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def delete_test_routing_params
+            params = {}
+            params["name"] = request.name
+
+            params
           end
 
           ##
@@ -656,10 +676,7 @@ module Google
               lib_name: @config.lib_name, lib_version: @config.lib_version,
               gapic_version: ::Google::Showcase::VERSION
             metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
-
-            header_params = {
-              "name" => request.name
-            }
+            header_params = verify_test_routing_params
             request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
             metadata[:"x-goog-request-params"] ||= request_params_header
 
@@ -673,6 +690,13 @@ module Google
               yield response, operation if block_given?
               return response
             end
+          end
+
+          def verify_test_routing_params
+            params = {}
+            params["name"] = request.name
+
+            params
           end
 
           ##

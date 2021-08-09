@@ -19,7 +19,24 @@ require "gapic/generators/default_generator"
 
 class DefaultGeneratorShowcaseTest < GeneratorTest
   def test_showcase_generate
-    generator = Gapic::Generators::DefaultGenerator.new api(:showcase)
+    showcase_api = api(:showcase)
+
+    service = showcase_api.services.find { |s| s.name == "Messaging" }
+    refute_nil service
+    method = service.methods.find { |s| s.name == "ListBlurbs" }
+    refute_nil method
+
+    gem_presenter = Gapic::Presenters::GemPresenter.new showcase_api
+    service_presenter = Gapic::Presenters::ServicePresenter.new gem_presenter, showcase_api, service
+    presenter = Gapic::Presenters::MethodPresenter.new service_presenter, showcase_api, method
+
+    require 'pry'
+    binding.pry
+
+    routing = presenter.routing_params
+    refute_nil routing
+
+    generator = Gapic::Generators::DefaultGenerator.new showcase_api
     generator.generate.each do |file|
       assert_equal expected_content(:showcase, file.name), file.content
     end

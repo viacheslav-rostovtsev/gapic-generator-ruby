@@ -325,6 +325,12 @@ module Gapic
         configuration[:overrides][:wrapper_gem_name]
       end
 
+      ##
+      # @return [Hash, Nil]
+      def routing_config
+        configuration[:routing]
+      end
+
       private
 
       # Perform a variety of sanity checks on the data, and prints errors to
