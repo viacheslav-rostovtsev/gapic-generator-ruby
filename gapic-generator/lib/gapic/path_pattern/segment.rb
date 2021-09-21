@@ -97,6 +97,12 @@ module Gapic
         pattern
       end
 
+      # @return [String]
+      def to_regex_str
+        pattern.sub("**", "(.+)")
+                    .sub("*", "([^/]+)")
+      end
+
       # @private
       def == other
         return false unless other.is_a? self.class
@@ -202,6 +208,17 @@ module Gapic
         ResourceIdSegment.new :simple_resource_id, "{#{name}}", [name]
       end
 
+      # @return [String]
+      def to_regex_str
+        "(?<#{resource_names[0]}>#{to_regex_pattern(resource_patterns[0])})"
+      end
+
+      def to_regex_pattern pattern
+        pattern.sub("**", "(.+)")
+               .sub("*", "([^/]+)")
+               .sub("/", "\\/")
+      end
+
       # @private
       def == other
         return false unless other.is_a? self.class
@@ -269,6 +286,11 @@ module Gapic
       # A pattern template for this segment
       # @return [String]
       def pattern_template
+        pattern
+      end
+
+      # @return [String]
+      def to_regex_str
         pattern
       end
 

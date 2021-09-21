@@ -38,6 +38,26 @@ module Gapic
       end
 
       ##
+      # Whether this is a basic single-star ("*") pattern
+      # @return [Boolean]
+      def star_pattern?
+        @segments.length == 1 && @segments[0].pattern == "*"
+      end
+
+      ##
+      # Whether this is a basic double-star ("**") pattern
+      # @return [Boolean]
+      def double_star_pattern?
+        @segments.length == 1 && @segments[0].pattern == "**"
+      end
+
+      # @return [String]
+      def to_regex_str
+        return "(.*)" if star_pattern? || double_star_pattern?
+        segments.map(&:to_regex_str).join "\\/"
+      end
+
+      ##
       # All argument names from this pattern
       # @return [Array<String>]
       def arguments

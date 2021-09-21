@@ -1,0 +1,14 @@
+<%- assert_locals method -%>
+def <%= method.name %>_routing_params request
+  params = { }
+  <%- method.routing_params.each_with_index do |routing_param, index| -%>
+    <%- if routing_param[1] == "*" || routing_param[1].star_pattern? -%>
+    params["<%= routing_param[0] %>"] = request.<%= routing_param[0] %>
+    <%- else -%>
+    matches = /<%= routing_param[1].to_regex_str %>/.match request.<%= routing_param[0] %>
+    params["<%= routing_param[0] %>"] = matches[0] if matches.any?
+    <%- end -%>
+  <%- end -%>
+
+  params
+end

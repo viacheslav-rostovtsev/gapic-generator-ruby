@@ -17,45 +17,55 @@
 require "test_helper"
 
 class MethodPresenterRoutingParamsTest < PresenterTest
-  def test_showcase_CreateRoom
-    presenter = method_presenter :showcase, "Messaging", "CreateRoom"
+  # def test_showcase_CreateRoom
+  #   presenter = method_presenter :showcase, "Messaging", "CreateRoom"
+  #
+  #   refute presenter.routing_params?
+  #   assert_equal [], presenter.routing_params
+  # end
+  #
+  # def test_showcase_GetRoom
+  #   presenter = method_presenter :showcase, "Messaging", "GetRoom"
+  #
+  #   assert presenter.routing_params?
+  #   assert_equal ["name"], presenter.routing_params
+  # end
+  #
+  # def test_showcase_UpdateRoom
+  #   presenter = method_presenter :showcase, "Messaging", "UpdateRoom"
+  #
+  #   assert presenter.routing_params?
+  #   assert_equal ["room.name"], presenter.routing_params
+  # end
+  #
+  # def test_showcase_DeleteRoom
+  #   presenter = method_presenter :showcase, "Messaging", "DeleteRoom"
+  #
+  #   assert presenter.routing_params?
+  #   assert_equal ["name"], presenter.routing_params
+  # end
+  #
+  # def test_showcase_ListRooms
+  #   presenter = method_presenter :showcase, "Messaging", "ListRooms"
+  #
+  #   refute presenter.routing_params?
+  #   assert_equal [], presenter.routing_params
+  # end
+  #
+  # def test_showcase_CreateBlurb
+  #   presenter = method_presenter :showcase, "Messaging", "CreateBlurb"
+  #
+  #   assert presenter.routing_params?
+  #   assert_equal ["parent"], presenter.routing_params
+  # end
 
-    refute presenter.routing_params?
-    assert_equal [], presenter.routing_params
-  end
+  def test_showcase_ListBlurbs
+    presenter = method_presenter :showcase, "Messaging", "ListBlurbs"
 
-  def test_showcase_GetRoom
-    presenter = method_presenter :showcase, "Messaging", "GetRoom"
+    refute_nil presenter.routing_header_section
 
     assert presenter.routing_params?
-    assert_equal ["name"], presenter.routing_params
+    assert_equal ["parent", "page_token"], presenter.routing_params
   end
 
-  def test_showcase_UpdateRoom
-    presenter = method_presenter :showcase, "Messaging", "UpdateRoom"
-
-    assert presenter.routing_params?
-    assert_equal ["room.name"], presenter.routing_params
-  end
-
-  def test_showcase_DeleteRoom
-    presenter = method_presenter :showcase, "Messaging", "DeleteRoom"
-
-    assert presenter.routing_params?
-    assert_equal ["name"], presenter.routing_params
-  end
-
-  def test_showcase_ListRooms
-    presenter = method_presenter :showcase, "Messaging", "ListRooms"
-
-    refute presenter.routing_params?
-    assert_equal [], presenter.routing_params
-  end
-
-  def test_showcase_CreateBlurb
-    presenter = method_presenter :showcase, "Messaging", "CreateBlurb"
-
-    assert presenter.routing_params?
-    assert_equal ["parent"], presenter.routing_params
-  end
 end

@@ -40,7 +40,28 @@ module Gapic
         @service_presenter = service_presenter
         @api = api
         @method = method
+
         @rest = MethodRestPresenter.new self
+      end
+
+      # @return [Gapic::Schema::Routing]
+      def routing_header_section
+        routing_config = @api.routing_config
+        return unless routing_config
+
+        routing_config.find { |section| section["name"] == grpc_method_name }
+      end
+
+      # @return [Array<Gapic::Schema::HeaderParameter>]
+      def routing_header_params
+        return [] unless routing_header_section
+        return [] unless routing_header_section["params"].is_a? Array
+        routing_header_section["params"].map do |param|
+          header_param = Gapic::Schema::HeaderParameter.new
+          header_param.field = param["field"]
+          header_param.path_template = param["path_template"]
+          header_param
+        end
       end
 
       ##
@@ -212,17 +233,21 @@ module Gapic
       end
 
       ##
-      # @return [Array<String>] The segment key names.
+      # @return [Array<String, Gapic::PathPattern::Pattern>] The segment key names.
       #
       def routing_params
-        rest.routing_params
+        if routing_header_section.nil?
+            rest.routing_params.map { |param| [param, "*"] }
+        else
+            routing_header_params.map { |param| [param.field, PathPattern.parse(param.path_template)] }
+        end
       end
 
       ##
       # @return [Boolean] Whether any routing params are present
       #
       def routing_params?
-        rest.routing_params?
+        routing_params.any?
       end
 
       def grpc_service_config
