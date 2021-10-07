@@ -1,0 +1,30 @@
+require "bundler/setup"
+require "rubocop/rake_task"
+RuboCop::RakeTask.new
+require "rake/testtask"
+require "pp"
+
+
+#! see if I can write a bundler.env change into a small custom rakefile next to shellscript
+#! also see if a library can be put under test by hand
+
+Rake::TestTask.new(:test) do |t|
+  puts "Bundler default_gemfile = #{Bundler.default_gemfile}"
+  #dirname = File.dirname Bundler.default_gemfile
+  #puts "Bundler dirname = #{dirname}"
+
+  ep = ENV["ACTOOLS_ENTRYPOINT_DIR"]
+  puts "ACTOOLS_ENTRYPOINT_DIR = #{ep}"
+  # puts "Rake od = #{Rake.original_dir}"
+  
+
+  
+  #puts "Bundler cbp = #{Bundler.configured_bundle_path}"
+  #pp Bundler.load
+
+  t.libs << "#{ep}/test"
+  t.libs << "#{ep}/lib"
+  t.test_files = FileList["#{ep}/test/**/*_test.rb"]
+end
+
+task :default => :test

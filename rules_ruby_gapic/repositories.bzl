@@ -97,6 +97,35 @@ def gapic_generator_ruby_customgems(list_of_gems):
     }
   )
 
+  # a bundled isntallation for the bundler rainbow-rubocop test
+  bundle_install(
+    name = "bundler_raketest_test",
+    bundle_bin = "@ruby_runtime//:bin/bundle",
+    gemfile = "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/Gemfile",
+    gemfile_lock = "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/Gemfile.lock",
+    gemfile_srcs = {
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/Gemfile" : "Gemfile",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/Gemfile.lock" : "Gemfile.lock",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/helloworld.gemspec" : "helloworld.gemspec",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:raketest_test/lib/helloworld/version.rb" : "lib/helloworld/version.rb",
+    }
+  )
+
+  # a bundled isntallation for the bundler rainbow-rubocop test
+  bundle_install(
+    name = "bundler_langv1test_test",
+    bundle_bin = "@ruby_runtime//:bin/bundle",
+    gemfile = "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/Gemfile",
+    gemfile_lock = "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/Gemfile.lock",
+    gemfile_srcs = {
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/Gemfile" : "Gemfile",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/Gemfile.lock" : "Gemfile.lock",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/google-cloud-language-v1.gemspec" : "google-cloud-language-v1.gemspec",
+      "@gapic_generator_ruby//rules_ruby_gapic/ruby_binary/test:langv1test_test/lib/google/cloud/language/v1/version.rb" : "lib/google/cloud/language/v1/version.rb",
+    }
+  )
+
+
   # gapic-generator-vanilla dependencies
   gapic_generator_repositories()
 
