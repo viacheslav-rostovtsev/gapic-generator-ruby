@@ -28,6 +28,15 @@ Rake::TestTask.new :test do |t|
   t.test_files = FileList["test/**/*_test.rb"]
 end
 
+namespace :test do
+  desc "Run tests on language-v1 generation only"
+  Rake::TestTask.new :language_v1 do |t|
+    t.libs << "test"
+    t.libs << "lib"
+    t.test_files = FileList["test/**/*language_v1*_test.rb"]
+  end
+end
+
 desc "Run the CI build"
 task :ci do
   puts "\nBUILDING gapic-generator-cloud\n"

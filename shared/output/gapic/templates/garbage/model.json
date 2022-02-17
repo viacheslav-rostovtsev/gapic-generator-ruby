@@ -1,0 +1,316 @@
+{
+  "design_name": "google-garbage",
+  "id": 6564373936656332,
+  "name": "google-garbage",
+  "packages": [
+    {
+      "design_name": "endless.trash.forever",
+      "id": 3132613536386661,
+      "name": "endless.trash.forever",
+      "gem_model_id": 6564373936656332,
+      "ruby_namespace": "::So::Much::Trash",
+      "services": [
+        {
+          "design_name": "endless.trash.forever.GarbageService",
+          "id": 3337303065383665,
+          "package_model_id": 3132613536386661,
+          "name": "GarbageService",
+          "rpcs": [
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetEmptyGarbage",
+              "id": 3562613532623438,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetEmptyGarbage",
+              "input_name": "endless.trash.forever.EmptyGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetSimpleGarbage",
+              "id": 6661653434353334,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetSimpleGarbage",
+              "input_name": "endless.trash.forever.SimpleGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetSpecificGarbage",
+              "id": 3934623034656430,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetSpecificGarbage",
+              "input_name": "endless.trash.forever.SpecificGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetNestedGarbage",
+              "id": 6531396435613232,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetNestedGarbage",
+              "input_name": "endless.trash.forever.SpecificGarbage.NestedGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetRepeatedGarbage",
+              "id": 3562643664326265,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetRepeatedGarbage",
+              "input_name": "endless.trash.forever.RepeatedGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetTypicalGarbage",
+              "id": 3131346638666663,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetTypicalGarbage",
+              "input_name": "endless.trash.forever.TypicalGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetTypicalGarbageByRequest",
+              "id": 6431333439633531,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetTypicalGarbageByRequest",
+              "input_name": "endless.trash.forever.GetTypicalGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetComplexGarbage",
+              "id": 3238303536326461,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetComplexGarbage",
+              "input_name": "endless.trash.forever.ComplexGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetGarbageNode",
+              "id": 3133326435626539,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetGarbageNode",
+              "input_name": "endless.trash.forever.GarbageNode",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.GetPagedGarbage",
+              "id": 6365313263303262,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "GetPagedGarbage",
+              "input_name": "endless.trash.forever.PagedGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.LongRunningGarbage",
+              "id": 3334343230306362,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "LongRunningGarbage",
+              "input_name": "endless.trash.forever.LongRunningGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.ClientGarbage",
+              "id": 3438643264633164,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "ClientGarbage",
+              "input_name": "endless.trash.forever.ListGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "client"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.ServerGarbage",
+              "id": 3065343963373735,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "ServerGarbage",
+              "input_name": "endless.trash.forever.ListGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.BidiGarbage",
+              "id": 3564343235643733,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "BidiGarbage",
+              "input_name": "endless.trash.forever.ListGarbageRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.BidiTypicalGarbage",
+              "id": 3239323430613138,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "BidiTypicalGarbage",
+              "input_name": "endless.trash.forever.TypicalGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "endless.trash.forever.GarbageService.Send",
+              "id": 6136613234613333,
+              "service_model_id": 3337303065383665,
+              "rpc_name": "Send",
+              "input_name": "endless.trash.forever.EmptyGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "endless.trash.forever.ReallyRenamedService",
+          "id": 3361393361323935,
+          "package_model_id": 3132613536386661,
+          "name": "ReallyRenamedService",
+          "rpcs": [
+            {
+              "design_name": "endless.trash.forever.ReallyRenamedService.GetEmptyGarbage",
+              "id": 3739626163313131,
+              "service_model_id": 3361393361323935,
+              "rpc_name": "GetEmptyGarbage",
+              "input_name": "endless.trash.forever.EmptyGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "endless.trash.forever.DeprecatedService",
+          "id": 3438636138303037,
+          "package_model_id": 3132613536386661,
+          "name": "DeprecatedService",
+          "rpcs": [
+            {
+              "design_name": "endless.trash.forever.DeprecatedService.DeprecatedGet",
+              "id": 3032333562633339,
+              "service_model_id": 3438636138303037,
+              "rpc_name": "DeprecatedGet",
+              "input_name": "endless.trash.forever.EmptyGarbage",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "endless.trash.forever.ResourceNames",
+          "id": 6134353963326361,
+          "package_model_id": 3132613536386661,
+          "name": "ResourceNames",
+          "rpcs": [
+            {
+              "design_name": "endless.trash.forever.ResourceNames.SimplePatternMethod",
+              "id": 6134643762613465,
+              "service_model_id": 6134353963326361,
+              "rpc_name": "SimplePatternMethod",
+              "input_name": "endless.trash.forever.SimplePatternRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.ResourceNames.ComplexPatternMethod",
+              "id": 3864623633353264,
+              "service_model_id": 6134353963326361,
+              "rpc_name": "ComplexPatternMethod",
+              "input_name": "endless.trash.forever.ComplexPatternRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.ResourceNames.ResourceNamePatternMethod",
+              "id": 3732636264306637,
+              "service_model_id": 6134353963326361,
+              "rpc_name": "ResourceNamePatternMethod",
+              "input_name": "endless.trash.forever.ResourceNamePatternRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.ResourceNames.MultiparentMethod",
+              "id": 3138636631353662,
+              "service_model_id": 6134353963326361,
+              "rpc_name": "MultiparentMethod",
+              "input_name": "endless.trash.forever.MultiparentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "endless.trash.forever.ResourceNames.NoArgumentsMultiMethod",
+              "id": 3235613734663664,
+              "service_model_id": 6134353963326361,
+              "rpc_name": "NoArgumentsMultiMethod",
+              "input_name": "endless.trash.forever.NoArgumentsMultiRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.iam.v1.IAMPolicy",
+          "id": 3136393863363936,
+          "package_model_id": 3530666463303133,
+          "name": "IAMPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.iam.v1.IAMPolicy.SetIamPolicy",
+              "id": 3236373031626432,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.GetIamPolicy",
+              "id": 3737336539316463,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.TestIamPermissions",
+              "id": 6266393536643738,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

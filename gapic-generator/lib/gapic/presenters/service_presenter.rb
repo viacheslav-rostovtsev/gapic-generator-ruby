@@ -30,6 +30,8 @@ module Gapic
       # @return [Gapic::Presenters::ServiceRestPresenter]
       attr_reader :rest
 
+      attr_accessor :self_model
+
       def initialize gem_presenter, api, service, parent_service: nil
         @gem_presenter = gem_presenter
         @api = api
@@ -37,6 +39,25 @@ module Gapic
         @parent_service = parent_service
         @rest = ServiceRestPresenter.new self, api
         @nonstandard_lro = api.nonstandard_lro_model_for service.full_name
+	
+       	@self_model = ::Model::Generation::ServiceModel.new
+        @self_model.design_name = "#{package.self_model.design_name}.#{name}"
+        @self_model.id =  Gapic::Schema::Api.string_to_stable_id self_model.design_name
+        @self_model.package_model_id = package.self_model.id
+        @self_model.name = name
+      end
+
+      def model
+        @model ||= begin
+          model = ::Model::Generation::ServiceModel.new
+          model.design_name = self_model.design_name
+          model.id =  self_model.id
+          model.package_model_id = self_model.package_model_id
+
+          model.name = name
+          model.rpcs = methods.map(&:model)
+          model
+        end
       end
 
       def gem

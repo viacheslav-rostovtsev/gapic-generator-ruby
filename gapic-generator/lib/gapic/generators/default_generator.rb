@@ -77,6 +77,9 @@ module Gapic
           end
         end
 
+        files << g("codegen.erb", "codegen.json", api: @api)
+        files << g("model.erb", "model.json", gem: gem)
+        
         # Gem level files
         files << g("gem/gitignore.erb",             ".gitignore",                   gem: gem)
         files << g("gem/version.erb",               "lib/#{gem.version_file_path}", gem: gem)

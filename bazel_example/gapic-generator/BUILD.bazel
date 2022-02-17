@@ -125,7 +125,7 @@ ruby_gapic_library(
 # * gapic-generator-ruby vanilla flavor output
 #
 ruby_gapic_assembly_pkg(
-  name = "google_showcase_v1beta1",
+  name = "google_showcase_v1beta1-ruby",
   deps = [
     ":showcase_ruby_gapic",
     ":showcase_ruby_proto",

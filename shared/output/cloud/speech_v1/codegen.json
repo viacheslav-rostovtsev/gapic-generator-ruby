@@ -1,0 +1,32 @@
+{
+  "design_name": "google-cloud-speech-v1",
+  "id": 6162356636326132,
+  "file_descriptor_protos": [
+    {
+      "design_name": "6162356636326132.google/cloud/speech/v1/cloud_speech.proto",
+      "id": 3532303836333562,
+      "descriptor_set_id": 6162356636326132,
+      "name": "google/cloud/speech/v1/cloud_speech.proto",
+      "package": "google.cloud.speech.v1",
+      "java_package": "com.google.cloud.speech.v1",
+      "java_outer_classname": "SpeechProto",
+      "java_multiple_files": true,
+      "java_string_check_utf8": false,
+      "optimize_for": 1,
+      "go_package": "google.golang.org/genproto/googleapis/cloud/speech/v1;speech",
+      "cc_generic_services": false,
+      "java_generic_services": false,
+      "py_generic_services": false,
+      "php_generic_services": false,
+      "deprecated": false,
+      "cc_enable_arenas": true,
+      "objc_class_prefix": "GCS",
+      "csharp_namespace": "",
+      "swift_prefix": "",
+      "php_class_prefix": "",
+      "php_namespace": "",
+      "php_metadata_namespace": "",
+      "ruby_package": ""
+    }
+  ]
+}

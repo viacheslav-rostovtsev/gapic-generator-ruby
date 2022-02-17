@@ -68,6 +68,7 @@ module Gapic
 
         # Gem level files
         files << g("gem/version.erb", "lib/#{gem.version_file_path}", gem: gem)
+        files << g("model.erb", "model.json", gem: gem)
 
         gem.proto_files.each do |proto_file|
           files << g("proto_docs/proto_file.erb", "proto_docs/#{proto_file.docs_file_path}", file: proto_file)

@@ -1,0 +1,166 @@
+{
+  "design_name": "google.cloud.secrets.v1beta1",
+  "id": 6638653663303966,
+  "name": "google.cloud.secrets.v1beta1",
+  "ruby_namespace": "::Google::Cloud::SecretManager::V1beta1",
+  "services": [
+    {
+      "design_name": "google.cloud.secrets.v1beta1.SecretManagerService",
+      "id": 6262663261306266,
+      "package_model_id": 6638653663303966,
+      "name": "SecretManagerService",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.list_secrets",
+          "id": 3565626631626538,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "ListSecrets",
+          "input_name": "google.cloud.secrets.v1beta1.ListSecretsRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.create_secret",
+          "id": 3734346138303035,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "CreateSecret",
+          "input_name": "google.cloud.secrets.v1beta1.CreateSecretRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.add_secret_version",
+          "id": 6662363932353462,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "AddSecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.AddSecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.get_secret",
+          "id": 3338613439333263,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "GetSecret",
+          "input_name": "google.cloud.secrets.v1beta1.GetSecretRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.update_secret",
+          "id": 3165643966353930,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "UpdateSecret",
+          "input_name": "google.cloud.secrets.v1beta1.UpdateSecretRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.delete_secret",
+          "id": 3437396661623530,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "DeleteSecret",
+          "input_name": "google.cloud.secrets.v1beta1.DeleteSecretRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.list_secret_versions",
+          "id": 3232633834383663,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "ListSecretVersions",
+          "input_name": "google.cloud.secrets.v1beta1.ListSecretVersionsRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.get_secret_version",
+          "id": 6432643835353534,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "GetSecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.GetSecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.access_secret_version",
+          "id": 3330646339386634,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "AccessSecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.AccessSecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.disable_secret_version",
+          "id": 3638383538333634,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "DisableSecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.DisableSecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.enable_secret_version",
+          "id": 6437623066663666,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "EnableSecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.EnableSecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.destroy_secret_version",
+          "id": 6632323030643130,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "DestroySecretVersion",
+          "input_name": "google.cloud.secrets.v1beta1.DestroySecretVersionRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.set_iam_policy",
+          "id": 3761383832333239,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "SetIamPolicy",
+          "input_name": "google.iam.v1.SetIamPolicyRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.get_iam_policy",
+          "id": 6139393264316638,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "GetIamPolicy",
+          "input_name": "google.iam.v1.GetIamPolicyRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.secrets.v1beta1.SecretManagerService.test_iam_permissions",
+          "id": 6233373531353963,
+          "service_model_id": 6262663261306266,
+          "rpc_name": "TestIamPermissions",
+          "input_name": "google.iam.v1.TestIamPermissionsRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    }
+  ]
+}

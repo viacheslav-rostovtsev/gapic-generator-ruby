@@ -1,0 +1,56 @@
+{
+  "design_name": "google.cloud.language.v1beta1",
+  "id": 3533616333303331,
+  "name": "google.cloud.language.v1beta1",
+  "ruby_namespace": "::Google::Cloud::Language::V1beta1",
+  "services": [
+    {
+      "design_name": "google.cloud.language.v1beta1.LanguageService",
+      "id": 3635303139363966,
+      "package_model_id": 3533616333303331,
+      "name": "LanguageService",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.language.v1beta1.LanguageService.analyze_sentiment",
+          "id": 3538643639323239,
+          "service_model_id": 3635303139363966,
+          "rpc_name": "AnalyzeSentiment",
+          "input_name": "google.cloud.language.v1beta1.AnalyzeSentimentRequest",
+          "generate_implicit_headers": false,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.language.v1beta1.LanguageService.analyze_entities",
+          "id": 3166663135626237,
+          "service_model_id": 3635303139363966,
+          "rpc_name": "AnalyzeEntities",
+          "input_name": "google.cloud.language.v1beta1.AnalyzeEntitiesRequest",
+          "generate_implicit_headers": false,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.language.v1beta1.LanguageService.analyze_syntax",
+          "id": 3062353766666563,
+          "service_model_id": 3635303139363966,
+          "rpc_name": "AnalyzeSyntax",
+          "input_name": "google.cloud.language.v1beta1.AnalyzeSyntaxRequest",
+          "generate_implicit_headers": false,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.language.v1beta1.LanguageService.annotate_text",
+          "id": 3733653736333935,
+          "service_model_id": 3635303139363966,
+          "rpc_name": "AnnotateText",
+          "input_name": "google.cloud.language.v1beta1.AnnotateTextRequest",
+          "generate_implicit_headers": false,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    }
+  ]
+}

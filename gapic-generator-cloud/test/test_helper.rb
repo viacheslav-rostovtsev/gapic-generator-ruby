@@ -95,4 +95,12 @@ class PresenterTest < GeneratorTest
     service_presenter = Gapic::Presenters::ServicePresenter.new gem_presenter, api_obj, service
     Gapic::Presenters::MethodPresenter.new service_presenter, api_obj, method
   end
+
+  def first_package_presenter api_name
+    api_obj = api api_name
+    service = api_obj.services.first
+    refute_nil service
+    gem_presenter = Gapic::Presenters::GemPresenter.new api_obj
+    Gapic::Presenters::PackagePresenter.new gem_presenter, api_obj, service.parent.package
+  end
 end

@@ -1,0 +1,32 @@
+{
+  "design_name": "google-cloud-compute-v1",
+  "id": 6534643564386265,
+  "file_descriptor_protos": [
+    {
+      "design_name": "6534643564386265.google/cloud/compute/v1/compute_small.proto",
+      "id": 6235386362623933,
+      "descriptor_set_id": 6534643564386265,
+      "name": "google/cloud/compute/v1/compute_small.proto",
+      "package": "google.cloud.compute.v1",
+      "java_package": "com.google.cloud.compute.v1",
+      "java_outer_classname": "",
+      "java_multiple_files": true,
+      "java_string_check_utf8": false,
+      "optimize_for": 1,
+      "go_package": "google.golang.org/genproto/googleapis/cloud/compute/v1;compute",
+      "cc_generic_services": false,
+      "java_generic_services": false,
+      "py_generic_services": false,
+      "php_generic_services": false,
+      "deprecated": false,
+      "cc_enable_arenas": true,
+      "objc_class_prefix": "",
+      "csharp_namespace": "Google.Cloud.Compute.V1",
+      "swift_prefix": "",
+      "php_class_prefix": "",
+      "php_namespace": "Google\\Cloud\\Compute\\V1",
+      "php_metadata_namespace": "",
+      "ruby_package": "Google::Cloud::Compute::V1"
+    }
+  ]
+}

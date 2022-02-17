@@ -1,0 +1,32 @@
+{
+  "design_name": "google-cloud-language-v1beta2",
+  "id": 6334326335353564,
+  "file_descriptor_protos": [
+    {
+      "design_name": "6334326335353564.google/cloud/language/v1beta2/language_service.proto",
+      "id": 3063646666373735,
+      "descriptor_set_id": 6334326335353564,
+      "name": "google/cloud/language/v1beta2/language_service.proto",
+      "package": "google.cloud.language.v1beta2",
+      "java_package": "com.google.cloud.language.v1beta2",
+      "java_outer_classname": "LanguageServiceProto",
+      "java_multiple_files": true,
+      "java_string_check_utf8": false,
+      "optimize_for": 1,
+      "go_package": "google.golang.org/genproto/googleapis/cloud/language/v1beta2;language",
+      "cc_generic_services": false,
+      "java_generic_services": false,
+      "py_generic_services": false,
+      "php_generic_services": false,
+      "deprecated": false,
+      "cc_enable_arenas": true,
+      "objc_class_prefix": "",
+      "csharp_namespace": "",
+      "swift_prefix": "",
+      "php_class_prefix": "",
+      "php_namespace": "",
+      "php_metadata_namespace": "",
+      "ruby_package": ""
+    }
+  ]
+}

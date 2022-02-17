@@ -1,0 +1,388 @@
+{
+  "design_name": "google-showcase",
+  "id": 3266383136356438,
+  "name": "google-showcase",
+  "packages": [
+    {
+      "design_name": "google.showcase.v1beta1",
+      "id": 3338663633326132,
+      "name": "google.showcase.v1beta1",
+      "gem_model_id": 3266383136356438,
+      "ruby_namespace": "::Google::Showcase::V1beta1",
+      "services": [
+        {
+          "design_name": "google.showcase.v1beta1.Echo",
+          "id": 6266313430373133,
+          "package_model_id": 3338663633326132,
+          "name": "Echo",
+          "rpcs": [
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Echo",
+              "id": 6362666535376532,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Echo",
+              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Expand",
+              "id": 6537323832663561,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Expand",
+              "input_name": "google.showcase.v1beta1.ExpandRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Collect",
+              "id": 3630386234356261,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Collect",
+              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "client"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Chat",
+              "id": 6338353436303832,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Chat",
+              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.PagedExpand",
+              "id": 3037323964663237,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "PagedExpand",
+              "input_name": "google.showcase.v1beta1.PagedExpandRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Wait",
+              "id": 3165653461653739,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Wait",
+              "input_name": "google.showcase.v1beta1.WaitRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Echo.Block",
+              "id": 6361636536613031,
+              "service_model_id": 6266313430373133,
+              "rpc_name": "Block",
+              "input_name": "google.showcase.v1beta1.BlockRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.showcase.v1beta1.Identity",
+          "id": 3533633535343463,
+          "package_model_id": 3338663633326132,
+          "name": "Identity",
+          "rpcs": [
+            {
+              "design_name": "google.showcase.v1beta1.Identity.CreateUser",
+              "id": 6536666236373266,
+              "service_model_id": 3533633535343463,
+              "rpc_name": "CreateUser",
+              "input_name": "google.showcase.v1beta1.CreateUserRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Identity.GetUser",
+              "id": 3134303764643861,
+              "service_model_id": 3533633535343463,
+              "rpc_name": "GetUser",
+              "input_name": "google.showcase.v1beta1.GetUserRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Identity.UpdateUser",
+              "id": 3639653761353436,
+              "service_model_id": 3533633535343463,
+              "rpc_name": "UpdateUser",
+              "input_name": "google.showcase.v1beta1.UpdateUserRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Identity.DeleteUser",
+              "id": 3565303933303137,
+              "service_model_id": 3533633535343463,
+              "rpc_name": "DeleteUser",
+              "input_name": "google.showcase.v1beta1.DeleteUserRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Identity.ListUsers",
+              "id": 3435366566623666,
+              "service_model_id": 3533633535343463,
+              "rpc_name": "ListUsers",
+              "input_name": "google.showcase.v1beta1.ListUsersRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.showcase.v1beta1.Messaging",
+          "id": 3265343034623230,
+          "package_model_id": 3338663633326132,
+          "name": "Messaging",
+          "rpcs": [
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.CreateRoom",
+              "id": 6162323666353364,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "CreateRoom",
+              "input_name": "google.showcase.v1beta1.CreateRoomRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.GetRoom",
+              "id": 3265396663623432,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "GetRoom",
+              "input_name": "google.showcase.v1beta1.GetRoomRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom",
+              "id": 3363313763626366,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "UpdateRoom",
+              "input_name": "google.showcase.v1beta1.UpdateRoomRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.DeleteRoom",
+              "id": 3234646238636332,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "DeleteRoom",
+              "input_name": "google.showcase.v1beta1.DeleteRoomRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.ListRooms",
+              "id": 3131346165303731,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "ListRooms",
+              "input_name": "google.showcase.v1beta1.ListRoomsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb",
+              "id": 6263663734616139,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "CreateBlurb",
+              "input_name": "google.showcase.v1beta1.CreateBlurbRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.GetBlurb",
+              "id": 6163363530663631,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "GetBlurb",
+              "input_name": "google.showcase.v1beta1.GetBlurbRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb",
+              "id": 6630306232396134,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "UpdateBlurb",
+              "input_name": "google.showcase.v1beta1.UpdateBlurbRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.DeleteBlurb",
+              "id": 3830303032376538,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "DeleteBlurb",
+              "input_name": "google.showcase.v1beta1.DeleteBlurbRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs",
+              "id": 3161373531633262,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "ListBlurbs",
+              "input_name": "google.showcase.v1beta1.ListBlurbsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs",
+              "id": 3532643432303533,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "SearchBlurbs",
+              "input_name": "google.showcase.v1beta1.SearchBlurbsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs",
+              "id": 6432623636333663,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "StreamBlurbs",
+              "input_name": "google.showcase.v1beta1.StreamBlurbsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs",
+              "id": 6234616635303137,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "SendBlurbs",
+              "input_name": "google.showcase.v1beta1.CreateBlurbRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "client"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Messaging.Connect",
+              "id": 3564383961613431,
+              "service_model_id": 3265343034623230,
+              "rpc_name": "Connect",
+              "input_name": "google.showcase.v1beta1.ConnectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        },
+        {
+          "design_name": "google.showcase.v1beta1.Testing",
+          "id": 6632316533633265,
+          "package_model_id": 3338663633326132,
+          "name": "Testing",
+          "rpcs": [
+            {
+              "design_name": "google.showcase.v1beta1.Testing.CreateSession",
+              "id": 6466316432393730,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "CreateSession",
+              "input_name": "google.showcase.v1beta1.CreateSessionRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.GetSession",
+              "id": 3161363365336337,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "GetSession",
+              "input_name": "google.showcase.v1beta1.GetSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.ListSessions",
+              "id": 3235336137613739,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "ListSessions",
+              "input_name": "google.showcase.v1beta1.ListSessionsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.DeleteSession",
+              "id": 6563336631633839,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "DeleteSession",
+              "input_name": "google.showcase.v1beta1.DeleteSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.ReportSession",
+              "id": 6339353162646363,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "ReportSession",
+              "input_name": "google.showcase.v1beta1.ReportSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.ListTests",
+              "id": 3432363933323237,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "ListTests",
+              "input_name": "google.showcase.v1beta1.ListTestsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.DeleteTest",
+              "id": 6534303761316261,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "DeleteTest",
+              "input_name": "google.showcase.v1beta1.DeleteTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.showcase.v1beta1.Testing.VerifyTest",
+              "id": 3062343530363763,
+              "service_model_id": 6632316533633265,
+              "rpc_name": "VerifyTest",
+              "input_name": "google.showcase.v1beta1.VerifyTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

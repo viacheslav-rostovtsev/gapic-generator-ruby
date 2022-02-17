@@ -1,0 +1,188 @@
+{
+  "design_name": "google.cloud.compute.v1",
+  "id": 3731323561663761,
+  "name": "google.cloud.compute.v1",
+  "ruby_namespace": "::Google::Cloud::Compute::V1",
+  "services": [
+    {
+      "design_name": "google.cloud.compute.v1.Addresses",
+      "id": 6533653332363139,
+      "package_model_id": 3731323561663761,
+      "name": "Addresses",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.compute.v1.Addresses.aggregated_list",
+          "id": 3339383965626332,
+          "service_model_id": 6533653332363139,
+          "rpc_name": "AggregatedList",
+          "input_name": "google.cloud.compute.v1.AggregatedListAddressesRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.Addresses.delete",
+          "id": 3831323637303932,
+          "service_model_id": 6533653332363139,
+          "rpc_name": "Delete",
+          "input_name": "google.cloud.compute.v1.DeleteAddressRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.Addresses.get",
+          "id": 6462356162663136,
+          "service_model_id": 6533653332363139,
+          "rpc_name": "Get",
+          "input_name": "google.cloud.compute.v1.GetAddressRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.Addresses.insert",
+          "id": 3761616366633033,
+          "service_model_id": 6533653332363139,
+          "rpc_name": "Insert",
+          "input_name": "google.cloud.compute.v1.InsertAddressRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.Addresses.list",
+          "id": 6162336162613264,
+          "service_model_id": 6533653332363139,
+          "rpc_name": "List",
+          "input_name": "google.cloud.compute.v1.ListAddressesRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.compute.v1.RegionOperations",
+      "id": 6361316662666433,
+      "package_model_id": 3731323561663761,
+      "name": "RegionOperations",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.compute.v1.RegionOperations.delete",
+          "id": 3638346430343962,
+          "service_model_id": 6361316662666433,
+          "rpc_name": "Delete",
+          "input_name": "google.cloud.compute.v1.DeleteRegionOperationRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.RegionOperations.get",
+          "id": 3263353539353766,
+          "service_model_id": 6361316662666433,
+          "rpc_name": "Get",
+          "input_name": "google.cloud.compute.v1.GetRegionOperationRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.RegionOperations.list",
+          "id": 3033623263616236,
+          "service_model_id": 6361316662666433,
+          "rpc_name": "List",
+          "input_name": "google.cloud.compute.v1.ListRegionOperationsRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.RegionOperations.wait",
+          "id": 3739363966633335,
+          "service_model_id": 6361316662666433,
+          "rpc_name": "Wait",
+          "input_name": "google.cloud.compute.v1.WaitRegionOperationRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.compute.v1.RegionInstanceGroupManagers",
+      "id": 6339393332313930,
+      "package_model_id": 3731323561663761,
+      "name": "RegionInstanceGroupManagers",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.compute.v1.RegionInstanceGroupManagers.resize",
+          "id": 3636363864656436,
+          "service_model_id": 6339393332313930,
+          "rpc_name": "Resize",
+          "input_name": "google.cloud.compute.v1.ResizeRegionInstanceGroupManagerRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.compute.v1.Networks",
+      "id": 6530306433656262,
+      "package_model_id": 3731323561663761,
+      "name": "Networks",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.compute.v1.Networks.list_peering_routes",
+          "id": 3066653362333538,
+          "service_model_id": 6530306433656262,
+          "rpc_name": "ListPeeringRoutes",
+          "input_name": "google.cloud.compute.v1.ListPeeringRoutesNetworksRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.Networks.remove_peering",
+          "id": 6535343061373438,
+          "service_model_id": 6530306433656262,
+          "rpc_name": "RemovePeering",
+          "input_name": "google.cloud.compute.v1.RemovePeeringNetworkRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.compute.v1.GlobalOperations",
+      "id": 3061633565376230,
+      "package_model_id": 3731323561663761,
+      "name": "GlobalOperations",
+      "rpcs": [
+        {
+          "design_name": "google.cloud.compute.v1.GlobalOperations.delete",
+          "id": 6265303831613562,
+          "service_model_id": 3061633565376230,
+          "rpc_name": "Delete",
+          "input_name": "google.cloud.compute.v1.DeleteGlobalOperationRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        },
+        {
+          "design_name": "google.cloud.compute.v1.GlobalOperations.get",
+          "id": 3636613662636136,
+          "service_model_id": 3061633565376230,
+          "rpc_name": "Get",
+          "input_name": "google.cloud.compute.v1.GetGlobalOperationRequest",
+          "generate_implicit_headers": true,
+          "generate_explicit_headers": false,
+          "arity": "normal"
+        }
+      ]
+    }
+  ]
+}

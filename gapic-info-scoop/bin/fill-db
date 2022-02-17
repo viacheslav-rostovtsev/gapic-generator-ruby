@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+require "sqlite3"
+require "pp"
+
+# + dump files and fileoptions
+# + sqlite db with couple tables and inserts
+# - dump services, methods, messages
+# - dump annotations
+# ...
+# - combine package with generation
+# 
+
+require "model/models_goog"
+db = SQLite3::Database.new "db/gapic-info.db"
+
+# codegen_path = "output/cloud/vision_v1/codegen.json"
+# fds = ::Model::Package::FileDescriptorSet.decode_json File.read(codegen_path)
+# pp fds 
+# vals = [fds.id, fds.design_name]
+# pp db.execute("insert into DescriptorSets (id, design_name) values (?,?)", vals)
+
+# fds.file_descriptor_protos.each do |fd|
+#     pp db.execute("insert into FileDescriptors (id, design_name, descriptor_set_id, name, package, java_package, java_outer_classname, java_multiple_files, java_string_check_utf8, optimize_for, go_package, cc_generic_services, java_generic_services, py_generic_services, php_generic_services, deprecated, cc_enable_arenas, objc_class_prefix, csharp_namespace, swift_prefix, php_class_prefix, php_namespace, php_metadata_namespace, ruby_package) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", 
+#         [fd.id, fd.design_name, fd.descriptor_set_id, fd.name, fd.package, fd.java_package, fd.java_outer_classname, 
+#             (fd.java_multiple_files ? 1:0), (fd.java_string_check_utf8 ? 1:0), ::Model::Package::FileDescriptorProto::OptimizeMode.resolve(fd.optimize_for), fd.go_package, (fd.cc_generic_services ? 1:0), (fd.java_generic_services ? 1:0),
+#             (fd.py_generic_services ? 1:0), (fd.php_generic_services ? 1:0), (fd.deprecated ? 1:0), (fd.cc_enable_arenas ? 1:0), fd.objc_class_prefix, fd.csharp_namespace,
+#             fd.swift_prefix, fd.php_class_prefix, fd.php_namespace, fd.php_metadata_namespace, fd.ruby_package])
+# end
+
+service_path = "output/gapic/templates/testing/model.json"
+gem = ::Model::Generation::PackageModel.decode_json File.read(service_path)
+pp gem
+
+pp db.execute("insert into GemModels (id, design_name, name) values (?,?,?)", [gem.id, gem.design_name, gem.name])
+
+gem.packages.each do |package| 
+	pp db.execute("insert into PackageModels (id, design_name, gem_model_id, name, ruby_namespace) values (?,?,?,?,?)",
+		[package.id, package.design_name, package.gem_model_id, package.name, package.ruby_namespace])
+
+	package.service.each do |service|
+		pp db.execute("insert into ServiceModels (id, design_name, package_model_id, name) values (?,?,?,?)",
+			[service.id, service.design_name, service.package_model_id, service.name])
+
+		service.rpcs.each do |rpc|
+			pp db.execute("insert into RpcModels (id, design_name, service_model_id, rpc_name, input_name, output_name, generate_implicit_headers, generate_explicit_headers, arity) values (?,?,?,?,?,?,?,?,?)",
+				[rpc.id, rpc.design_name, rpc.service_model_id, rpc.rpc_name, rpc.input_name, rpc.output_name, rpc.generate_implicit_headers ? 1:0, , rpc.generate_explicit_headers ? 1:0, rpc.arity])
+		end
+	end
+end

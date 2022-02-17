@@ -18,6 +18,8 @@ require "active_support/inflector"
 require "gapic/ruby_info"
 require "gapic/helpers/namespace_helper"
 
+require "model/models"
+
 module Gapic
   module Presenters
     ##
@@ -41,6 +43,8 @@ module Gapic
       # @return [Gapic::Model::Method::AipLro, Gapic::Model::Method::NonStandardLro, Gapic::Model::Method::NoLro]
       attr_accessor :lro
 
+      attr_accessor :self_model
+
       ##
       # @param service_presenter [Gapic::Presenters::ServicePresenter]
       # @param api [Gapic::Schema::Api]
@@ -54,6 +58,34 @@ module Gapic
         @lro = Gapic::Model::Method.parse_lro @method, api
 
         @rest = MethodRestPresenter.new self, api
+
+        @self_model = ::Model::Generation::RpcModel.new
+        @self_model.design_name = "#{service_presenter.self_model.design_name}.#{@method.name}"
+        @self_model.id =  Gapic::Schema::Api.string_to_stable_id self_model.design_name
+        @self_model.service_model_id = service_presenter.self_model.id
+        @self_model.rpc_name = @method.name
+        @self_model.input_name = @method.input.address.join(".")
+        @self_model.output_name = @method.output.address.join(".")
+      end
+
+      def model
+        @model ||= begin
+          model = ::Model::Generation::RpcModel.new
+          model.design_name = self_model.design_name
+          model.id =  self_model.id
+          model.service_model_id = self_model.service_model_id
+
+          model.rpc_name = self_model.rpc_name
+          model.input_name = self_model.input_name
+          model.output_name == "self_model.output_name"
+
+          model.generate_implicit_headers = !@routing.explicit_annotation? && @routing.implicit_params?
+          model.generate_explicit_headers = @routing.explicit_params?
+
+          model.arity = kind.to_s
+          
+          model
+        end
       end
 
       ##

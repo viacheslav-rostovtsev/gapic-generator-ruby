@@ -1,0 +1,44 @@
+{
+  "design_name": "google-ads-googleads",
+  "id": 3162326136663334,
+  "name": "google-ads-googleads",
+  "packages": [
+    {
+      "design_name": "google.ads.googleads.v7.services",
+      "id": 3235306261633237,
+      "name": "google.ads.googleads.v7.services",
+      "gem_model_id": 3162326136663334,
+      "ruby_namespace": "::Google::Ads::GoogleAds::V7::Services",
+      "services": [
+        {
+          "design_name": "google.ads.googleads.v7.services.CampaignService",
+          "id": 3364353036653563,
+          "package_model_id": 3235306261633237,
+          "name": "CampaignService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v7.services.CampaignService.GetCampaign",
+              "id": 6437346631363431,
+              "service_model_id": 3364353036653563,
+              "rpc_name": "GetCampaign",
+              "input_name": "google.ads.googleads.v7.services.GetCampaignRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v7.services.CampaignService.MutateCampaigns",
+              "id": 6361356265313833,
+              "service_model_id": 3364353036653563,
+              "rpc_name": "MutateCampaigns",
+              "input_name": "google.ads.googleads.v7.services.MutateCampaignsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

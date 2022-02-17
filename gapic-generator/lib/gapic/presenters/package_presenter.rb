@@ -18,6 +18,9 @@ require "active_support/inflector"
 require "gapic/helpers/filepath_helper"
 require "gapic/helpers/namespace_helper"
 
+require "model/models"
+require "json"
+
 module Gapic
   module Presenters
     ##
@@ -27,10 +30,32 @@ module Gapic
       include Gapic::Helpers::FilepathHelper
       include Gapic::Helpers::NamespaceHelper
 
+      attr_accessor :self_model
+
       def initialize gem_presenter, api, package
         @gem_presenter = gem_presenter
         @api = api
         @package = package
+        @self_model = ::Model::Generation::PackageModel.new
+        @self_model.design_name = name
+        @self_model.id = Gapic::Schema::Api.string_to_stable_id self_model.design_name
+        @self_model.gem_model_id = gem_presenter.self_model.id
+        @self_model.name = name
+      end
+
+      def model
+        @model ||= begin
+          model = ::Model::Generation::PackageModel.new
+          model.design_name = self_model.design_name
+          model.id = self_model.id
+          model.name = self_model.name
+          model.gem_model_id = self_model.gem_model_id
+
+          model.ruby_namespace = namespace
+          model.services = services.map(&:model)
+
+          model
+        end
       end
 
       def gem

@@ -22,6 +22,9 @@ require "gapic/schema/request_param_parser"
 require "gapic/grpc_service_config/parser"
 require "gapic/schema/service_config_parser"
 
+require "model/models"
+require "json"
+
 module Gapic
   module Schema
     # rubocop:disable Metrics/ClassLength
@@ -40,6 +43,17 @@ module Gapic
     #   @return [Array<Enum>] The top level enums seen across all files in
     #     this API.
     class Api
+      class << self
+        def string_to_stable_id str
+          sha1 = Digest::SHA1.hexdigest str
+          sha1_16 = sha1[0..7]
+          sha1_16.unpack('H*')[0].to_i
+    
+          #require 'pry'
+          #binding.pry
+        end
+      end
+
       attr_accessor :request
       attr_accessor :files
 
@@ -66,6 +80,54 @@ module Gapic
         parameter_schema ||= Gapic::Generators::DefaultGeneratorParameters.default_schema
         @protoc_parameters = parse_parameter request.parameter, parameter_schema, error_output
         sanity_checks error_output
+      end
+
+      def file_desc_set_model
+        model = ::Model::Package::FileDescriptorSet.new
+        model.design_name = configuration[:gem][:name]
+        fds_id = Api.string_to_stable_id model.design_name
+        model.id = fds_id
+        
+        generate_files.each do |file|
+          file_mod = ::Model::Package::FileDescriptorProto.new
+          file_mod.design_name = "#{fds_id}.#{file.name}"
+          file_mod.id = Api.string_to_stable_id file_mod.design_name
+          file_mod.descriptor_set_id = fds_id
+
+          file_mod.name = file.name
+          file_mod.package = file.package
+
+          fileopts = file.options
+          if fileopts
+            file_mod.java_package = fileopts.java_package
+            file_mod.java_outer_classname = fileopts.java_outer_classname
+            file_mod.java_multiple_files = fileopts.java_multiple_files
+            file_mod.java_string_check_utf8 = fileopts.java_string_check_utf8
+            file_mod.optimize_for = fileopts.optimize_for.to_i
+            file_mod.go_package = fileopts.go_package
+            file_mod.cc_generic_services = fileopts.cc_generic_services
+            file_mod.java_generic_services = fileopts.java_generic_services
+            file_mod.py_generic_services = fileopts.py_generic_services
+            file_mod.php_generic_services = fileopts.php_generic_services
+            file_mod.deprecated = fileopts.deprecated
+            file_mod.cc_enable_arenas = fileopts.cc_enable_arenas
+            file_mod.objc_class_prefix = fileopts.objc_class_prefix
+            file_mod.csharp_namespace = fileopts.csharp_namespace
+            file_mod.swift_prefix = fileopts.swift_prefix
+            file_mod.php_class_prefix = fileopts.php_class_prefix
+            file_mod.php_namespace = fileopts.php_namespace
+            file_mod.php_metadata_namespace = fileopts.php_metadata_namespace
+            file_mod.ruby_package = fileopts.ruby_package
+          end
+          
+          model.file_descriptor_protos << file_mod
+        end 
+
+        model
+      end
+
+      def model_json
+        JSON.pretty_generate file_desc_set_model.as_json
       end
 
       def containing_api

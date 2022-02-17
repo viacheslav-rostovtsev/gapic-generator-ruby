@@ -1,0 +1,333 @@
+{
+  "design_name": "testing",
+  "id": 6463373234616631,
+  "name": "testing",
+  "packages": [
+    {
+      "design_name": "testing.grpcserviceconfig",
+      "id": 3636663436383632,
+      "name": "testing.grpcserviceconfig",
+      "gem_model_id": 6463373234616631,
+      "ruby_namespace": "::Testing::GrpcServiceConfig",
+      "services": [
+        {
+          "design_name": "testing.grpcserviceconfig.ServiceNoRetry",
+          "id": 3332303465346135,
+          "package_model_id": 3636663436383632,
+          "name": "ServiceNoRetry",
+          "rpcs": [
+            {
+              "design_name": "testing.grpcserviceconfig.ServiceNoRetry.NoRetryMethod",
+              "id": 3632646164383832,
+              "service_model_id": 3332303465346135,
+              "rpc_name": "NoRetryMethod",
+              "input_name": "testing.grpcserviceconfig.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.grpcserviceconfig.ServiceWithRetries",
+          "id": 3032623964356638,
+          "package_model_id": 3636663436383632,
+          "name": "ServiceWithRetries",
+          "rpcs": [
+            {
+              "design_name": "testing.grpcserviceconfig.ServiceWithRetries.ServiceLevelRetryMethod",
+              "id": 3962666538613366,
+              "service_model_id": 3032623964356638,
+              "rpc_name": "ServiceLevelRetryMethod",
+              "input_name": "testing.grpcserviceconfig.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.grpcserviceconfig.ServiceWithRetries.MethodLevelRetryMethod",
+              "id": 3864333231326535,
+              "service_model_id": 3032623964356638,
+              "rpc_name": "MethodLevelRetryMethod",
+              "input_name": "testing.grpcserviceconfig.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "testing.mixins",
+      "id": 3533626362333464,
+      "name": "testing.mixins",
+      "gem_model_id": 6463373234616631,
+      "ruby_namespace": "::Testing::Mixins",
+      "services": [
+        {
+          "design_name": "testing.mixins.ServiceWithLoc",
+          "id": 3736346639613830,
+          "package_model_id": 3533626362333464,
+          "name": "ServiceWithLoc",
+          "rpcs": [
+            {
+              "design_name": "testing.mixins.ServiceWithLoc.Method",
+              "id": 3934326464303834,
+              "service_model_id": 3736346639613830,
+              "rpc_name": "Method",
+              "input_name": "testing.mixins.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "testing.nonstandardlrogrpc",
+      "id": 3634336433366564,
+      "name": "testing.nonstandardlrogrpc",
+      "gem_model_id": 6463373234616631,
+      "ruby_namespace": "::Testing::NonstandardLroGrpc",
+      "services": [
+        {
+          "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer",
+          "id": 6235323739356531,
+          "package_model_id": 3634336433366564,
+          "name": "PlainLroConsumer",
+          "rpcs": [
+            {
+              "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc",
+              "id": 6132363939613336,
+              "service_model_id": 6235323739356531,
+              "rpc_name": "PlainLroRpc",
+              "input_name": "testing.nonstandardlrogrpc.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.nonstandardlrogrpc.PlainLroProvider",
+          "id": 3865306364386434,
+          "package_model_id": 3634336433366564,
+          "name": "PlainLroProvider",
+          "rpcs": [
+            {
+              "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get",
+              "id": 3135316338356633,
+              "service_model_id": 3865306364386434,
+              "rpc_name": "Get",
+              "input_name": "testing.nonstandardlrogrpc.LroGetRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider",
+          "id": 3633333266336330,
+          "package_model_id": 3634336433366564,
+          "name": "AnotherLroProvider",
+          "rpcs": [
+            {
+              "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother",
+              "id": 3862373331353763,
+              "service_model_id": 3633333266336330,
+              "rpc_name": "GetAnother",
+              "input_name": "testing.nonstandardlrogrpc.LroAnotherGetRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer",
+          "id": 6435393738636362,
+          "package_model_id": 3634336433366564,
+          "name": "AllSubclientsConsumer",
+          "rpcs": [
+            {
+              "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc",
+              "id": 3636633766636264,
+              "service_model_id": 6435393738636362,
+              "rpc_name": "PlainLroRpc",
+              "input_name": "testing.nonstandardlrogrpc.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc",
+              "id": 3832313762393964,
+              "service_model_id": 6435393738636362,
+              "rpc_name": "AnotherLroRpc",
+              "input_name": "testing.nonstandardlrogrpc.AnotherRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc",
+              "id": 3737643831613562,
+              "service_model_id": 6435393738636362,
+              "rpc_name": "NonCopyAnotherLroRpc",
+              "input_name": "testing.nonstandardlrogrpc.NonCopyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO",
+              "id": 3562386438656438,
+              "service_model_id": 6435393738636362,
+              "rpc_name": "AipLRO",
+              "input_name": "testing.nonstandardlrogrpc.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO",
+              "id": 6334346334393739,
+              "service_model_id": 6435393738636362,
+              "rpc_name": "NoLRO",
+              "input_name": "testing.nonstandardlrogrpc.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "testing.routingheaders",
+      "id": 3662306666386166,
+      "name": "testing.routingheaders",
+      "gem_model_id": 6463373234616631,
+      "ruby_namespace": "::Testing::RoutingHeaders",
+      "services": [
+        {
+          "design_name": "testing.routingheaders.ServiceNoHeaders",
+          "id": 3861383334353366,
+          "package_model_id": 3662306666386166,
+          "name": "ServiceNoHeaders",
+          "rpcs": [
+            {
+              "design_name": "testing.routingheaders.ServiceNoHeaders.Plain",
+              "id": 3465373764326466,
+              "service_model_id": 3861383334353366,
+              "rpc_name": "Plain",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.routingheaders.ServiceImplicitHeaders",
+          "id": 3164313465346261,
+          "package_model_id": 3662306666386166,
+          "name": "ServiceImplicitHeaders",
+          "rpcs": [
+            {
+              "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain",
+              "id": 3764313263333065,
+              "service_model_id": 3164313465346261,
+              "rpc_name": "Plain",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage",
+              "id": 3537333962336561,
+              "service_model_id": 3164313465346261,
+              "rpc_name": "WithSubMessage",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels",
+              "id": 6361336432363533,
+              "service_model_id": 3164313465346261,
+              "rpc_name": "WithMultipleLevels",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "testing.routingheaders.ServiceExplicitHeaders",
+          "id": 6530386433313335,
+          "package_model_id": 3662306666386166,
+          "name": "ServiceExplicitHeaders",
+          "rpcs": [
+            {
+              "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate",
+              "id": 6235303539626438,
+              "service_model_id": 6530386433313335,
+              "rpc_name": "PlainNoTemplate",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField",
+              "id": 3764616263376634,
+              "service_model_id": 6530386433313335,
+              "rpc_name": "PlainFullField",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract",
+              "id": 3934636564636431,
+              "service_model_id": 6530386433313335,
+              "rpc_name": "PlainExtract",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex",
+              "id": 6464643966323666,
+              "service_model_id": 6530386433313335,
+              "rpc_name": "Complex",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage",
+              "id": 6434396236353062,
+              "service_model_id": 6530386433313335,
+              "rpc_name": "WithSubMessage",
+              "input_name": "testing.routingheaders.Request",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

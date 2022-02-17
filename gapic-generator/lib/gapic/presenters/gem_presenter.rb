@@ -28,9 +28,34 @@ module Gapic
       include Gapic::Helpers::FilepathHelper
       include Gapic::Helpers::NamespaceHelper
 
+      attr_accessor :self_model
+
       def initialize api
         @api = api
         @mixins_model = Gapic::Model::Mixins.new api.services.map(&:full_name), api.service_config
+
+        @self_model = ::Model::Generation::GemModel.new
+        @self_model.design_name = name
+        @self_model.id = Gapic::Schema::Api.string_to_stable_id self_model.design_name
+
+        @self_model.name = name
+      end
+
+      def model
+        @model ||= begin
+          model = ::Model::Generation::GemModel.new
+          model.design_name = self_model.design_name
+          model.id = self_model.id
+          model.name = self_model.name
+          
+          model.packages = packages.map(&:model)
+
+          model
+        end
+      end
+
+      def model_json
+        JSON.pretty_generate model.as_json
       end
 
       ##
