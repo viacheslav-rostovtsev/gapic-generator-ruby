@@ -1,0 +1,112 @@
+{
+  "design_name": "google-cloud-orchestration-airflow-service-v1beta1",
+  "id": 3236343133623932,
+  "name": "google-cloud-orchestration-airflow-service-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.orchestration.airflow.service.v1beta1",
+      "id": 3635363931303734,
+      "name": "google.cloud.orchestration.airflow.service.v1beta1",
+      "gem_model_id": 3236343133623932,
+      "ruby_namespace": "::Google::Cloud::Orchestration::Airflow::Service::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments",
+          "id": 6433353961663033,
+          "package_model_id": 3635363931303734,
+          "name": "Environments",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.CreateEnvironment",
+              "id": 3438303034636366,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "CreateEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.CreateEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.GetEnvironment",
+              "id": 3835363535366466,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "GetEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.GetEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.ListEnvironments",
+              "id": 3234386137616631,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "ListEnvironments",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.ListEnvironmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.UpdateEnvironment",
+              "id": 3464373331366330,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "UpdateEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.UpdateEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.DeleteEnvironment",
+              "id": 3639386330646630,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "DeleteEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.DeleteEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.RestartWebServer",
+              "id": 3137393632653433,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "RestartWebServer",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.RestartWebServerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.Environments.CheckUpgrade",
+              "id": 3335326635613038,
+              "service_model_id": 6433353961663033,
+              "rpc_name": "CheckUpgrade",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.CheckUpgradeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.orchestration.airflow.service.v1beta1.ImageVersions",
+          "id": 3535663331356461,
+          "package_model_id": 3635363931303734,
+          "name": "ImageVersions",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1beta1.ImageVersions.ListImageVersions",
+              "id": 6163363632363034,
+              "service_model_id": 3535663331356461,
+              "rpc_name": "ListImageVersions",
+              "input_name": "google.cloud.orchestration.airflow.service.v1beta1.ListImageVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

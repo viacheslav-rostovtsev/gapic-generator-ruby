@@ -1,0 +1,224 @@
+{
+  "design_name": "google-cloud-baremetalsolution-v2",
+  "id": 3434613337303430,
+  "name": "google-cloud-baremetalsolution-v2",
+  "packages": [
+    {
+      "design_name": "google.cloud.baremetalsolution.v2",
+      "id": 3638656339323137,
+      "name": "google.cloud.baremetalsolution.v2",
+      "gem_model_id": 3434613337303430,
+      "ruby_namespace": "::Google::Cloud::BaremetalSolution::V2",
+      "services": [
+        {
+          "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution",
+          "id": 3337613539646466,
+          "package_model_id": 3638656339323137,
+          "name": "BareMetalSolution",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListInstances",
+              "id": 6137346133616535,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.baremetalsolution.v2.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetInstance",
+              "id": 3438333730313133,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.baremetalsolution.v2.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ResetInstance",
+              "id": 6436313564356239,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ResetInstance",
+              "input_name": "google.cloud.baremetalsolution.v2.ResetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListVolumes",
+              "id": 6366663635626432,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListVolumes",
+              "input_name": "google.cloud.baremetalsolution.v2.ListVolumesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetVolume",
+              "id": 6636353939613664,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetVolume",
+              "input_name": "google.cloud.baremetalsolution.v2.GetVolumeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.UpdateVolume",
+              "id": 3837653964373633,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "UpdateVolume",
+              "input_name": "google.cloud.baremetalsolution.v2.UpdateVolumeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListNetworks",
+              "id": 6239613037393039,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListNetworks",
+              "input_name": "google.cloud.baremetalsolution.v2.ListNetworksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetNetwork",
+              "id": 3231623830623637,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetNetwork",
+              "input_name": "google.cloud.baremetalsolution.v2.GetNetworkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListSnapshotSchedulePolicies",
+              "id": 3466396464316633,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListSnapshotSchedulePolicies",
+              "input_name": "google.cloud.baremetalsolution.v2.ListSnapshotSchedulePoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetSnapshotSchedulePolicy",
+              "id": 3461666536306462,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetSnapshotSchedulePolicy",
+              "input_name": "google.cloud.baremetalsolution.v2.GetSnapshotSchedulePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.CreateSnapshotSchedulePolicy",
+              "id": 3739663966643866,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "CreateSnapshotSchedulePolicy",
+              "input_name": "google.cloud.baremetalsolution.v2.CreateSnapshotSchedulePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.UpdateSnapshotSchedulePolicy",
+              "id": 3131356431303431,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "UpdateSnapshotSchedulePolicy",
+              "input_name": "google.cloud.baremetalsolution.v2.UpdateSnapshotSchedulePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.DeleteSnapshotSchedulePolicy",
+              "id": 3066343739383062,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "DeleteSnapshotSchedulePolicy",
+              "input_name": "google.cloud.baremetalsolution.v2.DeleteSnapshotSchedulePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.CreateVolumeSnapshot",
+              "id": 6562616362353137,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "CreateVolumeSnapshot",
+              "input_name": "google.cloud.baremetalsolution.v2.CreateVolumeSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.RestoreVolumeSnapshot",
+              "id": 3738303838666239,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "RestoreVolumeSnapshot",
+              "input_name": "google.cloud.baremetalsolution.v2.RestoreVolumeSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.DeleteVolumeSnapshot",
+              "id": 3630616133393538,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "DeleteVolumeSnapshot",
+              "input_name": "google.cloud.baremetalsolution.v2.DeleteVolumeSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetVolumeSnapshot",
+              "id": 6432333935323362,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetVolumeSnapshot",
+              "input_name": "google.cloud.baremetalsolution.v2.GetVolumeSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListVolumeSnapshots",
+              "id": 6635653136636432,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListVolumeSnapshots",
+              "input_name": "google.cloud.baremetalsolution.v2.ListVolumeSnapshotsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.GetLun",
+              "id": 6264613666633263,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "GetLun",
+              "input_name": "google.cloud.baremetalsolution.v2.GetLunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.baremetalsolution.v2.BareMetalSolution.ListLuns",
+              "id": 6262336563663365,
+              "service_model_id": 3337613539646466,
+              "rpc_name": "ListLuns",
+              "input_name": "google.cloud.baremetalsolution.v2.ListLunsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

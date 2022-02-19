@@ -1,0 +1,224 @@
+{
+  "design_name": "google-cloud-certificatemanager-v1",
+  "id": 6336353866326665,
+  "name": "google-cloud-certificatemanager-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.certificatemanager.v1",
+      "id": 3935323536373766,
+      "name": "google.cloud.certificatemanager.v1",
+      "gem_model_id": 6336353866326665,
+      "ruby_namespace": "::Google::Cloud::CertificateManager::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.certificatemanager.v1.CertificateManager",
+          "id": 6232346161633333,
+          "package_model_id": 3935323536373766,
+          "name": "CertificateManager",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.ListCertificates",
+              "id": 3833396162373263,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "ListCertificates",
+              "input_name": "google.cloud.certificatemanager.v1.ListCertificatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.GetCertificate",
+              "id": 3039623562366130,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "GetCertificate",
+              "input_name": "google.cloud.certificatemanager.v1.GetCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.CreateCertificate",
+              "id": 6333333866303562,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "CreateCertificate",
+              "input_name": "google.cloud.certificatemanager.v1.CreateCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.UpdateCertificate",
+              "id": 6332396563646232,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "UpdateCertificate",
+              "input_name": "google.cloud.certificatemanager.v1.UpdateCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.DeleteCertificate",
+              "id": 3063333034666230,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "DeleteCertificate",
+              "input_name": "google.cloud.certificatemanager.v1.DeleteCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.ListCertificateMaps",
+              "id": 6237383361636364,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "ListCertificateMaps",
+              "input_name": "google.cloud.certificatemanager.v1.ListCertificateMapsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.GetCertificateMap",
+              "id": 3834626632376438,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "GetCertificateMap",
+              "input_name": "google.cloud.certificatemanager.v1.GetCertificateMapRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.CreateCertificateMap",
+              "id": 3535663961626534,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "CreateCertificateMap",
+              "input_name": "google.cloud.certificatemanager.v1.CreateCertificateMapRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.UpdateCertificateMap",
+              "id": 6534656430353532,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "UpdateCertificateMap",
+              "input_name": "google.cloud.certificatemanager.v1.UpdateCertificateMapRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.DeleteCertificateMap",
+              "id": 3965643262626166,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "DeleteCertificateMap",
+              "input_name": "google.cloud.certificatemanager.v1.DeleteCertificateMapRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.ListCertificateMapEntries",
+              "id": 3361336231613862,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "ListCertificateMapEntries",
+              "input_name": "google.cloud.certificatemanager.v1.ListCertificateMapEntriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.GetCertificateMapEntry",
+              "id": 6537363864366261,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "GetCertificateMapEntry",
+              "input_name": "google.cloud.certificatemanager.v1.GetCertificateMapEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.CreateCertificateMapEntry",
+              "id": 6561663362363032,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "CreateCertificateMapEntry",
+              "input_name": "google.cloud.certificatemanager.v1.CreateCertificateMapEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.UpdateCertificateMapEntry",
+              "id": 3736656162316238,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "UpdateCertificateMapEntry",
+              "input_name": "google.cloud.certificatemanager.v1.UpdateCertificateMapEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.DeleteCertificateMapEntry",
+              "id": 3738346130353264,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "DeleteCertificateMapEntry",
+              "input_name": "google.cloud.certificatemanager.v1.DeleteCertificateMapEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.ListDnsAuthorizations",
+              "id": 6265613562666238,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "ListDnsAuthorizations",
+              "input_name": "google.cloud.certificatemanager.v1.ListDnsAuthorizationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.GetDnsAuthorization",
+              "id": 3634666334343737,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "GetDnsAuthorization",
+              "input_name": "google.cloud.certificatemanager.v1.GetDnsAuthorizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.CreateDnsAuthorization",
+              "id": 3663643339343462,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "CreateDnsAuthorization",
+              "input_name": "google.cloud.certificatemanager.v1.CreateDnsAuthorizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.UpdateDnsAuthorization",
+              "id": 6236633535613338,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "UpdateDnsAuthorization",
+              "input_name": "google.cloud.certificatemanager.v1.UpdateDnsAuthorizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.certificatemanager.v1.CertificateManager.DeleteDnsAuthorization",
+              "id": 6637386235353738,
+              "service_model_id": 6232346161633333,
+              "rpc_name": "DeleteDnsAuthorization",
+              "input_name": "google.cloud.certificatemanager.v1.DeleteDnsAuthorizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

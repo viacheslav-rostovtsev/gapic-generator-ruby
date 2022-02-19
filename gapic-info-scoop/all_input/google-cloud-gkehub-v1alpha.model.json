@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-gkehub-v1alpha",
+  "id": 6431393761616464,
+  "name": "google-cloud-gkehub-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.gkehub.v1alpha",
+      "id": 3533346432643738,
+      "name": "google.cloud.gkehub.v1alpha",
+      "gem_model_id": 6431393761616464,
+      "ruby_namespace": "::Google::Cloud::GkeHub::V1alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.gkehub.v1alpha.GkeHub",
+          "id": 3462393434323863,
+          "package_model_id": 3533346432643738,
+          "name": "GkeHub",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gkehub.v1alpha.GkeHub.ListFeatures",
+              "id": 6461386438303264,
+              "service_model_id": 3462393434323863,
+              "rpc_name": "ListFeatures",
+              "input_name": "google.cloud.gkehub.v1alpha.ListFeaturesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha.GkeHub.GetFeature",
+              "id": 3061666432623232,
+              "service_model_id": 3462393434323863,
+              "rpc_name": "GetFeature",
+              "input_name": "google.cloud.gkehub.v1alpha.GetFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha.GkeHub.CreateFeature",
+              "id": 3263346435656563,
+              "service_model_id": 3462393434323863,
+              "rpc_name": "CreateFeature",
+              "input_name": "google.cloud.gkehub.v1alpha.CreateFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha.GkeHub.DeleteFeature",
+              "id": 6363643936366236,
+              "service_model_id": 3462393434323863,
+              "rpc_name": "DeleteFeature",
+              "input_name": "google.cloud.gkehub.v1alpha.DeleteFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha.GkeHub.UpdateFeature",
+              "id": 3931616630323332,
+              "service_model_id": 3462393434323863,
+              "rpc_name": "UpdateFeature",
+              "input_name": "google.cloud.gkehub.v1alpha.UpdateFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

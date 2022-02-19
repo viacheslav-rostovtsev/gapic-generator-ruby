@@ -1,0 +1,364 @@
+{
+  "design_name": "google-cloud-contact_center_insights-v1",
+  "id": 3834633034393062,
+  "name": "google-cloud-contact_center_insights-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.contactcenterinsights.v1",
+      "id": 3565663031653137,
+      "name": "google.cloud.contactcenterinsights.v1",
+      "gem_model_id": 3834633034393062,
+      "ruby_namespace": "::Google::Cloud::ContactCenterInsights::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights",
+          "id": 3631643637343137,
+          "package_model_id": 3565663031653137,
+          "name": "ContactCenterInsights",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CreateConversation",
+              "id": 3635346464626365,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CreateConversation",
+              "input_name": "google.cloud.contactcenterinsights.v1.CreateConversationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdateConversation",
+              "id": 3535353936333965,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdateConversation",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdateConversationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetConversation",
+              "id": 3761306635326439,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetConversation",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetConversationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListConversations",
+              "id": 3033353530626465,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListConversations",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListConversationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeleteConversation",
+              "id": 3131646632383032,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeleteConversation",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeleteConversationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CreateAnalysis",
+              "id": 6336626134663262,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CreateAnalysis",
+              "input_name": "google.cloud.contactcenterinsights.v1.CreateAnalysisRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetAnalysis",
+              "id": 6334373730613936,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetAnalysis",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetAnalysisRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListAnalyses",
+              "id": 6133373538613838,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListAnalyses",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListAnalysesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeleteAnalysis",
+              "id": 3334363637616532,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeleteAnalysis",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeleteAnalysisRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ExportInsightsData",
+              "id": 3639653438353632,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ExportInsightsData",
+              "input_name": "google.cloud.contactcenterinsights.v1.ExportInsightsDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CreateIssueModel",
+              "id": 3463386563396261,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CreateIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.CreateIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdateIssueModel",
+              "id": 3733666463666464,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdateIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdateIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetIssueModel",
+              "id": 6163343736386465,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListIssueModels",
+              "id": 6562386637393966,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListIssueModels",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListIssueModelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeleteIssueModel",
+              "id": 6532366335666135,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeleteIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeleteIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeployIssueModel",
+              "id": 3366373630313965,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeployIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeployIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UndeployIssueModel",
+              "id": 6465386363356432,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UndeployIssueModel",
+              "input_name": "google.cloud.contactcenterinsights.v1.UndeployIssueModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetIssue",
+              "id": 3434303932653631,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetIssue",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetIssueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListIssues",
+              "id": 3362323036666234,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListIssues",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListIssuesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdateIssue",
+              "id": 3461653661343831,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdateIssue",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdateIssueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CalculateIssueModelStats",
+              "id": 6336643639663133,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CalculateIssueModelStats",
+              "input_name": "google.cloud.contactcenterinsights.v1.CalculateIssueModelStatsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CreatePhraseMatcher",
+              "id": 6662343364323334,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CreatePhraseMatcher",
+              "input_name": "google.cloud.contactcenterinsights.v1.CreatePhraseMatcherRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetPhraseMatcher",
+              "id": 3765346331626231,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetPhraseMatcher",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetPhraseMatcherRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListPhraseMatchers",
+              "id": 3763343263656131,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListPhraseMatchers",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListPhraseMatchersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeletePhraseMatcher",
+              "id": 6638323563366134,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeletePhraseMatcher",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeletePhraseMatcherRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdatePhraseMatcher",
+              "id": 3935616532373233,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdatePhraseMatcher",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdatePhraseMatcherRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CalculateStats",
+              "id": 3438303433623336,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CalculateStats",
+              "input_name": "google.cloud.contactcenterinsights.v1.CalculateStatsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetSettings",
+              "id": 3162303663663634,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetSettings",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdateSettings",
+              "id": 6538346530636237,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdateSettings",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdateSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.CreateView",
+              "id": 3735656135383738,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "CreateView",
+              "input_name": "google.cloud.contactcenterinsights.v1.CreateViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.GetView",
+              "id": 3537653661343466,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "GetView",
+              "input_name": "google.cloud.contactcenterinsights.v1.GetViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.ListViews",
+              "id": 3638303435656363,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "ListViews",
+              "input_name": "google.cloud.contactcenterinsights.v1.ListViewsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.UpdateView",
+              "id": 6335616133613261,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "UpdateView",
+              "input_name": "google.cloud.contactcenterinsights.v1.UpdateViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.contactcenterinsights.v1.ContactCenterInsights.DeleteView",
+              "id": 3833333637396337,
+              "service_model_id": 3631643637343137,
+              "rpc_name": "DeleteView",
+              "input_name": "google.cloud.contactcenterinsights.v1.DeleteViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

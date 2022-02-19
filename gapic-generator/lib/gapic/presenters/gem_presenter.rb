@@ -215,6 +215,7 @@ module Gapic
       end
 
       def entrypoint_require
+        return "" unless packages?
         packages.first.package_require
       end
 

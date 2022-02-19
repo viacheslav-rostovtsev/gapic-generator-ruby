@@ -1,0 +1,162 @@
+{
+  "design_name": "google-cloud-iap-v1",
+  "id": 3632663432353639,
+  "name": "google-cloud-iap-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.iap.v1",
+      "id": 3762393763353334,
+      "name": "google.cloud.iap.v1",
+      "gem_model_id": 3632663432353639,
+      "ruby_namespace": "::Google::Cloud::Iap::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService",
+          "id": 3237383434383461,
+          "package_model_id": 3762393763353334,
+          "name": "IdentityAwareProxyAdminService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService.SetIamPolicy",
+              "id": 3139643230396234,
+              "service_model_id": 3237383434383461,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService.GetIamPolicy",
+              "id": 3331333037313039,
+              "service_model_id": 3237383434383461,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService.TestIamPermissions",
+              "id": 6638623462343663,
+              "service_model_id": 3237383434383461,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService.GetIapSettings",
+              "id": 6632623663383266,
+              "service_model_id": 3237383434383461,
+              "rpc_name": "GetIapSettings",
+              "input_name": "google.cloud.iap.v1.GetIapSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyAdminService.UpdateIapSettings",
+              "id": 6264663237656564,
+              "service_model_id": 3237383434383461,
+              "rpc_name": "UpdateIapSettings",
+              "input_name": "google.cloud.iap.v1.UpdateIapSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService",
+          "id": 3264613730663761,
+          "package_model_id": 3762393763353334,
+          "name": "IdentityAwareProxyOAuthService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.ListBrands",
+              "id": 3363613535643336,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "ListBrands",
+              "input_name": "google.cloud.iap.v1.ListBrandsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.CreateBrand",
+              "id": 3362663566663665,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "CreateBrand",
+              "input_name": "google.cloud.iap.v1.CreateBrandRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.GetBrand",
+              "id": 6436613835363033,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "GetBrand",
+              "input_name": "google.cloud.iap.v1.GetBrandRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.CreateIdentityAwareProxyClient",
+              "id": 3462343237636131,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "CreateIdentityAwareProxyClient",
+              "input_name": "google.cloud.iap.v1.CreateIdentityAwareProxyClientRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.ListIdentityAwareProxyClients",
+              "id": 3231636661306134,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "ListIdentityAwareProxyClients",
+              "input_name": "google.cloud.iap.v1.ListIdentityAwareProxyClientsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.GetIdentityAwareProxyClient",
+              "id": 6631633661343465,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "GetIdentityAwareProxyClient",
+              "input_name": "google.cloud.iap.v1.GetIdentityAwareProxyClientRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.ResetIdentityAwareProxyClientSecret",
+              "id": 6133363337313961,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "ResetIdentityAwareProxyClientSecret",
+              "input_name": "google.cloud.iap.v1.ResetIdentityAwareProxyClientSecretRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1.IdentityAwareProxyOAuthService.DeleteIdentityAwareProxyClient",
+              "id": 3639616134393139,
+              "service_model_id": 3264613730663761,
+              "rpc_name": "DeleteIdentityAwareProxyClient",
+              "input_name": "google.cloud.iap.v1.DeleteIdentityAwareProxyClientRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

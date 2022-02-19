@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-build-v1",
+  "id": 3938333238303036,
+  "name": "google-cloud-build-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.build.v1",
+      "id": 3230363335336334,
+      "name": "google.devtools.build.v1",
+      "gem_model_id": 3938333238303036,
+      "ruby_namespace": "::Google::Devtools::Build::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.build.v1.PublishBuildEvent",
+          "id": 3032373764366264,
+          "package_model_id": 3230363335336334,
+          "name": "PublishBuildEvent",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.build.v1.PublishBuildEvent.PublishLifecycleEvent",
+              "id": 3063373236363064,
+              "service_model_id": 3032373764366264,
+              "rpc_name": "PublishLifecycleEvent",
+              "input_name": "google.devtools.build.v1.PublishLifecycleEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.build.v1.PublishBuildEvent.PublishBuildToolEventStream",
+              "id": 3736646465313034,
+              "service_model_id": 3032373764366264,
+              "rpc_name": "PublishBuildToolEventStream",
+              "input_name": "google.devtools.build.v1.PublishBuildToolEventStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

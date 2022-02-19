@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-redis-v1beta1",
+  "id": 3535646339656266,
+  "name": "google-cloud-redis-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.redis.v1beta1",
+      "id": 6361323934653634,
+      "name": "google.cloud.redis.v1beta1",
+      "gem_model_id": 3535646339656266,
+      "ruby_namespace": "::Google::Cloud::Redis::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.redis.v1beta1.CloudRedis",
+          "id": 3964613364633531,
+          "package_model_id": 6361323934653634,
+          "name": "CloudRedis",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.ListInstances",
+              "id": 3430616464623965,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.redis.v1beta1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.GetInstance",
+              "id": 3434383639346430,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.redis.v1beta1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.GetInstanceAuthString",
+              "id": 6330653835383539,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "GetInstanceAuthString",
+              "input_name": "google.cloud.redis.v1beta1.GetInstanceAuthStringRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.CreateInstance",
+              "id": 3835373462383935,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.redis.v1beta1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.UpdateInstance",
+              "id": 3031666636396136,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.redis.v1beta1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.UpgradeInstance",
+              "id": 3531383232343364,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "UpgradeInstance",
+              "input_name": "google.cloud.redis.v1beta1.UpgradeInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.ImportInstance",
+              "id": 3836376534373763,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "ImportInstance",
+              "input_name": "google.cloud.redis.v1beta1.ImportInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.ExportInstance",
+              "id": 3736643339663662,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "ExportInstance",
+              "input_name": "google.cloud.redis.v1beta1.ExportInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.FailoverInstance",
+              "id": 3935633463346566,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "FailoverInstance",
+              "input_name": "google.cloud.redis.v1beta1.FailoverInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.DeleteInstance",
+              "id": 3766646466393031,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.redis.v1beta1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.redis.v1beta1.CloudRedis.RescheduleMaintenance",
+              "id": 3461303766666536,
+              "service_model_id": 3964613364633531,
+              "rpc_name": "RescheduleMaintenance",
+              "input_name": "google.cloud.redis.v1beta1.RescheduleMaintenanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

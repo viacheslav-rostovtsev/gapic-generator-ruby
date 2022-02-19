@@ -1,0 +1,262 @@
+{
+  "design_name": "google-cloud-vision-v1",
+  "id": 3965336163616430,
+  "name": "google-cloud-vision-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.vision.v1",
+      "id": 3363623830643161,
+      "name": "google.cloud.vision.v1",
+      "gem_model_id": 3965336163616430,
+      "ruby_namespace": "::Google::Cloud::Vision::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.vision.v1.ProductSearch",
+          "id": 3464623166323864,
+          "package_model_id": 3363623830643161,
+          "name": "ProductSearch",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.CreateProductSet",
+              "id": 3334636130386563,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "CreateProductSet",
+              "input_name": "google.cloud.vision.v1.CreateProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.ListProductSets",
+              "id": 3465393364343638,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "ListProductSets",
+              "input_name": "google.cloud.vision.v1.ListProductSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.GetProductSet",
+              "id": 3263313763663432,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "GetProductSet",
+              "input_name": "google.cloud.vision.v1.GetProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.UpdateProductSet",
+              "id": 6533626430656230,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "UpdateProductSet",
+              "input_name": "google.cloud.vision.v1.UpdateProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.DeleteProductSet",
+              "id": 3635303539376433,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "DeleteProductSet",
+              "input_name": "google.cloud.vision.v1.DeleteProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.CreateProduct",
+              "id": 3234353735633535,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "CreateProduct",
+              "input_name": "google.cloud.vision.v1.CreateProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.ListProducts",
+              "id": 6438316338653961,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "ListProducts",
+              "input_name": "google.cloud.vision.v1.ListProductsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.GetProduct",
+              "id": 3137653534346134,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "GetProduct",
+              "input_name": "google.cloud.vision.v1.GetProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.UpdateProduct",
+              "id": 6139343263313263,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "UpdateProduct",
+              "input_name": "google.cloud.vision.v1.UpdateProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.DeleteProduct",
+              "id": 3932656365613965,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "DeleteProduct",
+              "input_name": "google.cloud.vision.v1.DeleteProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.CreateReferenceImage",
+              "id": 3233666237366438,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "CreateReferenceImage",
+              "input_name": "google.cloud.vision.v1.CreateReferenceImageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.DeleteReferenceImage",
+              "id": 3062363239333564,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "DeleteReferenceImage",
+              "input_name": "google.cloud.vision.v1.DeleteReferenceImageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.ListReferenceImages",
+              "id": 3563613162663638,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "ListReferenceImages",
+              "input_name": "google.cloud.vision.v1.ListReferenceImagesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.GetReferenceImage",
+              "id": 6234623936313464,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "GetReferenceImage",
+              "input_name": "google.cloud.vision.v1.GetReferenceImageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.AddProductToProductSet",
+              "id": 6339366631626466,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "AddProductToProductSet",
+              "input_name": "google.cloud.vision.v1.AddProductToProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.RemoveProductFromProductSet",
+              "id": 3863653264363632,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "RemoveProductFromProductSet",
+              "input_name": "google.cloud.vision.v1.RemoveProductFromProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.ListProductsInProductSet",
+              "id": 6361326638316263,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "ListProductsInProductSet",
+              "input_name": "google.cloud.vision.v1.ListProductsInProductSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.ImportProductSets",
+              "id": 3266323633323832,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "ImportProductSets",
+              "input_name": "google.cloud.vision.v1.ImportProductSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ProductSearch.PurgeProducts",
+              "id": 3664666535636639,
+              "service_model_id": 3464623166323864,
+              "rpc_name": "PurgeProducts",
+              "input_name": "google.cloud.vision.v1.PurgeProductsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.vision.v1.ImageAnnotator",
+          "id": 3764333763363763,
+          "package_model_id": 3363623830643161,
+          "name": "ImageAnnotator",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vision.v1.ImageAnnotator.BatchAnnotateImages",
+              "id": 3636646461316338,
+              "service_model_id": 3764333763363763,
+              "rpc_name": "BatchAnnotateImages",
+              "input_name": "google.cloud.vision.v1.BatchAnnotateImagesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ImageAnnotator.BatchAnnotateFiles",
+              "id": 3162326330356661,
+              "service_model_id": 3764333763363763,
+              "rpc_name": "BatchAnnotateFiles",
+              "input_name": "google.cloud.vision.v1.BatchAnnotateFilesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ImageAnnotator.AsyncBatchAnnotateImages",
+              "id": 3337376637646431,
+              "service_model_id": 3764333763363763,
+              "rpc_name": "AsyncBatchAnnotateImages",
+              "input_name": "google.cloud.vision.v1.AsyncBatchAnnotateImagesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1.ImageAnnotator.AsyncBatchAnnotateFiles",
+              "id": 3034653462653862,
+              "service_model_id": 3764333763363763,
+              "rpc_name": "AsyncBatchAnnotateFiles",
+              "input_name": "google.cloud.vision.v1.AsyncBatchAnnotateFilesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

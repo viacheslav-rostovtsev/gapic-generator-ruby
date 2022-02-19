@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-service_management-v1",
+  "id": 6165336631343332,
+  "name": "google-cloud-service_management-v1",
+  "packages": [
+    {
+      "design_name": "google.api.servicemanagement.v1",
+      "id": 3266373438323165,
+      "name": "google.api.servicemanagement.v1",
+      "gem_model_id": 6165336631343332,
+      "ruby_namespace": "::Google::Cloud::ServiceManagement::V1",
+      "services": [
+        {
+          "design_name": "google.api.servicemanagement.v1.ServiceManager",
+          "id": 3530626538336339,
+          "package_model_id": 3266373438323165,
+          "name": "ServiceManager",
+          "rpcs": [
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.ListServices",
+              "id": 3237656139383335,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "ListServices",
+              "input_name": "google.api.servicemanagement.v1.ListServicesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.GetService",
+              "id": 6164643561643935,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "GetService",
+              "input_name": "google.api.servicemanagement.v1.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.CreateService",
+              "id": 3930626439646234,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "CreateService",
+              "input_name": "google.api.servicemanagement.v1.CreateServiceRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.DeleteService",
+              "id": 3535613536633461,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "DeleteService",
+              "input_name": "google.api.servicemanagement.v1.DeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.UndeleteService",
+              "id": 3763656635333366,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "UndeleteService",
+              "input_name": "google.api.servicemanagement.v1.UndeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.ListServiceConfigs",
+              "id": 3737393762396637,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "ListServiceConfigs",
+              "input_name": "google.api.servicemanagement.v1.ListServiceConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.GetServiceConfig",
+              "id": 3362356563326133,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "GetServiceConfig",
+              "input_name": "google.api.servicemanagement.v1.GetServiceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.CreateServiceConfig",
+              "id": 3461343633376364,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "CreateServiceConfig",
+              "input_name": "google.api.servicemanagement.v1.CreateServiceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.SubmitConfigSource",
+              "id": 3133356537636663,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "SubmitConfigSource",
+              "input_name": "google.api.servicemanagement.v1.SubmitConfigSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.ListServiceRollouts",
+              "id": 6336376533666663,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "ListServiceRollouts",
+              "input_name": "google.api.servicemanagement.v1.ListServiceRolloutsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.GetServiceRollout",
+              "id": 3836366162386338,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "GetServiceRollout",
+              "input_name": "google.api.servicemanagement.v1.GetServiceRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.CreateServiceRollout",
+              "id": 6163343663336234,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "CreateServiceRollout",
+              "input_name": "google.api.servicemanagement.v1.CreateServiceRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicemanagement.v1.ServiceManager.GenerateConfigReport",
+              "id": 3563333434353933,
+              "service_model_id": 3530626538336339,
+              "rpc_name": "GenerateConfigReport",
+              "input_name": "google.api.servicemanagement.v1.GenerateConfigReportRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

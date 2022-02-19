@@ -51,6 +51,10 @@ module Gapic
         message_ruby_type @message
       end
 
+      def underscored_name
+        ActiveSupport::Inflector.underscore name
+      end
+
       def fields
         @fields = @message.fields.map { |f| FieldPresenter.new @api, @message, f }
       end

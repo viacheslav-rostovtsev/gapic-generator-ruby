@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-monitoring-metrics_scope-v1",
+  "id": 3239323939303138,
+  "name": "google-cloud-monitoring-metrics_scope-v1",
+  "packages": [
+    {
+      "design_name": "google.monitoring.metricsscope.v1",
+      "id": 6661363330346435,
+      "name": "google.monitoring.metricsscope.v1",
+      "gem_model_id": 3239323939303138,
+      "ruby_namespace": "::Google::Cloud::Monitoring::MetricsScope::V1",
+      "services": [
+        {
+          "design_name": "google.monitoring.metricsscope.v1.MetricsScopes",
+          "id": 6534316330663564,
+          "package_model_id": 6661363330346435,
+          "name": "MetricsScopes",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.metricsscope.v1.MetricsScopes.GetMetricsScope",
+              "id": 3965653638646364,
+              "service_model_id": 6534316330663564,
+              "rpc_name": "GetMetricsScope",
+              "input_name": "google.monitoring.metricsscope.v1.GetMetricsScopeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.metricsscope.v1.MetricsScopes.ListMetricsScopesByMonitoredProject",
+              "id": 3864636162356330,
+              "service_model_id": 6534316330663564,
+              "rpc_name": "ListMetricsScopesByMonitoredProject",
+              "input_name": "google.monitoring.metricsscope.v1.ListMetricsScopesByMonitoredProjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.metricsscope.v1.MetricsScopes.CreateMonitoredProject",
+              "id": 3966393439393061,
+              "service_model_id": 6534316330663564,
+              "rpc_name": "CreateMonitoredProject",
+              "input_name": "google.monitoring.metricsscope.v1.CreateMonitoredProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.metricsscope.v1.MetricsScopes.DeleteMonitoredProject",
+              "id": 3364366138353030,
+              "service_model_id": 6534316330663564,
+              "rpc_name": "DeleteMonitoredProject",
+              "input_name": "google.monitoring.metricsscope.v1.DeleteMonitoredProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

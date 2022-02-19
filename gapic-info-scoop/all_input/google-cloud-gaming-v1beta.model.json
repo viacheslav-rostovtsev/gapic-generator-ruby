@@ -1,0 +1,318 @@
+{
+  "design_name": "google-cloud-gaming-v1beta",
+  "id": 6165633132626439,
+  "name": "google-cloud-gaming-v1beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.gaming.v1beta",
+      "id": 3838633035393362,
+      "name": "google.cloud.gaming.v1beta",
+      "gem_model_id": 6165633132626439,
+      "ruby_namespace": "::Google::Cloud::Gaming::V1beta",
+      "services": [
+        {
+          "design_name": "google.cloud.gaming.v1beta.GameServerClustersService",
+          "id": 6232373061316232,
+          "package_model_id": 3838633035393362,
+          "name": "GameServerClustersService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.ListGameServerClusters",
+              "id": 6436336235633236,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "ListGameServerClusters",
+              "input_name": "google.cloud.gaming.v1beta.ListGameServerClustersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.GetGameServerCluster",
+              "id": 3036306431343162,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "GetGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.GetGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.CreateGameServerCluster",
+              "id": 3632653833613561,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "CreateGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.CreateGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.PreviewCreateGameServerCluster",
+              "id": 3163616430326361,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "PreviewCreateGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.PreviewCreateGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.DeleteGameServerCluster",
+              "id": 6363616538623332,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "DeleteGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.DeleteGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.PreviewDeleteGameServerCluster",
+              "id": 3132616365653865,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "PreviewDeleteGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.PreviewDeleteGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.UpdateGameServerCluster",
+              "id": 3266633731333333,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "UpdateGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.UpdateGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerClustersService.PreviewUpdateGameServerCluster",
+              "id": 3164303037383030,
+              "service_model_id": 6232373061316232,
+              "rpc_name": "PreviewUpdateGameServerCluster",
+              "input_name": "google.cloud.gaming.v1beta.PreviewUpdateGameServerClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.gaming.v1beta.GameServerConfigsService",
+          "id": 6232636537383638,
+          "package_model_id": 3838633035393362,
+          "name": "GameServerConfigsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerConfigsService.ListGameServerConfigs",
+              "id": 6437353930356132,
+              "service_model_id": 6232636537383638,
+              "rpc_name": "ListGameServerConfigs",
+              "input_name": "google.cloud.gaming.v1beta.ListGameServerConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerConfigsService.GetGameServerConfig",
+              "id": 3165666338393831,
+              "service_model_id": 6232636537383638,
+              "rpc_name": "GetGameServerConfig",
+              "input_name": "google.cloud.gaming.v1beta.GetGameServerConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerConfigsService.CreateGameServerConfig",
+              "id": 3162636562643137,
+              "service_model_id": 6232636537383638,
+              "rpc_name": "CreateGameServerConfig",
+              "input_name": "google.cloud.gaming.v1beta.CreateGameServerConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerConfigsService.DeleteGameServerConfig",
+              "id": 3064343563393264,
+              "service_model_id": 6232636537383638,
+              "rpc_name": "DeleteGameServerConfig",
+              "input_name": "google.cloud.gaming.v1beta.DeleteGameServerConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService",
+          "id": 6663303435323233,
+          "package_model_id": 3838633035393362,
+          "name": "GameServerDeploymentsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.ListGameServerDeployments",
+              "id": 6635306432656137,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "ListGameServerDeployments",
+              "input_name": "google.cloud.gaming.v1beta.ListGameServerDeploymentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.GetGameServerDeployment",
+              "id": 3161316362333437,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "GetGameServerDeployment",
+              "input_name": "google.cloud.gaming.v1beta.GetGameServerDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.CreateGameServerDeployment",
+              "id": 6436333562616532,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "CreateGameServerDeployment",
+              "input_name": "google.cloud.gaming.v1beta.CreateGameServerDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.DeleteGameServerDeployment",
+              "id": 6131616136376139,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "DeleteGameServerDeployment",
+              "input_name": "google.cloud.gaming.v1beta.DeleteGameServerDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.UpdateGameServerDeployment",
+              "id": 3538393361343336,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "UpdateGameServerDeployment",
+              "input_name": "google.cloud.gaming.v1beta.UpdateGameServerDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.GetGameServerDeploymentRollout",
+              "id": 3564313930303161,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "GetGameServerDeploymentRollout",
+              "input_name": "google.cloud.gaming.v1beta.GetGameServerDeploymentRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.UpdateGameServerDeploymentRollout",
+              "id": 6535666334663034,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "UpdateGameServerDeploymentRollout",
+              "input_name": "google.cloud.gaming.v1beta.UpdateGameServerDeploymentRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.PreviewGameServerDeploymentRollout",
+              "id": 3030613136666531,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "PreviewGameServerDeploymentRollout",
+              "input_name": "google.cloud.gaming.v1beta.PreviewGameServerDeploymentRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.GameServerDeploymentsService.FetchDeploymentState",
+              "id": 6364613863376563,
+              "service_model_id": 6663303435323233,
+              "rpc_name": "FetchDeploymentState",
+              "input_name": "google.cloud.gaming.v1beta.FetchDeploymentStateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.gaming.v1beta.RealmsService",
+          "id": 6565353036303764,
+          "package_model_id": 3838633035393362,
+          "name": "RealmsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.ListRealms",
+              "id": 3836346230393530,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "ListRealms",
+              "input_name": "google.cloud.gaming.v1beta.ListRealmsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.GetRealm",
+              "id": 3164383334356138,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "GetRealm",
+              "input_name": "google.cloud.gaming.v1beta.GetRealmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.CreateRealm",
+              "id": 3230316434366634,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "CreateRealm",
+              "input_name": "google.cloud.gaming.v1beta.CreateRealmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.DeleteRealm",
+              "id": 6530303230303436,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "DeleteRealm",
+              "input_name": "google.cloud.gaming.v1beta.DeleteRealmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.UpdateRealm",
+              "id": 6663303834316632,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "UpdateRealm",
+              "input_name": "google.cloud.gaming.v1beta.UpdateRealmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gaming.v1beta.RealmsService.PreviewRealmUpdate",
+              "id": 3562396533313039,
+              "service_model_id": 6565353036303764,
+              "rpc_name": "PreviewRealmUpdate",
+              "input_name": "google.cloud.gaming.v1beta.PreviewRealmUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

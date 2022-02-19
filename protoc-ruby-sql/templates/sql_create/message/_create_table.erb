@@ -1,0 +1,19 @@
+<%- assert_locals table -%>
+def create_table_<%= table.method_name %> db
+  db.execute("drop table if exists <%= table.name %>")
+  db.execute <<-SQL
+    create table <%= table.name %> (
+    <%- table.columns.each do |col| -%>
+      <%- not_null_str = col.not_null? ? " not null" : "" -%>
+      <%= col.name %> <%= col.type_name %><%= not_null_str %>, 
+    <%- end -%>
+
+      PRIMARY KEY(id)
+
+    <%- table.foreign_keys.each do |col| -%>
+      FOREIGN KEY(<%= col.name %>) REFERENCES <%= col.foreign_key_table %>(id)
+    <%- end -%>
+
+    );
+  SQL
+end

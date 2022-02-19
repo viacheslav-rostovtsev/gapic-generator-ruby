@@ -1,0 +1,332 @@
+{
+  "design_name": "google-cloud-dataplex-v1",
+  "id": 3234636537373838,
+  "name": "google-cloud-dataplex-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.dataplex.v1",
+      "id": 6531656566326463,
+      "name": "google.cloud.dataplex.v1",
+      "gem_model_id": 3234636537373838,
+      "ruby_namespace": "::Google::Cloud::Dataplex::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.dataplex.v1.MetadataService",
+          "id": 3036623662396631,
+          "package_model_id": 6531656566326463,
+          "name": "MetadataService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataplex.v1.MetadataService.GetEntity",
+              "id": 6633623164366334,
+              "service_model_id": 3036623662396631,
+              "rpc_name": "GetEntity",
+              "input_name": "google.cloud.dataplex.v1.GetEntityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.MetadataService.ListEntities",
+              "id": 6334616137373032,
+              "service_model_id": 3036623662396631,
+              "rpc_name": "ListEntities",
+              "input_name": "google.cloud.dataplex.v1.ListEntitiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.MetadataService.GetPartition",
+              "id": 6264616639313064,
+              "service_model_id": 3036623662396631,
+              "rpc_name": "GetPartition",
+              "input_name": "google.cloud.dataplex.v1.GetPartitionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.MetadataService.ListPartitions",
+              "id": 6636656532383138,
+              "service_model_id": 3036623662396631,
+              "rpc_name": "ListPartitions",
+              "input_name": "google.cloud.dataplex.v1.ListPartitionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataplex.v1.DataplexService",
+          "id": 3863363533323335,
+          "package_model_id": 6531656566326463,
+          "name": "DataplexService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.CreateLake",
+              "id": 3133396462663236,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "CreateLake",
+              "input_name": "google.cloud.dataplex.v1.CreateLakeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.UpdateLake",
+              "id": 3835626136613263,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "UpdateLake",
+              "input_name": "google.cloud.dataplex.v1.UpdateLakeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.DeleteLake",
+              "id": 3535396231376563,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "DeleteLake",
+              "input_name": "google.cloud.dataplex.v1.DeleteLakeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListLakes",
+              "id": 6362346538653337,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListLakes",
+              "input_name": "google.cloud.dataplex.v1.ListLakesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.GetLake",
+              "id": 3666346430666261,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "GetLake",
+              "input_name": "google.cloud.dataplex.v1.GetLakeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListLakeActions",
+              "id": 6236613233373862,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListLakeActions",
+              "input_name": "google.cloud.dataplex.v1.ListLakeActionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.CreateZone",
+              "id": 3033366464616661,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "CreateZone",
+              "input_name": "google.cloud.dataplex.v1.CreateZoneRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.UpdateZone",
+              "id": 3839356231616462,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "UpdateZone",
+              "input_name": "google.cloud.dataplex.v1.UpdateZoneRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.DeleteZone",
+              "id": 6166333866323737,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "DeleteZone",
+              "input_name": "google.cloud.dataplex.v1.DeleteZoneRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListZones",
+              "id": 6435353230373961,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListZones",
+              "input_name": "google.cloud.dataplex.v1.ListZonesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.GetZone",
+              "id": 6162303332653734,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "GetZone",
+              "input_name": "google.cloud.dataplex.v1.GetZoneRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListZoneActions",
+              "id": 6238303338663234,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListZoneActions",
+              "input_name": "google.cloud.dataplex.v1.ListZoneActionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.CreateAsset",
+              "id": 3339336137626435,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "CreateAsset",
+              "input_name": "google.cloud.dataplex.v1.CreateAssetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.UpdateAsset",
+              "id": 3763343066666461,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "UpdateAsset",
+              "input_name": "google.cloud.dataplex.v1.UpdateAssetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.DeleteAsset",
+              "id": 6337626662366563,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "DeleteAsset",
+              "input_name": "google.cloud.dataplex.v1.DeleteAssetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListAssets",
+              "id": 3834363761356136,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListAssets",
+              "input_name": "google.cloud.dataplex.v1.ListAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.GetAsset",
+              "id": 6264313133663563,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "GetAsset",
+              "input_name": "google.cloud.dataplex.v1.GetAssetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListAssetActions",
+              "id": 3261643961653862,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListAssetActions",
+              "input_name": "google.cloud.dataplex.v1.ListAssetActionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.CreateTask",
+              "id": 3561663535383662,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "CreateTask",
+              "input_name": "google.cloud.dataplex.v1.CreateTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.UpdateTask",
+              "id": 6166326666373834,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "UpdateTask",
+              "input_name": "google.cloud.dataplex.v1.UpdateTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.DeleteTask",
+              "id": 3866303036373562,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "DeleteTask",
+              "input_name": "google.cloud.dataplex.v1.DeleteTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListTasks",
+              "id": 3537656365613131,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListTasks",
+              "input_name": "google.cloud.dataplex.v1.ListTasksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.GetTask",
+              "id": 6663353531656461,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "GetTask",
+              "input_name": "google.cloud.dataplex.v1.GetTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.ListJobs",
+              "id": 3166663034333034,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.dataplex.v1.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.GetJob",
+              "id": 3837636332616262,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.dataplex.v1.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataplex.v1.DataplexService.CancelJob",
+              "id": 3237366266363435,
+              "service_model_id": 3863363533323335,
+              "rpc_name": "CancelJob",
+              "input_name": "google.cloud.dataplex.v1.CancelJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

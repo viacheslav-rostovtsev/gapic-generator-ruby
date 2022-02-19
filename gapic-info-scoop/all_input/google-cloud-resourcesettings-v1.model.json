@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-resource_settings-v1",
+  "id": 6365396631303336,
+  "name": "google-cloud-resource_settings-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.resourcesettings.v1",
+      "id": 6530306561376263,
+      "name": "google.cloud.resourcesettings.v1",
+      "gem_model_id": 6365396631303336,
+      "ruby_namespace": "::Google::Cloud::ResourceSettings::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.resourcesettings.v1.ResourceSettingsService",
+          "id": 3230616561323031,
+          "package_model_id": 6530306561376263,
+          "name": "ResourceSettingsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcesettings.v1.ResourceSettingsService.ListSettings",
+              "id": 6632386465633962,
+              "service_model_id": 3230616561323031,
+              "rpc_name": "ListSettings",
+              "input_name": "google.cloud.resourcesettings.v1.ListSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcesettings.v1.ResourceSettingsService.GetSetting",
+              "id": 3737666139616430,
+              "service_model_id": 3230616561323031,
+              "rpc_name": "GetSetting",
+              "input_name": "google.cloud.resourcesettings.v1.GetSettingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcesettings.v1.ResourceSettingsService.UpdateSetting",
+              "id": 3033346432386366,
+              "service_model_id": 3230616561323031,
+              "rpc_name": "UpdateSetting",
+              "input_name": "google.cloud.resourcesettings.v1.UpdateSettingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

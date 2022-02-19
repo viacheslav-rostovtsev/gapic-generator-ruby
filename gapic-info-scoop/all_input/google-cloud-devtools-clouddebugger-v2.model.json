@@ -1,0 +1,112 @@
+{
+  "design_name": "google-cloud-debugger-v2",
+  "id": 3961323566303130,
+  "name": "google-cloud-debugger-v2",
+  "packages": [
+    {
+      "design_name": "google.devtools.clouddebugger.v2",
+      "id": 3466353439313639,
+      "name": "google.devtools.clouddebugger.v2",
+      "gem_model_id": 3961323566303130,
+      "ruby_namespace": "::Google::Cloud::Debugger::V2",
+      "services": [
+        {
+          "design_name": "google.devtools.clouddebugger.v2.Controller",
+          "id": 3033366530653930,
+          "package_model_id": 3466353439313639,
+          "name": "Controller",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Controller.RegisterDebuggee",
+              "id": 3165623765626162,
+              "service_model_id": 3033366530653930,
+              "rpc_name": "RegisterDebuggee",
+              "input_name": "google.devtools.clouddebugger.v2.RegisterDebuggeeRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Controller.ListActiveBreakpoints",
+              "id": 6661323537326439,
+              "service_model_id": 3033366530653930,
+              "rpc_name": "ListActiveBreakpoints",
+              "input_name": "google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Controller.UpdateActiveBreakpoint",
+              "id": 6335383638393961,
+              "service_model_id": 3033366530653930,
+              "rpc_name": "UpdateActiveBreakpoint",
+              "input_name": "google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.devtools.clouddebugger.v2.Debugger",
+          "id": 3566623463336362,
+          "package_model_id": 3466353439313639,
+          "name": "Debugger",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Debugger.SetBreakpoint",
+              "id": 3331653834313233,
+              "service_model_id": 3566623463336362,
+              "rpc_name": "SetBreakpoint",
+              "input_name": "google.devtools.clouddebugger.v2.SetBreakpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Debugger.GetBreakpoint",
+              "id": 6561306266373965,
+              "service_model_id": 3566623463336362,
+              "rpc_name": "GetBreakpoint",
+              "input_name": "google.devtools.clouddebugger.v2.GetBreakpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Debugger.DeleteBreakpoint",
+              "id": 3031396530323731,
+              "service_model_id": 3566623463336362,
+              "rpc_name": "DeleteBreakpoint",
+              "input_name": "google.devtools.clouddebugger.v2.DeleteBreakpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Debugger.ListBreakpoints",
+              "id": 3833633533653361,
+              "service_model_id": 3566623463336362,
+              "rpc_name": "ListBreakpoints",
+              "input_name": "google.devtools.clouddebugger.v2.ListBreakpointsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouddebugger.v2.Debugger.ListDebuggees",
+              "id": 6331346138333437,
+              "service_model_id": 3566623463336362,
+              "rpc_name": "ListDebuggees",
+              "input_name": "google.devtools.clouddebugger.v2.ListDebuggeesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

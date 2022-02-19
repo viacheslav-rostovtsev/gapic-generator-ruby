@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-tpu-v2alpha1",
+  "id": 3132393333373031,
+  "name": "google-cloud-tpu-v2alpha1",
+  "packages": [
+    {
+      "design_name": "google.cloud.tpu.v2alpha1",
+      "id": 3166656438326435,
+      "name": "google.cloud.tpu.v2alpha1",
+      "gem_model_id": 3132393333373031,
+      "ruby_namespace": "::Google::Cloud::Tpu::V2alpha1",
+      "services": [
+        {
+          "design_name": "google.cloud.tpu.v2alpha1.Tpu",
+          "id": 3231613635393466,
+          "package_model_id": 3166656438326435,
+          "name": "Tpu",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.ListNodes",
+              "id": 6333396661626538,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "ListNodes",
+              "input_name": "google.cloud.tpu.v2alpha1.ListNodesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.GetNode",
+              "id": 3964363030653965,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "GetNode",
+              "input_name": "google.cloud.tpu.v2alpha1.GetNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.CreateNode",
+              "id": 6263383137653538,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "CreateNode",
+              "input_name": "google.cloud.tpu.v2alpha1.CreateNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.DeleteNode",
+              "id": 3733316464303963,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "DeleteNode",
+              "input_name": "google.cloud.tpu.v2alpha1.DeleteNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.StopNode",
+              "id": 3734336666353038,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "StopNode",
+              "input_name": "google.cloud.tpu.v2alpha1.StopNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.StartNode",
+              "id": 6432653934336436,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "StartNode",
+              "input_name": "google.cloud.tpu.v2alpha1.StartNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.UpdateNode",
+              "id": 3130636434646339,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "UpdateNode",
+              "input_name": "google.cloud.tpu.v2alpha1.UpdateNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.GenerateServiceIdentity",
+              "id": 3138363333333635,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "GenerateServiceIdentity",
+              "input_name": "google.cloud.tpu.v2alpha1.GenerateServiceIdentityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.ListAcceleratorTypes",
+              "id": 3136363036323461,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "ListAcceleratorTypes",
+              "input_name": "google.cloud.tpu.v2alpha1.ListAcceleratorTypesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.GetAcceleratorType",
+              "id": 6233366663343561,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "GetAcceleratorType",
+              "input_name": "google.cloud.tpu.v2alpha1.GetAcceleratorTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.ListRuntimeVersions",
+              "id": 6563666363663130,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "ListRuntimeVersions",
+              "input_name": "google.cloud.tpu.v2alpha1.ListRuntimeVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.GetRuntimeVersion",
+              "id": 3665306161666436,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "GetRuntimeVersion",
+              "input_name": "google.cloud.tpu.v2alpha1.GetRuntimeVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v2alpha1.Tpu.GetGuestAttributes",
+              "id": 6434646161366431,
+              "service_model_id": 3231613635393466,
+              "rpc_name": "GetGuestAttributes",
+              "input_name": "google.cloud.tpu.v2alpha1.GetGuestAttributesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

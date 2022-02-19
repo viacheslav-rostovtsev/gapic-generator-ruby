@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-datastore-v1",
+  "id": 3833343731666233,
+  "name": "google-cloud-datastore-v1",
+  "packages": [
+    {
+      "design_name": "google.datastore.v1",
+      "id": 3936316639326562,
+      "name": "google.datastore.v1",
+      "gem_model_id": 3833343731666233,
+      "ruby_namespace": "::Google::Cloud::Datastore::V1",
+      "services": [
+        {
+          "design_name": "google.datastore.v1.Datastore",
+          "id": 3733636439633666,
+          "package_model_id": 3936316639326562,
+          "name": "Datastore",
+          "rpcs": [
+            {
+              "design_name": "google.datastore.v1.Datastore.Lookup",
+              "id": 3964646339313233,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "Lookup",
+              "input_name": "google.datastore.v1.LookupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.RunQuery",
+              "id": 3932303335636464,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "RunQuery",
+              "input_name": "google.datastore.v1.RunQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.BeginTransaction",
+              "id": 3864636564613937,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "BeginTransaction",
+              "input_name": "google.datastore.v1.BeginTransactionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.Commit",
+              "id": 6337656430313766,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "Commit",
+              "input_name": "google.datastore.v1.CommitRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.Rollback",
+              "id": 6361343830656236,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "Rollback",
+              "input_name": "google.datastore.v1.RollbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.AllocateIds",
+              "id": 3238363839383863,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "AllocateIds",
+              "input_name": "google.datastore.v1.AllocateIdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.v1.Datastore.ReserveIds",
+              "id": 3062346136336238,
+              "service_model_id": 3733636439633666,
+              "rpc_name": "ReserveIds",
+              "input_name": "google.datastore.v1.ReserveIdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

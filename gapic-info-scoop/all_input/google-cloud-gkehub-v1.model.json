@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-gke_hub-v1",
+  "id": 6636663664363635,
+  "name": "google-cloud-gke_hub-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.gkehub.v1",
+      "id": 3933656261353262,
+      "name": "google.cloud.gkehub.v1",
+      "gem_model_id": 6636663664363635,
+      "ruby_namespace": "::Google::Cloud::GkeHub::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.gkehub.v1.GkeHub",
+          "id": 6236643832656236,
+          "package_model_id": 3933656261353262,
+          "name": "GkeHub",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.ListMemberships",
+              "id": 3036373838393966,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "ListMemberships",
+              "input_name": "google.cloud.gkehub.v1.ListMembershipsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.ListFeatures",
+              "id": 3962646364363939,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "ListFeatures",
+              "input_name": "google.cloud.gkehub.v1.ListFeaturesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.GetMembership",
+              "id": 6339653133363631,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "GetMembership",
+              "input_name": "google.cloud.gkehub.v1.GetMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.GetFeature",
+              "id": 3736666364353936,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "GetFeature",
+              "input_name": "google.cloud.gkehub.v1.GetFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.CreateMembership",
+              "id": 6635653030623834,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "CreateMembership",
+              "input_name": "google.cloud.gkehub.v1.CreateMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.CreateFeature",
+              "id": 6339643332623239,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "CreateFeature",
+              "input_name": "google.cloud.gkehub.v1.CreateFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.DeleteMembership",
+              "id": 3036653839353537,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "DeleteMembership",
+              "input_name": "google.cloud.gkehub.v1.DeleteMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.DeleteFeature",
+              "id": 3962616331656632,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "DeleteFeature",
+              "input_name": "google.cloud.gkehub.v1.DeleteFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.UpdateMembership",
+              "id": 3432663664383937,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "UpdateMembership",
+              "input_name": "google.cloud.gkehub.v1.UpdateMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.UpdateFeature",
+              "id": 6338663039623439,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "UpdateFeature",
+              "input_name": "google.cloud.gkehub.v1.UpdateFeatureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1.GkeHub.GenerateConnectManifest",
+              "id": 3839643464666136,
+              "service_model_id": 6236643832656236,
+              "rpc_name": "GenerateConnectManifest",
+              "input_name": "google.cloud.gkehub.v1.GenerateConnectManifestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

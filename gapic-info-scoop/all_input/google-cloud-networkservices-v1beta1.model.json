@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-networkservices-v1beta1",
+  "id": 6234386338333437,
+  "name": "google-cloud-networkservices-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.networkservices.v1beta1",
+      "id": 6237316438333165,
+      "name": "google.cloud.networkservices.v1beta1",
+      "gem_model_id": 6234386338333437,
+      "ruby_namespace": "::Google::Cloud::NetworkServices::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.networkservices.v1beta1.NetworkServices",
+          "id": 3339373762663939,
+          "package_model_id": 6237316438333165,
+          "name": "NetworkServices",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.networkservices.v1beta1.NetworkServices.ListEndpointPolicies",
+              "id": 3565333064336362,
+              "service_model_id": 3339373762663939,
+              "rpc_name": "ListEndpointPolicies",
+              "input_name": "google.cloud.networkservices.v1beta1.ListEndpointPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkservices.v1beta1.NetworkServices.GetEndpointPolicy",
+              "id": 3035356563373562,
+              "service_model_id": 3339373762663939,
+              "rpc_name": "GetEndpointPolicy",
+              "input_name": "google.cloud.networkservices.v1beta1.GetEndpointPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkservices.v1beta1.NetworkServices.CreateEndpointPolicy",
+              "id": 6465626639373366,
+              "service_model_id": 3339373762663939,
+              "rpc_name": "CreateEndpointPolicy",
+              "input_name": "google.cloud.networkservices.v1beta1.CreateEndpointPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkservices.v1beta1.NetworkServices.UpdateEndpointPolicy",
+              "id": 3066346665303734,
+              "service_model_id": 3339373762663939,
+              "rpc_name": "UpdateEndpointPolicy",
+              "input_name": "google.cloud.networkservices.v1beta1.UpdateEndpointPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkservices.v1beta1.NetworkServices.DeleteEndpointPolicy",
+              "id": 6165383363383437,
+              "service_model_id": 3339373762663939,
+              "rpc_name": "DeleteEndpointPolicy",
+              "input_name": "google.cloud.networkservices.v1beta1.DeleteEndpointPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

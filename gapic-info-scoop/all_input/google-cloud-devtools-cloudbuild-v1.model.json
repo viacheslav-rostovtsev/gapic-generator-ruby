@@ -1,0 +1,204 @@
+{
+  "design_name": "google-cloud-build-v1",
+  "id": 3938333238303036,
+  "name": "google-cloud-build-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.cloudbuild.v1",
+      "id": 6137306136343235,
+      "name": "google.devtools.cloudbuild.v1",
+      "gem_model_id": 3938333238303036,
+      "ruby_namespace": "::Google::Cloud::Build::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.cloudbuild.v1.CloudBuild",
+          "id": 3134393932393361,
+          "package_model_id": 6137306136343235,
+          "name": "CloudBuild",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.CreateBuild",
+              "id": 3639383266646330,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "CreateBuild",
+              "input_name": "google.devtools.cloudbuild.v1.CreateBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.GetBuild",
+              "id": 6265323162363638,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "GetBuild",
+              "input_name": "google.devtools.cloudbuild.v1.GetBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.ListBuilds",
+              "id": 3737383663333134,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "ListBuilds",
+              "input_name": "google.devtools.cloudbuild.v1.ListBuildsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.CancelBuild",
+              "id": 6463343238333763,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "CancelBuild",
+              "input_name": "google.devtools.cloudbuild.v1.CancelBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.RetryBuild",
+              "id": 6535653965333438,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "RetryBuild",
+              "input_name": "google.devtools.cloudbuild.v1.RetryBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.ApproveBuild",
+              "id": 6635653434633932,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "ApproveBuild",
+              "input_name": "google.devtools.cloudbuild.v1.ApproveBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.CreateBuildTrigger",
+              "id": 6437323332656339,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "CreateBuildTrigger",
+              "input_name": "google.devtools.cloudbuild.v1.CreateBuildTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.GetBuildTrigger",
+              "id": 3131643464353661,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "GetBuildTrigger",
+              "input_name": "google.devtools.cloudbuild.v1.GetBuildTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.ListBuildTriggers",
+              "id": 6331623632323866,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "ListBuildTriggers",
+              "input_name": "google.devtools.cloudbuild.v1.ListBuildTriggersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.DeleteBuildTrigger",
+              "id": 3064326565316132,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "DeleteBuildTrigger",
+              "input_name": "google.devtools.cloudbuild.v1.DeleteBuildTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.UpdateBuildTrigger",
+              "id": 3162656437616632,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "UpdateBuildTrigger",
+              "input_name": "google.devtools.cloudbuild.v1.UpdateBuildTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.RunBuildTrigger",
+              "id": 3463343633636430,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "RunBuildTrigger",
+              "input_name": "google.devtools.cloudbuild.v1.RunBuildTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.ReceiveTriggerWebhook",
+              "id": 6261613935666332,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "ReceiveTriggerWebhook",
+              "input_name": "google.devtools.cloudbuild.v1.ReceiveTriggerWebhookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.CreateWorkerPool",
+              "id": 6562396439306330,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "CreateWorkerPool",
+              "input_name": "google.devtools.cloudbuild.v1.CreateWorkerPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.GetWorkerPool",
+              "id": 3865346366396163,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "GetWorkerPool",
+              "input_name": "google.devtools.cloudbuild.v1.GetWorkerPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.DeleteWorkerPool",
+              "id": 3062376630646263,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "DeleteWorkerPool",
+              "input_name": "google.devtools.cloudbuild.v1.DeleteWorkerPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.UpdateWorkerPool",
+              "id": 3134356566333132,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "UpdateWorkerPool",
+              "input_name": "google.devtools.cloudbuild.v1.UpdateWorkerPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudbuild.v1.CloudBuild.ListWorkerPools",
+              "id": 6537643439326137,
+              "service_model_id": 3134393932393361,
+              "rpc_name": "ListWorkerPools",
+              "input_name": "google.devtools.cloudbuild.v1.ListWorkerPoolsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

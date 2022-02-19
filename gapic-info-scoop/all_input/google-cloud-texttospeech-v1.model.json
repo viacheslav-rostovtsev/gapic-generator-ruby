@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-text_to_speech-v1",
+  "id": 3762613133326136,
+  "name": "google-cloud-text_to_speech-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.texttospeech.v1",
+      "id": 6463653163646234,
+      "name": "google.cloud.texttospeech.v1",
+      "gem_model_id": 3762613133326136,
+      "ruby_namespace": "::Google::Cloud::TextToSpeech::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.texttospeech.v1.TextToSpeech",
+          "id": 6466313861313234,
+          "package_model_id": 6463653163646234,
+          "name": "TextToSpeech",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.texttospeech.v1.TextToSpeech.ListVoices",
+              "id": 6235323431636638,
+              "service_model_id": 6466313861313234,
+              "rpc_name": "ListVoices",
+              "input_name": "google.cloud.texttospeech.v1.ListVoicesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.texttospeech.v1.TextToSpeech.SynthesizeSpeech",
+              "id": 3965353331373666,
+              "service_model_id": 6466313861313234,
+              "rpc_name": "SynthesizeSpeech",
+              "input_name": "google.cloud.texttospeech.v1.SynthesizeSpeechRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

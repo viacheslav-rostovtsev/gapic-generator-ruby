@@ -1,0 +1,113 @@
+# frozen_string_literal: true
+
+require "bundler/gem_tasks"
+require "rake/testtask"
+require_relative "../shared/gem_defaults"
+
+libs = [:model]
+
+desc "Update the proto binary dumps which are used to generate templates"
+task :bin do
+  Rake::Task["bin:templates"].invoke
+end
+namespace :bin do |namespace|
+  desc "Update the proto binary dumps for the templates"
+  task :templates do
+    libs.each do |lib|
+      task = namespace[lib]
+      puts "Invoking #{task.name}"
+      task.invoke
+    end
+  end
+
+  libs.each do |lib|
+    desc "Update the proto binary dumps for #{lib}"
+    task lib do
+      update_templates_proto_bins lib
+    end
+  end
+end
+
+desc "Generate the expected output for tests"
+task :gen do
+  Rake::Task["gen:templates"].invoke
+end
+namespace :gen do |namespace|
+  desc "Generate the expected output for template tests"
+  task :templates do
+    libs.each do |lib|
+      task = namespace[lib]
+      puts "Invoking #{task.name}"
+      task.invoke
+    end
+  end
+
+  libs.each do |lib|
+    desc "Generate the expected output for #{lib}"
+    task lib do
+      generate_sql_templates lib
+    end
+  end
+end
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << "test"
+  t.libs << "lib"
+  t.test_files = FileList["test/**/*_test.rb"]
+end
+
+def generate_sql_templates service
+  puts "Running templates generation for #{service}"
+  require "fileutils"
+
+  target_path = File.expand_path File.join("expected_output", String(service))
+  FileUtils.rm_rf target_path
+  FileUtils.mkdir_p target_path
+
+  protoc_gen_ruby_sql_args = [
+    "--plugin=protoc-gen-ruby_sql=bin/protoc-gen-ruby_sql",
+    "--ruby_sql_opt=configuration=../shared/config/#{service}.yml",
+    "--ruby_sql_out=#{target_path}",
+  ]
+  run_generator_for_plugin service, protoc_gen_ruby_sql_args
+
+  protoc_gen_ruby_protobuf_args = [ 
+    "--plugin=protoc-gen-ruby-protobuf=`which protoc-gen-ruby`",
+    "--ruby-protobuf_out=#{File.expand_path("expected_output")}",
+  ]
+  run_generator_for_plugin service, protoc_gen_ruby_protobuf_args
+end
+
+def run_generator_for_plugin service, plugin_args
+  protoc_cmd = [
+    "grpc_tools_ruby_protoc",
+    "-I ../shared/protos",
+    "-I ../shared/api-common-protos",
+    "-I ../shared/googleapis",
+  ] + plugin_args
+
+  # Add the proto files
+  protos = protos_for service
+  protoc_cmd << protos.join(" ")
+
+  protoc_cmd = protoc_cmd.join " "
+  puts protoc_cmd if ENV["VERBOSE"]
+
+  protoc_cmd_output = `#{protoc_cmd}`
+  puts protoc_cmd_output if ENV["VERBOSE"]
+end
+
+##
+# Updates the binary dumps that are used in :gen namespace raketasks
+# by calling through to the raketasks defined in `shared`
+#
+def update_templates_proto_bins service
+  Dir.chdir "../shared" do
+    Bundler.with_unbundled_env do
+      puts "Running binary input file generation for #{service}"
+      sh "bundle exec rake gen:#{service}", verbose: false
+    end
+  end
+end
+
+task default: :test

@@ -1,0 +1,94 @@
+{
+  "design_name": "google-analytics-data-v1beta",
+  "id": 6361336437333536,
+  "name": "google-analytics-data-v1beta",
+  "packages": [
+    {
+      "design_name": "google.analytics.data.v1beta",
+      "id": 3766646566373166,
+      "name": "google.analytics.data.v1beta",
+      "gem_model_id": 6361336437333536,
+      "ruby_namespace": "::Google::Analytics::Data::V1beta",
+      "services": [
+        {
+          "design_name": "google.analytics.data.v1beta.AnalyticsData",
+          "id": 3764653263653561,
+          "package_model_id": 3766646566373166,
+          "name": "AnalyticsData",
+          "rpcs": [
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.RunReport",
+              "id": 6236313138643239,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "RunReport",
+              "input_name": "google.analytics.data.v1beta.RunReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.RunPivotReport",
+              "id": 6438636164326632,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "RunPivotReport",
+              "input_name": "google.analytics.data.v1beta.RunPivotReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.BatchRunReports",
+              "id": 3434626163393539,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "BatchRunReports",
+              "input_name": "google.analytics.data.v1beta.BatchRunReportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.BatchRunPivotReports",
+              "id": 3165666434626465,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "BatchRunPivotReports",
+              "input_name": "google.analytics.data.v1beta.BatchRunPivotReportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.GetMetadata",
+              "id": 6337643730656164,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "GetMetadata",
+              "input_name": "google.analytics.data.v1beta.GetMetadataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.RunRealtimeReport",
+              "id": 3034636633386137,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "RunRealtimeReport",
+              "input_name": "google.analytics.data.v1beta.RunRealtimeReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.data.v1beta.AnalyticsData.CheckCompatibility",
+              "id": 6562643864353534,
+              "service_model_id": 3764653263653561,
+              "rpc_name": "CheckCompatibility",
+              "input_name": "google.analytics.data.v1beta.CheckCompatibilityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

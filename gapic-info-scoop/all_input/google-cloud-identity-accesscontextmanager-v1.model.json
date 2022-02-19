@@ -1,0 +1,254 @@
+{
+  "design_name": "google-identity-access_context_manager-v1",
+  "id": 3264396262653765,
+  "name": "google-identity-access_context_manager-v1",
+  "packages": [
+    {
+      "design_name": "google.identity.accesscontextmanager.v1",
+      "id": 3130366339376231,
+      "name": "google.identity.accesscontextmanager.v1",
+      "gem_model_id": 3264396262653765,
+      "ruby_namespace": "::Google::Identity::AccessContextManager::V1",
+      "services": [
+        {
+          "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager",
+          "id": 3863396436383031,
+          "package_model_id": 3130366339376231,
+          "name": "AccessContextManager",
+          "rpcs": [
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ListAccessPolicies",
+              "id": 3135333234393938,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ListAccessPolicies",
+              "input_name": "google.identity.accesscontextmanager.v1.ListAccessPoliciesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.GetAccessPolicy",
+              "id": 6330613965386163,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "GetAccessPolicy",
+              "input_name": "google.identity.accesscontextmanager.v1.GetAccessPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.CreateAccessPolicy",
+              "id": 6634353530623033,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "CreateAccessPolicy",
+              "input_name": "google.identity.accesscontextmanager.v1.AccessPolicy",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.UpdateAccessPolicy",
+              "id": 3262323933353135,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "UpdateAccessPolicy",
+              "input_name": "google.identity.accesscontextmanager.v1.UpdateAccessPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.DeleteAccessPolicy",
+              "id": 3838303332643165,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "DeleteAccessPolicy",
+              "input_name": "google.identity.accesscontextmanager.v1.DeleteAccessPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ListAccessLevels",
+              "id": 6162313337633634,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ListAccessLevels",
+              "input_name": "google.identity.accesscontextmanager.v1.ListAccessLevelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.GetAccessLevel",
+              "id": 6139653537376161,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "GetAccessLevel",
+              "input_name": "google.identity.accesscontextmanager.v1.GetAccessLevelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.CreateAccessLevel",
+              "id": 6566333765316263,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "CreateAccessLevel",
+              "input_name": "google.identity.accesscontextmanager.v1.CreateAccessLevelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.UpdateAccessLevel",
+              "id": 6565646361663561,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "UpdateAccessLevel",
+              "input_name": "google.identity.accesscontextmanager.v1.UpdateAccessLevelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.DeleteAccessLevel",
+              "id": 3231353230376333,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "DeleteAccessLevel",
+              "input_name": "google.identity.accesscontextmanager.v1.DeleteAccessLevelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ReplaceAccessLevels",
+              "id": 3538643864303837,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ReplaceAccessLevels",
+              "input_name": "google.identity.accesscontextmanager.v1.ReplaceAccessLevelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ListServicePerimeters",
+              "id": 3863323564356336,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ListServicePerimeters",
+              "input_name": "google.identity.accesscontextmanager.v1.ListServicePerimetersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.GetServicePerimeter",
+              "id": 3739326264363133,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "GetServicePerimeter",
+              "input_name": "google.identity.accesscontextmanager.v1.GetServicePerimeterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.CreateServicePerimeter",
+              "id": 3933613532616266,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "CreateServicePerimeter",
+              "input_name": "google.identity.accesscontextmanager.v1.CreateServicePerimeterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.UpdateServicePerimeter",
+              "id": 3930663564366562,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "UpdateServicePerimeter",
+              "input_name": "google.identity.accesscontextmanager.v1.UpdateServicePerimeterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.DeleteServicePerimeter",
+              "id": 3132376239336330,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "DeleteServicePerimeter",
+              "input_name": "google.identity.accesscontextmanager.v1.DeleteServicePerimeterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ReplaceServicePerimeters",
+              "id": 6666303330323732,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ReplaceServicePerimeters",
+              "input_name": "google.identity.accesscontextmanager.v1.ReplaceServicePerimetersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.CommitServicePerimeters",
+              "id": 3866396630353762,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "CommitServicePerimeters",
+              "input_name": "google.identity.accesscontextmanager.v1.CommitServicePerimetersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.ListGcpUserAccessBindings",
+              "id": 3239393337666162,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "ListGcpUserAccessBindings",
+              "input_name": "google.identity.accesscontextmanager.v1.ListGcpUserAccessBindingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.GetGcpUserAccessBinding",
+              "id": 3739303333396534,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "GetGcpUserAccessBinding",
+              "input_name": "google.identity.accesscontextmanager.v1.GetGcpUserAccessBindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.CreateGcpUserAccessBinding",
+              "id": 6138326233386130,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "CreateGcpUserAccessBinding",
+              "input_name": "google.identity.accesscontextmanager.v1.CreateGcpUserAccessBindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.UpdateGcpUserAccessBinding",
+              "id": 3163653965386335,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "UpdateGcpUserAccessBinding",
+              "input_name": "google.identity.accesscontextmanager.v1.UpdateGcpUserAccessBindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.identity.accesscontextmanager.v1.AccessContextManager.DeleteGcpUserAccessBinding",
+              "id": 3431333836316136,
+              "service_model_id": 3863396436383031,
+              "rpc_name": "DeleteGcpUserAccessBinding",
+              "input_name": "google.identity.accesscontextmanager.v1.DeleteGcpUserAccessBindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

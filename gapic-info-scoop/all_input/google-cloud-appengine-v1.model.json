@@ -1,0 +1,420 @@
+{
+  "design_name": "google-cloud-app_engine-v1",
+  "id": 6361313139373964,
+  "name": "google-cloud-app_engine-v1",
+  "packages": [
+    {
+      "design_name": "google.appengine.v1",
+      "id": 3562373531653564,
+      "name": "google.appengine.v1",
+      "gem_model_id": 6361313139373964,
+      "ruby_namespace": "::Google::Cloud::AppEngine::V1",
+      "services": [
+        {
+          "design_name": "google.appengine.v1.Applications",
+          "id": 3238383166376261,
+          "package_model_id": 3562373531653564,
+          "name": "Applications",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.Applications.GetApplication",
+              "id": 3565663733356130,
+              "service_model_id": 3238383166376261,
+              "rpc_name": "GetApplication",
+              "input_name": "google.appengine.v1.GetApplicationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Applications.CreateApplication",
+              "id": 3565353231626332,
+              "service_model_id": 3238383166376261,
+              "rpc_name": "CreateApplication",
+              "input_name": "google.appengine.v1.CreateApplicationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Applications.UpdateApplication",
+              "id": 3838396365303531,
+              "service_model_id": 3238383166376261,
+              "rpc_name": "UpdateApplication",
+              "input_name": "google.appengine.v1.UpdateApplicationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Applications.RepairApplication",
+              "id": 3464396332633162,
+              "service_model_id": 3238383166376261,
+              "rpc_name": "RepairApplication",
+              "input_name": "google.appengine.v1.RepairApplicationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.Services",
+          "id": 3065353438323966,
+          "package_model_id": 3562373531653564,
+          "name": "Services",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.Services.ListServices",
+              "id": 3036343930383035,
+              "service_model_id": 3065353438323966,
+              "rpc_name": "ListServices",
+              "input_name": "google.appengine.v1.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Services.GetService",
+              "id": 3666663238333733,
+              "service_model_id": 3065353438323966,
+              "rpc_name": "GetService",
+              "input_name": "google.appengine.v1.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Services.UpdateService",
+              "id": 3066366638333964,
+              "service_model_id": 3065353438323966,
+              "rpc_name": "UpdateService",
+              "input_name": "google.appengine.v1.UpdateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Services.DeleteService",
+              "id": 3733373737613966,
+              "service_model_id": 3065353438323966,
+              "rpc_name": "DeleteService",
+              "input_name": "google.appengine.v1.DeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.Versions",
+          "id": 3337656636343265,
+          "package_model_id": 3562373531653564,
+          "name": "Versions",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.Versions.ListVersions",
+              "id": 3063663265376432,
+              "service_model_id": 3337656636343265,
+              "rpc_name": "ListVersions",
+              "input_name": "google.appengine.v1.ListVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Versions.GetVersion",
+              "id": 6233623336663466,
+              "service_model_id": 3337656636343265,
+              "rpc_name": "GetVersion",
+              "input_name": "google.appengine.v1.GetVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Versions.CreateVersion",
+              "id": 6134666665383533,
+              "service_model_id": 3337656636343265,
+              "rpc_name": "CreateVersion",
+              "input_name": "google.appengine.v1.CreateVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Versions.UpdateVersion",
+              "id": 3737303535393739,
+              "service_model_id": 3337656636343265,
+              "rpc_name": "UpdateVersion",
+              "input_name": "google.appengine.v1.UpdateVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Versions.DeleteVersion",
+              "id": 6436396566303532,
+              "service_model_id": 3337656636343265,
+              "rpc_name": "DeleteVersion",
+              "input_name": "google.appengine.v1.DeleteVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.Instances",
+          "id": 6133333763646134,
+          "package_model_id": 3562373531653564,
+          "name": "Instances",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.Instances.ListInstances",
+              "id": 6533386631633332,
+              "service_model_id": 6133333763646134,
+              "rpc_name": "ListInstances",
+              "input_name": "google.appengine.v1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Instances.GetInstance",
+              "id": 3162316333613932,
+              "service_model_id": 6133333763646134,
+              "rpc_name": "GetInstance",
+              "input_name": "google.appengine.v1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Instances.DeleteInstance",
+              "id": 6631383864323530,
+              "service_model_id": 6133333763646134,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.appengine.v1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Instances.DebugInstance",
+              "id": 3830333932356430,
+              "service_model_id": 6133333763646134,
+              "rpc_name": "DebugInstance",
+              "input_name": "google.appengine.v1.DebugInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.Firewall",
+          "id": 6439666238396337,
+          "package_model_id": 3562373531653564,
+          "name": "Firewall",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.Firewall.ListIngressRules",
+              "id": 3264323764356535,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "ListIngressRules",
+              "input_name": "google.appengine.v1.ListIngressRulesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Firewall.BatchUpdateIngressRules",
+              "id": 3336333734643266,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "BatchUpdateIngressRules",
+              "input_name": "google.appengine.v1.BatchUpdateIngressRulesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Firewall.CreateIngressRule",
+              "id": 3965363439646331,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "CreateIngressRule",
+              "input_name": "google.appengine.v1.CreateIngressRuleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Firewall.GetIngressRule",
+              "id": 3630616135373431,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "GetIngressRule",
+              "input_name": "google.appengine.v1.GetIngressRuleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Firewall.UpdateIngressRule",
+              "id": 3762313432396530,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "UpdateIngressRule",
+              "input_name": "google.appengine.v1.UpdateIngressRuleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.Firewall.DeleteIngressRule",
+              "id": 3061643963646531,
+              "service_model_id": 6439666238396337,
+              "rpc_name": "DeleteIngressRule",
+              "input_name": "google.appengine.v1.DeleteIngressRuleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.AuthorizedDomains",
+          "id": 3538373830653062,
+          "package_model_id": 3562373531653564,
+          "name": "AuthorizedDomains",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.AuthorizedDomains.ListAuthorizedDomains",
+              "id": 6530333961323066,
+              "service_model_id": 3538373830653062,
+              "rpc_name": "ListAuthorizedDomains",
+              "input_name": "google.appengine.v1.ListAuthorizedDomainsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.AuthorizedCertificates",
+          "id": 3538663432623838,
+          "package_model_id": 3562373531653564,
+          "name": "AuthorizedCertificates",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.AuthorizedCertificates.ListAuthorizedCertificates",
+              "id": 3163346637633231,
+              "service_model_id": 3538663432623838,
+              "rpc_name": "ListAuthorizedCertificates",
+              "input_name": "google.appengine.v1.ListAuthorizedCertificatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.AuthorizedCertificates.GetAuthorizedCertificate",
+              "id": 3039633132633366,
+              "service_model_id": 3538663432623838,
+              "rpc_name": "GetAuthorizedCertificate",
+              "input_name": "google.appengine.v1.GetAuthorizedCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.AuthorizedCertificates.CreateAuthorizedCertificate",
+              "id": 3364663662376131,
+              "service_model_id": 3538663432623838,
+              "rpc_name": "CreateAuthorizedCertificate",
+              "input_name": "google.appengine.v1.CreateAuthorizedCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.AuthorizedCertificates.UpdateAuthorizedCertificate",
+              "id": 6532313734643433,
+              "service_model_id": 3538663432623838,
+              "rpc_name": "UpdateAuthorizedCertificate",
+              "input_name": "google.appengine.v1.UpdateAuthorizedCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.AuthorizedCertificates.DeleteAuthorizedCertificate",
+              "id": 6634393234356239,
+              "service_model_id": 3538663432623838,
+              "rpc_name": "DeleteAuthorizedCertificate",
+              "input_name": "google.appengine.v1.DeleteAuthorizedCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.appengine.v1.DomainMappings",
+          "id": 3038396434323163,
+          "package_model_id": 3562373531653564,
+          "name": "DomainMappings",
+          "rpcs": [
+            {
+              "design_name": "google.appengine.v1.DomainMappings.ListDomainMappings",
+              "id": 3366613034383064,
+              "service_model_id": 3038396434323163,
+              "rpc_name": "ListDomainMappings",
+              "input_name": "google.appengine.v1.ListDomainMappingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.DomainMappings.GetDomainMapping",
+              "id": 3765356131333339,
+              "service_model_id": 3038396434323163,
+              "rpc_name": "GetDomainMapping",
+              "input_name": "google.appengine.v1.GetDomainMappingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.DomainMappings.CreateDomainMapping",
+              "id": 3437666663313064,
+              "service_model_id": 3038396434323163,
+              "rpc_name": "CreateDomainMapping",
+              "input_name": "google.appengine.v1.CreateDomainMappingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.DomainMappings.UpdateDomainMapping",
+              "id": 6631653136323962,
+              "service_model_id": 3038396434323163,
+              "rpc_name": "UpdateDomainMapping",
+              "input_name": "google.appengine.v1.UpdateDomainMappingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.appengine.v1.DomainMappings.DeleteDomainMapping",
+              "id": 6537646435633161,
+              "service_model_id": 3038396434323163,
+              "rpc_name": "DeleteDomainMapping",
+              "input_name": "google.appengine.v1.DeleteDomainMappingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

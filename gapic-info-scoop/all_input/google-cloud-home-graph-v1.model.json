@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-graph-v1",
+  "id": 6330323537356331,
+  "name": "google-cloud-graph-v1",
+  "packages": [
+    {
+      "design_name": "google.home.graph.v1",
+      "id": 3664323762313735,
+      "name": "google.home.graph.v1",
+      "gem_model_id": 6330323537356331,
+      "ruby_namespace": "::Google::Home::Graph::V1",
+      "services": [
+        {
+          "design_name": "google.home.graph.v1.HomeGraphApiService",
+          "id": 6331376361653361,
+          "package_model_id": 3664323762313735,
+          "name": "HomeGraphApiService",
+          "rpcs": [
+            {
+              "design_name": "google.home.graph.v1.HomeGraphApiService.RequestSyncDevices",
+              "id": 3761613062623862,
+              "service_model_id": 6331376361653361,
+              "rpc_name": "RequestSyncDevices",
+              "input_name": "google.home.graph.v1.RequestSyncDevicesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.graph.v1.HomeGraphApiService.ReportStateAndNotification",
+              "id": 3934323761613736,
+              "service_model_id": 6331376361653361,
+              "rpc_name": "ReportStateAndNotification",
+              "input_name": "google.home.graph.v1.ReportStateAndNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.graph.v1.HomeGraphApiService.DeleteAgentUser",
+              "id": 3031656237336434,
+              "service_model_id": 6331376361653361,
+              "rpc_name": "DeleteAgentUser",
+              "input_name": "google.home.graph.v1.DeleteAgentUserRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.graph.v1.HomeGraphApiService.Query",
+              "id": 3261363034666266,
+              "service_model_id": 6331376361653361,
+              "rpc_name": "Query",
+              "input_name": "google.home.graph.v1.QueryRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.graph.v1.HomeGraphApiService.Sync",
+              "id": 3830636334346263,
+              "service_model_id": 6331376361653361,
+              "rpc_name": "Sync",
+              "input_name": "google.home.graph.v1.SyncRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-document_ai-v1",
+  "id": 6237643135383438,
+  "name": "google-cloud-document_ai-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.documentai.v1",
+      "id": 6165383263653163,
+      "name": "google.cloud.documentai.v1",
+      "gem_model_id": 6237643135383438,
+      "ruby_namespace": "::Google::Cloud::DocumentAI::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.documentai.v1.DocumentProcessorService",
+          "id": 3565653866613065,
+          "package_model_id": 6165383263653163,
+          "name": "DocumentProcessorService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.documentai.v1.DocumentProcessorService.ProcessDocument",
+              "id": 3635323866613334,
+              "service_model_id": 3565653866613065,
+              "rpc_name": "ProcessDocument",
+              "input_name": "google.cloud.documentai.v1.ProcessRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1.DocumentProcessorService.BatchProcessDocuments",
+              "id": 3236656433646335,
+              "service_model_id": 3565653866613065,
+              "rpc_name": "BatchProcessDocuments",
+              "input_name": "google.cloud.documentai.v1.BatchProcessRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1.DocumentProcessorService.ReviewDocument",
+              "id": 6232313131613264,
+              "service_model_id": 3565653866613065,
+              "rpc_name": "ReviewDocument",
+              "input_name": "google.cloud.documentai.v1.ReviewDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-metastore-v1alpha",
+  "id": 6363666566643962,
+  "name": "google-cloud-metastore-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.metastore.v1alpha",
+      "id": 3162356531366435,
+      "name": "google.cloud.metastore.v1alpha",
+      "gem_model_id": 6363666566643962,
+      "ruby_namespace": "::Google::Cloud::Metastore::V1alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore",
+          "id": 6433656161633535,
+          "package_model_id": 3162356531366435,
+          "name": "DataprocMetastore",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.ListServices",
+              "id": 3838653034396530,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "ListServices",
+              "input_name": "google.cloud.metastore.v1alpha.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.GetService",
+              "id": 3966316336386465,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "GetService",
+              "input_name": "google.cloud.metastore.v1alpha.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.CreateService",
+              "id": 3534386263383533,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "CreateService",
+              "input_name": "google.cloud.metastore.v1alpha.CreateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.UpdateService",
+              "id": 3863363339373833,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "UpdateService",
+              "input_name": "google.cloud.metastore.v1alpha.UpdateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.DeleteService",
+              "id": 6137663535613837,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "DeleteService",
+              "input_name": "google.cloud.metastore.v1alpha.DeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.ListMetadataImports",
+              "id": 3533393330633039,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "ListMetadataImports",
+              "input_name": "google.cloud.metastore.v1alpha.ListMetadataImportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.GetMetadataImport",
+              "id": 6639663031386130,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "GetMetadataImport",
+              "input_name": "google.cloud.metastore.v1alpha.GetMetadataImportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.CreateMetadataImport",
+              "id": 3061656237623135,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "CreateMetadataImport",
+              "input_name": "google.cloud.metastore.v1alpha.CreateMetadataImportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.UpdateMetadataImport",
+              "id": 3039623438643832,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "UpdateMetadataImport",
+              "input_name": "google.cloud.metastore.v1alpha.UpdateMetadataImportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.ExportMetadata",
+              "id": 3538336233333936,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "ExportMetadata",
+              "input_name": "google.cloud.metastore.v1alpha.ExportMetadataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.RestoreService",
+              "id": 3434663261356535,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "RestoreService",
+              "input_name": "google.cloud.metastore.v1alpha.RestoreServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.ListBackups",
+              "id": 3839613832643632,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "ListBackups",
+              "input_name": "google.cloud.metastore.v1alpha.ListBackupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.GetBackup",
+              "id": 6230663636313539,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "GetBackup",
+              "input_name": "google.cloud.metastore.v1alpha.GetBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.CreateBackup",
+              "id": 3634636430623134,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "CreateBackup",
+              "input_name": "google.cloud.metastore.v1alpha.CreateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.metastore.v1alpha.DataprocMetastore.DeleteBackup",
+              "id": 3136653331643935,
+              "service_model_id": 6433656161633535,
+              "rpc_name": "DeleteBackup",
+              "input_name": "google.cloud.metastore.v1alpha.DeleteBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

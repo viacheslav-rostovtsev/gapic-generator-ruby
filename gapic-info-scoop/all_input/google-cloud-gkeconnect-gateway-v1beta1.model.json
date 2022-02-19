@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-gke_connect-gateway-v1beta1",
+  "id": 3335633663613138,
+  "name": "google-cloud-gke_connect-gateway-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.gkeconnect.gateway.v1beta1",
+      "id": 3362356661663163,
+      "name": "google.cloud.gkeconnect.gateway.v1beta1",
+      "gem_model_id": 3335633663613138,
+      "ruby_namespace": "::Google::Cloud::GkeConnect::Gateway::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService",
+          "id": 3237313130363262,
+          "package_model_id": 3362356661663163,
+          "name": "GatewayService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService.GetResource",
+              "id": 3861323063633730,
+              "service_model_id": 3237313130363262,
+              "rpc_name": "GetResource",
+              "input_name": "google.api.HttpBody",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService.PostResource",
+              "id": 3532646264333039,
+              "service_model_id": 3237313130363262,
+              "rpc_name": "PostResource",
+              "input_name": "google.api.HttpBody",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService.DeleteResource",
+              "id": 3265613034326364,
+              "service_model_id": 3237313130363262,
+              "rpc_name": "DeleteResource",
+              "input_name": "google.api.HttpBody",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService.PutResource",
+              "id": 3766386466306564,
+              "service_model_id": 3237313130363262,
+              "rpc_name": "PutResource",
+              "input_name": "google.api.HttpBody",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkeconnect.gateway.v1beta1.GatewayService.PatchResource",
+              "id": 6261663531663765,
+              "service_model_id": 3237313130363262,
+              "rpc_name": "PatchResource",
+              "input_name": "google.api.HttpBody",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

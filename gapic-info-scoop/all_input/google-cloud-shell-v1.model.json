@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-shell-v1",
+  "id": 3138646337643161,
+  "name": "google-cloud-shell-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.shell.v1",
+      "id": 3034313138636630,
+      "name": "google.cloud.shell.v1",
+      "gem_model_id": 3138646337643161,
+      "ruby_namespace": "::Google::Cloud::Shell::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.shell.v1.CloudShellService",
+          "id": 3466653764343666,
+          "package_model_id": 3034313138636630,
+          "name": "CloudShellService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.shell.v1.CloudShellService.GetEnvironment",
+              "id": 3432663330663063,
+              "service_model_id": 3466653764343666,
+              "rpc_name": "GetEnvironment",
+              "input_name": "google.cloud.shell.v1.GetEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.shell.v1.CloudShellService.StartEnvironment",
+              "id": 3535373633653238,
+              "service_model_id": 3466653764343666,
+              "rpc_name": "StartEnvironment",
+              "input_name": "google.cloud.shell.v1.StartEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.shell.v1.CloudShellService.AuthorizeEnvironment",
+              "id": 3839363363316136,
+              "service_model_id": 3466653764343666,
+              "rpc_name": "AuthorizeEnvironment",
+              "input_name": "google.cloud.shell.v1.AuthorizeEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.shell.v1.CloudShellService.AddPublicKey",
+              "id": 6332653031626531,
+              "service_model_id": 3466653764343666,
+              "rpc_name": "AddPublicKey",
+              "input_name": "google.cloud.shell.v1.AddPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.shell.v1.CloudShellService.RemovePublicKey",
+              "id": 3630303162366461,
+              "service_model_id": 3466653764343666,
+              "rpc_name": "RemovePublicKey",
+              "input_name": "google.cloud.shell.v1.RemovePublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-apps-alertcenter-v1beta1",
+  "id": 6534613635613165,
+  "name": "google-cloud-apps-alertcenter-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.apps.alertcenter.v1beta1",
+      "id": 3538626333633631,
+      "name": "google.apps.alertcenter.v1beta1",
+      "gem_model_id": 6534613635613165,
+      "ruby_namespace": "::Google::Apps::AlertCenter::V1beta1",
+      "services": [
+        {
+          "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService",
+          "id": 3465346530376661,
+          "package_model_id": 3538626333633631,
+          "name": "AlertCenterService",
+          "rpcs": [
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.ListAlerts",
+              "id": 3931323537666264,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "ListAlerts",
+              "input_name": "google.apps.alertcenter.v1beta1.ListAlertsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.GetAlert",
+              "id": 6164366261366531,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "GetAlert",
+              "input_name": "google.apps.alertcenter.v1beta1.GetAlertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.DeleteAlert",
+              "id": 6266343733633666,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "DeleteAlert",
+              "input_name": "google.apps.alertcenter.v1beta1.DeleteAlertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.UndeleteAlert",
+              "id": 6265653137663366,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "UndeleteAlert",
+              "input_name": "google.apps.alertcenter.v1beta1.UndeleteAlertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.CreateAlertFeedback",
+              "id": 6566343337616364,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "CreateAlertFeedback",
+              "input_name": "google.apps.alertcenter.v1beta1.CreateAlertFeedbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.ListAlertFeedback",
+              "id": 3134636336663666,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "ListAlertFeedback",
+              "input_name": "google.apps.alertcenter.v1beta1.ListAlertFeedbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.GetAlertMetadata",
+              "id": 6134643033353363,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "GetAlertMetadata",
+              "input_name": "google.apps.alertcenter.v1beta1.GetAlertMetadataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.GetSettings",
+              "id": 3565306665613136,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "GetSettings",
+              "input_name": "google.apps.alertcenter.v1beta1.GetSettingsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.UpdateSettings",
+              "id": 3330353935306662,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "UpdateSettings",
+              "input_name": "google.apps.alertcenter.v1beta1.UpdateSettingsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.BatchDeleteAlerts",
+              "id": 6537353462636239,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "BatchDeleteAlerts",
+              "input_name": "google.apps.alertcenter.v1beta1.BatchDeleteAlertsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.apps.alertcenter.v1beta1.AlertCenterService.BatchUndeleteAlerts",
+              "id": 3333653335363233,
+              "service_model_id": 3465346530376661,
+              "rpc_name": "BatchUndeleteAlerts",
+              "input_name": "google.apps.alertcenter.v1beta1.BatchUndeleteAlertsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "design_name": "google-cloud-channel-v1",
+  "id": 6566383937653865,
+  "name": "google-cloud-channel-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.channel.v1",
+      "id": 3536376166316534,
+      "name": "google.cloud.channel.v1",
+      "gem_model_id": 6566383937653865,
+      "ruby_namespace": "::Google::Cloud::Channel::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.channel.v1.CloudChannelService",
+          "id": 6135623431346164,
+          "package_model_id": 3536376166316534,
+          "name": "CloudChannelService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListCustomers",
+              "id": 3165343031383466,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListCustomers",
+              "input_name": "google.cloud.channel.v1.ListCustomersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.GetCustomer",
+              "id": 6232396539346631,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "GetCustomer",
+              "input_name": "google.cloud.channel.v1.GetCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.CheckCloudIdentityAccountsExist",
+              "id": 6138383733633434,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "CheckCloudIdentityAccountsExist",
+              "input_name": "google.cloud.channel.v1.CheckCloudIdentityAccountsExistRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.CreateCustomer",
+              "id": 3464383661303336,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "CreateCustomer",
+              "input_name": "google.cloud.channel.v1.CreateCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.UpdateCustomer",
+              "id": 3264643864623161,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "UpdateCustomer",
+              "input_name": "google.cloud.channel.v1.UpdateCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.DeleteCustomer",
+              "id": 6334626630656330,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "DeleteCustomer",
+              "input_name": "google.cloud.channel.v1.DeleteCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ImportCustomer",
+              "id": 6436333330643332,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ImportCustomer",
+              "input_name": "google.cloud.channel.v1.ImportCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ProvisionCloudIdentity",
+              "id": 6638666531356234,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ProvisionCloudIdentity",
+              "input_name": "google.cloud.channel.v1.ProvisionCloudIdentityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListEntitlements",
+              "id": 3738653363393662,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListEntitlements",
+              "input_name": "google.cloud.channel.v1.ListEntitlementsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListTransferableSkus",
+              "id": 3264636564616530,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListTransferableSkus",
+              "input_name": "google.cloud.channel.v1.ListTransferableSkusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListTransferableOffers",
+              "id": 3265656330343639,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListTransferableOffers",
+              "input_name": "google.cloud.channel.v1.ListTransferableOffersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.GetEntitlement",
+              "id": 3263333130396537,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "GetEntitlement",
+              "input_name": "google.cloud.channel.v1.GetEntitlementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.CreateEntitlement",
+              "id": 3737636233396165,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "CreateEntitlement",
+              "input_name": "google.cloud.channel.v1.CreateEntitlementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ChangeParameters",
+              "id": 6537323064353062,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ChangeParameters",
+              "input_name": "google.cloud.channel.v1.ChangeParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ChangeRenewalSettings",
+              "id": 6462333262393635,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ChangeRenewalSettings",
+              "input_name": "google.cloud.channel.v1.ChangeRenewalSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ChangeOffer",
+              "id": 3462616333633834,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ChangeOffer",
+              "input_name": "google.cloud.channel.v1.ChangeOfferRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.StartPaidService",
+              "id": 6461333337393739,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "StartPaidService",
+              "input_name": "google.cloud.channel.v1.StartPaidServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.SuspendEntitlement",
+              "id": 6462653138353364,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "SuspendEntitlement",
+              "input_name": "google.cloud.channel.v1.SuspendEntitlementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.CancelEntitlement",
+              "id": 6537353562633037,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "CancelEntitlement",
+              "input_name": "google.cloud.channel.v1.CancelEntitlementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ActivateEntitlement",
+              "id": 3136336535323337,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ActivateEntitlement",
+              "input_name": "google.cloud.channel.v1.ActivateEntitlementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.TransferEntitlements",
+              "id": 3963323965653733,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "TransferEntitlements",
+              "input_name": "google.cloud.channel.v1.TransferEntitlementsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.TransferEntitlementsToGoogle",
+              "id": 6662306233306265,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "TransferEntitlementsToGoogle",
+              "input_name": "google.cloud.channel.v1.TransferEntitlementsToGoogleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListChannelPartnerLinks",
+              "id": 6638636665663531,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListChannelPartnerLinks",
+              "input_name": "google.cloud.channel.v1.ListChannelPartnerLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.GetChannelPartnerLink",
+              "id": 6533623034613365,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "GetChannelPartnerLink",
+              "input_name": "google.cloud.channel.v1.GetChannelPartnerLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.CreateChannelPartnerLink",
+              "id": 3065643866616536,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "CreateChannelPartnerLink",
+              "input_name": "google.cloud.channel.v1.CreateChannelPartnerLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.UpdateChannelPartnerLink",
+              "id": 6130663261376563,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "UpdateChannelPartnerLink",
+              "input_name": "google.cloud.channel.v1.UpdateChannelPartnerLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.LookupOffer",
+              "id": 3764626330393566,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "LookupOffer",
+              "input_name": "google.cloud.channel.v1.LookupOfferRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListProducts",
+              "id": 3432633835386332,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListProducts",
+              "input_name": "google.cloud.channel.v1.ListProductsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListSkus",
+              "id": 6566633361653736,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListSkus",
+              "input_name": "google.cloud.channel.v1.ListSkusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListOffers",
+              "id": 6636383039333038,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListOffers",
+              "input_name": "google.cloud.channel.v1.ListOffersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListPurchasableSkus",
+              "id": 6435353632363332,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListPurchasableSkus",
+              "input_name": "google.cloud.channel.v1.ListPurchasableSkusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListPurchasableOffers",
+              "id": 3066303038376263,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListPurchasableOffers",
+              "input_name": "google.cloud.channel.v1.ListPurchasableOffersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.RegisterSubscriber",
+              "id": 3531336562363932,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "RegisterSubscriber",
+              "input_name": "google.cloud.channel.v1.RegisterSubscriberRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.UnregisterSubscriber",
+              "id": 3931316636336636,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "UnregisterSubscriber",
+              "input_name": "google.cloud.channel.v1.UnregisterSubscriberRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.channel.v1.CloudChannelService.ListSubscribers",
+              "id": 6463323233346132,
+              "service_model_id": 6135623431346164,
+              "rpc_name": "ListSubscribers",
+              "input_name": "google.cloud.channel.v1.ListSubscribersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

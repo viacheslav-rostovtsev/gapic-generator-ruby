@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-org_policy-v2",
+  "id": 6632623966313766,
+  "name": "google-cloud-org_policy-v2",
+  "packages": [
+    {
+      "design_name": "google.cloud.orgpolicy.v2",
+      "id": 3465396533326534,
+      "name": "google.cloud.orgpolicy.v2",
+      "gem_model_id": 6632623966313766,
+      "ruby_namespace": "::Google::Cloud::OrgPolicy::V2",
+      "services": [
+        {
+          "design_name": "google.cloud.orgpolicy.v2.OrgPolicy",
+          "id": 3066303534313366,
+          "package_model_id": 3465396533326534,
+          "name": "OrgPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.ListConstraints",
+              "id": 6637666530373536,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "ListConstraints",
+              "input_name": "google.cloud.orgpolicy.v2.ListConstraintsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.ListPolicies",
+              "id": 6338373533343533,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "ListPolicies",
+              "input_name": "google.cloud.orgpolicy.v2.ListPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.GetPolicy",
+              "id": 6339313066633765,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "GetPolicy",
+              "input_name": "google.cloud.orgpolicy.v2.GetPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.GetEffectivePolicy",
+              "id": 3233313038373031,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "GetEffectivePolicy",
+              "input_name": "google.cloud.orgpolicy.v2.GetEffectivePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.CreatePolicy",
+              "id": 3738396534353235,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "CreatePolicy",
+              "input_name": "google.cloud.orgpolicy.v2.CreatePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.UpdatePolicy",
+              "id": 3536626337376234,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "UpdatePolicy",
+              "input_name": "google.cloud.orgpolicy.v2.UpdatePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orgpolicy.v2.OrgPolicy.DeletePolicy",
+              "id": 6234376434373839,
+              "service_model_id": 3066303534313366,
+              "rpc_name": "DeletePolicy",
+              "input_name": "google.cloud.orgpolicy.v2.DeletePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

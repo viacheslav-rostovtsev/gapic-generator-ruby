@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-eventarc-publishing-v1",
+  "id": 6134666164616535,
+  "name": "google-cloud-eventarc-publishing-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.eventarc.publishing.v1",
+      "id": 3932353734386466,
+      "name": "google.cloud.eventarc.publishing.v1",
+      "gem_model_id": 6134666164616535,
+      "ruby_namespace": "::Google::Cloud::Eventarc::Publishing::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.eventarc.publishing.v1.Publisher",
+          "id": 3762383639386437,
+          "package_model_id": 3932353734386466,
+          "name": "Publisher",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.eventarc.publishing.v1.Publisher.PublishChannelConnectionEvents",
+              "id": 6436386266643362,
+              "service_model_id": 3762383639386437,
+              "rpc_name": "PublishChannelConnectionEvents",
+              "input_name": "google.cloud.eventarc.publishing.v1.PublishChannelConnectionEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

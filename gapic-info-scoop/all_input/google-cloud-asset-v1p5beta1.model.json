@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-asset-v1p5beta1",
+  "id": 6136613465643365,
+  "name": "google-cloud-asset-v1p5beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.asset.v1p5beta1",
+      "id": 3364633464356264,
+      "name": "google.cloud.asset.v1p5beta1",
+      "gem_model_id": 6136613465643365,
+      "ruby_namespace": "::Google::Cloud::Asset::V1p5beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.asset.v1p5beta1.AssetService",
+          "id": 6431636263626234,
+          "package_model_id": 3364633464356264,
+          "name": "AssetService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.asset.v1p5beta1.AssetService.ListAssets",
+              "id": 6134393138343935,
+              "service_model_id": 6431636263626234,
+              "rpc_name": "ListAssets",
+              "input_name": "google.cloud.asset.v1p5beta1.ListAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-chromeos-uidetection-v1",
+  "id": 6363386233343263,
+  "name": "google-cloud-chromeos-uidetection-v1",
+  "packages": [
+    {
+      "design_name": "google.chromeos.uidetection.v1",
+      "id": 3331616638383138,
+      "name": "google.chromeos.uidetection.v1",
+      "gem_model_id": 6363386233343263,
+      "ruby_namespace": "::Google::Chromeos::Uidetection::V1",
+      "services": [
+        {
+          "design_name": "google.chromeos.uidetection.v1.UiDetectionService",
+          "id": 3565663334333738,
+          "package_model_id": 3331616638383138,
+          "name": "UiDetectionService",
+          "rpcs": [
+            {
+              "design_name": "google.chromeos.uidetection.v1.UiDetectionService.ExecuteDetection",
+              "id": 3937393365383431,
+              "service_model_id": 3565663334333738,
+              "rpc_name": "ExecuteDetection",
+              "input_name": "google.chromeos.uidetection.v1.UiDetectionRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

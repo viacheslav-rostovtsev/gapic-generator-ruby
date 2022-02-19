@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-example_library-v1",
+  "id": 3434343932343663,
+  "name": "google-cloud-example_library-v1",
+  "packages": [
+    {
+      "design_name": "google.example.library.v1",
+      "id": 6431613539663636,
+      "name": "google.example.library.v1",
+      "gem_model_id": 3434343932343663,
+      "ruby_namespace": "::Google::Example::Library::V1",
+      "services": [
+        {
+          "design_name": "google.example.library.v1.LibraryService",
+          "id": 6363366463396562,
+          "package_model_id": 6431613539663636,
+          "name": "LibraryService",
+          "rpcs": [
+            {
+              "design_name": "google.example.library.v1.LibraryService.CreateShelf",
+              "id": 6138363465306365,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "CreateShelf",
+              "input_name": "google.example.library.v1.CreateShelfRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.GetShelf",
+              "id": 6235313063643331,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "GetShelf",
+              "input_name": "google.example.library.v1.GetShelfRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.ListShelves",
+              "id": 6533396464656663,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "ListShelves",
+              "input_name": "google.example.library.v1.ListShelvesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.DeleteShelf",
+              "id": 3332356139333039,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "DeleteShelf",
+              "input_name": "google.example.library.v1.DeleteShelfRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.MergeShelves",
+              "id": 3439336532636630,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "MergeShelves",
+              "input_name": "google.example.library.v1.MergeShelvesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.CreateBook",
+              "id": 3130373331393065,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "CreateBook",
+              "input_name": "google.example.library.v1.CreateBookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.GetBook",
+              "id": 6534633137353330,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "GetBook",
+              "input_name": "google.example.library.v1.GetBookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.ListBooks",
+              "id": 3464613063316234,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "ListBooks",
+              "input_name": "google.example.library.v1.ListBooksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.DeleteBook",
+              "id": 6134386332376164,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "DeleteBook",
+              "input_name": "google.example.library.v1.DeleteBookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.UpdateBook",
+              "id": 6439373939626431,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "UpdateBook",
+              "input_name": "google.example.library.v1.UpdateBookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.example.library.v1.LibraryService.MoveBook",
+              "id": 3563383663623138,
+              "service_model_id": 6363366463396562,
+              "rpc_name": "MoveBook",
+              "input_name": "google.example.library.v1.MoveBookRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

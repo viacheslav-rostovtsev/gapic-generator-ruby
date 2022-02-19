@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-data_fusion-v1",
+  "id": 6135343935373836,
+  "name": "google-cloud-data_fusion-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.datafusion.v1",
+      "id": 3562313933303931,
+      "name": "google.cloud.datafusion.v1",
+      "gem_model_id": 6135343935373836,
+      "ruby_namespace": "::Google::Cloud::DataFusion::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.datafusion.v1.DataFusion",
+          "id": 6164656239613463,
+          "package_model_id": 3562313933303931,
+          "name": "DataFusion",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.ListAvailableVersions",
+              "id": 3661343437336262,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "ListAvailableVersions",
+              "input_name": "google.cloud.datafusion.v1.ListAvailableVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.ListInstances",
+              "id": 6136386564626138,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.datafusion.v1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.GetInstance",
+              "id": 3136383561333536,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.datafusion.v1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.CreateInstance",
+              "id": 3638336538646662,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.datafusion.v1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.DeleteInstance",
+              "id": 6465376537393530,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.datafusion.v1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.UpdateInstance",
+              "id": 6136326265653862,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.datafusion.v1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1.DataFusion.RestartInstance",
+              "id": 6666343231323432,
+              "service_model_id": 6164656239613463,
+              "rpc_name": "RestartInstance",
+              "input_name": "google.cloud.datafusion.v1.RestartInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

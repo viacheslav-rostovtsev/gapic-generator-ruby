@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-playablelocations-v3",
+  "id": 3133303539393034,
+  "name": "google-cloud-playablelocations-v3",
+  "packages": [
+    {
+      "design_name": "google.maps.playablelocations.v3",
+      "id": 6662346665333136,
+      "name": "google.maps.playablelocations.v3",
+      "gem_model_id": 3133303539393034,
+      "ruby_namespace": "::Google::Maps::Playablelocations::V3",
+      "services": [
+        {
+          "design_name": "google.maps.playablelocations.v3.PlayableLocations",
+          "id": 6366663433343536,
+          "package_model_id": 6662346665333136,
+          "name": "PlayableLocations",
+          "rpcs": [
+            {
+              "design_name": "google.maps.playablelocations.v3.PlayableLocations.SamplePlayableLocations",
+              "id": 6261356365386564,
+              "service_model_id": 6366663433343536,
+              "rpc_name": "SamplePlayableLocations",
+              "input_name": "google.maps.playablelocations.v3.SamplePlayableLocationsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.maps.playablelocations.v3.PlayableLocations.LogPlayerReports",
+              "id": 6166393062623632,
+              "service_model_id": 6366663433343536,
+              "rpc_name": "LogPlayerReports",
+              "input_name": "google.maps.playablelocations.v3.LogPlayerReportsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.maps.playablelocations.v3.PlayableLocations.LogImpressions",
+              "id": 3762303937353030,
+              "service_model_id": 6366663433343536,
+              "rpc_name": "LogImpressions",
+              "input_name": "google.maps.playablelocations.v3.LogImpressionsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

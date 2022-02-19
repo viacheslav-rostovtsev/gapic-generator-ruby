@@ -1,0 +1,276 @@
+{
+  "design_name": "google-cloud-talent-v4",
+  "id": 3038656239636161,
+  "name": "google-cloud-talent-v4",
+  "packages": [
+    {
+      "design_name": "google.cloud.talent.v4",
+      "id": 6431616232613033,
+      "name": "google.cloud.talent.v4",
+      "gem_model_id": 3038656239636161,
+      "ruby_namespace": "::Google::Cloud::Talent::V4",
+      "services": [
+        {
+          "design_name": "google.cloud.talent.v4.CompanyService",
+          "id": 3664643463373265,
+          "package_model_id": 6431616232613033,
+          "name": "CompanyService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.talent.v4.CompanyService.CreateCompany",
+              "id": 3863323664363532,
+              "service_model_id": 3664643463373265,
+              "rpc_name": "CreateCompany",
+              "input_name": "google.cloud.talent.v4.CreateCompanyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.CompanyService.GetCompany",
+              "id": 3934396537303864,
+              "service_model_id": 3664643463373265,
+              "rpc_name": "GetCompany",
+              "input_name": "google.cloud.talent.v4.GetCompanyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.CompanyService.UpdateCompany",
+              "id": 3439386432393563,
+              "service_model_id": 3664643463373265,
+              "rpc_name": "UpdateCompany",
+              "input_name": "google.cloud.talent.v4.UpdateCompanyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.CompanyService.DeleteCompany",
+              "id": 6463666339633264,
+              "service_model_id": 3664643463373265,
+              "rpc_name": "DeleteCompany",
+              "input_name": "google.cloud.talent.v4.DeleteCompanyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.CompanyService.ListCompanies",
+              "id": 6435393364343534,
+              "service_model_id": 3664643463373265,
+              "rpc_name": "ListCompanies",
+              "input_name": "google.cloud.talent.v4.ListCompaniesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.talent.v4.Completion",
+          "id": 3034373461653835,
+          "package_model_id": 6431616232613033,
+          "name": "Completion",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.talent.v4.Completion.CompleteQuery",
+              "id": 6464623439356437,
+              "service_model_id": 3034373461653835,
+              "rpc_name": "CompleteQuery",
+              "input_name": "google.cloud.talent.v4.CompleteQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.talent.v4.EventService",
+          "id": 3834633838636538,
+          "package_model_id": 6431616232613033,
+          "name": "EventService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.talent.v4.EventService.CreateClientEvent",
+              "id": 3738396633326237,
+              "service_model_id": 3834633838636538,
+              "rpc_name": "CreateClientEvent",
+              "input_name": "google.cloud.talent.v4.CreateClientEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.talent.v4.JobService",
+          "id": 6538666133373136,
+          "package_model_id": 6431616232613033,
+          "name": "JobService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.talent.v4.JobService.CreateJob",
+              "id": 6234366562633033,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "CreateJob",
+              "input_name": "google.cloud.talent.v4.CreateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.BatchCreateJobs",
+              "id": 3764333862316362,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "BatchCreateJobs",
+              "input_name": "google.cloud.talent.v4.BatchCreateJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.GetJob",
+              "id": 6638666337313430,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.talent.v4.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.UpdateJob",
+              "id": 3135633636363733,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "UpdateJob",
+              "input_name": "google.cloud.talent.v4.UpdateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.BatchUpdateJobs",
+              "id": 3531383933313538,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "BatchUpdateJobs",
+              "input_name": "google.cloud.talent.v4.BatchUpdateJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.DeleteJob",
+              "id": 3235326265303462,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "DeleteJob",
+              "input_name": "google.cloud.talent.v4.DeleteJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.BatchDeleteJobs",
+              "id": 6335313038626338,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "BatchDeleteJobs",
+              "input_name": "google.cloud.talent.v4.BatchDeleteJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.ListJobs",
+              "id": 3831306262356536,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.talent.v4.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.SearchJobs",
+              "id": 3637666537363665,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "SearchJobs",
+              "input_name": "google.cloud.talent.v4.SearchJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.JobService.SearchJobsForAlert",
+              "id": 6431376631333637,
+              "service_model_id": 6538666133373136,
+              "rpc_name": "SearchJobsForAlert",
+              "input_name": "google.cloud.talent.v4.SearchJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.talent.v4.TenantService",
+          "id": 3161363065613732,
+          "package_model_id": 6431616232613033,
+          "name": "TenantService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.talent.v4.TenantService.CreateTenant",
+              "id": 3631373063636336,
+              "service_model_id": 3161363065613732,
+              "rpc_name": "CreateTenant",
+              "input_name": "google.cloud.talent.v4.CreateTenantRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.TenantService.GetTenant",
+              "id": 6362323363656662,
+              "service_model_id": 3161363065613732,
+              "rpc_name": "GetTenant",
+              "input_name": "google.cloud.talent.v4.GetTenantRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.TenantService.UpdateTenant",
+              "id": 3065636130343566,
+              "service_model_id": 3161363065613732,
+              "rpc_name": "UpdateTenant",
+              "input_name": "google.cloud.talent.v4.UpdateTenantRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.TenantService.DeleteTenant",
+              "id": 6333363032653862,
+              "service_model_id": 3161363065613732,
+              "rpc_name": "DeleteTenant",
+              "input_name": "google.cloud.talent.v4.DeleteTenantRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.talent.v4.TenantService.ListTenants",
+              "id": 3532363365396331,
+              "service_model_id": 3161363065613732,
+              "rpc_name": "ListTenants",
+              "input_name": "google.cloud.talent.v4.ListTenantsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

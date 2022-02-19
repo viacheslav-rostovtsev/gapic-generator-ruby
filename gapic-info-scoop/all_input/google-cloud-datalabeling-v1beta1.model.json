@@ -1,0 +1,364 @@
+{
+  "design_name": "google-cloud-data_labeling-v1beta1",
+  "id": 3963383537653130,
+  "name": "google-cloud-data_labeling-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.datalabeling.v1beta1",
+      "id": 3531353463616535,
+      "name": "google.cloud.datalabeling.v1beta1",
+      "gem_model_id": 3963383537653130,
+      "ruby_namespace": "::Google::Cloud::DataLabeling::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService",
+          "id": 3565613366373466,
+          "package_model_id": 3531353463616535,
+          "name": "DataLabelingService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.CreateDataset",
+              "id": 3337616439376431,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "CreateDataset",
+              "input_name": "google.cloud.datalabeling.v1beta1.CreateDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetDataset",
+              "id": 3335336337613730,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetDataset",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListDatasets",
+              "id": 3839346336643163,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListDatasets",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListDatasetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.DeleteDataset",
+              "id": 3033656661396461,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "DeleteDataset",
+              "input_name": "google.cloud.datalabeling.v1beta1.DeleteDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ImportData",
+              "id": 6662663138316366,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ImportData",
+              "input_name": "google.cloud.datalabeling.v1beta1.ImportDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ExportData",
+              "id": 6535356330373664,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ExportData",
+              "input_name": "google.cloud.datalabeling.v1beta1.ExportDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetDataItem",
+              "id": 3035663263386433,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetDataItem",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetDataItemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListDataItems",
+              "id": 3966393239323563,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListDataItems",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListDataItemsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetAnnotatedDataset",
+              "id": 3538376531343636,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetAnnotatedDataset",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetAnnotatedDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListAnnotatedDatasets",
+              "id": 3136656233353930,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListAnnotatedDatasets",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.DeleteAnnotatedDataset",
+              "id": 3461666431353038,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "DeleteAnnotatedDataset",
+              "input_name": "google.cloud.datalabeling.v1beta1.DeleteAnnotatedDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.LabelImage",
+              "id": 6133366337366331,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "LabelImage",
+              "input_name": "google.cloud.datalabeling.v1beta1.LabelImageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.LabelVideo",
+              "id": 6664656530613637,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "LabelVideo",
+              "input_name": "google.cloud.datalabeling.v1beta1.LabelVideoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.LabelText",
+              "id": 6266346432633366,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "LabelText",
+              "input_name": "google.cloud.datalabeling.v1beta1.LabelTextRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetExample",
+              "id": 6531643734646165,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetExample",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetExampleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListExamples",
+              "id": 6239353439646539,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListExamples",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListExamplesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.CreateAnnotationSpecSet",
+              "id": 6435383363656337,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "CreateAnnotationSpecSet",
+              "input_name": "google.cloud.datalabeling.v1beta1.CreateAnnotationSpecSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetAnnotationSpecSet",
+              "id": 6261333965646632,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetAnnotationSpecSet",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetAnnotationSpecSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListAnnotationSpecSets",
+              "id": 3230656335623438,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListAnnotationSpecSets",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.DeleteAnnotationSpecSet",
+              "id": 3330386230376664,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "DeleteAnnotationSpecSet",
+              "input_name": "google.cloud.datalabeling.v1beta1.DeleteAnnotationSpecSetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.CreateInstruction",
+              "id": 3963376462303030,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "CreateInstruction",
+              "input_name": "google.cloud.datalabeling.v1beta1.CreateInstructionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetInstruction",
+              "id": 6362666134366438,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetInstruction",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetInstructionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListInstructions",
+              "id": 3464623761343461,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListInstructions",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListInstructionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.DeleteInstruction",
+              "id": 6634326538373931,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "DeleteInstruction",
+              "input_name": "google.cloud.datalabeling.v1beta1.DeleteInstructionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetEvaluation",
+              "id": 3836666236343334,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetEvaluation",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetEvaluationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.SearchEvaluations",
+              "id": 3061363766643963,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "SearchEvaluations",
+              "input_name": "google.cloud.datalabeling.v1beta1.SearchEvaluationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.SearchExampleComparisons",
+              "id": 3162383132393164,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "SearchExampleComparisons",
+              "input_name": "google.cloud.datalabeling.v1beta1.SearchExampleComparisonsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.CreateEvaluationJob",
+              "id": 3137383630353836,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "CreateEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.CreateEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.UpdateEvaluationJob",
+              "id": 3834346637616132,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "UpdateEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.UpdateEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.GetEvaluationJob",
+              "id": 6334356236363164,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "GetEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.GetEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.PauseEvaluationJob",
+              "id": 3436393838633662,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "PauseEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.PauseEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ResumeEvaluationJob",
+              "id": 3035326135306432,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ResumeEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.ResumeEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.DeleteEvaluationJob",
+              "id": 3436646235376564,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "DeleteEvaluationJob",
+              "input_name": "google.cloud.datalabeling.v1beta1.DeleteEvaluationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datalabeling.v1beta1.DataLabelingService.ListEvaluationJobs",
+              "id": 3464656661363165,
+              "service_model_id": 3565613366373466,
+              "rpc_name": "ListEvaluationJobs",
+              "input_name": "google.cloud.datalabeling.v1beta1.ListEvaluationJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

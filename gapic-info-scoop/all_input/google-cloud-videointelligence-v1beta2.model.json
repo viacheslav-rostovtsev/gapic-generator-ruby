@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-video_intelligence-v1beta2",
+  "id": 6564393964313832,
+  "name": "google-cloud-video_intelligence-v1beta2",
+  "packages": [
+    {
+      "design_name": "google.cloud.videointelligence.v1beta2",
+      "id": 6465386130303238,
+      "name": "google.cloud.videointelligence.v1beta2",
+      "gem_model_id": 6564393964313832,
+      "ruby_namespace": "::Google::Cloud::VideoIntelligence::V1beta2",
+      "services": [
+        {
+          "design_name": "google.cloud.videointelligence.v1beta2.VideoIntelligenceService",
+          "id": 6231316136666636,
+          "package_model_id": 6465386130303238,
+          "name": "VideoIntelligenceService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.videointelligence.v1beta2.VideoIntelligenceService.AnnotateVideo",
+              "id": 3630663963656336,
+              "service_model_id": 6231316136666636,
+              "rpc_name": "AnnotateVideo",
+              "input_name": "google.cloud.videointelligence.v1beta2.AnnotateVideoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

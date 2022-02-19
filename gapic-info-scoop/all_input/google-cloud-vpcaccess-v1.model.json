@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-vpc_access-v1",
+  "id": 3537333333636135,
+  "name": "google-cloud-vpc_access-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.vpcaccess.v1",
+      "id": 3565313864323432,
+      "name": "google.cloud.vpcaccess.v1",
+      "gem_model_id": 3537333333636135,
+      "ruby_namespace": "::Google::Cloud::VpcAccess::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.vpcaccess.v1.VpcAccessService",
+          "id": 3535396337646564,
+          "package_model_id": 3565313864323432,
+          "name": "VpcAccessService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vpcaccess.v1.VpcAccessService.CreateConnector",
+              "id": 3832326661393962,
+              "service_model_id": 3535396337646564,
+              "rpc_name": "CreateConnector",
+              "input_name": "google.cloud.vpcaccess.v1.CreateConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vpcaccess.v1.VpcAccessService.GetConnector",
+              "id": 6566646365343639,
+              "service_model_id": 3535396337646564,
+              "rpc_name": "GetConnector",
+              "input_name": "google.cloud.vpcaccess.v1.GetConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vpcaccess.v1.VpcAccessService.ListConnectors",
+              "id": 3832663039636264,
+              "service_model_id": 3535396337646564,
+              "rpc_name": "ListConnectors",
+              "input_name": "google.cloud.vpcaccess.v1.ListConnectorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vpcaccess.v1.VpcAccessService.DeleteConnector",
+              "id": 6362336238396237,
+              "service_model_id": 3535396337646564,
+              "rpc_name": "DeleteConnector",
+              "input_name": "google.cloud.vpcaccess.v1.DeleteConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-documentai-v1beta2",
+  "id": 3236383932383165,
+  "name": "google-cloud-documentai-v1beta2",
+  "packages": [
+    {
+      "design_name": "google.cloud.documentai.v1beta2",
+      "id": 3165363237356238,
+      "name": "google.cloud.documentai.v1beta2",
+      "gem_model_id": 3236383932383165,
+      "ruby_namespace": "::Google::Cloud::DocumentAI::V1beta2",
+      "services": [
+        {
+          "design_name": "google.cloud.documentai.v1beta2.DocumentUnderstandingService",
+          "id": 3965383834626533,
+          "package_model_id": 3165363237356238,
+          "name": "DocumentUnderstandingService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.documentai.v1beta2.DocumentUnderstandingService.BatchProcessDocuments",
+              "id": 6639366433366666,
+              "service_model_id": 3965383834626533,
+              "rpc_name": "BatchProcessDocuments",
+              "input_name": "google.cloud.documentai.v1beta2.BatchProcessDocumentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta2.DocumentUnderstandingService.ProcessDocument",
+              "id": 3536663564353339,
+              "service_model_id": 3965383834626533,
+              "rpc_name": "ProcessDocument",
+              "input_name": "google.cloud.documentai.v1beta2.ProcessDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

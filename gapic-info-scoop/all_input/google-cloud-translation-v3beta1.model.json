@@ -1,0 +1,124 @@
+{
+  "design_name": "google-cloud-translation-v3beta1",
+  "id": 3332303066303432,
+  "name": "google-cloud-translation-v3beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.translation.v3beta1",
+      "id": 3631636532366562,
+      "name": "google.cloud.translation.v3beta1",
+      "gem_model_id": 3332303066303432,
+      "ruby_namespace": "::Google::Cloud::Translate::V3beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.translation.v3beta1.TranslationService",
+          "id": 6536393536343064,
+          "package_model_id": 3631636532366562,
+          "name": "TranslationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.TranslateText",
+              "id": 3464613364646335,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "TranslateText",
+              "input_name": "google.cloud.translation.v3beta1.TranslateTextRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.DetectLanguage",
+              "id": 3061336439363032,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "DetectLanguage",
+              "input_name": "google.cloud.translation.v3beta1.DetectLanguageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.GetSupportedLanguages",
+              "id": 3836376662666234,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "GetSupportedLanguages",
+              "input_name": "google.cloud.translation.v3beta1.GetSupportedLanguagesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.TranslateDocument",
+              "id": 3432303632396264,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "TranslateDocument",
+              "input_name": "google.cloud.translation.v3beta1.TranslateDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.BatchTranslateText",
+              "id": 3832636139343636,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "BatchTranslateText",
+              "input_name": "google.cloud.translation.v3beta1.BatchTranslateTextRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.BatchTranslateDocument",
+              "id": 6539336265383438,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "BatchTranslateDocument",
+              "input_name": "google.cloud.translation.v3beta1.BatchTranslateDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.CreateGlossary",
+              "id": 3934643430396339,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "CreateGlossary",
+              "input_name": "google.cloud.translation.v3beta1.CreateGlossaryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.ListGlossaries",
+              "id": 6564316532636266,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "ListGlossaries",
+              "input_name": "google.cloud.translation.v3beta1.ListGlossariesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.GetGlossary",
+              "id": 6336383335656231,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "GetGlossary",
+              "input_name": "google.cloud.translation.v3beta1.GetGlossaryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.translation.v3beta1.TranslationService.DeleteGlossary",
+              "id": 6265343164646135,
+              "service_model_id": 6536393536343064,
+              "rpc_name": "DeleteGlossary",
+              "input_name": "google.cloud.translation.v3beta1.DeleteGlossaryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

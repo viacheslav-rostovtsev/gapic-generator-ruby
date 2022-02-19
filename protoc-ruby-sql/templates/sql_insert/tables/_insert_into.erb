@@ -1,0 +1,11 @@
+<%- assert_locals table -%>
+def insert_into_<%= table.method_name %> db, <%= table.method_name %>
+  <%- column_names = table.columns.map(&:name).join(", ") -%>
+  <%- question_marks = Array.new(table.columns.length, "?").join(", ") -%>
+  db.execute("insert into <%= table.name %> (<%= column_names %>) values (<%= question_marks %>)",
+  <%- table.columns.each_with_index do |col, i| -%>
+    <%- comma = (i == table.columns.length-1 ? "" : ",") %>
+    <%= table.method_name %>.<%= col.insert_invocation %><%= comma %>
+  <%- end -%>
+  )
+end

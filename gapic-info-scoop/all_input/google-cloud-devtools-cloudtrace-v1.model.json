@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-trace-v1",
+  "id": 3933373530353439,
+  "name": "google-cloud-trace-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.cloudtrace.v1",
+      "id": 6632396664306233,
+      "name": "google.devtools.cloudtrace.v1",
+      "gem_model_id": 3933373530353439,
+      "ruby_namespace": "::Google::Cloud::Trace::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.cloudtrace.v1.TraceService",
+          "id": 6238376133653265,
+          "package_model_id": 6632396664306233,
+          "name": "TraceService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.cloudtrace.v1.TraceService.ListTraces",
+              "id": 6334623464616430,
+              "service_model_id": 6238376133653265,
+              "rpc_name": "ListTraces",
+              "input_name": "google.devtools.cloudtrace.v1.ListTracesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudtrace.v1.TraceService.GetTrace",
+              "id": 3235616563643638,
+              "service_model_id": 6238376133653265,
+              "rpc_name": "GetTrace",
+              "input_name": "google.devtools.cloudtrace.v1.GetTraceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudtrace.v1.TraceService.PatchTraces",
+              "id": 6162313134633761,
+              "service_model_id": 6238376133653265,
+              "rpc_name": "PatchTraces",
+              "input_name": "google.devtools.cloudtrace.v1.PatchTracesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

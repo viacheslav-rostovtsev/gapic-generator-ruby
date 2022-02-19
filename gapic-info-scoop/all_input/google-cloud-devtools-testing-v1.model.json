@@ -1,0 +1,90 @@
+{
+  "design_name": "google-cloud-devtools-testing-v1",
+  "id": 6562646139303835,
+  "name": "google-cloud-devtools-testing-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.testing.v1",
+      "id": 6433303961363565,
+      "name": "google.devtools.testing.v1",
+      "gem_model_id": 6562646139303835,
+      "ruby_namespace": "::Google::Devtools::Testing::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.testing.v1.TestExecutionService",
+          "id": 3634343434663761,
+          "package_model_id": 6433303961363565,
+          "name": "TestExecutionService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.testing.v1.TestExecutionService.CreateTestMatrix",
+              "id": 3737373232633865,
+              "service_model_id": 3634343434663761,
+              "rpc_name": "CreateTestMatrix",
+              "input_name": "google.devtools.testing.v1.CreateTestMatrixRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.testing.v1.TestExecutionService.GetTestMatrix",
+              "id": 3432336234393163,
+              "service_model_id": 3634343434663761,
+              "rpc_name": "GetTestMatrix",
+              "input_name": "google.devtools.testing.v1.GetTestMatrixRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.testing.v1.TestExecutionService.CancelTestMatrix",
+              "id": 3738376330356134,
+              "service_model_id": 3634343434663761,
+              "rpc_name": "CancelTestMatrix",
+              "input_name": "google.devtools.testing.v1.CancelTestMatrixRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.devtools.testing.v1.ApplicationDetailService",
+          "id": 3661653566306434,
+          "package_model_id": 6433303961363565,
+          "name": "ApplicationDetailService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.testing.v1.ApplicationDetailService.GetApkDetails",
+              "id": 3566643163636263,
+              "service_model_id": 3661653566306434,
+              "rpc_name": "GetApkDetails",
+              "input_name": "google.devtools.testing.v1.GetApkDetailsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.devtools.testing.v1.TestEnvironmentDiscoveryService",
+          "id": 3461653537373939,
+          "package_model_id": 6433303961363565,
+          "name": "TestEnvironmentDiscoveryService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.testing.v1.TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog",
+              "id": 3137306335636434,
+              "service_model_id": 3461653537373939,
+              "rpc_name": "GetTestEnvironmentCatalog",
+              "input_name": "google.devtools.testing.v1.GetTestEnvironmentCatalogRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

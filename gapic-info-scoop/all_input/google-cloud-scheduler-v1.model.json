@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-scheduler-v1",
+  "id": 6339663166373437,
+  "name": "google-cloud-scheduler-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.scheduler.v1",
+      "id": 3666653831623438,
+      "name": "google.cloud.scheduler.v1",
+      "gem_model_id": 6339663166373437,
+      "ruby_namespace": "::Google::Cloud::Scheduler::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.scheduler.v1.CloudScheduler",
+          "id": 6131633234303931,
+          "package_model_id": 3666653831623438,
+          "name": "CloudScheduler",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.ListJobs",
+              "id": 3438633836383330,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.scheduler.v1.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.GetJob",
+              "id": 3939623336346638,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.scheduler.v1.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.CreateJob",
+              "id": 6432356533366564,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "CreateJob",
+              "input_name": "google.cloud.scheduler.v1.CreateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.UpdateJob",
+              "id": 3261616536616335,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "UpdateJob",
+              "input_name": "google.cloud.scheduler.v1.UpdateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.DeleteJob",
+              "id": 6165373939303862,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "DeleteJob",
+              "input_name": "google.cloud.scheduler.v1.DeleteJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.PauseJob",
+              "id": 3764643935346663,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "PauseJob",
+              "input_name": "google.cloud.scheduler.v1.PauseJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.ResumeJob",
+              "id": 3363626331356664,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "ResumeJob",
+              "input_name": "google.cloud.scheduler.v1.ResumeJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1.CloudScheduler.RunJob",
+              "id": 3265313564343135,
+              "service_model_id": 6131633234303931,
+              "rpc_name": "RunJob",
+              "input_name": "google.cloud.scheduler.v1.RunJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

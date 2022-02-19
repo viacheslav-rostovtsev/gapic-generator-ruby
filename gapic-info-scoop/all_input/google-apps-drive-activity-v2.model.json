@@ -1,0 +1,34 @@
+{
+  "design_name": "google-apps-drive-activity-v2",
+  "id": 3264663537366230,
+  "name": "google-apps-drive-activity-v2",
+  "packages": [
+    {
+      "design_name": "google.apps.drive.activity.v2",
+      "id": 3435303839313834,
+      "name": "google.apps.drive.activity.v2",
+      "gem_model_id": 3264663537366230,
+      "ruby_namespace": "::Google::Apps::Drive::Activity::V2",
+      "services": [
+        {
+          "design_name": "google.apps.drive.activity.v2.DriveActivityService",
+          "id": 3266626130333133,
+          "package_model_id": 3435303839313834,
+          "name": "DriveActivityService",
+          "rpcs": [
+            {
+              "design_name": "google.apps.drive.activity.v2.DriveActivityService.QueryDriveActivity",
+              "id": 3336633839633562,
+              "service_model_id": 3266626130333133,
+              "rpc_name": "QueryDriveActivity",
+              "input_name": "google.apps.drive.activity.v2.QueryDriveActivityRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

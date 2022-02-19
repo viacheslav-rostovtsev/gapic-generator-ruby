@@ -1,0 +1,144 @@
+{
+  "design_name": "google-cloud-recommender-v1beta1",
+  "id": 6433346539343764,
+  "name": "google-cloud-recommender-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.recommender.v1beta1",
+      "id": 6162653933663563,
+      "name": "google.cloud.recommender.v1beta1",
+      "gem_model_id": 6433346539343764,
+      "ruby_namespace": "::Google::Cloud::Recommender::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.recommender.v1beta1.Recommender",
+          "id": 3836306664316534,
+          "package_model_id": 6162653933663563,
+          "name": "Recommender",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.ListInsights",
+              "id": 3338623964663538,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "ListInsights",
+              "input_name": "google.cloud.recommender.v1beta1.ListInsightsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.GetInsight",
+              "id": 3665303362633831,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "GetInsight",
+              "input_name": "google.cloud.recommender.v1beta1.GetInsightRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.MarkInsightAccepted",
+              "id": 6434313732353235,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "MarkInsightAccepted",
+              "input_name": "google.cloud.recommender.v1beta1.MarkInsightAcceptedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.ListRecommendations",
+              "id": 3830336634393861,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "ListRecommendations",
+              "input_name": "google.cloud.recommender.v1beta1.ListRecommendationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.GetRecommendation",
+              "id": 3361303034333035,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "GetRecommendation",
+              "input_name": "google.cloud.recommender.v1beta1.GetRecommendationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.MarkRecommendationClaimed",
+              "id": 6265363335626338,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "MarkRecommendationClaimed",
+              "input_name": "google.cloud.recommender.v1beta1.MarkRecommendationClaimedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.MarkRecommendationSucceeded",
+              "id": 6166393963306437,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "MarkRecommendationSucceeded",
+              "input_name": "google.cloud.recommender.v1beta1.MarkRecommendationSucceededRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.MarkRecommendationFailed",
+              "id": 3133656334306466,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "MarkRecommendationFailed",
+              "input_name": "google.cloud.recommender.v1beta1.MarkRecommendationFailedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.GetRecommenderConfig",
+              "id": 3236663530343934,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "GetRecommenderConfig",
+              "input_name": "google.cloud.recommender.v1beta1.GetRecommenderConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.UpdateRecommenderConfig",
+              "id": 3062313731396165,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "UpdateRecommenderConfig",
+              "input_name": "google.cloud.recommender.v1beta1.UpdateRecommenderConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.GetInsightTypeConfig",
+              "id": 6163636163306332,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "GetInsightTypeConfig",
+              "input_name": "google.cloud.recommender.v1beta1.GetInsightTypeConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommender.v1beta1.Recommender.UpdateInsightTypeConfig",
+              "id": 3236386533303031,
+              "service_model_id": 3836306664316534,
+              "rpc_name": "UpdateInsightTypeConfig",
+              "input_name": "google.cloud.recommender.v1beta1.UpdateInsightTypeConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

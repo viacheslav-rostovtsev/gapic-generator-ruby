@@ -1,0 +1,334 @@
+{
+  "design_name": "google-cloud-security_center-v1",
+  "id": 3537383933316634,
+  "name": "google-cloud-security_center-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.securitycenter.v1",
+      "id": 3130623938363863,
+      "name": "google.cloud.securitycenter.v1",
+      "gem_model_id": 3537383933316634,
+      "ruby_namespace": "::Google::Cloud::SecurityCenter::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.securitycenter.v1.SecurityCenter",
+          "id": 6538303561623834,
+          "package_model_id": 3130623938363863,
+          "name": "SecurityCenter",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.BulkMuteFindings",
+              "id": 3163633538343639,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "BulkMuteFindings",
+              "input_name": "google.cloud.securitycenter.v1.BulkMuteFindingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.CreateSource",
+              "id": 3730656231623539,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "CreateSource",
+              "input_name": "google.cloud.securitycenter.v1.CreateSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.CreateFinding",
+              "id": 3463383138613239,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "CreateFinding",
+              "input_name": "google.cloud.securitycenter.v1.CreateFindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.CreateMuteConfig",
+              "id": 3039316633653961,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "CreateMuteConfig",
+              "input_name": "google.cloud.securitycenter.v1.CreateMuteConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.CreateNotificationConfig",
+              "id": 6332646166666366,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "CreateNotificationConfig",
+              "input_name": "google.cloud.securitycenter.v1.CreateNotificationConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.DeleteMuteConfig",
+              "id": 3265333535326161,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "DeleteMuteConfig",
+              "input_name": "google.cloud.securitycenter.v1.DeleteMuteConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.DeleteNotificationConfig",
+              "id": 6235643166353537,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "DeleteNotificationConfig",
+              "input_name": "google.cloud.securitycenter.v1.DeleteNotificationConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GetIamPolicy",
+              "id": 6266316530653938,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GetMuteConfig",
+              "id": 3531653135376164,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GetMuteConfig",
+              "input_name": "google.cloud.securitycenter.v1.GetMuteConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GetNotificationConfig",
+              "id": 3937386633306330,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GetNotificationConfig",
+              "input_name": "google.cloud.securitycenter.v1.GetNotificationConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GetOrganizationSettings",
+              "id": 3661373539613961,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GetOrganizationSettings",
+              "input_name": "google.cloud.securitycenter.v1.GetOrganizationSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GetSource",
+              "id": 3737366164386662,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GetSource",
+              "input_name": "google.cloud.securitycenter.v1.GetSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GroupAssets",
+              "id": 3636363563373663,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GroupAssets",
+              "input_name": "google.cloud.securitycenter.v1.GroupAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.GroupFindings",
+              "id": 3137343333323835,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "GroupFindings",
+              "input_name": "google.cloud.securitycenter.v1.GroupFindingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.ListAssets",
+              "id": 3262306632376562,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "ListAssets",
+              "input_name": "google.cloud.securitycenter.v1.ListAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.ListFindings",
+              "id": 3432313430636261,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "ListFindings",
+              "input_name": "google.cloud.securitycenter.v1.ListFindingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.ListMuteConfigs",
+              "id": 6137383135616664,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "ListMuteConfigs",
+              "input_name": "google.cloud.securitycenter.v1.ListMuteConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.ListNotificationConfigs",
+              "id": 3761313134376436,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "ListNotificationConfigs",
+              "input_name": "google.cloud.securitycenter.v1.ListNotificationConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.ListSources",
+              "id": 6234346333336465,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "ListSources",
+              "input_name": "google.cloud.securitycenter.v1.ListSourcesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.RunAssetDiscovery",
+              "id": 3634666136666438,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "RunAssetDiscovery",
+              "input_name": "google.cloud.securitycenter.v1.RunAssetDiscoveryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.SetFindingState",
+              "id": 6135613239666136,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "SetFindingState",
+              "input_name": "google.cloud.securitycenter.v1.SetFindingStateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.SetMute",
+              "id": 3761636366393831,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "SetMute",
+              "input_name": "google.cloud.securitycenter.v1.SetMuteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.SetIamPolicy",
+              "id": 3264346637333164,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.TestIamPermissions",
+              "id": 6230353837663834,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateExternalSystem",
+              "id": 3765613065343363,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateExternalSystem",
+              "input_name": "google.cloud.securitycenter.v1.UpdateExternalSystemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateFinding",
+              "id": 6166656639616234,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateFinding",
+              "input_name": "google.cloud.securitycenter.v1.UpdateFindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateMuteConfig",
+              "id": 3366313935613737,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateMuteConfig",
+              "input_name": "google.cloud.securitycenter.v1.UpdateMuteConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateNotificationConfig",
+              "id": 3738643131373965,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateNotificationConfig",
+              "input_name": "google.cloud.securitycenter.v1.UpdateNotificationConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateOrganizationSettings",
+              "id": 6539656461343536,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateOrganizationSettings",
+              "input_name": "google.cloud.securitycenter.v1.UpdateOrganizationSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateSource",
+              "id": 3566613633623034,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateSource",
+              "input_name": "google.cloud.securitycenter.v1.UpdateSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.v1.SecurityCenter.UpdateSecurityMarks",
+              "id": 3435313966313237,
+              "service_model_id": 6538303561623834,
+              "rpc_name": "UpdateSecurityMarks",
+              "input_name": "google.cloud.securitycenter.v1.UpdateSecurityMarksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

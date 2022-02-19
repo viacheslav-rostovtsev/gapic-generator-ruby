@@ -1,0 +1,114 @@
+{
+  "design_name": "google-maps-fleetengine-delivery-v1",
+  "id": 3232366632373938,
+  "name": "google-maps-fleetengine-delivery-v1",
+  "packages": [
+    {
+      "design_name": "maps.fleetengine.delivery.v1",
+      "id": 3036633762613033,
+      "name": "maps.fleetengine.delivery.v1",
+      "gem_model_id": 3232366632373938,
+      "ruby_namespace": "::Maps::Fleetengine::Delivery::V1",
+      "services": [
+        {
+          "design_name": "maps.fleetengine.delivery.v1.DeliveryService",
+          "id": 6531396339333662,
+          "package_model_id": 3036633762613033,
+          "name": "DeliveryService",
+          "rpcs": [
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.CreateDeliveryVehicle",
+              "id": 6339393432363333,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "CreateDeliveryVehicle",
+              "input_name": "maps.fleetengine.delivery.v1.CreateDeliveryVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.GetDeliveryVehicle",
+              "id": 6539646363323034,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "GetDeliveryVehicle",
+              "input_name": "maps.fleetengine.delivery.v1.GetDeliveryVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.UpdateDeliveryVehicle",
+              "id": 3934666436386361,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "UpdateDeliveryVehicle",
+              "input_name": "maps.fleetengine.delivery.v1.UpdateDeliveryVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.CreateTask",
+              "id": 6366346665393665,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "CreateTask",
+              "input_name": "maps.fleetengine.delivery.v1.CreateTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.GetTask",
+              "id": 3830613233356538,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "GetTask",
+              "input_name": "maps.fleetengine.delivery.v1.GetTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.SearchTasks",
+              "id": 6332623436363234,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "SearchTasks",
+              "input_name": "maps.fleetengine.delivery.v1.SearchTasksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.UpdateTask",
+              "id": 3565373736663861,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "UpdateTask",
+              "input_name": "maps.fleetengine.delivery.v1.UpdateTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.ListTasks",
+              "id": 6466336538323330,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "ListTasks",
+              "input_name": "maps.fleetengine.delivery.v1.ListTasksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.delivery.v1.DeliveryService.ListDeliveryVehicles",
+              "id": 3832666332626165,
+              "service_model_id": 6531396339333662,
+              "rpc_name": "ListDeliveryVehicles",
+              "input_name": "maps.fleetengine.delivery.v1.ListDeliveryVehiclesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

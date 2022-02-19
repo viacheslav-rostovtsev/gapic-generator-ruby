@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-firestore-v1",
+  "id": 6139626130396136,
+  "name": "google-cloud-firestore-v1",
+  "packages": [
+    {
+      "design_name": "google.firestore.v1",
+      "id": 3664303966353736,
+      "name": "google.firestore.v1",
+      "gem_model_id": 6139626130396136,
+      "ruby_namespace": "::Google::Cloud::Firestore::V1",
+      "services": [
+        {
+          "design_name": "google.firestore.v1.Firestore",
+          "id": 6364663630626532,
+          "package_model_id": 3664303966353736,
+          "name": "Firestore",
+          "rpcs": [
+            {
+              "design_name": "google.firestore.v1.Firestore.GetDocument",
+              "id": 6438393436343238,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "GetDocument",
+              "input_name": "google.firestore.v1.GetDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.ListDocuments",
+              "id": 3033363738333836,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "ListDocuments",
+              "input_name": "google.firestore.v1.ListDocumentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.UpdateDocument",
+              "id": 3462323835623039,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "UpdateDocument",
+              "input_name": "google.firestore.v1.UpdateDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.DeleteDocument",
+              "id": 3164346662313834,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "DeleteDocument",
+              "input_name": "google.firestore.v1.DeleteDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.BatchGetDocuments",
+              "id": 3736393032343362,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "BatchGetDocuments",
+              "input_name": "google.firestore.v1.BatchGetDocumentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.BeginTransaction",
+              "id": 3062633462613936,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "BeginTransaction",
+              "input_name": "google.firestore.v1.BeginTransactionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.Commit",
+              "id": 6231306539316433,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "Commit",
+              "input_name": "google.firestore.v1.CommitRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.Rollback",
+              "id": 6436336335653339,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "Rollback",
+              "input_name": "google.firestore.v1.RollbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.RunQuery",
+              "id": 3630616631666366,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "RunQuery",
+              "input_name": "google.firestore.v1.RunQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.PartitionQuery",
+              "id": 3332653565636336,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "PartitionQuery",
+              "input_name": "google.firestore.v1.PartitionQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.Write",
+              "id": 3231616239356336,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "Write",
+              "input_name": "google.firestore.v1.WriteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.Listen",
+              "id": 3066303466633862,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "Listen",
+              "input_name": "google.firestore.v1.ListenRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.ListCollectionIds",
+              "id": 3961303836366463,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "ListCollectionIds",
+              "input_name": "google.firestore.v1.ListCollectionIdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.BatchWrite",
+              "id": 3039306266323865,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "BatchWrite",
+              "input_name": "google.firestore.v1.BatchWriteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.v1.Firestore.CreateDocument",
+              "id": 3731323762326333,
+              "service_model_id": 6364663630626532,
+              "rpc_name": "CreateDocument",
+              "input_name": "google.firestore.v1.CreateDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

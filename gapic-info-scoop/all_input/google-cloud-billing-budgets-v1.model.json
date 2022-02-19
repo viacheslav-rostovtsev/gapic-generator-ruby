@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-billing-budgets-v1",
+  "id": 3366363236393463,
+  "name": "google-cloud-billing-budgets-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.billing.budgets.v1",
+      "id": 3938323932313664,
+      "name": "google.cloud.billing.budgets.v1",
+      "gem_model_id": 3366363236393463,
+      "ruby_namespace": "::Google::Cloud::Billing::Budgets::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.billing.budgets.v1.BudgetService",
+          "id": 3533306362316131,
+          "package_model_id": 3938323932313664,
+          "name": "BudgetService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.billing.budgets.v1.BudgetService.CreateBudget",
+              "id": 3331396561636263,
+              "service_model_id": 3533306362316131,
+              "rpc_name": "CreateBudget",
+              "input_name": "google.cloud.billing.budgets.v1.CreateBudgetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.budgets.v1.BudgetService.UpdateBudget",
+              "id": 3065396433383864,
+              "service_model_id": 3533306362316131,
+              "rpc_name": "UpdateBudget",
+              "input_name": "google.cloud.billing.budgets.v1.UpdateBudgetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.budgets.v1.BudgetService.GetBudget",
+              "id": 6334633764653534,
+              "service_model_id": 3533306362316131,
+              "rpc_name": "GetBudget",
+              "input_name": "google.cloud.billing.budgets.v1.GetBudgetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.budgets.v1.BudgetService.ListBudgets",
+              "id": 3664643864373035,
+              "service_model_id": 3533306362316131,
+              "rpc_name": "ListBudgets",
+              "input_name": "google.cloud.billing.budgets.v1.ListBudgetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.budgets.v1.BudgetService.DeleteBudget",
+              "id": 6162393830653630,
+              "service_model_id": 3533306362316131,
+              "rpc_name": "DeleteBudget",
+              "input_name": "google.cloud.billing.budgets.v1.DeleteBudgetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

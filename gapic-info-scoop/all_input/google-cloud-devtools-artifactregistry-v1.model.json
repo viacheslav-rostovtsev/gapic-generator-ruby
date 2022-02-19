@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-artifact_registry-v1",
+  "id": 6630623337396137,
+  "name": "google-cloud-artifact_registry-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.artifactregistry.v1",
+      "id": 3464323262643062,
+      "name": "google.devtools.artifactregistry.v1",
+      "gem_model_id": 6630623337396137,
+      "ruby_namespace": "::Google::Cloud::ArtifactRegistry::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.artifactregistry.v1.ArtifactRegistry",
+          "id": 3730356166626462,
+          "package_model_id": 3464323262643062,
+          "name": "ArtifactRegistry",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.artifactregistry.v1.ArtifactRegistry.ListDockerImages",
+              "id": 6439616535646336,
+              "service_model_id": 3730356166626462,
+              "rpc_name": "ListDockerImages",
+              "input_name": "google.devtools.artifactregistry.v1.ListDockerImagesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1.ArtifactRegistry.ListRepositories",
+              "id": 3839663233316564,
+              "service_model_id": 3730356166626462,
+              "rpc_name": "ListRepositories",
+              "input_name": "google.devtools.artifactregistry.v1.ListRepositoriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1.ArtifactRegistry.GetRepository",
+              "id": 6337616161663664,
+              "service_model_id": 3730356166626462,
+              "rpc_name": "GetRepository",
+              "input_name": "google.devtools.artifactregistry.v1.GetRepositoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

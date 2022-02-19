@@ -44,6 +44,11 @@ namespace :gen do |gen_namespace|
     generate_input_file :language_v1beta2
   end
 
+  desc "Generate the binary input files for language v1beta2"
+  task :noservice do
+    generate_input_file :noservice
+  end
+
   desc "Generate the binary input files for secretmanager v1beta1"
   task :secretmanager_v1beta1 do
     generate_input_file :secretmanager_v1beta1
@@ -74,6 +79,11 @@ namespace :gen do |gen_namespace|
     generate_input_file :googleads
   end
 
+  desc "Generate the binary input files for language v1"
+  task :model do
+    generate_input_file :model
+  end
+
   desc "Generate the binary input files for Gapic testing"
   task :testing do
     generate_input_file :testing
@@ -101,7 +111,7 @@ namespace :test do
   desc "Runs tests for all expected output gems."
   task :output do
     {
-      gapic: [:showcase, :garbage, :testing],
+      gapic: [:showcase, :garbage, :testing, :model],
       cloud: [:language_v1, :language_v1beta1, :language_v1beta2, :speech_v1, :vision_v1, :compute_small]
     }.each do |generator, gems|
       directory = (generator == :gapic) ? "gapic/templates" : generator

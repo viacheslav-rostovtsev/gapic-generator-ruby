@@ -1,0 +1,164 @@
+{
+  "design_name": "google-cloud-os_config-v1alpha",
+  "id": 3336373765363830,
+  "name": "google-cloud-os_config-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.osconfig.v1alpha",
+      "id": 3731366562383036,
+      "name": "google.cloud.osconfig.v1alpha",
+      "gem_model_id": 3336373765363830,
+      "ruby_namespace": "::Google::Cloud::OsConfig::V1alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService",
+          "id": 3330633064313230,
+          "package_model_id": 3731366562383036,
+          "name": "OsConfigZonalService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.CreateOSPolicyAssignment",
+              "id": 6138366337376435,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "CreateOSPolicyAssignment",
+              "input_name": "google.cloud.osconfig.v1alpha.CreateOSPolicyAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.UpdateOSPolicyAssignment",
+              "id": 3866653837656437,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "UpdateOSPolicyAssignment",
+              "input_name": "google.cloud.osconfig.v1alpha.UpdateOSPolicyAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.GetOSPolicyAssignment",
+              "id": 3163666330336339,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "GetOSPolicyAssignment",
+              "input_name": "google.cloud.osconfig.v1alpha.GetOSPolicyAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListOSPolicyAssignments",
+              "id": 3130353636323535,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListOSPolicyAssignments",
+              "input_name": "google.cloud.osconfig.v1alpha.ListOSPolicyAssignmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListOSPolicyAssignmentRevisions",
+              "id": 6233303436303935,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListOSPolicyAssignmentRevisions",
+              "input_name": "google.cloud.osconfig.v1alpha.ListOSPolicyAssignmentRevisionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.DeleteOSPolicyAssignment",
+              "id": 6363313535666439,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "DeleteOSPolicyAssignment",
+              "input_name": "google.cloud.osconfig.v1alpha.DeleteOSPolicyAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.GetInstanceOSPoliciesCompliance",
+              "id": 6134653836643336,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "GetInstanceOSPoliciesCompliance",
+              "input_name": "google.cloud.osconfig.v1alpha.GetInstanceOSPoliciesComplianceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListInstanceOSPoliciesCompliances",
+              "id": 3263323835393138,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListInstanceOSPoliciesCompliances",
+              "input_name": "google.cloud.osconfig.v1alpha.ListInstanceOSPoliciesCompliancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.GetOSPolicyAssignmentReport",
+              "id": 6439333163663330,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "GetOSPolicyAssignmentReport",
+              "input_name": "google.cloud.osconfig.v1alpha.GetOSPolicyAssignmentReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListOSPolicyAssignmentReports",
+              "id": 6538393331663135,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListOSPolicyAssignmentReports",
+              "input_name": "google.cloud.osconfig.v1alpha.ListOSPolicyAssignmentReportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.GetInventory",
+              "id": 3564376239363237,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "GetInventory",
+              "input_name": "google.cloud.osconfig.v1alpha.GetInventoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListInventories",
+              "id": 6230343131303564,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListInventories",
+              "input_name": "google.cloud.osconfig.v1alpha.ListInventoriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.GetVulnerabilityReport",
+              "id": 6661656632636232,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "GetVulnerabilityReport",
+              "input_name": "google.cloud.osconfig.v1alpha.GetVulnerabilityReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.v1alpha.OsConfigZonalService.ListVulnerabilityReports",
+              "id": 6637326637346236,
+              "service_model_id": 3330633064313230,
+              "rpc_name": "ListVulnerabilityReports",
+              "input_name": "google.cloud.osconfig.v1alpha.ListVulnerabilityReportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

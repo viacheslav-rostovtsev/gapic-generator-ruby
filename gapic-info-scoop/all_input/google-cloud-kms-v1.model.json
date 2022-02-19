@@ -1,0 +1,370 @@
+{
+  "design_name": "google-cloud-kms-v1",
+  "id": 6435343136326532,
+  "name": "google-cloud-kms-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.kms.v1",
+      "id": 6237653166663636,
+      "name": "google.cloud.kms.v1",
+      "gem_model_id": 6435343136326532,
+      "ruby_namespace": "::Google::Cloud::Kms::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.kms.v1.EkmService",
+          "id": 6461633531323561,
+          "package_model_id": 6237653166663636,
+          "name": "EkmService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.kms.v1.EkmService.ListEkmConnections",
+              "id": 3435366463303366,
+              "service_model_id": 6461633531323561,
+              "rpc_name": "ListEkmConnections",
+              "input_name": "google.cloud.kms.v1.ListEkmConnectionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.EkmService.GetEkmConnection",
+              "id": 3233323736306166,
+              "service_model_id": 6461633531323561,
+              "rpc_name": "GetEkmConnection",
+              "input_name": "google.cloud.kms.v1.GetEkmConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.EkmService.CreateEkmConnection",
+              "id": 6662363862386132,
+              "service_model_id": 6461633531323561,
+              "rpc_name": "CreateEkmConnection",
+              "input_name": "google.cloud.kms.v1.CreateEkmConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.EkmService.UpdateEkmConnection",
+              "id": 3137313734396361,
+              "service_model_id": 6461633531323561,
+              "rpc_name": "UpdateEkmConnection",
+              "input_name": "google.cloud.kms.v1.UpdateEkmConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.kms.v1.KeyManagementService",
+          "id": 6664363732383033,
+          "package_model_id": 6237653166663636,
+          "name": "KeyManagementService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.ListKeyRings",
+              "id": 6364306162333331,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "ListKeyRings",
+              "input_name": "google.cloud.kms.v1.ListKeyRingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.ListCryptoKeys",
+              "id": 6163383032643233,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "ListCryptoKeys",
+              "input_name": "google.cloud.kms.v1.ListCryptoKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.ListCryptoKeyVersions",
+              "id": 6361663939623365,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "ListCryptoKeyVersions",
+              "input_name": "google.cloud.kms.v1.ListCryptoKeyVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.ListImportJobs",
+              "id": 6531396264313738,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "ListImportJobs",
+              "input_name": "google.cloud.kms.v1.ListImportJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GetKeyRing",
+              "id": 3265626636626166,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GetKeyRing",
+              "input_name": "google.cloud.kms.v1.GetKeyRingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GetCryptoKey",
+              "id": 3631363764663138,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GetCryptoKey",
+              "input_name": "google.cloud.kms.v1.GetCryptoKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GetCryptoKeyVersion",
+              "id": 6635393962623132,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GetCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.GetCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GetPublicKey",
+              "id": 3239636663303961,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GetPublicKey",
+              "input_name": "google.cloud.kms.v1.GetPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GetImportJob",
+              "id": 3938626463306433,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GetImportJob",
+              "input_name": "google.cloud.kms.v1.GetImportJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.CreateKeyRing",
+              "id": 6333613930346466,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "CreateKeyRing",
+              "input_name": "google.cloud.kms.v1.CreateKeyRingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.CreateCryptoKey",
+              "id": 3266343639373835,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "CreateCryptoKey",
+              "input_name": "google.cloud.kms.v1.CreateCryptoKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.CreateCryptoKeyVersion",
+              "id": 3364613061306466,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "CreateCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.CreateCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.ImportCryptoKeyVersion",
+              "id": 3633356639303031,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "ImportCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.ImportCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.CreateImportJob",
+              "id": 3036643232336633,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "CreateImportJob",
+              "input_name": "google.cloud.kms.v1.CreateImportJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.UpdateCryptoKey",
+              "id": 3761346561636461,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "UpdateCryptoKey",
+              "input_name": "google.cloud.kms.v1.UpdateCryptoKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.UpdateCryptoKeyVersion",
+              "id": 3566663130353066,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "UpdateCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.UpdateCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.UpdateCryptoKeyPrimaryVersion",
+              "id": 3333323664626439,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "UpdateCryptoKeyPrimaryVersion",
+              "input_name": "google.cloud.kms.v1.UpdateCryptoKeyPrimaryVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.DestroyCryptoKeyVersion",
+              "id": 3166376631643463,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "DestroyCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.DestroyCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.RestoreCryptoKeyVersion",
+              "id": 6261383366326137,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "RestoreCryptoKeyVersion",
+              "input_name": "google.cloud.kms.v1.RestoreCryptoKeyVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.Encrypt",
+              "id": 6535313762376634,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "Encrypt",
+              "input_name": "google.cloud.kms.v1.EncryptRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.Decrypt",
+              "id": 6663303361323033,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "Decrypt",
+              "input_name": "google.cloud.kms.v1.DecryptRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.AsymmetricSign",
+              "id": 6663333534613138,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "AsymmetricSign",
+              "input_name": "google.cloud.kms.v1.AsymmetricSignRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.AsymmetricDecrypt",
+              "id": 3765373262643737,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "AsymmetricDecrypt",
+              "input_name": "google.cloud.kms.v1.AsymmetricDecryptRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.MacSign",
+              "id": 3333356234633230,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "MacSign",
+              "input_name": "google.cloud.kms.v1.MacSignRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.MacVerify",
+              "id": 6132633962343336,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "MacVerify",
+              "input_name": "google.cloud.kms.v1.MacVerifyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.kms.v1.KeyManagementService.GenerateRandomBytes",
+              "id": 3536633363653439,
+              "service_model_id": 6664363732383033,
+              "rpc_name": "GenerateRandomBytes",
+              "input_name": "google.cloud.kms.v1.GenerateRandomBytesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.iam.v1.IAMPolicy",
+          "id": 3136393863363936,
+          "package_model_id": 3530666463303133,
+          "name": "IAMPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.iam.v1.IAMPolicy.SetIamPolicy",
+              "id": 3236373031626432,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.GetIamPolicy",
+              "id": 3737336539316463,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.TestIamPermissions",
+              "id": 6266393536643738,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

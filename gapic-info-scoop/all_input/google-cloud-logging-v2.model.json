@@ -1,0 +1,380 @@
+{
+  "design_name": "google-cloud-logging-v2",
+  "id": 6464633034333138,
+  "name": "google-cloud-logging-v2",
+  "packages": [
+    {
+      "design_name": "google.logging.v2",
+      "id": 3064663733656337,
+      "name": "google.logging.v2",
+      "gem_model_id": 6464633034333138,
+      "ruby_namespace": "::Google::Cloud::Logging::V2",
+      "services": [
+        {
+          "design_name": "google.logging.v2.ConfigService",
+          "id": 6661363163383431,
+          "package_model_id": 3064663733656337,
+          "name": "ConfigService",
+          "rpcs": [
+            {
+              "design_name": "google.logging.v2.ConfigService.ListBuckets",
+              "id": 3065383431366132,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "ListBuckets",
+              "input_name": "google.logging.v2.ListBucketsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.GetBucket",
+              "id": 3164343231636635,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "GetBucket",
+              "input_name": "google.logging.v2.GetBucketRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.CreateBucket",
+              "id": 3233643132336165,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "CreateBucket",
+              "input_name": "google.logging.v2.CreateBucketRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UpdateBucket",
+              "id": 6137636434336130,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UpdateBucket",
+              "input_name": "google.logging.v2.UpdateBucketRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.DeleteBucket",
+              "id": 6435303566336666,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "DeleteBucket",
+              "input_name": "google.logging.v2.DeleteBucketRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UndeleteBucket",
+              "id": 3332366361396434,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UndeleteBucket",
+              "input_name": "google.logging.v2.UndeleteBucketRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.ListViews",
+              "id": 3532623137363530,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "ListViews",
+              "input_name": "google.logging.v2.ListViewsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.GetView",
+              "id": 6435353631393539,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "GetView",
+              "input_name": "google.logging.v2.GetViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.CreateView",
+              "id": 6239323633643934,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "CreateView",
+              "input_name": "google.logging.v2.CreateViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UpdateView",
+              "id": 6636333266306263,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UpdateView",
+              "input_name": "google.logging.v2.UpdateViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.DeleteView",
+              "id": 3838623437326165,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "DeleteView",
+              "input_name": "google.logging.v2.DeleteViewRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.ListSinks",
+              "id": 3265633662333136,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "ListSinks",
+              "input_name": "google.logging.v2.ListSinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.GetSink",
+              "id": 3861326365333036,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "GetSink",
+              "input_name": "google.logging.v2.GetSinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.CreateSink",
+              "id": 6466386632323266,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "CreateSink",
+              "input_name": "google.logging.v2.CreateSinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UpdateSink",
+              "id": 6265376237643034,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UpdateSink",
+              "input_name": "google.logging.v2.UpdateSinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.DeleteSink",
+              "id": 6439373334636332,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "DeleteSink",
+              "input_name": "google.logging.v2.DeleteSinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.ListExclusions",
+              "id": 3461633437336539,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "ListExclusions",
+              "input_name": "google.logging.v2.ListExclusionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.GetExclusion",
+              "id": 3830393635393731,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "GetExclusion",
+              "input_name": "google.logging.v2.GetExclusionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.CreateExclusion",
+              "id": 3465303661303039,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "CreateExclusion",
+              "input_name": "google.logging.v2.CreateExclusionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UpdateExclusion",
+              "id": 3766666561376534,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UpdateExclusion",
+              "input_name": "google.logging.v2.UpdateExclusionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.DeleteExclusion",
+              "id": 6330666530303230,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "DeleteExclusion",
+              "input_name": "google.logging.v2.DeleteExclusionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.GetCmekSettings",
+              "id": 6139393130626630,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "GetCmekSettings",
+              "input_name": "google.logging.v2.GetCmekSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.ConfigService.UpdateCmekSettings",
+              "id": 3061633539643434,
+              "service_model_id": 6661363163383431,
+              "rpc_name": "UpdateCmekSettings",
+              "input_name": "google.logging.v2.UpdateCmekSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.logging.v2.LoggingService",
+          "id": 3839353139643534,
+          "package_model_id": 3064663733656337,
+          "name": "LoggingService",
+          "rpcs": [
+            {
+              "design_name": "google.logging.v2.LoggingService.DeleteLog",
+              "id": 3135303261646531,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "DeleteLog",
+              "input_name": "google.logging.v2.DeleteLogRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.LoggingService.WriteLogEntries",
+              "id": 3438383932626234,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "WriteLogEntries",
+              "input_name": "google.logging.v2.WriteLogEntriesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.LoggingService.ListLogEntries",
+              "id": 6438333532346461,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "ListLogEntries",
+              "input_name": "google.logging.v2.ListLogEntriesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.LoggingService.ListMonitoredResourceDescriptors",
+              "id": 6337653263363030,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "ListMonitoredResourceDescriptors",
+              "input_name": "google.logging.v2.ListMonitoredResourceDescriptorsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.LoggingService.ListLogs",
+              "id": 3039353337353635,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "ListLogs",
+              "input_name": "google.logging.v2.ListLogsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.LoggingService.TailLogEntries",
+              "id": 6237366362383033,
+              "service_model_id": 3839353139643534,
+              "rpc_name": "TailLogEntries",
+              "input_name": "google.logging.v2.TailLogEntriesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        },
+        {
+          "design_name": "google.logging.v2.MetricsService",
+          "id": 3338346533353366,
+          "package_model_id": 3064663733656337,
+          "name": "MetricsService",
+          "rpcs": [
+            {
+              "design_name": "google.logging.v2.MetricsService.ListLogMetrics",
+              "id": 6265356134313833,
+              "service_model_id": 3338346533353366,
+              "rpc_name": "ListLogMetrics",
+              "input_name": "google.logging.v2.ListLogMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.MetricsService.GetLogMetric",
+              "id": 6663333739376464,
+              "service_model_id": 3338346533353366,
+              "rpc_name": "GetLogMetric",
+              "input_name": "google.logging.v2.GetLogMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.MetricsService.CreateLogMetric",
+              "id": 3536653262623366,
+              "service_model_id": 3338346533353366,
+              "rpc_name": "CreateLogMetric",
+              "input_name": "google.logging.v2.CreateLogMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.MetricsService.UpdateLogMetric",
+              "id": 3562643361633531,
+              "service_model_id": 3338346533353366,
+              "rpc_name": "UpdateLogMetric",
+              "input_name": "google.logging.v2.UpdateLogMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.logging.v2.MetricsService.DeleteLogMetric",
+              "id": 3735323935303030,
+              "service_model_id": 3338346533353366,
+              "rpc_name": "DeleteLogMetric",
+              "input_name": "google.logging.v2.DeleteLogMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

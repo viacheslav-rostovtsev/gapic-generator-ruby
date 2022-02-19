@@ -1,0 +1,124 @@
+{
+  "design_name": "google-cloud-network_connectivity-v1alpha1",
+  "id": 3039616338643830,
+  "name": "google-cloud-network_connectivity-v1alpha1",
+  "packages": [
+    {
+      "design_name": "google.cloud.networkconnectivity.v1alpha1",
+      "id": 6461313933616163,
+      "name": "google.cloud.networkconnectivity.v1alpha1",
+      "gem_model_id": 3039616338643830,
+      "ruby_namespace": "::Google::Cloud::NetworkConnectivity::V1alpha1",
+      "services": [
+        {
+          "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService",
+          "id": 3633313231306136,
+          "package_model_id": 6461313933616163,
+          "name": "HubService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.ListHubs",
+              "id": 6538333939393963,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "ListHubs",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.ListHubsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.GetHub",
+              "id": 3335383464393665,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "GetHub",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.GetHubRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.CreateHub",
+              "id": 3366326662383962,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "CreateHub",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.CreateHubRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.UpdateHub",
+              "id": 3465366637373566,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "UpdateHub",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.UpdateHubRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.DeleteHub",
+              "id": 3463346662346537,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "DeleteHub",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.DeleteHubRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.ListSpokes",
+              "id": 3731396365623834,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "ListSpokes",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.ListSpokesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.GetSpoke",
+              "id": 6130643830333530,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "GetSpoke",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.GetSpokeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.CreateSpoke",
+              "id": 3832646230633339,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "CreateSpoke",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.CreateSpokeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.UpdateSpoke",
+              "id": 3034333964643766,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "UpdateSpoke",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.UpdateSpokeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkconnectivity.v1alpha1.HubService.DeleteSpoke",
+              "id": 6330346664313539,
+              "service_model_id": 3633313231306136,
+              "rpc_name": "DeleteSpoke",
+              "input_name": "google.cloud.networkconnectivity.v1alpha1.DeleteSpokeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

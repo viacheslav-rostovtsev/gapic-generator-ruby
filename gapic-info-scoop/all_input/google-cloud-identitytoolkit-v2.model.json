@@ -1,0 +1,82 @@
+{
+  "design_name": "google-cloud-identity_toolkit-v2",
+  "id": 3162313937613835,
+  "name": "google-cloud-identity_toolkit-v2",
+  "packages": [
+    {
+      "design_name": "google.cloud.identitytoolkit.v2",
+      "id": 3366646133353232,
+      "name": "google.cloud.identitytoolkit.v2",
+      "gem_model_id": 3162313937613835,
+      "ruby_namespace": "::Google::Cloud::IdentityToolkit::V2",
+      "services": [
+        {
+          "design_name": "google.cloud.identitytoolkit.v2.AccountManagementService",
+          "id": 6232613662316632,
+          "package_model_id": 3366646133353232,
+          "name": "AccountManagementService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.identitytoolkit.v2.AccountManagementService.FinalizeMfaEnrollment",
+              "id": 6662333336393431,
+              "service_model_id": 6232613662316632,
+              "rpc_name": "FinalizeMfaEnrollment",
+              "input_name": "google.cloud.identitytoolkit.v2.FinalizeMfaEnrollmentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.identitytoolkit.v2.AccountManagementService.StartMfaEnrollment",
+              "id": 6230626230363538,
+              "service_model_id": 6232613662316632,
+              "rpc_name": "StartMfaEnrollment",
+              "input_name": "google.cloud.identitytoolkit.v2.StartMfaEnrollmentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.identitytoolkit.v2.AccountManagementService.WithdrawMfa",
+              "id": 6266653934633432,
+              "service_model_id": 6232613662316632,
+              "rpc_name": "WithdrawMfa",
+              "input_name": "google.cloud.identitytoolkit.v2.WithdrawMfaRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.identitytoolkit.v2.AuthenticationService",
+          "id": 6461333534393136,
+          "package_model_id": 3366646133353232,
+          "name": "AuthenticationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.identitytoolkit.v2.AuthenticationService.FinalizeMfaSignIn",
+              "id": 6537623264333532,
+              "service_model_id": 6461333534393136,
+              "rpc_name": "FinalizeMfaSignIn",
+              "input_name": "google.cloud.identitytoolkit.v2.FinalizeMfaSignInRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.identitytoolkit.v2.AuthenticationService.StartMfaSignIn",
+              "id": 3531313936363439,
+              "service_model_id": 6461333534393136,
+              "rpc_name": "StartMfaSignIn",
+              "input_name": "google.cloud.identitytoolkit.v2.StartMfaSignInRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "design_name": "google-cloud-hosted-marketplace-v2",
+  "id": 3163336638326630,
+  "name": "google-cloud-hosted-marketplace-v2",
+  "packages": [
+    {
+      "design_name": "ccc.hosted.marketplace.v2",
+      "id": 3037623639383932,
+      "name": "ccc.hosted.marketplace.v2",
+      "gem_model_id": 3163336638326630,
+      "ruby_namespace": "::Ccc::Hosted::Marketplace::V2",
+      "services": [
+        {
+          "design_name": "ccc.hosted.marketplace.v2.CustomerLicenseService",
+          "id": 3862356563336138,
+          "package_model_id": 3037623639383932,
+          "name": "CustomerLicenseService",
+          "rpcs": [
+            {
+              "design_name": "ccc.hosted.marketplace.v2.CustomerLicenseService.Get",
+              "id": 6532336138613133,
+              "service_model_id": 3862356563336138,
+              "rpc_name": "Get",
+              "input_name": "ccc.hosted.marketplace.v2.CustomerLicenseGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "ccc.hosted.marketplace.v2.LicenseNotificationService",
+          "id": 3966656135666130,
+          "package_model_id": 3037623639383932,
+          "name": "LicenseNotificationService",
+          "rpcs": [
+            {
+              "design_name": "ccc.hosted.marketplace.v2.LicenseNotificationService.List",
+              "id": 3135373064333331,
+              "service_model_id": 3966656135666130,
+              "rpc_name": "List",
+              "input_name": "ccc.hosted.marketplace.v2.LicenseNotificationListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "ccc.hosted.marketplace.v2.UserLicenseService",
+          "id": 6664626463313531,
+          "package_model_id": 3037623639383932,
+          "name": "UserLicenseService",
+          "rpcs": [
+            {
+              "design_name": "ccc.hosted.marketplace.v2.UserLicenseService.Get",
+              "id": 3239366661333462,
+              "service_model_id": 6664626463313531,
+              "rpc_name": "Get",
+              "input_name": "ccc.hosted.marketplace.v2.UserLicenseGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

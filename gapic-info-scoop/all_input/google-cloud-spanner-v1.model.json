@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-spanner-v1",
+  "id": 6535366233643965,
+  "name": "google-cloud-spanner-v1",
+  "packages": [
+    {
+      "design_name": "google.spanner.v1",
+      "id": 3431363131633366,
+      "name": "google.spanner.v1",
+      "gem_model_id": 6535366233643965,
+      "ruby_namespace": "::Google::Cloud::Spanner::V1",
+      "services": [
+        {
+          "design_name": "google.spanner.v1.Spanner",
+          "id": 3238346537366536,
+          "package_model_id": 3431363131633366,
+          "name": "Spanner",
+          "rpcs": [
+            {
+              "design_name": "google.spanner.v1.Spanner.CreateSession",
+              "id": 3933323337326335,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "CreateSession",
+              "input_name": "google.spanner.v1.CreateSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.BatchCreateSessions",
+              "id": 6532653035643734,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "BatchCreateSessions",
+              "input_name": "google.spanner.v1.BatchCreateSessionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.GetSession",
+              "id": 3639313033633361,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "GetSession",
+              "input_name": "google.spanner.v1.GetSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.ListSessions",
+              "id": 3762363061663762,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "ListSessions",
+              "input_name": "google.spanner.v1.ListSessionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.DeleteSession",
+              "id": 3731353831373532,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "DeleteSession",
+              "input_name": "google.spanner.v1.DeleteSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.ExecuteSql",
+              "id": 6139303532303564,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "ExecuteSql",
+              "input_name": "google.spanner.v1.ExecuteSqlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.ExecuteStreamingSql",
+              "id": 6261393161383837,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "ExecuteStreamingSql",
+              "input_name": "google.spanner.v1.ExecuteSqlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.ExecuteBatchDml",
+              "id": 6562323836366461,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "ExecuteBatchDml",
+              "input_name": "google.spanner.v1.ExecuteBatchDmlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.Read",
+              "id": 3162613131343562,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "Read",
+              "input_name": "google.spanner.v1.ReadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.StreamingRead",
+              "id": 6565326135663565,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "StreamingRead",
+              "input_name": "google.spanner.v1.ReadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.BeginTransaction",
+              "id": 3461306665636435,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "BeginTransaction",
+              "input_name": "google.spanner.v1.BeginTransactionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.Commit",
+              "id": 3964613733643661,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "Commit",
+              "input_name": "google.spanner.v1.CommitRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.Rollback",
+              "id": 3633393965343630,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "Rollback",
+              "input_name": "google.spanner.v1.RollbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.PartitionQuery",
+              "id": 3464393064343964,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "PartitionQuery",
+              "input_name": "google.spanner.v1.PartitionQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.v1.Spanner.PartitionRead",
+              "id": 3265323966383134,
+              "service_model_id": 3238346537366536,
+              "rpc_name": "PartitionRead",
+              "input_name": "google.spanner.v1.PartitionReadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

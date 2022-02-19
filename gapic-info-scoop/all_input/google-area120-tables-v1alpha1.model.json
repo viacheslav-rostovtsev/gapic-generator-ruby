@@ -1,0 +1,144 @@
+{
+  "design_name": "google-area120-tables-v1alpha1",
+  "id": 6563376337316239,
+  "name": "google-area120-tables-v1alpha1",
+  "packages": [
+    {
+      "design_name": "google.area120.tables.v1alpha1",
+      "id": 3333306463303364,
+      "name": "google.area120.tables.v1alpha1",
+      "gem_model_id": 6563376337316239,
+      "ruby_namespace": "::Google::Area120::Tables::V1alpha1",
+      "services": [
+        {
+          "design_name": "google.area120.tables.v1alpha1.TablesService",
+          "id": 6439366664323937,
+          "package_model_id": 3333306463303364,
+          "name": "TablesService",
+          "rpcs": [
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.GetTable",
+              "id": 6338653563356338,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "GetTable",
+              "input_name": "google.area120.tables.v1alpha1.GetTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.ListTables",
+              "id": 6331396431336433,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "ListTables",
+              "input_name": "google.area120.tables.v1alpha1.ListTablesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.GetWorkspace",
+              "id": 3435373531336230,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "GetWorkspace",
+              "input_name": "google.area120.tables.v1alpha1.GetWorkspaceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.ListWorkspaces",
+              "id": 3231353333383034,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "ListWorkspaces",
+              "input_name": "google.area120.tables.v1alpha1.ListWorkspacesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.GetRow",
+              "id": 6162356632336233,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "GetRow",
+              "input_name": "google.area120.tables.v1alpha1.GetRowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.ListRows",
+              "id": 3137353665633464,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "ListRows",
+              "input_name": "google.area120.tables.v1alpha1.ListRowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.CreateRow",
+              "id": 6661616535616261,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "CreateRow",
+              "input_name": "google.area120.tables.v1alpha1.CreateRowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.BatchCreateRows",
+              "id": 3638333333343363,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "BatchCreateRows",
+              "input_name": "google.area120.tables.v1alpha1.BatchCreateRowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.UpdateRow",
+              "id": 3237656431373761,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "UpdateRow",
+              "input_name": "google.area120.tables.v1alpha1.UpdateRowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.BatchUpdateRows",
+              "id": 3162356164343663,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "BatchUpdateRows",
+              "input_name": "google.area120.tables.v1alpha1.BatchUpdateRowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.DeleteRow",
+              "id": 6236623333353264,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "DeleteRow",
+              "input_name": "google.area120.tables.v1alpha1.DeleteRowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.area120.tables.v1alpha1.TablesService.BatchDeleteRows",
+              "id": 6466626332643231,
+              "service_model_id": 6439366664323937,
+              "rpc_name": "BatchDeleteRows",
+              "input_name": "google.area120.tables.v1alpha1.BatchDeleteRowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

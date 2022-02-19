@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-gaming-allocationendpoint-v1alpha",
+  "id": 3964316166396364,
+  "name": "google-cloud-gaming-allocationendpoint-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.gaming.allocationendpoint.v1alpha",
+      "id": 3036343635353762,
+      "name": "google.cloud.gaming.allocationendpoint.v1alpha",
+      "gem_model_id": 3964316166396364,
+      "ruby_namespace": "::Google::Cloud::Gaming::Allocationendpoint::V1alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.gaming.allocationendpoint.v1alpha.AllocationEndpointService",
+          "id": 6332626330383763,
+          "package_model_id": 3036343635353762,
+          "name": "AllocationEndpointService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gaming.allocationendpoint.v1alpha.AllocationEndpointService.Allocate",
+              "id": 3839323563316566,
+              "service_model_id": 6332626330383763,
+              "rpc_name": "Allocate",
+              "input_name": "google.cloud.gaming.allocationendpoint.v1alpha.AllocationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

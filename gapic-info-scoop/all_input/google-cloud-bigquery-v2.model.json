@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-bigquery-v2",
+  "id": 3938643733613462,
+  "name": "google-cloud-bigquery-v2",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.v2",
+      "id": 3766653236666637,
+      "name": "google.cloud.bigquery.v2",
+      "gem_model_id": 3938643733613462,
+      "ruby_namespace": "::Google::Cloud::Bigquery::V2",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.v2.ModelService",
+          "id": 3665633338313637,
+          "package_model_id": 3766653236666637,
+          "name": "ModelService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.v2.ModelService.GetModel",
+              "id": 6161363538636637,
+              "service_model_id": 3665633338313637,
+              "rpc_name": "GetModel",
+              "input_name": "google.cloud.bigquery.v2.GetModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.v2.ModelService.ListModels",
+              "id": 3730666538316439,
+              "service_model_id": 3665633338313637,
+              "rpc_name": "ListModels",
+              "input_name": "google.cloud.bigquery.v2.ListModelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.v2.ModelService.PatchModel",
+              "id": 3835303734366562,
+              "service_model_id": 3665633338313637,
+              "rpc_name": "PatchModel",
+              "input_name": "google.cloud.bigquery.v2.PatchModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.v2.ModelService.DeleteModel",
+              "id": 6530343636303432,
+              "service_model_id": 3665633338313637,
+              "rpc_name": "DeleteModel",
+              "input_name": "google.cloud.bigquery.v2.DeleteModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

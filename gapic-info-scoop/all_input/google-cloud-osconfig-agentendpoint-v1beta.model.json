@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-agentendpoint-v1beta",
+  "id": 3866663539643035,
+  "name": "google-cloud-agentendpoint-v1beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.osconfig.agentendpoint.v1beta",
+      "id": 3135613666343561,
+      "name": "google.cloud.osconfig.agentendpoint.v1beta",
+      "gem_model_id": 3866663539643035,
+      "ruby_namespace": "::Google::Cloud::Osconfig::Agentendpoint::V1beta",
+      "services": [
+        {
+          "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService",
+          "id": 3562396566646338,
+          "package_model_id": 3135613666343561,
+          "name": "AgentEndpointService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.ReceiveTaskNotification",
+              "id": 3339663361313264,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "ReceiveTaskNotification",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.ReceiveTaskNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.StartNextTask",
+              "id": 3731666563316361,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "StartNextTask",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.StartNextTaskRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.ReportTaskProgress",
+              "id": 6236346632356639,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "ReportTaskProgress",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.ReportTaskProgressRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.ReportTaskComplete",
+              "id": 3030396361343366,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "ReportTaskComplete",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.ReportTaskCompleteRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.LookupEffectiveGuestPolicy",
+              "id": 3261393833306161,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "LookupEffectiveGuestPolicy",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.LookupEffectiveGuestPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1beta.AgentEndpointService.RegisterAgent",
+              "id": 3631653865343635,
+              "service_model_id": 3562396566646338,
+              "rpc_name": "RegisterAgent",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1beta.RegisterAgentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

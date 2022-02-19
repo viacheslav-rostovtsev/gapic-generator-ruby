@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-os_login-v1beta",
+  "id": 3662346664613531,
+  "name": "google-cloud-os_login-v1beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.oslogin.v1beta",
+      "id": 3962613939343837,
+      "name": "google.cloud.oslogin.v1beta",
+      "gem_model_id": 3662346664613531,
+      "ruby_namespace": "::Google::Cloud::OsLogin::V1beta",
+      "services": [
+        {
+          "design_name": "google.cloud.oslogin.v1beta.OsLoginService",
+          "id": 3565653566343230,
+          "package_model_id": 3962613939343837,
+          "name": "OsLoginService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.DeletePosixAccount",
+              "id": 6536633333393965,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "DeletePosixAccount",
+              "input_name": "google.cloud.oslogin.v1beta.DeletePosixAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.DeleteSshPublicKey",
+              "id": 3964333863323735,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "DeleteSshPublicKey",
+              "input_name": "google.cloud.oslogin.v1beta.DeleteSshPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.GetLoginProfile",
+              "id": 3437386436303061,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "GetLoginProfile",
+              "input_name": "google.cloud.oslogin.v1beta.GetLoginProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.GetSshPublicKey",
+              "id": 6230646133313962,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "GetSshPublicKey",
+              "input_name": "google.cloud.oslogin.v1beta.GetSshPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.ImportSshPublicKey",
+              "id": 6663333361393763,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "ImportSshPublicKey",
+              "input_name": "google.cloud.oslogin.v1beta.ImportSshPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.oslogin.v1beta.OsLoginService.UpdateSshPublicKey",
+              "id": 3136333039393737,
+              "service_model_id": 3565653566343230,
+              "rpc_name": "UpdateSshPublicKey",
+              "input_name": "google.cloud.oslogin.v1beta.UpdateSshPublicKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

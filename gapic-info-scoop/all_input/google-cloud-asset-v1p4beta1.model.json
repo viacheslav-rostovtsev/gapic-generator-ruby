@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-asset-v1p4beta1",
+  "id": 6339653633653435,
+  "name": "google-cloud-asset-v1p4beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.asset.v1p4beta1",
+      "id": 3836383335313762,
+      "name": "google.cloud.asset.v1p4beta1",
+      "gem_model_id": 6339653633653435,
+      "ruby_namespace": "::Google::Cloud::Asset::V1p4beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.asset.v1p4beta1.AssetService",
+          "id": 6435366539646636,
+          "package_model_id": 3836383335313762,
+          "name": "AssetService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.asset.v1p4beta1.AssetService.AnalyzeIamPolicy",
+              "id": 3162666631636437,
+              "service_model_id": 6435366539646636,
+              "rpc_name": "AnalyzeIamPolicy",
+              "input_name": "google.cloud.asset.v1p4beta1.AnalyzeIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1p4beta1.AssetService.ExportIamPolicyAnalysis",
+              "id": 3963653365656133,
+              "service_model_id": 6435366539646636,
+              "rpc_name": "ExportIamPolicyAnalysis",
+              "input_name": "google.cloud.asset.v1p4beta1.ExportIamPolicyAnalysisRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

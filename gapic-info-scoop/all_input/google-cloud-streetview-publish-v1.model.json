@@ -1,0 +1,114 @@
+{
+  "design_name": "google-cloud-publish-v1",
+  "id": 3530626561393161,
+  "name": "google-cloud-publish-v1",
+  "packages": [
+    {
+      "design_name": "google.streetview.publish.v1",
+      "id": 6334633639323430,
+      "name": "google.streetview.publish.v1",
+      "gem_model_id": 3530626561393161,
+      "ruby_namespace": "::Google::Streetview::Publish::V1",
+      "services": [
+        {
+          "design_name": "google.streetview.publish.v1.StreetViewPublishService",
+          "id": 3134393937626363,
+          "package_model_id": 6334633639323430,
+          "name": "StreetViewPublishService",
+          "rpcs": [
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.StartUpload",
+              "id": 6464396561633665,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "StartUpload",
+              "input_name": "google.protobuf.Empty",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.CreatePhoto",
+              "id": 6630393535356338,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "CreatePhoto",
+              "input_name": "google.streetview.publish.v1.CreatePhotoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.GetPhoto",
+              "id": 3966663837626161,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "GetPhoto",
+              "input_name": "google.streetview.publish.v1.GetPhotoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.BatchGetPhotos",
+              "id": 3761343265353962,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "BatchGetPhotos",
+              "input_name": "google.streetview.publish.v1.BatchGetPhotosRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.ListPhotos",
+              "id": 3535623732636330,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "ListPhotos",
+              "input_name": "google.streetview.publish.v1.ListPhotosRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.UpdatePhoto",
+              "id": 3265353236336432,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "UpdatePhoto",
+              "input_name": "google.streetview.publish.v1.UpdatePhotoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.BatchUpdatePhotos",
+              "id": 3739616230653532,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "BatchUpdatePhotos",
+              "input_name": "google.streetview.publish.v1.BatchUpdatePhotosRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.DeletePhoto",
+              "id": 3735373564383237,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "DeletePhoto",
+              "input_name": "google.streetview.publish.v1.DeletePhotoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.streetview.publish.v1.StreetViewPublishService.BatchDeletePhotos",
+              "id": 3662333232666535,
+              "service_model_id": 3134393937626363,
+              "rpc_name": "BatchDeletePhotos",
+              "input_name": "google.streetview.publish.v1.BatchDeletePhotosRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

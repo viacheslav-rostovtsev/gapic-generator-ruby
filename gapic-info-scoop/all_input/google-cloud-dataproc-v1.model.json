@@ -1,0 +1,366 @@
+{
+  "design_name": "google-cloud-dataproc-v1",
+  "id": 3966396537633631,
+  "name": "google-cloud-dataproc-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.dataproc.v1",
+      "id": 3865393238386434,
+      "name": "google.cloud.dataproc.v1",
+      "gem_model_id": 3966396537633631,
+      "ruby_namespace": "::Google::Cloud::Dataproc::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService",
+          "id": 3534393539363536,
+          "package_model_id": 3865393238386434,
+          "name": "AutoscalingPolicyService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService.CreateAutoscalingPolicy",
+              "id": 3931616638666435,
+              "service_model_id": 3534393539363536,
+              "rpc_name": "CreateAutoscalingPolicy",
+              "input_name": "google.cloud.dataproc.v1.CreateAutoscalingPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService.UpdateAutoscalingPolicy",
+              "id": 3532383136343631,
+              "service_model_id": 3534393539363536,
+              "rpc_name": "UpdateAutoscalingPolicy",
+              "input_name": "google.cloud.dataproc.v1.UpdateAutoscalingPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService.GetAutoscalingPolicy",
+              "id": 3731323639346239,
+              "service_model_id": 3534393539363536,
+              "rpc_name": "GetAutoscalingPolicy",
+              "input_name": "google.cloud.dataproc.v1.GetAutoscalingPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService.ListAutoscalingPolicies",
+              "id": 3431323531626466,
+              "service_model_id": 3534393539363536,
+              "rpc_name": "ListAutoscalingPolicies",
+              "input_name": "google.cloud.dataproc.v1.ListAutoscalingPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.AutoscalingPolicyService.DeleteAutoscalingPolicy",
+              "id": 3565646335303838,
+              "service_model_id": 3534393539363536,
+              "rpc_name": "DeleteAutoscalingPolicy",
+              "input_name": "google.cloud.dataproc.v1.DeleteAutoscalingPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataproc.v1.BatchController",
+          "id": 6335316539306365,
+          "package_model_id": 3865393238386434,
+          "name": "BatchController",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataproc.v1.BatchController.CreateBatch",
+              "id": 3464353032363563,
+              "service_model_id": 6335316539306365,
+              "rpc_name": "CreateBatch",
+              "input_name": "google.cloud.dataproc.v1.CreateBatchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.BatchController.GetBatch",
+              "id": 6630353533663766,
+              "service_model_id": 6335316539306365,
+              "rpc_name": "GetBatch",
+              "input_name": "google.cloud.dataproc.v1.GetBatchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.BatchController.ListBatches",
+              "id": 3538303862643539,
+              "service_model_id": 6335316539306365,
+              "rpc_name": "ListBatches",
+              "input_name": "google.cloud.dataproc.v1.ListBatchesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.BatchController.DeleteBatch",
+              "id": 3465313562346364,
+              "service_model_id": 6335316539306365,
+              "rpc_name": "DeleteBatch",
+              "input_name": "google.cloud.dataproc.v1.DeleteBatchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataproc.v1.ClusterController",
+          "id": 3764633835373962,
+          "package_model_id": 3865393238386434,
+          "name": "ClusterController",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.CreateCluster",
+              "id": 3765653534326632,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "CreateCluster",
+              "input_name": "google.cloud.dataproc.v1.CreateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.UpdateCluster",
+              "id": 3638333030636530,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "UpdateCluster",
+              "input_name": "google.cloud.dataproc.v1.UpdateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.StopCluster",
+              "id": 6132363566623331,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "StopCluster",
+              "input_name": "google.cloud.dataproc.v1.StopClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.StartCluster",
+              "id": 6437623239346663,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "StartCluster",
+              "input_name": "google.cloud.dataproc.v1.StartClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.DeleteCluster",
+              "id": 3538633435303934,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "DeleteCluster",
+              "input_name": "google.cloud.dataproc.v1.DeleteClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.GetCluster",
+              "id": 3235326166313564,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "GetCluster",
+              "input_name": "google.cloud.dataproc.v1.GetClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.ListClusters",
+              "id": 3239663633313363,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "ListClusters",
+              "input_name": "google.cloud.dataproc.v1.ListClustersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.ClusterController.DiagnoseCluster",
+              "id": 3464363766396439,
+              "service_model_id": 3764633835373962,
+              "rpc_name": "DiagnoseCluster",
+              "input_name": "google.cloud.dataproc.v1.DiagnoseClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataproc.v1.JobController",
+          "id": 6237623734656564,
+          "package_model_id": 3865393238386434,
+          "name": "JobController",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.SubmitJob",
+              "id": 6339376233313839,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "SubmitJob",
+              "input_name": "google.cloud.dataproc.v1.SubmitJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.SubmitJobAsOperation",
+              "id": 3061383037616139,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "SubmitJobAsOperation",
+              "input_name": "google.cloud.dataproc.v1.SubmitJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.GetJob",
+              "id": 3438636666383737,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.dataproc.v1.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.ListJobs",
+              "id": 3236656566663633,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.dataproc.v1.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.UpdateJob",
+              "id": 6562303162633763,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "UpdateJob",
+              "input_name": "google.cloud.dataproc.v1.UpdateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.CancelJob",
+              "id": 3035636130613264,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "CancelJob",
+              "input_name": "google.cloud.dataproc.v1.CancelJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.JobController.DeleteJob",
+              "id": 6230326264393239,
+              "service_model_id": 6237623734656564,
+              "rpc_name": "DeleteJob",
+              "input_name": "google.cloud.dataproc.v1.DeleteJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService",
+          "id": 6539666363616339,
+          "package_model_id": 3865393238386434,
+          "name": "WorkflowTemplateService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.CreateWorkflowTemplate",
+              "id": 3331623465376566,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "CreateWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.CreateWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.GetWorkflowTemplate",
+              "id": 3263636539336263,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "GetWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.GetWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.InstantiateWorkflowTemplate",
+              "id": 3261346161636631,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "InstantiateWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.InstantiateWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.InstantiateInlineWorkflowTemplate",
+              "id": 3834386462653635,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "InstantiateInlineWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.InstantiateInlineWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.UpdateWorkflowTemplate",
+              "id": 6537353761393264,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "UpdateWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.UpdateWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.ListWorkflowTemplates",
+              "id": 6331323631396563,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "ListWorkflowTemplates",
+              "input_name": "google.cloud.dataproc.v1.ListWorkflowTemplatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataproc.v1.WorkflowTemplateService.DeleteWorkflowTemplate",
+              "id": 3839373438623463,
+              "service_model_id": 6539666363616339,
+              "rpc_name": "DeleteWorkflowTemplate",
+              "input_name": "google.cloud.dataproc.v1.DeleteWorkflowTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

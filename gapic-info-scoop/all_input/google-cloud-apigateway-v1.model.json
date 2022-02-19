@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-api_gateway-v1",
+  "id": 6639313130646166,
+  "name": "google-cloud-api_gateway-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.apigateway.v1",
+      "id": 3334383261663961,
+      "name": "google.cloud.apigateway.v1",
+      "gem_model_id": 6639313130646166,
+      "ruby_namespace": "::Google::Cloud::ApiGateway::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.apigateway.v1.ApiGatewayService",
+          "id": 3738626136646231,
+          "package_model_id": 3334383261663961,
+          "name": "ApiGatewayService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.ListGateways",
+              "id": 6663376564613164,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "ListGateways",
+              "input_name": "google.cloud.apigateway.v1.ListGatewaysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.GetGateway",
+              "id": 3932316165303134,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "GetGateway",
+              "input_name": "google.cloud.apigateway.v1.GetGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.CreateGateway",
+              "id": 3937333564313438,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "CreateGateway",
+              "input_name": "google.cloud.apigateway.v1.CreateGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.UpdateGateway",
+              "id": 3363303465333465,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "UpdateGateway",
+              "input_name": "google.cloud.apigateway.v1.UpdateGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.DeleteGateway",
+              "id": 6331653231656239,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "DeleteGateway",
+              "input_name": "google.cloud.apigateway.v1.DeleteGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.ListApis",
+              "id": 3436363837383630,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "ListApis",
+              "input_name": "google.cloud.apigateway.v1.ListApisRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.GetApi",
+              "id": 3335326666663837,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "GetApi",
+              "input_name": "google.cloud.apigateway.v1.GetApiRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.CreateApi",
+              "id": 6238653364626335,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "CreateApi",
+              "input_name": "google.cloud.apigateway.v1.CreateApiRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.UpdateApi",
+              "id": 6566643461383034,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "UpdateApi",
+              "input_name": "google.cloud.apigateway.v1.UpdateApiRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.DeleteApi",
+              "id": 3566613866383561,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "DeleteApi",
+              "input_name": "google.cloud.apigateway.v1.DeleteApiRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.ListApiConfigs",
+              "id": 6166373462343962,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "ListApiConfigs",
+              "input_name": "google.cloud.apigateway.v1.ListApiConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.GetApiConfig",
+              "id": 3162303131386566,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "GetApiConfig",
+              "input_name": "google.cloud.apigateway.v1.GetApiConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.CreateApiConfig",
+              "id": 3339623535353161,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "CreateApiConfig",
+              "input_name": "google.cloud.apigateway.v1.CreateApiConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.UpdateApiConfig",
+              "id": 6466323661643266,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "UpdateApiConfig",
+              "input_name": "google.cloud.apigateway.v1.UpdateApiConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.apigateway.v1.ApiGatewayService.DeleteApiConfig",
+              "id": 3833613165636235,
+              "service_model_id": 3738626136646231,
+              "rpc_name": "DeleteApiConfig",
+              "input_name": "google.cloud.apigateway.v1.DeleteApiConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

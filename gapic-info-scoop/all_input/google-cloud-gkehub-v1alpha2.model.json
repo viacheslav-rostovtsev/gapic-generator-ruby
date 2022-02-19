@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-gkehub-v1alpha2",
+  "id": 6134653364396530,
+  "name": "google-cloud-gkehub-v1alpha2",
+  "packages": [
+    {
+      "design_name": "google.cloud.gkehub.v1alpha2",
+      "id": 6436356562663136,
+      "name": "google.cloud.gkehub.v1alpha2",
+      "gem_model_id": 6134653364396530,
+      "ruby_namespace": "::Google::Cloud::GkeHub::V1alpha2",
+      "services": [
+        {
+          "design_name": "google.cloud.gkehub.v1alpha2.GkeHub",
+          "id": 6661376637343738,
+          "package_model_id": 6436356562663136,
+          "name": "GkeHub",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.ListMemberships",
+              "id": 6636343235386532,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "ListMemberships",
+              "input_name": "google.cloud.gkehub.v1alpha2.ListMembershipsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.GetMembership",
+              "id": 3764626336663064,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "GetMembership",
+              "input_name": "google.cloud.gkehub.v1alpha2.GetMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.CreateMembership",
+              "id": 3862653436303437,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "CreateMembership",
+              "input_name": "google.cloud.gkehub.v1alpha2.CreateMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.DeleteMembership",
+              "id": 3432323636373332,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "DeleteMembership",
+              "input_name": "google.cloud.gkehub.v1alpha2.DeleteMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.UpdateMembership",
+              "id": 6561326137613564,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "UpdateMembership",
+              "input_name": "google.cloud.gkehub.v1alpha2.UpdateMembershipRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.GenerateConnectManifest",
+              "id": 3961323066613862,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "GenerateConnectManifest",
+              "input_name": "google.cloud.gkehub.v1alpha2.GenerateConnectManifestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gkehub.v1alpha2.GkeHub.InitializeHub",
+              "id": 6663613465336566,
+              "service_model_id": 6661376637343738,
+              "rpc_name": "InitializeHub",
+              "input_name": "google.cloud.gkehub.v1alpha2.InitializeHubRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

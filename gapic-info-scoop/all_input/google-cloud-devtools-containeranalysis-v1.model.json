@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-container_analysis-v1",
+  "id": 3262393663333962,
+  "name": "google-cloud-container_analysis-v1",
+  "packages": [
+    {
+      "design_name": "google.devtools.containeranalysis.v1",
+      "id": 3439386136616661,
+      "name": "google.devtools.containeranalysis.v1",
+      "gem_model_id": 3262393663333962,
+      "ruby_namespace": "::Google::Cloud::ContainerAnalysis::V1",
+      "services": [
+        {
+          "design_name": "google.devtools.containeranalysis.v1.ContainerAnalysis",
+          "id": 3039313537623330,
+          "package_model_id": 3439386136616661,
+          "name": "ContainerAnalysis",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.containeranalysis.v1.ContainerAnalysis.SetIamPolicy",
+              "id": 3761663461616337,
+              "service_model_id": 3039313537623330,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.containeranalysis.v1.ContainerAnalysis.GetIamPolicy",
+              "id": 3865393230346364,
+              "service_model_id": 3039313537623330,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.containeranalysis.v1.ContainerAnalysis.TestIamPermissions",
+              "id": 3266313730663462,
+              "service_model_id": 3039313537623330,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.containeranalysis.v1.ContainerAnalysis.GetVulnerabilityOccurrencesSummary",
+              "id": 3662306633656663,
+              "service_model_id": 3039313537623330,
+              "rpc_name": "GetVulnerabilityOccurrencesSummary",
+              "input_name": "google.devtools.containeranalysis.v1.GetVulnerabilityOccurrencesSummaryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

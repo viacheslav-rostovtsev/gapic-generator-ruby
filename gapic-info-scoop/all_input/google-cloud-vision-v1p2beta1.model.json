@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-vision-v1p2beta1",
+  "id": 3735643465656564,
+  "name": "google-cloud-vision-v1p2beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.vision.v1p2beta1",
+      "id": 3132623339366232,
+      "name": "google.cloud.vision.v1p2beta1",
+      "gem_model_id": 3735643465656564,
+      "ruby_namespace": "::Google::Cloud::Vision::V1p2beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.vision.v1p2beta1.ImageAnnotator",
+          "id": 3536623537383834,
+          "package_model_id": 3132623339366232,
+          "name": "ImageAnnotator",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vision.v1p2beta1.ImageAnnotator.BatchAnnotateImages",
+              "id": 3065316531643633,
+              "service_model_id": 3536623537383834,
+              "rpc_name": "BatchAnnotateImages",
+              "input_name": "google.cloud.vision.v1p2beta1.BatchAnnotateImagesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vision.v1p2beta1.ImageAnnotator.AsyncBatchAnnotateFiles",
+              "id": 3831306265303634,
+              "service_model_id": 3536623537383834,
+              "rpc_name": "AsyncBatchAnnotateFiles",
+              "input_name": "google.cloud.vision.v1p2beta1.AsyncBatchAnnotateFilesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

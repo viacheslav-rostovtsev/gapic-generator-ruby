@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-web_security_scanner-v1",
+  "id": 3265663062386630,
+  "name": "google-cloud-web_security_scanner-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.websecurityscanner.v1",
+      "id": 3730343338663265,
+      "name": "google.cloud.websecurityscanner.v1",
+      "gem_model_id": 3265663062386630,
+      "ruby_namespace": "::Google::Cloud::WebSecurityScanner::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner",
+          "id": 6462383366393237,
+          "package_model_id": 3730343338663265,
+          "name": "WebSecurityScanner",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.CreateScanConfig",
+              "id": 6261663663316433,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "CreateScanConfig",
+              "input_name": "google.cloud.websecurityscanner.v1.CreateScanConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.DeleteScanConfig",
+              "id": 3463333239363862,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "DeleteScanConfig",
+              "input_name": "google.cloud.websecurityscanner.v1.DeleteScanConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.GetScanConfig",
+              "id": 3032613032393833,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "GetScanConfig",
+              "input_name": "google.cloud.websecurityscanner.v1.GetScanConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.ListScanConfigs",
+              "id": 3531373433633862,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "ListScanConfigs",
+              "input_name": "google.cloud.websecurityscanner.v1.ListScanConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.UpdateScanConfig",
+              "id": 3336616265363961,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "UpdateScanConfig",
+              "input_name": "google.cloud.websecurityscanner.v1.UpdateScanConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.StartScanRun",
+              "id": 6636633838393139,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "StartScanRun",
+              "input_name": "google.cloud.websecurityscanner.v1.StartScanRunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.GetScanRun",
+              "id": 3234643537636665,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "GetScanRun",
+              "input_name": "google.cloud.websecurityscanner.v1.GetScanRunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.ListScanRuns",
+              "id": 3435383534323236,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "ListScanRuns",
+              "input_name": "google.cloud.websecurityscanner.v1.ListScanRunsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.StopScanRun",
+              "id": 3164346433306536,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "StopScanRun",
+              "input_name": "google.cloud.websecurityscanner.v1.StopScanRunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.ListCrawledUrls",
+              "id": 3336366535376265,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "ListCrawledUrls",
+              "input_name": "google.cloud.websecurityscanner.v1.ListCrawledUrlsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.GetFinding",
+              "id": 3561313031326333,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "GetFinding",
+              "input_name": "google.cloud.websecurityscanner.v1.GetFindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.ListFindings",
+              "id": 3161323033373332,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "ListFindings",
+              "input_name": "google.cloud.websecurityscanner.v1.ListFindingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.websecurityscanner.v1.WebSecurityScanner.ListFindingTypeStats",
+              "id": 3133613936643037,
+              "service_model_id": 6462383366393237,
+              "rpc_name": "ListFindingTypeStats",
+              "input_name": "google.cloud.websecurityscanner.v1.ListFindingTypeStatsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-chromeos-moblab-v1beta1",
+  "id": 3566633661653034,
+  "name": "google-cloud-chromeos-moblab-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.chromeos.moblab.v1beta1",
+      "id": 3032306464613566,
+      "name": "google.chromeos.moblab.v1beta1",
+      "gem_model_id": 3566633661653034,
+      "ruby_namespace": "::Google::Chromeos::Moblab::V1beta1",
+      "services": [
+        {
+          "design_name": "google.chromeos.moblab.v1beta1.BuildService",
+          "id": 3863613162363337,
+          "package_model_id": 3032306464613566,
+          "name": "BuildService",
+          "rpcs": [
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.ListBuildTargets",
+              "id": 6361333631373637,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "ListBuildTargets",
+              "input_name": "google.chromeos.moblab.v1beta1.ListBuildTargetsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.ListModels",
+              "id": 3738393261666461,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "ListModels",
+              "input_name": "google.chromeos.moblab.v1beta1.ListModelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.ListBuilds",
+              "id": 3563373432396365,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "ListBuilds",
+              "input_name": "google.chromeos.moblab.v1beta1.ListBuildsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.CheckBuildStageStatus",
+              "id": 3331613535616630,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "CheckBuildStageStatus",
+              "input_name": "google.chromeos.moblab.v1beta1.CheckBuildStageStatusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.StageBuild",
+              "id": 6432633730313031,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "StageBuild",
+              "input_name": "google.chromeos.moblab.v1beta1.StageBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.chromeos.moblab.v1beta1.BuildService.FindMostStableBuild",
+              "id": 3838396630333038,
+              "service_model_id": 3863613162363337,
+              "rpc_name": "FindMostStableBuild",
+              "input_name": "google.chromeos.moblab.v1beta1.FindMostStableBuildRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

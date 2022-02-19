@@ -1,0 +1,388 @@
+{
+  "design_name": "google-cloud-pubsub-v1",
+  "id": 3939636533653464,
+  "name": "google-cloud-pubsub-v1",
+  "packages": [
+    {
+      "design_name": "google.pubsub.v1",
+      "id": 3030313834616334,
+      "name": "google.pubsub.v1",
+      "gem_model_id": 3939636533653464,
+      "ruby_namespace": "::Google::Cloud::PubSub::V1",
+      "services": [
+        {
+          "design_name": "google.pubsub.v1.SchemaService",
+          "id": 3532396438393264,
+          "package_model_id": 3030313834616334,
+          "name": "SchemaService",
+          "rpcs": [
+            {
+              "design_name": "google.pubsub.v1.SchemaService.CreateSchema",
+              "id": 6136666662323464,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "CreateSchema",
+              "input_name": "google.pubsub.v1.CreateSchemaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.SchemaService.GetSchema",
+              "id": 3866336236653462,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "GetSchema",
+              "input_name": "google.pubsub.v1.GetSchemaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.SchemaService.ListSchemas",
+              "id": 6338303063396637,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "ListSchemas",
+              "input_name": "google.pubsub.v1.ListSchemasRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.SchemaService.DeleteSchema",
+              "id": 3137306234313433,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "DeleteSchema",
+              "input_name": "google.pubsub.v1.DeleteSchemaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.SchemaService.ValidateSchema",
+              "id": 6563333330353266,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "ValidateSchema",
+              "input_name": "google.pubsub.v1.ValidateSchemaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.SchemaService.ValidateMessage",
+              "id": 6239623662343664,
+              "service_model_id": 3532396438393264,
+              "rpc_name": "ValidateMessage",
+              "input_name": "google.pubsub.v1.ValidateMessageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.pubsub.v1.Publisher",
+          "id": 3263613332333261,
+          "package_model_id": 3030313834616334,
+          "name": "Publisher",
+          "rpcs": [
+            {
+              "design_name": "google.pubsub.v1.Publisher.CreateTopic",
+              "id": 6334616234343534,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "CreateTopic",
+              "input_name": "google.pubsub.v1.Topic",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.UpdateTopic",
+              "id": 6539326266373435,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "UpdateTopic",
+              "input_name": "google.pubsub.v1.UpdateTopicRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.Publish",
+              "id": 6662643031333936,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "Publish",
+              "input_name": "google.pubsub.v1.PublishRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.GetTopic",
+              "id": 3131386264656432,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "GetTopic",
+              "input_name": "google.pubsub.v1.GetTopicRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.ListTopics",
+              "id": 6230666638653935,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "ListTopics",
+              "input_name": "google.pubsub.v1.ListTopicsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.ListTopicSubscriptions",
+              "id": 3431313364613634,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "ListTopicSubscriptions",
+              "input_name": "google.pubsub.v1.ListTopicSubscriptionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.ListTopicSnapshots",
+              "id": 3537303565396363,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "ListTopicSnapshots",
+              "input_name": "google.pubsub.v1.ListTopicSnapshotsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.DeleteTopic",
+              "id": 3436333132306130,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "DeleteTopic",
+              "input_name": "google.pubsub.v1.DeleteTopicRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Publisher.DetachSubscription",
+              "id": 3534316464333162,
+              "service_model_id": 3263613332333261,
+              "rpc_name": "DetachSubscription",
+              "input_name": "google.pubsub.v1.DetachSubscriptionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.pubsub.v1.Subscriber",
+          "id": 3465343734306236,
+          "package_model_id": 3030313834616334,
+          "name": "Subscriber",
+          "rpcs": [
+            {
+              "design_name": "google.pubsub.v1.Subscriber.CreateSubscription",
+              "id": 3366376561343339,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "CreateSubscription",
+              "input_name": "google.pubsub.v1.Subscription",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.GetSubscription",
+              "id": 3563613535633038,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "GetSubscription",
+              "input_name": "google.pubsub.v1.GetSubscriptionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.UpdateSubscription",
+              "id": 6665626338383763,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "UpdateSubscription",
+              "input_name": "google.pubsub.v1.UpdateSubscriptionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.ListSubscriptions",
+              "id": 6362376337313830,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "ListSubscriptions",
+              "input_name": "google.pubsub.v1.ListSubscriptionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.DeleteSubscription",
+              "id": 3266613937343665,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "DeleteSubscription",
+              "input_name": "google.pubsub.v1.DeleteSubscriptionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.ModifyAckDeadline",
+              "id": 3433363663653264,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "ModifyAckDeadline",
+              "input_name": "google.pubsub.v1.ModifyAckDeadlineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.Acknowledge",
+              "id": 3563643964333861,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "Acknowledge",
+              "input_name": "google.pubsub.v1.AcknowledgeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.Pull",
+              "id": 3630363766323436,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "Pull",
+              "input_name": "google.pubsub.v1.PullRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.StreamingPull",
+              "id": 3039323630646336,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "StreamingPull",
+              "input_name": "google.pubsub.v1.StreamingPullRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.ModifyPushConfig",
+              "id": 6664376666636534,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "ModifyPushConfig",
+              "input_name": "google.pubsub.v1.ModifyPushConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.GetSnapshot",
+              "id": 3531373133316633,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "GetSnapshot",
+              "input_name": "google.pubsub.v1.GetSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.ListSnapshots",
+              "id": 3861653266343964,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "ListSnapshots",
+              "input_name": "google.pubsub.v1.ListSnapshotsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.CreateSnapshot",
+              "id": 6634323162353462,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "CreateSnapshot",
+              "input_name": "google.pubsub.v1.CreateSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.UpdateSnapshot",
+              "id": 6363653336346366,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "UpdateSnapshot",
+              "input_name": "google.pubsub.v1.UpdateSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.DeleteSnapshot",
+              "id": 6538396130313938,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "DeleteSnapshot",
+              "input_name": "google.pubsub.v1.DeleteSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.pubsub.v1.Subscriber.Seek",
+              "id": 3531343031373666,
+              "service_model_id": 3465343734306236,
+              "rpc_name": "Seek",
+              "input_name": "google.pubsub.v1.SeekRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.iam.v1.IAMPolicy",
+          "id": 3136393863363936,
+          "package_model_id": 3530666463303133,
+          "name": "IAMPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.iam.v1.IAMPolicy.SetIamPolicy",
+              "id": 3236373031626432,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.GetIamPolicy",
+              "id": 3737336539316463,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.TestIamPermissions",
+              "id": 6266393536643738,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

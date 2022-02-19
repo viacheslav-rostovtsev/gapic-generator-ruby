@@ -1,0 +1,162 @@
+{
+  "design_name": "google-maps-fleetengine-v1",
+  "id": 3838333062646530,
+  "name": "google-maps-fleetengine-v1",
+  "packages": [
+    {
+      "design_name": "maps.fleetengine.v1",
+      "id": 3762646535383763,
+      "name": "maps.fleetengine.v1",
+      "gem_model_id": 3838333062646530,
+      "ruby_namespace": "::Maps::Fleetengine::V1",
+      "services": [
+        {
+          "design_name": "maps.fleetengine.v1.TripService",
+          "id": 3361323633663661,
+          "package_model_id": 3762646535383763,
+          "name": "TripService",
+          "rpcs": [
+            {
+              "design_name": "maps.fleetengine.v1.TripService.CreateTrip",
+              "id": 3235343230613763,
+              "service_model_id": 3361323633663661,
+              "rpc_name": "CreateTrip",
+              "input_name": "maps.fleetengine.v1.CreateTripRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.TripService.GetTrip",
+              "id": 3463663639666536,
+              "service_model_id": 3361323633663661,
+              "rpc_name": "GetTrip",
+              "input_name": "maps.fleetengine.v1.GetTripRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.TripService.ReportBillableTrip",
+              "id": 3939356363623063,
+              "service_model_id": 3361323633663661,
+              "rpc_name": "ReportBillableTrip",
+              "input_name": "maps.fleetengine.v1.ReportBillableTripRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.TripService.SearchTrips",
+              "id": 6365633531333632,
+              "service_model_id": 3361323633663661,
+              "rpc_name": "SearchTrips",
+              "input_name": "maps.fleetengine.v1.SearchTripsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.TripService.UpdateTrip",
+              "id": 3135306165306461,
+              "service_model_id": 3361323633663661,
+              "rpc_name": "UpdateTrip",
+              "input_name": "maps.fleetengine.v1.UpdateTripRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "maps.fleetengine.v1.VehicleService",
+          "id": 3539386666616564,
+          "package_model_id": 3762646535383763,
+          "name": "VehicleService",
+          "rpcs": [
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.CreateVehicle",
+              "id": 3561323139346533,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "CreateVehicle",
+              "input_name": "maps.fleetengine.v1.CreateVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.GetVehicle",
+              "id": 3131646530663366,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "GetVehicle",
+              "input_name": "maps.fleetengine.v1.GetVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.UpdateVehicle",
+              "id": 6561343639386133,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "UpdateVehicle",
+              "input_name": "maps.fleetengine.v1.UpdateVehicleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.UpdateVehicleLocation",
+              "id": 3937393937333364,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "UpdateVehicleLocation",
+              "input_name": "maps.fleetengine.v1.UpdateVehicleLocationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.UpdateVehicleAttributes",
+              "id": 3234633539353665,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "UpdateVehicleAttributes",
+              "input_name": "maps.fleetengine.v1.UpdateVehicleAttributesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.ListVehicles",
+              "id": 6435343235333936,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "ListVehicles",
+              "input_name": "maps.fleetengine.v1.ListVehiclesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.SearchVehicles",
+              "id": 3465393963646131,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "SearchVehicles",
+              "input_name": "maps.fleetengine.v1.SearchVehiclesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "maps.fleetengine.v1.VehicleService.SearchFuzzedVehicles",
+              "id": 3034663737623831,
+              "service_model_id": 3539386666616564,
+              "rpc_name": "SearchFuzzedVehicles",
+              "input_name": "maps.fleetengine.v1.SearchVehiclesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "design_name": "google-cloud-video-stitcher-v1",
+  "id": 6465396231376230,
+  "name": "google-cloud-video-stitcher-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.video.stitcher.v1",
+      "id": 6464343966353234,
+      "name": "google.cloud.video.stitcher.v1",
+      "gem_model_id": 6465396231376230,
+      "ruby_namespace": "::Google::Cloud::Video::Stitcher::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService",
+          "id": 6462353532346562,
+          "package_model_id": 6464343966353234,
+          "name": "VideoStitcherService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.CreateCdnKey",
+              "id": 6162633361363338,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "CreateCdnKey",
+              "input_name": "google.cloud.video.stitcher.v1.CreateCdnKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.ListCdnKeys",
+              "id": 6637643666663830,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "ListCdnKeys",
+              "input_name": "google.cloud.video.stitcher.v1.ListCdnKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetCdnKey",
+              "id": 3063323135363830,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetCdnKey",
+              "input_name": "google.cloud.video.stitcher.v1.GetCdnKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.DeleteCdnKey",
+              "id": 6435363862323930,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "DeleteCdnKey",
+              "input_name": "google.cloud.video.stitcher.v1.DeleteCdnKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.UpdateCdnKey",
+              "id": 3939306332356332,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "UpdateCdnKey",
+              "input_name": "google.cloud.video.stitcher.v1.UpdateCdnKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.CreateVodSession",
+              "id": 3961346138343436,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "CreateVodSession",
+              "input_name": "google.cloud.video.stitcher.v1.CreateVodSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetVodSession",
+              "id": 3232313730303135,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetVodSession",
+              "input_name": "google.cloud.video.stitcher.v1.GetVodSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.ListVodStitchDetails",
+              "id": 6664363732666161,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "ListVodStitchDetails",
+              "input_name": "google.cloud.video.stitcher.v1.ListVodStitchDetailsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetVodStitchDetail",
+              "id": 6463353864376664,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetVodStitchDetail",
+              "input_name": "google.cloud.video.stitcher.v1.GetVodStitchDetailRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.ListVodAdTagDetails",
+              "id": 3136353161303037,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "ListVodAdTagDetails",
+              "input_name": "google.cloud.video.stitcher.v1.ListVodAdTagDetailsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetVodAdTagDetail",
+              "id": 6664653435633632,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetVodAdTagDetail",
+              "input_name": "google.cloud.video.stitcher.v1.GetVodAdTagDetailRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.ListLiveAdTagDetails",
+              "id": 3439396461313637,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "ListLiveAdTagDetails",
+              "input_name": "google.cloud.video.stitcher.v1.ListLiveAdTagDetailsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetLiveAdTagDetail",
+              "id": 6261663439323538,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetLiveAdTagDetail",
+              "input_name": "google.cloud.video.stitcher.v1.GetLiveAdTagDetailRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.CreateSlate",
+              "id": 6630373533643164,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "CreateSlate",
+              "input_name": "google.cloud.video.stitcher.v1.CreateSlateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.ListSlates",
+              "id": 3639613664373863,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "ListSlates",
+              "input_name": "google.cloud.video.stitcher.v1.ListSlatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetSlate",
+              "id": 6435396138343637,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetSlate",
+              "input_name": "google.cloud.video.stitcher.v1.GetSlateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.UpdateSlate",
+              "id": 6539623865333637,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "UpdateSlate",
+              "input_name": "google.cloud.video.stitcher.v1.UpdateSlateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.DeleteSlate",
+              "id": 3633623764646365,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "DeleteSlate",
+              "input_name": "google.cloud.video.stitcher.v1.DeleteSlateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.CreateLiveSession",
+              "id": 6137306339633864,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "CreateLiveSession",
+              "input_name": "google.cloud.video.stitcher.v1.CreateLiveSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.stitcher.v1.VideoStitcherService.GetLiveSession",
+              "id": 3863343230373031,
+              "service_model_id": 6462353532346562,
+              "rpc_name": "GetLiveSession",
+              "input_name": "google.cloud.video.stitcher.v1.GetLiveSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

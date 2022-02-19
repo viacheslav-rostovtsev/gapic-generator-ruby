@@ -1,0 +1,314 @@
+{
+  "design_name": "google-cloud-iam-admin-v1",
+  "id": 3236616162666131,
+  "name": "google-cloud-iam-admin-v1",
+  "packages": [
+    {
+      "design_name": "google.iam.admin.v1",
+      "id": 3532626538613536,
+      "name": "google.iam.admin.v1",
+      "gem_model_id": 3236616162666131,
+      "ruby_namespace": "::Google::Iam::Admin::V1",
+      "services": [
+        {
+          "design_name": "google.iam.admin.v1.IAM",
+          "id": 3134323435383663,
+          "package_model_id": 3532626538613536,
+          "name": "IAM",
+          "rpcs": [
+            {
+              "design_name": "google.iam.admin.v1.IAM.ListServiceAccounts",
+              "id": 6435626237303763,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "ListServiceAccounts",
+              "input_name": "google.iam.admin.v1.ListServiceAccountsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.GetServiceAccount",
+              "id": 3861383166666363,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "GetServiceAccount",
+              "input_name": "google.iam.admin.v1.GetServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.CreateServiceAccount",
+              "id": 3239623664323433,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "CreateServiceAccount",
+              "input_name": "google.iam.admin.v1.CreateServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.UpdateServiceAccount",
+              "id": 3762313163386133,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "UpdateServiceAccount",
+              "input_name": "google.iam.admin.v1.ServiceAccount",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.PatchServiceAccount",
+              "id": 6331303233383332,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "PatchServiceAccount",
+              "input_name": "google.iam.admin.v1.PatchServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.DeleteServiceAccount",
+              "id": 3732386265393565,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "DeleteServiceAccount",
+              "input_name": "google.iam.admin.v1.DeleteServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.UndeleteServiceAccount",
+              "id": 6235383966646166,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "UndeleteServiceAccount",
+              "input_name": "google.iam.admin.v1.UndeleteServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.EnableServiceAccount",
+              "id": 6539313534643830,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "EnableServiceAccount",
+              "input_name": "google.iam.admin.v1.EnableServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.DisableServiceAccount",
+              "id": 6632363235616564,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "DisableServiceAccount",
+              "input_name": "google.iam.admin.v1.DisableServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.ListServiceAccountKeys",
+              "id": 6131383661316262,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "ListServiceAccountKeys",
+              "input_name": "google.iam.admin.v1.ListServiceAccountKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.GetServiceAccountKey",
+              "id": 3163623165633037,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "GetServiceAccountKey",
+              "input_name": "google.iam.admin.v1.GetServiceAccountKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.CreateServiceAccountKey",
+              "id": 3630306230646664,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "CreateServiceAccountKey",
+              "input_name": "google.iam.admin.v1.CreateServiceAccountKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.UploadServiceAccountKey",
+              "id": 3430653833313263,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "UploadServiceAccountKey",
+              "input_name": "google.iam.admin.v1.UploadServiceAccountKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.DeleteServiceAccountKey",
+              "id": 3432393732396139,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "DeleteServiceAccountKey",
+              "input_name": "google.iam.admin.v1.DeleteServiceAccountKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.SignBlob",
+              "id": 6666343531363361,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "SignBlob",
+              "input_name": "google.iam.admin.v1.SignBlobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.SignJwt",
+              "id": 3038666662356137,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "SignJwt",
+              "input_name": "google.iam.admin.v1.SignJwtRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.GetIamPolicy",
+              "id": 6633376435383133,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.SetIamPolicy",
+              "id": 6364376163633861,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.TestIamPermissions",
+              "id": 3432356664616232,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.QueryGrantableRoles",
+              "id": 6365373734383739,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "QueryGrantableRoles",
+              "input_name": "google.iam.admin.v1.QueryGrantableRolesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.ListRoles",
+              "id": 3762363665326362,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "ListRoles",
+              "input_name": "google.iam.admin.v1.ListRolesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.GetRole",
+              "id": 3934376534626664,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "GetRole",
+              "input_name": "google.iam.admin.v1.GetRoleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.CreateRole",
+              "id": 6636356637323363,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "CreateRole",
+              "input_name": "google.iam.admin.v1.CreateRoleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.UpdateRole",
+              "id": 3438666561323663,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "UpdateRole",
+              "input_name": "google.iam.admin.v1.UpdateRoleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.DeleteRole",
+              "id": 6165646663363563,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "DeleteRole",
+              "input_name": "google.iam.admin.v1.DeleteRoleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.UndeleteRole",
+              "id": 6232376339373763,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "UndeleteRole",
+              "input_name": "google.iam.admin.v1.UndeleteRoleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.QueryTestablePermissions",
+              "id": 3763303436313963,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "QueryTestablePermissions",
+              "input_name": "google.iam.admin.v1.QueryTestablePermissionsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.QueryAuditableServices",
+              "id": 6264353163363434,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "QueryAuditableServices",
+              "input_name": "google.iam.admin.v1.QueryAuditableServicesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.admin.v1.IAM.LintPolicy",
+              "id": 3038636134663531,
+              "service_model_id": 3134323435383663,
+              "rpc_name": "LintPolicy",
+              "input_name": "google.iam.admin.v1.LintPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

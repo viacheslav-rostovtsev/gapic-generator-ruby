@@ -1,0 +1,311 @@
+{
+  "design_name": "google-cloud-datastream-v1",
+  "id": 6562623763396632,
+  "name": "google-cloud-datastream-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.datastream.v1",
+      "id": 3631323662396664,
+      "name": "google.cloud.datastream.v1",
+      "gem_model_id": 6562623763396632,
+      "ruby_namespace": "::Google::Cloud::Datastream::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.datastream.v1.Datastream",
+          "id": 6662663933376538,
+          "package_model_id": 3631323662396664,
+          "name": "Datastream",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.ListConnectionProfiles",
+              "id": 3334333336323630,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "ListConnectionProfiles",
+              "input_name": "google.cloud.datastream.v1.ListConnectionProfilesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.GetConnectionProfile",
+              "id": 3934336163313530,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "GetConnectionProfile",
+              "input_name": "google.cloud.datastream.v1.GetConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.CreateConnectionProfile",
+              "id": 6236383336373035,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "CreateConnectionProfile",
+              "input_name": "google.cloud.datastream.v1.CreateConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.UpdateConnectionProfile",
+              "id": 6631326331363462,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "UpdateConnectionProfile",
+              "input_name": "google.cloud.datastream.v1.UpdateConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.DeleteConnectionProfile",
+              "id": 6535396663383130,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "DeleteConnectionProfile",
+              "input_name": "google.cloud.datastream.v1.DeleteConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.DiscoverConnectionProfile",
+              "id": 3561313036353036,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "DiscoverConnectionProfile",
+              "input_name": "google.cloud.datastream.v1.DiscoverConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.ListStreams",
+              "id": 3736656630323130,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "ListStreams",
+              "input_name": "google.cloud.datastream.v1.ListStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.GetStream",
+              "id": 6635636534383434,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "GetStream",
+              "input_name": "google.cloud.datastream.v1.GetStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.CreateStream",
+              "id": 3130336535636131,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "CreateStream",
+              "input_name": "google.cloud.datastream.v1.CreateStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.UpdateStream",
+              "id": 6161396638303938,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "UpdateStream",
+              "input_name": "google.cloud.datastream.v1.UpdateStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.DeleteStream",
+              "id": 3937336131323434,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "DeleteStream",
+              "input_name": "google.cloud.datastream.v1.DeleteStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.GetStreamObject",
+              "id": 6263386265663466,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "GetStreamObject",
+              "input_name": "google.cloud.datastream.v1.GetStreamObjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.LookupStreamObject",
+              "id": 3461616231393136,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "LookupStreamObject",
+              "input_name": "google.cloud.datastream.v1.LookupStreamObjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.ListStreamObjects",
+              "id": 3233653034326266,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "ListStreamObjects",
+              "input_name": "google.cloud.datastream.v1.ListStreamObjectsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.StartBackfillJob",
+              "id": 3066343137383662,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "StartBackfillJob",
+              "input_name": "google.cloud.datastream.v1.StartBackfillJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.StopBackfillJob",
+              "id": 3338386530666230,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "StopBackfillJob",
+              "input_name": "google.cloud.datastream.v1.StopBackfillJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.FetchStaticIps",
+              "id": 3337643261663663,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "FetchStaticIps",
+              "input_name": "google.cloud.datastream.v1.FetchStaticIpsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.CreatePrivateConnection",
+              "id": 6639356537343864,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "CreatePrivateConnection",
+              "input_name": "google.cloud.datastream.v1.CreatePrivateConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.GetPrivateConnection",
+              "id": 3036623636343937,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "GetPrivateConnection",
+              "input_name": "google.cloud.datastream.v1.GetPrivateConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.ListPrivateConnections",
+              "id": 6331653764653265,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "ListPrivateConnections",
+              "input_name": "google.cloud.datastream.v1.ListPrivateConnectionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.DeletePrivateConnection",
+              "id": 3338393133343132,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "DeletePrivateConnection",
+              "input_name": "google.cloud.datastream.v1.DeletePrivateConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.CreateRoute",
+              "id": 3130313438396634,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "CreateRoute",
+              "input_name": "google.cloud.datastream.v1.CreateRouteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.GetRoute",
+              "id": 6636343031366365,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "GetRoute",
+              "input_name": "google.cloud.datastream.v1.GetRouteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.ListRoutes",
+              "id": 6132363136356166,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "ListRoutes",
+              "input_name": "google.cloud.datastream.v1.ListRoutesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datastream.v1.Datastream.DeleteRoute",
+              "id": 3262313534623163,
+              "service_model_id": 6662663933376538,
+              "rpc_name": "DeleteRoute",
+              "input_name": "google.cloud.datastream.v1.DeleteRouteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.location",
+      "id": 6336396262653632,
+      "name": "google.cloud.location",
+      "gem_model_id": 6562623763396632,
+      "ruby_namespace": "::Google::Cloud::Location",
+      "services": [
+        {
+          "design_name": "google.cloud.location.Locations",
+          "id": 3534303964356236,
+          "package_model_id": 6336396262653632,
+          "name": "Locations",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.location.Locations.ListLocations",
+              "id": 6339393861353138,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "ListLocations",
+              "input_name": "google.cloud.location.ListLocationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.location.Locations.GetLocation",
+              "id": 3330306566653730,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "GetLocation",
+              "input_name": "google.cloud.location.GetLocationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

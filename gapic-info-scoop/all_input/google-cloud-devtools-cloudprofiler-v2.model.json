@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-profiler-v2",
+  "id": 3164366439336166,
+  "name": "google-cloud-profiler-v2",
+  "packages": [
+    {
+      "design_name": "google.devtools.cloudprofiler.v2",
+      "id": 6463336262653130,
+      "name": "google.devtools.cloudprofiler.v2",
+      "gem_model_id": 3164366439336166,
+      "ruby_namespace": "::Google::Cloud::Profiler::V2",
+      "services": [
+        {
+          "design_name": "google.devtools.cloudprofiler.v2.ProfilerService",
+          "id": 6666376535663331,
+          "package_model_id": 6463336262653130,
+          "name": "ProfilerService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.cloudprofiler.v2.ProfilerService.CreateProfile",
+              "id": 6538333938333035,
+              "service_model_id": 6666376535663331,
+              "rpc_name": "CreateProfile",
+              "input_name": "google.devtools.cloudprofiler.v2.CreateProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudprofiler.v2.ProfilerService.CreateOfflineProfile",
+              "id": 6362353962663430,
+              "service_model_id": 6666376535663331,
+              "rpc_name": "CreateOfflineProfile",
+              "input_name": "google.devtools.cloudprofiler.v2.CreateOfflineProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudprofiler.v2.ProfilerService.UpdateProfile",
+              "id": 3261326562353131,
+              "service_model_id": 6666376535663331,
+              "rpc_name": "UpdateProfile",
+              "input_name": "google.devtools.cloudprofiler.v2.UpdateProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

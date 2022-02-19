@@ -1,0 +1,214 @@
+{
+  "design_name": "google-cloud-service_usage-v1beta1",
+  "id": 3632353039396631,
+  "name": "google-cloud-service_usage-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.api.serviceusage.v1beta1",
+      "id": 6263393562303135,
+      "name": "google.api.serviceusage.v1beta1",
+      "gem_model_id": 3632353039396631,
+      "ruby_namespace": "::Google::Api::ServiceUsage::V1beta1",
+      "services": [
+        {
+          "design_name": "google.api.serviceusage.v1beta1.ServiceUsage",
+          "id": 3738323131363834,
+          "package_model_id": 6263393562303135,
+          "name": "ServiceUsage",
+          "rpcs": [
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.EnableService",
+              "id": 3838343035656338,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "EnableService",
+              "input_name": "google.api.serviceusage.v1beta1.EnableServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.DisableService",
+              "id": 6533643138306332,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "DisableService",
+              "input_name": "google.api.serviceusage.v1beta1.DisableServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.GetService",
+              "id": 6131386663663235,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "GetService",
+              "input_name": "google.api.serviceusage.v1beta1.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ListServices",
+              "id": 3065363465376339,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ListServices",
+              "input_name": "google.api.serviceusage.v1beta1.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.BatchEnableServices",
+              "id": 3837316661366135,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "BatchEnableServices",
+              "input_name": "google.api.serviceusage.v1beta1.BatchEnableServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ListConsumerQuotaMetrics",
+              "id": 3738386230626430,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ListConsumerQuotaMetrics",
+              "input_name": "google.api.serviceusage.v1beta1.ListConsumerQuotaMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.GetConsumerQuotaMetric",
+              "id": 3163303063356237,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "GetConsumerQuotaMetric",
+              "input_name": "google.api.serviceusage.v1beta1.GetConsumerQuotaMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.GetConsumerQuotaLimit",
+              "id": 6239333935356238,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "GetConsumerQuotaLimit",
+              "input_name": "google.api.serviceusage.v1beta1.GetConsumerQuotaLimitRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.CreateAdminOverride",
+              "id": 3633326331653663,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "CreateAdminOverride",
+              "input_name": "google.api.serviceusage.v1beta1.CreateAdminOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.UpdateAdminOverride",
+              "id": 6266653139326161,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "UpdateAdminOverride",
+              "input_name": "google.api.serviceusage.v1beta1.UpdateAdminOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.DeleteAdminOverride",
+              "id": 3736363430616234,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "DeleteAdminOverride",
+              "input_name": "google.api.serviceusage.v1beta1.DeleteAdminOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ListAdminOverrides",
+              "id": 3965636539373033,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ListAdminOverrides",
+              "input_name": "google.api.serviceusage.v1beta1.ListAdminOverridesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ImportAdminOverrides",
+              "id": 3634396338393561,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ImportAdminOverrides",
+              "input_name": "google.api.serviceusage.v1beta1.ImportAdminOverridesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.CreateConsumerOverride",
+              "id": 6532316430616436,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "CreateConsumerOverride",
+              "input_name": "google.api.serviceusage.v1beta1.CreateConsumerOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.UpdateConsumerOverride",
+              "id": 3638333365303764,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "UpdateConsumerOverride",
+              "input_name": "google.api.serviceusage.v1beta1.UpdateConsumerOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.DeleteConsumerOverride",
+              "id": 6239643431373761,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "DeleteConsumerOverride",
+              "input_name": "google.api.serviceusage.v1beta1.DeleteConsumerOverrideRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ListConsumerOverrides",
+              "id": 3035366434613462,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ListConsumerOverrides",
+              "input_name": "google.api.serviceusage.v1beta1.ListConsumerOverridesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.ImportConsumerOverrides",
+              "id": 3936336534663334,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "ImportConsumerOverrides",
+              "input_name": "google.api.serviceusage.v1beta1.ImportConsumerOverridesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1beta1.ServiceUsage.GenerateServiceIdentity",
+              "id": 6266643437356236,
+              "service_model_id": 3738323131363834,
+              "rpc_name": "GenerateServiceIdentity",
+              "input_name": "google.api.serviceusage.v1beta1.GenerateServiceIdentityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

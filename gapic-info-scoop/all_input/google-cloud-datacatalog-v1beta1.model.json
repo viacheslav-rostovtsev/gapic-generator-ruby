@@ -1,0 +1,460 @@
+{
+  "design_name": "google-cloud-datacatalog-v1beta1",
+  "id": 6133346636326663,
+  "name": "google-cloud-datacatalog-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.datacatalog.v1beta1",
+      "id": 6566653232393562,
+      "name": "google.cloud.datacatalog.v1beta1",
+      "gem_model_id": 6133346636326663,
+      "ruby_namespace": "::Google::Cloud::DataCatalog::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog",
+          "id": 3631643331663765,
+          "package_model_id": 6566653232393562,
+          "name": "DataCatalog",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.SearchCatalog",
+              "id": 3932346637393238,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "SearchCatalog",
+              "input_name": "google.cloud.datacatalog.v1beta1.SearchCatalogRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.CreateEntryGroup",
+              "id": 3663666136616237,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "CreateEntryGroup",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateEntryGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.UpdateEntryGroup",
+              "id": 6331373530626536,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "UpdateEntryGroup",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateEntryGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.GetEntryGroup",
+              "id": 3665366161316431,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "GetEntryGroup",
+              "input_name": "google.cloud.datacatalog.v1beta1.GetEntryGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.DeleteEntryGroup",
+              "id": 3038353631323439,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "DeleteEntryGroup",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteEntryGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.ListEntryGroups",
+              "id": 6538636339363735,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "ListEntryGroups",
+              "input_name": "google.cloud.datacatalog.v1beta1.ListEntryGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.CreateEntry",
+              "id": 6532613230333464,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "CreateEntry",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.UpdateEntry",
+              "id": 3661316465366562,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "UpdateEntry",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.DeleteEntry",
+              "id": 3839316266383537,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "DeleteEntry",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.GetEntry",
+              "id": 3063313334633030,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "GetEntry",
+              "input_name": "google.cloud.datacatalog.v1beta1.GetEntryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.LookupEntry",
+              "id": 3761646535353932,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "LookupEntry",
+              "input_name": "google.cloud.datacatalog.v1beta1.LookupEntryRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.ListEntries",
+              "id": 6534663565393038,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "ListEntries",
+              "input_name": "google.cloud.datacatalog.v1beta1.ListEntriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.CreateTagTemplate",
+              "id": 6435316235363435,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "CreateTagTemplate",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateTagTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.GetTagTemplate",
+              "id": 3030333337363835,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "GetTagTemplate",
+              "input_name": "google.cloud.datacatalog.v1beta1.GetTagTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.UpdateTagTemplate",
+              "id": 3138383030626639,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "UpdateTagTemplate",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateTagTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.DeleteTagTemplate",
+              "id": 3766316166613730,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "DeleteTagTemplate",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteTagTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.CreateTagTemplateField",
+              "id": 3635316334386366,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "CreateTagTemplateField",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateTagTemplateFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.UpdateTagTemplateField",
+              "id": 3561663433613236,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "UpdateTagTemplateField",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateTagTemplateFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.RenameTagTemplateField",
+              "id": 3434636165333862,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "RenameTagTemplateField",
+              "input_name": "google.cloud.datacatalog.v1beta1.RenameTagTemplateFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.DeleteTagTemplateField",
+              "id": 6136376433326262,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "DeleteTagTemplateField",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteTagTemplateFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.CreateTag",
+              "id": 3561633034363433,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "CreateTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.UpdateTag",
+              "id": 6235383766363961,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "UpdateTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.DeleteTag",
+              "id": 3164363464643537,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "DeleteTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.ListTags",
+              "id": 6433633739343563,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "ListTags",
+              "input_name": "google.cloud.datacatalog.v1beta1.ListTagsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.SetIamPolicy",
+              "id": 6533636430613666,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.GetIamPolicy",
+              "id": 3764386534623966,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.DataCatalog.TestIamPermissions",
+              "id": 3264396430333138,
+              "service_model_id": 3631643331663765,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager",
+          "id": 6238336264376439,
+          "package_model_id": 6566653232393562,
+          "name": "PolicyTagManager",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.CreateTaxonomy",
+              "id": 3134613830323132,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "CreateTaxonomy",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreateTaxonomyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.DeleteTaxonomy",
+              "id": 6365336539653035,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "DeleteTaxonomy",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeleteTaxonomyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.UpdateTaxonomy",
+              "id": 3636393761353039,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "UpdateTaxonomy",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdateTaxonomyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.ListTaxonomies",
+              "id": 6636366465346265,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "ListTaxonomies",
+              "input_name": "google.cloud.datacatalog.v1beta1.ListTaxonomiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.GetTaxonomy",
+              "id": 3662626336383130,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "GetTaxonomy",
+              "input_name": "google.cloud.datacatalog.v1beta1.GetTaxonomyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.CreatePolicyTag",
+              "id": 6637313630326537,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "CreatePolicyTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.CreatePolicyTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.DeletePolicyTag",
+              "id": 3339386239666364,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "DeletePolicyTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.DeletePolicyTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.UpdatePolicyTag",
+              "id": 3831633934653132,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "UpdatePolicyTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.UpdatePolicyTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.ListPolicyTags",
+              "id": 3833646237383937,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "ListPolicyTags",
+              "input_name": "google.cloud.datacatalog.v1beta1.ListPolicyTagsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.GetPolicyTag",
+              "id": 3764333334343438,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "GetPolicyTag",
+              "input_name": "google.cloud.datacatalog.v1beta1.GetPolicyTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.GetIamPolicy",
+              "id": 3536363563366665,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.SetIamPolicy",
+              "id": 3935373463326433,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManager.TestIamPermissions",
+              "id": 3630626438616639,
+              "service_model_id": 6238336264376439,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManagerSerialization",
+          "id": 6461666637323561,
+          "package_model_id": 6566653232393562,
+          "name": "PolicyTagManagerSerialization",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManagerSerialization.ImportTaxonomies",
+              "id": 6464653362373132,
+              "service_model_id": 6461666637323561,
+              "rpc_name": "ImportTaxonomies",
+              "input_name": "google.cloud.datacatalog.v1beta1.ImportTaxonomiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datacatalog.v1beta1.PolicyTagManagerSerialization.ExportTaxonomies",
+              "id": 6132643739383665,
+              "service_model_id": 6461666637323561,
+              "rpc_name": "ExportTaxonomies",
+              "input_name": "google.cloud.datacatalog.v1beta1.ExportTaxonomiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

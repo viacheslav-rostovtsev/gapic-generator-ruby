@@ -1,0 +1,214 @@
+{
+  "design_name": "google-cloud-iot-v1",
+  "id": 6530373432326464,
+  "name": "google-cloud-iot-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.iot.v1",
+      "id": 3739663134633764,
+      "name": "google.cloud.iot.v1",
+      "gem_model_id": 6530373432326464,
+      "ruby_namespace": "::Google::Cloud::Iot::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.iot.v1.DeviceManager",
+          "id": 6236303738363032,
+          "package_model_id": 3739663134633764,
+          "name": "DeviceManager",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.CreateDeviceRegistry",
+              "id": 6535643364643131,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "CreateDeviceRegistry",
+              "input_name": "google.cloud.iot.v1.CreateDeviceRegistryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.GetDeviceRegistry",
+              "id": 6464373234643339,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "GetDeviceRegistry",
+              "input_name": "google.cloud.iot.v1.GetDeviceRegistryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.UpdateDeviceRegistry",
+              "id": 6338383732663337,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "UpdateDeviceRegistry",
+              "input_name": "google.cloud.iot.v1.UpdateDeviceRegistryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.DeleteDeviceRegistry",
+              "id": 6463656565653431,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "DeleteDeviceRegistry",
+              "input_name": "google.cloud.iot.v1.DeleteDeviceRegistryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.ListDeviceRegistries",
+              "id": 3464393335333932,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "ListDeviceRegistries",
+              "input_name": "google.cloud.iot.v1.ListDeviceRegistriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.CreateDevice",
+              "id": 3364303462396632,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "CreateDevice",
+              "input_name": "google.cloud.iot.v1.CreateDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.GetDevice",
+              "id": 6265333661323133,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "GetDevice",
+              "input_name": "google.cloud.iot.v1.GetDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.UpdateDevice",
+              "id": 6134323161393965,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "UpdateDevice",
+              "input_name": "google.cloud.iot.v1.UpdateDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.DeleteDevice",
+              "id": 6431316663313639,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "DeleteDevice",
+              "input_name": "google.cloud.iot.v1.DeleteDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.ListDevices",
+              "id": 3932613461313138,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "ListDevices",
+              "input_name": "google.cloud.iot.v1.ListDevicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.ModifyCloudToDeviceConfig",
+              "id": 3739653237366534,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "ModifyCloudToDeviceConfig",
+              "input_name": "google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.ListDeviceConfigVersions",
+              "id": 3664363932316464,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "ListDeviceConfigVersions",
+              "input_name": "google.cloud.iot.v1.ListDeviceConfigVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.ListDeviceStates",
+              "id": 6136636531336630,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "ListDeviceStates",
+              "input_name": "google.cloud.iot.v1.ListDeviceStatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.SetIamPolicy",
+              "id": 3931663834313265,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.GetIamPolicy",
+              "id": 6635386166636431,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.TestIamPermissions",
+              "id": 6137663739643863,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.SendCommandToDevice",
+              "id": 6261356434333234,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "SendCommandToDevice",
+              "input_name": "google.cloud.iot.v1.SendCommandToDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.BindDeviceToGateway",
+              "id": 6230336635376637,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "BindDeviceToGateway",
+              "input_name": "google.cloud.iot.v1.BindDeviceToGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iot.v1.DeviceManager.UnbindDeviceFromGateway",
+              "id": 6165616431356463,
+              "service_model_id": 6236303738363032,
+              "rpc_name": "UnbindDeviceFromGateway",
+              "input_name": "google.cloud.iot.v1.UnbindDeviceFromGatewayRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

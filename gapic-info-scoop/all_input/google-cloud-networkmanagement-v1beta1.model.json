@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-network_management-v1beta1",
+  "id": 3064646639343334,
+  "name": "google-cloud-network_management-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.networkmanagement.v1beta1",
+      "id": 6133306666313531,
+      "name": "google.cloud.networkmanagement.v1beta1",
+      "gem_model_id": 3064646639343334,
+      "ruby_namespace": "::Google::Cloud::NetworkManagement::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService",
+          "id": 3337366663306638,
+          "package_model_id": 6133306666313531,
+          "name": "ReachabilityService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.ListConnectivityTests",
+              "id": 3236343732663638,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "ListConnectivityTests",
+              "input_name": "google.cloud.networkmanagement.v1beta1.ListConnectivityTestsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.GetConnectivityTest",
+              "id": 6461386235383933,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "GetConnectivityTest",
+              "input_name": "google.cloud.networkmanagement.v1beta1.GetConnectivityTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.CreateConnectivityTest",
+              "id": 3531653934623263,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "CreateConnectivityTest",
+              "input_name": "google.cloud.networkmanagement.v1beta1.CreateConnectivityTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.UpdateConnectivityTest",
+              "id": 3439396333326339,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "UpdateConnectivityTest",
+              "input_name": "google.cloud.networkmanagement.v1beta1.UpdateConnectivityTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.RerunConnectivityTest",
+              "id": 6166313464343731,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "RerunConnectivityTest",
+              "input_name": "google.cloud.networkmanagement.v1beta1.RerunConnectivityTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networkmanagement.v1beta1.ReachabilityService.DeleteConnectivityTest",
+              "id": 6431343638636134,
+              "service_model_id": 3337366663306638,
+              "rpc_name": "DeleteConnectivityTest",
+              "input_name": "google.cloud.networkmanagement.v1beta1.DeleteConnectivityTestRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-service_usage-v1",
+  "id": 3261336566663864,
+  "name": "google-cloud-service_usage-v1",
+  "packages": [
+    {
+      "design_name": "google.api.serviceusage.v1",
+      "id": 3231303633643266,
+      "name": "google.api.serviceusage.v1",
+      "gem_model_id": 3261336566663864,
+      "ruby_namespace": "::Google::Cloud::ServiceUsage::V1",
+      "services": [
+        {
+          "design_name": "google.api.serviceusage.v1.ServiceUsage",
+          "id": 3862626266336238,
+          "package_model_id": 3231303633643266,
+          "name": "ServiceUsage",
+          "rpcs": [
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+              "id": 6164396537666366,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "EnableService",
+              "input_name": "google.api.serviceusage.v1.EnableServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.DisableService",
+              "id": 3161323031303737,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "DisableService",
+              "input_name": "google.api.serviceusage.v1.DisableServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.GetService",
+              "id": 3765333861343463,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "GetService",
+              "input_name": "google.api.serviceusage.v1.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.ListServices",
+              "id": 3363643938376561,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "ListServices",
+              "input_name": "google.api.serviceusage.v1.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.BatchEnableServices",
+              "id": 3931316263333966,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "BatchEnableServices",
+              "input_name": "google.api.serviceusage.v1.BatchEnableServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.serviceusage.v1.ServiceUsage.BatchGetServices",
+              "id": 3433353662383763,
+              "service_model_id": 3862626266336238,
+              "rpc_name": "BatchGetServices",
+              "input_name": "google.api.serviceusage.v1.BatchGetServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

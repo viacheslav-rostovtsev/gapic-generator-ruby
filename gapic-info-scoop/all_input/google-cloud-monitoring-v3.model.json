@@ -1,0 +1,542 @@
+{
+  "design_name": "google-cloud-monitoring-v3",
+  "id": 3136623931346238,
+  "name": "google-cloud-monitoring-v3",
+  "packages": [
+    {
+      "design_name": "google.monitoring.v3",
+      "id": 6538316337323866,
+      "name": "google.monitoring.v3",
+      "gem_model_id": 3136623931346238,
+      "ruby_namespace": "::Google::Cloud::Monitoring::V3",
+      "services": [
+        {
+          "design_name": "google.monitoring.v3.AlertPolicyService",
+          "id": 3365653966353735,
+          "package_model_id": 6538316337323866,
+          "name": "AlertPolicyService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.AlertPolicyService.ListAlertPolicies",
+              "id": 6130333337303430,
+              "service_model_id": 3365653966353735,
+              "rpc_name": "ListAlertPolicies",
+              "input_name": "google.monitoring.v3.ListAlertPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.AlertPolicyService.GetAlertPolicy",
+              "id": 3937613564663466,
+              "service_model_id": 3365653966353735,
+              "rpc_name": "GetAlertPolicy",
+              "input_name": "google.monitoring.v3.GetAlertPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+              "id": 3766653232356132,
+              "service_model_id": 3365653966353735,
+              "rpc_name": "CreateAlertPolicy",
+              "input_name": "google.monitoring.v3.CreateAlertPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.AlertPolicyService.DeleteAlertPolicy",
+              "id": 6335613335633761,
+              "service_model_id": 3365653966353735,
+              "rpc_name": "DeleteAlertPolicy",
+              "input_name": "google.monitoring.v3.DeleteAlertPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.AlertPolicyService.UpdateAlertPolicy",
+              "id": 3162366638623166,
+              "service_model_id": 3365653966353735,
+              "rpc_name": "UpdateAlertPolicy",
+              "input_name": "google.monitoring.v3.UpdateAlertPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.GroupService",
+          "id": 3332636230656364,
+          "package_model_id": 6538316337323866,
+          "name": "GroupService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.GroupService.ListGroups",
+              "id": 3262666339336234,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "ListGroups",
+              "input_name": "google.monitoring.v3.ListGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.GroupService.GetGroup",
+              "id": 3966363632643834,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "GetGroup",
+              "input_name": "google.monitoring.v3.GetGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.GroupService.CreateGroup",
+              "id": 3464616633383036,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "CreateGroup",
+              "input_name": "google.monitoring.v3.CreateGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.GroupService.UpdateGroup",
+              "id": 3737633430393062,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "UpdateGroup",
+              "input_name": "google.monitoring.v3.UpdateGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.GroupService.DeleteGroup",
+              "id": 3662343434373031,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "DeleteGroup",
+              "input_name": "google.monitoring.v3.DeleteGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.GroupService.ListGroupMembers",
+              "id": 6133613439376639,
+              "service_model_id": 3332636230656364,
+              "rpc_name": "ListGroupMembers",
+              "input_name": "google.monitoring.v3.ListGroupMembersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.MetricService",
+          "id": 6432653466303663,
+          "package_model_id": 6538316337323866,
+          "name": "MetricService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.MetricService.ListMonitoredResourceDescriptors",
+              "id": 3663303131303734,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "ListMonitoredResourceDescriptors",
+              "input_name": "google.monitoring.v3.ListMonitoredResourceDescriptorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.GetMonitoredResourceDescriptor",
+              "id": 3032373439636666,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "GetMonitoredResourceDescriptor",
+              "input_name": "google.monitoring.v3.GetMonitoredResourceDescriptorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.ListMetricDescriptors",
+              "id": 3438656134306130,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "ListMetricDescriptors",
+              "input_name": "google.monitoring.v3.ListMetricDescriptorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.GetMetricDescriptor",
+              "id": 3337633438616166,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "GetMetricDescriptor",
+              "input_name": "google.monitoring.v3.GetMetricDescriptorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.CreateMetricDescriptor",
+              "id": 3633316362343833,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "CreateMetricDescriptor",
+              "input_name": "google.monitoring.v3.CreateMetricDescriptorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.DeleteMetricDescriptor",
+              "id": 3734373866386136,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "DeleteMetricDescriptor",
+              "input_name": "google.monitoring.v3.DeleteMetricDescriptorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.ListTimeSeries",
+              "id": 3131643565636437,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "ListTimeSeries",
+              "input_name": "google.monitoring.v3.ListTimeSeriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.CreateTimeSeries",
+              "id": 6563366335316638,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "CreateTimeSeries",
+              "input_name": "google.monitoring.v3.CreateTimeSeriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.MetricService.CreateServiceTimeSeries",
+              "id": 3961313733396330,
+              "service_model_id": 6432653466303663,
+              "rpc_name": "CreateServiceTimeSeries",
+              "input_name": "google.monitoring.v3.CreateTimeSeriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.NotificationChannelService",
+          "id": 3463653332383236,
+          "package_model_id": 6538316337323866,
+          "name": "NotificationChannelService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.ListNotificationChannelDescriptors",
+              "id": 6434373738396334,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "ListNotificationChannelDescriptors",
+              "input_name": "google.monitoring.v3.ListNotificationChannelDescriptorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.GetNotificationChannelDescriptor",
+              "id": 3662633261373237,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "GetNotificationChannelDescriptor",
+              "input_name": "google.monitoring.v3.GetNotificationChannelDescriptorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.ListNotificationChannels",
+              "id": 6561653630346464,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "ListNotificationChannels",
+              "input_name": "google.monitoring.v3.ListNotificationChannelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.GetNotificationChannel",
+              "id": 3435396466643231,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "GetNotificationChannel",
+              "input_name": "google.monitoring.v3.GetNotificationChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.CreateNotificationChannel",
+              "id": 3636643233623737,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "CreateNotificationChannel",
+              "input_name": "google.monitoring.v3.CreateNotificationChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.UpdateNotificationChannel",
+              "id": 3566343030636565,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "UpdateNotificationChannel",
+              "input_name": "google.monitoring.v3.UpdateNotificationChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.DeleteNotificationChannel",
+              "id": 3836303630643631,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "DeleteNotificationChannel",
+              "input_name": "google.monitoring.v3.DeleteNotificationChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.SendNotificationChannelVerificationCode",
+              "id": 3764613233316133,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "SendNotificationChannelVerificationCode",
+              "input_name": "google.monitoring.v3.SendNotificationChannelVerificationCodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.GetNotificationChannelVerificationCode",
+              "id": 6362643736363134,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "GetNotificationChannelVerificationCode",
+              "input_name": "google.monitoring.v3.GetNotificationChannelVerificationCodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.NotificationChannelService.VerifyNotificationChannel",
+              "id": 3564656536353864,
+              "service_model_id": 3463653332383236,
+              "rpc_name": "VerifyNotificationChannel",
+              "input_name": "google.monitoring.v3.VerifyNotificationChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.QueryService",
+          "id": 3231396434313964,
+          "package_model_id": 6538316337323866,
+          "name": "QueryService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.QueryService.QueryTimeSeries",
+              "id": 6263663531343131,
+              "service_model_id": 3231396434313964,
+              "rpc_name": "QueryTimeSeries",
+              "input_name": "google.monitoring.v3.QueryTimeSeriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.ServiceMonitoringService",
+          "id": 3562313838613938,
+          "package_model_id": 6538316337323866,
+          "name": "ServiceMonitoringService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.CreateService",
+              "id": 3134313931333264,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "CreateService",
+              "input_name": "google.monitoring.v3.CreateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.GetService",
+              "id": 3165346130333161,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "GetService",
+              "input_name": "google.monitoring.v3.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.ListServices",
+              "id": 3261653732343939,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "ListServices",
+              "input_name": "google.monitoring.v3.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.UpdateService",
+              "id": 6335313130366437,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "UpdateService",
+              "input_name": "google.monitoring.v3.UpdateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.DeleteService",
+              "id": 6661623361643133,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "DeleteService",
+              "input_name": "google.monitoring.v3.DeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.CreateServiceLevelObjective",
+              "id": 3464313035363733,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "CreateServiceLevelObjective",
+              "input_name": "google.monitoring.v3.CreateServiceLevelObjectiveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.GetServiceLevelObjective",
+              "id": 3565663432666138,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "GetServiceLevelObjective",
+              "input_name": "google.monitoring.v3.GetServiceLevelObjectiveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.ListServiceLevelObjectives",
+              "id": 3837653236643837,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "ListServiceLevelObjectives",
+              "input_name": "google.monitoring.v3.ListServiceLevelObjectivesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.UpdateServiceLevelObjective",
+              "id": 6636366165613231,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "UpdateServiceLevelObjective",
+              "input_name": "google.monitoring.v3.UpdateServiceLevelObjectiveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.ServiceMonitoringService.DeleteServiceLevelObjective",
+              "id": 6632663066616462,
+              "service_model_id": 3562313838613938,
+              "rpc_name": "DeleteServiceLevelObjective",
+              "input_name": "google.monitoring.v3.DeleteServiceLevelObjectiveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.monitoring.v3.UptimeCheckService",
+          "id": 6165633366613061,
+          "package_model_id": 6538316337323866,
+          "name": "UptimeCheckService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.ListUptimeCheckConfigs",
+              "id": 3961346138346662,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "ListUptimeCheckConfigs",
+              "input_name": "google.monitoring.v3.ListUptimeCheckConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.GetUptimeCheckConfig",
+              "id": 6665363062313836,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "GetUptimeCheckConfig",
+              "input_name": "google.monitoring.v3.GetUptimeCheckConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.CreateUptimeCheckConfig",
+              "id": 3430646639373261,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "CreateUptimeCheckConfig",
+              "input_name": "google.monitoring.v3.CreateUptimeCheckConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.UpdateUptimeCheckConfig",
+              "id": 3066623732626436,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "UpdateUptimeCheckConfig",
+              "input_name": "google.monitoring.v3.UpdateUptimeCheckConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.DeleteUptimeCheckConfig",
+              "id": 3030386438383566,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "DeleteUptimeCheckConfig",
+              "input_name": "google.monitoring.v3.DeleteUptimeCheckConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.v3.UptimeCheckService.ListUptimeCheckIps",
+              "id": 3839623663626136,
+              "service_model_id": 6165633366613061,
+              "rpc_name": "ListUptimeCheckIps",
+              "input_name": "google.monitoring.v3.ListUptimeCheckIpsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

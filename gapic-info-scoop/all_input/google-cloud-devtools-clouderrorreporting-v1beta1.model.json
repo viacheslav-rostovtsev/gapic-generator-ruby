@@ -1,0 +1,100 @@
+{
+  "design_name": "google-cloud-error_reporting-v1beta1",
+  "id": 3030373439336337,
+  "name": "google-cloud-error_reporting-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.devtools.clouderrorreporting.v1beta1",
+      "id": 6634323336313133,
+      "name": "google.devtools.clouderrorreporting.v1beta1",
+      "gem_model_id": 3030373439336337,
+      "ruby_namespace": "::Google::Cloud::ErrorReporting::V1beta1",
+      "services": [
+        {
+          "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorGroupService",
+          "id": 3061363830636463,
+          "package_model_id": 6634323336313133,
+          "name": "ErrorGroupService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorGroupService.GetGroup",
+              "id": 3061313062346139,
+              "service_model_id": 3061363830636463,
+              "rpc_name": "GetGroup",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.GetGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorGroupService.UpdateGroup",
+              "id": 3334643037343031,
+              "service_model_id": 3061363830636463,
+              "rpc_name": "UpdateGroup",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.UpdateGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorStatsService",
+          "id": 3962373134653961,
+          "package_model_id": 6634323336313133,
+          "name": "ErrorStatsService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorStatsService.ListGroupStats",
+              "id": 6438383963643333,
+              "service_model_id": 3962373134653961,
+              "rpc_name": "ListGroupStats",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorStatsService.ListEvents",
+              "id": 3533656337636133,
+              "service_model_id": 3962373134653961,
+              "rpc_name": "ListEvents",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.ListEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ErrorStatsService.DeleteEvents",
+              "id": 3431353161326137,
+              "service_model_id": 3962373134653961,
+              "rpc_name": "DeleteEvents",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.devtools.clouderrorreporting.v1beta1.ReportErrorsService",
+          "id": 3739373633393363,
+          "package_model_id": 6634323336313133,
+          "name": "ReportErrorsService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.clouderrorreporting.v1beta1.ReportErrorsService.ReportErrorEvent",
+              "id": 3461313961303863,
+              "service_model_id": 3739373633393363,
+              "rpc_name": "ReportErrorEvent",
+              "input_name": "google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

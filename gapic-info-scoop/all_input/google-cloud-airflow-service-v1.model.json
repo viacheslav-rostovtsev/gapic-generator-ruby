@@ -1,0 +1,92 @@
+{
+  "design_name": "google-cloud-orchestration-airflow-service-v1",
+  "id": 3733336139373438,
+  "name": "google-cloud-orchestration-airflow-service-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.orchestration.airflow.service.v1",
+      "id": 6664366461386537,
+      "name": "google.cloud.orchestration.airflow.service.v1",
+      "gem_model_id": 3733336139373438,
+      "ruby_namespace": "::Google::Cloud::Orchestration::Airflow::Service::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.orchestration.airflow.service.v1.Environments",
+          "id": 3139366535396338,
+          "package_model_id": 6664366461386537,
+          "name": "Environments",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.Environments.CreateEnvironment",
+              "id": 6439373461313862,
+              "service_model_id": 3139366535396338,
+              "rpc_name": "CreateEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.CreateEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.Environments.GetEnvironment",
+              "id": 6365396539336664,
+              "service_model_id": 3139366535396338,
+              "rpc_name": "GetEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.GetEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.Environments.ListEnvironments",
+              "id": 6430666233663832,
+              "service_model_id": 3139366535396338,
+              "rpc_name": "ListEnvironments",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.ListEnvironmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.Environments.UpdateEnvironment",
+              "id": 3561333533396261,
+              "service_model_id": 3139366535396338,
+              "rpc_name": "UpdateEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.UpdateEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.Environments.DeleteEnvironment",
+              "id": 3437316162663031,
+              "service_model_id": 3139366535396338,
+              "rpc_name": "DeleteEnvironment",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.DeleteEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.orchestration.airflow.service.v1.ImageVersions",
+          "id": 3163653262376465,
+          "package_model_id": 6664366461386537,
+          "name": "ImageVersions",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.orchestration.airflow.service.v1.ImageVersions.ListImageVersions",
+              "id": 3633623238643137,
+              "service_model_id": 3163653262376465,
+              "rpc_name": "ListImageVersions",
+              "input_name": "google.cloud.orchestration.airflow.service.v1.ListImageVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

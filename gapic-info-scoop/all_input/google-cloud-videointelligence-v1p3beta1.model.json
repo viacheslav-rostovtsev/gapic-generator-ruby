@@ -1,0 +1,52 @@
+{
+  "design_name": "google-cloud-video_intelligence-v1p3beta1",
+  "id": 3563316162356230,
+  "name": "google-cloud-video_intelligence-v1p3beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.videointelligence.v1p3beta1",
+      "id": 3265356333306634,
+      "name": "google.cloud.videointelligence.v1p3beta1",
+      "gem_model_id": 3563316162356230,
+      "ruby_namespace": "::Google::Cloud::VideoIntelligence::V1p3beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.videointelligence.v1p3beta1.VideoIntelligenceService",
+          "id": 6664366335373331,
+          "package_model_id": 3265356333306634,
+          "name": "VideoIntelligenceService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.videointelligence.v1p3beta1.VideoIntelligenceService.AnnotateVideo",
+              "id": 6563363266663337,
+              "service_model_id": 6664366335373331,
+              "rpc_name": "AnnotateVideo",
+              "input_name": "google.cloud.videointelligence.v1p3beta1.AnnotateVideoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.videointelligence.v1p3beta1.StreamingVideoIntelligenceService",
+          "id": 3837656636383132,
+          "package_model_id": 3265356333306634,
+          "name": "StreamingVideoIntelligenceService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.videointelligence.v1p3beta1.StreamingVideoIntelligenceService.StreamingAnnotateVideo",
+              "id": 3931383331633835,
+              "service_model_id": 3837656636383132,
+              "rpc_name": "StreamingAnnotateVideo",
+              "input_name": "google.cloud.videointelligence.v1p3beta1.StreamingAnnotateVideoRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

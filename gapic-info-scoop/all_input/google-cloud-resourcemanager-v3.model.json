@@ -1,0 +1,524 @@
+{
+  "design_name": "google-cloud-resource_manager-v3",
+  "id": 3338633332666331,
+  "name": "google-cloud-resource_manager-v3",
+  "packages": [
+    {
+      "design_name": "google.cloud.resourcemanager.v3",
+      "id": 3637356461323865,
+      "name": "google.cloud.resourcemanager.v3",
+      "gem_model_id": 3338633332666331,
+      "ruby_namespace": "::Google::Cloud::ResourceManager::V3",
+      "services": [
+        {
+          "design_name": "google.cloud.resourcemanager.v3.Folders",
+          "id": 3533343533643033,
+          "package_model_id": 3637356461323865,
+          "name": "Folders",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.GetFolder",
+              "id": 6532343865666562,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "GetFolder",
+              "input_name": "google.cloud.resourcemanager.v3.GetFolderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.ListFolders",
+              "id": 6464373937323965,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "ListFolders",
+              "input_name": "google.cloud.resourcemanager.v3.ListFoldersRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.SearchFolders",
+              "id": 3265643165343936,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "SearchFolders",
+              "input_name": "google.cloud.resourcemanager.v3.SearchFoldersRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.CreateFolder",
+              "id": 6264356332303535,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "CreateFolder",
+              "input_name": "google.cloud.resourcemanager.v3.CreateFolderRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.UpdateFolder",
+              "id": 3861333431303433,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "UpdateFolder",
+              "input_name": "google.cloud.resourcemanager.v3.UpdateFolderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.MoveFolder",
+              "id": 6363303834306264,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "MoveFolder",
+              "input_name": "google.cloud.resourcemanager.v3.MoveFolderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.DeleteFolder",
+              "id": 6565343766653739,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "DeleteFolder",
+              "input_name": "google.cloud.resourcemanager.v3.DeleteFolderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.UndeleteFolder",
+              "id": 6235313164363538,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "UndeleteFolder",
+              "input_name": "google.cloud.resourcemanager.v3.UndeleteFolderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.GetIamPolicy",
+              "id": 3031316363333838,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.SetIamPolicy",
+              "id": 6530626263343465,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Folders.TestIamPermissions",
+              "id": 6163353630643935,
+              "service_model_id": 3533343533643033,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.resourcemanager.v3.Organizations",
+          "id": 3331653531316466,
+          "package_model_id": 3637356461323865,
+          "name": "Organizations",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Organizations.GetOrganization",
+              "id": 3265353832653431,
+              "service_model_id": 3331653531316466,
+              "rpc_name": "GetOrganization",
+              "input_name": "google.cloud.resourcemanager.v3.GetOrganizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Organizations.SearchOrganizations",
+              "id": 3766633162656635,
+              "service_model_id": 3331653531316466,
+              "rpc_name": "SearchOrganizations",
+              "input_name": "google.cloud.resourcemanager.v3.SearchOrganizationsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Organizations.GetIamPolicy",
+              "id": 6362613937373131,
+              "service_model_id": 3331653531316466,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Organizations.SetIamPolicy",
+              "id": 6636366537306461,
+              "service_model_id": 3331653531316466,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Organizations.TestIamPermissions",
+              "id": 6364653336623561,
+              "service_model_id": 3331653531316466,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.resourcemanager.v3.Projects",
+          "id": 3764396261336238,
+          "package_model_id": 3637356461323865,
+          "name": "Projects",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.GetProject",
+              "id": 6139643335356162,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "GetProject",
+              "input_name": "google.cloud.resourcemanager.v3.GetProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.ListProjects",
+              "id": 3363353162653461,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "ListProjects",
+              "input_name": "google.cloud.resourcemanager.v3.ListProjectsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.SearchProjects",
+              "id": 3565393862623038,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "SearchProjects",
+              "input_name": "google.cloud.resourcemanager.v3.SearchProjectsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.CreateProject",
+              "id": 6265393233656465,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "CreateProject",
+              "input_name": "google.cloud.resourcemanager.v3.CreateProjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.UpdateProject",
+              "id": 6464653138393832,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "UpdateProject",
+              "input_name": "google.cloud.resourcemanager.v3.UpdateProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.MoveProject",
+              "id": 6232313431326335,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "MoveProject",
+              "input_name": "google.cloud.resourcemanager.v3.MoveProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.DeleteProject",
+              "id": 3832636333333139,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "DeleteProject",
+              "input_name": "google.cloud.resourcemanager.v3.DeleteProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.UndeleteProject",
+              "id": 3464616535643065,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "UndeleteProject",
+              "input_name": "google.cloud.resourcemanager.v3.UndeleteProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.GetIamPolicy",
+              "id": 3530336531623831,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.SetIamPolicy",
+              "id": 6633316530343538,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.Projects.TestIamPermissions",
+              "id": 3361616236386635,
+              "service_model_id": 3764396261336238,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.resourcemanager.v3.TagBindings",
+          "id": 3165656335373633,
+          "package_model_id": 3637356461323865,
+          "name": "TagBindings",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagBindings.ListTagBindings",
+              "id": 3064373361373765,
+              "service_model_id": 3165656335373633,
+              "rpc_name": "ListTagBindings",
+              "input_name": "google.cloud.resourcemanager.v3.ListTagBindingsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagBindings.CreateTagBinding",
+              "id": 6330393338386537,
+              "service_model_id": 3165656335373633,
+              "rpc_name": "CreateTagBinding",
+              "input_name": "google.cloud.resourcemanager.v3.CreateTagBindingRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagBindings.DeleteTagBinding",
+              "id": 3032653566653533,
+              "service_model_id": 3165656335373633,
+              "rpc_name": "DeleteTagBinding",
+              "input_name": "google.cloud.resourcemanager.v3.DeleteTagBindingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.resourcemanager.v3.TagKeys",
+          "id": 6162656534303736,
+          "package_model_id": 3637356461323865,
+          "name": "TagKeys",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.ListTagKeys",
+              "id": 3739383738333037,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "ListTagKeys",
+              "input_name": "google.cloud.resourcemanager.v3.ListTagKeysRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.GetTagKey",
+              "id": 6339626638636332,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "GetTagKey",
+              "input_name": "google.cloud.resourcemanager.v3.GetTagKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.CreateTagKey",
+              "id": 6465306530343035,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "CreateTagKey",
+              "input_name": "google.cloud.resourcemanager.v3.CreateTagKeyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.UpdateTagKey",
+              "id": 3032316535373531,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "UpdateTagKey",
+              "input_name": "google.cloud.resourcemanager.v3.UpdateTagKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.DeleteTagKey",
+              "id": 3862393332616337,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "DeleteTagKey",
+              "input_name": "google.cloud.resourcemanager.v3.DeleteTagKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.GetIamPolicy",
+              "id": 3964323630353331,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.SetIamPolicy",
+              "id": 3964663763653461,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagKeys.TestIamPermissions",
+              "id": 6263363539303837,
+              "service_model_id": 6162656534303736,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.resourcemanager.v3.TagValues",
+          "id": 3061363033306565,
+          "package_model_id": 3637356461323865,
+          "name": "TagValues",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.ListTagValues",
+              "id": 3430393137336365,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "ListTagValues",
+              "input_name": "google.cloud.resourcemanager.v3.ListTagValuesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.GetTagValue",
+              "id": 6261326466323034,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "GetTagValue",
+              "input_name": "google.cloud.resourcemanager.v3.GetTagValueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.CreateTagValue",
+              "id": 3266646563326666,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "CreateTagValue",
+              "input_name": "google.cloud.resourcemanager.v3.CreateTagValueRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.UpdateTagValue",
+              "id": 3965363139353539,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "UpdateTagValue",
+              "input_name": "google.cloud.resourcemanager.v3.UpdateTagValueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.DeleteTagValue",
+              "id": 3231323161666135,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "DeleteTagValue",
+              "input_name": "google.cloud.resourcemanager.v3.DeleteTagValueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.GetIamPolicy",
+              "id": 6535386462383330,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.SetIamPolicy",
+              "id": 3330346536643236,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.resourcemanager.v3.TagValues.TestIamPermissions",
+              "id": 6136613632666636,
+              "service_model_id": 3061363033306565,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

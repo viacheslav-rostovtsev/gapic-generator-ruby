@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-datastore-admin-v1",
+  "id": 3966363039633735,
+  "name": "google-cloud-datastore-admin-v1",
+  "packages": [
+    {
+      "design_name": "google.datastore.admin.v1",
+      "id": 6437663633353931,
+      "name": "google.datastore.admin.v1",
+      "gem_model_id": 3966363039633735,
+      "ruby_namespace": "::Google::Cloud::Datastore::Admin::V1",
+      "services": [
+        {
+          "design_name": "google.datastore.admin.v1.DatastoreAdmin",
+          "id": 6638373730366230,
+          "package_model_id": 6437663633353931,
+          "name": "DatastoreAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.ExportEntities",
+              "id": 3533313563373362,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "ExportEntities",
+              "input_name": "google.datastore.admin.v1.ExportEntitiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.ImportEntities",
+              "id": 6432393531653464,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "ImportEntities",
+              "input_name": "google.datastore.admin.v1.ImportEntitiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.CreateIndex",
+              "id": 3231363065653436,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "CreateIndex",
+              "input_name": "google.datastore.admin.v1.CreateIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.DeleteIndex",
+              "id": 3632303836373164,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "DeleteIndex",
+              "input_name": "google.datastore.admin.v1.DeleteIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.GetIndex",
+              "id": 3738396339613932,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "GetIndex",
+              "input_name": "google.datastore.admin.v1.GetIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.datastore.admin.v1.DatastoreAdmin.ListIndexes",
+              "id": 6533613233633431,
+              "service_model_id": 6638373730366230,
+              "rpc_name": "ListIndexes",
+              "input_name": "google.datastore.admin.v1.ListIndexesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

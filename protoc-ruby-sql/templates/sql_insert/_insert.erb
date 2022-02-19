@@ -1,0 +1,11 @@
+<%- assert_locals db_presenter -%>
+<% @requires = capture do %>
+require "sqlite3"
+<% end %>
+
+class << self
+  <%- db_presenter.tables.each do |table| -%>
+    # <%= table.name %>
+    <%= indent_tail render(partial: "sql_insert/tables/insert_into", locals: { table: table }), 2 %>
+  <%- end -%>
+end 

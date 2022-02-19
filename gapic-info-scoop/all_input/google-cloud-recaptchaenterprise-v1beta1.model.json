@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-recaptcha_enterprise-v1beta1",
+  "id": 3165323163626537,
+  "name": "google-cloud-recaptcha_enterprise-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.recaptchaenterprise.v1beta1",
+      "id": 6230306663626139,
+      "name": "google.cloud.recaptchaenterprise.v1beta1",
+      "gem_model_id": 3165323163626537,
+      "ruby_namespace": "::Google::Cloud::RecaptchaEnterprise::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService",
+          "id": 3663306136653164,
+          "package_model_id": 6230306663626139,
+          "name": "RecaptchaEnterpriseService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.CreateAssessment",
+              "id": 3133363839376538,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "CreateAssessment",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.CreateAssessmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.AnnotateAssessment",
+              "id": 3266303031316365,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "AnnotateAssessment",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.AnnotateAssessmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.CreateKey",
+              "id": 3564623763363766,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "CreateKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.CreateKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.ListKeys",
+              "id": 3333653761616131,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "ListKeys",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.ListKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.GetKey",
+              "id": 3032323130636434,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "GetKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.GetKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.UpdateKey",
+              "id": 6135326332623838,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "UpdateKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.UpdateKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1beta1.RecaptchaEnterpriseService.DeleteKey",
+              "id": 6338383465643038,
+              "service_model_id": 3663306136653164,
+              "rpc_name": "DeleteKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1beta1.DeleteKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

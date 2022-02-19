@@ -1,0 +1,112 @@
+{
+  "design_name": "google-cloud-binary_authorization-v1beta1",
+  "id": 3665316261343666,
+  "name": "google-cloud-binary_authorization-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.binaryauthorization.v1beta1",
+      "id": 3364376530666665,
+      "name": "google.cloud.binaryauthorization.v1beta1",
+      "gem_model_id": 3665316261343666,
+      "ruby_namespace": "::Google::Cloud::BinaryAuthorization::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService",
+          "id": 6235623637383030,
+          "package_model_id": 3364376530666665,
+          "name": "BinauthzManagementService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.GetPolicy",
+              "id": 3631333336633364,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "GetPolicy",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.GetPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.UpdatePolicy",
+              "id": 6662363761636432,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "UpdatePolicy",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.UpdatePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.CreateAttestor",
+              "id": 6538616164633366,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "CreateAttestor",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.CreateAttestorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.GetAttestor",
+              "id": 3933343565323936,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "GetAttestor",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.GetAttestorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.UpdateAttestor",
+              "id": 3236366166393233,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "UpdateAttestor",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.UpdateAttestorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.ListAttestors",
+              "id": 6130643836666466,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "ListAttestors",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.ListAttestorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.BinauthzManagementService.DeleteAttestor",
+              "id": 6333623236663232,
+              "service_model_id": 6235623637383030,
+              "rpc_name": "DeleteAttestor",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.DeleteAttestorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.binaryauthorization.v1beta1.SystemPolicy",
+          "id": 6133663266643865,
+          "package_model_id": 3364376530666665,
+          "name": "SystemPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.binaryauthorization.v1beta1.SystemPolicy.GetSystemPolicy",
+              "id": 3334363835646334,
+              "service_model_id": 6133663266643865,
+              "rpc_name": "GetSystemPolicy",
+              "input_name": "google.cloud.binaryauthorization.v1beta1.GetSystemPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

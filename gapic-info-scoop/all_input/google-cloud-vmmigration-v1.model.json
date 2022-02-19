@@ -1,0 +1,454 @@
+{
+  "design_name": "google-cloud-vm_migration-v1",
+  "id": 3333353763663630,
+  "name": "google-cloud-vm_migration-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.vmmigration.v1",
+      "id": 3135386533613338,
+      "name": "google.cloud.vmmigration.v1",
+      "gem_model_id": 3333353763663630,
+      "ruby_namespace": "::Google::Cloud::VMMigration::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.vmmigration.v1.VmMigration",
+          "id": 3165313036623935,
+          "package_model_id": 3135386533613338,
+          "name": "VmMigration",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListSources",
+              "id": 3838333630333135,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListSources",
+              "input_name": "google.cloud.vmmigration.v1.ListSourcesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetSource",
+              "id": 6363386433643836,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetSource",
+              "input_name": "google.cloud.vmmigration.v1.GetSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateSource",
+              "id": 3130323531303035,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateSource",
+              "input_name": "google.cloud.vmmigration.v1.CreateSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.UpdateSource",
+              "id": 3634376636353839,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "UpdateSource",
+              "input_name": "google.cloud.vmmigration.v1.UpdateSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteSource",
+              "id": 6563656533656663,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteSource",
+              "input_name": "google.cloud.vmmigration.v1.DeleteSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.FetchInventory",
+              "id": 3930376339333961,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "FetchInventory",
+              "input_name": "google.cloud.vmmigration.v1.FetchInventoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListUtilizationReports",
+              "id": 6131623766383765,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListUtilizationReports",
+              "input_name": "google.cloud.vmmigration.v1.ListUtilizationReportsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetUtilizationReport",
+              "id": 3837333539633137,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetUtilizationReport",
+              "input_name": "google.cloud.vmmigration.v1.GetUtilizationReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateUtilizationReport",
+              "id": 3061666163306231,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateUtilizationReport",
+              "input_name": "google.cloud.vmmigration.v1.CreateUtilizationReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteUtilizationReport",
+              "id": 6430336534376261,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteUtilizationReport",
+              "input_name": "google.cloud.vmmigration.v1.DeleteUtilizationReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListDatacenterConnectors",
+              "id": 3332383333303439,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListDatacenterConnectors",
+              "input_name": "google.cloud.vmmigration.v1.ListDatacenterConnectorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetDatacenterConnector",
+              "id": 6231653465393763,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetDatacenterConnector",
+              "input_name": "google.cloud.vmmigration.v1.GetDatacenterConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateDatacenterConnector",
+              "id": 6637373538636661,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateDatacenterConnector",
+              "input_name": "google.cloud.vmmigration.v1.CreateDatacenterConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteDatacenterConnector",
+              "id": 6438323533623038,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteDatacenterConnector",
+              "input_name": "google.cloud.vmmigration.v1.DeleteDatacenterConnectorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateMigratingVm",
+              "id": 3038633636613634,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateMigratingVm",
+              "input_name": "google.cloud.vmmigration.v1.CreateMigratingVmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListMigratingVms",
+              "id": 3734306537303861,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListMigratingVms",
+              "input_name": "google.cloud.vmmigration.v1.ListMigratingVmsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetMigratingVm",
+              "id": 6637353635613639,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetMigratingVm",
+              "input_name": "google.cloud.vmmigration.v1.GetMigratingVmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.UpdateMigratingVm",
+              "id": 3430333761373762,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "UpdateMigratingVm",
+              "input_name": "google.cloud.vmmigration.v1.UpdateMigratingVmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteMigratingVm",
+              "id": 3931656166353564,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteMigratingVm",
+              "input_name": "google.cloud.vmmigration.v1.DeleteMigratingVmRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.StartMigration",
+              "id": 6435343761613762,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "StartMigration",
+              "input_name": "google.cloud.vmmigration.v1.StartMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ResumeMigration",
+              "id": 3763653738633635,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ResumeMigration",
+              "input_name": "google.cloud.vmmigration.v1.ResumeMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.PauseMigration",
+              "id": 3432666465336538,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "PauseMigration",
+              "input_name": "google.cloud.vmmigration.v1.PauseMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.FinalizeMigration",
+              "id": 3233633038633536,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "FinalizeMigration",
+              "input_name": "google.cloud.vmmigration.v1.FinalizeMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateCloneJob",
+              "id": 3165373936353564,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateCloneJob",
+              "input_name": "google.cloud.vmmigration.v1.CreateCloneJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CancelCloneJob",
+              "id": 6562303961363231,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CancelCloneJob",
+              "input_name": "google.cloud.vmmigration.v1.CancelCloneJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListCloneJobs",
+              "id": 6163356237383639,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListCloneJobs",
+              "input_name": "google.cloud.vmmigration.v1.ListCloneJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetCloneJob",
+              "id": 3535323436373733,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetCloneJob",
+              "input_name": "google.cloud.vmmigration.v1.GetCloneJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateCutoverJob",
+              "id": 3464653861313430,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateCutoverJob",
+              "input_name": "google.cloud.vmmigration.v1.CreateCutoverJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CancelCutoverJob",
+              "id": 6331353166613265,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CancelCutoverJob",
+              "input_name": "google.cloud.vmmigration.v1.CancelCutoverJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListCutoverJobs",
+              "id": 3531626335363132,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListCutoverJobs",
+              "input_name": "google.cloud.vmmigration.v1.ListCutoverJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetCutoverJob",
+              "id": 6236383861633536,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetCutoverJob",
+              "input_name": "google.cloud.vmmigration.v1.GetCutoverJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListGroups",
+              "id": 3430363030383234,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListGroups",
+              "input_name": "google.cloud.vmmigration.v1.ListGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetGroup",
+              "id": 6461343830663836,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetGroup",
+              "input_name": "google.cloud.vmmigration.v1.GetGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateGroup",
+              "id": 6136343962373663,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateGroup",
+              "input_name": "google.cloud.vmmigration.v1.CreateGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.UpdateGroup",
+              "id": 3464373962343865,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "UpdateGroup",
+              "input_name": "google.cloud.vmmigration.v1.UpdateGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteGroup",
+              "id": 6438303836393261,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteGroup",
+              "input_name": "google.cloud.vmmigration.v1.DeleteGroupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.AddGroupMigration",
+              "id": 6662363664393161,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "AddGroupMigration",
+              "input_name": "google.cloud.vmmigration.v1.AddGroupMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.RemoveGroupMigration",
+              "id": 3533343366343834,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "RemoveGroupMigration",
+              "input_name": "google.cloud.vmmigration.v1.RemoveGroupMigrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.ListTargetProjects",
+              "id": 3666323163366262,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "ListTargetProjects",
+              "input_name": "google.cloud.vmmigration.v1.ListTargetProjectsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.GetTargetProject",
+              "id": 6235653939333962,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "GetTargetProject",
+              "input_name": "google.cloud.vmmigration.v1.GetTargetProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.CreateTargetProject",
+              "id": 3734343033613537,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "CreateTargetProject",
+              "input_name": "google.cloud.vmmigration.v1.CreateTargetProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.UpdateTargetProject",
+              "id": 3434306336323839,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "UpdateTargetProject",
+              "input_name": "google.cloud.vmmigration.v1.UpdateTargetProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.vmmigration.v1.VmMigration.DeleteTargetProject",
+              "id": 6261343235303037,
+              "service_model_id": 3165313036623935,
+              "rpc_name": "DeleteTargetProject",
+              "input_name": "google.cloud.vmmigration.v1.DeleteTargetProjectRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

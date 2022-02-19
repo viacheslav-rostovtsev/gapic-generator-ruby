@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-workflows-executions-v1beta",
+  "id": 3935643231646464,
+  "name": "google-cloud-workflows-executions-v1beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.workflows.executions.v1beta",
+      "id": 6138386536636638,
+      "name": "google.cloud.workflows.executions.v1beta",
+      "gem_model_id": 3935643231646464,
+      "ruby_namespace": "::Google::Cloud::Workflows::Executions::V1beta",
+      "services": [
+        {
+          "design_name": "google.cloud.workflows.executions.v1beta.Executions",
+          "id": 3666643765363165,
+          "package_model_id": 6138386536636638,
+          "name": "Executions",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.workflows.executions.v1beta.Executions.ListExecutions",
+              "id": 6465376536383736,
+              "service_model_id": 3666643765363165,
+              "rpc_name": "ListExecutions",
+              "input_name": "google.cloud.workflows.executions.v1beta.ListExecutionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.executions.v1beta.Executions.CreateExecution",
+              "id": 6161633834616633,
+              "service_model_id": 3666643765363165,
+              "rpc_name": "CreateExecution",
+              "input_name": "google.cloud.workflows.executions.v1beta.CreateExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.executions.v1beta.Executions.GetExecution",
+              "id": 3664326638343732,
+              "service_model_id": 3666643765363165,
+              "rpc_name": "GetExecution",
+              "input_name": "google.cloud.workflows.executions.v1beta.GetExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.executions.v1beta.Executions.CancelExecution",
+              "id": 3531343462316462,
+              "service_model_id": 3666643765363165,
+              "rpc_name": "CancelExecution",
+              "input_name": "google.cloud.workflows.executions.v1beta.CancelExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

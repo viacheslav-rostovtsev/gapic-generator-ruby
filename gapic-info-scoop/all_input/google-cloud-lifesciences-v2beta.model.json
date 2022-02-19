@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-life_sciences-v2beta",
+  "id": 3935353132393861,
+  "name": "google-cloud-life_sciences-v2beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.lifesciences.v2beta",
+      "id": 3233376530633634,
+      "name": "google.cloud.lifesciences.v2beta",
+      "gem_model_id": 3935353132393861,
+      "ruby_namespace": "::Google::Cloud::LifeSciences::V2beta",
+      "services": [
+        {
+          "design_name": "google.cloud.lifesciences.v2beta.WorkflowsService",
+          "id": 3762613236323965,
+          "package_model_id": 3233376530633634,
+          "name": "WorkflowsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.lifesciences.v2beta.WorkflowsService.RunPipeline",
+              "id": 6264323033353564,
+              "service_model_id": 3762613236323965,
+              "rpc_name": "RunPipeline",
+              "input_name": "google.cloud.lifesciences.v2beta.RunPipelineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

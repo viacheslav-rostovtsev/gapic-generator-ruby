@@ -1,0 +1,5 @@
+<%- assert_locals db_presenter -%>
+<%= render partial: "sql_insert/insert",
+           layout: "layouts/ruby",
+           locals: { db_presenter: db_presenter, namespace: db_presenter.insert_namespace}
+%>

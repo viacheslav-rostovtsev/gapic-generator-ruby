@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-speech-v1",
+  "id": 6162356636326132,
+  "name": "google-cloud-speech-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.speech.v1",
+      "id": 3330623035363339,
+      "name": "google.cloud.speech.v1",
+      "gem_model_id": 6162356636326132,
+      "ruby_namespace": "::Google::Cloud::Speech::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.speech.v1.Speech",
+          "id": 3136646339653433,
+          "package_model_id": 3330623035363339,
+          "name": "Speech",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.speech.v1.Speech.Recognize",
+              "id": 6665376366666430,
+              "service_model_id": 3136646339653433,
+              "rpc_name": "Recognize",
+              "input_name": "google.cloud.speech.v1.RecognizeRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.speech.v1.Speech.LongRunningRecognize",
+              "id": 3430396462396530,
+              "service_model_id": 3136646339653433,
+              "rpc_name": "LongRunningRecognize",
+              "input_name": "google.cloud.speech.v1.LongRunningRecognizeRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.speech.v1.Speech.StreamingRecognize",
+              "id": 3266353530613433,
+              "service_model_id": 3136646339653433,
+              "rpc_name": "StreamingRecognize",
+              "input_name": "google.cloud.speech.v1.StreamingRecognizeRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

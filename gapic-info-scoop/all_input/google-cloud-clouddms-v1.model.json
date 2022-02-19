@@ -1,0 +1,194 @@
+{
+  "design_name": "google-cloud-cloud_dms-v1",
+  "id": 3532323465373435,
+  "name": "google-cloud-cloud_dms-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.clouddms.v1",
+      "id": 3537376537313061,
+      "name": "google.cloud.clouddms.v1",
+      "gem_model_id": 3532323465373435,
+      "ruby_namespace": "::Google::Cloud::CloudDMS::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.clouddms.v1.DataMigrationService",
+          "id": 3663393230316234,
+          "package_model_id": 3537376537313061,
+          "name": "DataMigrationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.ListMigrationJobs",
+              "id": 6164663732326366,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "ListMigrationJobs",
+              "input_name": "google.cloud.clouddms.v1.ListMigrationJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.GetMigrationJob",
+              "id": 3833613738633631,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "GetMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.GetMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.CreateMigrationJob",
+              "id": 3331323765346665,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "CreateMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.CreateMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.UpdateMigrationJob",
+              "id": 6264363265373862,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "UpdateMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.UpdateMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.DeleteMigrationJob",
+              "id": 3832663465636634,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "DeleteMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.DeleteMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.StartMigrationJob",
+              "id": 6533383338633066,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "StartMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.StartMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.StopMigrationJob",
+              "id": 3738623834383764,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "StopMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.StopMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.ResumeMigrationJob",
+              "id": 3630373735323962,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "ResumeMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.ResumeMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.PromoteMigrationJob",
+              "id": 3435383133626265,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "PromoteMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.PromoteMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.VerifyMigrationJob",
+              "id": 3933626435663030,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "VerifyMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.VerifyMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.RestartMigrationJob",
+              "id": 3236653961313530,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "RestartMigrationJob",
+              "input_name": "google.cloud.clouddms.v1.RestartMigrationJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.GenerateSshScript",
+              "id": 3962303332666438,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "GenerateSshScript",
+              "input_name": "google.cloud.clouddms.v1.GenerateSshScriptRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.ListConnectionProfiles",
+              "id": 6636653534333866,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "ListConnectionProfiles",
+              "input_name": "google.cloud.clouddms.v1.ListConnectionProfilesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.GetConnectionProfile",
+              "id": 3662306237633764,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "GetConnectionProfile",
+              "input_name": "google.cloud.clouddms.v1.GetConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.CreateConnectionProfile",
+              "id": 3062306633616531,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "CreateConnectionProfile",
+              "input_name": "google.cloud.clouddms.v1.CreateConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.UpdateConnectionProfile",
+              "id": 3264656464323765,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "UpdateConnectionProfile",
+              "input_name": "google.cloud.clouddms.v1.UpdateConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.clouddms.v1.DataMigrationService.DeleteConnectionProfile",
+              "id": 6237633739363638,
+              "service_model_id": 3663393230316234,
+              "rpc_name": "DeleteConnectionProfile",
+              "input_name": "google.cloud.clouddms.v1.DeleteConnectionProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-bigquery-storage-v1beta1",
+  "id": 3862376638343738,
+  "name": "google-cloud-bigquery-storage-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.storage.v1beta1",
+      "id": 6134393530306537,
+      "name": "google.cloud.bigquery.storage.v1beta1",
+      "gem_model_id": 3862376638343738,
+      "ruby_namespace": "::Google::Cloud::Bigquery::Storage::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage",
+          "id": 6163326630653961,
+          "package_model_id": 6134393530306537,
+          "name": "BigQueryStorage",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage.CreateReadSession",
+              "id": 6339626232376462,
+              "service_model_id": 6163326630653961,
+              "rpc_name": "CreateReadSession",
+              "input_name": "google.cloud.bigquery.storage.v1beta1.CreateReadSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage.ReadRows",
+              "id": 3462656663303362,
+              "service_model_id": 6163326630653961,
+              "rpc_name": "ReadRows",
+              "input_name": "google.cloud.bigquery.storage.v1beta1.ReadRowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage.BatchCreateReadSessionStreams",
+              "id": 6534366132393839,
+              "service_model_id": 6163326630653961,
+              "rpc_name": "BatchCreateReadSessionStreams",
+              "input_name": "google.cloud.bigquery.storage.v1beta1.BatchCreateReadSessionStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage.FinalizeStream",
+              "id": 3434303062646363,
+              "service_model_id": 6163326630653961,
+              "rpc_name": "FinalizeStream",
+              "input_name": "google.cloud.bigquery.storage.v1beta1.FinalizeStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.storage.v1beta1.BigQueryStorage.SplitReadStream",
+              "id": 3635326465363531,
+              "service_model_id": 6163326630653961,
+              "rpc_name": "SplitReadStream",
+              "input_name": "google.cloud.bigquery.storage.v1beta1.SplitReadStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

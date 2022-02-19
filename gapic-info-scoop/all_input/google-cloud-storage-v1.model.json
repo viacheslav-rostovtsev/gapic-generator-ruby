@@ -1,0 +1,584 @@
+{
+  "design_name": "google-cloud-storage-v1",
+  "id": 3838323937383131,
+  "name": "google-cloud-storage-v1",
+  "packages": [
+    {
+      "design_name": "google.storage.v1",
+      "id": 6339323561323134,
+      "name": "google.storage.v1",
+      "gem_model_id": 3838323937383131,
+      "ruby_namespace": "::Google::Storage::V1",
+      "services": [
+        {
+          "design_name": "google.storage.v1.Storage",
+          "id": 6538643430623938,
+          "package_model_id": 6339323561323134,
+          "name": "Storage",
+          "rpcs": [
+            {
+              "design_name": "google.storage.v1.Storage.DeleteBucketAccessControl",
+              "id": 3930323732613666,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteBucketAccessControl",
+              "input_name": "google.storage.v1.DeleteBucketAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetBucketAccessControl",
+              "id": 6238613939323438,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetBucketAccessControl",
+              "input_name": "google.storage.v1.GetBucketAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertBucketAccessControl",
+              "id": 3432633932303737,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertBucketAccessControl",
+              "input_name": "google.storage.v1.InsertBucketAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListBucketAccessControls",
+              "id": 6534613036326139,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListBucketAccessControls",
+              "input_name": "google.storage.v1.ListBucketAccessControlsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateBucketAccessControl",
+              "id": 6232336363663863,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateBucketAccessControl",
+              "input_name": "google.storage.v1.UpdateBucketAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.PatchBucketAccessControl",
+              "id": 3863616339623538,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "PatchBucketAccessControl",
+              "input_name": "google.storage.v1.PatchBucketAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteBucket",
+              "id": 3538643563643335,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteBucket",
+              "input_name": "google.storage.v1.DeleteBucketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetBucket",
+              "id": 6564396230643465,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetBucket",
+              "input_name": "google.storage.v1.GetBucketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertBucket",
+              "id": 3434346364316235,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertBucket",
+              "input_name": "google.storage.v1.InsertBucketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListChannels",
+              "id": 6530303765653139,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListChannels",
+              "input_name": "google.storage.v1.ListChannelsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListBuckets",
+              "id": 3935613664306530,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListBuckets",
+              "input_name": "google.storage.v1.ListBucketsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.LockBucketRetentionPolicy",
+              "id": 6130353831633333,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "LockBucketRetentionPolicy",
+              "input_name": "google.storage.v1.LockRetentionPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetBucketIamPolicy",
+              "id": 6238313964303237,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetBucketIamPolicy",
+              "input_name": "google.storage.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.SetBucketIamPolicy",
+              "id": 6636373463306433,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "SetBucketIamPolicy",
+              "input_name": "google.storage.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.TestBucketIamPermissions",
+              "id": 6462393163623764,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "TestBucketIamPermissions",
+              "input_name": "google.storage.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.PatchBucket",
+              "id": 6136643765653237,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "PatchBucket",
+              "input_name": "google.storage.v1.PatchBucketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateBucket",
+              "id": 6262333534636334,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateBucket",
+              "input_name": "google.storage.v1.UpdateBucketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.StopChannel",
+              "id": 3262333839666630,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "StopChannel",
+              "input_name": "google.storage.v1.StopChannelRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteDefaultObjectAccessControl",
+              "id": 6137663735316630,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteDefaultObjectAccessControl",
+              "input_name": "google.storage.v1.DeleteDefaultObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetDefaultObjectAccessControl",
+              "id": 3866303130323531,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetDefaultObjectAccessControl",
+              "input_name": "google.storage.v1.GetDefaultObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertDefaultObjectAccessControl",
+              "id": 3835656563356230,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertDefaultObjectAccessControl",
+              "input_name": "google.storage.v1.InsertDefaultObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListDefaultObjectAccessControls",
+              "id": 6661366438343237,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListDefaultObjectAccessControls",
+              "input_name": "google.storage.v1.ListDefaultObjectAccessControlsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.PatchDefaultObjectAccessControl",
+              "id": 6364306133626561,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "PatchDefaultObjectAccessControl",
+              "input_name": "google.storage.v1.PatchDefaultObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateDefaultObjectAccessControl",
+              "id": 6532633534386338,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateDefaultObjectAccessControl",
+              "input_name": "google.storage.v1.UpdateDefaultObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteNotification",
+              "id": 6534613263623964,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteNotification",
+              "input_name": "google.storage.v1.DeleteNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetNotification",
+              "id": 6634313533663838,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetNotification",
+              "input_name": "google.storage.v1.GetNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertNotification",
+              "id": 6363306264396539,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertNotification",
+              "input_name": "google.storage.v1.InsertNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListNotifications",
+              "id": 3236396338346539,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListNotifications",
+              "input_name": "google.storage.v1.ListNotificationsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteObjectAccessControl",
+              "id": 3534346665643662,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteObjectAccessControl",
+              "input_name": "google.storage.v1.DeleteObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetObjectAccessControl",
+              "id": 3135373564333632,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetObjectAccessControl",
+              "input_name": "google.storage.v1.GetObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertObjectAccessControl",
+              "id": 3836306630373763,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertObjectAccessControl",
+              "input_name": "google.storage.v1.InsertObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListObjectAccessControls",
+              "id": 3063623339666161,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListObjectAccessControls",
+              "input_name": "google.storage.v1.ListObjectAccessControlsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.PatchObjectAccessControl",
+              "id": 6335613231313832,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "PatchObjectAccessControl",
+              "input_name": "google.storage.v1.PatchObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateObjectAccessControl",
+              "id": 3139363563376433,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateObjectAccessControl",
+              "input_name": "google.storage.v1.UpdateObjectAccessControlRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ComposeObject",
+              "id": 3130656135373432,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ComposeObject",
+              "input_name": "google.storage.v1.ComposeObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.CopyObject",
+              "id": 6336313564653536,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "CopyObject",
+              "input_name": "google.storage.v1.CopyObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteObject",
+              "id": 3132383864613862,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteObject",
+              "input_name": "google.storage.v1.DeleteObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetObject",
+              "id": 6130353137326361,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetObject",
+              "input_name": "google.storage.v1.GetObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetObjectMedia",
+              "id": 3435373964336362,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetObjectMedia",
+              "input_name": "google.storage.v1.GetObjectMediaRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.InsertObject",
+              "id": 6434366337383163,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "InsertObject",
+              "input_name": "google.storage.v1.InsertObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "client"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListObjects",
+              "id": 3637303530383566,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListObjects",
+              "input_name": "google.storage.v1.ListObjectsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.RewriteObject",
+              "id": 3864373831313335,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "RewriteObject",
+              "input_name": "google.storage.v1.RewriteObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.StartResumableWrite",
+              "id": 3934326165623464,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "StartResumableWrite",
+              "input_name": "google.storage.v1.StartResumableWriteRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.QueryWriteStatus",
+              "id": 6536626139626631,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "QueryWriteStatus",
+              "input_name": "google.storage.v1.QueryWriteStatusRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.PatchObject",
+              "id": 6637303737393239,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "PatchObject",
+              "input_name": "google.storage.v1.PatchObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateObject",
+              "id": 3230333533316134,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateObject",
+              "input_name": "google.storage.v1.UpdateObjectRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetObjectIamPolicy",
+              "id": 3062646265373365,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetObjectIamPolicy",
+              "input_name": "google.storage.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.SetObjectIamPolicy",
+              "id": 3235663836613734,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "SetObjectIamPolicy",
+              "input_name": "google.storage.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.TestObjectIamPermissions",
+              "id": 3162366531326430,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "TestObjectIamPermissions",
+              "input_name": "google.storage.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.WatchAllObjects",
+              "id": 6434316139373239,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "WatchAllObjects",
+              "input_name": "google.storage.v1.WatchAllObjectsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetServiceAccount",
+              "id": 3536623937626363,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetServiceAccount",
+              "input_name": "google.storage.v1.GetProjectServiceAccountRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.CreateHmacKey",
+              "id": 3261653039656333,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "CreateHmacKey",
+              "input_name": "google.storage.v1.CreateHmacKeyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.DeleteHmacKey",
+              "id": 3465626632633138,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "DeleteHmacKey",
+              "input_name": "google.storage.v1.DeleteHmacKeyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.GetHmacKey",
+              "id": 3666323032623439,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "GetHmacKey",
+              "input_name": "google.storage.v1.GetHmacKeyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.ListHmacKeys",
+              "id": 3032383963616637,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "ListHmacKeys",
+              "input_name": "google.storage.v1.ListHmacKeysRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storage.v1.Storage.UpdateHmacKey",
+              "id": 3239616136663461,
+              "service_model_id": 6538643430623938,
+              "rpc_name": "UpdateHmacKey",
+              "input_name": "google.storage.v1.UpdateHmacKeyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

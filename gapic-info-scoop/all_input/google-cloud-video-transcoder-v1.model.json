@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-video-transcoder-v1",
+  "id": 3037326164306136,
+  "name": "google-cloud-video-transcoder-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.video.transcoder.v1",
+      "id": 3764363938643765,
+      "name": "google.cloud.video.transcoder.v1",
+      "gem_model_id": 3037326164306136,
+      "ruby_namespace": "::Google::Cloud::Video::Transcoder::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.video.transcoder.v1.TranscoderService",
+          "id": 3235613330643734,
+          "package_model_id": 3764363938643765,
+          "name": "TranscoderService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.CreateJob",
+              "id": 3436353963623537,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "CreateJob",
+              "input_name": "google.cloud.video.transcoder.v1.CreateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.ListJobs",
+              "id": 3432383361616166,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.video.transcoder.v1.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.GetJob",
+              "id": 3065663566633037,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.video.transcoder.v1.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.DeleteJob",
+              "id": 3464316439323934,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "DeleteJob",
+              "input_name": "google.cloud.video.transcoder.v1.DeleteJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.CreateJobTemplate",
+              "id": 3330626335393435,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "CreateJobTemplate",
+              "input_name": "google.cloud.video.transcoder.v1.CreateJobTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.ListJobTemplates",
+              "id": 3335623439386639,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "ListJobTemplates",
+              "input_name": "google.cloud.video.transcoder.v1.ListJobTemplatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.GetJobTemplate",
+              "id": 3862303666393761,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "GetJobTemplate",
+              "input_name": "google.cloud.video.transcoder.v1.GetJobTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.transcoder.v1.TranscoderService.DeleteJobTemplate",
+              "id": 3033326437316466,
+              "service_model_id": 3235613330643734,
+              "rpc_name": "DeleteJobTemplate",
+              "input_name": "google.cloud.video.transcoder.v1.DeleteJobTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

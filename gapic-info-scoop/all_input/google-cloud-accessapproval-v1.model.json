@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-access_approval-v1",
+  "id": 3135383237386462,
+  "name": "google-cloud-access_approval-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.accessapproval.v1",
+      "id": 3730343638633363,
+      "name": "google.cloud.accessapproval.v1",
+      "gem_model_id": 3135383237386462,
+      "ruby_namespace": "::Google::Cloud::AccessApproval::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.accessapproval.v1.AccessApproval",
+          "id": 3865366563323935,
+          "package_model_id": 3730343638633363,
+          "name": "AccessApproval",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.ListApprovalRequests",
+              "id": 3131643239393432,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "ListApprovalRequests",
+              "input_name": "google.cloud.accessapproval.v1.ListApprovalRequestsMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.GetApprovalRequest",
+              "id": 3562653963343731,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "GetApprovalRequest",
+              "input_name": "google.cloud.accessapproval.v1.GetApprovalRequestMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.ApproveApprovalRequest",
+              "id": 6565613966303239,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "ApproveApprovalRequest",
+              "input_name": "google.cloud.accessapproval.v1.ApproveApprovalRequestMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.DismissApprovalRequest",
+              "id": 6338383932313465,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "DismissApprovalRequest",
+              "input_name": "google.cloud.accessapproval.v1.DismissApprovalRequestMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.GetAccessApprovalSettings",
+              "id": 6266336639383762,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "GetAccessApprovalSettings",
+              "input_name": "google.cloud.accessapproval.v1.GetAccessApprovalSettingsMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.UpdateAccessApprovalSettings",
+              "id": 3465373931653861,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "UpdateAccessApprovalSettings",
+              "input_name": "google.cloud.accessapproval.v1.UpdateAccessApprovalSettingsMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.accessapproval.v1.AccessApproval.DeleteAccessApprovalSettings",
+              "id": 3035323564323564,
+              "service_model_id": 3865366563323935,
+              "rpc_name": "DeleteAccessApprovalSettings",
+              "input_name": "google.cloud.accessapproval.v1.DeleteAccessApprovalSettingsMessage",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

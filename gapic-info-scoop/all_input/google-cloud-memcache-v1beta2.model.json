@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-memcache-v1beta2",
+  "id": 3734346562316632,
+  "name": "google-cloud-memcache-v1beta2",
+  "packages": [
+    {
+      "design_name": "google.cloud.memcache.v1beta2",
+      "id": 3634383035323934,
+      "name": "google.cloud.memcache.v1beta2",
+      "gem_model_id": 3734346562316632,
+      "ruby_namespace": "::Google::Cloud::Memcache::V1beta2",
+      "services": [
+        {
+          "design_name": "google.cloud.memcache.v1beta2.CloudMemcache",
+          "id": 3561633931643333,
+          "package_model_id": 3634383035323934,
+          "name": "CloudMemcache",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.ListInstances",
+              "id": 3661376530646363,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.memcache.v1beta2.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.GetInstance",
+              "id": 3062396462353839,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.memcache.v1beta2.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.CreateInstance",
+              "id": 6335613731336164,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.memcache.v1beta2.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.UpdateInstance",
+              "id": 6435656231343136,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.memcache.v1beta2.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.UpdateParameters",
+              "id": 3262633334366230,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "UpdateParameters",
+              "input_name": "google.cloud.memcache.v1beta2.UpdateParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.DeleteInstance",
+              "id": 6638616561333731,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.memcache.v1beta2.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.ApplyParameters",
+              "id": 6234386164383665,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "ApplyParameters",
+              "input_name": "google.cloud.memcache.v1beta2.ApplyParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1beta2.CloudMemcache.ApplySoftwareUpdate",
+              "id": 3466663034383037,
+              "service_model_id": 3561633931643333,
+              "rpc_name": "ApplySoftwareUpdate",
+              "input_name": "google.cloud.memcache.v1beta2.ApplySoftwareUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

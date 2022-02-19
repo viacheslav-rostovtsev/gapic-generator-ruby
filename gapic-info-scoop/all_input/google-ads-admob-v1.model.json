@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-admob-v1",
+  "id": 3135613136313061,
+  "name": "google-cloud-admob-v1",
+  "packages": [
+    {
+      "design_name": "google.ads.admob.v1",
+      "id": 3863636663336439,
+      "name": "google.ads.admob.v1",
+      "gem_model_id": 3135613136313061,
+      "ruby_namespace": "::Google::Ads::Admob::V1",
+      "services": [
+        {
+          "design_name": "google.ads.admob.v1.AdMobApi",
+          "id": 3331336161303835,
+          "package_model_id": 3863636663336439,
+          "name": "AdMobApi",
+          "rpcs": [
+            {
+              "design_name": "google.ads.admob.v1.AdMobApi.GetPublisherAccount",
+              "id": 3430396239633261,
+              "service_model_id": 3331336161303835,
+              "rpc_name": "GetPublisherAccount",
+              "input_name": "google.ads.admob.v1.GetPublisherAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.admob.v1.AdMobApi.ListPublisherAccounts",
+              "id": 6533303437623161,
+              "service_model_id": 3331336161303835,
+              "rpc_name": "ListPublisherAccounts",
+              "input_name": "google.ads.admob.v1.ListPublisherAccountsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.admob.v1.AdMobApi.GenerateNetworkReport",
+              "id": 3134633330643430,
+              "service_model_id": 3331336161303835,
+              "rpc_name": "GenerateNetworkReport",
+              "input_name": "google.ads.admob.v1.GenerateNetworkReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.ads.admob.v1.AdMobApi.GenerateMediationReport",
+              "id": 3732366266326332,
+              "service_model_id": 3331336161303835,
+              "rpc_name": "GenerateMediationReport",
+              "input_name": "google.ads.admob.v1.GenerateMediationReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

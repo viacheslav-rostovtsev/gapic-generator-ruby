@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-settings-v1beta1",
+  "id": 6134613735353837,
+  "name": "google-cloud-settings-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.securitycenter.settings.v1beta1",
+      "id": 3064346231343438,
+      "name": "google.cloud.securitycenter.settings.v1beta1",
+      "gem_model_id": 6134613735353837,
+      "ruby_namespace": "::Google::Cloud::SecurityCenter::Settings::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService",
+          "id": 3838633338356134,
+          "package_model_id": 3064346231343438,
+          "name": "SecurityCenterSettingsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.GetServiceAccount",
+              "id": 3838353337366237,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "GetServiceAccount",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.GetServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.GetSettings",
+              "id": 3164333464306630,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "GetSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.GetSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.UpdateSettings",
+              "id": 3034623036613566,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "UpdateSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.UpdateSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.ResetSettings",
+              "id": 6439323130373237,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "ResetSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.ResetSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.BatchGetSettings",
+              "id": 3735313262663137,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "BatchGetSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.BatchGetSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.CalculateEffectiveSettings",
+              "id": 6566333061623333,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "CalculateEffectiveSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.BatchCalculateEffectiveSettings",
+              "id": 6639333133353131,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "BatchCalculateEffectiveSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.BatchCalculateEffectiveSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.GetComponentSettings",
+              "id": 3861383231373038,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "GetComponentSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.GetComponentSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.UpdateComponentSettings",
+              "id": 3831336162353930,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "UpdateComponentSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.UpdateComponentSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.ResetComponentSettings",
+              "id": 3832386532306330,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "ResetComponentSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.ResetComponentSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.CalculateEffectiveComponentSettings",
+              "id": 3132336535366137,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "CalculateEffectiveComponentSettings",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.CalculateEffectiveComponentSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.ListDetectors",
+              "id": 3438646630333638,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "ListDetectors",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.ListDetectorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.securitycenter.settings.v1beta1.SecurityCenterSettingsService.ListComponents",
+              "id": 3739393961666534,
+              "service_model_id": 3838633338356134,
+              "rpc_name": "ListComponents",
+              "input_name": "google.cloud.securitycenter.settings.v1beta1.ListComponentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

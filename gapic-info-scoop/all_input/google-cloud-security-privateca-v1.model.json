@@ -1,0 +1,398 @@
+{
+  "design_name": "google-cloud-security-private_ca-v1",
+  "id": 6639353461306530,
+  "name": "google-cloud-security-private_ca-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.location",
+      "id": 6336396262653632,
+      "name": "google.cloud.location",
+      "gem_model_id": 6639353461306530,
+      "ruby_namespace": "::Google::Cloud::Location",
+      "services": [
+        {
+          "design_name": "google.cloud.location.Locations",
+          "id": 3534303964356236,
+          "package_model_id": 6336396262653632,
+          "name": "Locations",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.location.Locations.ListLocations",
+              "id": 6339393861353138,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "ListLocations",
+              "input_name": "google.cloud.location.ListLocationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.location.Locations.GetLocation",
+              "id": 3330306566653730,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "GetLocation",
+              "input_name": "google.cloud.location.GetLocationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "google.cloud.security.privateca.v1",
+      "id": 3161653732373966,
+      "name": "google.cloud.security.privateca.v1",
+      "gem_model_id": 6639353461306530,
+      "ruby_namespace": "::Google::Cloud::Security::PrivateCA::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService",
+          "id": 3862303232373164,
+          "package_model_id": 3161653732373966,
+          "name": "CertificateAuthorityService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.CreateCertificate",
+              "id": 3130333563353166,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "CreateCertificate",
+              "input_name": "google.cloud.security.privateca.v1.CreateCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.GetCertificate",
+              "id": 6235363763343664,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "GetCertificate",
+              "input_name": "google.cloud.security.privateca.v1.GetCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ListCertificates",
+              "id": 3230353735626338,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ListCertificates",
+              "input_name": "google.cloud.security.privateca.v1.ListCertificatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.RevokeCertificate",
+              "id": 6164326237393561,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "RevokeCertificate",
+              "input_name": "google.cloud.security.privateca.v1.RevokeCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UpdateCertificate",
+              "id": 3839613934643334,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UpdateCertificate",
+              "input_name": "google.cloud.security.privateca.v1.UpdateCertificateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ActivateCertificateAuthority",
+              "id": 6566313834333838,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ActivateCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.ActivateCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.CreateCertificateAuthority",
+              "id": 6361646366366562,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "CreateCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.CreateCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.DisableCertificateAuthority",
+              "id": 3930613032643362,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "DisableCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.DisableCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.EnableCertificateAuthority",
+              "id": 3863643339373130,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "EnableCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.EnableCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.FetchCertificateAuthorityCsr",
+              "id": 3935613130343864,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "FetchCertificateAuthorityCsr",
+              "input_name": "google.cloud.security.privateca.v1.FetchCertificateAuthorityCsrRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.GetCertificateAuthority",
+              "id": 3632323136303136,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "GetCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.GetCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ListCertificateAuthorities",
+              "id": 3566643164663330,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ListCertificateAuthorities",
+              "input_name": "google.cloud.security.privateca.v1.ListCertificateAuthoritiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UndeleteCertificateAuthority",
+              "id": 6338356339373236,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UndeleteCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.UndeleteCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.DeleteCertificateAuthority",
+              "id": 3237643233653339,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "DeleteCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.DeleteCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UpdateCertificateAuthority",
+              "id": 6338643836633964,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UpdateCertificateAuthority",
+              "input_name": "google.cloud.security.privateca.v1.UpdateCertificateAuthorityRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.CreateCaPool",
+              "id": 3130303332333065,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "CreateCaPool",
+              "input_name": "google.cloud.security.privateca.v1.CreateCaPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UpdateCaPool",
+              "id": 3837343665373237,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UpdateCaPool",
+              "input_name": "google.cloud.security.privateca.v1.UpdateCaPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.GetCaPool",
+              "id": 3235313863306134,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "GetCaPool",
+              "input_name": "google.cloud.security.privateca.v1.GetCaPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ListCaPools",
+              "id": 3930643837616266,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ListCaPools",
+              "input_name": "google.cloud.security.privateca.v1.ListCaPoolsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.DeleteCaPool",
+              "id": 3033313362343032,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "DeleteCaPool",
+              "input_name": "google.cloud.security.privateca.v1.DeleteCaPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.FetchCaCerts",
+              "id": 3431333437383534,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "FetchCaCerts",
+              "input_name": "google.cloud.security.privateca.v1.FetchCaCertsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.GetCertificateRevocationList",
+              "id": 3166313439643964,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "GetCertificateRevocationList",
+              "input_name": "google.cloud.security.privateca.v1.GetCertificateRevocationListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ListCertificateRevocationLists",
+              "id": 3836626434656462,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ListCertificateRevocationLists",
+              "input_name": "google.cloud.security.privateca.v1.ListCertificateRevocationListsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UpdateCertificateRevocationList",
+              "id": 3366396561316534,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UpdateCertificateRevocationList",
+              "input_name": "google.cloud.security.privateca.v1.UpdateCertificateRevocationListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.CreateCertificateTemplate",
+              "id": 3237303233383434,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "CreateCertificateTemplate",
+              "input_name": "google.cloud.security.privateca.v1.CreateCertificateTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.DeleteCertificateTemplate",
+              "id": 3234316331373936,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "DeleteCertificateTemplate",
+              "input_name": "google.cloud.security.privateca.v1.DeleteCertificateTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.GetCertificateTemplate",
+              "id": 3366323934373064,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "GetCertificateTemplate",
+              "input_name": "google.cloud.security.privateca.v1.GetCertificateTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.ListCertificateTemplates",
+              "id": 6165626135326131,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "ListCertificateTemplates",
+              "input_name": "google.cloud.security.privateca.v1.ListCertificateTemplatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.security.privateca.v1.CertificateAuthorityService.UpdateCertificateTemplate",
+              "id": 6138633162313132,
+              "service_model_id": 3862303232373164,
+              "rpc_name": "UpdateCertificateTemplate",
+              "input_name": "google.cloud.security.privateca.v1.UpdateCertificateTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "design_name": "google.iam.v1",
+      "id": 3530666463303133,
+      "name": "google.iam.v1",
+      "gem_model_id": 6639353461306530,
+      "ruby_namespace": "::Google::Iam::V1",
+      "services": [
+        {
+          "design_name": "google.iam.v1.IAMPolicy",
+          "id": 3136393863363936,
+          "package_model_id": 3530666463303133,
+          "name": "IAMPolicy",
+          "rpcs": [
+            {
+              "design_name": "google.iam.v1.IAMPolicy.SetIamPolicy",
+              "id": 3236373031626432,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.GetIamPolicy",
+              "id": 3737336539316463,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1.IAMPolicy.TestIamPermissions",
+              "id": 6266393536643738,
+              "service_model_id": 3136393863363936,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

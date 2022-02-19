@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-bigtable-v2",
+  "id": 3731646262393362,
+  "name": "google-cloud-bigtable-v2",
+  "packages": [
+    {
+      "design_name": "google.bigtable.v2",
+      "id": 6662303466393236,
+      "name": "google.bigtable.v2",
+      "gem_model_id": 3731646262393362,
+      "ruby_namespace": "::Google::Cloud::Bigtable::V2",
+      "services": [
+        {
+          "design_name": "google.bigtable.v2.Bigtable",
+          "id": 6536613433663334,
+          "package_model_id": 6662303466393236,
+          "name": "Bigtable",
+          "rpcs": [
+            {
+              "design_name": "google.bigtable.v2.Bigtable.ReadRows",
+              "id": 3837643436323664,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "ReadRows",
+              "input_name": "google.bigtable.v2.ReadRowsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.SampleRowKeys",
+              "id": 6631316235386234,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "SampleRowKeys",
+              "input_name": "google.bigtable.v2.SampleRowKeysRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.MutateRow",
+              "id": 6565643466616563,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "MutateRow",
+              "input_name": "google.bigtable.v2.MutateRowRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.MutateRows",
+              "id": 3738643631656135,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "MutateRows",
+              "input_name": "google.bigtable.v2.MutateRowsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.CheckAndMutateRow",
+              "id": 6439613036373733,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "CheckAndMutateRow",
+              "input_name": "google.bigtable.v2.CheckAndMutateRowRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.PingAndWarm",
+              "id": 3638623265613138,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "PingAndWarm",
+              "input_name": "google.bigtable.v2.PingAndWarmRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.v2.Bigtable.ReadModifyWriteRow",
+              "id": 3361393164363466,
+              "service_model_id": 6536613433663334,
+              "rpc_name": "ReadModifyWriteRow",
+              "input_name": "google.bigtable.v2.ReadModifyWriteRowRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": true,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

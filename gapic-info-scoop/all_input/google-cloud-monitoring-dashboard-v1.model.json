@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-monitoring-dashboard-v1",
+  "id": 3933323133393335,
+  "name": "google-cloud-monitoring-dashboard-v1",
+  "packages": [
+    {
+      "design_name": "google.monitoring.dashboard.v1",
+      "id": 3362326433356437,
+      "name": "google.monitoring.dashboard.v1",
+      "gem_model_id": 3933323133393335,
+      "ruby_namespace": "::Google::Cloud::Monitoring::Dashboard::V1",
+      "services": [
+        {
+          "design_name": "google.monitoring.dashboard.v1.DashboardsService",
+          "id": 3364383331336333,
+          "package_model_id": 3362326433356437,
+          "name": "DashboardsService",
+          "rpcs": [
+            {
+              "design_name": "google.monitoring.dashboard.v1.DashboardsService.CreateDashboard",
+              "id": 3466303534396532,
+              "service_model_id": 3364383331336333,
+              "rpc_name": "CreateDashboard",
+              "input_name": "google.monitoring.dashboard.v1.CreateDashboardRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.dashboard.v1.DashboardsService.ListDashboards",
+              "id": 3730306662363663,
+              "service_model_id": 3364383331336333,
+              "rpc_name": "ListDashboards",
+              "input_name": "google.monitoring.dashboard.v1.ListDashboardsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.dashboard.v1.DashboardsService.GetDashboard",
+              "id": 3036656564616334,
+              "service_model_id": 3364383331336333,
+              "rpc_name": "GetDashboard",
+              "input_name": "google.monitoring.dashboard.v1.GetDashboardRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.dashboard.v1.DashboardsService.DeleteDashboard",
+              "id": 3635396466303763,
+              "service_model_id": 3364383331336333,
+              "rpc_name": "DeleteDashboard",
+              "input_name": "google.monitoring.dashboard.v1.DeleteDashboardRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.monitoring.dashboard.v1.DashboardsService.UpdateDashboard",
+              "id": 3333346236316163,
+              "service_model_id": 3364383331336333,
+              "rpc_name": "UpdateDashboard",
+              "input_name": "google.monitoring.dashboard.v1.UpdateDashboardRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

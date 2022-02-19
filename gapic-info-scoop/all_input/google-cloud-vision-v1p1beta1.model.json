@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-vision-v1p1beta1",
+  "id": 3331633032356335,
+  "name": "google-cloud-vision-v1p1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.vision.v1p1beta1",
+      "id": 3738666431336336,
+      "name": "google.cloud.vision.v1p1beta1",
+      "gem_model_id": 3331633032356335,
+      "ruby_namespace": "::Google::Cloud::Vision::V1p1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.vision.v1p1beta1.ImageAnnotator",
+          "id": 6431333564363436,
+          "package_model_id": 3738666431336336,
+          "name": "ImageAnnotator",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.vision.v1p1beta1.ImageAnnotator.BatchAnnotateImages",
+              "id": 3662343962306535,
+              "service_model_id": 6431333564363436,
+              "rpc_name": "BatchAnnotateImages",
+              "input_name": "google.cloud.vision.v1p1beta1.BatchAnnotateImagesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

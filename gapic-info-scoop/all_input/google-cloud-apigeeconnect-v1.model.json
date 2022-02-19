@@ -1,0 +1,52 @@
+{
+  "design_name": "google-cloud-apigee_connect-v1",
+  "id": 6665343539633030,
+  "name": "google-cloud-apigee_connect-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.apigeeconnect.v1",
+      "id": 3638366266376230,
+      "name": "google.cloud.apigeeconnect.v1",
+      "gem_model_id": 6665343539633030,
+      "ruby_namespace": "::Google::Cloud::ApigeeConnect::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.apigeeconnect.v1.ConnectionService",
+          "id": 3836623239343863,
+          "package_model_id": 3638366266376230,
+          "name": "ConnectionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.apigeeconnect.v1.ConnectionService.ListConnections",
+              "id": 3831303036393436,
+              "service_model_id": 3836623239343863,
+              "rpc_name": "ListConnections",
+              "input_name": "google.cloud.apigeeconnect.v1.ListConnectionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.apigeeconnect.v1.Tether",
+          "id": 3064646134356461,
+          "package_model_id": 3638366266376230,
+          "name": "Tether",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.apigeeconnect.v1.Tether.Egress",
+              "id": 6166633166393361,
+              "service_model_id": 3064646134356461,
+              "rpc_name": "Egress",
+              "input_name": "google.cloud.apigeeconnect.v1.EgressResponse",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

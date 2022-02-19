@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-assured_workloads-v1beta1",
+  "id": 3465626463343766,
+  "name": "google-cloud-assured_workloads-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.assuredworkloads.v1beta1",
+      "id": 3966646632633435,
+      "name": "google.cloud.assuredworkloads.v1beta1",
+      "gem_model_id": 3465626463343766,
+      "ruby_namespace": "::Google::Cloud::AssuredWorkloads::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService",
+          "id": 3966613161623036,
+          "package_model_id": 3966646632633435,
+          "name": "AssuredWorkloadsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService.CreateWorkload",
+              "id": 3333396462613632,
+              "service_model_id": 3966613161623036,
+              "rpc_name": "CreateWorkload",
+              "input_name": "google.cloud.assuredworkloads.v1beta1.CreateWorkloadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService.UpdateWorkload",
+              "id": 6662643164653664,
+              "service_model_id": 3966613161623036,
+              "rpc_name": "UpdateWorkload",
+              "input_name": "google.cloud.assuredworkloads.v1beta1.UpdateWorkloadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService.DeleteWorkload",
+              "id": 3566323662663264,
+              "service_model_id": 3966613161623036,
+              "rpc_name": "DeleteWorkload",
+              "input_name": "google.cloud.assuredworkloads.v1beta1.DeleteWorkloadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService.GetWorkload",
+              "id": 3737356163646331,
+              "service_model_id": 3966613161623036,
+              "rpc_name": "GetWorkload",
+              "input_name": "google.cloud.assuredworkloads.v1beta1.GetWorkloadRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.assuredworkloads.v1beta1.AssuredWorkloadsService.ListWorkloads",
+              "id": 3165663834646630,
+              "service_model_id": 3966613161623036,
+              "rpc_name": "ListWorkloads",
+              "input_name": "google.cloud.assuredworkloads.v1beta1.ListWorkloadsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

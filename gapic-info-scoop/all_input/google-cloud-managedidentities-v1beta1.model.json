@@ -1,0 +1,124 @@
+{
+  "design_name": "google-cloud-managedidentities-v1beta1",
+  "id": 3036306663353761,
+  "name": "google-cloud-managedidentities-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.managedidentities.v1beta1",
+      "id": 3433353331356130,
+      "name": "google.cloud.managedidentities.v1beta1",
+      "gem_model_id": 3036306663353761,
+      "ruby_namespace": "::Google::Cloud::ManagedIdentities::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService",
+          "id": 6630373062656430,
+          "package_model_id": 3433353331356130,
+          "name": "ManagedIdentitiesService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.CreateMicrosoftAdDomain",
+              "id": 6635653130396565,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "CreateMicrosoftAdDomain",
+              "input_name": "google.cloud.managedidentities.v1beta1.CreateMicrosoftAdDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.ResetAdminPassword",
+              "id": 3236363834373638,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "ResetAdminPassword",
+              "input_name": "google.cloud.managedidentities.v1beta1.ResetAdminPasswordRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.ListDomains",
+              "id": 3434313363356236,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "ListDomains",
+              "input_name": "google.cloud.managedidentities.v1beta1.ListDomainsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.GetDomain",
+              "id": 3863356463313234,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "GetDomain",
+              "input_name": "google.cloud.managedidentities.v1beta1.GetDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.UpdateDomain",
+              "id": 3930353234353966,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "UpdateDomain",
+              "input_name": "google.cloud.managedidentities.v1beta1.UpdateDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.DeleteDomain",
+              "id": 6632366334333037,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "DeleteDomain",
+              "input_name": "google.cloud.managedidentities.v1beta1.DeleteDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.AttachTrust",
+              "id": 3930326630366465,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "AttachTrust",
+              "input_name": "google.cloud.managedidentities.v1beta1.AttachTrustRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.ReconfigureTrust",
+              "id": 3331633436326634,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "ReconfigureTrust",
+              "input_name": "google.cloud.managedidentities.v1beta1.ReconfigureTrustRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.DetachTrust",
+              "id": 3332393031633961,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "DetachTrust",
+              "input_name": "google.cloud.managedidentities.v1beta1.DetachTrustRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.managedidentities.v1beta1.ManagedIdentitiesService.ValidateTrust",
+              "id": 3538363736613239,
+              "service_model_id": 6630373062656430,
+              "rpc_name": "ValidateTrust",
+              "input_name": "google.cloud.managedidentities.v1beta1.ValidateTrustRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

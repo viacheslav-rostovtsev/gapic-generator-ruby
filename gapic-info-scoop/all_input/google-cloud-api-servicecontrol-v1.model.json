@@ -1,0 +1,62 @@
+{
+  "design_name": "google-cloud-service_control-v1",
+  "id": 6663353661643065,
+  "name": "google-cloud-service_control-v1",
+  "packages": [
+    {
+      "design_name": "google.api.servicecontrol.v1",
+      "id": 3435646135306264,
+      "name": "google.api.servicecontrol.v1",
+      "gem_model_id": 6663353661643065,
+      "ruby_namespace": "::Google::Cloud::ServiceControl::V1",
+      "services": [
+        {
+          "design_name": "google.api.servicecontrol.v1.QuotaController",
+          "id": 3231663262333366,
+          "package_model_id": 3435646135306264,
+          "name": "QuotaController",
+          "rpcs": [
+            {
+              "design_name": "google.api.servicecontrol.v1.QuotaController.AllocateQuota",
+              "id": 3336663934326231,
+              "service_model_id": 3231663262333366,
+              "rpc_name": "AllocateQuota",
+              "input_name": "google.api.servicecontrol.v1.AllocateQuotaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.api.servicecontrol.v1.ServiceController",
+          "id": 3937616235353430,
+          "package_model_id": 3435646135306264,
+          "name": "ServiceController",
+          "rpcs": [
+            {
+              "design_name": "google.api.servicecontrol.v1.ServiceController.Check",
+              "id": 3237336536666438,
+              "service_model_id": 3937616235353430,
+              "rpc_name": "Check",
+              "input_name": "google.api.servicecontrol.v1.CheckRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.api.servicecontrol.v1.ServiceController.Report",
+              "id": 6439346364616430,
+              "service_model_id": 3937616235353430,
+              "rpc_name": "Report",
+              "input_name": "google.api.servicecontrol.v1.ReportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-bigquery-migration-v2alpha",
+  "id": 6431366633363563,
+  "name": "google-cloud-bigquery-migration-v2alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.migration.v2alpha",
+      "id": 6432613232613538,
+      "name": "google.cloud.bigquery.migration.v2alpha",
+      "gem_model_id": 6431366633363563,
+      "ruby_namespace": "::Google::Cloud::Bigquery::Migration::V2alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService",
+          "id": 3637326435316639,
+          "package_model_id": 6432613232613538,
+          "name": "MigrationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.CreateMigrationWorkflow",
+              "id": 6630633735636164,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "CreateMigrationWorkflow",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.CreateMigrationWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.GetMigrationWorkflow",
+              "id": 6433386133653538,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "GetMigrationWorkflow",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.GetMigrationWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.ListMigrationWorkflows",
+              "id": 3432363764353831,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "ListMigrationWorkflows",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.ListMigrationWorkflowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.DeleteMigrationWorkflow",
+              "id": 6537633036333137,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "DeleteMigrationWorkflow",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.DeleteMigrationWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.StartMigrationWorkflow",
+              "id": 3265656662373130,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "StartMigrationWorkflow",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.StartMigrationWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.GetMigrationSubtask",
+              "id": 3837343663353730,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "GetMigrationSubtask",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.GetMigrationSubtaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.migration.v2alpha.MigrationService.ListMigrationSubtasks",
+              "id": 3363333938633235,
+              "service_model_id": 3637326435316639,
+              "rpc_name": "ListMigrationSubtasks",
+              "input_name": "google.cloud.bigquery.migration.v2alpha.ListMigrationSubtasksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

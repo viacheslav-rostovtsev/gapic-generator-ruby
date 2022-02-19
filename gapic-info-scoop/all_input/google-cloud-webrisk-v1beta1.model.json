@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-web_risk-v1beta1",
+  "id": 6665346462636538,
+  "name": "google-cloud-web_risk-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.webrisk.v1beta1",
+      "id": 6635373531356633,
+      "name": "google.cloud.webrisk.v1beta1",
+      "gem_model_id": 6665346462636538,
+      "ruby_namespace": "::Google::Cloud::WebRisk::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.webrisk.v1beta1.WebRiskService",
+          "id": 3034373937376364,
+          "package_model_id": 6635373531356633,
+          "name": "WebRiskService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.webrisk.v1beta1.WebRiskService.ComputeThreatListDiff",
+              "id": 6236613035323235,
+              "service_model_id": 3034373937376364,
+              "rpc_name": "ComputeThreatListDiff",
+              "input_name": "google.cloud.webrisk.v1beta1.ComputeThreatListDiffRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.webrisk.v1beta1.WebRiskService.SearchUris",
+              "id": 3261313364373238,
+              "service_model_id": 3034373937376364,
+              "rpc_name": "SearchUris",
+              "input_name": "google.cloud.webrisk.v1beta1.SearchUrisRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.webrisk.v1beta1.WebRiskService.SearchHashes",
+              "id": 6530303438356364,
+              "service_model_id": 3034373937376364,
+              "rpc_name": "SearchHashes",
+              "input_name": "google.cloud.webrisk.v1beta1.SearchHashesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

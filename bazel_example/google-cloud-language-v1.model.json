@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-language-v1",
+  "id": 6435386532613639,
+  "name": "google-cloud-language-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.language.v1",
+      "id": 3936613930373436,
+      "name": "google.cloud.language.v1",
+      "gem_model_id": 6435386532613639,
+      "ruby_namespace": "::Google::Cloud::Language::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.language.v1.LanguageService",
+          "id": 6566323965353034,
+          "package_model_id": 3936613930373436,
+          "name": "LanguageService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment",
+              "id": 3638613634336331,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "AnalyzeSentiment",
+              "input_name": "google.cloud.language.v1.AnalyzeSentimentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities",
+              "id": 3635666466386334,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "AnalyzeEntities",
+              "input_name": "google.cloud.language.v1.AnalyzeEntitiesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment",
+              "id": 3164353634336532,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "AnalyzeEntitySentiment",
+              "input_name": "google.cloud.language.v1.AnalyzeEntitySentimentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax",
+              "id": 3261656632346165,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "AnalyzeSyntax",
+              "input_name": "google.cloud.language.v1.AnalyzeSyntaxRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.ClassifyText",
+              "id": 6639616362323861,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "ClassifyText",
+              "input_name": "google.cloud.language.v1.ClassifyTextRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.language.v1.LanguageService.AnnotateText",
+              "id": 6233323434653433,
+              "service_model_id": 6566323965353034,
+              "rpc_name": "AnnotateText",
+              "input_name": "google.cloud.language.v1.AnnotateTextRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

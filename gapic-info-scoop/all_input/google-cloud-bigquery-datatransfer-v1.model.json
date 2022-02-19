@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-bigquery-data_transfer-v1",
+  "id": 3461306662336566,
+  "name": "google-cloud-bigquery-data_transfer-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.datatransfer.v1",
+      "id": 3132393435323435,
+      "name": "google.cloud.bigquery.datatransfer.v1",
+      "gem_model_id": 3461306662336566,
+      "ruby_namespace": "::Google::Cloud::Bigquery::DataTransfer::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService",
+          "id": 3730643266303162,
+          "package_model_id": 3132393435323435,
+          "name": "DataTransferService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.GetDataSource",
+              "id": 3237343232333539,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "GetDataSource",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.GetDataSourceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.ListDataSources",
+              "id": 6461376565316130,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "ListDataSources",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.ListDataSourcesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.CreateTransferConfig",
+              "id": 3731303963396235,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "CreateTransferConfig",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.CreateTransferConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.UpdateTransferConfig",
+              "id": 3034646663663634,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "UpdateTransferConfig",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.UpdateTransferConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.DeleteTransferConfig",
+              "id": 3661663362373038,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "DeleteTransferConfig",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.DeleteTransferConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.GetTransferConfig",
+              "id": 3163323936333365,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "GetTransferConfig",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.GetTransferConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.ListTransferConfigs",
+              "id": 3534336336386137,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "ListTransferConfigs",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.ListTransferConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.ScheduleTransferRuns",
+              "id": 3264323637313432,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "ScheduleTransferRuns",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.ScheduleTransferRunsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.StartManualTransferRuns",
+              "id": 3633656336663662,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "StartManualTransferRuns",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.StartManualTransferRunsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.GetTransferRun",
+              "id": 3135346366326536,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "GetTransferRun",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.GetTransferRunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.DeleteTransferRun",
+              "id": 3633613233356630,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "DeleteTransferRun",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.DeleteTransferRunRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.ListTransferRuns",
+              "id": 6364356363313161,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "ListTransferRuns",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.ListTransferRunsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.ListTransferLogs",
+              "id": 3335643236633937,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "ListTransferLogs",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.ListTransferLogsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.CheckValidCreds",
+              "id": 6366373936393163,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "CheckValidCreds",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.CheckValidCredsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.datatransfer.v1.DataTransferService.EnrollDataSources",
+              "id": 6462363335313035,
+              "service_model_id": 3730643266303162,
+              "rpc_name": "EnrollDataSources",
+              "input_name": "google.cloud.bigquery.datatransfer.v1.EnrollDataSourcesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

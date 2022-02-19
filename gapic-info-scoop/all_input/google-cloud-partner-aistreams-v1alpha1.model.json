@@ -1,0 +1,124 @@
+{
+  "design_name": "google-cloud-aistreams-v1alpha1",
+  "id": 6566366537383964,
+  "name": "google-cloud-aistreams-v1alpha1",
+  "packages": [
+    {
+      "design_name": "google.partner.aistreams.v1alpha1",
+      "id": 3239393433336362,
+      "name": "google.partner.aistreams.v1alpha1",
+      "gem_model_id": 6566366537383964,
+      "ruby_namespace": "::Google::Partner::Aistreams::V1alpha1",
+      "services": [
+        {
+          "design_name": "google.partner.aistreams.v1alpha1.AIStreams",
+          "id": 3037633364653230,
+          "package_model_id": 3239393433336362,
+          "name": "AIStreams",
+          "rpcs": [
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.ListClusters",
+              "id": 6230653736343933,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "ListClusters",
+              "input_name": "google.partner.aistreams.v1alpha1.ListClustersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.GetCluster",
+              "id": 3533316235653039,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "GetCluster",
+              "input_name": "google.partner.aistreams.v1alpha1.GetClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.CreateCluster",
+              "id": 3531306536633436,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "CreateCluster",
+              "input_name": "google.partner.aistreams.v1alpha1.CreateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.UpdateCluster",
+              "id": 3531353766636639,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "UpdateCluster",
+              "input_name": "google.partner.aistreams.v1alpha1.UpdateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.DeleteCluster",
+              "id": 6332383330653264,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "DeleteCluster",
+              "input_name": "google.partner.aistreams.v1alpha1.DeleteClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.ListStreams",
+              "id": 6537356564313834,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "ListStreams",
+              "input_name": "google.partner.aistreams.v1alpha1.ListStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.GetStream",
+              "id": 3461343033346332,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "GetStream",
+              "input_name": "google.partner.aistreams.v1alpha1.GetStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.CreateStream",
+              "id": 6434393733366363,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "CreateStream",
+              "input_name": "google.partner.aistreams.v1alpha1.CreateStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.UpdateStream",
+              "id": 3731343762303732,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "UpdateStream",
+              "input_name": "google.partner.aistreams.v1alpha1.UpdateStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.partner.aistreams.v1alpha1.AIStreams.DeleteStream",
+              "id": 3465643233616566,
+              "service_model_id": 3037633364653230,
+              "rpc_name": "DeleteStream",
+              "input_name": "google.partner.aistreams.v1alpha1.DeleteStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

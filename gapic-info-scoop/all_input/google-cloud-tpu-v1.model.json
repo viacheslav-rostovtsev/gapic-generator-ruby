@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-tpu-v1",
+  "id": 3861316161323539,
+  "name": "google-cloud-tpu-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.tpu.v1",
+      "id": 3938343632663563,
+      "name": "google.cloud.tpu.v1",
+      "gem_model_id": 3861316161323539,
+      "ruby_namespace": "::Google::Cloud::Tpu::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.tpu.v1.Tpu",
+          "id": 6265333132313661,
+          "package_model_id": 3938343632663563,
+          "name": "Tpu",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.ListNodes",
+              "id": 3836373439613635,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "ListNodes",
+              "input_name": "google.cloud.tpu.v1.ListNodesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.GetNode",
+              "id": 3433373138316432,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "GetNode",
+              "input_name": "google.cloud.tpu.v1.GetNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.CreateNode",
+              "id": 6464316261396634,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "CreateNode",
+              "input_name": "google.cloud.tpu.v1.CreateNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.DeleteNode",
+              "id": 6162303963663861,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "DeleteNode",
+              "input_name": "google.cloud.tpu.v1.DeleteNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.ReimageNode",
+              "id": 3764663864366264,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "ReimageNode",
+              "input_name": "google.cloud.tpu.v1.ReimageNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.StopNode",
+              "id": 3564383364366364,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "StopNode",
+              "input_name": "google.cloud.tpu.v1.StopNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.StartNode",
+              "id": 3430636332316563,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "StartNode",
+              "input_name": "google.cloud.tpu.v1.StartNodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.ListTensorFlowVersions",
+              "id": 6261393436373530,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "ListTensorFlowVersions",
+              "input_name": "google.cloud.tpu.v1.ListTensorFlowVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.GetTensorFlowVersion",
+              "id": 3038326631393633,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "GetTensorFlowVersion",
+              "input_name": "google.cloud.tpu.v1.GetTensorFlowVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.ListAcceleratorTypes",
+              "id": 3565356566633334,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "ListAcceleratorTypes",
+              "input_name": "google.cloud.tpu.v1.ListAcceleratorTypesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tpu.v1.Tpu.GetAcceleratorType",
+              "id": 6531636466653363,
+              "service_model_id": 6265333132313661,
+              "rpc_name": "GetAcceleratorType",
+              "input_name": "google.cloud.tpu.v1.GetAcceleratorTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

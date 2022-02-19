@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-roads-v1op",
+  "id": 3331356162653666,
+  "name": "google-cloud-roads-v1op",
+  "packages": [
+    {
+      "design_name": "google.maps.roads.v1op",
+      "id": 3032616330633432,
+      "name": "google.maps.roads.v1op",
+      "gem_model_id": 3331356162653666,
+      "ruby_namespace": "::Google::Maps::Roads::V1op",
+      "services": [
+        {
+          "design_name": "google.maps.roads.v1op.RoadsService",
+          "id": 6539323564373737,
+          "package_model_id": 3032616330633432,
+          "name": "RoadsService",
+          "rpcs": [
+            {
+              "design_name": "google.maps.roads.v1op.RoadsService.SnapToRoads",
+              "id": 3332313936303364,
+              "service_model_id": 6539323564373737,
+              "rpc_name": "SnapToRoads",
+              "input_name": "google.maps.roads.v1op.SnapToRoadsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.maps.roads.v1op.RoadsService.ListNearestRoads",
+              "id": 3730313362303964,
+              "service_model_id": 6539323564373737,
+              "rpc_name": "ListNearestRoads",
+              "input_name": "google.maps.roads.v1op.ListNearestRoadsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

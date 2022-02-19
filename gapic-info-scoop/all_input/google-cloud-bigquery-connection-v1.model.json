@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-bigquery-connection-v1",
+  "id": 3064373136343131,
+  "name": "google-cloud-bigquery-connection-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.connection.v1",
+      "id": 3336373936393333,
+      "name": "google.cloud.bigquery.connection.v1",
+      "gem_model_id": 3064373136343131,
+      "ruby_namespace": "::Google::Cloud::Bigquery::Connection::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.connection.v1.ConnectionService",
+          "id": 3434376239343732,
+          "package_model_id": 3336373936393333,
+          "name": "ConnectionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.CreateConnection",
+              "id": 6638343162363933,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "CreateConnection",
+              "input_name": "google.cloud.bigquery.connection.v1.CreateConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.GetConnection",
+              "id": 6137313964366234,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "GetConnection",
+              "input_name": "google.cloud.bigquery.connection.v1.GetConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.ListConnections",
+              "id": 3132333563393836,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "ListConnections",
+              "input_name": "google.cloud.bigquery.connection.v1.ListConnectionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.UpdateConnection",
+              "id": 3566666531313837,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "UpdateConnection",
+              "input_name": "google.cloud.bigquery.connection.v1.UpdateConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.DeleteConnection",
+              "id": 3832626333363036,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "DeleteConnection",
+              "input_name": "google.cloud.bigquery.connection.v1.DeleteConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.GetIamPolicy",
+              "id": 6335306535646665,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.SetIamPolicy",
+              "id": 3835646537646265,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.connection.v1.ConnectionService.TestIamPermissions",
+              "id": 3333336261336439,
+              "service_model_id": 3434376239343732,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

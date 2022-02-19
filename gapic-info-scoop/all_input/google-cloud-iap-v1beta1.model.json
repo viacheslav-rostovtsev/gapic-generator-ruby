@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-iap-v1beta1",
+  "id": 6665356635616536,
+  "name": "google-cloud-iap-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.iap.v1beta1",
+      "id": 3735303761656266,
+      "name": "google.cloud.iap.v1beta1",
+      "gem_model_id": 6665356635616536,
+      "ruby_namespace": "::Google::Cloud::Iap::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.iap.v1beta1.IdentityAwareProxyAdminV1Beta1",
+          "id": 3439313637653838,
+          "package_model_id": 3735303761656266,
+          "name": "IdentityAwareProxyAdminV1Beta1",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.iap.v1beta1.IdentityAwareProxyAdminV1Beta1.SetIamPolicy",
+              "id": 3132653637383833,
+              "service_model_id": 3439313637653838,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1beta1.IdentityAwareProxyAdminV1Beta1.GetIamPolicy",
+              "id": 3065313764663363,
+              "service_model_id": 3439313637653838,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.iap.v1beta1.IdentityAwareProxyAdminV1Beta1.TestIamPermissions",
+              "id": 6165373162336135,
+              "service_model_id": 3439313637653838,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

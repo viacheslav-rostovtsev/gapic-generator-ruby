@@ -1,0 +1,198 @@
+{
+  "design_name": "google-cloud-recommendation_engine-v1beta1",
+  "id": 6238346235386233,
+  "name": "google-cloud-recommendation_engine-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.recommendationengine.v1beta1",
+      "id": 3366383863663339,
+      "name": "google.cloud.recommendationengine.v1beta1",
+      "gem_model_id": 6238346235386233,
+      "ruby_namespace": "::Google::Cloud::RecommendationEngine::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService",
+          "id": 3933356139623631,
+          "package_model_id": 3366383863663339,
+          "name": "CatalogService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.CreateCatalogItem",
+              "id": 3165626639366565,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "CreateCatalogItem",
+              "input_name": "google.cloud.recommendationengine.v1beta1.CreateCatalogItemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.GetCatalogItem",
+              "id": 3734623938326665,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "GetCatalogItem",
+              "input_name": "google.cloud.recommendationengine.v1beta1.GetCatalogItemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.ListCatalogItems",
+              "id": 6630333463313335,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "ListCatalogItems",
+              "input_name": "google.cloud.recommendationengine.v1beta1.ListCatalogItemsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.UpdateCatalogItem",
+              "id": 6530626234356332,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "UpdateCatalogItem",
+              "input_name": "google.cloud.recommendationengine.v1beta1.UpdateCatalogItemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.DeleteCatalogItem",
+              "id": 3532626634333962,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "DeleteCatalogItem",
+              "input_name": "google.cloud.recommendationengine.v1beta1.DeleteCatalogItemRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.CatalogService.ImportCatalogItems",
+              "id": 6431396630383934,
+              "service_model_id": 3933356139623631,
+              "rpc_name": "ImportCatalogItems",
+              "input_name": "google.cloud.recommendationengine.v1beta1.ImportCatalogItemsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry",
+          "id": 3364313538346131,
+          "package_model_id": 3366383863663339,
+          "name": "PredictionApiKeyRegistry",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry.CreatePredictionApiKeyRegistration",
+              "id": 6336336438353964,
+              "service_model_id": 3364313538346131,
+              "rpc_name": "CreatePredictionApiKeyRegistration",
+              "input_name": "google.cloud.recommendationengine.v1beta1.CreatePredictionApiKeyRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry.ListPredictionApiKeyRegistrations",
+              "id": 3531306165663032,
+              "service_model_id": 3364313538346131,
+              "rpc_name": "ListPredictionApiKeyRegistrations",
+              "input_name": "google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry.DeletePredictionApiKeyRegistration",
+              "id": 6539323661336361,
+              "service_model_id": 3364313538346131,
+              "rpc_name": "DeletePredictionApiKeyRegistration",
+              "input_name": "google.cloud.recommendationengine.v1beta1.DeletePredictionApiKeyRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.recommendationengine.v1beta1.PredictionService",
+          "id": 6532633339643435,
+          "package_model_id": 3366383863663339,
+          "name": "PredictionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.PredictionService.Predict",
+              "id": 3366373330373537,
+              "service_model_id": 6532633339643435,
+              "rpc_name": "Predict",
+              "input_name": "google.cloud.recommendationengine.v1beta1.PredictRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService",
+          "id": 6463663030633266,
+          "package_model_id": 3366383863663339,
+          "name": "UserEventService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService.WriteUserEvent",
+              "id": 6639346261623764,
+              "service_model_id": 6463663030633266,
+              "rpc_name": "WriteUserEvent",
+              "input_name": "google.cloud.recommendationengine.v1beta1.WriteUserEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService.CollectUserEvent",
+              "id": 3134396464336537,
+              "service_model_id": 6463663030633266,
+              "rpc_name": "CollectUserEvent",
+              "input_name": "google.cloud.recommendationengine.v1beta1.CollectUserEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService.ListUserEvents",
+              "id": 6233363366666639,
+              "service_model_id": 6463663030633266,
+              "rpc_name": "ListUserEvents",
+              "input_name": "google.cloud.recommendationengine.v1beta1.ListUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService.PurgeUserEvents",
+              "id": 3863386165363339,
+              "service_model_id": 6463663030633266,
+              "rpc_name": "PurgeUserEvents",
+              "input_name": "google.cloud.recommendationengine.v1beta1.PurgeUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recommendationengine.v1beta1.UserEventService.ImportUserEvents",
+              "id": 3962373733636238,
+              "service_model_id": 6463663030633266,
+              "rpc_name": "ImportUserEvents",
+              "input_name": "google.cloud.recommendationengine.v1beta1.ImportUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

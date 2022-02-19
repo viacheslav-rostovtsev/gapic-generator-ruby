@@ -1,0 +1,114 @@
+{
+  "design_name": "google-cloud-document_ai-v1beta3",
+  "id": 3132616165343866,
+  "name": "google-cloud-document_ai-v1beta3",
+  "packages": [
+    {
+      "design_name": "google.cloud.documentai.v1beta3",
+      "id": 3430613137643963,
+      "name": "google.cloud.documentai.v1beta3",
+      "gem_model_id": 3132616165343866,
+      "ruby_namespace": "::Google::Cloud::DocumentAI::V1beta3",
+      "services": [
+        {
+          "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService",
+          "id": 3762353335623866,
+          "package_model_id": 3430613137643963,
+          "name": "DocumentProcessorService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.ProcessDocument",
+              "id": 6266633838343538,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "ProcessDocument",
+              "input_name": "google.cloud.documentai.v1beta3.ProcessRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.BatchProcessDocuments",
+              "id": 3635643961353130,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "BatchProcessDocuments",
+              "input_name": "google.cloud.documentai.v1beta3.BatchProcessRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.FetchProcessorTypes",
+              "id": 6132666131616364,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "FetchProcessorTypes",
+              "input_name": "google.cloud.documentai.v1beta3.FetchProcessorTypesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.ListProcessors",
+              "id": 3964633833373464,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "ListProcessors",
+              "input_name": "google.cloud.documentai.v1beta3.ListProcessorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.CreateProcessor",
+              "id": 6233666361366536,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "CreateProcessor",
+              "input_name": "google.cloud.documentai.v1beta3.CreateProcessorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.DeleteProcessor",
+              "id": 3934393761336265,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "DeleteProcessor",
+              "input_name": "google.cloud.documentai.v1beta3.DeleteProcessorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.EnableProcessor",
+              "id": 3132393535646132,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "EnableProcessor",
+              "input_name": "google.cloud.documentai.v1beta3.EnableProcessorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.DisableProcessor",
+              "id": 3463303533316562,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "DisableProcessor",
+              "input_name": "google.cloud.documentai.v1beta3.DisableProcessorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.documentai.v1beta3.DocumentProcessorService.ReviewDocument",
+              "id": 3138663762343762,
+              "service_model_id": 3762353335623866,
+              "rpc_name": "ReviewDocument",
+              "input_name": "google.cloud.documentai.v1beta3.ReviewDocumentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

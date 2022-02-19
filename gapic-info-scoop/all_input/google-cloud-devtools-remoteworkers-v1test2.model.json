@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-remoteworkers-v1test2",
+  "id": 3232653530336330,
+  "name": "google-cloud-remoteworkers-v1test2",
+  "packages": [
+    {
+      "design_name": "google.devtools.remoteworkers.v1test2",
+      "id": 3738656338386539,
+      "name": "google.devtools.remoteworkers.v1test2",
+      "gem_model_id": 3232653530336330,
+      "ruby_namespace": "::Google::Devtools::Remoteworkers::V1test2",
+      "services": [
+        {
+          "design_name": "google.devtools.remoteworkers.v1test2.Bots",
+          "id": 3530666161356364,
+          "package_model_id": 3738656338386539,
+          "name": "Bots",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.remoteworkers.v1test2.Bots.CreateBotSession",
+              "id": 6233356235303139,
+              "service_model_id": 3530666161356364,
+              "rpc_name": "CreateBotSession",
+              "input_name": "google.devtools.remoteworkers.v1test2.CreateBotSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.remoteworkers.v1test2.Bots.UpdateBotSession",
+              "id": 6139326339613237,
+              "service_model_id": 3530666161356364,
+              "rpc_name": "UpdateBotSession",
+              "input_name": "google.devtools.remoteworkers.v1test2.UpdateBotSessionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

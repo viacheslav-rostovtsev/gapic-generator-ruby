@@ -63,6 +63,11 @@ module Gapic
       end
 
       # TODO: remove, only used in tests
+      def type
+        @field.type
+      end
+
+      # TODO: remove, only used in tests
       def type_name
         @field.type_name
       end

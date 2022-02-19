@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-sdm-v1",
+  "id": 3939303437316166,
+  "name": "google-cloud-sdm-v1",
+  "packages": [
+    {
+      "design_name": "google.home.enterprise.sdm.v1",
+      "id": 6363386530636662,
+      "name": "google.home.enterprise.sdm.v1",
+      "gem_model_id": 3939303437316166,
+      "ruby_namespace": "::Google::Home::Enterprise::Sdm::V1",
+      "services": [
+        {
+          "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService",
+          "id": 3730353737323231,
+          "package_model_id": 6363386530636662,
+          "name": "SmartDeviceManagementService",
+          "rpcs": [
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetDevice",
+              "id": 3438353532613032,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "GetDevice",
+              "input_name": "google.home.enterprise.sdm.v1.GetDeviceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListDevices",
+              "id": 3166313163393161,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "ListDevices",
+              "input_name": "google.home.enterprise.sdm.v1.ListDevicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ExecuteDeviceCommand",
+              "id": 3865633437653238,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "ExecuteDeviceCommand",
+              "input_name": "google.home.enterprise.sdm.v1.ExecuteDeviceCommandRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetStructure",
+              "id": 3632336331356236,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "GetStructure",
+              "input_name": "google.home.enterprise.sdm.v1.GetStructureRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListStructures",
+              "id": 3463623962343762,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "ListStructures",
+              "input_name": "google.home.enterprise.sdm.v1.ListStructuresRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.GetRoom",
+              "id": 3632663163656661,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "GetRoom",
+              "input_name": "google.home.enterprise.sdm.v1.GetRoomRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.home.enterprise.sdm.v1.SmartDeviceManagementService.ListRooms",
+              "id": 3964636631333031,
+              "service_model_id": 3730353737323231,
+              "rpc_name": "ListRooms",
+              "input_name": "google.home.enterprise.sdm.v1.ListRoomsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

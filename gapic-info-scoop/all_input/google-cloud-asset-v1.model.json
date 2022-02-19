@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-asset-v1",
+  "id": 3365613434613236,
+  "name": "google-cloud-asset-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.asset.v1",
+      "id": 3936646637633664,
+      "name": "google.cloud.asset.v1",
+      "gem_model_id": 3365613434613236,
+      "ruby_namespace": "::Google::Cloud::Asset::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.asset.v1.AssetService",
+          "id": 3932353161383833,
+          "package_model_id": 3936646637633664,
+          "name": "AssetService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.ExportAssets",
+              "id": 6162393337363433,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "ExportAssets",
+              "input_name": "google.cloud.asset.v1.ExportAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.ListAssets",
+              "id": 3636396436613535,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "ListAssets",
+              "input_name": "google.cloud.asset.v1.ListAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.BatchGetAssetsHistory",
+              "id": 3732376465376633,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "BatchGetAssetsHistory",
+              "input_name": "google.cloud.asset.v1.BatchGetAssetsHistoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.CreateFeed",
+              "id": 3761336431396436,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "CreateFeed",
+              "input_name": "google.cloud.asset.v1.CreateFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.GetFeed",
+              "id": 3038316439626433,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "GetFeed",
+              "input_name": "google.cloud.asset.v1.GetFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.ListFeeds",
+              "id": 3734323838636133,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "ListFeeds",
+              "input_name": "google.cloud.asset.v1.ListFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.UpdateFeed",
+              "id": 6230643533363365,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "UpdateFeed",
+              "input_name": "google.cloud.asset.v1.UpdateFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.DeleteFeed",
+              "id": 3964396430373731,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "DeleteFeed",
+              "input_name": "google.cloud.asset.v1.DeleteFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.SearchAllResources",
+              "id": 3835323766323364,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "SearchAllResources",
+              "input_name": "google.cloud.asset.v1.SearchAllResourcesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.SearchAllIamPolicies",
+              "id": 3364613966306266,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "SearchAllIamPolicies",
+              "input_name": "google.cloud.asset.v1.SearchAllIamPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.AnalyzeIamPolicy",
+              "id": 6139616137373966,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "AnalyzeIamPolicy",
+              "input_name": "google.cloud.asset.v1.AnalyzeIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.AnalyzeIamPolicyLongrunning",
+              "id": 6665646463623963,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "AnalyzeIamPolicyLongrunning",
+              "input_name": "google.cloud.asset.v1.AnalyzeIamPolicyLongrunningRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1.AssetService.AnalyzeMove",
+              "id": 3962303265613661,
+              "service_model_id": 3932353161383833,
+              "rpc_name": "AnalyzeMove",
+              "input_name": "google.cloud.asset.v1.AnalyzeMoveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

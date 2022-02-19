@@ -1,0 +1,84 @@
+{
+  "design_name": "google-cloud-agentendpoint-v1",
+  "id": 6639613033626565,
+  "name": "google-cloud-agentendpoint-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.osconfig.agentendpoint.v1",
+      "id": 3761613232376636,
+      "name": "google.cloud.osconfig.agentendpoint.v1",
+      "gem_model_id": 6639613033626565,
+      "ruby_namespace": "::Google::Cloud::Osconfig::Agentendpoint::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService",
+          "id": 6636373331663534,
+          "package_model_id": 3761613232376636,
+          "name": "AgentEndpointService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.ReceiveTaskNotification",
+              "id": 3439343933353430,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "ReceiveTaskNotification",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.ReceiveTaskNotificationRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.StartNextTask",
+              "id": 3263346132376439,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "StartNextTask",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.StartNextTaskRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.ReportTaskProgress",
+              "id": 3536663664353830,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "ReportTaskProgress",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.ReportTaskProgressRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.ReportTaskComplete",
+              "id": 6130336164303936,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "ReportTaskComplete",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.ReportTaskCompleteRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.RegisterAgent",
+              "id": 3338313963326539,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "RegisterAgent",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.RegisterAgentRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.osconfig.agentendpoint.v1.AgentEndpointService.ReportInventory",
+              "id": 3337663533336439,
+              "service_model_id": 6636373331663534,
+              "rpc_name": "ReportInventory",
+              "input_name": "google.cloud.osconfig.agentendpoint.v1.ReportInventoryRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-scheduler-v1beta1",
+  "id": 3939646166663862,
+  "name": "google-cloud-scheduler-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.scheduler.v1beta1",
+      "id": 6464316133613036,
+      "name": "google.cloud.scheduler.v1beta1",
+      "gem_model_id": 3939646166663862,
+      "ruby_namespace": "::Google::Cloud::Scheduler::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler",
+          "id": 6464303036343731,
+          "package_model_id": 6464316133613036,
+          "name": "CloudScheduler",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.ListJobs",
+              "id": 6237363465386631,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "ListJobs",
+              "input_name": "google.cloud.scheduler.v1beta1.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.GetJob",
+              "id": 3462653364383561,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "GetJob",
+              "input_name": "google.cloud.scheduler.v1beta1.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.CreateJob",
+              "id": 3665393233633834,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "CreateJob",
+              "input_name": "google.cloud.scheduler.v1beta1.CreateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.UpdateJob",
+              "id": 3961356537646230,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "UpdateJob",
+              "input_name": "google.cloud.scheduler.v1beta1.UpdateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.DeleteJob",
+              "id": 6330346538346266,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "DeleteJob",
+              "input_name": "google.cloud.scheduler.v1beta1.DeleteJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.PauseJob",
+              "id": 3365393039373930,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "PauseJob",
+              "input_name": "google.cloud.scheduler.v1beta1.PauseJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.ResumeJob",
+              "id": 3431663766326266,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "ResumeJob",
+              "input_name": "google.cloud.scheduler.v1beta1.ResumeJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.scheduler.v1beta1.CloudScheduler.RunJob",
+              "id": 6163333366396231,
+              "service_model_id": 6464303036343731,
+              "rpc_name": "RunJob",
+              "input_name": "google.cloud.scheduler.v1beta1.RunJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

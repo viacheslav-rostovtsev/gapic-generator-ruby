@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-asset-v1p2beta1",
+  "id": 3437666634336130,
+  "name": "google-cloud-asset-v1p2beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.asset.v1p2beta1",
+      "id": 3862316234646266,
+      "name": "google.cloud.asset.v1p2beta1",
+      "gem_model_id": 3437666634336130,
+      "ruby_namespace": "::Google::Cloud::Asset::V1p2beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.asset.v1p2beta1.AssetService",
+          "id": 3462383462313735,
+          "package_model_id": 3862316234646266,
+          "name": "AssetService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.asset.v1p2beta1.AssetService.CreateFeed",
+              "id": 6337306637636631,
+              "service_model_id": 3462383462313735,
+              "rpc_name": "CreateFeed",
+              "input_name": "google.cloud.asset.v1p2beta1.CreateFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1p2beta1.AssetService.GetFeed",
+              "id": 6231653334653232,
+              "service_model_id": 3462383462313735,
+              "rpc_name": "GetFeed",
+              "input_name": "google.cloud.asset.v1p2beta1.GetFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1p2beta1.AssetService.ListFeeds",
+              "id": 3065646362313361,
+              "service_model_id": 3462383462313735,
+              "rpc_name": "ListFeeds",
+              "input_name": "google.cloud.asset.v1p2beta1.ListFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1p2beta1.AssetService.UpdateFeed",
+              "id": 3639313365393961,
+              "service_model_id": 3462383462313735,
+              "rpc_name": "UpdateFeed",
+              "input_name": "google.cloud.asset.v1p2beta1.UpdateFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.asset.v1p2beta1.AssetService.DeleteFeed",
+              "id": 6138323037316530,
+              "service_model_id": 3462383462313735,
+              "rpc_name": "DeleteFeed",
+              "input_name": "google.cloud.asset.v1p2beta1.DeleteFeedRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "design_name": "google-cloud-dataflow-v1beta3",
+  "id": 3438656234363532,
+  "name": "google-cloud-dataflow-v1beta3",
+  "packages": [
+    {
+      "design_name": "google.dataflow.v1beta3",
+      "id": 3136656164616536,
+      "name": "google.dataflow.v1beta3",
+      "gem_model_id": 3438656234363532,
+      "ruby_namespace": "::Google::Cloud::Dataflow::V1beta3",
+      "services": [
+        {
+          "design_name": "google.dataflow.v1beta3.Snapshots",
+          "id": 6663383835353931,
+          "package_model_id": 3136656164616536,
+          "name": "Snapshots",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.Snapshots.GetSnapshot",
+              "id": 3431653538326330,
+              "service_model_id": 6663383835353931,
+              "rpc_name": "GetSnapshot",
+              "input_name": "google.dataflow.v1beta3.GetSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Snapshots.DeleteSnapshot",
+              "id": 6135373066306633,
+              "service_model_id": 6663383835353931,
+              "rpc_name": "DeleteSnapshot",
+              "input_name": "google.dataflow.v1beta3.DeleteSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Snapshots.ListSnapshots",
+              "id": 6137323964346334,
+              "service_model_id": 6663383835353931,
+              "rpc_name": "ListSnapshots",
+              "input_name": "google.dataflow.v1beta3.ListSnapshotsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.dataflow.v1beta3.Jobs",
+          "id": 6532613338336337,
+          "package_model_id": 3136656164616536,
+          "name": "Jobs",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.CreateJob",
+              "id": 3466313235316232,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "CreateJob",
+              "input_name": "google.dataflow.v1beta3.CreateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.GetJob",
+              "id": 6538393165366264,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "GetJob",
+              "input_name": "google.dataflow.v1beta3.GetJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.UpdateJob",
+              "id": 3833373566373630,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "UpdateJob",
+              "input_name": "google.dataflow.v1beta3.UpdateJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.ListJobs",
+              "id": 3933383232373661,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "ListJobs",
+              "input_name": "google.dataflow.v1beta3.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.AggregatedListJobs",
+              "id": 3334623339613739,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "AggregatedListJobs",
+              "input_name": "google.dataflow.v1beta3.ListJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.CheckActiveJobs",
+              "id": 6163616438613738,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "CheckActiveJobs",
+              "input_name": "google.dataflow.v1beta3.CheckActiveJobsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Jobs.SnapshotJob",
+              "id": 3361366232356564,
+              "service_model_id": 6532613338336337,
+              "rpc_name": "SnapshotJob",
+              "input_name": "google.dataflow.v1beta3.SnapshotJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.dataflow.v1beta3.Messages",
+          "id": 3766613266333735,
+          "package_model_id": 3136656164616536,
+          "name": "Messages",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.Messages.ListJobMessages",
+              "id": 6262623637303239,
+              "service_model_id": 3766613266333735,
+              "rpc_name": "ListJobMessages",
+              "input_name": "google.dataflow.v1beta3.ListJobMessagesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.dataflow.v1beta3.Metrics",
+          "id": 3438313732366630,
+          "package_model_id": 3136656164616536,
+          "name": "Metrics",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.Metrics.GetJobMetrics",
+              "id": 3435376135373537,
+              "service_model_id": 3438313732366630,
+              "rpc_name": "GetJobMetrics",
+              "input_name": "google.dataflow.v1beta3.GetJobMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Metrics.GetJobExecutionDetails",
+              "id": 3064346236363938,
+              "service_model_id": 3438313732366630,
+              "rpc_name": "GetJobExecutionDetails",
+              "input_name": "google.dataflow.v1beta3.GetJobExecutionDetailsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.Metrics.GetStageExecutionDetails",
+              "id": 6133336632666161,
+              "service_model_id": 3438313732366630,
+              "rpc_name": "GetStageExecutionDetails",
+              "input_name": "google.dataflow.v1beta3.GetStageExecutionDetailsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.dataflow.v1beta3.TemplatesService",
+          "id": 6430363133376264,
+          "package_model_id": 3136656164616536,
+          "name": "TemplatesService",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.TemplatesService.CreateJobFromTemplate",
+              "id": 6236643035363334,
+              "service_model_id": 6430363133376264,
+              "rpc_name": "CreateJobFromTemplate",
+              "input_name": "google.dataflow.v1beta3.CreateJobFromTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.TemplatesService.LaunchTemplate",
+              "id": 6137343639303530,
+              "service_model_id": 6430363133376264,
+              "rpc_name": "LaunchTemplate",
+              "input_name": "google.dataflow.v1beta3.LaunchTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.dataflow.v1beta3.TemplatesService.GetTemplate",
+              "id": 6633656361316332,
+              "service_model_id": 6430363133376264,
+              "rpc_name": "GetTemplate",
+              "input_name": "google.dataflow.v1beta3.GetTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.dataflow.v1beta3.FlexTemplatesService",
+          "id": 3562353532633532,
+          "package_model_id": 3136656164616536,
+          "name": "FlexTemplatesService",
+          "rpcs": [
+            {
+              "design_name": "google.dataflow.v1beta3.FlexTemplatesService.LaunchFlexTemplate",
+              "id": 6636326561633630,
+              "service_model_id": 3562353532633532,
+              "rpc_name": "LaunchFlexTemplate",
+              "input_name": "google.dataflow.v1beta3.LaunchFlexTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

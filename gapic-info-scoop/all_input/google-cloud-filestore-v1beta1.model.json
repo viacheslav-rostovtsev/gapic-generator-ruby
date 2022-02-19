@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-filestore-v1beta1",
+  "id": 6361326365383161,
+  "name": "google-cloud-filestore-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.filestore.v1beta1",
+      "id": 6238323561353837,
+      "name": "google.cloud.filestore.v1beta1",
+      "gem_model_id": 6361326365383161,
+      "ruby_namespace": "::Google::Cloud::Filestore::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager",
+          "id": 6664356431353235,
+          "package_model_id": 6238323561353837,
+          "name": "CloudFilestoreManager",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.ListInstances",
+              "id": 6139366434326362,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.filestore.v1beta1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.GetInstance",
+              "id": 6265646563353632,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.filestore.v1beta1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.CreateInstance",
+              "id": 6538396135393339,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.filestore.v1beta1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.UpdateInstance",
+              "id": 6137643236313433,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.filestore.v1beta1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.RestoreInstance",
+              "id": 3963396165373939,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "RestoreInstance",
+              "input_name": "google.cloud.filestore.v1beta1.RestoreInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.DeleteInstance",
+              "id": 3662616633373933,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.filestore.v1beta1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.ListBackups",
+              "id": 6636643664356130,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "ListBackups",
+              "input_name": "google.cloud.filestore.v1beta1.ListBackupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.GetBackup",
+              "id": 3232323463386337,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "GetBackup",
+              "input_name": "google.cloud.filestore.v1beta1.GetBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.CreateBackup",
+              "id": 3862303736643330,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "CreateBackup",
+              "input_name": "google.cloud.filestore.v1beta1.CreateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.DeleteBackup",
+              "id": 6337383062646433,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "DeleteBackup",
+              "input_name": "google.cloud.filestore.v1beta1.DeleteBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.filestore.v1beta1.CloudFilestoreManager.UpdateBackup",
+              "id": 6462386233333530,
+              "service_model_id": 6664356431353235,
+              "rpc_name": "UpdateBackup",
+              "input_name": "google.cloud.filestore.v1beta1.UpdateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

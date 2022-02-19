@@ -1,0 +1,74 @@
+{
+  "design_name": "google-cloud-workflows-v1beta",
+  "id": 3134336232616565,
+  "name": "google-cloud-workflows-v1beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.workflows.v1beta",
+      "id": 3764306262346366,
+      "name": "google.cloud.workflows.v1beta",
+      "gem_model_id": 3134336232616565,
+      "ruby_namespace": "::Google::Cloud::Workflows::V1beta",
+      "services": [
+        {
+          "design_name": "google.cloud.workflows.v1beta.Workflows",
+          "id": 3965653639383935,
+          "package_model_id": 3764306262346366,
+          "name": "Workflows",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.workflows.v1beta.Workflows.ListWorkflows",
+              "id": 6336313334343335,
+              "service_model_id": 3965653639383935,
+              "rpc_name": "ListWorkflows",
+              "input_name": "google.cloud.workflows.v1beta.ListWorkflowsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.v1beta.Workflows.GetWorkflow",
+              "id": 3037356163366461,
+              "service_model_id": 3965653639383935,
+              "rpc_name": "GetWorkflow",
+              "input_name": "google.cloud.workflows.v1beta.GetWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.v1beta.Workflows.CreateWorkflow",
+              "id": 3032386666393366,
+              "service_model_id": 3965653639383935,
+              "rpc_name": "CreateWorkflow",
+              "input_name": "google.cloud.workflows.v1beta.CreateWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.v1beta.Workflows.DeleteWorkflow",
+              "id": 3265643763326561,
+              "service_model_id": 3965653639383935,
+              "rpc_name": "DeleteWorkflow",
+              "input_name": "google.cloud.workflows.v1beta.DeleteWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.workflows.v1beta.Workflows.UpdateWorkflow",
+              "id": 6462353936326337,
+              "service_model_id": 3965653639383935,
+              "rpc_name": "UpdateWorkflow",
+              "input_name": "google.cloud.workflows.v1beta.UpdateWorkflowRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

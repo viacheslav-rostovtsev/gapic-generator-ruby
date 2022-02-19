@@ -126,7 +126,12 @@ def gem_defaults
       protos: [
         "google/cloud/compute/v1/compute_small.proto"
       ]
-    }
+    },
+    model: {
+      protos: [
+        "model/generation.proto"
+      ]
+    },
   }
 end
 

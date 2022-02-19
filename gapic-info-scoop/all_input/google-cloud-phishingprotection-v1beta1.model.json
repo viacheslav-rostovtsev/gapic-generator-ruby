@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-phishing_protection-v1beta1",
+  "id": 3238336435626534,
+  "name": "google-cloud-phishing_protection-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.phishingprotection.v1beta1",
+      "id": 6338336336643535,
+      "name": "google.cloud.phishingprotection.v1beta1",
+      "gem_model_id": 3238336435626534,
+      "ruby_namespace": "::Google::Cloud::PhishingProtection::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.phishingprotection.v1beta1.PhishingProtectionService",
+          "id": 6434326332663338,
+          "package_model_id": 6338336336643535,
+          "name": "PhishingProtectionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.phishingprotection.v1beta1.PhishingProtectionService.ReportPhishing",
+              "id": 3031616137656335,
+              "service_model_id": 6434326332663338,
+              "rpc_name": "ReportPhishing",
+              "input_name": "google.cloud.phishingprotection.v1beta1.ReportPhishingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

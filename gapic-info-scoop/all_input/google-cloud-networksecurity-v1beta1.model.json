@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-network_security-v1beta1",
+  "id": 3137623363386432,
+  "name": "google-cloud-network_security-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.networksecurity.v1beta1",
+      "id": 6362663030353536,
+      "name": "google.cloud.networksecurity.v1beta1",
+      "gem_model_id": 3137623363386432,
+      "ruby_namespace": "::Google::Cloud::NetworkSecurity::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity",
+          "id": 6438663164383235,
+          "package_model_id": 6362663030353536,
+          "name": "NetworkSecurity",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.ListAuthorizationPolicies",
+              "id": 3631333931373564,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "ListAuthorizationPolicies",
+              "input_name": "google.cloud.networksecurity.v1beta1.ListAuthorizationPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.GetAuthorizationPolicy",
+              "id": 3963626339336561,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "GetAuthorizationPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.GetAuthorizationPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.CreateAuthorizationPolicy",
+              "id": 3736376637613039,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "CreateAuthorizationPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.CreateAuthorizationPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.UpdateAuthorizationPolicy",
+              "id": 3262383430373630,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "UpdateAuthorizationPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.UpdateAuthorizationPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.DeleteAuthorizationPolicy",
+              "id": 3163313834316161,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "DeleteAuthorizationPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.DeleteAuthorizationPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.ListServerTlsPolicies",
+              "id": 3766396334366238,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "ListServerTlsPolicies",
+              "input_name": "google.cloud.networksecurity.v1beta1.ListServerTlsPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.GetServerTlsPolicy",
+              "id": 3665353136323732,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "GetServerTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.GetServerTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.CreateServerTlsPolicy",
+              "id": 3233616437366235,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "CreateServerTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.CreateServerTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.UpdateServerTlsPolicy",
+              "id": 3937316335353564,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "UpdateServerTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.UpdateServerTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.DeleteServerTlsPolicy",
+              "id": 3535393463643439,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "DeleteServerTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.DeleteServerTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.ListClientTlsPolicies",
+              "id": 3735373231363064,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "ListClientTlsPolicies",
+              "input_name": "google.cloud.networksecurity.v1beta1.ListClientTlsPoliciesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.GetClientTlsPolicy",
+              "id": 6531613632303064,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "GetClientTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.GetClientTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.CreateClientTlsPolicy",
+              "id": 6434363066326562,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "CreateClientTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.CreateClientTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.UpdateClientTlsPolicy",
+              "id": 3233333136376264,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "UpdateClientTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.UpdateClientTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.networksecurity.v1beta1.NetworkSecurity.DeleteClientTlsPolicy",
+              "id": 6565366663313437,
+              "service_model_id": 6438663164383235,
+              "rpc_name": "DeleteClientTlsPolicy",
+              "input_name": "google.cloud.networksecurity.v1beta1.DeleteClientTlsPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

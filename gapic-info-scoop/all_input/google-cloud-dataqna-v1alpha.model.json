@@ -1,0 +1,92 @@
+{
+  "design_name": "google-cloud-dataqna-v1alpha",
+  "id": 3062346431356437,
+  "name": "google-cloud-dataqna-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.cloud.dataqna.v1alpha",
+      "id": 3961643163346362,
+      "name": "google.cloud.dataqna.v1alpha",
+      "gem_model_id": 3062346431356437,
+      "ruby_namespace": "::Google::Cloud::DataQnA::V1alpha",
+      "services": [
+        {
+          "design_name": "google.cloud.dataqna.v1alpha.AutoSuggestionService",
+          "id": 3966643030346134,
+          "package_model_id": 3961643163346362,
+          "name": "AutoSuggestionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.AutoSuggestionService.SuggestQueries",
+              "id": 6237636133373032,
+              "service_model_id": 3966643030346134,
+              "rpc_name": "SuggestQueries",
+              "input_name": "google.cloud.dataqna.v1alpha.SuggestQueriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.dataqna.v1alpha.QuestionService",
+          "id": 3433623636346264,
+          "package_model_id": 3961643163346362,
+          "name": "QuestionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.QuestionService.GetQuestion",
+              "id": 6663373861326239,
+              "service_model_id": 3433623636346264,
+              "rpc_name": "GetQuestion",
+              "input_name": "google.cloud.dataqna.v1alpha.GetQuestionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.QuestionService.CreateQuestion",
+              "id": 6665373466353939,
+              "service_model_id": 3433623636346264,
+              "rpc_name": "CreateQuestion",
+              "input_name": "google.cloud.dataqna.v1alpha.CreateQuestionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.QuestionService.ExecuteQuestion",
+              "id": 3137376130306365,
+              "service_model_id": 3433623636346264,
+              "rpc_name": "ExecuteQuestion",
+              "input_name": "google.cloud.dataqna.v1alpha.ExecuteQuestionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.QuestionService.GetUserFeedback",
+              "id": 3234623661323435,
+              "service_model_id": 3433623636346264,
+              "rpc_name": "GetUserFeedback",
+              "input_name": "google.cloud.dataqna.v1alpha.GetUserFeedbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.dataqna.v1alpha.QuestionService.UpdateUserFeedback",
+              "id": 3737393239376636,
+              "service_model_id": 3433623636346264,
+              "rpc_name": "UpdateUserFeedback",
+              "input_name": "google.cloud.dataqna.v1alpha.UpdateUserFeedbackRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-web_risk-v1",
+  "id": 3061386266653433,
+  "name": "google-cloud-web_risk-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.webrisk.v1",
+      "id": 3765623364613730,
+      "name": "google.cloud.webrisk.v1",
+      "gem_model_id": 3061386266653433,
+      "ruby_namespace": "::Google::Cloud::WebRisk::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.webrisk.v1.WebRiskService",
+          "id": 3131316566313865,
+          "package_model_id": 3765623364613730,
+          "name": "WebRiskService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.webrisk.v1.WebRiskService.ComputeThreatListDiff",
+              "id": 3737626661613233,
+              "service_model_id": 3131316566313865,
+              "rpc_name": "ComputeThreatListDiff",
+              "input_name": "google.cloud.webrisk.v1.ComputeThreatListDiffRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.webrisk.v1.WebRiskService.SearchUris",
+              "id": 3937396564646530,
+              "service_model_id": 3131316566313865,
+              "rpc_name": "SearchUris",
+              "input_name": "google.cloud.webrisk.v1.SearchUrisRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.webrisk.v1.WebRiskService.SearchHashes",
+              "id": 3233636365373937,
+              "service_model_id": 3131316566313865,
+              "rpc_name": "SearchHashes",
+              "input_name": "google.cloud.webrisk.v1.SearchHashesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.webrisk.v1.WebRiskService.CreateSubmission",
+              "id": 3130316435376436,
+              "service_model_id": 3131316566313865,
+              "rpc_name": "CreateSubmission",
+              "input_name": "google.cloud.webrisk.v1.CreateSubmissionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

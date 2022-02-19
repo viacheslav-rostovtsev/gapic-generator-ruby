@@ -1,0 +1,64 @@
+{
+  "design_name": "google-cloud-ids-v1",
+  "id": 3064313466626638,
+  "name": "google-cloud-ids-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.ids.v1",
+      "id": 3338653063316334,
+      "name": "google.cloud.ids.v1",
+      "gem_model_id": 3064313466626638,
+      "ruby_namespace": "::Google::Cloud::IDS::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.ids.v1.IDS",
+          "id": 3066343134376536,
+          "package_model_id": 3338653063316334,
+          "name": "IDS",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.ids.v1.IDS.ListEndpoints",
+              "id": 3466373239363637,
+              "service_model_id": 3066343134376536,
+              "rpc_name": "ListEndpoints",
+              "input_name": "google.cloud.ids.v1.ListEndpointsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.ids.v1.IDS.GetEndpoint",
+              "id": 6464616536366637,
+              "service_model_id": 3066343134376536,
+              "rpc_name": "GetEndpoint",
+              "input_name": "google.cloud.ids.v1.GetEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.ids.v1.IDS.CreateEndpoint",
+              "id": 3035303266336538,
+              "service_model_id": 3066343134376536,
+              "rpc_name": "CreateEndpoint",
+              "input_name": "google.cloud.ids.v1.CreateEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.ids.v1.IDS.DeleteEndpoint",
+              "id": 6166363161313339,
+              "service_model_id": 3066343134376536,
+              "rpc_name": "DeleteEndpoint",
+              "input_name": "google.cloud.ids.v1.DeleteEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

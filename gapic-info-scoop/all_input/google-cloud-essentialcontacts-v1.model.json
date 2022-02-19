@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-essential_contacts-v1",
+  "id": 3931313635386236,
+  "name": "google-cloud-essential_contacts-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.essentialcontacts.v1",
+      "id": 3437636333373361,
+      "name": "google.cloud.essentialcontacts.v1",
+      "gem_model_id": 3931313635386236,
+      "ruby_namespace": "::Google::Cloud::EssentialContacts::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService",
+          "id": 3064636238346264,
+          "package_model_id": 3437636333373361,
+          "name": "EssentialContactsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.CreateContact",
+              "id": 6138626230663331,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "CreateContact",
+              "input_name": "google.cloud.essentialcontacts.v1.CreateContactRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.UpdateContact",
+              "id": 3132336262633837,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "UpdateContact",
+              "input_name": "google.cloud.essentialcontacts.v1.UpdateContactRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.ListContacts",
+              "id": 3465356435303333,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "ListContacts",
+              "input_name": "google.cloud.essentialcontacts.v1.ListContactsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.GetContact",
+              "id": 3666656236363733,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "GetContact",
+              "input_name": "google.cloud.essentialcontacts.v1.GetContactRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.DeleteContact",
+              "id": 6233373230613433,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "DeleteContact",
+              "input_name": "google.cloud.essentialcontacts.v1.DeleteContactRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.ComputeContacts",
+              "id": 3961643563313533,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "ComputeContacts",
+              "input_name": "google.cloud.essentialcontacts.v1.ComputeContactsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.essentialcontacts.v1.EssentialContactsService.SendTestMessage",
+              "id": 3165306430363863,
+              "service_model_id": 3064636238346264,
+              "rpc_name": "SendTestMessage",
+              "input_name": "google.cloud.essentialcontacts.v1.SendTestMessageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-location",
+  "id": 6235313238366239,
+  "name": "google-cloud-location",
+  "packages": [
+    {
+      "design_name": "google.cloud.location",
+      "id": 6336396262653632,
+      "name": "google.cloud.location",
+      "gem_model_id": 6235313238366239,
+      "ruby_namespace": "::Google::Cloud::Location",
+      "services": [
+        {
+          "design_name": "google.cloud.location.Locations",
+          "id": 3534303964356236,
+          "package_model_id": 6336396262653632,
+          "name": "Locations",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.location.Locations.ListLocations",
+              "id": 6339393861353138,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "ListLocations",
+              "input_name": "google.cloud.location.ListLocationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.location.Locations.GetLocation",
+              "id": 3330306566653730,
+              "service_model_id": 3534303964356236,
+              "rpc_name": "GetLocation",
+              "input_name": "google.cloud.location.GetLocationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

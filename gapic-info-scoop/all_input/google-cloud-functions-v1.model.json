@@ -1,0 +1,134 @@
+{
+  "design_name": "google-cloud-functions-v1",
+  "id": 6666393838326433,
+  "name": "google-cloud-functions-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.functions.v1",
+      "id": 3339646163386362,
+      "name": "google.cloud.functions.v1",
+      "gem_model_id": 6666393838326433,
+      "ruby_namespace": "::Google::Cloud::Functions::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.functions.v1.CloudFunctionsService",
+          "id": 3765613061313066,
+          "package_model_id": 3339646163386362,
+          "name": "CloudFunctionsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.ListFunctions",
+              "id": 6566393636356465,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "ListFunctions",
+              "input_name": "google.cloud.functions.v1.ListFunctionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.GetFunction",
+              "id": 3839613839316563,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "GetFunction",
+              "input_name": "google.cloud.functions.v1.GetFunctionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.CreateFunction",
+              "id": 3832663531636464,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "CreateFunction",
+              "input_name": "google.cloud.functions.v1.CreateFunctionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.UpdateFunction",
+              "id": 3239643932306133,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "UpdateFunction",
+              "input_name": "google.cloud.functions.v1.UpdateFunctionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.DeleteFunction",
+              "id": 6236383436373361,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "DeleteFunction",
+              "input_name": "google.cloud.functions.v1.DeleteFunctionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.CallFunction",
+              "id": 3739643962636165,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "CallFunction",
+              "input_name": "google.cloud.functions.v1.CallFunctionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.GenerateUploadUrl",
+              "id": 6139383735376561,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "GenerateUploadUrl",
+              "input_name": "google.cloud.functions.v1.GenerateUploadUrlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.GenerateDownloadUrl",
+              "id": 3436376537386361,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "GenerateDownloadUrl",
+              "input_name": "google.cloud.functions.v1.GenerateDownloadUrlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.SetIamPolicy",
+              "id": 3534653166333835,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.GetIamPolicy",
+              "id": 6361316463356165,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.functions.v1.CloudFunctionsService.TestIamPermissions",
+              "id": 6530663964366134,
+              "service_model_id": 3765613061313066,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

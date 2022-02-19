@@ -1,0 +1,452 @@
+{
+  "design_name": "google-cloud-bigtable-admin-v2",
+  "id": 6139666637623864,
+  "name": "google-cloud-bigtable-admin-v2",
+  "packages": [
+    {
+      "design_name": "google.bigtable.admin.v2",
+      "id": 3330363933383236,
+      "name": "google.bigtable.admin.v2",
+      "gem_model_id": 6139666637623864,
+      "ruby_namespace": "::Google::Cloud::Bigtable::Admin::V2",
+      "services": [
+        {
+          "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin",
+          "id": 6632613963613563,
+          "package_model_id": 3330363933383236,
+          "name": "BigtableInstanceAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.CreateInstance",
+              "id": 6132373665616634,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.bigtable.admin.v2.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.GetInstance",
+              "id": 3166663365613765,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "GetInstance",
+              "input_name": "google.bigtable.admin.v2.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.ListInstances",
+              "id": 3230313362363039,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "ListInstances",
+              "input_name": "google.bigtable.admin.v2.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.UpdateInstance",
+              "id": 6266356636383538,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.bigtable.admin.v2.Instance",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.PartialUpdateInstance",
+              "id": 3930653062363061,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "PartialUpdateInstance",
+              "input_name": "google.bigtable.admin.v2.PartialUpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.DeleteInstance",
+              "id": 6132366531396430,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.bigtable.admin.v2.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.CreateCluster",
+              "id": 3064323633646336,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "CreateCluster",
+              "input_name": "google.bigtable.admin.v2.CreateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.GetCluster",
+              "id": 6530373531646565,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "GetCluster",
+              "input_name": "google.bigtable.admin.v2.GetClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.ListClusters",
+              "id": 6431616435333738,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "ListClusters",
+              "input_name": "google.bigtable.admin.v2.ListClustersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.UpdateCluster",
+              "id": 3034323931313138,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "UpdateCluster",
+              "input_name": "google.bigtable.admin.v2.Cluster",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.PartialUpdateCluster",
+              "id": 3766383466333637,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "PartialUpdateCluster",
+              "input_name": "google.bigtable.admin.v2.PartialUpdateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.DeleteCluster",
+              "id": 6162316234323261,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "DeleteCluster",
+              "input_name": "google.bigtable.admin.v2.DeleteClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.CreateAppProfile",
+              "id": 6533393233356232,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "CreateAppProfile",
+              "input_name": "google.bigtable.admin.v2.CreateAppProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.GetAppProfile",
+              "id": 3336613035343565,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "GetAppProfile",
+              "input_name": "google.bigtable.admin.v2.GetAppProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.ListAppProfiles",
+              "id": 6436393834663966,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "ListAppProfiles",
+              "input_name": "google.bigtable.admin.v2.ListAppProfilesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.UpdateAppProfile",
+              "id": 3063393937646165,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "UpdateAppProfile",
+              "input_name": "google.bigtable.admin.v2.UpdateAppProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.DeleteAppProfile",
+              "id": 6131323239333061,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "DeleteAppProfile",
+              "input_name": "google.bigtable.admin.v2.DeleteAppProfileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.GetIamPolicy",
+              "id": 3237616238633330,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.SetIamPolicy",
+              "id": 3965626161363236,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableInstanceAdmin.TestIamPermissions",
+              "id": 3133636161366361,
+              "service_model_id": 6632613963613563,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.bigtable.admin.v2.BigtableTableAdmin",
+          "id": 6338663337376630,
+          "package_model_id": 3330363933383236,
+          "name": "BigtableTableAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.CreateTable",
+              "id": 3134326532623639,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "CreateTable",
+              "input_name": "google.bigtable.admin.v2.CreateTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.CreateTableFromSnapshot",
+              "id": 6530663764383339,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "CreateTableFromSnapshot",
+              "input_name": "google.bigtable.admin.v2.CreateTableFromSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.ListTables",
+              "id": 6238313261616434,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "ListTables",
+              "input_name": "google.bigtable.admin.v2.ListTablesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.GetTable",
+              "id": 3938323965636664,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "GetTable",
+              "input_name": "google.bigtable.admin.v2.GetTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.DeleteTable",
+              "id": 6531353833633238,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "DeleteTable",
+              "input_name": "google.bigtable.admin.v2.DeleteTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.ModifyColumnFamilies",
+              "id": 3239336661386534,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "ModifyColumnFamilies",
+              "input_name": "google.bigtable.admin.v2.ModifyColumnFamiliesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.DropRowRange",
+              "id": 6531303039316136,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "DropRowRange",
+              "input_name": "google.bigtable.admin.v2.DropRowRangeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.GenerateConsistencyToken",
+              "id": 3436363835346232,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "GenerateConsistencyToken",
+              "input_name": "google.bigtable.admin.v2.GenerateConsistencyTokenRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.CheckConsistency",
+              "id": 6231383137316334,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "CheckConsistency",
+              "input_name": "google.bigtable.admin.v2.CheckConsistencyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.SnapshotTable",
+              "id": 6333393764343237,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "SnapshotTable",
+              "input_name": "google.bigtable.admin.v2.SnapshotTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.GetSnapshot",
+              "id": 3132636530383364,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "GetSnapshot",
+              "input_name": "google.bigtable.admin.v2.GetSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.ListSnapshots",
+              "id": 3231626461653865,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "ListSnapshots",
+              "input_name": "google.bigtable.admin.v2.ListSnapshotsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.DeleteSnapshot",
+              "id": 3638323131653831,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "DeleteSnapshot",
+              "input_name": "google.bigtable.admin.v2.DeleteSnapshotRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.CreateBackup",
+              "id": 6432396535613661,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "CreateBackup",
+              "input_name": "google.bigtable.admin.v2.CreateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.GetBackup",
+              "id": 3833613737343265,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "GetBackup",
+              "input_name": "google.bigtable.admin.v2.GetBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.UpdateBackup",
+              "id": 3132343365373765,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "UpdateBackup",
+              "input_name": "google.bigtable.admin.v2.UpdateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.DeleteBackup",
+              "id": 3235356662386537,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "DeleteBackup",
+              "input_name": "google.bigtable.admin.v2.DeleteBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.ListBackups",
+              "id": 3430633266643265,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "ListBackups",
+              "input_name": "google.bigtable.admin.v2.ListBackupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.RestoreTable",
+              "id": 6336666138343561,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "RestoreTable",
+              "input_name": "google.bigtable.admin.v2.RestoreTableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.GetIamPolicy",
+              "id": 3338336265303036,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.SetIamPolicy",
+              "id": 3961313664386137,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.bigtable.admin.v2.BigtableTableAdmin.TestIamPermissions",
+              "id": 6131633134663533,
+              "service_model_id": 6338663337376630,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

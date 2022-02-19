@@ -1,0 +1,144 @@
+{
+  "design_name": "google-iam-v1beta",
+  "id": 3933383530386664,
+  "name": "google-iam-v1beta",
+  "packages": [
+    {
+      "design_name": "google.iam.v1beta",
+      "id": 3564326564343861,
+      "name": "google.iam.v1beta",
+      "gem_model_id": 3933383530386664,
+      "ruby_namespace": "::Google::Iam::V1beta",
+      "services": [
+        {
+          "design_name": "google.iam.v1beta.WorkloadIdentityPools",
+          "id": 3933653633336532,
+          "package_model_id": 3564326564343861,
+          "name": "WorkloadIdentityPools",
+          "rpcs": [
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.ListWorkloadIdentityPools",
+              "id": 6532626566613137,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "ListWorkloadIdentityPools",
+              "input_name": "google.iam.v1beta.ListWorkloadIdentityPoolsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.GetWorkloadIdentityPool",
+              "id": 3463326233343832,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "GetWorkloadIdentityPool",
+              "input_name": "google.iam.v1beta.GetWorkloadIdentityPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+              "id": 6464376135396164,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "CreateWorkloadIdentityPool",
+              "input_name": "google.iam.v1beta.CreateWorkloadIdentityPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.UpdateWorkloadIdentityPool",
+              "id": 6130373638346332,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "UpdateWorkloadIdentityPool",
+              "input_name": "google.iam.v1beta.UpdateWorkloadIdentityPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.DeleteWorkloadIdentityPool",
+              "id": 3364356338346162,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "DeleteWorkloadIdentityPool",
+              "input_name": "google.iam.v1beta.DeleteWorkloadIdentityPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.UndeleteWorkloadIdentityPool",
+              "id": 3861386339646631,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "UndeleteWorkloadIdentityPool",
+              "input_name": "google.iam.v1beta.UndeleteWorkloadIdentityPoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.ListWorkloadIdentityPoolProviders",
+              "id": 3663636139616531,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "ListWorkloadIdentityPoolProviders",
+              "input_name": "google.iam.v1beta.ListWorkloadIdentityPoolProvidersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.GetWorkloadIdentityPoolProvider",
+              "id": 3263323163623538,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "GetWorkloadIdentityPoolProvider",
+              "input_name": "google.iam.v1beta.GetWorkloadIdentityPoolProviderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+              "id": 3037646235623735,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "CreateWorkloadIdentityPoolProvider",
+              "input_name": "google.iam.v1beta.CreateWorkloadIdentityPoolProviderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+              "id": 3437376333636631,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "UpdateWorkloadIdentityPoolProvider",
+              "input_name": "google.iam.v1beta.UpdateWorkloadIdentityPoolProviderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.DeleteWorkloadIdentityPoolProvider",
+              "id": 3233333461323336,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "DeleteWorkloadIdentityPoolProvider",
+              "input_name": "google.iam.v1beta.DeleteWorkloadIdentityPoolProviderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.iam.v1beta.WorkloadIdentityPools.UndeleteWorkloadIdentityPoolProvider",
+              "id": 6636313236376566,
+              "service_model_id": 3933653633336532,
+              "rpc_name": "UndeleteWorkloadIdentityPoolProvider",
+              "input_name": "google.iam.v1beta.UndeleteWorkloadIdentityPoolProviderRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

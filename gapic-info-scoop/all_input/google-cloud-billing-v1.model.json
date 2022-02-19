@@ -1,0 +1,152 @@
+{
+  "design_name": "google-cloud-billing-v1",
+  "id": 6438386333626235,
+  "name": "google-cloud-billing-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.billing.v1",
+      "id": 3239663739393562,
+      "name": "google.cloud.billing.v1",
+      "gem_model_id": 6438386333626235,
+      "ruby_namespace": "::Google::Cloud::Billing::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.billing.v1.CloudBilling",
+          "id": 6137336363376534,
+          "package_model_id": 3239663739393562,
+          "name": "CloudBilling",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.GetBillingAccount",
+              "id": 6431646333303034,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "GetBillingAccount",
+              "input_name": "google.cloud.billing.v1.GetBillingAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.ListBillingAccounts",
+              "id": 3335376137356230,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "ListBillingAccounts",
+              "input_name": "google.cloud.billing.v1.ListBillingAccountsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.UpdateBillingAccount",
+              "id": 3030646331303330,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "UpdateBillingAccount",
+              "input_name": "google.cloud.billing.v1.UpdateBillingAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.CreateBillingAccount",
+              "id": 3536383039313961,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "CreateBillingAccount",
+              "input_name": "google.cloud.billing.v1.CreateBillingAccountRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.ListProjectBillingInfo",
+              "id": 6536653163333566,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "ListProjectBillingInfo",
+              "input_name": "google.cloud.billing.v1.ListProjectBillingInfoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.GetProjectBillingInfo",
+              "id": 6261333732663466,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "GetProjectBillingInfo",
+              "input_name": "google.cloud.billing.v1.GetProjectBillingInfoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.UpdateProjectBillingInfo",
+              "id": 6439363537306330,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "UpdateProjectBillingInfo",
+              "input_name": "google.cloud.billing.v1.UpdateProjectBillingInfoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.GetIamPolicy",
+              "id": 3135373265373436,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.SetIamPolicy",
+              "id": 6135393861373463,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudBilling.TestIamPermissions",
+              "id": 6130383134386234,
+              "service_model_id": 6137336363376534,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.billing.v1.CloudCatalog",
+          "id": 3531326462373561,
+          "package_model_id": 3239663739393562,
+          "name": "CloudCatalog",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.billing.v1.CloudCatalog.ListServices",
+              "id": 3237613263393536,
+              "service_model_id": 3531326462373561,
+              "rpc_name": "ListServices",
+              "input_name": "google.cloud.billing.v1.ListServicesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.billing.v1.CloudCatalog.ListSkus",
+              "id": 3837633434613939,
+              "service_model_id": 3531326462373561,
+              "rpc_name": "ListSkus",
+              "input_name": "google.cloud.billing.v1.ListSkusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

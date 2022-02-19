@@ -1,0 +1,354 @@
+{
+  "design_name": "google-cloud-container-v1beta1",
+  "id": 3165313065313130,
+  "name": "google-cloud-container-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.container.v1beta1",
+      "id": 6166623633396133,
+      "name": "google.container.v1beta1",
+      "gem_model_id": 3165313065313130,
+      "ruby_namespace": "::Google::Cloud::Container::V1beta1",
+      "services": [
+        {
+          "design_name": "google.container.v1beta1.ClusterManager",
+          "id": 6635613530396362,
+          "package_model_id": 6166623633396133,
+          "name": "ClusterManager",
+          "rpcs": [
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.ListClusters",
+              "id": 3537326266346230,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "ListClusters",
+              "input_name": "google.container.v1beta1.ListClustersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.GetCluster",
+              "id": 6436363239383466,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "GetCluster",
+              "input_name": "google.container.v1beta1.GetClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.CreateCluster",
+              "id": 3136306161323163,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "CreateCluster",
+              "input_name": "google.container.v1beta1.CreateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.UpdateCluster",
+              "id": 3538353832336262,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "UpdateCluster",
+              "input_name": "google.container.v1beta1.UpdateClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.UpdateNodePool",
+              "id": 3131616665333062,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "UpdateNodePool",
+              "input_name": "google.container.v1beta1.UpdateNodePoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetNodePoolAutoscaling",
+              "id": 3932343235666261,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetNodePoolAutoscaling",
+              "input_name": "google.container.v1beta1.SetNodePoolAutoscalingRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetLoggingService",
+              "id": 3631303865613661,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetLoggingService",
+              "input_name": "google.container.v1beta1.SetLoggingServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetMonitoringService",
+              "id": 3531383539343437,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetMonitoringService",
+              "input_name": "google.container.v1beta1.SetMonitoringServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetAddonsConfig",
+              "id": 3261646162666238,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetAddonsConfig",
+              "input_name": "google.container.v1beta1.SetAddonsConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetLocations",
+              "id": 3735656635393035,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetLocations",
+              "input_name": "google.container.v1beta1.SetLocationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.UpdateMaster",
+              "id": 6237353761353766,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "UpdateMaster",
+              "input_name": "google.container.v1beta1.UpdateMasterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetMasterAuth",
+              "id": 3632663732613633,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetMasterAuth",
+              "input_name": "google.container.v1beta1.SetMasterAuthRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.DeleteCluster",
+              "id": 3666316464616662,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "DeleteCluster",
+              "input_name": "google.container.v1beta1.DeleteClusterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.ListOperations",
+              "id": 3438366566646133,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "ListOperations",
+              "input_name": "google.container.v1beta1.ListOperationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.GetOperation",
+              "id": 3962636461313433,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "GetOperation",
+              "input_name": "google.container.v1beta1.GetOperationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.CancelOperation",
+              "id": 3731613139363634,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "CancelOperation",
+              "input_name": "google.container.v1beta1.CancelOperationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.GetServerConfig",
+              "id": 6664303631343436,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "GetServerConfig",
+              "input_name": "google.container.v1beta1.GetServerConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.ListNodePools",
+              "id": 6639313363613430,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "ListNodePools",
+              "input_name": "google.container.v1beta1.ListNodePoolsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.GetJSONWebKeys",
+              "id": 6331623733656532,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "GetJSONWebKeys",
+              "input_name": "google.container.v1beta1.GetJSONWebKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.GetNodePool",
+              "id": 3034333836633966,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "GetNodePool",
+              "input_name": "google.container.v1beta1.GetNodePoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.CreateNodePool",
+              "id": 3533633731383435,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "CreateNodePool",
+              "input_name": "google.container.v1beta1.CreateNodePoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.DeleteNodePool",
+              "id": 6436363437396664,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "DeleteNodePool",
+              "input_name": "google.container.v1beta1.DeleteNodePoolRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.RollbackNodePoolUpgrade",
+              "id": 3531663838326164,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "RollbackNodePoolUpgrade",
+              "input_name": "google.container.v1beta1.RollbackNodePoolUpgradeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetNodePoolManagement",
+              "id": 6636616561383839,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetNodePoolManagement",
+              "input_name": "google.container.v1beta1.SetNodePoolManagementRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetLabels",
+              "id": 3937353436663837,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetLabels",
+              "input_name": "google.container.v1beta1.SetLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetLegacyAbac",
+              "id": 3334396633643962,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetLegacyAbac",
+              "input_name": "google.container.v1beta1.SetLegacyAbacRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.StartIPRotation",
+              "id": 6661636135643137,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "StartIPRotation",
+              "input_name": "google.container.v1beta1.StartIPRotationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.CompleteIPRotation",
+              "id": 3136306566643732,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "CompleteIPRotation",
+              "input_name": "google.container.v1beta1.CompleteIPRotationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetNodePoolSize",
+              "id": 3562303565616435,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetNodePoolSize",
+              "input_name": "google.container.v1beta1.SetNodePoolSizeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetNetworkPolicy",
+              "id": 6335363963383336,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetNetworkPolicy",
+              "input_name": "google.container.v1beta1.SetNetworkPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.SetMaintenancePolicy",
+              "id": 6636613838633931,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "SetMaintenancePolicy",
+              "input_name": "google.container.v1beta1.SetMaintenancePolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.ListUsableSubnetworks",
+              "id": 3362336537646332,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "ListUsableSubnetworks",
+              "input_name": "google.container.v1beta1.ListUsableSubnetworksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.container.v1beta1.ClusterManager.ListLocations",
+              "id": 3137376439343033,
+              "service_model_id": 6635613530396362,
+              "rpc_name": "ListLocations",
+              "input_name": "google.container.v1beta1.ListLocationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

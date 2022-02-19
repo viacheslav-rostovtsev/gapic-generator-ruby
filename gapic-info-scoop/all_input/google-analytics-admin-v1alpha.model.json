@@ -1,0 +1,864 @@
+{
+  "design_name": "google-analytics-admin-v1alpha",
+  "id": 3965323833356532,
+  "name": "google-analytics-admin-v1alpha",
+  "packages": [
+    {
+      "design_name": "google.analytics.admin.v1alpha",
+      "id": 6233646333386539,
+      "name": "google.analytics.admin.v1alpha",
+      "gem_model_id": 3965323833356532,
+      "ruby_namespace": "::Google::Analytics::Admin::V1alpha",
+      "services": [
+        {
+          "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService",
+          "id": 3135636433393163,
+          "package_model_id": 6233646333386539,
+          "name": "AnalyticsAdminService",
+          "rpcs": [
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetAccount",
+              "id": 3537313162623639,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetAccount",
+              "input_name": "google.analytics.admin.v1alpha.GetAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListAccounts",
+              "id": 3739623034306230,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListAccounts",
+              "input_name": "google.analytics.admin.v1alpha.ListAccountsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteAccount",
+              "id": 3338626231373062,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteAccount",
+              "input_name": "google.analytics.admin.v1alpha.DeleteAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateAccount",
+              "id": 3335383564336339,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateAccount",
+              "input_name": "google.analytics.admin.v1alpha.UpdateAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ProvisionAccountTicket",
+              "id": 3032643236666535,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ProvisionAccountTicket",
+              "input_name": "google.analytics.admin.v1alpha.ProvisionAccountTicketRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListAccountSummaries",
+              "id": 3362396161623439,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListAccountSummaries",
+              "input_name": "google.analytics.admin.v1alpha.ListAccountSummariesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetProperty",
+              "id": 3063643736633534,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetProperty",
+              "input_name": "google.analytics.admin.v1alpha.GetPropertyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListProperties",
+              "id": 3562383663633732,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListProperties",
+              "input_name": "google.analytics.admin.v1alpha.ListPropertiesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateProperty",
+              "id": 6163633737363631,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateProperty",
+              "input_name": "google.analytics.admin.v1alpha.CreatePropertyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteProperty",
+              "id": 3033393764336131,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteProperty",
+              "input_name": "google.analytics.admin.v1alpha.DeletePropertyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateProperty",
+              "id": 6365353063336633,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateProperty",
+              "input_name": "google.analytics.admin.v1alpha.UpdatePropertyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetUserLink",
+              "id": 6238393633353936,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetUserLink",
+              "input_name": "google.analytics.admin.v1alpha.GetUserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.BatchGetUserLinks",
+              "id": 6237386335663265,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "BatchGetUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.BatchGetUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListUserLinks",
+              "id": 3830633636633138,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.ListUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.AuditUserLinks",
+              "id": 3034646232656633,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "AuditUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.AuditUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateUserLink",
+              "id": 3336303637313135,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateUserLink",
+              "input_name": "google.analytics.admin.v1alpha.CreateUserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.BatchCreateUserLinks",
+              "id": 3136356534346630,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "BatchCreateUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.BatchCreateUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateUserLink",
+              "id": 3537303666653764,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateUserLink",
+              "input_name": "google.analytics.admin.v1alpha.UpdateUserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.BatchUpdateUserLinks",
+              "id": 3663653339626466,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "BatchUpdateUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.BatchUpdateUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteUserLink",
+              "id": 3665333761646161,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteUserLink",
+              "input_name": "google.analytics.admin.v1alpha.DeleteUserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.BatchDeleteUserLinks",
+              "id": 3336646362313839,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "BatchDeleteUserLinks",
+              "input_name": "google.analytics.admin.v1alpha.BatchDeleteUserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetWebDataStream",
+              "id": 3338363033383963,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetWebDataStream",
+              "input_name": "google.analytics.admin.v1alpha.GetWebDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteWebDataStream",
+              "id": 3639636563356466,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteWebDataStream",
+              "input_name": "google.analytics.admin.v1alpha.DeleteWebDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateWebDataStream",
+              "id": 3634396433393439,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateWebDataStream",
+              "input_name": "google.analytics.admin.v1alpha.UpdateWebDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateWebDataStream",
+              "id": 3065343738373439,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateWebDataStream",
+              "input_name": "google.analytics.admin.v1alpha.CreateWebDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListWebDataStreams",
+              "id": 6466396631326666,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListWebDataStreams",
+              "input_name": "google.analytics.admin.v1alpha.ListWebDataStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetIosAppDataStream",
+              "id": 3331363737666563,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetIosAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.GetIosAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteIosAppDataStream",
+              "id": 6138633531383633,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteIosAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.DeleteIosAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateIosAppDataStream",
+              "id": 6265356637323766,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateIosAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.UpdateIosAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListIosAppDataStreams",
+              "id": 6532616539343238,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListIosAppDataStreams",
+              "input_name": "google.analytics.admin.v1alpha.ListIosAppDataStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetAndroidAppDataStream",
+              "id": 6361343332373534,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetAndroidAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.GetAndroidAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteAndroidAppDataStream",
+              "id": 6438313533613565,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteAndroidAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.DeleteAndroidAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateAndroidAppDataStream",
+              "id": 6461383964623831,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateAndroidAppDataStream",
+              "input_name": "google.analytics.admin.v1alpha.UpdateAndroidAppDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListAndroidAppDataStreams",
+              "id": 6465623765323136,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListAndroidAppDataStreams",
+              "input_name": "google.analytics.admin.v1alpha.ListAndroidAppDataStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateFirebaseLink",
+              "id": 6431613731666437,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateFirebaseLink",
+              "input_name": "google.analytics.admin.v1alpha.CreateFirebaseLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteFirebaseLink",
+              "id": 3838393638313530,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteFirebaseLink",
+              "input_name": "google.analytics.admin.v1alpha.DeleteFirebaseLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListFirebaseLinks",
+              "id": 3634323033356539,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListFirebaseLinks",
+              "input_name": "google.analytics.admin.v1alpha.ListFirebaseLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetGlobalSiteTag",
+              "id": 3837393134303166,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetGlobalSiteTag",
+              "input_name": "google.analytics.admin.v1alpha.GetGlobalSiteTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateGoogleAdsLink",
+              "id": 3761373763326238,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateGoogleAdsLink",
+              "input_name": "google.analytics.admin.v1alpha.CreateGoogleAdsLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateGoogleAdsLink",
+              "id": 6531333537646539,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateGoogleAdsLink",
+              "input_name": "google.analytics.admin.v1alpha.UpdateGoogleAdsLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteGoogleAdsLink",
+              "id": 3062643537353535,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteGoogleAdsLink",
+              "input_name": "google.analytics.admin.v1alpha.DeleteGoogleAdsLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListGoogleAdsLinks",
+              "id": 3838303630373438,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListGoogleAdsLinks",
+              "input_name": "google.analytics.admin.v1alpha.ListGoogleAdsLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetDataSharingSettings",
+              "id": 6563653362626662,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetDataSharingSettings",
+              "input_name": "google.analytics.admin.v1alpha.GetDataSharingSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetMeasurementProtocolSecret",
+              "id": 6133313735383235,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetMeasurementProtocolSecret",
+              "input_name": "google.analytics.admin.v1alpha.GetMeasurementProtocolSecretRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListMeasurementProtocolSecrets",
+              "id": 6233653134393561,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListMeasurementProtocolSecrets",
+              "input_name": "google.analytics.admin.v1alpha.ListMeasurementProtocolSecretsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateMeasurementProtocolSecret",
+              "id": 3234313330343566,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateMeasurementProtocolSecret",
+              "input_name": "google.analytics.admin.v1alpha.CreateMeasurementProtocolSecretRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteMeasurementProtocolSecret",
+              "id": 3532383733376435,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteMeasurementProtocolSecret",
+              "input_name": "google.analytics.admin.v1alpha.DeleteMeasurementProtocolSecretRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateMeasurementProtocolSecret",
+              "id": 3064323163313638,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateMeasurementProtocolSecret",
+              "input_name": "google.analytics.admin.v1alpha.UpdateMeasurementProtocolSecretRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.AcknowledgeUserDataCollection",
+              "id": 3638613539376439,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "AcknowledgeUserDataCollection",
+              "input_name": "google.analytics.admin.v1alpha.AcknowledgeUserDataCollectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.SearchChangeHistoryEvents",
+              "id": 6261366630653432,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "SearchChangeHistoryEvents",
+              "input_name": "google.analytics.admin.v1alpha.SearchChangeHistoryEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetGoogleSignalsSettings",
+              "id": 3538613565343637,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetGoogleSignalsSettings",
+              "input_name": "google.analytics.admin.v1alpha.GetGoogleSignalsSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateGoogleSignalsSettings",
+              "id": 3366386238383137,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateGoogleSignalsSettings",
+              "input_name": "google.analytics.admin.v1alpha.UpdateGoogleSignalsSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateConversionEvent",
+              "id": 3239366261343539,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateConversionEvent",
+              "input_name": "google.analytics.admin.v1alpha.CreateConversionEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetConversionEvent",
+              "id": 3534653033656339,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetConversionEvent",
+              "input_name": "google.analytics.admin.v1alpha.GetConversionEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteConversionEvent",
+              "id": 6462323762623162,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteConversionEvent",
+              "input_name": "google.analytics.admin.v1alpha.DeleteConversionEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListConversionEvents",
+              "id": 3836616266326637,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListConversionEvents",
+              "input_name": "google.analytics.admin.v1alpha.ListConversionEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetDisplayVideo360AdvertiserLink",
+              "id": 3663303139333263,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetDisplayVideo360AdvertiserLink",
+              "input_name": "google.analytics.admin.v1alpha.GetDisplayVideo360AdvertiserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListDisplayVideo360AdvertiserLinks",
+              "id": 3332663564373762,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListDisplayVideo360AdvertiserLinks",
+              "input_name": "google.analytics.admin.v1alpha.ListDisplayVideo360AdvertiserLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateDisplayVideo360AdvertiserLink",
+              "id": 3437333034336533,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateDisplayVideo360AdvertiserLink",
+              "input_name": "google.analytics.admin.v1alpha.CreateDisplayVideo360AdvertiserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteDisplayVideo360AdvertiserLink",
+              "id": 6435653666343766,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteDisplayVideo360AdvertiserLink",
+              "input_name": "google.analytics.admin.v1alpha.DeleteDisplayVideo360AdvertiserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateDisplayVideo360AdvertiserLink",
+              "id": 3263646439343462,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateDisplayVideo360AdvertiserLink",
+              "input_name": "google.analytics.admin.v1alpha.UpdateDisplayVideo360AdvertiserLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetDisplayVideo360AdvertiserLinkProposal",
+              "id": 6439616565633566,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetDisplayVideo360AdvertiserLinkProposal",
+              "input_name": "google.analytics.admin.v1alpha.GetDisplayVideo360AdvertiserLinkProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListDisplayVideo360AdvertiserLinkProposals",
+              "id": 3834353463643131,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListDisplayVideo360AdvertiserLinkProposals",
+              "input_name": "google.analytics.admin.v1alpha.ListDisplayVideo360AdvertiserLinkProposalsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateDisplayVideo360AdvertiserLinkProposal",
+              "id": 6437363837333039,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateDisplayVideo360AdvertiserLinkProposal",
+              "input_name": "google.analytics.admin.v1alpha.CreateDisplayVideo360AdvertiserLinkProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteDisplayVideo360AdvertiserLinkProposal",
+              "id": 3533323932393963,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteDisplayVideo360AdvertiserLinkProposal",
+              "input_name": "google.analytics.admin.v1alpha.DeleteDisplayVideo360AdvertiserLinkProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ApproveDisplayVideo360AdvertiserLinkProposal",
+              "id": 3738316433656239,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ApproveDisplayVideo360AdvertiserLinkProposal",
+              "input_name": "google.analytics.admin.v1alpha.ApproveDisplayVideo360AdvertiserLinkProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CancelDisplayVideo360AdvertiserLinkProposal",
+              "id": 6530663630653834,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CancelDisplayVideo360AdvertiserLinkProposal",
+              "input_name": "google.analytics.admin.v1alpha.CancelDisplayVideo360AdvertiserLinkProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateCustomDimension",
+              "id": 3135396434373830,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateCustomDimension",
+              "input_name": "google.analytics.admin.v1alpha.CreateCustomDimensionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateCustomDimension",
+              "id": 6239393262653231,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateCustomDimension",
+              "input_name": "google.analytics.admin.v1alpha.UpdateCustomDimensionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListCustomDimensions",
+              "id": 3835646263393337,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListCustomDimensions",
+              "input_name": "google.analytics.admin.v1alpha.ListCustomDimensionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ArchiveCustomDimension",
+              "id": 6636346138646136,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ArchiveCustomDimension",
+              "input_name": "google.analytics.admin.v1alpha.ArchiveCustomDimensionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetCustomDimension",
+              "id": 3866656231383361,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetCustomDimension",
+              "input_name": "google.analytics.admin.v1alpha.GetCustomDimensionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateCustomMetric",
+              "id": 3133623866656330,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateCustomMetric",
+              "input_name": "google.analytics.admin.v1alpha.CreateCustomMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateCustomMetric",
+              "id": 6235626135333034,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateCustomMetric",
+              "input_name": "google.analytics.admin.v1alpha.UpdateCustomMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListCustomMetrics",
+              "id": 6139366263633839,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListCustomMetrics",
+              "input_name": "google.analytics.admin.v1alpha.ListCustomMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ArchiveCustomMetric",
+              "id": 3263623962346164,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ArchiveCustomMetric",
+              "input_name": "google.analytics.admin.v1alpha.ArchiveCustomMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetCustomMetric",
+              "id": 3831343930353063,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetCustomMetric",
+              "input_name": "google.analytics.admin.v1alpha.GetCustomMetricRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetDataRetentionSettings",
+              "id": 6266653766346664,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetDataRetentionSettings",
+              "input_name": "google.analytics.admin.v1alpha.GetDataRetentionSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateDataRetentionSettings",
+              "id": 6636323533323562,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateDataRetentionSettings",
+              "input_name": "google.analytics.admin.v1alpha.UpdateDataRetentionSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.CreateDataStream",
+              "id": 6631363030623035,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "CreateDataStream",
+              "input_name": "google.analytics.admin.v1alpha.CreateDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.DeleteDataStream",
+              "id": 6238613637636535,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "DeleteDataStream",
+              "input_name": "google.analytics.admin.v1alpha.DeleteDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.UpdateDataStream",
+              "id": 3436383161313766,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "UpdateDataStream",
+              "input_name": "google.analytics.admin.v1alpha.UpdateDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.ListDataStreams",
+              "id": 3336353861393336,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "ListDataStreams",
+              "input_name": "google.analytics.admin.v1alpha.ListDataStreamsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.analytics.admin.v1alpha.AnalyticsAdminService.GetDataStream",
+              "id": 3938313633626462,
+              "service_model_id": 3135636433393163,
+              "rpc_name": "GetDataStream",
+              "input_name": "google.analytics.admin.v1alpha.GetDataStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2214 @@
+{
+  "design_name": "google-ads-googleads",
+  "id": 3162326136663334,
+  "name": "google-ads-googleads",
+  "packages": [
+    {
+      "design_name": "google.ads.googleads.v10.services",
+      "id": 3834336536653937,
+      "name": "google.ads.googleads.v10.services",
+      "gem_model_id": 3162326136663334,
+      "ruby_namespace": "::Google::Ads::GoogleAds::V10::Services",
+      "services": [
+        {
+          "design_name": "google.ads.googleads.v10.services.AccountBudgetProposalService",
+          "id": 3664393064386231,
+          "package_model_id": 3834336536653937,
+          "name": "AccountBudgetProposalService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AccountBudgetProposalService.MutateAccountBudgetProposal",
+              "id": 3837613037303932,
+              "service_model_id": 3664393064386231,
+              "rpc_name": "MutateAccountBudgetProposal",
+              "input_name": "google.ads.googleads.v10.services.MutateAccountBudgetProposalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AccountLinkService",
+          "id": 3436616166313431,
+          "package_model_id": 3834336536653937,
+          "name": "AccountLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AccountLinkService.CreateAccountLink",
+              "id": 3536313339643238,
+              "service_model_id": 3436616166313431,
+              "rpc_name": "CreateAccountLink",
+              "input_name": "google.ads.googleads.v10.services.CreateAccountLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.AccountLinkService.MutateAccountLink",
+              "id": 3963663165323363,
+              "service_model_id": 3436616166313431,
+              "rpc_name": "MutateAccountLink",
+              "input_name": "google.ads.googleads.v10.services.MutateAccountLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupAdLabelService",
+          "id": 3931633931613839,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupAdLabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupAdLabelService.MutateAdGroupAdLabels",
+              "id": 6464333235306363,
+              "service_model_id": 3931633931613839,
+              "rpc_name": "MutateAdGroupAdLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupAdLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupAdService",
+          "id": 6637393661633336,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupAdService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupAdService.MutateAdGroupAds",
+              "id": 6135323632393966,
+              "service_model_id": 6637393661633336,
+              "rpc_name": "MutateAdGroupAds",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupAdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupAssetService",
+          "id": 3563666262313237,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupAssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupAssetService.MutateAdGroupAssets",
+              "id": 6363623339653335,
+              "service_model_id": 3563666262313237,
+              "rpc_name": "MutateAdGroupAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupBidModifierService",
+          "id": 6336636362616439,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupBidModifierService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupBidModifierService.MutateAdGroupBidModifiers",
+              "id": 6438623662643636,
+              "service_model_id": 6336636362616439,
+              "rpc_name": "MutateAdGroupBidModifiers",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupBidModifiersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupCriterionCustomizerService",
+          "id": 3666356236643635,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupCriterionCustomizerService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupCriterionCustomizerService.MutateAdGroupCriterionCustomizers",
+              "id": 3637643861356365,
+              "service_model_id": 3666356236643635,
+              "rpc_name": "MutateAdGroupCriterionCustomizers",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupCriterionCustomizersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupCriterionLabelService",
+          "id": 3732346262383561,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupCriterionLabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupCriterionLabelService.MutateAdGroupCriterionLabels",
+              "id": 3263393636373532,
+              "service_model_id": 3732346262383561,
+              "rpc_name": "MutateAdGroupCriterionLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupCriterionLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupCriterionService",
+          "id": 6139373034333331,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupCriterionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupCriterionService.MutateAdGroupCriteria",
+              "id": 3238646531633362,
+              "service_model_id": 6139373034333331,
+              "rpc_name": "MutateAdGroupCriteria",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupCriteriaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupCustomizerService",
+          "id": 6466303331393763,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupCustomizerService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupCustomizerService.MutateAdGroupCustomizers",
+              "id": 3132386163666264,
+              "service_model_id": 6466303331393763,
+              "rpc_name": "MutateAdGroupCustomizers",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupCustomizersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupExtensionSettingService",
+          "id": 3330646633383664,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupExtensionSettingService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupExtensionSettingService.MutateAdGroupExtensionSettings",
+              "id": 6265316165343364,
+              "service_model_id": 3330646633383664,
+              "rpc_name": "MutateAdGroupExtensionSettings",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupExtensionSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupFeedService",
+          "id": 3135333732656630,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupFeedService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupFeedService.MutateAdGroupFeeds",
+              "id": 3462646533643835,
+              "service_model_id": 3135333732656630,
+              "rpc_name": "MutateAdGroupFeeds",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupLabelService",
+          "id": 6638373763313863,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupLabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupLabelService.MutateAdGroupLabels",
+              "id": 3766393864316566,
+              "service_model_id": 6638373763313863,
+              "rpc_name": "MutateAdGroupLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdGroupService",
+          "id": 3638376131633533,
+          "package_model_id": 3834336536653937,
+          "name": "AdGroupService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdGroupService.MutateAdGroups",
+              "id": 3134343132386436,
+              "service_model_id": 3638376131633533,
+              "rpc_name": "MutateAdGroups",
+              "input_name": "google.ads.googleads.v10.services.MutateAdGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdParameterService",
+          "id": 3734623130633964,
+          "package_model_id": 3834336536653937,
+          "name": "AdParameterService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdParameterService.MutateAdParameters",
+              "id": 3330393336336534,
+              "service_model_id": 3734623130633964,
+              "rpc_name": "MutateAdParameters",
+              "input_name": "google.ads.googleads.v10.services.MutateAdParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AdService",
+          "id": 3765343131363964,
+          "package_model_id": 3834336536653937,
+          "name": "AdService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AdService.GetAd",
+              "id": 3837356233626533,
+              "service_model_id": 3765343131363964,
+              "rpc_name": "GetAd",
+              "input_name": "google.ads.googleads.v10.services.GetAdRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.AdService.MutateAds",
+              "id": 6336646362386166,
+              "service_model_id": 3765343131363964,
+              "rpc_name": "MutateAds",
+              "input_name": "google.ads.googleads.v10.services.MutateAdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetGroupAssetService",
+          "id": 3761333539316162,
+          "package_model_id": 3834336536653937,
+          "name": "AssetGroupAssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetGroupAssetService.MutateAssetGroupAssets",
+              "id": 3831346463626163,
+              "service_model_id": 3761333539316162,
+              "rpc_name": "MutateAssetGroupAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetGroupAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetGroupListingGroupFilterService",
+          "id": 3636613264663736,
+          "package_model_id": 3834336536653937,
+          "name": "AssetGroupListingGroupFilterService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetGroupListingGroupFilterService.MutateAssetGroupListingGroupFilters",
+              "id": 6266656539653936,
+              "service_model_id": 3636613264663736,
+              "rpc_name": "MutateAssetGroupListingGroupFilters",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetGroupListingGroupFiltersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetGroupService",
+          "id": 3262386261623336,
+          "package_model_id": 3834336536653937,
+          "name": "AssetGroupService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetGroupService.MutateAssetGroups",
+              "id": 3535386138623733,
+              "service_model_id": 3262386261623336,
+              "rpc_name": "MutateAssetGroups",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetGroupSignalService",
+          "id": 6265323964613336,
+          "package_model_id": 3834336536653937,
+          "name": "AssetGroupSignalService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetGroupSignalService.MutateAssetGroupSignals",
+              "id": 3961623961653266,
+              "service_model_id": 6265323964613336,
+              "rpc_name": "MutateAssetGroupSignals",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetGroupSignalsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetService",
+          "id": 6332316466366630,
+          "package_model_id": 3834336536653937,
+          "name": "AssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetService.MutateAssets",
+              "id": 6537303465316333,
+              "service_model_id": 6332316466366630,
+              "rpc_name": "MutateAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetSetAssetService",
+          "id": 6236373137613461,
+          "package_model_id": 3834336536653937,
+          "name": "AssetSetAssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetSetAssetService.MutateAssetSetAssets",
+              "id": 3837656466333638,
+              "service_model_id": 6236373137613461,
+              "rpc_name": "MutateAssetSetAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetSetAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AssetSetService",
+          "id": 3561333938356563,
+          "package_model_id": 3834336536653937,
+          "name": "AssetSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AssetSetService.MutateAssetSets",
+              "id": 3461323136353365,
+              "service_model_id": 3561333938356563,
+              "rpc_name": "MutateAssetSets",
+              "input_name": "google.ads.googleads.v10.services.MutateAssetSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.AudienceService",
+          "id": 3661323565613035,
+          "package_model_id": 3834336536653937,
+          "name": "AudienceService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.AudienceService.MutateAudiences",
+              "id": 6565383533386561,
+              "service_model_id": 3661323565613035,
+              "rpc_name": "MutateAudiences",
+              "input_name": "google.ads.googleads.v10.services.MutateAudiencesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.BiddingDataExclusionService",
+          "id": 3735333333363931,
+          "package_model_id": 3834336536653937,
+          "name": "BiddingDataExclusionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.BiddingDataExclusionService.MutateBiddingDataExclusions",
+              "id": 3865303930393436,
+              "service_model_id": 3735333333363931,
+              "rpc_name": "MutateBiddingDataExclusions",
+              "input_name": "google.ads.googleads.v10.services.MutateBiddingDataExclusionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.BiddingSeasonalityAdjustmentService",
+          "id": 3865643365623336,
+          "package_model_id": 3834336536653937,
+          "name": "BiddingSeasonalityAdjustmentService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.BiddingSeasonalityAdjustmentService.MutateBiddingSeasonalityAdjustments",
+              "id": 3331323164306362,
+              "service_model_id": 3865643365623336,
+              "rpc_name": "MutateBiddingSeasonalityAdjustments",
+              "input_name": "google.ads.googleads.v10.services.MutateBiddingSeasonalityAdjustmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.BiddingStrategyService",
+          "id": 6536313031646633,
+          "package_model_id": 3834336536653937,
+          "name": "BiddingStrategyService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.BiddingStrategyService.MutateBiddingStrategies",
+              "id": 3536326434356439,
+              "service_model_id": 6536313031646633,
+              "rpc_name": "MutateBiddingStrategies",
+              "input_name": "google.ads.googleads.v10.services.MutateBiddingStrategiesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignAssetService",
+          "id": 3237613263663430,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignAssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignAssetService.MutateCampaignAssets",
+              "id": 3333356462336363,
+              "service_model_id": 3237613263663430,
+              "rpc_name": "MutateCampaignAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignAssetSetService",
+          "id": 3865636265653332,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignAssetSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignAssetSetService.MutateCampaignAssetSets",
+              "id": 6163386339303364,
+              "service_model_id": 3865636265653332,
+              "rpc_name": "MutateCampaignAssetSets",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignAssetSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignBidModifierService",
+          "id": 6265383062333962,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignBidModifierService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignBidModifierService.MutateCampaignBidModifiers",
+              "id": 3163373363646632,
+              "service_model_id": 6265383062333962,
+              "rpc_name": "MutateCampaignBidModifiers",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignBidModifiersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignBudgetService",
+          "id": 3033396537653363,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignBudgetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignBudgetService.MutateCampaignBudgets",
+              "id": 6330356132386234,
+              "service_model_id": 3033396537653363,
+              "rpc_name": "MutateCampaignBudgets",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignBudgetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignConversionGoalService",
+          "id": 3536393462653230,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignConversionGoalService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignConversionGoalService.MutateCampaignConversionGoals",
+              "id": 3066373439333431,
+              "service_model_id": 3536393462653230,
+              "rpc_name": "MutateCampaignConversionGoals",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignConversionGoalsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignCriterionService",
+          "id": 6539316136393036,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignCriterionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignCriterionService.MutateCampaignCriteria",
+              "id": 6138646334353538,
+              "service_model_id": 6539316136393036,
+              "rpc_name": "MutateCampaignCriteria",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignCriteriaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignCustomizerService",
+          "id": 3935376238353039,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignCustomizerService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignCustomizerService.MutateCampaignCustomizers",
+              "id": 3631353033613361,
+              "service_model_id": 3935376238353039,
+              "rpc_name": "MutateCampaignCustomizers",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignCustomizersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignDraftService",
+          "id": 3965336265623164,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignDraftService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignDraftService.MutateCampaignDrafts",
+              "id": 3462323163383334,
+              "service_model_id": 3965336265623164,
+              "rpc_name": "MutateCampaignDrafts",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignDraftsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignDraftService.PromoteCampaignDraft",
+              "id": 3330623733623031,
+              "service_model_id": 3965336265623164,
+              "rpc_name": "PromoteCampaignDraft",
+              "input_name": "google.ads.googleads.v10.services.PromoteCampaignDraftRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignDraftService.ListCampaignDraftAsyncErrors",
+              "id": 3537666566383033,
+              "service_model_id": 3965336265623164,
+              "rpc_name": "ListCampaignDraftAsyncErrors",
+              "input_name": "google.ads.googleads.v10.services.ListCampaignDraftAsyncErrorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignExperimentService",
+          "id": 3939386230623439,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignExperimentService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.CreateCampaignExperiment",
+              "id": 3261346630393761,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "CreateCampaignExperiment",
+              "input_name": "google.ads.googleads.v10.services.CreateCampaignExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.MutateCampaignExperiments",
+              "id": 3362613438653237,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "MutateCampaignExperiments",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignExperimentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.GraduateCampaignExperiment",
+              "id": 6139373761323266,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "GraduateCampaignExperiment",
+              "input_name": "google.ads.googleads.v10.services.GraduateCampaignExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.PromoteCampaignExperiment",
+              "id": 3133636333336432,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "PromoteCampaignExperiment",
+              "input_name": "google.ads.googleads.v10.services.PromoteCampaignExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.EndCampaignExperiment",
+              "id": 3837353933396339,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "EndCampaignExperiment",
+              "input_name": "google.ads.googleads.v10.services.EndCampaignExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExperimentService.ListCampaignExperimentAsyncErrors",
+              "id": 3137616135373435,
+              "service_model_id": 3939386230623439,
+              "rpc_name": "ListCampaignExperimentAsyncErrors",
+              "input_name": "google.ads.googleads.v10.services.ListCampaignExperimentAsyncErrorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignExtensionSettingService",
+          "id": 3962346238616236,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignExtensionSettingService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignExtensionSettingService.MutateCampaignExtensionSettings",
+              "id": 6339653233653230,
+              "service_model_id": 3962346238616236,
+              "rpc_name": "MutateCampaignExtensionSettings",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignExtensionSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignFeedService",
+          "id": 6466306565643835,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignFeedService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignFeedService.MutateCampaignFeeds",
+              "id": 3963663133376436,
+              "service_model_id": 6466306565643835,
+              "rpc_name": "MutateCampaignFeeds",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignLabelService",
+          "id": 6634656133396661,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignLabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignLabelService.MutateCampaignLabels",
+              "id": 3733336231326164,
+              "service_model_id": 6634656133396661,
+              "rpc_name": "MutateCampaignLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignService",
+          "id": 3339616132636534,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignService.MutateCampaigns",
+              "id": 6134313765323938,
+              "service_model_id": 3339616132636534,
+              "rpc_name": "MutateCampaigns",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CampaignSharedSetService",
+          "id": 3265366137343633,
+          "package_model_id": 3834336536653937,
+          "name": "CampaignSharedSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CampaignSharedSetService.MutateCampaignSharedSets",
+              "id": 6539643330363435,
+              "service_model_id": 3265366137343633,
+              "rpc_name": "MutateCampaignSharedSets",
+              "input_name": "google.ads.googleads.v10.services.MutateCampaignSharedSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionActionService",
+          "id": 3532663137663635,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionActionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionActionService.MutateConversionActions",
+              "id": 3636396136366530,
+              "service_model_id": 3532663137663635,
+              "rpc_name": "MutateConversionActions",
+              "input_name": "google.ads.googleads.v10.services.MutateConversionActionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionCustomVariableService",
+          "id": 6462303165383538,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionCustomVariableService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionCustomVariableService.MutateConversionCustomVariables",
+              "id": 3734316232303336,
+              "service_model_id": 6462303165383538,
+              "rpc_name": "MutateConversionCustomVariables",
+              "input_name": "google.ads.googleads.v10.services.MutateConversionCustomVariablesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionGoalCampaignConfigService",
+          "id": 3866336136356464,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionGoalCampaignConfigService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfigs",
+              "id": 6630653438666561,
+              "service_model_id": 3866336136356464,
+              "rpc_name": "MutateConversionGoalCampaignConfigs",
+              "input_name": "google.ads.googleads.v10.services.MutateConversionGoalCampaignConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionValueRuleService",
+          "id": 3231313661363937,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionValueRuleService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionValueRuleService.MutateConversionValueRules",
+              "id": 3031366234663163,
+              "service_model_id": 3231313661363937,
+              "rpc_name": "MutateConversionValueRules",
+              "input_name": "google.ads.googleads.v10.services.MutateConversionValueRulesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionValueRuleSetService",
+          "id": 6261613363616131,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionValueRuleSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionValueRuleSetService.MutateConversionValueRuleSets",
+              "id": 3337333132366262,
+              "service_model_id": 6261613363616131,
+              "rpc_name": "MutateConversionValueRuleSets",
+              "input_name": "google.ads.googleads.v10.services.MutateConversionValueRuleSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomConversionGoalService",
+          "id": 3538346236323837,
+          "package_model_id": 3834336536653937,
+          "name": "CustomConversionGoalService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomConversionGoalService.MutateCustomConversionGoals",
+              "id": 3066383332356632,
+              "service_model_id": 3538346236323837,
+              "rpc_name": "MutateCustomConversionGoals",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomConversionGoalsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerAssetService",
+          "id": 3563623766626336,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerAssetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerAssetService.MutateCustomerAssets",
+              "id": 6164343332373131,
+              "service_model_id": 3563623766626336,
+              "rpc_name": "MutateCustomerAssets",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerAssetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerConversionGoalService",
+          "id": 3332376365623061,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerConversionGoalService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerConversionGoalService.MutateCustomerConversionGoals",
+              "id": 3836653363633163,
+              "service_model_id": 3332376365623061,
+              "rpc_name": "MutateCustomerConversionGoals",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerConversionGoalsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerCustomizerService",
+          "id": 3664303130336438,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerCustomizerService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerCustomizerService.MutateCustomerCustomizers",
+              "id": 3635323835333732,
+              "service_model_id": 3664303130336438,
+              "rpc_name": "MutateCustomerCustomizers",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerCustomizersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerExtensionSettingService",
+          "id": 3934616332613261,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerExtensionSettingService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerExtensionSettingService.MutateCustomerExtensionSettings",
+              "id": 3766323163396365,
+              "service_model_id": 3934616332613261,
+              "rpc_name": "MutateCustomerExtensionSettings",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerExtensionSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerFeedService",
+          "id": 3338623536623936,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerFeedService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerFeedService.MutateCustomerFeeds",
+              "id": 3263333865663462,
+              "service_model_id": 3338623536623936,
+              "rpc_name": "MutateCustomerFeeds",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerLabelService",
+          "id": 6365656337313437,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerLabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerLabelService.MutateCustomerLabels",
+              "id": 3137343836383865,
+              "service_model_id": 6365656337313437,
+              "rpc_name": "MutateCustomerLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerNegativeCriterionService",
+          "id": 3037333233336136,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerNegativeCriterionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerNegativeCriterionService.MutateCustomerNegativeCriteria",
+              "id": 3363383736373661,
+              "service_model_id": 3037333233336136,
+              "rpc_name": "MutateCustomerNegativeCriteria",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerNegativeCriteriaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerService",
+          "id": 3635306430323063,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerService.MutateCustomer",
+              "id": 6434386139343536,
+              "service_model_id": 3635306430323063,
+              "rpc_name": "MutateCustomer",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerService.ListAccessibleCustomers",
+              "id": 3332343831313633,
+              "service_model_id": 3635306430323063,
+              "rpc_name": "ListAccessibleCustomers",
+              "input_name": "google.ads.googleads.v10.services.ListAccessibleCustomersRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerService.CreateCustomerClient",
+              "id": 6238393036616165,
+              "service_model_id": 3635306430323063,
+              "rpc_name": "CreateCustomerClient",
+              "input_name": "google.ads.googleads.v10.services.CreateCustomerClientRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomizerAttributeService",
+          "id": 3434653932663163,
+          "package_model_id": 3834336536653937,
+          "name": "CustomizerAttributeService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomizerAttributeService.MutateCustomizerAttributes",
+              "id": 3337396338396430,
+              "service_model_id": 3434653932663163,
+              "rpc_name": "MutateCustomizerAttributes",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomizerAttributesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ExperimentArmService",
+          "id": 3333633563626134,
+          "package_model_id": 3834336536653937,
+          "name": "ExperimentArmService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentArmService.MutateExperimentArms",
+              "id": 6666356263336362,
+              "service_model_id": 3333633563626134,
+              "rpc_name": "MutateExperimentArms",
+              "input_name": "google.ads.googleads.v10.services.MutateExperimentArmsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ExperimentService",
+          "id": 6139663035636538,
+          "package_model_id": 3834336536653937,
+          "name": "ExperimentService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.MutateExperiments",
+              "id": 6435313265333864,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "MutateExperiments",
+              "input_name": "google.ads.googleads.v10.services.MutateExperimentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.EndExperiment",
+              "id": 6532616562343031,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "EndExperiment",
+              "input_name": "google.ads.googleads.v10.services.EndExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.ListExperimentAsyncErrors",
+              "id": 6664313034303566,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "ListExperimentAsyncErrors",
+              "input_name": "google.ads.googleads.v10.services.ListExperimentAsyncErrorsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.GraduateExperiment",
+              "id": 6263303064336337,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "GraduateExperiment",
+              "input_name": "google.ads.googleads.v10.services.GraduateExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.ScheduleExperiment",
+              "id": 3433646234303039,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "ScheduleExperiment",
+              "input_name": "google.ads.googleads.v10.services.ScheduleExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ExperimentService.PromoteExperiment",
+              "id": 6437633033663831,
+              "service_model_id": 6139663035636538,
+              "rpc_name": "PromoteExperiment",
+              "input_name": "google.ads.googleads.v10.services.PromoteExperimentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ExtensionFeedItemService",
+          "id": 3734323631346636,
+          "package_model_id": 3834336536653937,
+          "name": "ExtensionFeedItemService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ExtensionFeedItemService.MutateExtensionFeedItems",
+              "id": 6362323737393931,
+              "service_model_id": 3734323631346636,
+              "rpc_name": "MutateExtensionFeedItems",
+              "input_name": "google.ads.googleads.v10.services.MutateExtensionFeedItemsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedItemService",
+          "id": 6164643438316130,
+          "package_model_id": 3834336536653937,
+          "name": "FeedItemService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedItemService.MutateFeedItems",
+              "id": 3465363365663066,
+              "service_model_id": 6164643438316130,
+              "rpc_name": "MutateFeedItems",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedItemsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedItemSetLinkService",
+          "id": 6638643239373532,
+          "package_model_id": 3834336536653937,
+          "name": "FeedItemSetLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedItemSetLinkService.MutateFeedItemSetLinks",
+              "id": 3035636662396161,
+              "service_model_id": 6638643239373532,
+              "rpc_name": "MutateFeedItemSetLinks",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedItemSetLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedItemSetService",
+          "id": 6432383536643638,
+          "package_model_id": 3834336536653937,
+          "name": "FeedItemSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedItemSetService.MutateFeedItemSets",
+              "id": 3265646262386336,
+              "service_model_id": 6432383536643638,
+              "rpc_name": "MutateFeedItemSets",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedItemSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedItemTargetService",
+          "id": 6233646461663362,
+          "package_model_id": 3834336536653937,
+          "name": "FeedItemTargetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedItemTargetService.MutateFeedItemTargets",
+              "id": 3433373936663436,
+              "service_model_id": 6233646461663362,
+              "rpc_name": "MutateFeedItemTargets",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedItemTargetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedMappingService",
+          "id": 3164333763333332,
+          "package_model_id": 3834336536653937,
+          "name": "FeedMappingService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedMappingService.MutateFeedMappings",
+              "id": 6435396439383963,
+              "service_model_id": 3164333763333332,
+              "rpc_name": "MutateFeedMappings",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedMappingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.FeedService",
+          "id": 6364366366626430,
+          "package_model_id": 3834336536653937,
+          "name": "FeedService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.FeedService.MutateFeeds",
+              "id": 3561363465343039,
+              "service_model_id": 6364366366626430,
+              "rpc_name": "MutateFeeds",
+              "input_name": "google.ads.googleads.v10.services.MutateFeedsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanAdGroupKeywordService",
+          "id": 3734623530386133,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanAdGroupKeywordService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanAdGroupKeywordService.MutateKeywordPlanAdGroupKeywords",
+              "id": 3535396632353665,
+              "service_model_id": 3734623530386133,
+              "rpc_name": "MutateKeywordPlanAdGroupKeywords",
+              "input_name": "google.ads.googleads.v10.services.MutateKeywordPlanAdGroupKeywordsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanAdGroupService",
+          "id": 6435363531393631,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanAdGroupService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanAdGroupService.MutateKeywordPlanAdGroups",
+              "id": 3739653665316231,
+              "service_model_id": 6435363531393631,
+              "rpc_name": "MutateKeywordPlanAdGroups",
+              "input_name": "google.ads.googleads.v10.services.MutateKeywordPlanAdGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanCampaignKeywordService",
+          "id": 6532633137333862,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanCampaignKeywordService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanCampaignKeywordService.MutateKeywordPlanCampaignKeywords",
+              "id": 6266633064613032,
+              "service_model_id": 6532633137333862,
+              "rpc_name": "MutateKeywordPlanCampaignKeywords",
+              "input_name": "google.ads.googleads.v10.services.MutateKeywordPlanCampaignKeywordsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanCampaignService",
+          "id": 6465636261343034,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanCampaignService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanCampaignService.MutateKeywordPlanCampaigns",
+              "id": 6465373032626632,
+              "service_model_id": 6465636261343034,
+              "rpc_name": "MutateKeywordPlanCampaigns",
+              "input_name": "google.ads.googleads.v10.services.MutateKeywordPlanCampaignsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanService",
+          "id": 3638663131633736,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanService.MutateKeywordPlans",
+              "id": 3763336335656362,
+              "service_model_id": 3638663131633736,
+              "rpc_name": "MutateKeywordPlans",
+              "input_name": "google.ads.googleads.v10.services.MutateKeywordPlansRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanService.GenerateForecastCurve",
+              "id": 6134643730336334,
+              "service_model_id": 3638663131633736,
+              "rpc_name": "GenerateForecastCurve",
+              "input_name": "google.ads.googleads.v10.services.GenerateForecastCurveRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanService.GenerateForecastTimeSeries",
+              "id": 6431386436356164,
+              "service_model_id": 3638663131633736,
+              "rpc_name": "GenerateForecastTimeSeries",
+              "input_name": "google.ads.googleads.v10.services.GenerateForecastTimeSeriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanService.GenerateForecastMetrics",
+              "id": 6465376366383035,
+              "service_model_id": 3638663131633736,
+              "rpc_name": "GenerateForecastMetrics",
+              "input_name": "google.ads.googleads.v10.services.GenerateForecastMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanService.GenerateHistoricalMetrics",
+              "id": 3065396666343435,
+              "service_model_id": 3638663131633736,
+              "rpc_name": "GenerateHistoricalMetrics",
+              "input_name": "google.ads.googleads.v10.services.GenerateHistoricalMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.LabelService",
+          "id": 3534353163303034,
+          "package_model_id": 3834336536653937,
+          "name": "LabelService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.LabelService.MutateLabels",
+              "id": 6462313036303130,
+              "service_model_id": 3534353163303034,
+              "rpc_name": "MutateLabels",
+              "input_name": "google.ads.googleads.v10.services.MutateLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.MediaFileService",
+          "id": 3438653631313061,
+          "package_model_id": 3834336536653937,
+          "name": "MediaFileService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.MediaFileService.MutateMediaFiles",
+              "id": 3766376335303634,
+              "service_model_id": 3438653631313061,
+              "rpc_name": "MutateMediaFiles",
+              "input_name": "google.ads.googleads.v10.services.MutateMediaFilesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.RemarketingActionService",
+          "id": 3833383464346563,
+          "package_model_id": 3834336536653937,
+          "name": "RemarketingActionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.RemarketingActionService.MutateRemarketingActions",
+              "id": 3832653662386363,
+              "service_model_id": 3833383464346563,
+              "rpc_name": "MutateRemarketingActions",
+              "input_name": "google.ads.googleads.v10.services.MutateRemarketingActionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.SharedCriterionService",
+          "id": 6664653163643831,
+          "package_model_id": 3834336536653937,
+          "name": "SharedCriterionService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.SharedCriterionService.MutateSharedCriteria",
+              "id": 6334616265313237,
+              "service_model_id": 6664653163643831,
+              "rpc_name": "MutateSharedCriteria",
+              "input_name": "google.ads.googleads.v10.services.MutateSharedCriteriaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.SharedSetService",
+          "id": 6561663530623733,
+          "package_model_id": 3834336536653937,
+          "name": "SharedSetService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.SharedSetService.MutateSharedSets",
+              "id": 3436666331376131,
+              "service_model_id": 6561663530623733,
+              "rpc_name": "MutateSharedSets",
+              "input_name": "google.ads.googleads.v10.services.MutateSharedSetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.SmartCampaignSettingService",
+          "id": 6662643734343864,
+          "package_model_id": 3834336536653937,
+          "name": "SmartCampaignSettingService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.SmartCampaignSettingService.MutateSmartCampaignSettings",
+              "id": 3262363932633033,
+              "service_model_id": 6662643734343864,
+              "rpc_name": "MutateSmartCampaignSettings",
+              "input_name": "google.ads.googleads.v10.services.MutateSmartCampaignSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.UserListService",
+          "id": 6537616636376431,
+          "package_model_id": 3834336536653937,
+          "name": "UserListService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.UserListService.MutateUserLists",
+              "id": 6461356235323031,
+              "service_model_id": 6537616636376431,
+              "rpc_name": "MutateUserLists",
+              "input_name": "google.ads.googleads.v10.services.MutateUserListsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.GoogleAdsService",
+          "id": 6330323362623333,
+          "package_model_id": 3834336536653937,
+          "name": "GoogleAdsService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.GoogleAdsService.Search",
+              "id": 3561333239373232,
+              "service_model_id": 6330323362623333,
+              "rpc_name": "Search",
+              "input_name": "google.ads.googleads.v10.services.SearchGoogleAdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.GoogleAdsService.SearchStream",
+              "id": 3737656661343232,
+              "service_model_id": 6330323362623333,
+              "rpc_name": "SearchStream",
+              "input_name": "google.ads.googleads.v10.services.SearchGoogleAdsStreamRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "server"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.GoogleAdsService.Mutate",
+              "id": 3266313564626164,
+              "service_model_id": 6330323362623333,
+              "rpc_name": "Mutate",
+              "input_name": "google.ads.googleads.v10.services.MutateGoogleAdsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.BatchJobService",
+          "id": 3061623530313237,
+          "package_model_id": 3834336536653937,
+          "name": "BatchJobService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.BatchJobService.MutateBatchJob",
+              "id": 3436353530333934,
+              "service_model_id": 3061623530313237,
+              "rpc_name": "MutateBatchJob",
+              "input_name": "google.ads.googleads.v10.services.MutateBatchJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.BatchJobService.ListBatchJobResults",
+              "id": 6164613363643234,
+              "service_model_id": 3061623530313237,
+              "rpc_name": "ListBatchJobResults",
+              "input_name": "google.ads.googleads.v10.services.ListBatchJobResultsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.BatchJobService.RunBatchJob",
+              "id": 6638633336666264,
+              "service_model_id": 3061623530313237,
+              "rpc_name": "RunBatchJob",
+              "input_name": "google.ads.googleads.v10.services.RunBatchJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.BatchJobService.AddBatchJobOperations",
+              "id": 6536363930353065,
+              "service_model_id": 3061623530313237,
+              "rpc_name": "AddBatchJobOperations",
+              "input_name": "google.ads.googleads.v10.services.AddBatchJobOperationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.BillingSetupService",
+          "id": 3666333739363938,
+          "package_model_id": 3834336536653937,
+          "name": "BillingSetupService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.BillingSetupService.MutateBillingSetup",
+              "id": 6232373534323131,
+              "service_model_id": 3666333739363938,
+              "rpc_name": "MutateBillingSetup",
+              "input_name": "google.ads.googleads.v10.services.MutateBillingSetupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionAdjustmentUploadService",
+          "id": 3734623463616462,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionAdjustmentUploadService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionAdjustmentUploadService.UploadConversionAdjustments",
+              "id": 6639373332646630,
+              "service_model_id": 3734623463616462,
+              "rpc_name": "UploadConversionAdjustments",
+              "input_name": "google.ads.googleads.v10.services.UploadConversionAdjustmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ConversionUploadService",
+          "id": 6436323332303735,
+          "package_model_id": 3834336536653937,
+          "name": "ConversionUploadService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionUploadService.UploadClickConversions",
+              "id": 6636633262343461,
+              "service_model_id": 6436323332303735,
+              "rpc_name": "UploadClickConversions",
+              "input_name": "google.ads.googleads.v10.services.UploadClickConversionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ConversionUploadService.UploadCallConversions",
+              "id": 3535343133633733,
+              "service_model_id": 6436323332303735,
+              "rpc_name": "UploadCallConversions",
+              "input_name": "google.ads.googleads.v10.services.UploadCallConversionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomAudienceService",
+          "id": 6365346530643231,
+          "package_model_id": 3834336536653937,
+          "name": "CustomAudienceService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomAudienceService.MutateCustomAudiences",
+              "id": 3439316132323538,
+              "service_model_id": 6365346530643231,
+              "rpc_name": "MutateCustomAudiences",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomAudiencesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomInterestService",
+          "id": 6466363630323632,
+          "package_model_id": 3834336536653937,
+          "name": "CustomInterestService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomInterestService.MutateCustomInterests",
+              "id": 3763633433636531,
+              "service_model_id": 6466363630323632,
+              "rpc_name": "MutateCustomInterests",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomInterestsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerClientLinkService",
+          "id": 6431326363656335,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerClientLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerClientLinkService.MutateCustomerClientLink",
+              "id": 3663616133376262,
+              "service_model_id": 6431326363656335,
+              "rpc_name": "MutateCustomerClientLink",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerClientLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerManagerLinkService",
+          "id": 3033343262666538,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerManagerLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerManagerLinkService.MutateCustomerManagerLink",
+              "id": 3563326663396330,
+              "service_model_id": 3033343262666538,
+              "rpc_name": "MutateCustomerManagerLink",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerManagerLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerManagerLinkService.MoveManagerLink",
+              "id": 3265383936326463,
+              "service_model_id": 3033343262666538,
+              "rpc_name": "MoveManagerLink",
+              "input_name": "google.ads.googleads.v10.services.MoveManagerLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerUserAccessInvitationService",
+          "id": 3262393338623436,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerUserAccessInvitationService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerUserAccessInvitationService.MutateCustomerUserAccessInvitation",
+              "id": 6464663938366638,
+              "service_model_id": 3262393338623436,
+              "rpc_name": "MutateCustomerUserAccessInvitation",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerUserAccessInvitationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.CustomerUserAccessService",
+          "id": 6431656563643239,
+          "package_model_id": 3834336536653937,
+          "name": "CustomerUserAccessService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.CustomerUserAccessService.MutateCustomerUserAccess",
+              "id": 6666613065366364,
+              "service_model_id": 6431656563643239,
+              "rpc_name": "MutateCustomerUserAccess",
+              "input_name": "google.ads.googleads.v10.services.MutateCustomerUserAccessRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.GeoTargetConstantService",
+          "id": 6435613331363462,
+          "package_model_id": 3834336536653937,
+          "name": "GeoTargetConstantService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.GeoTargetConstantService.SuggestGeoTargetConstants",
+              "id": 3438373435336634,
+              "service_model_id": 6435613331363462,
+              "rpc_name": "SuggestGeoTargetConstants",
+              "input_name": "google.ads.googleads.v10.services.SuggestGeoTargetConstantsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.GoogleAdsFieldService",
+          "id": 3962313333653465,
+          "package_model_id": 3834336536653937,
+          "name": "GoogleAdsFieldService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.GoogleAdsFieldService.GetGoogleAdsField",
+              "id": 3965383633373839,
+              "service_model_id": 3962313333653465,
+              "rpc_name": "GetGoogleAdsField",
+              "input_name": "google.ads.googleads.v10.services.GetGoogleAdsFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.GoogleAdsFieldService.SearchGoogleAdsFields",
+              "id": 3066666634656162,
+              "service_model_id": 3962313333653465,
+              "rpc_name": "SearchGoogleAdsFields",
+              "input_name": "google.ads.googleads.v10.services.SearchGoogleAdsFieldsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.InvoiceService",
+          "id": 6564356239326639,
+          "package_model_id": 3834336536653937,
+          "name": "InvoiceService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.InvoiceService.ListInvoices",
+              "id": 3636663632623831,
+              "service_model_id": 6564356239326639,
+              "rpc_name": "ListInvoices",
+              "input_name": "google.ads.googleads.v10.services.ListInvoicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordPlanIdeaService",
+          "id": 6361376633356561,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordPlanIdeaService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordPlanIdeaService.GenerateKeywordIdeas",
+              "id": 6563653865373737,
+              "service_model_id": 6361376633356561,
+              "rpc_name": "GenerateKeywordIdeas",
+              "input_name": "google.ads.googleads.v10.services.GenerateKeywordIdeasRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.KeywordThemeConstantService",
+          "id": 6261386234623136,
+          "package_model_id": 3834336536653937,
+          "name": "KeywordThemeConstantService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.KeywordThemeConstantService.SuggestKeywordThemeConstants",
+              "id": 6261373436363166,
+              "service_model_id": 6261386234623136,
+              "rpc_name": "SuggestKeywordThemeConstants",
+              "input_name": "google.ads.googleads.v10.services.SuggestKeywordThemeConstantsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.MerchantCenterLinkService",
+          "id": 3432636634626364,
+          "package_model_id": 3834336536653937,
+          "name": "MerchantCenterLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.MerchantCenterLinkService.ListMerchantCenterLinks",
+              "id": 3565336535353339,
+              "service_model_id": 3432636634626364,
+              "rpc_name": "ListMerchantCenterLinks",
+              "input_name": "google.ads.googleads.v10.services.ListMerchantCenterLinksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.MerchantCenterLinkService.GetMerchantCenterLink",
+              "id": 3532653331356236,
+              "service_model_id": 3432636634626364,
+              "rpc_name": "GetMerchantCenterLink",
+              "input_name": "google.ads.googleads.v10.services.GetMerchantCenterLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.MerchantCenterLinkService.MutateMerchantCenterLink",
+              "id": 6561623331653264,
+              "service_model_id": 3432636634626364,
+              "rpc_name": "MutateMerchantCenterLink",
+              "input_name": "google.ads.googleads.v10.services.MutateMerchantCenterLinkRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.OfflineUserDataJobService",
+          "id": 3237313632656664,
+          "package_model_id": 3834336536653937,
+          "name": "OfflineUserDataJobService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.OfflineUserDataJobService.CreateOfflineUserDataJob",
+              "id": 3739633162326636,
+              "service_model_id": 3237313632656664,
+              "rpc_name": "CreateOfflineUserDataJob",
+              "input_name": "google.ads.googleads.v10.services.CreateOfflineUserDataJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.OfflineUserDataJobService.AddOfflineUserDataJobOperations",
+              "id": 6263373836383762,
+              "service_model_id": 3237313632656664,
+              "rpc_name": "AddOfflineUserDataJobOperations",
+              "input_name": "google.ads.googleads.v10.services.AddOfflineUserDataJobOperationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.OfflineUserDataJobService.RunOfflineUserDataJob",
+              "id": 3738666661656638,
+              "service_model_id": 3237313632656664,
+              "rpc_name": "RunOfflineUserDataJob",
+              "input_name": "google.ads.googleads.v10.services.RunOfflineUserDataJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.PaymentsAccountService",
+          "id": 6632643066373031,
+          "package_model_id": 3834336536653937,
+          "name": "PaymentsAccountService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.PaymentsAccountService.ListPaymentsAccounts",
+              "id": 3739303065666264,
+              "service_model_id": 6632643066373031,
+              "rpc_name": "ListPaymentsAccounts",
+              "input_name": "google.ads.googleads.v10.services.ListPaymentsAccountsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ReachPlanService",
+          "id": 6536336632363036,
+          "package_model_id": 3834336536653937,
+          "name": "ReachPlanService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ReachPlanService.ListPlannableLocations",
+              "id": 6339383362383964,
+              "service_model_id": 6536336632363036,
+              "rpc_name": "ListPlannableLocations",
+              "input_name": "google.ads.googleads.v10.services.ListPlannableLocationsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ReachPlanService.ListPlannableProducts",
+              "id": 3238643665356662,
+              "service_model_id": 6536336632363036,
+              "rpc_name": "ListPlannableProducts",
+              "input_name": "google.ads.googleads.v10.services.ListPlannableProductsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ReachPlanService.GenerateProductMixIdeas",
+              "id": 3837636332313264,
+              "service_model_id": 6536336632363036,
+              "rpc_name": "GenerateProductMixIdeas",
+              "input_name": "google.ads.googleads.v10.services.GenerateProductMixIdeasRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.ReachPlanService.GenerateReachForecast",
+              "id": 3762623438393630,
+              "service_model_id": 6536336632363036,
+              "rpc_name": "GenerateReachForecast",
+              "input_name": "google.ads.googleads.v10.services.GenerateReachForecastRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.RecommendationService",
+          "id": 6238363331326161,
+          "package_model_id": 3834336536653937,
+          "name": "RecommendationService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.RecommendationService.ApplyRecommendation",
+              "id": 6563316263663666,
+              "service_model_id": 6238363331326161,
+              "rpc_name": "ApplyRecommendation",
+              "input_name": "google.ads.googleads.v10.services.ApplyRecommendationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.RecommendationService.DismissRecommendation",
+              "id": 6534346536356239,
+              "service_model_id": 6238363331326161,
+              "rpc_name": "DismissRecommendation",
+              "input_name": "google.ads.googleads.v10.services.DismissRecommendationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.SmartCampaignSuggestService",
+          "id": 3434663837303539,
+          "package_model_id": 3834336536653937,
+          "name": "SmartCampaignSuggestService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.SmartCampaignSuggestService.SuggestSmartCampaignBudgetOptions",
+              "id": 6566306231363730,
+              "service_model_id": 3434663837303539,
+              "rpc_name": "SuggestSmartCampaignBudgetOptions",
+              "input_name": "google.ads.googleads.v10.services.SuggestSmartCampaignBudgetOptionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.SmartCampaignSuggestService.SuggestSmartCampaignAd",
+              "id": 3834393735653530,
+              "service_model_id": 3434663837303539,
+              "rpc_name": "SuggestSmartCampaignAd",
+              "input_name": "google.ads.googleads.v10.services.SuggestSmartCampaignAdRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.ads.googleads.v10.services.SmartCampaignSuggestService.SuggestKeywordThemes",
+              "id": 3065646132323136,
+              "service_model_id": 3434663837303539,
+              "rpc_name": "SuggestKeywordThemes",
+              "input_name": "google.ads.googleads.v10.services.SuggestKeywordThemesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.ThirdPartyAppAnalyticsLinkService",
+          "id": 6231303162323931,
+          "package_model_id": 3834336536653937,
+          "name": "ThirdPartyAppAnalyticsLinkService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.ThirdPartyAppAnalyticsLinkService.RegenerateShareableLinkId",
+              "id": 3466626666323632,
+              "service_model_id": 6231303162323931,
+              "rpc_name": "RegenerateShareableLinkId",
+              "input_name": "google.ads.googleads.v10.services.RegenerateShareableLinkIdRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.ads.googleads.v10.services.UserDataService",
+          "id": 6337393635353632,
+          "package_model_id": 3834336536653937,
+          "name": "UserDataService",
+          "rpcs": [
+            {
+              "design_name": "google.ads.googleads.v10.services.UserDataService.UploadUserData",
+              "id": 3563353434633638,
+              "service_model_id": 6337393635353632,
+              "rpc_name": "UploadUserData",
+              "input_name": "google.ads.googleads.v10.services.UploadUserDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

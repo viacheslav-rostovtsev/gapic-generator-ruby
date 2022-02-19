@@ -1,0 +1,114 @@
+{
+  "design_name": "google-cloud-gsuite_add_ons-v1",
+  "id": 3063613330623434,
+  "name": "google-cloud-gsuite_add_ons-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.gsuiteaddons.v1",
+      "id": 3139336137333139,
+      "name": "google.cloud.gsuiteaddons.v1",
+      "gem_model_id": 3063613330623434,
+      "ruby_namespace": "::Google::Cloud::GSuiteAddOns::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns",
+          "id": 6632386530323532,
+          "package_model_id": 3139336137333139,
+          "name": "GSuiteAddOns",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.GetAuthorization",
+              "id": 3236393636396635,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "GetAuthorization",
+              "input_name": "google.cloud.gsuiteaddons.v1.GetAuthorizationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.CreateDeployment",
+              "id": 6331646461386530,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "CreateDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.CreateDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.ReplaceDeployment",
+              "id": 6633316539616466,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "ReplaceDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.ReplaceDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.GetDeployment",
+              "id": 6138363237623464,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "GetDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.GetDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.ListDeployments",
+              "id": 6565633637316435,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "ListDeployments",
+              "input_name": "google.cloud.gsuiteaddons.v1.ListDeploymentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.DeleteDeployment",
+              "id": 3162363231353038,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "DeleteDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.DeleteDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.InstallDeployment",
+              "id": 6465323030373166,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "InstallDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.InstallDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.UninstallDeployment",
+              "id": 3339326534316539,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "UninstallDeployment",
+              "input_name": "google.cloud.gsuiteaddons.v1.UninstallDeploymentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.gsuiteaddons.v1.GSuiteAddOns.GetInstallStatus",
+              "id": 3663363238613461,
+              "service_model_id": 6632386530323532,
+              "rpc_name": "GetInstallStatus",
+              "input_name": "google.cloud.gsuiteaddons.v1.GetInstallStatusRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

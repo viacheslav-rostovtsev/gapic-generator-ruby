@@ -1,0 +1,184 @@
+{
+  "design_name": "google-cloud-tasks-v2beta3",
+  "id": 3030653134346561,
+  "name": "google-cloud-tasks-v2beta3",
+  "packages": [
+    {
+      "design_name": "google.cloud.tasks.v2beta3",
+      "id": 3937356466373430,
+      "name": "google.cloud.tasks.v2beta3",
+      "gem_model_id": 3030653134346561,
+      "ruby_namespace": "::Google::Cloud::Tasks::V2beta3",
+      "services": [
+        {
+          "design_name": "google.cloud.tasks.v2beta3.CloudTasks",
+          "id": 6635383438333239,
+          "package_model_id": 3937356466373430,
+          "name": "CloudTasks",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.ListQueues",
+              "id": 3735636632376236,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "ListQueues",
+              "input_name": "google.cloud.tasks.v2beta3.ListQueuesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.GetQueue",
+              "id": 6466316461366561,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "GetQueue",
+              "input_name": "google.cloud.tasks.v2beta3.GetQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.CreateQueue",
+              "id": 6335346337666131,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "CreateQueue",
+              "input_name": "google.cloud.tasks.v2beta3.CreateQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.UpdateQueue",
+              "id": 3861303366663534,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "UpdateQueue",
+              "input_name": "google.cloud.tasks.v2beta3.UpdateQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.DeleteQueue",
+              "id": 3137636161306263,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "DeleteQueue",
+              "input_name": "google.cloud.tasks.v2beta3.DeleteQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.PurgeQueue",
+              "id": 3932316337656266,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "PurgeQueue",
+              "input_name": "google.cloud.tasks.v2beta3.PurgeQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.PauseQueue",
+              "id": 3133663063663766,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "PauseQueue",
+              "input_name": "google.cloud.tasks.v2beta3.PauseQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.ResumeQueue",
+              "id": 6533306536376434,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "ResumeQueue",
+              "input_name": "google.cloud.tasks.v2beta3.ResumeQueueRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.GetIamPolicy",
+              "id": 3361666438366638,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.SetIamPolicy",
+              "id": 3561376265616165,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.TestIamPermissions",
+              "id": 6265623261653830,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.ListTasks",
+              "id": 3838623035666264,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "ListTasks",
+              "input_name": "google.cloud.tasks.v2beta3.ListTasksRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.GetTask",
+              "id": 3264346638393665,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "GetTask",
+              "input_name": "google.cloud.tasks.v2beta3.GetTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.CreateTask",
+              "id": 3330663332306665,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "CreateTask",
+              "input_name": "google.cloud.tasks.v2beta3.CreateTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.DeleteTask",
+              "id": 6539366137646535,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "DeleteTask",
+              "input_name": "google.cloud.tasks.v2beta3.DeleteTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.tasks.v2beta3.CloudTasks.RunTask",
+              "id": 3262356164396462,
+              "service_model_id": 6635383438333239,
+              "rpc_name": "RunTask",
+              "input_name": "google.cloud.tasks.v2beta3.RunTaskRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

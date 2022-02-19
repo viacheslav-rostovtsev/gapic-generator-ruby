@@ -1,0 +1,144 @@
+{
+  "design_name": "google-cloud-firestore-admin-v1",
+  "id": 3632636338313634,
+  "name": "google-cloud-firestore-admin-v1",
+  "packages": [
+    {
+      "design_name": "google.firestore.admin.v1",
+      "id": 6364336366316661,
+      "name": "google.firestore.admin.v1",
+      "gem_model_id": 3632636338313634,
+      "ruby_namespace": "::Google::Cloud::Firestore::Admin::V1",
+      "services": [
+        {
+          "design_name": "google.firestore.admin.v1.FirestoreAdmin",
+          "id": 6664336233376636,
+          "package_model_id": 6364336366316661,
+          "name": "FirestoreAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.CreateIndex",
+              "id": 6137346231393635,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "CreateIndex",
+              "input_name": "google.firestore.admin.v1.CreateIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.ListIndexes",
+              "id": 3765313461653630,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "ListIndexes",
+              "input_name": "google.firestore.admin.v1.ListIndexesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.GetIndex",
+              "id": 3338313239356335,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "GetIndex",
+              "input_name": "google.firestore.admin.v1.GetIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.DeleteIndex",
+              "id": 3462376138643338,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "DeleteIndex",
+              "input_name": "google.firestore.admin.v1.DeleteIndexRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.GetField",
+              "id": 3331623636393261,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "GetField",
+              "input_name": "google.firestore.admin.v1.GetFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.UpdateField",
+              "id": 3335616462383531,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "UpdateField",
+              "input_name": "google.firestore.admin.v1.UpdateFieldRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.ListFields",
+              "id": 3630646630386132,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "ListFields",
+              "input_name": "google.firestore.admin.v1.ListFieldsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.ExportDocuments",
+              "id": 6366333933643836,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "ExportDocuments",
+              "input_name": "google.firestore.admin.v1.ExportDocumentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.ImportDocuments",
+              "id": 3762366661613836,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "ImportDocuments",
+              "input_name": "google.firestore.admin.v1.ImportDocumentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.GetDatabase",
+              "id": 3731623435363263,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "GetDatabase",
+              "input_name": "google.firestore.admin.v1.GetDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.ListDatabases",
+              "id": 3839663131623665,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "ListDatabases",
+              "input_name": "google.firestore.admin.v1.ListDatabasesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.firestore.admin.v1.FirestoreAdmin.UpdateDatabase",
+              "id": 3231313232633561,
+              "service_model_id": 6664336233376636,
+              "rpc_name": "UpdateDatabase",
+              "input_name": "google.firestore.admin.v1.UpdateDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

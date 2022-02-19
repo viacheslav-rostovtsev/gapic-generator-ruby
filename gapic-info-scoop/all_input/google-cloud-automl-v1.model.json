@@ -1,0 +1,232 @@
+{
+  "design_name": "google-cloud-automl-v1",
+  "id": 3261386466356363,
+  "name": "google-cloud-automl-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.automl.v1",
+      "id": 3531346532613632,
+      "name": "google.cloud.automl.v1",
+      "gem_model_id": 3261386466356363,
+      "ruby_namespace": "::Google::Cloud::AutoML::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.automl.v1.PredictionService",
+          "id": 6130656463333430,
+          "package_model_id": 3531346532613632,
+          "name": "PredictionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.automl.v1.PredictionService.Predict",
+              "id": 6564636439383837,
+              "service_model_id": 6130656463333430,
+              "rpc_name": "Predict",
+              "input_name": "google.cloud.automl.v1.PredictRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.PredictionService.BatchPredict",
+              "id": 6237356566336431,
+              "service_model_id": 6130656463333430,
+              "rpc_name": "BatchPredict",
+              "input_name": "google.cloud.automl.v1.BatchPredictRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.automl.v1.AutoMl",
+          "id": 3363363136323465,
+          "package_model_id": 3531346532613632,
+          "name": "AutoMl",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.CreateDataset",
+              "id": 6566393839386635,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "CreateDataset",
+              "input_name": "google.cloud.automl.v1.CreateDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.GetDataset",
+              "id": 6432383965346236,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "GetDataset",
+              "input_name": "google.cloud.automl.v1.GetDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ListDatasets",
+              "id": 6362313661666536,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ListDatasets",
+              "input_name": "google.cloud.automl.v1.ListDatasetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.UpdateDataset",
+              "id": 6630383265633738,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "UpdateDataset",
+              "input_name": "google.cloud.automl.v1.UpdateDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.DeleteDataset",
+              "id": 6135313239383532,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "DeleteDataset",
+              "input_name": "google.cloud.automl.v1.DeleteDatasetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ImportData",
+              "id": 6633656433633930,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ImportData",
+              "input_name": "google.cloud.automl.v1.ImportDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ExportData",
+              "id": 3861646137346130,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ExportData",
+              "input_name": "google.cloud.automl.v1.ExportDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.GetAnnotationSpec",
+              "id": 6534353161653539,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "GetAnnotationSpec",
+              "input_name": "google.cloud.automl.v1.GetAnnotationSpecRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.CreateModel",
+              "id": 6361313236356561,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "CreateModel",
+              "input_name": "google.cloud.automl.v1.CreateModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.GetModel",
+              "id": 6336383235326366,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "GetModel",
+              "input_name": "google.cloud.automl.v1.GetModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ListModels",
+              "id": 3966633262326664,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ListModels",
+              "input_name": "google.cloud.automl.v1.ListModelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.DeleteModel",
+              "id": 6661613538646164,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "DeleteModel",
+              "input_name": "google.cloud.automl.v1.DeleteModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.UpdateModel",
+              "id": 3537323463613861,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "UpdateModel",
+              "input_name": "google.cloud.automl.v1.UpdateModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.DeployModel",
+              "id": 3433323733633364,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "DeployModel",
+              "input_name": "google.cloud.automl.v1.DeployModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.UndeployModel",
+              "id": 3430373432616661,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "UndeployModel",
+              "input_name": "google.cloud.automl.v1.UndeployModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ExportModel",
+              "id": 3333663666346136,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ExportModel",
+              "input_name": "google.cloud.automl.v1.ExportModelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.GetModelEvaluation",
+              "id": 3362373839303464,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "GetModelEvaluation",
+              "input_name": "google.cloud.automl.v1.GetModelEvaluationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.automl.v1.AutoMl.ListModelEvaluations",
+              "id": 3762346431623361,
+              "service_model_id": 3363363136323465,
+              "rpc_name": "ListModelEvaluations",
+              "input_name": "google.cloud.automl.v1.ListModelEvaluationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

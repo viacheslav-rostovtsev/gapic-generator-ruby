@@ -1,0 +1,164 @@
+{
+  "design_name": "google-cloud-eventarc-v1",
+  "id": 3239343465343338,
+  "name": "google-cloud-eventarc-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.eventarc.v1",
+      "id": 6231636637623432,
+      "name": "google.cloud.eventarc.v1",
+      "gem_model_id": 3239343465343338,
+      "ruby_namespace": "::Google::Cloud::Eventarc::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.eventarc.v1.Eventarc",
+          "id": 3234636636646231,
+          "package_model_id": 6231636637623432,
+          "name": "Eventarc",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.GetTrigger",
+              "id": 6435353734313133,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "GetTrigger",
+              "input_name": "google.cloud.eventarc.v1.GetTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.ListTriggers",
+              "id": 3339386433383436,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "ListTriggers",
+              "input_name": "google.cloud.eventarc.v1.ListTriggersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.CreateTrigger",
+              "id": 6530623638623330,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "CreateTrigger",
+              "input_name": "google.cloud.eventarc.v1.CreateTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.UpdateTrigger",
+              "id": 3161383962646533,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "UpdateTrigger",
+              "input_name": "google.cloud.eventarc.v1.UpdateTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.DeleteTrigger",
+              "id": 3664363937363739,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "DeleteTrigger",
+              "input_name": "google.cloud.eventarc.v1.DeleteTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.GetChannel",
+              "id": 3562333732333432,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "GetChannel",
+              "input_name": "google.cloud.eventarc.v1.GetChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.ListChannels",
+              "id": 3765373732336631,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "ListChannels",
+              "input_name": "google.cloud.eventarc.v1.ListChannelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.CreateChannel",
+              "id": 3534636432393365,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "CreateChannel",
+              "input_name": "google.cloud.eventarc.v1.CreateChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.UpdateChannel",
+              "id": 3666356136303633,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "UpdateChannel",
+              "input_name": "google.cloud.eventarc.v1.UpdateChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.DeleteChannel",
+              "id": 3561396137373437,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "DeleteChannel",
+              "input_name": "google.cloud.eventarc.v1.DeleteChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.GetChannelConnection",
+              "id": 3433366564653061,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "GetChannelConnection",
+              "input_name": "google.cloud.eventarc.v1.GetChannelConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.ListChannelConnections",
+              "id": 3932333564313966,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "ListChannelConnections",
+              "input_name": "google.cloud.eventarc.v1.ListChannelConnectionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.CreateChannelConnection",
+              "id": 3630343166663237,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "CreateChannelConnection",
+              "input_name": "google.cloud.eventarc.v1.CreateChannelConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.eventarc.v1.Eventarc.DeleteChannelConnection",
+              "id": 6537323466663439,
+              "service_model_id": 3234636636646231,
+              "rpc_name": "DeleteChannelConnection",
+              "input_name": "google.cloud.eventarc.v1.DeleteChannelConnectionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

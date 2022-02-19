@@ -1,0 +1,184 @@
+{
+  "design_name": "google-cloud-video-live_stream-v1",
+  "id": 6537356666313536,
+  "name": "google-cloud-video-live_stream-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.video.livestream.v1",
+      "id": 3739313834313362,
+      "name": "google.cloud.video.livestream.v1",
+      "gem_model_id": 6537356666313536,
+      "ruby_namespace": "::Google::Cloud::Video::LiveStream::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.video.livestream.v1.LivestreamService",
+          "id": 3636666336626266,
+          "package_model_id": 3739313834313362,
+          "name": "LivestreamService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.CreateChannel",
+              "id": 3431616238316333,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "CreateChannel",
+              "input_name": "google.cloud.video.livestream.v1.CreateChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.ListChannels",
+              "id": 6430376665343865,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "ListChannels",
+              "input_name": "google.cloud.video.livestream.v1.ListChannelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.GetChannel",
+              "id": 3939343566613536,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "GetChannel",
+              "input_name": "google.cloud.video.livestream.v1.GetChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.DeleteChannel",
+              "id": 6631323561326465,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "DeleteChannel",
+              "input_name": "google.cloud.video.livestream.v1.DeleteChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.UpdateChannel",
+              "id": 3236613337333235,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "UpdateChannel",
+              "input_name": "google.cloud.video.livestream.v1.UpdateChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.StartChannel",
+              "id": 6565366533656434,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "StartChannel",
+              "input_name": "google.cloud.video.livestream.v1.StartChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.StopChannel",
+              "id": 3831653430346535,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "StopChannel",
+              "input_name": "google.cloud.video.livestream.v1.StopChannelRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.CreateInput",
+              "id": 3061613065303635,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "CreateInput",
+              "input_name": "google.cloud.video.livestream.v1.CreateInputRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.ListInputs",
+              "id": 3230316139636361,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "ListInputs",
+              "input_name": "google.cloud.video.livestream.v1.ListInputsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.GetInput",
+              "id": 6430386662653063,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "GetInput",
+              "input_name": "google.cloud.video.livestream.v1.GetInputRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.DeleteInput",
+              "id": 3063363863353834,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "DeleteInput",
+              "input_name": "google.cloud.video.livestream.v1.DeleteInputRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.UpdateInput",
+              "id": 3862303736336239,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "UpdateInput",
+              "input_name": "google.cloud.video.livestream.v1.UpdateInputRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.CreateEvent",
+              "id": 6662316663326330,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "CreateEvent",
+              "input_name": "google.cloud.video.livestream.v1.CreateEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.ListEvents",
+              "id": 3163633761393430,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "ListEvents",
+              "input_name": "google.cloud.video.livestream.v1.ListEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.GetEvent",
+              "id": 3566366463326139,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "GetEvent",
+              "input_name": "google.cloud.video.livestream.v1.GetEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.video.livestream.v1.LivestreamService.DeleteEvent",
+              "id": 6637633037393162,
+              "service_model_id": 3636666336626266,
+              "rpc_name": "DeleteEvent",
+              "input_name": "google.cloud.video.livestream.v1.DeleteEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

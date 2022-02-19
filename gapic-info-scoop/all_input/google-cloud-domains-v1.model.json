@@ -1,0 +1,174 @@
+{
+  "design_name": "google-cloud-domains-v1",
+  "id": 3665653635376438,
+  "name": "google-cloud-domains-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.domains.v1",
+      "id": 6333633438663365,
+      "name": "google.cloud.domains.v1",
+      "gem_model_id": 3665653635376438,
+      "ruby_namespace": "::Google::Cloud::Domains::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.domains.v1.Domains",
+          "id": 3738613761653630,
+          "package_model_id": 6333633438663365,
+          "name": "Domains",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.domains.v1.Domains.SearchDomains",
+              "id": 3532646261656438,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "SearchDomains",
+              "input_name": "google.cloud.domains.v1.SearchDomainsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.RetrieveRegisterParameters",
+              "id": 3633333836643335,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "RetrieveRegisterParameters",
+              "input_name": "google.cloud.domains.v1.RetrieveRegisterParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.RegisterDomain",
+              "id": 6566333833396635,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "RegisterDomain",
+              "input_name": "google.cloud.domains.v1.RegisterDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.RetrieveTransferParameters",
+              "id": 3839303533386235,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "RetrieveTransferParameters",
+              "input_name": "google.cloud.domains.v1.RetrieveTransferParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.TransferDomain",
+              "id": 3033393739343533,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "TransferDomain",
+              "input_name": "google.cloud.domains.v1.TransferDomainRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ListRegistrations",
+              "id": 3633363334383962,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ListRegistrations",
+              "input_name": "google.cloud.domains.v1.ListRegistrationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.GetRegistration",
+              "id": 6430643939333836,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "GetRegistration",
+              "input_name": "google.cloud.domains.v1.GetRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.UpdateRegistration",
+              "id": 3035373936663561,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "UpdateRegistration",
+              "input_name": "google.cloud.domains.v1.UpdateRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ConfigureManagementSettings",
+              "id": 6237366338363731,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ConfigureManagementSettings",
+              "input_name": "google.cloud.domains.v1.ConfigureManagementSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ConfigureDnsSettings",
+              "id": 3865376263386232,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ConfigureDnsSettings",
+              "input_name": "google.cloud.domains.v1.ConfigureDnsSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ConfigureContactSettings",
+              "id": 3536653634333662,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ConfigureContactSettings",
+              "input_name": "google.cloud.domains.v1.ConfigureContactSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ExportRegistration",
+              "id": 3065393530623939,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ExportRegistration",
+              "input_name": "google.cloud.domains.v1.ExportRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.DeleteRegistration",
+              "id": 6337383262333765,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "DeleteRegistration",
+              "input_name": "google.cloud.domains.v1.DeleteRegistrationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.RetrieveAuthorizationCode",
+              "id": 3061623463373466,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "RetrieveAuthorizationCode",
+              "input_name": "google.cloud.domains.v1.RetrieveAuthorizationCodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.domains.v1.Domains.ResetAuthorizationCode",
+              "id": 3961633539626138,
+              "service_model_id": 3738613761653630,
+              "rpc_name": "ResetAuthorizationCode",
+              "input_name": "google.cloud.domains.v1.ResetAuthorizationCodeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

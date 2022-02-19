@@ -1,0 +1,44 @@
+{
+  "design_name": "google-cloud-trace-v2",
+  "id": 6433373235643362,
+  "name": "google-cloud-trace-v2",
+  "packages": [
+    {
+      "design_name": "google.devtools.cloudtrace.v2",
+      "id": 6338616134653463,
+      "name": "google.devtools.cloudtrace.v2",
+      "gem_model_id": 6433373235643362,
+      "ruby_namespace": "::Google::Cloud::Trace::V2",
+      "services": [
+        {
+          "design_name": "google.devtools.cloudtrace.v2.TraceService",
+          "id": 3963626231303137,
+          "package_model_id": 6338616134653463,
+          "name": "TraceService",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.cloudtrace.v2.TraceService.BatchWriteSpans",
+              "id": 3630313331323263,
+              "service_model_id": 3963626231303137,
+              "rpc_name": "BatchWriteSpans",
+              "input_name": "google.devtools.cloudtrace.v2.BatchWriteSpansRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.cloudtrace.v2.TraceService.CreateSpan",
+              "id": 6338386435386336,
+              "service_model_id": 3963626231303137,
+              "rpc_name": "CreateSpan",
+              "input_name": "google.devtools.cloudtrace.v2.Span",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

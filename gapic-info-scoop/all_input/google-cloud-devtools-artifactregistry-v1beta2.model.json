@@ -1,0 +1,274 @@
+{
+  "design_name": "google-cloud-artifact_registry-v1beta2",
+  "id": 6564376435353132,
+  "name": "google-cloud-artifact_registry-v1beta2",
+  "packages": [
+    {
+      "design_name": "google.devtools.artifactregistry.v1beta2",
+      "id": 3839643134323263,
+      "name": "google.devtools.artifactregistry.v1beta2",
+      "gem_model_id": 6564376435353132,
+      "ruby_namespace": "::Google::Cloud::ArtifactRegistry::V1beta2",
+      "services": [
+        {
+          "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry",
+          "id": 3135373830333234,
+          "package_model_id": 3839643134323263,
+          "name": "ArtifactRegistry",
+          "rpcs": [
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ImportAptArtifacts",
+              "id": 3937303065626530,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ImportAptArtifacts",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ImportAptArtifactsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ImportYumArtifacts",
+              "id": 3237376439373337,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ImportYumArtifacts",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ImportYumArtifactsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ListRepositories",
+              "id": 3432353830653763,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ListRepositories",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetRepository",
+              "id": 6530616661643135,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetRepository",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetRepositoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.CreateRepository",
+              "id": 6335343063393765,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "CreateRepository",
+              "input_name": "google.devtools.artifactregistry.v1beta2.CreateRepositoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.UpdateRepository",
+              "id": 3138313065343932,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "UpdateRepository",
+              "input_name": "google.devtools.artifactregistry.v1beta2.UpdateRepositoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.DeleteRepository",
+              "id": 3739363531656534,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "DeleteRepository",
+              "input_name": "google.devtools.artifactregistry.v1beta2.DeleteRepositoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ListPackages",
+              "id": 6632396131366232,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ListPackages",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ListPackagesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetPackage",
+              "id": 3766613933356166,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetPackage",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetPackageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.DeletePackage",
+              "id": 3065323436383233,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "DeletePackage",
+              "input_name": "google.devtools.artifactregistry.v1beta2.DeletePackageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ListVersions",
+              "id": 6364383236633963,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ListVersions",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ListVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetVersion",
+              "id": 6563373736386361,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetVersion",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.DeleteVersion",
+              "id": 3936613830663733,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "DeleteVersion",
+              "input_name": "google.devtools.artifactregistry.v1beta2.DeleteVersionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ListFiles",
+              "id": 3037373035386363,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ListFiles",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ListFilesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetFile",
+              "id": 6562623235346438,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetFile",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetFileRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.ListTags",
+              "id": 6531643437343033,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "ListTags",
+              "input_name": "google.devtools.artifactregistry.v1beta2.ListTagsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetTag",
+              "id": 3439653232326432,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetTag",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.CreateTag",
+              "id": 6165346238386630,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "CreateTag",
+              "input_name": "google.devtools.artifactregistry.v1beta2.CreateTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.UpdateTag",
+              "id": 6265353436653336,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "UpdateTag",
+              "input_name": "google.devtools.artifactregistry.v1beta2.UpdateTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.DeleteTag",
+              "id": 6665633734356239,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "DeleteTag",
+              "input_name": "google.devtools.artifactregistry.v1beta2.DeleteTagRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.SetIamPolicy",
+              "id": 3766306563666434,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetIamPolicy",
+              "id": 3032643339393064,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.TestIamPermissions",
+              "id": 3139636561666537,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetProjectSettings",
+              "id": 6164383661626334,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "GetProjectSettings",
+              "input_name": "google.devtools.artifactregistry.v1beta2.GetProjectSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.devtools.artifactregistry.v1beta2.ArtifactRegistry.UpdateProjectSettings",
+              "id": 6666363936346364,
+              "service_model_id": 3135373830333234,
+              "rpc_name": "UpdateProjectSettings",
+              "input_name": "google.devtools.artifactregistry.v1beta2.UpdateProjectSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

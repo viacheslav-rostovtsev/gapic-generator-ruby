@@ -1,0 +1,204 @@
+{
+  "design_name": "google-cloud-deploy-v1",
+  "id": 3632376632333737,
+  "name": "google-cloud-deploy-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.deploy.v1",
+      "id": 3330303361336638,
+      "name": "google.cloud.deploy.v1",
+      "gem_model_id": 3632376632333737,
+      "ruby_namespace": "::Google::Cloud::Deploy::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.deploy.v1.CloudDeploy",
+          "id": 3232616439376562,
+          "package_model_id": 3330303361336638,
+          "name": "CloudDeploy",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.ListDeliveryPipelines",
+              "id": 6238656234623634,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "ListDeliveryPipelines",
+              "input_name": "google.cloud.deploy.v1.ListDeliveryPipelinesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.GetDeliveryPipeline",
+              "id": 6565346530356533,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "GetDeliveryPipeline",
+              "input_name": "google.cloud.deploy.v1.GetDeliveryPipelineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.CreateDeliveryPipeline",
+              "id": 3132306135363331,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "CreateDeliveryPipeline",
+              "input_name": "google.cloud.deploy.v1.CreateDeliveryPipelineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.UpdateDeliveryPipeline",
+              "id": 3663336130666132,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "UpdateDeliveryPipeline",
+              "input_name": "google.cloud.deploy.v1.UpdateDeliveryPipelineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.DeleteDeliveryPipeline",
+              "id": 3864616366313038,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "DeleteDeliveryPipeline",
+              "input_name": "google.cloud.deploy.v1.DeleteDeliveryPipelineRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.ListTargets",
+              "id": 3862313039656637,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "ListTargets",
+              "input_name": "google.cloud.deploy.v1.ListTargetsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.GetTarget",
+              "id": 3331666635333432,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "GetTarget",
+              "input_name": "google.cloud.deploy.v1.GetTargetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.CreateTarget",
+              "id": 6161656666663131,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "CreateTarget",
+              "input_name": "google.cloud.deploy.v1.CreateTargetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.UpdateTarget",
+              "id": 3564356638636530,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "UpdateTarget",
+              "input_name": "google.cloud.deploy.v1.UpdateTargetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.DeleteTarget",
+              "id": 3739653766353031,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "DeleteTarget",
+              "input_name": "google.cloud.deploy.v1.DeleteTargetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.ListReleases",
+              "id": 6264396231383264,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "ListReleases",
+              "input_name": "google.cloud.deploy.v1.ListReleasesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.GetRelease",
+              "id": 3063313935343035,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "GetRelease",
+              "input_name": "google.cloud.deploy.v1.GetReleaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.CreateRelease",
+              "id": 6264333863623134,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "CreateRelease",
+              "input_name": "google.cloud.deploy.v1.CreateReleaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.ApproveRollout",
+              "id": 6162333232613738,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "ApproveRollout",
+              "input_name": "google.cloud.deploy.v1.ApproveRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.ListRollouts",
+              "id": 3235616162396466,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "ListRollouts",
+              "input_name": "google.cloud.deploy.v1.ListRolloutsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.GetRollout",
+              "id": 3965623961333233,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "GetRollout",
+              "input_name": "google.cloud.deploy.v1.GetRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.CreateRollout",
+              "id": 3564633362306164,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "CreateRollout",
+              "input_name": "google.cloud.deploy.v1.CreateRolloutRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.deploy.v1.CloudDeploy.GetConfig",
+              "id": 3833383762333565,
+              "service_model_id": 3232616439376562,
+              "rpc_name": "GetConfig",
+              "input_name": "google.cloud.deploy.v1.GetConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

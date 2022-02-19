@@ -1,0 +1,144 @@
+{
+  "design_name": "google-cloud-recaptcha_enterprise-v1",
+  "id": 3063343035306337,
+  "name": "google-cloud-recaptcha_enterprise-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.recaptchaenterprise.v1",
+      "id": 3433393332623435,
+      "name": "google.cloud.recaptchaenterprise.v1",
+      "gem_model_id": 3063343035306337,
+      "ruby_namespace": "::Google::Cloud::RecaptchaEnterprise::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService",
+          "id": 3365663532393638,
+          "package_model_id": 3433393332623435,
+          "name": "RecaptchaEnterpriseService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.CreateAssessment",
+              "id": 3034303863396132,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "CreateAssessment",
+              "input_name": "google.cloud.recaptchaenterprise.v1.CreateAssessmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.AnnotateAssessment",
+              "id": 3066323863613666,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "AnnotateAssessment",
+              "input_name": "google.cloud.recaptchaenterprise.v1.AnnotateAssessmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.CreateKey",
+              "id": 3364663265366461,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "CreateKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1.CreateKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.ListKeys",
+              "id": 3139373530323132,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "ListKeys",
+              "input_name": "google.cloud.recaptchaenterprise.v1.ListKeysRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.GetKey",
+              "id": 3462373234346133,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "GetKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1.GetKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.UpdateKey",
+              "id": 3462613431303630,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "UpdateKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1.UpdateKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.DeleteKey",
+              "id": 6262323132373261,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "DeleteKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1.DeleteKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.MigrateKey",
+              "id": 3232303130323238,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "MigrateKey",
+              "input_name": "google.cloud.recaptchaenterprise.v1.MigrateKeyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.GetMetrics",
+              "id": 6134343736363561,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "GetMetrics",
+              "input_name": "google.cloud.recaptchaenterprise.v1.GetMetricsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.ListRelatedAccountGroups",
+              "id": 6433303332613464,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "ListRelatedAccountGroups",
+              "input_name": "google.cloud.recaptchaenterprise.v1.ListRelatedAccountGroupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.ListRelatedAccountGroupMemberships",
+              "id": 3635346630386133,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "ListRelatedAccountGroupMemberships",
+              "input_name": "google.cloud.recaptchaenterprise.v1.ListRelatedAccountGroupMembershipsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.recaptchaenterprise.v1.RecaptchaEnterpriseService.SearchRelatedAccountGroupMemberships",
+              "id": 6664623735643263,
+              "service_model_id": 3365663532393638,
+              "rpc_name": "SearchRelatedAccountGroupMemberships",
+              "input_name": "google.cloud.recaptchaenterprise.v1.SearchRelatedAccountGroupMembershipsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

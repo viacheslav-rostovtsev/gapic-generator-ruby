@@ -1,0 +1,284 @@
+{
+  "design_name": "google-cloud-retail-v2beta",
+  "id": 6439383333646439,
+  "name": "google-cloud-retail-v2beta",
+  "packages": [
+    {
+      "design_name": "google.cloud.retail.v2beta",
+      "id": 3134366365336133,
+      "name": "google.cloud.retail.v2beta",
+      "gem_model_id": 6439383333646439,
+      "ruby_namespace": "::Google::Cloud::Retail::V2beta",
+      "services": [
+        {
+          "design_name": "google.cloud.retail.v2beta.CatalogService",
+          "id": 3830373132356437,
+          "package_model_id": 3134366365336133,
+          "name": "CatalogService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.CatalogService.ListCatalogs",
+              "id": 3566386631306161,
+              "service_model_id": 3830373132356437,
+              "rpc_name": "ListCatalogs",
+              "input_name": "google.cloud.retail.v2beta.ListCatalogsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.CatalogService.UpdateCatalog",
+              "id": 3935623061346233,
+              "service_model_id": 3830373132356437,
+              "rpc_name": "UpdateCatalog",
+              "input_name": "google.cloud.retail.v2beta.UpdateCatalogRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.CatalogService.SetDefaultBranch",
+              "id": 6534386334303637,
+              "service_model_id": 3830373132356437,
+              "rpc_name": "SetDefaultBranch",
+              "input_name": "google.cloud.retail.v2beta.SetDefaultBranchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.CatalogService.GetDefaultBranch",
+              "id": 3538643466346461,
+              "service_model_id": 3830373132356437,
+              "rpc_name": "GetDefaultBranch",
+              "input_name": "google.cloud.retail.v2beta.GetDefaultBranchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.retail.v2beta.CompletionService",
+          "id": 3538346464663064,
+          "package_model_id": 3134366365336133,
+          "name": "CompletionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.CompletionService.CompleteQuery",
+              "id": 6431386365383732,
+              "service_model_id": 3538346464663064,
+              "rpc_name": "CompleteQuery",
+              "input_name": "google.cloud.retail.v2beta.CompleteQueryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.CompletionService.ImportCompletionData",
+              "id": 3939323637393230,
+              "service_model_id": 3538346464663064,
+              "rpc_name": "ImportCompletionData",
+              "input_name": "google.cloud.retail.v2beta.ImportCompletionDataRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.retail.v2beta.PredictionService",
+          "id": 6339343438363539,
+          "package_model_id": 3134366365336133,
+          "name": "PredictionService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.PredictionService.Predict",
+              "id": 6238643530623035,
+              "service_model_id": 6339343438363539,
+              "rpc_name": "Predict",
+              "input_name": "google.cloud.retail.v2beta.PredictRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.retail.v2beta.ProductService",
+          "id": 3433646232363731,
+          "package_model_id": 3134366365336133,
+          "name": "ProductService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.CreateProduct",
+              "id": 3861396531396665,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "CreateProduct",
+              "input_name": "google.cloud.retail.v2beta.CreateProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.GetProduct",
+              "id": 6135623431636233,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "GetProduct",
+              "input_name": "google.cloud.retail.v2beta.GetProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.ListProducts",
+              "id": 3433386262353662,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "ListProducts",
+              "input_name": "google.cloud.retail.v2beta.ListProductsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.UpdateProduct",
+              "id": 3134346135306533,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "UpdateProduct",
+              "input_name": "google.cloud.retail.v2beta.UpdateProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.DeleteProduct",
+              "id": 3138333732366130,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "DeleteProduct",
+              "input_name": "google.cloud.retail.v2beta.DeleteProductRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.ImportProducts",
+              "id": 3033323337666562,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "ImportProducts",
+              "input_name": "google.cloud.retail.v2beta.ImportProductsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.SetInventory",
+              "id": 3233666532623838,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "SetInventory",
+              "input_name": "google.cloud.retail.v2beta.SetInventoryRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.AddFulfillmentPlaces",
+              "id": 3330313839663664,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "AddFulfillmentPlaces",
+              "input_name": "google.cloud.retail.v2beta.AddFulfillmentPlacesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.ProductService.RemoveFulfillmentPlaces",
+              "id": 6332323836633566,
+              "service_model_id": 3433646232363731,
+              "rpc_name": "RemoveFulfillmentPlaces",
+              "input_name": "google.cloud.retail.v2beta.RemoveFulfillmentPlacesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.retail.v2beta.SearchService",
+          "id": 3164323465613432,
+          "package_model_id": 3134366365336133,
+          "name": "SearchService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.SearchService.Search",
+              "id": 3338393133366532,
+              "service_model_id": 3164323465613432,
+              "rpc_name": "Search",
+              "input_name": "google.cloud.retail.v2beta.SearchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.retail.v2beta.UserEventService",
+          "id": 3634623666303665,
+          "package_model_id": 3134366365336133,
+          "name": "UserEventService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.retail.v2beta.UserEventService.WriteUserEvent",
+              "id": 6531653966363366,
+              "service_model_id": 3634623666303665,
+              "rpc_name": "WriteUserEvent",
+              "input_name": "google.cloud.retail.v2beta.WriteUserEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.UserEventService.CollectUserEvent",
+              "id": 6637613331663461,
+              "service_model_id": 3634623666303665,
+              "rpc_name": "CollectUserEvent",
+              "input_name": "google.cloud.retail.v2beta.CollectUserEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.UserEventService.PurgeUserEvents",
+              "id": 6161336566663739,
+              "service_model_id": 3634623666303665,
+              "rpc_name": "PurgeUserEvents",
+              "input_name": "google.cloud.retail.v2beta.PurgeUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.UserEventService.ImportUserEvents",
+              "id": 6262613562643233,
+              "service_model_id": 3634623666303665,
+              "rpc_name": "ImportUserEvents",
+              "input_name": "google.cloud.retail.v2beta.ImportUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.retail.v2beta.UserEventService.RejoinUserEvents",
+              "id": 3463393938373139,
+              "service_model_id": 3634623666303665,
+              "rpc_name": "RejoinUserEvents",
+              "input_name": "google.cloud.retail.v2beta.RejoinUserEventsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

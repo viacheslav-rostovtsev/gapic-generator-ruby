@@ -1,0 +1,194 @@
+{
+  "design_name": "google-cloud-spanner-admin-database-v1",
+  "id": 3865623931373139,
+  "name": "google-cloud-spanner-admin-database-v1",
+  "packages": [
+    {
+      "design_name": "google.spanner.admin.database.v1",
+      "id": 3164643762643263,
+      "name": "google.spanner.admin.database.v1",
+      "gem_model_id": 3865623931373139,
+      "ruby_namespace": "::Google::Cloud::Spanner::Admin::Database::V1",
+      "services": [
+        {
+          "design_name": "google.spanner.admin.database.v1.DatabaseAdmin",
+          "id": 3463373161333431,
+          "package_model_id": 3164643762643263,
+          "name": "DatabaseAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.ListDatabases",
+              "id": 3163373230643231,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "ListDatabases",
+              "input_name": "google.spanner.admin.database.v1.ListDatabasesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.CreateDatabase",
+              "id": 3132643330363232,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "CreateDatabase",
+              "input_name": "google.spanner.admin.database.v1.CreateDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.GetDatabase",
+              "id": 6435613330333831,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "GetDatabase",
+              "input_name": "google.spanner.admin.database.v1.GetDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.UpdateDatabaseDdl",
+              "id": 3233323865643539,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "UpdateDatabaseDdl",
+              "input_name": "google.spanner.admin.database.v1.UpdateDatabaseDdlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.DropDatabase",
+              "id": 3462666132616362,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "DropDatabase",
+              "input_name": "google.spanner.admin.database.v1.DropDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.GetDatabaseDdl",
+              "id": 3263373533306138,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "GetDatabaseDdl",
+              "input_name": "google.spanner.admin.database.v1.GetDatabaseDdlRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.SetIamPolicy",
+              "id": 3730346637653230,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.GetIamPolicy",
+              "id": 6436643962393936,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.TestIamPermissions",
+              "id": 3865663032383565,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.CreateBackup",
+              "id": 3264613536653462,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "CreateBackup",
+              "input_name": "google.spanner.admin.database.v1.CreateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.GetBackup",
+              "id": 3966633730356566,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "GetBackup",
+              "input_name": "google.spanner.admin.database.v1.GetBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.UpdateBackup",
+              "id": 3038666132383966,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "UpdateBackup",
+              "input_name": "google.spanner.admin.database.v1.UpdateBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.DeleteBackup",
+              "id": 3335363066323937,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "DeleteBackup",
+              "input_name": "google.spanner.admin.database.v1.DeleteBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.ListBackups",
+              "id": 3336613866663938,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "ListBackups",
+              "input_name": "google.spanner.admin.database.v1.ListBackupsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.RestoreDatabase",
+              "id": 3731343332656331,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "RestoreDatabase",
+              "input_name": "google.spanner.admin.database.v1.RestoreDatabaseRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.ListDatabaseOperations",
+              "id": 6536333830343464,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "ListDatabaseOperations",
+              "input_name": "google.spanner.admin.database.v1.ListDatabaseOperationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.database.v1.DatabaseAdmin.ListBackupOperations",
+              "id": 3961613439316138,
+              "service_model_id": 3463373161333431,
+              "rpc_name": "ListBackupOperations",
+              "input_name": "google.spanner.admin.database.v1.ListBackupOperationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

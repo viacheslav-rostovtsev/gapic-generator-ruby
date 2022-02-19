@@ -1,0 +1,54 @@
+{
+  "design_name": "google-cloud-private_catalog-v1beta1",
+  "id": 6639343863383765,
+  "name": "google-cloud-private_catalog-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.privatecatalog.v1beta1",
+      "id": 6164323066343837,
+      "name": "google.cloud.privatecatalog.v1beta1",
+      "gem_model_id": 6639343863383765,
+      "ruby_namespace": "::Google::Cloud::PrivateCatalog::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.privatecatalog.v1beta1.PrivateCatalog",
+          "id": 3761346131326235,
+          "package_model_id": 6164323066343837,
+          "name": "PrivateCatalog",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.privatecatalog.v1beta1.PrivateCatalog.SearchCatalogs",
+              "id": 6636313137343762,
+              "service_model_id": 3761346131326235,
+              "rpc_name": "SearchCatalogs",
+              "input_name": "google.cloud.privatecatalog.v1beta1.SearchCatalogsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.privatecatalog.v1beta1.PrivateCatalog.SearchProducts",
+              "id": 6463386366396332,
+              "service_model_id": 3761346131326235,
+              "rpc_name": "SearchProducts",
+              "input_name": "google.cloud.privatecatalog.v1beta1.SearchProductsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.privatecatalog.v1beta1.PrivateCatalog.SearchVersions",
+              "id": 3465333539366238,
+              "service_model_id": 3761346131326235,
+              "rpc_name": "SearchVersions",
+              "input_name": "google.cloud.privatecatalog.v1beta1.SearchVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

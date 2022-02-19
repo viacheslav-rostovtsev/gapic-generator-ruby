@@ -1,0 +1,224 @@
+{
+  "design_name": "google-cloud-bigquery-reservation-v1",
+  "id": 6237373561636133,
+  "name": "google-cloud-bigquery-reservation-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.bigquery.reservation.v1",
+      "id": 6539643862386464,
+      "name": "google.cloud.bigquery.reservation.v1",
+      "gem_model_id": 6237373561636133,
+      "ruby_namespace": "::Google::Cloud::Bigquery::Reservation::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.bigquery.reservation.v1.ReservationService",
+          "id": 3439663432376364,
+          "package_model_id": 6539643862386464,
+          "name": "ReservationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.CreateReservation",
+              "id": 3930386637306365,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "CreateReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.CreateReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.ListReservations",
+              "id": 3664636465396638,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "ListReservations",
+              "input_name": "google.cloud.bigquery.reservation.v1.ListReservationsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.GetReservation",
+              "id": 6330666431343032,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "GetReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.GetReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.DeleteReservation",
+              "id": 3061613539323331,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "DeleteReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.DeleteReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.UpdateReservation",
+              "id": 3336353135323033,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "UpdateReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.UpdateReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.CreateCapacityCommitment",
+              "id": 3634623132373236,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "CreateCapacityCommitment",
+              "input_name": "google.cloud.bigquery.reservation.v1.CreateCapacityCommitmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.ListCapacityCommitments",
+              "id": 3364363731336538,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "ListCapacityCommitments",
+              "input_name": "google.cloud.bigquery.reservation.v1.ListCapacityCommitmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.GetCapacityCommitment",
+              "id": 6565366333626434,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "GetCapacityCommitment",
+              "input_name": "google.cloud.bigquery.reservation.v1.GetCapacityCommitmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.DeleteCapacityCommitment",
+              "id": 3235393965386166,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "DeleteCapacityCommitment",
+              "input_name": "google.cloud.bigquery.reservation.v1.DeleteCapacityCommitmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.UpdateCapacityCommitment",
+              "id": 6234353063336131,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "UpdateCapacityCommitment",
+              "input_name": "google.cloud.bigquery.reservation.v1.UpdateCapacityCommitmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.SplitCapacityCommitment",
+              "id": 6433663737373633,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "SplitCapacityCommitment",
+              "input_name": "google.cloud.bigquery.reservation.v1.SplitCapacityCommitmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.MergeCapacityCommitments",
+              "id": 6265313736323435,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "MergeCapacityCommitments",
+              "input_name": "google.cloud.bigquery.reservation.v1.MergeCapacityCommitmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.CreateAssignment",
+              "id": 3730373036363837,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "CreateAssignment",
+              "input_name": "google.cloud.bigquery.reservation.v1.CreateAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.ListAssignments",
+              "id": 3536343134313264,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "ListAssignments",
+              "input_name": "google.cloud.bigquery.reservation.v1.ListAssignmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.DeleteAssignment",
+              "id": 3463396330643031,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "DeleteAssignment",
+              "input_name": "google.cloud.bigquery.reservation.v1.DeleteAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.SearchAssignments",
+              "id": 3566376432386233,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "SearchAssignments",
+              "input_name": "google.cloud.bigquery.reservation.v1.SearchAssignmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.SearchAllAssignments",
+              "id": 6134303765376265,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "SearchAllAssignments",
+              "input_name": "google.cloud.bigquery.reservation.v1.SearchAllAssignmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.MoveAssignment",
+              "id": 6664363139373930,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "MoveAssignment",
+              "input_name": "google.cloud.bigquery.reservation.v1.MoveAssignmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.GetBiReservation",
+              "id": 3963336665353762,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "GetBiReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.GetBiReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.bigquery.reservation.v1.ReservationService.UpdateBiReservation",
+              "id": 3432646564393766,
+              "service_model_id": 3439663432376364,
+              "rpc_name": "UpdateBiReservation",
+              "input_name": "google.cloud.bigquery.reservation.v1.UpdateBiReservationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

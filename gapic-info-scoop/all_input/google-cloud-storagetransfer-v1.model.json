@@ -1,0 +1,104 @@
+{
+  "design_name": "google-cloud-storage_transfer-v1",
+  "id": 6461343638633538,
+  "name": "google-cloud-storage_transfer-v1",
+  "packages": [
+    {
+      "design_name": "google.storagetransfer.v1",
+      "id": 6165363934626165,
+      "name": "google.storagetransfer.v1",
+      "gem_model_id": 6461343638633538,
+      "ruby_namespace": "::Google::Cloud::StorageTransfer::V1",
+      "services": [
+        {
+          "design_name": "google.storagetransfer.v1.StorageTransferService",
+          "id": 6338393233306430,
+          "package_model_id": 6165363934626165,
+          "name": "StorageTransferService",
+          "rpcs": [
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.GetGoogleServiceAccount",
+              "id": 3564396231333163,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "GetGoogleServiceAccount",
+              "input_name": "google.storagetransfer.v1.GetGoogleServiceAccountRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.CreateTransferJob",
+              "id": 3861373037633334,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "CreateTransferJob",
+              "input_name": "google.storagetransfer.v1.CreateTransferJobRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.UpdateTransferJob",
+              "id": 6532656137643237,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "UpdateTransferJob",
+              "input_name": "google.storagetransfer.v1.UpdateTransferJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.GetTransferJob",
+              "id": 3531366531653663,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "GetTransferJob",
+              "input_name": "google.storagetransfer.v1.GetTransferJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.ListTransferJobs",
+              "id": 6236346361666366,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "ListTransferJobs",
+              "input_name": "google.storagetransfer.v1.ListTransferJobsRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.PauseTransferOperation",
+              "id": 6463323262323562,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "PauseTransferOperation",
+              "input_name": "google.storagetransfer.v1.PauseTransferOperationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.ResumeTransferOperation",
+              "id": 3231323630643631,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "ResumeTransferOperation",
+              "input_name": "google.storagetransfer.v1.ResumeTransferOperationRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.storagetransfer.v1.StorageTransferService.RunTransferJob",
+              "id": 6162346538386366,
+              "service_model_id": 6338393233306430,
+              "rpc_name": "RunTransferJob",
+              "input_name": "google.storagetransfer.v1.RunTransferJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

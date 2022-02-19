@@ -1,0 +1,584 @@
+{
+  "design_name": "google-cloud-sql-v1",
+  "id": 3761333265643164,
+  "name": "google-cloud-sql-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.sql.v1",
+      "id": 3038346133323564,
+      "name": "google.cloud.sql.v1",
+      "gem_model_id": 3761333265643164,
+      "ruby_namespace": "::Google::Cloud::Sql::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.sql.v1.SqlBackupRunsService",
+          "id": 3837363462323538,
+          "package_model_id": 3038346133323564,
+          "name": "SqlBackupRunsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlBackupRunsService.Delete",
+              "id": 6364376637333132,
+              "service_model_id": 3837363462323538,
+              "rpc_name": "Delete",
+              "input_name": "google.cloud.sql.v1.SqlBackupRunsDeleteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlBackupRunsService.Get",
+              "id": 6665366338313438,
+              "service_model_id": 3837363462323538,
+              "rpc_name": "Get",
+              "input_name": "google.cloud.sql.v1.SqlBackupRunsGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlBackupRunsService.Insert",
+              "id": 3631303264613336,
+              "service_model_id": 3837363462323538,
+              "rpc_name": "Insert",
+              "input_name": "google.cloud.sql.v1.SqlBackupRunsInsertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlBackupRunsService.List",
+              "id": 3665646433393232,
+              "service_model_id": 3837363462323538,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlBackupRunsListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlConnectService",
+          "id": 6338316436653636,
+          "package_model_id": 3038346133323564,
+          "name": "SqlConnectService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlConnectService.GetConnectSettings",
+              "id": 6632306235616437,
+              "service_model_id": 6338316436653636,
+              "rpc_name": "GetConnectSettings",
+              "input_name": "google.cloud.sql.v1.GetConnectSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlConnectService.GenerateEphemeralCert",
+              "id": 6337323861386664,
+              "service_model_id": 6338316436653636,
+              "rpc_name": "GenerateEphemeralCert",
+              "input_name": "google.cloud.sql.v1.GenerateEphemeralCertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlDatabasesService",
+          "id": 3862613838663037,
+          "package_model_id": 3038346133323564,
+          "name": "SqlDatabasesService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.Delete",
+              "id": 3361316639636431,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "Delete",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesDeleteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.Get",
+              "id": 3162633833303464,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "Get",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.Insert",
+              "id": 3533396634636435,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "Insert",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesInsertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.List",
+              "id": 3265353732333862,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.Patch",
+              "id": 6434633265613561,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "Patch",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlDatabasesService.Update",
+              "id": 6338656335353365,
+              "service_model_id": 3862613838663037,
+              "rpc_name": "Update",
+              "input_name": "google.cloud.sql.v1.SqlDatabasesUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlFlagsService",
+          "id": 6638666236626538,
+          "package_model_id": 3038346133323564,
+          "name": "SqlFlagsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlFlagsService.List",
+              "id": 3437346436376134,
+              "service_model_id": 6638666236626538,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlFlagsListRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlInstanceNamesService",
+          "id": 3766393135326538,
+          "package_model_id": 3038346133323564,
+          "name": "SqlInstanceNamesService"
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlInstancesService",
+          "id": 3838623866613961,
+          "package_model_id": 3038346133323564,
+          "name": "SqlInstancesService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.AddServerCa",
+              "id": 3061313563343735,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "AddServerCa",
+              "input_name": "google.cloud.sql.v1.SqlInstancesAddServerCaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Clone",
+              "id": 3963373864363063,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Clone",
+              "input_name": "google.cloud.sql.v1.SqlInstancesCloneRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Delete",
+              "id": 6336656138326234,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Delete",
+              "input_name": "google.cloud.sql.v1.SqlInstancesDeleteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.DemoteMaster",
+              "id": 3065613739323530,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "DemoteMaster",
+              "input_name": "google.cloud.sql.v1.SqlInstancesDemoteMasterRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Export",
+              "id": 6631386462633262,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Export",
+              "input_name": "google.cloud.sql.v1.SqlInstancesExportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Failover",
+              "id": 6531633037366162,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Failover",
+              "input_name": "google.cloud.sql.v1.SqlInstancesFailoverRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Get",
+              "id": 3539656563313031,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Get",
+              "input_name": "google.cloud.sql.v1.SqlInstancesGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Import",
+              "id": 3038373137653935,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Import",
+              "input_name": "google.cloud.sql.v1.SqlInstancesImportRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Insert",
+              "id": 3635663333336364,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Insert",
+              "input_name": "google.cloud.sql.v1.SqlInstancesInsertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.List",
+              "id": 3665373737653235,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlInstancesListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.ListServerCas",
+              "id": 6237383366366631,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "ListServerCas",
+              "input_name": "google.cloud.sql.v1.SqlInstancesListServerCasRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Patch",
+              "id": 6463383766623263,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Patch",
+              "input_name": "google.cloud.sql.v1.SqlInstancesPatchRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.PromoteReplica",
+              "id": 3336333238333135,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "PromoteReplica",
+              "input_name": "google.cloud.sql.v1.SqlInstancesPromoteReplicaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.ResetSslConfig",
+              "id": 3362616333653233,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "ResetSslConfig",
+              "input_name": "google.cloud.sql.v1.SqlInstancesResetSslConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Restart",
+              "id": 6530376330663331,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Restart",
+              "input_name": "google.cloud.sql.v1.SqlInstancesRestartRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.RestoreBackup",
+              "id": 6562366139663930,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "RestoreBackup",
+              "input_name": "google.cloud.sql.v1.SqlInstancesRestoreBackupRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.RotateServerCa",
+              "id": 3263353031343132,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "RotateServerCa",
+              "input_name": "google.cloud.sql.v1.SqlInstancesRotateServerCaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.StartReplica",
+              "id": 6261303564316638,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "StartReplica",
+              "input_name": "google.cloud.sql.v1.SqlInstancesStartReplicaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.StopReplica",
+              "id": 6338633437323636,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "StopReplica",
+              "input_name": "google.cloud.sql.v1.SqlInstancesStopReplicaRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.TruncateLog",
+              "id": 3832333663646633,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "TruncateLog",
+              "input_name": "google.cloud.sql.v1.SqlInstancesTruncateLogRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.Update",
+              "id": 6434643062343332,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "Update",
+              "input_name": "google.cloud.sql.v1.SqlInstancesUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.CreateEphemeral",
+              "id": 3439376431316266,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "CreateEphemeral",
+              "input_name": "google.cloud.sql.v1.SqlInstancesCreateEphemeralCertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.RescheduleMaintenance",
+              "id": 6366643762323334,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "RescheduleMaintenance",
+              "input_name": "google.cloud.sql.v1.SqlInstancesRescheduleMaintenanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.VerifyExternalSyncSettings",
+              "id": 6530653036646161,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "VerifyExternalSyncSettings",
+              "input_name": "google.cloud.sql.v1.SqlInstancesVerifyExternalSyncSettingsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlInstancesService.StartExternalSync",
+              "id": 6138666333333739,
+              "service_model_id": 3838623866613961,
+              "rpc_name": "StartExternalSync",
+              "input_name": "google.cloud.sql.v1.SqlInstancesStartExternalSyncRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlOperationsService",
+          "id": 6362393335633838,
+          "package_model_id": 3038346133323564,
+          "name": "SqlOperationsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlOperationsService.Get",
+              "id": 3530303834616235,
+              "service_model_id": 6362393335633838,
+              "rpc_name": "Get",
+              "input_name": "google.cloud.sql.v1.SqlOperationsGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlOperationsService.List",
+              "id": 6238316263343135,
+              "service_model_id": 6362393335633838,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlOperationsListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlSslCertsService",
+          "id": 3836626363626163,
+          "package_model_id": 3038346133323564,
+          "name": "SqlSslCertsService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlSslCertsService.Delete",
+              "id": 3863633263366265,
+              "service_model_id": 3836626363626163,
+              "rpc_name": "Delete",
+              "input_name": "google.cloud.sql.v1.SqlSslCertsDeleteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlSslCertsService.Get",
+              "id": 6233326239383435,
+              "service_model_id": 3836626363626163,
+              "rpc_name": "Get",
+              "input_name": "google.cloud.sql.v1.SqlSslCertsGetRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlSslCertsService.Insert",
+              "id": 6565326136363036,
+              "service_model_id": 3836626363626163,
+              "rpc_name": "Insert",
+              "input_name": "google.cloud.sql.v1.SqlSslCertsInsertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlSslCertsService.List",
+              "id": 3936373264396630,
+              "service_model_id": 3836626363626163,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlSslCertsListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlTiersService",
+          "id": 3265366166326462,
+          "package_model_id": 3038346133323564,
+          "name": "SqlTiersService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlTiersService.List",
+              "id": 6137653634656332,
+              "service_model_id": 3265366166326462,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlTiersListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.sql.v1.SqlUsersService",
+          "id": 3034653733313833,
+          "package_model_id": 3038346133323564,
+          "name": "SqlUsersService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.sql.v1.SqlUsersService.Delete",
+              "id": 3838626338613564,
+              "service_model_id": 3034653733313833,
+              "rpc_name": "Delete",
+              "input_name": "google.cloud.sql.v1.SqlUsersDeleteRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlUsersService.Insert",
+              "id": 3839353866663637,
+              "service_model_id": 3034653733313833,
+              "rpc_name": "Insert",
+              "input_name": "google.cloud.sql.v1.SqlUsersInsertRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlUsersService.List",
+              "id": 6132626634356563,
+              "service_model_id": 3034653733313833,
+              "rpc_name": "List",
+              "input_name": "google.cloud.sql.v1.SqlUsersListRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.sql.v1.SqlUsersService.Update",
+              "id": 3430373338633630,
+              "service_model_id": 3034653733313833,
+              "rpc_name": "Update",
+              "input_name": "google.cloud.sql.v1.SqlUsersUpdateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

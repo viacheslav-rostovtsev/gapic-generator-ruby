@@ -1,0 +1,124 @@
+{
+  "design_name": "google-cloud-spanner-admin-instance-v1",
+  "id": 6333366437303161,
+  "name": "google-cloud-spanner-admin-instance-v1",
+  "packages": [
+    {
+      "design_name": "google.spanner.admin.instance.v1",
+      "id": 6133343464616535,
+      "name": "google.spanner.admin.instance.v1",
+      "gem_model_id": 6333366437303161,
+      "ruby_namespace": "::Google::Cloud::Spanner::Admin::Instance::V1",
+      "services": [
+        {
+          "design_name": "google.spanner.admin.instance.v1.InstanceAdmin",
+          "id": 3235616133346132,
+          "package_model_id": 6133343464616535,
+          "name": "InstanceAdmin",
+          "rpcs": [
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.ListInstanceConfigs",
+              "id": 3335363438333462,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "ListInstanceConfigs",
+              "input_name": "google.spanner.admin.instance.v1.ListInstanceConfigsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.GetInstanceConfig",
+              "id": 6261396130393661,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "GetInstanceConfig",
+              "input_name": "google.spanner.admin.instance.v1.GetInstanceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.ListInstances",
+              "id": 3564376230383934,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "ListInstances",
+              "input_name": "google.spanner.admin.instance.v1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.GetInstance",
+              "id": 3065306332393230,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "GetInstance",
+              "input_name": "google.spanner.admin.instance.v1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.CreateInstance",
+              "id": 3136373238313338,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.spanner.admin.instance.v1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstance",
+              "id": 3939666138313964,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.spanner.admin.instance.v1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.DeleteInstance",
+              "id": 3963346434366462,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.spanner.admin.instance.v1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.SetIamPolicy",
+              "id": 3130333135666234,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.GetIamPolicy",
+              "id": 3730353836633061,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.spanner.admin.instance.v1.InstanceAdmin.TestIamPermissions",
+              "id": 3564343964363563,
+              "service_model_id": 3235616133346132,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

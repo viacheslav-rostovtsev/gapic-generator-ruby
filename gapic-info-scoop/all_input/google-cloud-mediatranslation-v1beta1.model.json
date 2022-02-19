@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-media_translation-v1beta1",
+  "id": 6462396336383561,
+  "name": "google-cloud-media_translation-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.mediatranslation.v1beta1",
+      "id": 6565636230643061,
+      "name": "google.cloud.mediatranslation.v1beta1",
+      "gem_model_id": 6462396336383561,
+      "ruby_namespace": "::Google::Cloud::MediaTranslation::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.mediatranslation.v1beta1.SpeechTranslationService",
+          "id": 3132623266616434,
+          "package_model_id": 6565636230643061,
+          "name": "SpeechTranslationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.mediatranslation.v1beta1.SpeechTranslationService.StreamingTranslateSpeech",
+              "id": 3337366464313666,
+              "service_model_id": 3132623266616434,
+              "rpc_name": "StreamingTranslateSpeech",
+              "input_name": "google.cloud.mediatranslation.v1beta1.StreamingTranslateSpeechRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "bidi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

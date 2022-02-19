@@ -1,0 +1,442 @@
+{
+  "design_name": "google-cloud-notebooks-v1",
+  "id": 3162386632623365,
+  "name": "google-cloud-notebooks-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.notebooks.v1",
+      "id": 6363323265646238,
+      "name": "google.cloud.notebooks.v1",
+      "gem_model_id": 3162386632623365,
+      "ruby_namespace": "::Google::Cloud::Notebooks::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.notebooks.v1.ManagedNotebookService",
+          "id": 3835376238613766,
+          "package_model_id": 6363323265646238,
+          "name": "ManagedNotebookService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.ListRuntimes",
+              "id": 6638363338643761,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "ListRuntimes",
+              "input_name": "google.cloud.notebooks.v1.ListRuntimesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.GetRuntime",
+              "id": 6330633833306539,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "GetRuntime",
+              "input_name": "google.cloud.notebooks.v1.GetRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.CreateRuntime",
+              "id": 6336383531313232,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "CreateRuntime",
+              "input_name": "google.cloud.notebooks.v1.CreateRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.DeleteRuntime",
+              "id": 6230333164306533,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "DeleteRuntime",
+              "input_name": "google.cloud.notebooks.v1.DeleteRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.StartRuntime",
+              "id": 6162633530363663,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "StartRuntime",
+              "input_name": "google.cloud.notebooks.v1.StartRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.StopRuntime",
+              "id": 3932343066383530,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "StopRuntime",
+              "input_name": "google.cloud.notebooks.v1.StopRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.SwitchRuntime",
+              "id": 3063653064646436,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "SwitchRuntime",
+              "input_name": "google.cloud.notebooks.v1.SwitchRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.ResetRuntime",
+              "id": 6637656566613031,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "ResetRuntime",
+              "input_name": "google.cloud.notebooks.v1.ResetRuntimeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.ManagedNotebookService.ReportRuntimeEvent",
+              "id": 3735353865353663,
+              "service_model_id": 3835376238613766,
+              "rpc_name": "ReportRuntimeEvent",
+              "input_name": "google.cloud.notebooks.v1.ReportRuntimeEventRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.notebooks.v1.NotebookService",
+          "id": 6537316631366238,
+          "package_model_id": 6363323265646238,
+          "name": "NotebookService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ListInstances",
+              "id": 3530353632313838,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.notebooks.v1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.GetInstance",
+              "id": 6336393336613135,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.notebooks.v1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.CreateInstance",
+              "id": 3264383761306230,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.notebooks.v1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.RegisterInstance",
+              "id": 6361346433383465,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "RegisterInstance",
+              "input_name": "google.cloud.notebooks.v1.RegisterInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.SetInstanceAccelerator",
+              "id": 3134313862646636,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "SetInstanceAccelerator",
+              "input_name": "google.cloud.notebooks.v1.SetInstanceAcceleratorRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.SetInstanceMachineType",
+              "id": 3435363233623035,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "SetInstanceMachineType",
+              "input_name": "google.cloud.notebooks.v1.SetInstanceMachineTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.UpdateInstanceConfig",
+              "id": 3838623537326239,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "UpdateInstanceConfig",
+              "input_name": "google.cloud.notebooks.v1.UpdateInstanceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.UpdateShieldedInstanceConfig",
+              "id": 6438633866663262,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "UpdateShieldedInstanceConfig",
+              "input_name": "google.cloud.notebooks.v1.UpdateShieldedInstanceConfigRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.SetInstanceLabels",
+              "id": 3863343333366530,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "SetInstanceLabels",
+              "input_name": "google.cloud.notebooks.v1.SetInstanceLabelsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.DeleteInstance",
+              "id": 6665393430323866,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.notebooks.v1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.StartInstance",
+              "id": 6661653534303364,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "StartInstance",
+              "input_name": "google.cloud.notebooks.v1.StartInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.StopInstance",
+              "id": 3638303036633632,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "StopInstance",
+              "input_name": "google.cloud.notebooks.v1.StopInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ResetInstance",
+              "id": 3839626630306364,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ResetInstance",
+              "input_name": "google.cloud.notebooks.v1.ResetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ReportInstanceInfo",
+              "id": 3463313565333535,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ReportInstanceInfo",
+              "input_name": "google.cloud.notebooks.v1.ReportInstanceInfoRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.IsInstanceUpgradeable",
+              "id": 6362656563316265,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "IsInstanceUpgradeable",
+              "input_name": "google.cloud.notebooks.v1.IsInstanceUpgradeableRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.GetInstanceHealth",
+              "id": 6630646631663335,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "GetInstanceHealth",
+              "input_name": "google.cloud.notebooks.v1.GetInstanceHealthRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.UpgradeInstance",
+              "id": 3766666638643065,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "UpgradeInstance",
+              "input_name": "google.cloud.notebooks.v1.UpgradeInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.RollbackInstance",
+              "id": 6632636537343530,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "RollbackInstance",
+              "input_name": "google.cloud.notebooks.v1.RollbackInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.UpgradeInstanceInternal",
+              "id": 3065303739633233,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "UpgradeInstanceInternal",
+              "input_name": "google.cloud.notebooks.v1.UpgradeInstanceInternalRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ListEnvironments",
+              "id": 6361646665623039,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ListEnvironments",
+              "input_name": "google.cloud.notebooks.v1.ListEnvironmentsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.GetEnvironment",
+              "id": 6537663131343663,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "GetEnvironment",
+              "input_name": "google.cloud.notebooks.v1.GetEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.CreateEnvironment",
+              "id": 3736333637383032,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "CreateEnvironment",
+              "input_name": "google.cloud.notebooks.v1.CreateEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.DeleteEnvironment",
+              "id": 3532383831646638,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "DeleteEnvironment",
+              "input_name": "google.cloud.notebooks.v1.DeleteEnvironmentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ListSchedules",
+              "id": 3330323933343230,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ListSchedules",
+              "input_name": "google.cloud.notebooks.v1.ListSchedulesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.GetSchedule",
+              "id": 6463303337386264,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "GetSchedule",
+              "input_name": "google.cloud.notebooks.v1.GetScheduleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.DeleteSchedule",
+              "id": 3730646664306466,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "DeleteSchedule",
+              "input_name": "google.cloud.notebooks.v1.DeleteScheduleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.CreateSchedule",
+              "id": 3635653632353334,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "CreateSchedule",
+              "input_name": "google.cloud.notebooks.v1.CreateScheduleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.TriggerSchedule",
+              "id": 6633326263613832,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "TriggerSchedule",
+              "input_name": "google.cloud.notebooks.v1.TriggerScheduleRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.ListExecutions",
+              "id": 3964356335646361,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "ListExecutions",
+              "input_name": "google.cloud.notebooks.v1.ListExecutionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.GetExecution",
+              "id": 6334313963666632,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "GetExecution",
+              "input_name": "google.cloud.notebooks.v1.GetExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.DeleteExecution",
+              "id": 6633323361613639,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "DeleteExecution",
+              "input_name": "google.cloud.notebooks.v1.DeleteExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.notebooks.v1.NotebookService.CreateExecution",
+              "id": 3132333737383337,
+              "service_model_id": 6537316631366238,
+              "rpc_name": "CreateExecution",
+              "input_name": "google.cloud.notebooks.v1.CreateExecutionRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

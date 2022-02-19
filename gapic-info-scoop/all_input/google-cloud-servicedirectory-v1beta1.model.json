@@ -1,0 +1,222 @@
+{
+  "design_name": "google-cloud-service_directory-v1beta1",
+  "id": 6331643563316239,
+  "name": "google-cloud-service_directory-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.servicedirectory.v1beta1",
+      "id": 3762373864633039,
+      "name": "google.cloud.servicedirectory.v1beta1",
+      "gem_model_id": 6331643563316239,
+      "ruby_namespace": "::Google::Cloud::ServiceDirectory::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.servicedirectory.v1beta1.LookupService",
+          "id": 6631303930633134,
+          "package_model_id": 3762373864633039,
+          "name": "LookupService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.LookupService.ResolveService",
+              "id": 3161636162623833,
+              "service_model_id": 6631303930633134,
+              "rpc_name": "ResolveService",
+              "input_name": "google.cloud.servicedirectory.v1beta1.ResolveServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        },
+        {
+          "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService",
+          "id": 3032343539333636,
+          "package_model_id": 3762373864633039,
+          "name": "RegistrationService",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.CreateNamespace",
+              "id": 6437346536626238,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "CreateNamespace",
+              "input_name": "google.cloud.servicedirectory.v1beta1.CreateNamespaceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.ListNamespaces",
+              "id": 3461653933386437,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "ListNamespaces",
+              "input_name": "google.cloud.servicedirectory.v1beta1.ListNamespacesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.GetNamespace",
+              "id": 3064623334313036,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "GetNamespace",
+              "input_name": "google.cloud.servicedirectory.v1beta1.GetNamespaceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.UpdateNamespace",
+              "id": 6535353636613166,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "UpdateNamespace",
+              "input_name": "google.cloud.servicedirectory.v1beta1.UpdateNamespaceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.DeleteNamespace",
+              "id": 3031613633626531,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "DeleteNamespace",
+              "input_name": "google.cloud.servicedirectory.v1beta1.DeleteNamespaceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.CreateService",
+              "id": 3232333065383766,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "CreateService",
+              "input_name": "google.cloud.servicedirectory.v1beta1.CreateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.ListServices",
+              "id": 3563303566313966,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "ListServices",
+              "input_name": "google.cloud.servicedirectory.v1beta1.ListServicesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.GetService",
+              "id": 3438303330666235,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "GetService",
+              "input_name": "google.cloud.servicedirectory.v1beta1.GetServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.UpdateService",
+              "id": 6638323530336433,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "UpdateService",
+              "input_name": "google.cloud.servicedirectory.v1beta1.UpdateServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.DeleteService",
+              "id": 6539343630613239,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "DeleteService",
+              "input_name": "google.cloud.servicedirectory.v1beta1.DeleteServiceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.CreateEndpoint",
+              "id": 3239636435323633,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "CreateEndpoint",
+              "input_name": "google.cloud.servicedirectory.v1beta1.CreateEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.ListEndpoints",
+              "id": 3133626566363064,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "ListEndpoints",
+              "input_name": "google.cloud.servicedirectory.v1beta1.ListEndpointsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.GetEndpoint",
+              "id": 6338363261623166,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "GetEndpoint",
+              "input_name": "google.cloud.servicedirectory.v1beta1.GetEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.UpdateEndpoint",
+              "id": 3062313935306264,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "UpdateEndpoint",
+              "input_name": "google.cloud.servicedirectory.v1beta1.UpdateEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.DeleteEndpoint",
+              "id": 3639336465303263,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "DeleteEndpoint",
+              "input_name": "google.cloud.servicedirectory.v1beta1.DeleteEndpointRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.GetIamPolicy",
+              "id": 6666343366616435,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "GetIamPolicy",
+              "input_name": "google.iam.v1.GetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.SetIamPolicy",
+              "id": 6332623639616361,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "SetIamPolicy",
+              "input_name": "google.iam.v1.SetIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.servicedirectory.v1beta1.RegistrationService.TestIamPermissions",
+              "id": 3936653332303736,
+              "service_model_id": 3032343539333636,
+              "rpc_name": "TestIamPermissions",
+              "input_name": "google.iam.v1.TestIamPermissionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

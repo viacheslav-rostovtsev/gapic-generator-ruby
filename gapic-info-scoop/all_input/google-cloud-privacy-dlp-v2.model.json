@@ -1,0 +1,364 @@
+{
+  "design_name": "google-cloud-dlp-v2",
+  "id": 3630323435303235,
+  "name": "google-cloud-dlp-v2",
+  "packages": [
+    {
+      "design_name": "google.privacy.dlp.v2",
+      "id": 3133663464333138,
+      "name": "google.privacy.dlp.v2",
+      "gem_model_id": 3630323435303235,
+      "ruby_namespace": "::Google::Cloud::Dlp::V2",
+      "services": [
+        {
+          "design_name": "google.privacy.dlp.v2.DlpService",
+          "id": 3636656464636635,
+          "package_model_id": 3133663464333138,
+          "name": "DlpService",
+          "rpcs": [
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.InspectContent",
+              "id": 6638343030373335,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "InspectContent",
+              "input_name": "google.privacy.dlp.v2.InspectContentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.RedactImage",
+              "id": 3832386462393834,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "RedactImage",
+              "input_name": "google.privacy.dlp.v2.RedactImageRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeidentifyContent",
+              "id": 6162353030313834,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeidentifyContent",
+              "input_name": "google.privacy.dlp.v2.DeidentifyContentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ReidentifyContent",
+              "id": 3264326563336166,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ReidentifyContent",
+              "input_name": "google.privacy.dlp.v2.ReidentifyContentRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListInfoTypes",
+              "id": 3263346663613462,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListInfoTypes",
+              "input_name": "google.privacy.dlp.v2.ListInfoTypesRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CreateInspectTemplate",
+              "id": 6166613666326561,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CreateInspectTemplate",
+              "input_name": "google.privacy.dlp.v2.CreateInspectTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.UpdateInspectTemplate",
+              "id": 6636393366303361,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "UpdateInspectTemplate",
+              "input_name": "google.privacy.dlp.v2.UpdateInspectTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.GetInspectTemplate",
+              "id": 3236386663643532,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "GetInspectTemplate",
+              "input_name": "google.privacy.dlp.v2.GetInspectTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListInspectTemplates",
+              "id": 3937613133323564,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListInspectTemplates",
+              "input_name": "google.privacy.dlp.v2.ListInspectTemplatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeleteInspectTemplate",
+              "id": 3236326565353564,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeleteInspectTemplate",
+              "input_name": "google.privacy.dlp.v2.DeleteInspectTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CreateDeidentifyTemplate",
+              "id": 3939346661663035,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CreateDeidentifyTemplate",
+              "input_name": "google.privacy.dlp.v2.CreateDeidentifyTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.UpdateDeidentifyTemplate",
+              "id": 6130313638633565,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "UpdateDeidentifyTemplate",
+              "input_name": "google.privacy.dlp.v2.UpdateDeidentifyTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.GetDeidentifyTemplate",
+              "id": 6135633462633836,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "GetDeidentifyTemplate",
+              "input_name": "google.privacy.dlp.v2.GetDeidentifyTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListDeidentifyTemplates",
+              "id": 6661646437313837,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListDeidentifyTemplates",
+              "input_name": "google.privacy.dlp.v2.ListDeidentifyTemplatesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeleteDeidentifyTemplate",
+              "id": 3833666537323863,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeleteDeidentifyTemplate",
+              "input_name": "google.privacy.dlp.v2.DeleteDeidentifyTemplateRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CreateJobTrigger",
+              "id": 3761333830373038,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CreateJobTrigger",
+              "input_name": "google.privacy.dlp.v2.CreateJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.UpdateJobTrigger",
+              "id": 3362333136303636,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "UpdateJobTrigger",
+              "input_name": "google.privacy.dlp.v2.UpdateJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.HybridInspectJobTrigger",
+              "id": 6131636461316564,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "HybridInspectJobTrigger",
+              "input_name": "google.privacy.dlp.v2.HybridInspectJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.GetJobTrigger",
+              "id": 3066376536346531,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "GetJobTrigger",
+              "input_name": "google.privacy.dlp.v2.GetJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListJobTriggers",
+              "id": 6563346237633236,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListJobTriggers",
+              "input_name": "google.privacy.dlp.v2.ListJobTriggersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeleteJobTrigger",
+              "id": 3832313563323233,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeleteJobTrigger",
+              "input_name": "google.privacy.dlp.v2.DeleteJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ActivateJobTrigger",
+              "id": 6139366661333036,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ActivateJobTrigger",
+              "input_name": "google.privacy.dlp.v2.ActivateJobTriggerRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CreateDlpJob",
+              "id": 6632363262373862,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CreateDlpJob",
+              "input_name": "google.privacy.dlp.v2.CreateDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListDlpJobs",
+              "id": 3039386433376166,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListDlpJobs",
+              "input_name": "google.privacy.dlp.v2.ListDlpJobsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.GetDlpJob",
+              "id": 3533383462393464,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "GetDlpJob",
+              "input_name": "google.privacy.dlp.v2.GetDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeleteDlpJob",
+              "id": 6635313037366635,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeleteDlpJob",
+              "input_name": "google.privacy.dlp.v2.DeleteDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CancelDlpJob",
+              "id": 3134623731346164,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CancelDlpJob",
+              "input_name": "google.privacy.dlp.v2.CancelDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.CreateStoredInfoType",
+              "id": 3966663038363738,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "CreateStoredInfoType",
+              "input_name": "google.privacy.dlp.v2.CreateStoredInfoTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.UpdateStoredInfoType",
+              "id": 3461613862303562,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "UpdateStoredInfoType",
+              "input_name": "google.privacy.dlp.v2.UpdateStoredInfoTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.GetStoredInfoType",
+              "id": 3935363337666163,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "GetStoredInfoType",
+              "input_name": "google.privacy.dlp.v2.GetStoredInfoTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.ListStoredInfoTypes",
+              "id": 3761323338323835,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "ListStoredInfoTypes",
+              "input_name": "google.privacy.dlp.v2.ListStoredInfoTypesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.DeleteStoredInfoType",
+              "id": 3434393439646336,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "DeleteStoredInfoType",
+              "input_name": "google.privacy.dlp.v2.DeleteStoredInfoTypeRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.HybridInspectDlpJob",
+              "id": 3066633332653766,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "HybridInspectDlpJob",
+              "input_name": "google.privacy.dlp.v2.HybridInspectDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.privacy.dlp.v2.DlpService.FinishDlpJob",
+              "id": 3764643035363635,
+              "service_model_id": 3636656464636635,
+              "rpc_name": "FinishDlpJob",
+              "input_name": "google.privacy.dlp.v2.FinishDlpJobRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "design_name": "google-cloud-memcache-v1",
+  "id": 3435366438323062,
+  "name": "google-cloud-memcache-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.memcache.v1",
+      "id": 6361363762316464,
+      "name": "google.cloud.memcache.v1",
+      "gem_model_id": 3435366438323062,
+      "ruby_namespace": "::Google::Cloud::Memcache::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.memcache.v1.CloudMemcache",
+          "id": 6438306666326230,
+          "package_model_id": 6361363762316464,
+          "name": "CloudMemcache",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.ListInstances",
+              "id": 6637323961636461,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.memcache.v1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.GetInstance",
+              "id": 3331393335336664,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.memcache.v1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.CreateInstance",
+              "id": 3366663835326637,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.memcache.v1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.UpdateInstance",
+              "id": 6236303065373763,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.memcache.v1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.UpdateParameters",
+              "id": 6239376164343636,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "UpdateParameters",
+              "input_name": "google.cloud.memcache.v1.UpdateParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.DeleteInstance",
+              "id": 6534316364643863,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.memcache.v1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.memcache.v1.CloudMemcache.ApplyParameters",
+              "id": 6264663863386236,
+              "service_model_id": 6438306666326230,
+              "rpc_name": "ApplyParameters",
+              "input_name": "google.cloud.memcache.v1.ApplyParametersRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

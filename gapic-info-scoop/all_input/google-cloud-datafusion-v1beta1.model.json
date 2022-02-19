@@ -1,0 +1,154 @@
+{
+  "design_name": "google-cloud-data_fusion-v1beta1",
+  "id": 3332363836653535,
+  "name": "google-cloud-data_fusion-v1beta1",
+  "packages": [
+    {
+      "design_name": "google.cloud.datafusion.v1beta1",
+      "id": 6337383762346232,
+      "name": "google.cloud.datafusion.v1beta1",
+      "gem_model_id": 3332363836653535,
+      "ruby_namespace": "::Google::Cloud::DataFusion::V1beta1",
+      "services": [
+        {
+          "design_name": "google.cloud.datafusion.v1beta1.DataFusion",
+          "id": 6633333263353836,
+          "package_model_id": 6337383762346232,
+          "name": "DataFusion",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.ListAvailableVersions",
+              "id": 6264363038663230,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "ListAvailableVersions",
+              "input_name": "google.cloud.datafusion.v1beta1.ListAvailableVersionsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.ListInstances",
+              "id": 3931383361343961,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "ListInstances",
+              "input_name": "google.cloud.datafusion.v1beta1.ListInstancesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.GetInstance",
+              "id": 3063353264353061,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "GetInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.GetInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.CreateInstance",
+              "id": 3630636131636463,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "CreateInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.CreateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.DeleteInstance",
+              "id": 3036326364356236,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "DeleteInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.DeleteInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.UpdateInstance",
+              "id": 3739353133366165,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "UpdateInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.UpdateInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.RestartInstance",
+              "id": 3861613036353062,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "RestartInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.RestartInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.UpgradeInstance",
+              "id": 3363366663343064,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "UpgradeInstance",
+              "input_name": "google.cloud.datafusion.v1beta1.UpgradeInstanceRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.RemoveIamPolicy",
+              "id": 3238613837633230,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "RemoveIamPolicy",
+              "input_name": "google.cloud.datafusion.v1beta1.RemoveIamPolicyRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.ListNamespaces",
+              "id": 6266383464613361,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "ListNamespaces",
+              "input_name": "google.cloud.datafusion.v1beta1.ListNamespacesRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.AddDnsPeering",
+              "id": 6666326238343339,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "AddDnsPeering",
+              "input_name": "google.cloud.datafusion.v1beta1.AddDnsPeeringRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.RemoveDnsPeering",
+              "id": 6262333739663133,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "RemoveDnsPeering",
+              "input_name": "google.cloud.datafusion.v1beta1.RemoveDnsPeeringRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            },
+            {
+              "design_name": "google.cloud.datafusion.v1beta1.DataFusion.ListDnsPeerings",
+              "id": 3238613164323562,
+              "service_model_id": 6633333263353836,
+              "rpc_name": "ListDnsPeerings",
+              "input_name": "google.cloud.datafusion.v1beta1.ListDnsPeeringsRequest",
+              "generate_implicit_headers": true,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

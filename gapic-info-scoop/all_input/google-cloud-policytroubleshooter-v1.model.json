@@ -1,0 +1,34 @@
+{
+  "design_name": "google-cloud-policy_troubleshooter-v1",
+  "id": 3438306463363061,
+  "name": "google-cloud-policy_troubleshooter-v1",
+  "packages": [
+    {
+      "design_name": "google.cloud.policytroubleshooter.v1",
+      "id": 6237376630613862,
+      "name": "google.cloud.policytroubleshooter.v1",
+      "gem_model_id": 3438306463363061,
+      "ruby_namespace": "::Google::Cloud::PolicyTroubleshooter::V1",
+      "services": [
+        {
+          "design_name": "google.cloud.policytroubleshooter.v1.IamChecker",
+          "id": 6539623561306433,
+          "package_model_id": 6237376630613862,
+          "name": "IamChecker",
+          "rpcs": [
+            {
+              "design_name": "google.cloud.policytroubleshooter.v1.IamChecker.TroubleshootIamPolicy",
+              "id": 6264306263333061,
+              "service_model_id": 6539623561306433,
+              "rpc_name": "TroubleshootIamPolicy",
+              "input_name": "google.cloud.policytroubleshooter.v1.TroubleshootIamPolicyRequest",
+              "generate_implicit_headers": false,
+              "generate_explicit_headers": false,
+              "arity": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
