@@ -33,12 +33,33 @@ message RpcModel {
     string design_name = 6953;
     uint64 service_model_id = 6954;
 
-    string rpc_name = 1;
-    string input_name = 2;
-    string output_name = 3;
+    string name = 1;
+
+    MessageModel input = 2;
+    MessageModel output = 3;
 
     bool generate_implicit_headers = 4;
     bool generate_explicit_headers = 5;
 
     string arity = 6;
+}
+
+message MessageModel {
+    uint64 id = 6952;
+    string design_name = 6953;
+    uint64 rpc_model_id = 6954;
+
+    string name = 1;
+
+    repeated FieldModel fields = 7;
+}
+
+message FieldModel {
+    uint64 id = 6952;
+    string design_name = 6953;
+    uint64 message_model_id = 6954;
+
+    string name = 1;
+    uint32 number = 2;
+    string type_name = 3;
 }

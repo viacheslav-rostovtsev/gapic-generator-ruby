@@ -20,8 +20,19 @@
               "design_name": "testing.grpcserviceconfig.ServiceNoRetry.NoRetryMethod",
               "id": 3632646164383832,
               "service_model_id": 3332303465346135,
-              "rpc_name": "NoRetryMethod",
-              "input_name": "testing.grpcserviceconfig.Request",
+              "name": "NoRetryMethod",
+              "input": {
+                "design_name": "testing.grpcserviceconfig.ServiceNoRetry.NoRetryMethod.Request",
+                "id": 3166373734306562,
+                "rpc_model_id": 3632646164383832,
+                "name": "Request"
+              },
+              "output": {
+                "design_name": "testing.grpcserviceconfig.ServiceNoRetry.NoRetryMethod.Response",
+                "id": 6633363162653663,
+                "rpc_model_id": 3632646164383832,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -38,8 +49,19 @@
               "design_name": "testing.grpcserviceconfig.ServiceWithRetries.ServiceLevelRetryMethod",
               "id": 3962666538613366,
               "service_model_id": 3032623964356638,
-              "rpc_name": "ServiceLevelRetryMethod",
-              "input_name": "testing.grpcserviceconfig.Request",
+              "name": "ServiceLevelRetryMethod",
+              "input": {
+                "design_name": "testing.grpcserviceconfig.ServiceWithRetries.ServiceLevelRetryMethod.Request",
+                "id": 3835633735376138,
+                "rpc_model_id": 3962666538613366,
+                "name": "Request"
+              },
+              "output": {
+                "design_name": "testing.grpcserviceconfig.ServiceWithRetries.ServiceLevelRetryMethod.Response",
+                "id": 6361653737353436,
+                "rpc_model_id": 3962666538613366,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -48,8 +70,19 @@
               "design_name": "testing.grpcserviceconfig.ServiceWithRetries.MethodLevelRetryMethod",
               "id": 3864333231326535,
               "service_model_id": 3032623964356638,
-              "rpc_name": "MethodLevelRetryMethod",
-              "input_name": "testing.grpcserviceconfig.Request",
+              "name": "MethodLevelRetryMethod",
+              "input": {
+                "design_name": "testing.grpcserviceconfig.ServiceWithRetries.MethodLevelRetryMethod.Request",
+                "id": 3364646364646232,
+                "rpc_model_id": 3864333231326535,
+                "name": "Request"
+              },
+              "output": {
+                "design_name": "testing.grpcserviceconfig.ServiceWithRetries.MethodLevelRetryMethod.Response",
+                "id": 6334366233386638,
+                "rpc_model_id": 3864333231326535,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -75,8 +108,19 @@
               "design_name": "testing.mixins.ServiceWithLoc.Method",
               "id": 3934326464303834,
               "service_model_id": 3736346639613830,
-              "rpc_name": "Method",
-              "input_name": "testing.mixins.Request",
+              "name": "Method",
+              "input": {
+                "design_name": "testing.mixins.ServiceWithLoc.Method.Request",
+                "id": 6639323036393439,
+                "rpc_model_id": 3934326464303834,
+                "name": "Request"
+              },
+              "output": {
+                "design_name": "testing.mixins.ServiceWithLoc.Method.Response",
+                "id": 6461343061666162,
+                "rpc_model_id": 3934326464303834,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -102,8 +146,58 @@
               "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc",
               "id": 6132363939613336,
               "service_model_id": 6235323739356531,
-              "rpc_name": "PlainLroRpc",
-              "input_name": "testing.nonstandardlrogrpc.Request",
+              "name": "PlainLroRpc",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.Request",
+                "id": 3765366262363365,
+                "rpc_model_id": 6132363939613336,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.Request.request_id",
+                    "id": 3633656637336262,
+                    "message_model_id": 3765366262363365,
+                    "name": "Request",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.NonstandardOperation",
+                "id": 3336333665353931,
+                "rpc_model_id": 6132363939613336,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.NonstandardOperation.name",
+                    "id": 3662613865323737,
+                    "message_model_id": 3336333665353931,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.NonstandardOperation.status",
+                    "id": 6130663763643436,
+                    "message_model_id": 3336333665353931,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.NonstandardOperation.http_error_status_code",
+                    "id": 3534373061383634,
+                    "message_model_id": 3336333665353931,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroConsumer.PlainLroRpc.NonstandardOperation.http_error_message",
+                    "id": 3130353037363934,
+                    "message_model_id": 3336333665353931,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -120,8 +214,65 @@
               "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get",
               "id": 3135316338356633,
               "service_model_id": 3865306364386434,
-              "rpc_name": "Get",
-              "input_name": "testing.nonstandardlrogrpc.LroGetRequest",
+              "name": "Get",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.LroGetRequest",
+                "id": 6535626334656438,
+                "rpc_model_id": 3135316338356633,
+                "name": "LroGetRequest",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.LroGetRequest.initial_request_id",
+                    "id": 3664623232373462,
+                    "message_model_id": 6535626334656438,
+                    "name": "LroGetRequest",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.LroGetRequest.lro_name",
+                    "id": 3065306165646366,
+                    "message_model_id": 6535626334656438,
+                    "name": "LroGetRequest",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.NonstandardOperation",
+                "id": 3632373333313437,
+                "rpc_model_id": 3135316338356633,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.NonstandardOperation.name",
+                    "id": 3633373062666535,
+                    "message_model_id": 3632373333313437,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.NonstandardOperation.status",
+                    "id": 6536346663306437,
+                    "message_model_id": 3632373333313437,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.NonstandardOperation.http_error_status_code",
+                    "id": 3632633139336664,
+                    "message_model_id": 3632373333313437,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.PlainLroProvider.Get.NonstandardOperation.http_error_message",
+                    "id": 3330613437313336,
+                    "message_model_id": 3632373333313437,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -138,8 +289,65 @@
               "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother",
               "id": 3862373331353763,
               "service_model_id": 3633333266336330,
-              "rpc_name": "GetAnother",
-              "input_name": "testing.nonstandardlrogrpc.LroAnotherGetRequest",
+              "name": "GetAnother",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.LroAnotherGetRequest",
+                "id": 6462396131623039,
+                "rpc_model_id": 3862373331353763,
+                "name": "LroAnotherGetRequest",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.LroAnotherGetRequest.another_request_id",
+                    "id": 6437613566376665,
+                    "message_model_id": 6462396131623039,
+                    "name": "LroAnotherGetRequest",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.LroAnotherGetRequest.another_lro_name",
+                    "id": 6637376634626361,
+                    "message_model_id": 6462396131623039,
+                    "name": "LroAnotherGetRequest",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.NonstandardOperation",
+                "id": 6465616330383039,
+                "rpc_model_id": 3862373331353763,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.NonstandardOperation.name",
+                    "id": 3130626366386636,
+                    "message_model_id": 6465616330383039,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.NonstandardOperation.status",
+                    "id": 6134386464393832,
+                    "message_model_id": 6465616330383039,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.NonstandardOperation.http_error_status_code",
+                    "id": 3563343865353966,
+                    "message_model_id": 6465616330383039,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AnotherLroProvider.GetAnother.NonstandardOperation.http_error_message",
+                    "id": 6439653164333061,
+                    "message_model_id": 6465616330383039,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -156,8 +364,58 @@
               "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc",
               "id": 3636633766636264,
               "service_model_id": 6435393738636362,
-              "rpc_name": "PlainLroRpc",
-              "input_name": "testing.nonstandardlrogrpc.Request",
+              "name": "PlainLroRpc",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.Request",
+                "id": 6533313930353532,
+                "rpc_model_id": 3636633766636264,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.Request.request_id",
+                    "id": 6663653130313538,
+                    "message_model_id": 6533313930353532,
+                    "name": "Request",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.NonstandardOperation",
+                "id": 6132336162343439,
+                "rpc_model_id": 3636633766636264,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.NonstandardOperation.name",
+                    "id": 6332663964396166,
+                    "message_model_id": 6132336162343439,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.NonstandardOperation.status",
+                    "id": 3261313162626661,
+                    "message_model_id": 6132336162343439,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.NonstandardOperation.http_error_status_code",
+                    "id": 6334646438353336,
+                    "message_model_id": 6132336162343439,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.PlainLroRpc.NonstandardOperation.http_error_message",
+                    "id": 3731353361666139,
+                    "message_model_id": 6132336162343439,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -166,8 +424,58 @@
               "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc",
               "id": 3832313762393964,
               "service_model_id": 6435393738636362,
-              "rpc_name": "AnotherLroRpc",
-              "input_name": "testing.nonstandardlrogrpc.AnotherRequest",
+              "name": "AnotherLroRpc",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.AnotherRequest",
+                "id": 6562346433623639,
+                "rpc_model_id": 3832313762393964,
+                "name": "AnotherRequest",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.AnotherRequest.request_id",
+                    "id": 3761643432333238,
+                    "message_model_id": 6562346433623639,
+                    "name": "AnotherRequest",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.NonstandardOperation",
+                "id": 3561343965373730,
+                "rpc_model_id": 3832313762393964,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.NonstandardOperation.name",
+                    "id": 3762306633303566,
+                    "message_model_id": 3561343965373730,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.NonstandardOperation.status",
+                    "id": 6335633933383363,
+                    "message_model_id": 3561343965373730,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.NonstandardOperation.http_error_status_code",
+                    "id": 6334373830393565,
+                    "message_model_id": 3561343965373730,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AnotherLroRpc.NonstandardOperation.http_error_message",
+                    "id": 3764663135323566,
+                    "message_model_id": 3561343965373730,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -176,8 +484,49 @@
               "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc",
               "id": 3737643831613562,
               "service_model_id": 6435393738636362,
-              "rpc_name": "NonCopyAnotherLroRpc",
-              "input_name": "testing.nonstandardlrogrpc.NonCopyRequest",
+              "name": "NonCopyAnotherLroRpc",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonCopyRequest",
+                "id": 3266366535346432,
+                "rpc_model_id": 3737643831613562,
+                "name": "NonCopyRequest"
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonstandardOperation",
+                "id": 6134636365353037,
+                "rpc_model_id": 3737643831613562,
+                "name": "NonstandardOperation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonstandardOperation.name",
+                    "id": 6231326261303839,
+                    "message_model_id": 6134636365353037,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonstandardOperation.status",
+                    "id": 3939613137653436,
+                    "message_model_id": 6134636365353037,
+                    "name": "NonstandardOperation",
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonstandardOperation.http_error_status_code",
+                    "id": 6432336361656632,
+                    "message_model_id": 6134636365353037,
+                    "name": "NonstandardOperation",
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NonCopyAnotherLroRpc.NonstandardOperation.http_error_message",
+                    "id": 3365306561363263,
+                    "message_model_id": 6134636365353037,
+                    "name": "NonstandardOperation",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -186,8 +535,65 @@
               "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO",
               "id": 3562386438656438,
               "service_model_id": 6435393738636362,
-              "rpc_name": "AipLRO",
-              "input_name": "testing.nonstandardlrogrpc.Request",
+              "name": "AipLRO",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Request",
+                "id": 6363633334613535,
+                "rpc_model_id": 3562386438656438,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Request.request_id",
+                    "id": 3632656331396361,
+                    "message_model_id": 6363633334613535,
+                    "name": "Request",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation",
+                "id": 6661653936376535,
+                "rpc_model_id": 3562386438656438,
+                "name": "Operation",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation.name",
+                    "id": 3763373337303563,
+                    "message_model_id": 6661653936376535,
+                    "name": "Operation",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation.metadata",
+                    "id": 3865626565323536,
+                    "message_model_id": 6661653936376535,
+                    "name": "Operation",
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation.done",
+                    "id": 6131626362626439,
+                    "message_model_id": 6661653936376535,
+                    "name": "Operation",
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation.error",
+                    "id": 3238626263653239,
+                    "message_model_id": 6661653936376535,
+                    "name": "Operation",
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.AipLRO.Operation.response",
+                    "id": 6538346563666364,
+                    "message_model_id": 6661653936376535,
+                    "name": "Operation",
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -196,8 +602,37 @@
               "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO",
               "id": 6334346334393739,
               "service_model_id": 6435393738636362,
-              "rpc_name": "NoLRO",
-              "input_name": "testing.nonstandardlrogrpc.Request",
+              "name": "NoLRO",
+              "input": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO.Request",
+                "id": 3831626331663231,
+                "rpc_model_id": 6334346334393739,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO.Request.request_id",
+                    "id": 6334623834326536,
+                    "message_model_id": 3831626331663231,
+                    "name": "Request",
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO.Response",
+                "id": 3534333238383336,
+                "rpc_model_id": 6334346334393739,
+                "name": "Response",
+                "fields": [
+                  {
+                    "design_name": "testing.nonstandardlrogrpc.AllSubclientsConsumer.NoLRO.Response.request_id",
+                    "id": 3464323866663131,
+                    "message_model_id": 3534333238383336,
+                    "name": "Response",
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -223,8 +658,42 @@
               "design_name": "testing.routingheaders.ServiceNoHeaders.Plain",
               "id": 3465373764326466,
               "service_model_id": 3861383334353366,
-              "rpc_name": "Plain",
-              "input_name": "testing.routingheaders.Request",
+              "name": "Plain",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceNoHeaders.Plain.Request",
+                "id": 3530373464313539,
+                "rpc_model_id": 3465373764326466,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceNoHeaders.Plain.Request.table_name",
+                    "id": 3636626237383138,
+                    "message_model_id": 3530373464313539,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceNoHeaders.Plain.Request.app_profile_id",
+                    "id": 6365393135653238,
+                    "message_model_id": 3530373464313539,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceNoHeaders.Plain.Request.resource",
+                    "id": 3938346661313463,
+                    "message_model_id": 3530373464313539,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceNoHeaders.Plain.Response",
+                "id": 3230376136376639,
+                "rpc_model_id": 3465373764326466,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -241,8 +710,42 @@
               "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain",
               "id": 3764313263333065,
               "service_model_id": 3164313465346261,
-              "rpc_name": "Plain",
-              "input_name": "testing.routingheaders.Request",
+              "name": "Plain",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain.Request",
+                "id": 6162316262376334,
+                "rpc_model_id": 3764313263333065,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain.Request.table_name",
+                    "id": 3836366563626436,
+                    "message_model_id": 6162316262376334,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain.Request.app_profile_id",
+                    "id": 3936303636326166,
+                    "message_model_id": 6162316262376334,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain.Request.resource",
+                    "id": 3865373762316636,
+                    "message_model_id": 6162316262376334,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.Plain.Response",
+                "id": 3539386562626362,
+                "rpc_model_id": 3764313263333065,
+                "name": "Response"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -251,8 +754,42 @@
               "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage",
               "id": 3537333962336561,
               "service_model_id": 3164313465346261,
-              "rpc_name": "WithSubMessage",
-              "input_name": "testing.routingheaders.Request",
+              "name": "WithSubMessage",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage.Request",
+                "id": 6361313863366438,
+                "rpc_model_id": 3537333962336561,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage.Request.table_name",
+                    "id": 3330333461383332,
+                    "message_model_id": 6361313863366438,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage.Request.app_profile_id",
+                    "id": 6366316132336133,
+                    "message_model_id": 6361313863366438,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage.Request.resource",
+                    "id": 3064663732333163,
+                    "message_model_id": 6361313863366438,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithSubMessage.Response",
+                "id": 3039333132323363,
+                "rpc_model_id": 3537333962336561,
+                "name": "Response"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -261,8 +798,42 @@
               "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels",
               "id": 6361336432363533,
               "service_model_id": 3164313465346261,
-              "rpc_name": "WithMultipleLevels",
-              "input_name": "testing.routingheaders.Request",
+              "name": "WithMultipleLevels",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels.Request",
+                "id": 3735623365363666,
+                "rpc_model_id": 6361336432363533,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels.Request.table_name",
+                    "id": 3963396532353134,
+                    "message_model_id": 3735623365363666,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels.Request.app_profile_id",
+                    "id": 3564626632316366,
+                    "message_model_id": 3735623365363666,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels.Request.resource",
+                    "id": 3163616432623265,
+                    "message_model_id": 3735623365363666,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceImplicitHeaders.WithMultipleLevels.Response",
+                "id": 6231383437323533,
+                "rpc_model_id": 6361336432363533,
+                "name": "Response"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -279,8 +850,42 @@
               "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate",
               "id": 6235303539626438,
               "service_model_id": 6530386433313335,
-              "rpc_name": "PlainNoTemplate",
-              "input_name": "testing.routingheaders.Request",
+              "name": "PlainNoTemplate",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate.Request",
+                "id": 6330623664643236,
+                "rpc_model_id": 6235303539626438,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate.Request.table_name",
+                    "id": 3739613164386265,
+                    "message_model_id": 6330623664643236,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate.Request.app_profile_id",
+                    "id": 6336666637643638,
+                    "message_model_id": 6330623664643236,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate.Request.resource",
+                    "id": 6664323539326637,
+                    "message_model_id": 6330623664643236,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainNoTemplate.Response",
+                "id": 3863636234333533,
+                "rpc_model_id": 6235303539626438,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": true,
               "arity": "normal"
@@ -289,8 +894,42 @@
               "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField",
               "id": 3764616263376634,
               "service_model_id": 6530386433313335,
-              "rpc_name": "PlainFullField",
-              "input_name": "testing.routingheaders.Request",
+              "name": "PlainFullField",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField.Request",
+                "id": 3063343061383763,
+                "rpc_model_id": 3764616263376634,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField.Request.table_name",
+                    "id": 3462373262373239,
+                    "message_model_id": 3063343061383763,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField.Request.app_profile_id",
+                    "id": 3935353339613361,
+                    "message_model_id": 3063343061383763,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField.Request.resource",
+                    "id": 6164333033336636,
+                    "message_model_id": 3063343061383763,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainFullField.Response",
+                "id": 6330303836623134,
+                "rpc_model_id": 3764616263376634,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": true,
               "arity": "normal"
@@ -299,8 +938,42 @@
               "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract",
               "id": 3934636564636431,
               "service_model_id": 6530386433313335,
-              "rpc_name": "PlainExtract",
-              "input_name": "testing.routingheaders.Request",
+              "name": "PlainExtract",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract.Request",
+                "id": 6433643362656531,
+                "rpc_model_id": 3934636564636431,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract.Request.table_name",
+                    "id": 3664633766623561,
+                    "message_model_id": 6433643362656531,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract.Request.app_profile_id",
+                    "id": 6164393436656130,
+                    "message_model_id": 6433643362656531,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract.Request.resource",
+                    "id": 3064373332623034,
+                    "message_model_id": 6433643362656531,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.PlainExtract.Response",
+                "id": 3731616662316235,
+                "rpc_model_id": 3934636564636431,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": true,
               "arity": "normal"
@@ -309,8 +982,42 @@
               "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex",
               "id": 6464643966323666,
               "service_model_id": 6530386433313335,
-              "rpc_name": "Complex",
-              "input_name": "testing.routingheaders.Request",
+              "name": "Complex",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex.Request",
+                "id": 3663396637663366,
+                "rpc_model_id": 6464643966323666,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex.Request.table_name",
+                    "id": 6366323930643064,
+                    "message_model_id": 3663396637663366,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex.Request.app_profile_id",
+                    "id": 3364623631363536,
+                    "message_model_id": 3663396637663366,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex.Request.resource",
+                    "id": 3237646165393935,
+                    "message_model_id": 3663396637663366,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.Complex.Response",
+                "id": 3036346232643432,
+                "rpc_model_id": 6464643966323666,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": true,
               "arity": "normal"
@@ -319,8 +1026,42 @@
               "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage",
               "id": 6434396236353062,
               "service_model_id": 6530386433313335,
-              "rpc_name": "WithSubMessage",
-              "input_name": "testing.routingheaders.Request",
+              "name": "WithSubMessage",
+              "input": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage.Request",
+                "id": 3134336632346236,
+                "rpc_model_id": 6434396236353062,
+                "name": "Request",
+                "fields": [
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage.Request.table_name",
+                    "id": 3537653333326334,
+                    "message_model_id": 3134336632346236,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage.Request.app_profile_id",
+                    "id": 3135626231623164,
+                    "message_model_id": 3134336632346236,
+                    "name": "Request",
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage.Request.resource",
+                    "id": 6137323539303436,
+                    "message_model_id": 3134336632346236,
+                    "name": "Request",
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "testing.routingheaders.ServiceExplicitHeaders.WithSubMessage.Response",
+                "id": 3261353661353238,
+                "rpc_model_id": 6434396236353062,
+                "name": "Response"
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": true,
               "arity": "normal"

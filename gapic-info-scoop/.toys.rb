@@ -14,6 +14,8 @@ tool "clean-db" do
 		::Model::Generation::Create.create_table_package_model db
 		::Model::Generation::Create.create_table_service_model db
 		::Model::Generation::Create.create_table_rpc_model db
+		::Model::Generation::Create.create_table_message_model db
+		::Model::Generation::Create.create_table_field_model db
 	end
 end
 
@@ -70,6 +72,19 @@ tool "insert-gem" do
 				::Model::Generation::Insert.insert_into_service_model(db, service)
 				service.rpcs.each do |rpc|
 					::Model::Generation::Insert.insert_into_rpc_model db, rpc
+
+					::Model::Generation::Insert.insert_into_message_model db, rpc.input
+					if rpc.input.fields
+						rpc.input.fields.each do |field|
+							::Model::Generation::Insert.insert_into_field_model db, field
+						end
+					end
+
+					if rpc.output.fields
+						rpc.output.fields.each do |field|
+							::Model::Generation::Insert.insert_into_field_model db, field
+						end
+					end
 				end
 			end
 		end

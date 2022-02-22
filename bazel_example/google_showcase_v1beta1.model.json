@@ -20,8 +20,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody",
               "id": 3533333863316662,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataBody",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataBody",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest",
+                "id": 3139653239633333,
+                "rpc_model_id": 3533333863316662,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.name",
+                    "id": 3837653836633365,
+                    "message_model_id": 3139653239633333,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.info",
+                    "id": 3733636332356434,
+                    "message_model_id": 3139653239633333,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.server_verify",
+                    "id": 6133326436623166,
+                    "message_model_id": 3139653239633333,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.f_int32",
+                    "id": 6362336238653063,
+                    "message_model_id": 3139653239633333,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.f_int64",
+                    "id": 3765393336633330,
+                    "message_model_id": 3139653239633333,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.f_double",
+                    "id": 3530323835333639,
+                    "message_model_id": 3139653239633333,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.p_int32",
+                    "id": 3062326461633739,
+                    "message_model_id": 3139653239633333,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.p_int64",
+                    "id": 3562623364613761,
+                    "message_model_id": 3139653239633333,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatRequest.p_double",
+                    "id": 6463643032346562,
+                    "message_model_id": 3139653239633333,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatResponse",
+                "id": 6431633763313036,
+                "rpc_model_id": 3533333863316662,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBody.RepeatResponse.request",
+                    "id": 3765333739633137,
+                    "message_model_id": 6431633763313036,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -30,8 +125,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo",
               "id": 3839636264366138,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataBodyInfo",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataBodyInfo",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest",
+                "id": 3032383937636633,
+                "rpc_model_id": 3839636264366138,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.name",
+                    "id": 3935333534333865,
+                    "message_model_id": 3032383937636633,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.info",
+                    "id": 3464323861616336,
+                    "message_model_id": 3032383937636633,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.server_verify",
+                    "id": 6165366236303630,
+                    "message_model_id": 3032383937636633,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.f_int32",
+                    "id": 3136623130303334,
+                    "message_model_id": 3032383937636633,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.f_int64",
+                    "id": 3430613864343635,
+                    "message_model_id": 3032383937636633,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.f_double",
+                    "id": 6136323939316336,
+                    "message_model_id": 3032383937636633,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.p_int32",
+                    "id": 3335343531363935,
+                    "message_model_id": 3032383937636633,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.p_int64",
+                    "id": 3435363362353864,
+                    "message_model_id": 3032383937636633,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatRequest.p_double",
+                    "id": 6631376134373930,
+                    "message_model_id": 3032383937636633,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatResponse",
+                "id": 3863303537353735,
+                "rpc_model_id": 3839636264366138,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyInfo.RepeatResponse.request",
+                    "id": 3765646439646632,
+                    "message_model_id": 3863303537353735,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -40,8 +230,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery",
               "id": 6634646562353137,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataQuery",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataQuery",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest",
+                "id": 3164353437663836,
+                "rpc_model_id": 6634646562353137,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.name",
+                    "id": 6135643765333439,
+                    "message_model_id": 3164353437663836,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.info",
+                    "id": 6664363431393865,
+                    "message_model_id": 3164353437663836,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.server_verify",
+                    "id": 6431636231383562,
+                    "message_model_id": 3164353437663836,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.f_int32",
+                    "id": 3563303639383334,
+                    "message_model_id": 3164353437663836,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.f_int64",
+                    "id": 3737383430303734,
+                    "message_model_id": 3164353437663836,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.f_double",
+                    "id": 3062616564613362,
+                    "message_model_id": 3164353437663836,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.p_int32",
+                    "id": 3363303664333636,
+                    "message_model_id": 3164353437663836,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.p_int64",
+                    "id": 3866616133316632,
+                    "message_model_id": 3164353437663836,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatRequest.p_double",
+                    "id": 3764316634383031,
+                    "message_model_id": 3164353437663836,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatResponse",
+                "id": 6635323862346234,
+                "rpc_model_id": 6634646562353137,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataQuery.RepeatResponse.request",
+                    "id": 6366646133363561,
+                    "message_model_id": 6635323862346234,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -50,8 +335,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath",
               "id": 3337303065616532,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataSimplePath",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataSimplePath",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest",
+                "id": 3531616536616237,
+                "rpc_model_id": 3337303065616532,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.name",
+                    "id": 6539613635613766,
+                    "message_model_id": 3531616536616237,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.info",
+                    "id": 6238306332396662,
+                    "message_model_id": 3531616536616237,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.server_verify",
+                    "id": 6461303563393037,
+                    "message_model_id": 3531616536616237,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.f_int32",
+                    "id": 3962323639363362,
+                    "message_model_id": 3531616536616237,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.f_int64",
+                    "id": 3361316230303033,
+                    "message_model_id": 3531616536616237,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.f_double",
+                    "id": 6636326563303865,
+                    "message_model_id": 3531616536616237,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.p_int32",
+                    "id": 3563366437363937,
+                    "message_model_id": 3531616536616237,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.p_int64",
+                    "id": 3338333631666238,
+                    "message_model_id": 3531616536616237,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatRequest.p_double",
+                    "id": 6137626662646138,
+                    "message_model_id": 3531616536616237,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatResponse",
+                "id": 3730366637343262,
+                "rpc_model_id": 3337303065616532,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataSimplePath.RepeatResponse.request",
+                    "id": 3764626632303465,
+                    "message_model_id": 3730366637343262,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -60,8 +440,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource",
               "id": 3632356139666630,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataPathResource",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataPathResource",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest",
+                "id": 3364323635363839,
+                "rpc_model_id": 3632356139666630,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.name",
+                    "id": 6266303563383633,
+                    "message_model_id": 3364323635363839,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.info",
+                    "id": 3437636264393935,
+                    "message_model_id": 3364323635363839,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.server_verify",
+                    "id": 3533373666653366,
+                    "message_model_id": 3364323635363839,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.f_int32",
+                    "id": 6562386431613366,
+                    "message_model_id": 3364323635363839,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.f_int64",
+                    "id": 3665613961393661,
+                    "message_model_id": 3364323635363839,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.f_double",
+                    "id": 6665383862396363,
+                    "message_model_id": 3364323635363839,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.p_int32",
+                    "id": 6331646136623436,
+                    "message_model_id": 3364323635363839,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.p_int64",
+                    "id": 6235623030323961,
+                    "message_model_id": 3364323635363839,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatRequest.p_double",
+                    "id": 3730343964636661,
+                    "message_model_id": 3364323635363839,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatResponse",
+                "id": 3064643566316635,
+                "rpc_model_id": 3632356139666630,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathResource.RepeatResponse.request",
+                    "id": 6630393764393730,
+                    "message_model_id": 3064643566316635,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -70,8 +545,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource",
               "id": 3739303635373263,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataPathTrailingResource",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataPathTrailingResource",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest",
+                "id": 6365353330306335,
+                "rpc_model_id": 3739303635373263,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.name",
+                    "id": 3365623363613939,
+                    "message_model_id": 6365353330306335,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.info",
+                    "id": 6536393265626665,
+                    "message_model_id": 6365353330306335,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.server_verify",
+                    "id": 3630623766383363,
+                    "message_model_id": 6365353330306335,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.f_int32",
+                    "id": 3632316464383731,
+                    "message_model_id": 6365353330306335,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.f_int64",
+                    "id": 6134356465303239,
+                    "message_model_id": 6365353330306335,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.f_double",
+                    "id": 6465353532633434,
+                    "message_model_id": 6365353330306335,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.p_int32",
+                    "id": 3534393132376437,
+                    "message_model_id": 6365353330306335,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.p_int64",
+                    "id": 6232366132663439,
+                    "message_model_id": 6365353330306335,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatRequest.p_double",
+                    "id": 6533636261363863,
+                    "message_model_id": 6365353330306335,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatResponse",
+                "id": 3366643632613831,
+                "rpc_model_id": 3739303635373263,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataPathTrailingResource.RepeatResponse.request",
+                    "id": 3933376336306239,
+                    "message_model_id": 3366643632613831,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -80,8 +650,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut",
               "id": 3438663032643637,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataBodyPut",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataBodyPut",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest",
+                "id": 3061393735316539,
+                "rpc_model_id": 3438663032643637,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.name",
+                    "id": 3038396339313665,
+                    "message_model_id": 3061393735316539,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.info",
+                    "id": 3038643764623135,
+                    "message_model_id": 3061393735316539,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.server_verify",
+                    "id": 3964653565663664,
+                    "message_model_id": 3061393735316539,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.f_int32",
+                    "id": 3461323662666264,
+                    "message_model_id": 3061393735316539,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.f_int64",
+                    "id": 3063376333623162,
+                    "message_model_id": 3061393735316539,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.f_double",
+                    "id": 3362356238626339,
+                    "message_model_id": 3061393735316539,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.p_int32",
+                    "id": 3537363231613038,
+                    "message_model_id": 3061393735316539,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.p_int64",
+                    "id": 3131373939313865,
+                    "message_model_id": 3061393735316539,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatRequest.p_double",
+                    "id": 3334616563313666,
+                    "message_model_id": 3061393735316539,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatResponse",
+                "id": 3731623730646437,
+                "rpc_model_id": 3438663032643637,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPut.RepeatResponse.request",
+                    "id": 6365303539326438,
+                    "message_model_id": 3731623730646437,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -90,8 +755,103 @@
               "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch",
               "id": 3761626563656632,
               "service_model_id": 6564376161333366,
-              "rpc_name": "RepeatDataBodyPatch",
-              "input_name": "google.showcase.v1beta1.RepeatRequest",
+              "name": "RepeatDataBodyPatch",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest",
+                "id": 6365633632333334,
+                "rpc_model_id": 3761626563656632,
+                "name": "RepeatRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.name",
+                    "id": 6663343632613632,
+                    "message_model_id": 6365633632333334,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.info",
+                    "id": 3361303234366265,
+                    "message_model_id": 6365633632333334,
+                    "name": "info",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.server_verify",
+                    "id": 3363376664653561,
+                    "message_model_id": 6365633632333334,
+                    "name": "server_verify",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.f_int32",
+                    "id": 3731303931366633,
+                    "message_model_id": 6365633632333334,
+                    "name": "f_int32",
+                    "number": 4,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.f_int64",
+                    "id": 6365306331663838,
+                    "message_model_id": 6365633632333334,
+                    "name": "f_int64",
+                    "number": 5,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.f_double",
+                    "id": 3162613463333866,
+                    "message_model_id": 6365633632333334,
+                    "name": "f_double",
+                    "number": 6,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.p_int32",
+                    "id": 3761626337626165,
+                    "message_model_id": 6365633632333334,
+                    "name": "p_int32",
+                    "number": 7,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.p_int64",
+                    "id": 6537383833333735,
+                    "message_model_id": 6365633632333334,
+                    "name": "p_int64",
+                    "number": 8,
+                    "type_name": "int64"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatRequest.p_double",
+                    "id": 6333316564333762,
+                    "message_model_id": 6365633632333334,
+                    "name": "p_double",
+                    "number": 9,
+                    "type_name": "double"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatResponse",
+                "id": 6664333337383664,
+                "rpc_model_id": 3761626563656632,
+                "name": "RepeatResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Compliance.RepeatDataBodyPatch.RepeatResponse.request",
+                    "id": 6263303763356439,
+                    "message_model_id": 6664333337383664,
+                    "name": "request",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -108,8 +868,63 @@
               "design_name": "google.showcase.v1beta1.Echo.Echo",
               "id": 6362666535376532,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Echo",
-              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "name": "Echo",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Echo.EchoRequest",
+                "id": 6266396133633233,
+                "rpc_model_id": 6362666535376532,
+                "name": "EchoRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Echo.EchoRequest.content",
+                    "id": 3261323864303062,
+                    "message_model_id": 6266396133633233,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Echo.EchoRequest.error",
+                    "id": 3932393132356433,
+                    "message_model_id": 6266396133633233,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Echo.EchoRequest.severity",
+                    "id": 6562383563643665,
+                    "message_model_id": 6266396133633233,
+                    "name": "severity",
+                    "number": 3,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Echo.EchoResponse",
+                "id": 3133356638616236,
+                "rpc_model_id": 6362666535376532,
+                "name": "EchoResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Echo.EchoResponse.content",
+                    "id": 3039663433333762,
+                    "message_model_id": 3133356638616236,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Echo.EchoResponse.severity",
+                    "id": 3563323265643162,
+                    "message_model_id": 3133356638616236,
+                    "name": "severity",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -118,8 +933,55 @@
               "design_name": "google.showcase.v1beta1.Echo.Expand",
               "id": 6537323832663561,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Expand",
-              "input_name": "google.showcase.v1beta1.ExpandRequest",
+              "name": "Expand",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Expand.ExpandRequest",
+                "id": 3562666663323630,
+                "rpc_model_id": 6537323832663561,
+                "name": "ExpandRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Expand.ExpandRequest.content",
+                    "id": 6430383637363637,
+                    "message_model_id": 3562666663323630,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Expand.ExpandRequest.error",
+                    "id": 3363363038326262,
+                    "message_model_id": 3562666663323630,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Expand.EchoResponse",
+                "id": 6135393036313630,
+                "rpc_model_id": 6537323832663561,
+                "name": "EchoResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Expand.EchoResponse.content",
+                    "id": 6564623365313533,
+                    "message_model_id": 6135393036313630,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Expand.EchoResponse.severity",
+                    "id": 3238373331393963,
+                    "message_model_id": 6135393036313630,
+                    "name": "severity",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "server"
@@ -128,8 +990,63 @@
               "design_name": "google.showcase.v1beta1.Echo.Collect",
               "id": 3630386234356261,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Collect",
-              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "name": "Collect",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Collect.EchoRequest",
+                "id": 6634663865366366,
+                "rpc_model_id": 3630386234356261,
+                "name": "EchoRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Collect.EchoRequest.content",
+                    "id": 3466366462313762,
+                    "message_model_id": 6634663865366366,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Collect.EchoRequest.error",
+                    "id": 6463386164643330,
+                    "message_model_id": 6634663865366366,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Collect.EchoRequest.severity",
+                    "id": 6232646638396161,
+                    "message_model_id": 6634663865366366,
+                    "name": "severity",
+                    "number": 3,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Collect.EchoResponse",
+                "id": 3139306135643931,
+                "rpc_model_id": 3630386234356261,
+                "name": "EchoResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Collect.EchoResponse.content",
+                    "id": 3837393437363161,
+                    "message_model_id": 3139306135643931,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Collect.EchoResponse.severity",
+                    "id": 6365626565356464,
+                    "message_model_id": 3139306135643931,
+                    "name": "severity",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "client"
@@ -138,8 +1055,63 @@
               "design_name": "google.showcase.v1beta1.Echo.Chat",
               "id": 6338353436303832,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Chat",
-              "input_name": "google.showcase.v1beta1.EchoRequest",
+              "name": "Chat",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Chat.EchoRequest",
+                "id": 6336663730333764,
+                "rpc_model_id": 6338353436303832,
+                "name": "EchoRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Chat.EchoRequest.content",
+                    "id": 3766396532656639,
+                    "message_model_id": 6336663730333764,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Chat.EchoRequest.error",
+                    "id": 6362333031306532,
+                    "message_model_id": 6336663730333764,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Chat.EchoRequest.severity",
+                    "id": 3635616536316433,
+                    "message_model_id": 6336663730333764,
+                    "name": "severity",
+                    "number": 3,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Chat.EchoResponse",
+                "id": 6264323664646561,
+                "rpc_model_id": 6338353436303832,
+                "name": "EchoResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Chat.EchoResponse.content",
+                    "id": 3164626135366636,
+                    "message_model_id": 6264323664646561,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Chat.EchoResponse.severity",
+                    "id": 6361623432353461,
+                    "message_model_id": 6264323664646561,
+                    "name": "severity",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "bidi"
@@ -148,8 +1120,63 @@
               "design_name": "google.showcase.v1beta1.Echo.PagedExpand",
               "id": 3037323964663237,
               "service_model_id": 6266313430373133,
-              "rpc_name": "PagedExpand",
-              "input_name": "google.showcase.v1beta1.PagedExpandRequest",
+              "name": "PagedExpand",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandRequest",
+                "id": 3436353138353763,
+                "rpc_model_id": 3037323964663237,
+                "name": "PagedExpandRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandRequest.content",
+                    "id": 3039613337656433,
+                    "message_model_id": 3436353138353763,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandRequest.page_size",
+                    "id": 3536316266333436,
+                    "message_model_id": 3436353138353763,
+                    "name": "page_size",
+                    "number": 2,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandRequest.page_token",
+                    "id": 6163613464373065,
+                    "message_model_id": 3436353138353763,
+                    "name": "page_token",
+                    "number": 3,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandResponse",
+                "id": 3439393361316331,
+                "rpc_model_id": 3037323964663237,
+                "name": "PagedExpandResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandResponse.responses",
+                    "id": 6535653630613632,
+                    "message_model_id": 3439393361316331,
+                    "name": "responses",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpand.PagedExpandResponse.next_page_token",
+                    "id": 6361623335373365,
+                    "message_model_id": 3439393361316331,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -158,8 +1185,63 @@
               "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy",
               "id": 6666626662363537,
               "service_model_id": 6266313430373133,
-              "rpc_name": "PagedExpandLegacy",
-              "input_name": "google.showcase.v1beta1.PagedExpandLegacyRequest",
+              "name": "PagedExpandLegacy",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandLegacyRequest",
+                "id": 3836613136633835,
+                "rpc_model_id": 6666626662363537,
+                "name": "PagedExpandLegacyRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandLegacyRequest.content",
+                    "id": 3230623237336564,
+                    "message_model_id": 3836613136633835,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandLegacyRequest.max_results",
+                    "id": 3132663231326163,
+                    "message_model_id": 3836613136633835,
+                    "name": "max_results",
+                    "number": 2,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandLegacyRequest.page_token",
+                    "id": 3661666433333134,
+                    "message_model_id": 3836613136633835,
+                    "name": "page_token",
+                    "number": 3,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandResponse",
+                "id": 6366336566346638,
+                "rpc_model_id": 6666626662363537,
+                "name": "PagedExpandResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandResponse.responses",
+                    "id": 3133623730383964,
+                    "message_model_id": 6366336566346638,
+                    "name": "responses",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.PagedExpandLegacy.PagedExpandResponse.next_page_token",
+                    "id": 3039376465613066,
+                    "message_model_id": 6366336566346638,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -168,8 +1250,95 @@
               "design_name": "google.showcase.v1beta1.Echo.Wait",
               "id": 3165653461653739,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Wait",
-              "input_name": "google.showcase.v1beta1.WaitRequest",
+              "name": "Wait",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Wait.WaitRequest",
+                "id": 6430646561303665,
+                "rpc_model_id": 3165653461653739,
+                "name": "WaitRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.WaitRequest.end_time",
+                    "id": 3864633564643138,
+                    "message_model_id": 6430646561303665,
+                    "name": "end_time",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.WaitRequest.ttl",
+                    "id": 6433373732623265,
+                    "message_model_id": 6430646561303665,
+                    "name": "ttl",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.WaitRequest.error",
+                    "id": 3536333331346366,
+                    "message_model_id": 6430646561303665,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.WaitRequest.success",
+                    "id": 3932663539303963,
+                    "message_model_id": 6430646561303665,
+                    "name": "success",
+                    "number": 3,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Wait.Operation",
+                "id": 6466306365373237,
+                "rpc_model_id": 3165653461653739,
+                "name": "Operation",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.Operation.name",
+                    "id": 3135373137396539,
+                    "message_model_id": 6466306365373237,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.Operation.metadata",
+                    "id": 3632373630383435,
+                    "message_model_id": 6466306365373237,
+                    "name": "metadata",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.Operation.done",
+                    "id": 6132616333616361,
+                    "message_model_id": 6466306365373237,
+                    "name": "done",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.Operation.error",
+                    "id": 3933626139626662,
+                    "message_model_id": 6466306365373237,
+                    "name": "error",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Wait.Operation.response",
+                    "id": 3730666363373139,
+                    "message_model_id": 6466306365373237,
+                    "name": "response",
+                    "number": 5,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -178,8 +1347,55 @@
               "design_name": "google.showcase.v1beta1.Echo.Block",
               "id": 6361636536613031,
               "service_model_id": 6266313430373133,
-              "rpc_name": "Block",
-              "input_name": "google.showcase.v1beta1.BlockRequest",
+              "name": "Block",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Echo.Block.BlockRequest",
+                "id": 3138626266663365,
+                "rpc_model_id": 6361636536613031,
+                "name": "BlockRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Block.BlockRequest.response_delay",
+                    "id": 3637633736353762,
+                    "message_model_id": 3138626266663365,
+                    "name": "response_delay",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Block.BlockRequest.error",
+                    "id": 3137306234323132,
+                    "message_model_id": 3138626266663365,
+                    "name": "error",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Block.BlockRequest.success",
+                    "id": 3463646337313434,
+                    "message_model_id": 3138626266663365,
+                    "name": "success",
+                    "number": 3,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Echo.Block.BlockResponse",
+                "id": 3133376332646262,
+                "rpc_model_id": 6361636536613031,
+                "name": "BlockResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Echo.Block.BlockResponse.content",
+                    "id": 3733373261306636,
+                    "message_model_id": 3133376332646262,
+                    "name": "content",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -196,8 +1412,103 @@
               "design_name": "google.showcase.v1beta1.Identity.CreateUser",
               "id": 6536666236373266,
               "service_model_id": 3533633535343463,
-              "rpc_name": "CreateUser",
-              "input_name": "google.showcase.v1beta1.CreateUserRequest",
+              "name": "CreateUser",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Identity.CreateUser.CreateUserRequest",
+                "id": 3262343634306436,
+                "rpc_model_id": 6536666236373266,
+                "name": "CreateUserRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.CreateUserRequest.user",
+                    "id": 6436336530316462,
+                    "message_model_id": 3262343634306436,
+                    "name": "user",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Identity.CreateUser.User",
+                "id": 6465323266303061,
+                "rpc_model_id": 6536666236373266,
+                "name": "User",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.name",
+                    "id": 6433623861636430,
+                    "message_model_id": 6465323266303061,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.display_name",
+                    "id": 3432613635376231,
+                    "message_model_id": 6465323266303061,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.email",
+                    "id": 3031306462323139,
+                    "message_model_id": 6465323266303061,
+                    "name": "email",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.create_time",
+                    "id": 3234376364373439,
+                    "message_model_id": 6465323266303061,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.update_time",
+                    "id": 6261306333343532,
+                    "message_model_id": 6465323266303061,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.age",
+                    "id": 6532653232383332,
+                    "message_model_id": 6465323266303061,
+                    "name": "age",
+                    "number": 6,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.height_feet",
+                    "id": 3538623736336336,
+                    "message_model_id": 6465323266303061,
+                    "name": "height_feet",
+                    "number": 7,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.nickname",
+                    "id": 3766393661383531,
+                    "message_model_id": 6465323266303061,
+                    "name": "nickname",
+                    "number": 8,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.CreateUser.User.enable_notifications",
+                    "id": 6430313466366530,
+                    "message_model_id": 6465323266303061,
+                    "name": "enable_notifications",
+                    "number": 9,
+                    "type_name": "bool"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -206,8 +1517,103 @@
               "design_name": "google.showcase.v1beta1.Identity.GetUser",
               "id": 3134303764643861,
               "service_model_id": 3533633535343463,
-              "rpc_name": "GetUser",
-              "input_name": "google.showcase.v1beta1.GetUserRequest",
+              "name": "GetUser",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Identity.GetUser.GetUserRequest",
+                "id": 6636343162383138,
+                "rpc_model_id": 3134303764643861,
+                "name": "GetUserRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.GetUserRequest.name",
+                    "id": 6461623264353735,
+                    "message_model_id": 6636343162383138,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Identity.GetUser.User",
+                "id": 6233356237373665,
+                "rpc_model_id": 3134303764643861,
+                "name": "User",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.name",
+                    "id": 3833316434356332,
+                    "message_model_id": 6233356237373665,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.display_name",
+                    "id": 3337366434353637,
+                    "message_model_id": 6233356237373665,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.email",
+                    "id": 6162396566356131,
+                    "message_model_id": 6233356237373665,
+                    "name": "email",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.create_time",
+                    "id": 3839386434373336,
+                    "message_model_id": 6233356237373665,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.update_time",
+                    "id": 3062636461656439,
+                    "message_model_id": 6233356237373665,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.age",
+                    "id": 6233316630326562,
+                    "message_model_id": 6233356237373665,
+                    "name": "age",
+                    "number": 6,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.height_feet",
+                    "id": 6330386232363062,
+                    "message_model_id": 6233356237373665,
+                    "name": "height_feet",
+                    "number": 7,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.nickname",
+                    "id": 3836383137633266,
+                    "message_model_id": 6233356237373665,
+                    "name": "nickname",
+                    "number": 8,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.GetUser.User.enable_notifications",
+                    "id": 3536393531663137,
+                    "message_model_id": 6233356237373665,
+                    "name": "enable_notifications",
+                    "number": 9,
+                    "type_name": "bool"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -216,8 +1622,111 @@
               "design_name": "google.showcase.v1beta1.Identity.UpdateUser",
               "id": 3639653761353436,
               "service_model_id": 3533633535343463,
-              "rpc_name": "UpdateUser",
-              "input_name": "google.showcase.v1beta1.UpdateUserRequest",
+              "name": "UpdateUser",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Identity.UpdateUser.UpdateUserRequest",
+                "id": 3738323033613564,
+                "rpc_model_id": 3639653761353436,
+                "name": "UpdateUserRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.UpdateUserRequest.user",
+                    "id": 3963303235353631,
+                    "message_model_id": 3738323033613564,
+                    "name": "user",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.UpdateUserRequest.update_mask",
+                    "id": 6563356663396434,
+                    "message_model_id": 3738323033613564,
+                    "name": "update_mask",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User",
+                "id": 3538633033636230,
+                "rpc_model_id": 3639653761353436,
+                "name": "User",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.name",
+                    "id": 3031313433306534,
+                    "message_model_id": 3538633033636230,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.display_name",
+                    "id": 3034353734363831,
+                    "message_model_id": 3538633033636230,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.email",
+                    "id": 6431663339363061,
+                    "message_model_id": 3538633033636230,
+                    "name": "email",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.create_time",
+                    "id": 6130323965646534,
+                    "message_model_id": 3538633033636230,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.update_time",
+                    "id": 3265633762326166,
+                    "message_model_id": 3538633033636230,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.age",
+                    "id": 6236653535396261,
+                    "message_model_id": 3538633033636230,
+                    "name": "age",
+                    "number": 6,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.height_feet",
+                    "id": 6231343564303963,
+                    "message_model_id": 3538633033636230,
+                    "name": "height_feet",
+                    "number": 7,
+                    "type_name": "double"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.nickname",
+                    "id": 3363633361613537,
+                    "message_model_id": 3538633033636230,
+                    "name": "nickname",
+                    "number": 8,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.UpdateUser.User.enable_notifications",
+                    "id": 3432333530383236,
+                    "message_model_id": 3538633033636230,
+                    "name": "enable_notifications",
+                    "number": 9,
+                    "type_name": "bool"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -226,8 +1735,29 @@
               "design_name": "google.showcase.v1beta1.Identity.DeleteUser",
               "id": 3565303933303137,
               "service_model_id": 3533633535343463,
-              "rpc_name": "DeleteUser",
-              "input_name": "google.showcase.v1beta1.DeleteUserRequest",
+              "name": "DeleteUser",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Identity.DeleteUser.DeleteUserRequest",
+                "id": 3331386662323034,
+                "rpc_model_id": 3565303933303137,
+                "name": "DeleteUserRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.DeleteUser.DeleteUserRequest.name",
+                    "id": 3331323861376336,
+                    "message_model_id": 3331386662323034,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Identity.DeleteUser.Empty",
+                "id": 3666323763633066,
+                "rpc_model_id": 3565303933303137,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -236,8 +1766,55 @@
               "design_name": "google.showcase.v1beta1.Identity.ListUsers",
               "id": 3435366566623666,
               "service_model_id": 3533633535343463,
-              "rpc_name": "ListUsers",
-              "input_name": "google.showcase.v1beta1.ListUsersRequest",
+              "name": "ListUsers",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersRequest",
+                "id": 3864336330366664,
+                "rpc_model_id": 3435366566623666,
+                "name": "ListUsersRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersRequest.page_size",
+                    "id": 3135613438373831,
+                    "message_model_id": 3864336330366664,
+                    "name": "page_size",
+                    "number": 1,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersRequest.page_token",
+                    "id": 6533363131313130,
+                    "message_model_id": 3864336330366664,
+                    "name": "page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersResponse",
+                "id": 3666646338643466,
+                "rpc_model_id": 3435366566623666,
+                "name": "ListUsersResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersResponse.users",
+                    "id": 6534386563313934,
+                    "message_model_id": 3666646338643466,
+                    "name": "users",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Identity.ListUsers.ListUsersResponse.next_page_token",
+                    "id": 6264366264633335,
+                    "message_model_id": 3666646338643466,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -254,8 +1831,71 @@
               "design_name": "google.showcase.v1beta1.Messaging.CreateRoom",
               "id": 6162323666353364,
               "service_model_id": 3265343034623230,
-              "rpc_name": "CreateRoom",
-              "input_name": "google.showcase.v1beta1.CreateRoomRequest",
+              "name": "CreateRoom",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.CreateRoomRequest",
+                "id": 3932636163326565,
+                "rpc_model_id": 6162323666353364,
+                "name": "CreateRoomRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.CreateRoomRequest.room",
+                    "id": 3832396333333863,
+                    "message_model_id": 3932636163326565,
+                    "name": "room",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room",
+                "id": 6232343735393032,
+                "rpc_model_id": 6162323666353364,
+                "name": "Room",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room.name",
+                    "id": 6134626461363438,
+                    "message_model_id": 6232343735393032,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room.display_name",
+                    "id": 3532323239663064,
+                    "message_model_id": 6232343735393032,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room.description",
+                    "id": 3963616561333130,
+                    "message_model_id": 6232343735393032,
+                    "name": "description",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room.create_time",
+                    "id": 3463353665386265,
+                    "message_model_id": 6232343735393032,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateRoom.Room.update_time",
+                    "id": 3738626462383133,
+                    "message_model_id": 6232343735393032,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -264,8 +1904,71 @@
               "design_name": "google.showcase.v1beta1.Messaging.GetRoom",
               "id": 3265396663623432,
               "service_model_id": 3265343034623230,
-              "rpc_name": "GetRoom",
-              "input_name": "google.showcase.v1beta1.GetRoomRequest",
+              "name": "GetRoom",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.GetRoom.GetRoomRequest",
+                "id": 6465306464663162,
+                "rpc_model_id": 3265396663623432,
+                "name": "GetRoomRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.GetRoomRequest.name",
+                    "id": 6362303135623330,
+                    "message_model_id": 6465306464663162,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room",
+                "id": 3464393766616561,
+                "rpc_model_id": 3265396663623432,
+                "name": "Room",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room.name",
+                    "id": 3937613762353931,
+                    "message_model_id": 3464393766616561,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room.display_name",
+                    "id": 6436346564636236,
+                    "message_model_id": 3464393766616561,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room.description",
+                    "id": 6264633966313633,
+                    "message_model_id": 3464393766616561,
+                    "name": "description",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room.create_time",
+                    "id": 3864663138626531,
+                    "message_model_id": 3464393766616561,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetRoom.Room.update_time",
+                    "id": 3836393361643862,
+                    "message_model_id": 3464393766616561,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -274,8 +1977,79 @@
               "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom",
               "id": 3363313763626366,
               "service_model_id": 3265343034623230,
-              "rpc_name": "UpdateRoom",
-              "input_name": "google.showcase.v1beta1.UpdateRoomRequest",
+              "name": "UpdateRoom",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.UpdateRoomRequest",
+                "id": 3239396264343639,
+                "rpc_model_id": 3363313763626366,
+                "name": "UpdateRoomRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.UpdateRoomRequest.room",
+                    "id": 3438383966643265,
+                    "message_model_id": 3239396264343639,
+                    "name": "room",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.UpdateRoomRequest.update_mask",
+                    "id": 3237373966643165,
+                    "message_model_id": 3239396264343639,
+                    "name": "update_mask",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room",
+                "id": 3233363931643336,
+                "rpc_model_id": 3363313763626366,
+                "name": "Room",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room.name",
+                    "id": 6638323939303339,
+                    "message_model_id": 3233363931643336,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room.display_name",
+                    "id": 6538613364633736,
+                    "message_model_id": 3233363931643336,
+                    "name": "display_name",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room.description",
+                    "id": 6565623762663733,
+                    "message_model_id": 3233363931643336,
+                    "name": "description",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room.create_time",
+                    "id": 6231633433306462,
+                    "message_model_id": 3233363931643336,
+                    "name": "create_time",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateRoom.Room.update_time",
+                    "id": 6632396339313035,
+                    "message_model_id": 3233363931643336,
+                    "name": "update_time",
+                    "number": 5,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -284,8 +2058,29 @@
               "design_name": "google.showcase.v1beta1.Messaging.DeleteRoom",
               "id": 3234646238636332,
               "service_model_id": 3265343034623230,
-              "rpc_name": "DeleteRoom",
-              "input_name": "google.showcase.v1beta1.DeleteRoomRequest",
+              "name": "DeleteRoom",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.DeleteRoom.DeleteRoomRequest",
+                "id": 6533356163666439,
+                "rpc_model_id": 3234646238636332,
+                "name": "DeleteRoomRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.DeleteRoom.DeleteRoomRequest.name",
+                    "id": 3964626661336333,
+                    "message_model_id": 6533356163666439,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.DeleteRoom.Empty",
+                "id": 3964646431393265,
+                "rpc_model_id": 3234646238636332,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -294,8 +2089,55 @@
               "design_name": "google.showcase.v1beta1.Messaging.ListRooms",
               "id": 3131346165303731,
               "service_model_id": 3265343034623230,
-              "rpc_name": "ListRooms",
-              "input_name": "google.showcase.v1beta1.ListRoomsRequest",
+              "name": "ListRooms",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsRequest",
+                "id": 3633636262656239,
+                "rpc_model_id": 3131346165303731,
+                "name": "ListRoomsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsRequest.page_size",
+                    "id": 6561303166323837,
+                    "message_model_id": 3633636262656239,
+                    "name": "page_size",
+                    "number": 1,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsRequest.page_token",
+                    "id": 3466643064323965,
+                    "message_model_id": 3633636262656239,
+                    "name": "page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsResponse",
+                "id": 6235306331323334,
+                "rpc_model_id": 3131346165303731,
+                "name": "ListRoomsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsResponse.rooms",
+                    "id": 3934363838326262,
+                    "message_model_id": 6235306331323334,
+                    "name": "rooms",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListRooms.ListRoomsResponse.next_page_token",
+                    "id": 6631353663663539,
+                    "message_model_id": 6235306331323334,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -304,8 +2146,103 @@
               "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb",
               "id": 6263663734616139,
               "service_model_id": 3265343034623230,
-              "rpc_name": "CreateBlurb",
-              "input_name": "google.showcase.v1beta1.CreateBlurbRequest",
+              "name": "CreateBlurb",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.CreateBlurbRequest",
+                "id": 6133313963623234,
+                "rpc_model_id": 6263663734616139,
+                "name": "CreateBlurbRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.CreateBlurbRequest.parent",
+                    "id": 3239373364663633,
+                    "message_model_id": 6133313963623234,
+                    "name": "parent",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.CreateBlurbRequest.blurb",
+                    "id": 6561636462393561,
+                    "message_model_id": 6133313963623234,
+                    "name": "blurb",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb",
+                "id": 6365313761323961,
+                "rpc_model_id": 6263663734616139,
+                "name": "Blurb",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.name",
+                    "id": 6264666336373931,
+                    "message_model_id": 6365313761323961,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.user",
+                    "id": 6635663130636230,
+                    "message_model_id": 6365313761323961,
+                    "name": "user",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.text",
+                    "id": 3939303531373564,
+                    "message_model_id": 6365313761323961,
+                    "name": "text",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.image",
+                    "id": 3965653732653130,
+                    "message_model_id": 6365313761323961,
+                    "name": "image",
+                    "number": 4,
+                    "type_name": "bytes"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.create_time",
+                    "id": 3634386136383231,
+                    "message_model_id": 6365313761323961,
+                    "name": "create_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.update_time",
+                    "id": 3164303535663565,
+                    "message_model_id": 6365313761323961,
+                    "name": "update_time",
+                    "number": 6,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.legacy_room_id",
+                    "id": 6431616439323131,
+                    "message_model_id": 6365313761323961,
+                    "name": "legacy_room_id",
+                    "number": 7,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.CreateBlurb.Blurb.legacy_user_id",
+                    "id": 3732386534343461,
+                    "message_model_id": 6365313761323961,
+                    "name": "legacy_user_id",
+                    "number": 8,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -314,8 +2251,95 @@
               "design_name": "google.showcase.v1beta1.Messaging.GetBlurb",
               "id": 6163363530663631,
               "service_model_id": 3265343034623230,
-              "rpc_name": "GetBlurb",
-              "input_name": "google.showcase.v1beta1.GetBlurbRequest",
+              "name": "GetBlurb",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.GetBlurbRequest",
+                "id": 3132373966356238,
+                "rpc_model_id": 6163363530663631,
+                "name": "GetBlurbRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.GetBlurbRequest.name",
+                    "id": 6237373736346431,
+                    "message_model_id": 3132373966356238,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb",
+                "id": 6239303538323634,
+                "rpc_model_id": 6163363530663631,
+                "name": "Blurb",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.name",
+                    "id": 3237363363303838,
+                    "message_model_id": 6239303538323634,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.user",
+                    "id": 3065343761383430,
+                    "message_model_id": 6239303538323634,
+                    "name": "user",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.text",
+                    "id": 6134333134633364,
+                    "message_model_id": 6239303538323634,
+                    "name": "text",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.image",
+                    "id": 3539643736383364,
+                    "message_model_id": 6239303538323634,
+                    "name": "image",
+                    "number": 4,
+                    "type_name": "bytes"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.create_time",
+                    "id": 6230333765653863,
+                    "message_model_id": 6239303538323634,
+                    "name": "create_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.update_time",
+                    "id": 3937313036373839,
+                    "message_model_id": 6239303538323634,
+                    "name": "update_time",
+                    "number": 6,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.legacy_room_id",
+                    "id": 3536323161653432,
+                    "message_model_id": 6239303538323634,
+                    "name": "legacy_room_id",
+                    "number": 7,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.GetBlurb.Blurb.legacy_user_id",
+                    "id": 6330613238623331,
+                    "message_model_id": 6239303538323634,
+                    "name": "legacy_user_id",
+                    "number": 8,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -324,8 +2348,103 @@
               "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb",
               "id": 6630306232396134,
               "service_model_id": 3265343034623230,
-              "rpc_name": "UpdateBlurb",
-              "input_name": "google.showcase.v1beta1.UpdateBlurbRequest",
+              "name": "UpdateBlurb",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.UpdateBlurbRequest",
+                "id": 3832386561393930,
+                "rpc_model_id": 6630306232396134,
+                "name": "UpdateBlurbRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.UpdateBlurbRequest.blurb",
+                    "id": 6338303463366336,
+                    "message_model_id": 3832386561393930,
+                    "name": "blurb",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.UpdateBlurbRequest.update_mask",
+                    "id": 3064313136653865,
+                    "message_model_id": 3832386561393930,
+                    "name": "update_mask",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb",
+                "id": 3333383738633539,
+                "rpc_model_id": 6630306232396134,
+                "name": "Blurb",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.name",
+                    "id": 6364306633613565,
+                    "message_model_id": 3333383738633539,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.user",
+                    "id": 6466383731636363,
+                    "message_model_id": 3333383738633539,
+                    "name": "user",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.text",
+                    "id": 3832646133336265,
+                    "message_model_id": 3333383738633539,
+                    "name": "text",
+                    "number": 3,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.image",
+                    "id": 3765393461336537,
+                    "message_model_id": 3333383738633539,
+                    "name": "image",
+                    "number": 4,
+                    "type_name": "bytes"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.create_time",
+                    "id": 3265633235323137,
+                    "message_model_id": 3333383738633539,
+                    "name": "create_time",
+                    "number": 5,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.update_time",
+                    "id": 3534323538346538,
+                    "message_model_id": 3333383738633539,
+                    "name": "update_time",
+                    "number": 6,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.legacy_room_id",
+                    "id": 3063333438623364,
+                    "message_model_id": 3333383738633539,
+                    "name": "legacy_room_id",
+                    "number": 7,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.UpdateBlurb.Blurb.legacy_user_id",
+                    "id": 6635346139306366,
+                    "message_model_id": 3333383738633539,
+                    "name": "legacy_user_id",
+                    "number": 8,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -334,8 +2453,29 @@
               "design_name": "google.showcase.v1beta1.Messaging.DeleteBlurb",
               "id": 3830303032376538,
               "service_model_id": 3265343034623230,
-              "rpc_name": "DeleteBlurb",
-              "input_name": "google.showcase.v1beta1.DeleteBlurbRequest",
+              "name": "DeleteBlurb",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.DeleteBlurb.DeleteBlurbRequest",
+                "id": 3861316639316632,
+                "rpc_model_id": 3830303032376538,
+                "name": "DeleteBlurbRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.DeleteBlurb.DeleteBlurbRequest.name",
+                    "id": 3838303565323162,
+                    "message_model_id": 3861316639316632,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.DeleteBlurb.Empty",
+                "id": 3532373431373239,
+                "rpc_model_id": 3830303032376538,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -344,8 +2484,63 @@
               "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs",
               "id": 3161373531633262,
               "service_model_id": 3265343034623230,
-              "rpc_name": "ListBlurbs",
-              "input_name": "google.showcase.v1beta1.ListBlurbsRequest",
+              "name": "ListBlurbs",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsRequest",
+                "id": 3037396464613736,
+                "rpc_model_id": 3161373531633262,
+                "name": "ListBlurbsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsRequest.parent",
+                    "id": 3936626261376135,
+                    "message_model_id": 3037396464613736,
+                    "name": "parent",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsRequest.page_size",
+                    "id": 6331326333646561,
+                    "message_model_id": 3037396464613736,
+                    "name": "page_size",
+                    "number": 2,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsRequest.page_token",
+                    "id": 3662626337366234,
+                    "message_model_id": 3037396464613736,
+                    "name": "page_token",
+                    "number": 3,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsResponse",
+                "id": 3261363939343565,
+                "rpc_model_id": 3161373531633262,
+                "name": "ListBlurbsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsResponse.blurbs",
+                    "id": 3563396137623937,
+                    "message_model_id": 3261363939343565,
+                    "name": "blurbs",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.ListBlurbs.ListBlurbsResponse.next_page_token",
+                    "id": 6263303638313530,
+                    "message_model_id": 3261363939343565,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -354,8 +2549,95 @@
               "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs",
               "id": 3532643432303533,
               "service_model_id": 3265343034623230,
-              "rpc_name": "SearchBlurbs",
-              "input_name": "google.showcase.v1beta1.SearchBlurbsRequest",
+              "name": "SearchBlurbs",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.SearchBlurbsRequest",
+                "id": 3734323865646261,
+                "rpc_model_id": 3532643432303533,
+                "name": "SearchBlurbsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.SearchBlurbsRequest.query",
+                    "id": 3531366165653135,
+                    "message_model_id": 3734323865646261,
+                    "name": "query",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.SearchBlurbsRequest.parent",
+                    "id": 3336356137666361,
+                    "message_model_id": 3734323865646261,
+                    "name": "parent",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.SearchBlurbsRequest.page_size",
+                    "id": 6466356265306263,
+                    "message_model_id": 3734323865646261,
+                    "name": "page_size",
+                    "number": 3,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.SearchBlurbsRequest.page_token",
+                    "id": 6164363561613861,
+                    "message_model_id": 3734323865646261,
+                    "name": "page_token",
+                    "number": 4,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation",
+                "id": 6230653535396462,
+                "rpc_model_id": 3532643432303533,
+                "name": "Operation",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation.name",
+                    "id": 3434643933636331,
+                    "message_model_id": 6230653535396462,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation.metadata",
+                    "id": 3763616135326233,
+                    "message_model_id": 6230653535396462,
+                    "name": "metadata",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation.done",
+                    "id": 3436643236313833,
+                    "message_model_id": 6230653535396462,
+                    "name": "done",
+                    "number": 3,
+                    "type_name": "bool"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation.error",
+                    "id": 3963303262386364,
+                    "message_model_id": 6230653535396462,
+                    "name": "error",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SearchBlurbs.Operation.response",
+                    "id": 3237656233373434,
+                    "message_model_id": 6230653535396462,
+                    "name": "response",
+                    "number": 5,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -364,8 +2646,55 @@
               "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs",
               "id": 6432623636333663,
               "service_model_id": 3265343034623230,
-              "rpc_name": "StreamBlurbs",
-              "input_name": "google.showcase.v1beta1.StreamBlurbsRequest",
+              "name": "StreamBlurbs",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsRequest",
+                "id": 6637613663356230,
+                "rpc_model_id": 6432623636333663,
+                "name": "StreamBlurbsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsRequest.name",
+                    "id": 6333333831653437,
+                    "message_model_id": 6637613663356230,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsRequest.expire_time",
+                    "id": 3233346530323665,
+                    "message_model_id": 6637613663356230,
+                    "name": "expire_time",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsResponse",
+                "id": 3062383233323364,
+                "rpc_model_id": 6432623636333663,
+                "name": "StreamBlurbsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsResponse.blurb",
+                    "id": 6532376165393536,
+                    "message_model_id": 3062383233323364,
+                    "name": "blurb",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.StreamBlurbs.StreamBlurbsResponse.action",
+                    "id": 3764643762646237,
+                    "message_model_id": 3062383233323364,
+                    "name": "action",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "server"
@@ -374,8 +2703,47 @@
               "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs",
               "id": 6234616635303137,
               "service_model_id": 3265343034623230,
-              "rpc_name": "SendBlurbs",
-              "input_name": "google.showcase.v1beta1.CreateBlurbRequest",
+              "name": "SendBlurbs",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs.CreateBlurbRequest",
+                "id": 6566336666633433,
+                "rpc_model_id": 6234616635303137,
+                "name": "CreateBlurbRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs.CreateBlurbRequest.parent",
+                    "id": 3763363838623665,
+                    "message_model_id": 6566336666633433,
+                    "name": "parent",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs.CreateBlurbRequest.blurb",
+                    "id": 3938346138353465,
+                    "message_model_id": 6566336666633433,
+                    "name": "blurb",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs.SendBlurbsResponse",
+                "id": 3837323835383639,
+                "rpc_model_id": 6234616635303137,
+                "name": "SendBlurbsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.SendBlurbs.SendBlurbsResponse.names",
+                    "id": 3733633037346238,
+                    "message_model_id": 3837323835383639,
+                    "name": "names",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "client"
@@ -384,8 +2752,55 @@
               "design_name": "google.showcase.v1beta1.Messaging.Connect",
               "id": 3564383961613431,
               "service_model_id": 3265343034623230,
-              "rpc_name": "Connect",
-              "input_name": "google.showcase.v1beta1.ConnectRequest",
+              "name": "Connect",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Messaging.Connect.ConnectRequest",
+                "id": 3663343330653466,
+                "rpc_model_id": 3564383961613431,
+                "name": "ConnectRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.Connect.ConnectRequest.config",
+                    "id": 3039306338373864,
+                    "message_model_id": 3663343330653466,
+                    "name": "config",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.Connect.ConnectRequest.blurb",
+                    "id": 3333373739353332,
+                    "message_model_id": 3663343330653466,
+                    "name": "blurb",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Messaging.Connect.StreamBlurbsResponse",
+                "id": 3763363939333936,
+                "rpc_model_id": 3564383961613431,
+                "name": "StreamBlurbsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.Connect.StreamBlurbsResponse.blurb",
+                    "id": 3231643638353935,
+                    "message_model_id": 3763363939333936,
+                    "name": "blurb",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Messaging.Connect.StreamBlurbsResponse.action",
+                    "id": 3434636335396564,
+                    "message_model_id": 3763363939333936,
+                    "name": "action",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "bidi"
@@ -402,8 +2817,47 @@
               "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence",
               "id": 3130616534363161,
               "service_model_id": 6439646238396639,
-              "rpc_name": "CreateSequence",
-              "input_name": "google.showcase.v1beta1.CreateSequenceRequest",
+              "name": "CreateSequence",
+              "input": {
+                "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence.CreateSequenceRequest",
+                "id": 6333623366393238,
+                "rpc_model_id": 3130616534363161,
+                "name": "CreateSequenceRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence.CreateSequenceRequest.sequence",
+                    "id": 3637313563373062,
+                    "message_model_id": 6333623366393238,
+                    "name": "sequence",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence.Sequence",
+                "id": 6664633634656164,
+                "rpc_model_id": 3130616534363161,
+                "name": "Sequence",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence.Sequence.name",
+                    "id": 3861303265306562,
+                    "message_model_id": 6664633634656164,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.CreateSequence.Sequence.responses",
+                    "id": 3738363234646433,
+                    "message_model_id": 6664633634656164,
+                    "name": "responses",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -412,8 +2866,47 @@
               "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport",
               "id": 6263303230363934,
               "service_model_id": 6439646238396639,
-              "rpc_name": "GetSequenceReport",
-              "input_name": "google.showcase.v1beta1.GetSequenceReportRequest",
+              "name": "GetSequenceReport",
+              "input": {
+                "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport.GetSequenceReportRequest",
+                "id": 6361326365313731,
+                "rpc_model_id": 6263303230363934,
+                "name": "GetSequenceReportRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport.GetSequenceReportRequest.name",
+                    "id": 3939323636633430,
+                    "message_model_id": 6361326365313731,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport.SequenceReport",
+                "id": 3564373031313934,
+                "rpc_model_id": 6263303230363934,
+                "name": "SequenceReport",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport.SequenceReport.name",
+                    "id": 6630653264333538,
+                    "message_model_id": 3564373031313934,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.GetSequenceReport.SequenceReport.attempts",
+                    "id": 6432633334313531,
+                    "message_model_id": 3564373031313934,
+                    "name": "attempts",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -422,8 +2915,29 @@
               "design_name": "google.showcase.v1beta1.SequenceService.AttemptSequence",
               "id": 6130326639623562,
               "service_model_id": 6439646238396639,
-              "rpc_name": "AttemptSequence",
-              "input_name": "google.showcase.v1beta1.AttemptSequenceRequest",
+              "name": "AttemptSequence",
+              "input": {
+                "design_name": "google.showcase.v1beta1.SequenceService.AttemptSequence.AttemptSequenceRequest",
+                "id": 3939613361356531,
+                "rpc_model_id": 6130326639623562,
+                "name": "AttemptSequenceRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.SequenceService.AttemptSequence.AttemptSequenceRequest.name",
+                    "id": 3737626239373332,
+                    "message_model_id": 3939613361356531,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.SequenceService.AttemptSequence.Empty",
+                "id": 3634666161633162,
+                "rpc_model_id": 6130326639623562,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -440,8 +2954,47 @@
               "design_name": "google.showcase.v1beta1.Testing.CreateSession",
               "id": 6466316432393730,
               "service_model_id": 6632316533633265,
-              "rpc_name": "CreateSession",
-              "input_name": "google.showcase.v1beta1.CreateSessionRequest",
+              "name": "CreateSession",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.CreateSession.CreateSessionRequest",
+                "id": 6537343731613735,
+                "rpc_model_id": 6466316432393730,
+                "name": "CreateSessionRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.CreateSession.CreateSessionRequest.session",
+                    "id": 3265316539306434,
+                    "message_model_id": 6537343731613735,
+                    "name": "session",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.CreateSession.Session",
+                "id": 3733333365316632,
+                "rpc_model_id": 6466316432393730,
+                "name": "Session",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.CreateSession.Session.name",
+                    "id": 3432623334303964,
+                    "message_model_id": 3733333365316632,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.CreateSession.Session.version",
+                    "id": 3466376234663762,
+                    "message_model_id": 3733333365316632,
+                    "name": "version",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -450,8 +3003,47 @@
               "design_name": "google.showcase.v1beta1.Testing.GetSession",
               "id": 3161363365336337,
               "service_model_id": 6632316533633265,
-              "rpc_name": "GetSession",
-              "input_name": "google.showcase.v1beta1.GetSessionRequest",
+              "name": "GetSession",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.GetSession.GetSessionRequest",
+                "id": 3436316265656231,
+                "rpc_model_id": 3161363365336337,
+                "name": "GetSessionRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.GetSession.GetSessionRequest.name",
+                    "id": 6536353361343366,
+                    "message_model_id": 3436316265656231,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.GetSession.Session",
+                "id": 3262616533363632,
+                "rpc_model_id": 3161363365336337,
+                "name": "Session",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.GetSession.Session.name",
+                    "id": 6238383066346430,
+                    "message_model_id": 3262616533363632,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.GetSession.Session.version",
+                    "id": 6230656563353037,
+                    "message_model_id": 3262616533363632,
+                    "name": "version",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -460,8 +3052,55 @@
               "design_name": "google.showcase.v1beta1.Testing.ListSessions",
               "id": 3235336137613739,
               "service_model_id": 6632316533633265,
-              "rpc_name": "ListSessions",
-              "input_name": "google.showcase.v1beta1.ListSessionsRequest",
+              "name": "ListSessions",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsRequest",
+                "id": 6233623162663334,
+                "rpc_model_id": 3235336137613739,
+                "name": "ListSessionsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsRequest.page_size",
+                    "id": 6366306334656463,
+                    "message_model_id": 6233623162663334,
+                    "name": "page_size",
+                    "number": 1,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsRequest.page_token",
+                    "id": 3037316131326362,
+                    "message_model_id": 6233623162663334,
+                    "name": "page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsResponse",
+                "id": 6462376131653165,
+                "rpc_model_id": 3235336137613739,
+                "name": "ListSessionsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsResponse.sessions",
+                    "id": 3532316437393834,
+                    "message_model_id": 6462376131653165,
+                    "name": "sessions",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListSessions.ListSessionsResponse.next_page_token",
+                    "id": 3664616331346233,
+                    "message_model_id": 6462376131653165,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -470,8 +3109,29 @@
               "design_name": "google.showcase.v1beta1.Testing.DeleteSession",
               "id": 6563336631633839,
               "service_model_id": 6632316533633265,
-              "rpc_name": "DeleteSession",
-              "input_name": "google.showcase.v1beta1.DeleteSessionRequest",
+              "name": "DeleteSession",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.DeleteSession.DeleteSessionRequest",
+                "id": 3136653663376464,
+                "rpc_model_id": 6563336631633839,
+                "name": "DeleteSessionRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.DeleteSession.DeleteSessionRequest.name",
+                    "id": 3437316164623439,
+                    "message_model_id": 3136653663376464,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.DeleteSession.Empty",
+                "id": 6236363436633862,
+                "rpc_model_id": 6563336631633839,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -480,8 +3140,47 @@
               "design_name": "google.showcase.v1beta1.Testing.ReportSession",
               "id": 6339353162646363,
               "service_model_id": 6632316533633265,
-              "rpc_name": "ReportSession",
-              "input_name": "google.showcase.v1beta1.ReportSessionRequest",
+              "name": "ReportSession",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.ReportSession.ReportSessionRequest",
+                "id": 3636353462313634,
+                "rpc_model_id": 6339353162646363,
+                "name": "ReportSessionRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ReportSession.ReportSessionRequest.name",
+                    "id": 3564313431666239,
+                    "message_model_id": 3636353462313634,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.ReportSession.ReportSessionResponse",
+                "id": 6530303564376635,
+                "rpc_model_id": 6339353162646363,
+                "name": "ReportSessionResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ReportSession.ReportSessionResponse.result",
+                    "id": 6432623963633835,
+                    "message_model_id": 6530303564376635,
+                    "name": "result",
+                    "number": 1,
+                    "type_name": "enum"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ReportSession.ReportSessionResponse.test_runs",
+                    "id": 3739323831356666,
+                    "message_model_id": 6530303564376635,
+                    "name": "test_runs",
+                    "number": 2,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -490,8 +3189,63 @@
               "design_name": "google.showcase.v1beta1.Testing.ListTests",
               "id": 3432363933323237,
               "service_model_id": 6632316533633265,
-              "rpc_name": "ListTests",
-              "input_name": "google.showcase.v1beta1.ListTestsRequest",
+              "name": "ListTests",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsRequest",
+                "id": 3837303835333665,
+                "rpc_model_id": 3432363933323237,
+                "name": "ListTestsRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsRequest.parent",
+                    "id": 6163633663613539,
+                    "message_model_id": 3837303835333665,
+                    "name": "parent",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsRequest.page_size",
+                    "id": 3937653031303332,
+                    "message_model_id": 3837303835333665,
+                    "name": "page_size",
+                    "number": 2,
+                    "type_name": "int32"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsRequest.page_token",
+                    "id": 6664383432343038,
+                    "message_model_id": 3837303835333665,
+                    "name": "page_token",
+                    "number": 3,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsResponse",
+                "id": 6265396230623039,
+                "rpc_model_id": 3432363933323237,
+                "name": "ListTestsResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsResponse.tests",
+                    "id": 3064663532623838,
+                    "message_model_id": 6265396230623039,
+                    "name": "tests",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.ListTests.ListTestsResponse.next_page_token",
+                    "id": 6365366430613235,
+                    "message_model_id": 6265396230623039,
+                    "name": "next_page_token",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -500,8 +3254,29 @@
               "design_name": "google.showcase.v1beta1.Testing.DeleteTest",
               "id": 6534303761316261,
               "service_model_id": 6632316533633265,
-              "rpc_name": "DeleteTest",
-              "input_name": "google.showcase.v1beta1.DeleteTestRequest",
+              "name": "DeleteTest",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.DeleteTest.DeleteTestRequest",
+                "id": 6232646131306134,
+                "rpc_model_id": 6534303761316261,
+                "name": "DeleteTestRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.DeleteTest.DeleteTestRequest.name",
+                    "id": 3930623532343532,
+                    "message_model_id": 6232646131306134,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.DeleteTest.Empty",
+                "id": 6137333266663137,
+                "rpc_model_id": 6534303761316261,
+                "name": "Empty"
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -510,8 +3285,55 @@
               "design_name": "google.showcase.v1beta1.Testing.VerifyTest",
               "id": 3062343530363763,
               "service_model_id": 6632316533633265,
-              "rpc_name": "VerifyTest",
-              "input_name": "google.showcase.v1beta1.VerifyTestRequest",
+              "name": "VerifyTest",
+              "input": {
+                "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestRequest",
+                "id": 6236326432353537,
+                "rpc_model_id": 3062343530363763,
+                "name": "VerifyTestRequest",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestRequest.name",
+                    "id": 6533626139633831,
+                    "message_model_id": 6236326432353537,
+                    "name": "name",
+                    "number": 1,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestRequest.answer",
+                    "id": 6239303737373933,
+                    "message_model_id": 6236326432353537,
+                    "name": "answer",
+                    "number": 2,
+                    "type_name": "bytes"
+                  },
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestRequest.answers",
+                    "id": 6536656134393964,
+                    "message_model_id": 6236326432353537,
+                    "name": "answers",
+                    "number": 3,
+                    "type_name": "bytes"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestResponse",
+                "id": 6536636364326131,
+                "rpc_model_id": 3062343530363763,
+                "name": "VerifyTestResponse",
+                "fields": [
+                  {
+                    "design_name": "google.showcase.v1beta1.Testing.VerifyTest.VerifyTestResponse.issue",
+                    "id": 6539303263666434,
+                    "message_model_id": 6536636364326131,
+                    "name": "issue",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": true,
               "generate_explicit_headers": false,
               "arity": "normal"

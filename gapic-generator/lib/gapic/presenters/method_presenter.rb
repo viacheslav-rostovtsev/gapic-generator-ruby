@@ -18,7 +18,7 @@ require "active_support/inflector"
 require "gapic/ruby_info"
 require "gapic/helpers/namespace_helper"
 
-require "model/models"
+require "model/generation.pb"
 
 module Gapic
   module Presenters
@@ -63,9 +63,7 @@ module Gapic
         @self_model.design_name = "#{service_presenter.self_model.design_name}.#{@method.name}"
         @self_model.id =  Gapic::Schema::Api.string_to_stable_id self_model.design_name
         @self_model.service_model_id = service_presenter.self_model.id
-        @self_model.rpc_name = @method.name
-        @self_model.input_name = @method.input.address.join(".")
-        @self_model.output_name = @method.output.address.join(".")
+        @self_model.name = @method.name
       end
 
       def model
@@ -75,17 +73,25 @@ module Gapic
           model.id =  self_model.id
           model.service_model_id = self_model.service_model_id
 
-          model.rpc_name = self_model.rpc_name
-          model.input_name = self_model.input_name
-          model.output_name == "self_model.output_name"
+          model.name = self_model.name
+          model.input = input.model
+          model.output = output.model
 
           model.generate_implicit_headers = !@routing.explicit_annotation? && @routing.implicit_params?
           model.generate_explicit_headers = @routing.explicit_params?
 
           model.arity = kind.to_s
-          
+
           model
         end
+      end
+
+      def input
+        MessagePresenter.new(@api, @method.input, rpc_presenter: self)
+      end
+
+      def output
+        MessagePresenter.new(@api, @method.output, rpc_presenter: self)
       end
 
       ##
@@ -154,11 +160,11 @@ module Gapic
 
       def arguments
         arguments = @method.input.fields.reject(&:output_only?)
-        arguments.map { |arg| FieldPresenter.new @api, @method.input, arg }
+        arguments.map { |arg| FieldPresenter.new @api, input, arg }
       end
 
       def fields
-        @method.input.fields.map { |field| FieldPresenter.new @api, @method.input, field }
+        @method.input.fields.map { |field| FieldPresenter.new @api, input, field }
       end
 
       def fields_with_first_oneof
@@ -178,7 +184,7 @@ module Gapic
           have_oneof << idx
         end
 
-        selected_fields.map { |field| FieldPresenter.new @api, @method.input, field }
+        selected_fields.map { |field| FieldPresenter.new @api, input, field }
       end
 
       def request_type

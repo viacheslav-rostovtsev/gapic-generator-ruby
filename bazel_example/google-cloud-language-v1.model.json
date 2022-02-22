@@ -20,8 +20,63 @@
               "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment",
               "id": 3638613634336331,
               "service_model_id": 6566323965353034,
-              "rpc_name": "AnalyzeSentiment",
-              "input_name": "google.cloud.language.v1.AnalyzeSentimentRequest",
+              "name": "AnalyzeSentiment",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentRequest",
+                "id": 6533623862626336,
+                "rpc_model_id": 3638613634336331,
+                "name": "AnalyzeSentimentRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentRequest.document",
+                    "id": 6136333565663637,
+                    "message_model_id": 6533623862626336,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentRequest.encoding_type",
+                    "id": 3231643564643836,
+                    "message_model_id": 6533623862626336,
+                    "name": "encoding_type",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentResponse",
+                "id": 3166336430646630,
+                "rpc_model_id": 3638613634336331,
+                "name": "AnalyzeSentimentResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentResponse.document_sentiment",
+                    "id": 6665396133366139,
+                    "message_model_id": 3166336430646630,
+                    "name": "document_sentiment",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentResponse.language",
+                    "id": 6438613866316164,
+                    "message_model_id": 3166336430646630,
+                    "name": "language",
+                    "number": 2,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSentiment.AnalyzeSentimentResponse.sentences",
+                    "id": 3566613563313162,
+                    "message_model_id": 3166336430646630,
+                    "name": "sentences",
+                    "number": 3,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -30,8 +85,55 @@
               "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities",
               "id": 3635666466386334,
               "service_model_id": 6566323965353034,
-              "rpc_name": "AnalyzeEntities",
-              "input_name": "google.cloud.language.v1.AnalyzeEntitiesRequest",
+              "name": "AnalyzeEntities",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesRequest",
+                "id": 3632393136643939,
+                "rpc_model_id": 3635666466386334,
+                "name": "AnalyzeEntitiesRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesRequest.document",
+                    "id": 3063663630343864,
+                    "message_model_id": 3632393136643939,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesRequest.encoding_type",
+                    "id": 6661326234636336,
+                    "message_model_id": 3632393136643939,
+                    "name": "encoding_type",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesResponse",
+                "id": 6664656236373363,
+                "rpc_model_id": 3635666466386334,
+                "name": "AnalyzeEntitiesResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesResponse.entities",
+                    "id": 3834363237383137,
+                    "message_model_id": 6664656236373363,
+                    "name": "entities",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntities.AnalyzeEntitiesResponse.language",
+                    "id": 3130346564303533,
+                    "message_model_id": 6664656236373363,
+                    "name": "language",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -40,8 +142,55 @@
               "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment",
               "id": 3164353634336532,
               "service_model_id": 6566323965353034,
-              "rpc_name": "AnalyzeEntitySentiment",
-              "input_name": "google.cloud.language.v1.AnalyzeEntitySentimentRequest",
+              "name": "AnalyzeEntitySentiment",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentRequest",
+                "id": 3266386236396634,
+                "rpc_model_id": 3164353634336532,
+                "name": "AnalyzeEntitySentimentRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentRequest.document",
+                    "id": 6436343537646563,
+                    "message_model_id": 3266386236396634,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentRequest.encoding_type",
+                    "id": 3466663838356231,
+                    "message_model_id": 3266386236396634,
+                    "name": "encoding_type",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentResponse",
+                "id": 3361346232363837,
+                "rpc_model_id": 3164353634336532,
+                "name": "AnalyzeEntitySentimentResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentResponse.entities",
+                    "id": 6233383966643136,
+                    "message_model_id": 3361346232363837,
+                    "name": "entities",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeEntitySentiment.AnalyzeEntitySentimentResponse.language",
+                    "id": 3666346337316238,
+                    "message_model_id": 3361346232363837,
+                    "name": "language",
+                    "number": 2,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -50,8 +199,63 @@
               "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax",
               "id": 3261656632346165,
               "service_model_id": 6566323965353034,
-              "rpc_name": "AnalyzeSyntax",
-              "input_name": "google.cloud.language.v1.AnalyzeSyntaxRequest",
+              "name": "AnalyzeSyntax",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxRequest",
+                "id": 6236313831316637,
+                "rpc_model_id": 3261656632346165,
+                "name": "AnalyzeSyntaxRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxRequest.document",
+                    "id": 3765393066346662,
+                    "message_model_id": 6236313831316637,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxRequest.encoding_type",
+                    "id": 6631613332313361,
+                    "message_model_id": 6236313831316637,
+                    "name": "encoding_type",
+                    "number": 2,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxResponse",
+                "id": 3966353163303030,
+                "rpc_model_id": 3261656632346165,
+                "name": "AnalyzeSyntaxResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxResponse.sentences",
+                    "id": 3738366333623062,
+                    "message_model_id": 3966353163303030,
+                    "name": "sentences",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxResponse.tokens",
+                    "id": 3633386435666435,
+                    "message_model_id": 3966353163303030,
+                    "name": "tokens",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnalyzeSyntax.AnalyzeSyntaxResponse.language",
+                    "id": 6635353431346639,
+                    "message_model_id": 3966353163303030,
+                    "name": "language",
+                    "number": 3,
+                    "type_name": "string"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -60,8 +264,39 @@
               "design_name": "google.cloud.language.v1.LanguageService.ClassifyText",
               "id": 6639616362323861,
               "service_model_id": 6566323965353034,
-              "rpc_name": "ClassifyText",
-              "input_name": "google.cloud.language.v1.ClassifyTextRequest",
+              "name": "ClassifyText",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.ClassifyText.ClassifyTextRequest",
+                "id": 3666366263373439,
+                "rpc_model_id": 6639616362323861,
+                "name": "ClassifyTextRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.ClassifyText.ClassifyTextRequest.document",
+                    "id": 3735663037393431,
+                    "message_model_id": 3666366263373439,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.ClassifyText.ClassifyTextResponse",
+                "id": 3664623066646262,
+                "rpc_model_id": 6639616362323861,
+                "name": "ClassifyTextResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.ClassifyText.ClassifyTextResponse.categories",
+                    "id": 3564356365663733,
+                    "message_model_id": 3664623066646262,
+                    "name": "categories",
+                    "number": 1,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"
@@ -70,8 +305,95 @@
               "design_name": "google.cloud.language.v1.LanguageService.AnnotateText",
               "id": 6233323434653433,
               "service_model_id": 6566323965353034,
-              "rpc_name": "AnnotateText",
-              "input_name": "google.cloud.language.v1.AnnotateTextRequest",
+              "name": "AnnotateText",
+              "input": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextRequest",
+                "id": 6537626164346434,
+                "rpc_model_id": 6233323434653433,
+                "name": "AnnotateTextRequest",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextRequest.document",
+                    "id": 3038383861623834,
+                    "message_model_id": 6537626164346434,
+                    "name": "document",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextRequest.features",
+                    "id": 3966363361353562,
+                    "message_model_id": 6537626164346434,
+                    "name": "features",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextRequest.encoding_type",
+                    "id": 3065313530313236,
+                    "message_model_id": 6537626164346434,
+                    "name": "encoding_type",
+                    "number": 3,
+                    "type_name": "enum"
+                  }
+                ]
+              },
+              "output": {
+                "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse",
+                "id": 3266373633383738,
+                "rpc_model_id": 6233323434653433,
+                "name": "AnnotateTextResponse",
+                "fields": [
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.sentences",
+                    "id": 6530336639373432,
+                    "message_model_id": 3266373633383738,
+                    "name": "sentences",
+                    "number": 1,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.tokens",
+                    "id": 3636623232363463,
+                    "message_model_id": 3266373633383738,
+                    "name": "tokens",
+                    "number": 2,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.entities",
+                    "id": 3132313266303637,
+                    "message_model_id": 3266373633383738,
+                    "name": "entities",
+                    "number": 3,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.document_sentiment",
+                    "id": 6635313837653630,
+                    "message_model_id": 3266373633383738,
+                    "name": "document_sentiment",
+                    "number": 4,
+                    "type_name": "message"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.language",
+                    "id": 6238323563373231,
+                    "message_model_id": 3266373633383738,
+                    "name": "language",
+                    "number": 5,
+                    "type_name": "string"
+                  },
+                  {
+                    "design_name": "google.cloud.language.v1.LanguageService.AnnotateText.AnnotateTextResponse.categories",
+                    "id": 6634323566326665,
+                    "message_model_id": 3266373633383738,
+                    "name": "categories",
+                    "number": 6,
+                    "type_name": "message"
+                  }
+                ]
+              },
               "generate_implicit_headers": false,
               "generate_explicit_headers": false,
               "arity": "normal"

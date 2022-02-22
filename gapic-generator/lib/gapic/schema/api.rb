@@ -22,7 +22,7 @@ require "gapic/schema/request_param_parser"
 require "gapic/grpc_service_config/parser"
 require "gapic/schema/service_config_parser"
 
-require "model/models"
+require "model/generation.pb"
 require "json"
 
 module Gapic

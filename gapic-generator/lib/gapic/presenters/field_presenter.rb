@@ -17,6 +17,8 @@
 require "active_support/inflector"
 require "gapic/helpers/namespace_helper"
 
+require "model/generation.pb"
+
 module Gapic
   module Presenters
     ##
@@ -25,10 +27,24 @@ module Gapic
     class FieldPresenter
       include Gapic::Helpers::NamespaceHelper
 
-      def initialize api, message, field
+      attr_accessor :self_model
+
+      def initialize api, message_presenter, field
         @api = api
-        @message = message
+        @message = message_presenter.message
         @field = field
+
+        @self_model = ::Model::Generation::FieldModel.new
+        @self_model.design_name = "#{message_presenter.self_model.design_name}.#{@field.name}"
+        @self_model.id =  Gapic::Schema::Api.string_to_stable_id self_model.design_name
+        @self_model.message_model_id = message_presenter.self_model.id
+        @self_model.name = @field.name
+        @self_model.number = @field.number
+        @self_model.type_name = protoc_type_name
+      end
+
+      def model
+        @self_model
       end
 
       def name
@@ -70,6 +86,30 @@ module Gapic
       # TODO: remove, only used in tests
       def type_name
         @field.type_name
+      end
+
+      def protoc_type_name
+        {
+          0 => "unknown",
+          1 => "double",
+          2 => "float",
+          3 => "int64",
+          4 => "unit64",
+          5 => "int32",
+          6 => "fixed64",
+          7 => "fixed32",
+          8 => "bool",
+          9 => "string",
+          10 => "group",
+          11 => "message",
+          12 => "bytes",
+          13 => "uint32",
+          14 => "enum",
+          15 => "sfixed32",
+          16 => "sfixed64",
+          17 => "sint32",
+          18 => "sint64",
+        }[type]
       end
 
       def type_name_full

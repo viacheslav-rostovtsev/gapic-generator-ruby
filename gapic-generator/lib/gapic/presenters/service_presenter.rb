@@ -18,6 +18,8 @@ require "active_support/inflector"
 require "gapic/helpers/filepath_helper"
 require "gapic/helpers/namespace_helper"
 
+require "model/generation.pb"
+
 module Gapic
   module Presenters
     ##

@@ -18,7 +18,8 @@ require "active_support/inflector"
 require "gapic/helpers/filepath_helper"
 require "gapic/helpers/namespace_helper"
 
-require "model/models"
+require "model/generation.pb"
+
 require "json"
 
 module Gapic

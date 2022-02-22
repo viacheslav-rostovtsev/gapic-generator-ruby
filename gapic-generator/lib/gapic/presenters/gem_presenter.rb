@@ -17,6 +17,8 @@
 require "gapic/helpers/filepath_helper"
 require "gapic/helpers/namespace_helper"
 
+require "model/generation.pb"
+
 require "json"
 
 module Gapic

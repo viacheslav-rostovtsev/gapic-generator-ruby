@@ -125,7 +125,8 @@ class PresenterTest < GeneratorTest
     api_obj = api api_name
     message = api_obj.messages.find { |m| m.address.join(".") == message_name }
     field = message.fields.find { |f| f.name == field_name }
-    Gapic::Presenters::FieldPresenter.new api_obj, message, field
+    msg = Gapic::Presenters::MessagePresenter.new api, message
+    Gapic::Presenters::FieldPresenter.new api_obj, msg, field
   end
 
   def resource_presenter api_name, message_name

@@ -18,6 +18,8 @@ require "active_support/inflector"
 
 require "gapic/helpers/namespace_helper"
 
+require "model/generation.pb"
+
 module Gapic
   module Presenters
     ##
@@ -26,9 +28,36 @@ module Gapic
     class MessagePresenter
       include Gapic::Helpers::NamespaceHelper
 
-      def initialize api, message
+      attr_accessor :message
+
+      attr_accessor :self_model
+
+      def initialize api, message, rpc_presenter: nil
         @api = api
         @message = message
+
+        rpc_design_name = rpc_presenter.nil? ? "" : rpc_presenter.self_model.design_name
+        rpc_id = rpc_presenter.nil? ? 0 : rpc_presenter.self_model.id
+
+        @self_model = ::Model::Generation::MessageModel.new
+        @self_model.design_name = "#{rpc_design_name}.#{@message.name}"
+        @self_model.id =  Gapic::Schema::Api.string_to_stable_id self_model.design_name
+        @self_model.rpc_model_id = rpc_id
+        @self_model.name = @message.name
+      end
+
+      def model
+        @model ||= begin
+          model = ::Model::Generation::MessageModel.new
+          model.design_name = self_model.design_name
+          model.id =  self_model.id
+          model.rpc_model_id = self_model.rpc_model_id
+          model.name = self_model.name
+
+          model.fields = fields.map(&:model)
+
+          model
+        end
       end
 
       def name
@@ -56,7 +85,7 @@ module Gapic
       end
 
       def fields
-        @fields = @message.fields.map { |f| FieldPresenter.new @api, @message, f }
+        @fields = @message.fields.map { |f| FieldPresenter.new @api, self, f }
       end
 
       def nested_enums
