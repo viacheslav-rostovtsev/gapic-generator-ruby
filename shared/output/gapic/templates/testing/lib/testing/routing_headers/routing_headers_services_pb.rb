@@ -29,9 +29,11 @@ module Testing
         self.unmarshal_class_method = :decode
         self.service_name = 'testing.routingheaders.ServiceImplicitHeaders'
 
+        rpc :PlainNoTemplate, ::Testing::RoutingHeaders::Request, ::Testing::RoutingHeaders::Response
         rpc :Plain, ::Testing::RoutingHeaders::Request, ::Testing::RoutingHeaders::Response
         rpc :WithSubMessage, ::Testing::RoutingHeaders::Request, ::Testing::RoutingHeaders::Response
         rpc :WithMultipleLevels, ::Testing::RoutingHeaders::Request, ::Testing::RoutingHeaders::Response
+        rpc :WithAdditionalBindings, ::Testing::RoutingHeaders::Request, ::Testing::RoutingHeaders::Response
       end
 
       Stub = Service.rpc_stub_class

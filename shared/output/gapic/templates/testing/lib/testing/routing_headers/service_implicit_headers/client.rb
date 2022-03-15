@@ -153,6 +153,97 @@ module Testing
         # Service calls
 
         ##
+        # @overload plain_no_template(request, options = nil)
+        #   Pass arguments to `plain_no_template` via a request object, either of type
+        #   {::Testing::RoutingHeaders::Request} or an equivalent Hash.
+        #
+        #   @param request [::Testing::RoutingHeaders::Request, ::Hash]
+        #     A request object representing the call parameters. Required. To specify no
+        #     parameters, or to keep all the default parameter values, pass an empty Hash.
+        #   @param options [::Gapic::CallOptions, ::Hash]
+        #     Overrides the default settings for this call, e.g, timeout, retries, etc. Optional.
+        #
+        # @overload plain_no_template(table_name: nil, app_profile_id: nil, resource: nil)
+        #   Pass arguments to `plain_no_template` via keyword arguments. Note that at
+        #   least one keyword argument is required. To specify no parameters, or to keep all
+        #   the default parameter values, pass an empty Hash as a request object (see above).
+        #
+        #   @param table_name [::String]
+        #     The name of the Table
+        #     Values can be of the following formats:
+        #     - `projects/<project>/tables/<table>`
+        #     - `projects/<project>/instances/<instance>/tables/<table>`
+        #     - `region/<region>/zones/<zone>/tables/<table>`
+        #   @param app_profile_id [::String]
+        #     This value specifies routing for replication.
+        #     It can be in the following formats:
+        #     - profiles/<profile_id>
+        #     - a legacy profile_id that can be any string
+        #   @param resource [::Testing::RoutingHeaders::RequestResource, ::Hash]
+        #
+        # @yield [response, operation] Access the result along with the RPC operation
+        # @yieldparam response [::Testing::RoutingHeaders::Response]
+        # @yieldparam operation [::GRPC::ActiveCall::Operation]
+        #
+        # @return [::Testing::RoutingHeaders::Response]
+        #
+        # @raise [::GRPC::BadStatus] if the RPC is aborted.
+        #
+        # @example Basic example
+        #   require "testing/routing_headers"
+        #
+        #   # Create a client object. The client can be reused for multiple calls.
+        #   client = Testing::RoutingHeaders::ServiceImplicitHeaders::Client.new
+        #
+        #   # Create a request. To set request fields, pass in keyword arguments.
+        #   request = Testing::RoutingHeaders::Request.new
+        #
+        #   # Call the plain_no_template method.
+        #   result = client.plain_no_template request
+        #
+        #   # The returned object is of type Testing::RoutingHeaders::Response.
+        #   p result
+        #
+        def plain_no_template request, options = nil
+          raise ::ArgumentError, "request must be provided" if request.nil?
+
+          request = ::Gapic::Protobuf.coerce request, to: ::Testing::RoutingHeaders::Request
+
+          # Converts hash and nil to an options object
+          options = ::Gapic::CallOptions.new(**options.to_h) if options.respond_to? :to_h
+
+          # Customize the options with defaults
+          metadata = @config.rpcs.plain_no_template.metadata.to_h
+
+          # Set x-goog-api-client and x-goog-user-project headers
+          metadata[:"x-goog-api-client"] ||= ::Gapic::Headers.x_goog_api_client \
+            lib_name: @config.lib_name, lib_version: @config.lib_version,
+            gapic_version: ::Testing::VERSION
+          metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
+
+          header_params = {}
+          if request.table_name
+            header_params["table_name"] = request.table_name
+          end
+
+          request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
+          metadata[:"x-goog-request-params"] ||= request_params_header
+
+          options.apply_defaults timeout:      @config.rpcs.plain_no_template.timeout,
+                                 metadata:     metadata,
+                                 retry_policy: @config.rpcs.plain_no_template.retry_policy
+
+          options.apply_defaults timeout:      @config.timeout,
+                                 metadata:     @config.metadata,
+                                 retry_policy: @config.retry_policy
+
+          @service_implicit_headers_stub.call_rpc :plain_no_template, request, options: options do |response, operation|
+            yield response, operation if block_given?
+            return response
+          end
+        end
+
+        ##
         # @overload plain(request, options = nil)
         #   Pass arguments to `plain` via a request object, either of type
         #   {::Testing::RoutingHeaders::Request} or an equivalent Hash.
@@ -427,6 +518,98 @@ module Testing
         end
 
         ##
+        # @overload with_additional_bindings(request, options = nil)
+        #   Pass arguments to `with_additional_bindings` via a request object, either of type
+        #   {::Testing::RoutingHeaders::Request} or an equivalent Hash.
+        #
+        #   @param request [::Testing::RoutingHeaders::Request, ::Hash]
+        #     A request object representing the call parameters. Required. To specify no
+        #     parameters, or to keep all the default parameter values, pass an empty Hash.
+        #   @param options [::Gapic::CallOptions, ::Hash]
+        #     Overrides the default settings for this call, e.g, timeout, retries, etc. Optional.
+        #
+        # @overload with_additional_bindings(table_name: nil, app_profile_id: nil, resource: nil)
+        #   Pass arguments to `with_additional_bindings` via keyword arguments. Note that at
+        #   least one keyword argument is required. To specify no parameters, or to keep all
+        #   the default parameter values, pass an empty Hash as a request object (see above).
+        #
+        #   @param table_name [::String]
+        #     The name of the Table
+        #     Values can be of the following formats:
+        #     - `projects/<project>/tables/<table>`
+        #     - `projects/<project>/instances/<instance>/tables/<table>`
+        #     - `region/<region>/zones/<zone>/tables/<table>`
+        #   @param app_profile_id [::String]
+        #     This value specifies routing for replication.
+        #     It can be in the following formats:
+        #     - profiles/<profile_id>
+        #     - a legacy profile_id that can be any string
+        #   @param resource [::Testing::RoutingHeaders::RequestResource, ::Hash]
+        #
+        # @yield [response, operation] Access the result along with the RPC operation
+        # @yieldparam response [::Testing::RoutingHeaders::Response]
+        # @yieldparam operation [::GRPC::ActiveCall::Operation]
+        #
+        # @return [::Testing::RoutingHeaders::Response]
+        #
+        # @raise [::GRPC::BadStatus] if the RPC is aborted.
+        #
+        # @example Basic example
+        #   require "testing/routing_headers"
+        #
+        #   # Create a client object. The client can be reused for multiple calls.
+        #   client = Testing::RoutingHeaders::ServiceImplicitHeaders::Client.new
+        #
+        #   # Create a request. To set request fields, pass in keyword arguments.
+        #   request = Testing::RoutingHeaders::Request.new
+        #
+        #   # Call the with_additional_bindings method.
+        #   result = client.with_additional_bindings request
+        #
+        #   # The returned object is of type Testing::RoutingHeaders::Response.
+        #   p result
+        #
+        def with_additional_bindings request, options = nil
+          raise ::ArgumentError, "request must be provided" if request.nil?
+
+          request = ::Gapic::Protobuf.coerce request, to: ::Testing::RoutingHeaders::Request
+
+          # Converts hash and nil to an options object
+          options = ::Gapic::CallOptions.new(**options.to_h) if options.respond_to? :to_h
+
+          # Customize the options with defaults
+          metadata = @config.rpcs.with_additional_bindings.metadata.to_h
+
+          # Set x-goog-api-client and x-goog-user-project headers
+          metadata[:"x-goog-api-client"] ||= ::Gapic::Headers.x_goog_api_client \
+            lib_name: @config.lib_name, lib_version: @config.lib_version,
+            gapic_version: ::Testing::VERSION
+          metadata[:"x-goog-user-project"] = @quota_project_id if @quota_project_id
+
+          header_params = {}
+          if request.table_name
+            header_params["table_name"] = request.table_name
+          end
+
+          request_params_header = header_params.map { |k, v| "#{k}=#{v}" }.join("&")
+          metadata[:"x-goog-request-params"] ||= request_params_header
+
+          options.apply_defaults timeout:      @config.rpcs.with_additional_bindings.timeout,
+                                 metadata:     metadata,
+                                 retry_policy: @config.rpcs.with_additional_bindings.retry_policy
+
+          options.apply_defaults timeout:      @config.timeout,
+                                 metadata:     @config.metadata,
+                                 retry_policy: @config.retry_policy
+
+          @service_implicit_headers_stub.call_rpc :with_additional_bindings, request,
+                                                  options: options do |response, operation|
+            yield response, operation if block_given?
+            return response
+          end
+        end
+
+        ##
         # Configuration class for the ServiceImplicitHeaders API.
         #
         # This class represents the configuration for ServiceImplicitHeaders,
@@ -442,17 +625,17 @@ module Testing
         # @example
         #
         #   # Modify the global config, setting the timeout for
-        #   # plain to 20 seconds,
+        #   # plain_no_template to 20 seconds,
         #   # and all remaining timeouts to 10 seconds.
         #   ::Testing::RoutingHeaders::ServiceImplicitHeaders::Client.configure do |config|
         #     config.timeout = 10.0
-        #     config.rpcs.plain.timeout = 20.0
+        #     config.rpcs.plain_no_template.timeout = 20.0
         #   end
         #
         #   # Apply the above configuration only to a new client.
         #   client = ::Testing::RoutingHeaders::ServiceImplicitHeaders::Client.new do |config|
         #     config.timeout = 10.0
-        #     config.rpcs.plain.timeout = 20.0
+        #     config.rpcs.plain_no_template.timeout = 20.0
         #   end
         #
         # @!attribute [rw] endpoint
@@ -562,6 +745,11 @@ module Testing
           #
           class Rpcs
             ##
+            # RPC-specific configuration for `plain_no_template`
+            # @return [::Gapic::Config::Method]
+            #
+            attr_reader :plain_no_template
+            ##
             # RPC-specific configuration for `plain`
             # @return [::Gapic::Config::Method]
             #
@@ -576,15 +764,24 @@ module Testing
             # @return [::Gapic::Config::Method]
             #
             attr_reader :with_multiple_levels
+            ##
+            # RPC-specific configuration for `with_additional_bindings`
+            # @return [::Gapic::Config::Method]
+            #
+            attr_reader :with_additional_bindings
 
             # @private
             def initialize parent_rpcs = nil
+              plain_no_template_config = parent_rpcs.plain_no_template if parent_rpcs.respond_to? :plain_no_template
+              @plain_no_template = ::Gapic::Config::Method.new plain_no_template_config
               plain_config = parent_rpcs.plain if parent_rpcs.respond_to? :plain
               @plain = ::Gapic::Config::Method.new plain_config
               with_sub_message_config = parent_rpcs.with_sub_message if parent_rpcs.respond_to? :with_sub_message
               @with_sub_message = ::Gapic::Config::Method.new with_sub_message_config
               with_multiple_levels_config = parent_rpcs.with_multiple_levels if parent_rpcs.respond_to? :with_multiple_levels
               @with_multiple_levels = ::Gapic::Config::Method.new with_multiple_levels_config
+              with_additional_bindings_config = parent_rpcs.with_additional_bindings if parent_rpcs.respond_to? :with_additional_bindings
+              @with_additional_bindings = ::Gapic::Config::Method.new with_additional_bindings_config
 
               yield self if block_given?
             end
