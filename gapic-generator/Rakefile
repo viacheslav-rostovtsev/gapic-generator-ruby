@@ -134,7 +134,7 @@ end
 
 task default: :ci
 
-libs = [:showcase, :garbage, :testing]
+libs = [:showcase, :garbage, :testing, :regapic]
 
 desc "Update the proto binary dumps which are used to generate templates"
 task :bin do

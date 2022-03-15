@@ -1,0 +1,61 @@
+syntax = "proto3";
+package testing.regapic;
+
+import "google/api/annotations.proto";
+import "google/api/client.proto";
+
+service ServiceTranscoding {
+  option (google.api.default_host) = "transcoding.regapic.example.com";
+
+  rpc PlainNoTemplate(Request) returns(Response) {
+    option (google.api.http) = {
+        get: "/v2/{table_name}:PlainNoTemplate"
+    };
+  }
+
+  rpc Plain(Request) returns(Response) {
+      option (google.api.http) = {
+          get: "/v2/{table_name=projects/*/instances/*/tables/*}:Plain"
+      };
+  }
+
+  rpc WithSubMessage(Request) returns(Response) {
+      option (google.api.http) = {
+          get: "/v2/{resource.resource_name=projects/*/instances/*/tables/*}:WithSubMessage"
+      };
+  }
+
+  rpc WithMultipleLevels(Request) returns(Response) {
+      option (google.api.http) = {
+          get: "/v2/{resource.inner.inner_name=projects/*/instances/*/tables/*}:WithMultipleLevels"
+      };
+  }
+
+  rpc WithAdditionalBindings(Request) returns (Response) {
+    option (google.api.http) = {
+      get: "/v2/{table_name=projects/*/instances/*/tables/*}:WithAdditionalBindings"
+      additional_bindings {
+        post: "/v2/{table_name=regions/*/zones/*/instances/*/tables/*}:WithAdditionalBindings"
+        body: "*"
+      }
+    };
+  }
+}
+
+message Request {
+  string table_name = 1;
+  string app_profile_id = 2;
+  RequestResource resource = 3;
+}
+
+message RequestResource {
+  string resource_name = 1;
+  InnerResource inner = 2;
+}
+
+message InnerResource {
+  string inner_name = 1;
+}
+
+message Response {
+}

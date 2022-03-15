@@ -1,0 +1,4 @@
+---
+:transports: ["rest"]
+:gem:
+  :name: testing-regapic

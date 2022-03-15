@@ -1,11 +1,10 @@
 syntax = "proto3";
 
 package testing.routingheaders;
-
 option ruby_package = "Testing::RoutingHeaders";
 
-import "google/api/client.proto";
 import "google/api/annotations.proto";
+import "google/api/client.proto";
 import "google/api/routing.proto";
 
 service ServiceNoHeaders {
@@ -17,31 +16,47 @@ service ServiceNoHeaders {
 service ServiceImplicitHeaders {
     option (google.api.default_host) = "routingheaders.example.com";
 
+    rpc PlainNoTemplate(Request) returns(Response) {
+      option (google.api.http) = {
+          get: "/v2/{table_name}:PlainNoTemplate"
+      };
+    }
+
     rpc Plain(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{table_name=projects/*/instances/*/tables/*}:plain"
+            get: "/v2/{table_name=projects/*/instances/*/tables/*}:Plain"
         };
     }
 
     rpc WithSubMessage(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{resource.resource_name=projects/*/instances/*/tables/*}:withSubMessage"
+            get: "/v2/{resource.resource_name=projects/*/instances/*/tables/*}:WithSubMessage"
         };
     }
 
     rpc WithMultipleLevels(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{resource.inner.inner_name=projects/*/instances/*/tables/*}:withMultipleLevels"
+            get: "/v2/{resource.inner.inner_name=projects/*/instances/*/tables/*}:WithMultipleLevels"
         };
+    }
+
+    rpc WithAdditionalBindings(Request) returns (Response) {
+      option (google.api.http) = {
+        get: "/v2/{table_name=projects/*/instances/*/tables/*}:WithAdditionalBindings"
+        additional_bindings {
+          post: "/v2/{table_name=regions/*/zones/*/instances/*/tables/*}:WithAdditionalBindings"
+          body: "*"
+        }
+      };
     }
 }
 
 service ServiceExplicitHeaders {
     option (google.api.default_host) = "routingheaders.example.com";
-    
+
     rpc PlainNoTemplate(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{table_name=projects/*/instances/*/tables/*}:sampleRowKeys"
+            get: "/v2/{table_name}:PlainNoTemplate"
         };
         option (google.api.routing) = {
             routing_parameters {
@@ -52,7 +67,7 @@ service ServiceExplicitHeaders {
 
     rpc PlainFullField(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{table_name=projects/*/instances/*/tables/*}:sampleRowKeys"
+            get: "/v2/{table_name=projects/*/instances/*/tables/*}:PlainFullField"
         };
         option (google.api.routing) = {
             routing_parameters {
@@ -64,7 +79,7 @@ service ServiceExplicitHeaders {
 
     rpc PlainExtract(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{table_name=projects/*/instances/*/tables/*}:sampleRowKeys"
+            get: "/v2/{table_name=projects/*/instances/*/tables/*}:plainExtract"
         };
         option (google.api.routing) = {
             routing_parameters {
@@ -76,7 +91,7 @@ service ServiceExplicitHeaders {
 
     rpc Complex(Request) returns(Response) {
         option (google.api.http) = {
-            get: "/v2/{table_name=projects/*/instances/*/tables/*}:sampleRowKeys"
+            get: "/v2/{table_name=projects/*/instances/*/tables/*}:Complex"
         };
         option (google.api.routing) = {
             routing_parameters {

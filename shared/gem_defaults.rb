@@ -126,6 +126,11 @@ def gem_defaults
       protos: [
         "google/cloud/compute/v1/compute_small.proto"
       ]
+    },
+    regapic: {
+      protos: [
+        "regapic/regapic.proto",
+      ]
     }
   }
 end
