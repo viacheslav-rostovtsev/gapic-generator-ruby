@@ -80,6 +80,8 @@ class ExplictRoutingHeadersInputMatchTest < Minitest::Test
     assert_regex_matches routing, test_cases
   end
 
+  # Extracting a field from the request's sub-message.
+  # Using a header key with a `.` in it.
   def test_nested_field
     routing_mock = OpenStruct.new(
       routing_parameters: [
@@ -128,6 +130,10 @@ class ExplictRoutingHeadersInputMatchTest < Minitest::Test
         expected: "table_name=projects/100/instances/200/whatever"
       },
       {
+        request: OpenStruct.new(table_name: "regions/100/zones/200"),
+        expected: "table_name=regions/100/zones/200"
+      },
+      {
         request: OpenStruct.new(table_name: "foo"),
         expected: ""
       }
@@ -138,7 +144,7 @@ class ExplictRoutingHeadersInputMatchTest < Minitest::Test
 
   # Extracting a single routing header key-value pair by matching a
   # template syntax on (a part of) a single request field.
-  def test_simple_extract
+  def test_simple_match
     routing_mock = OpenStruct.new(
       routing_parameters: [
         OpenStruct.new(field: "table_name", path_template: "{routing_id=projects/*}/**")
@@ -362,8 +368,8 @@ class ExplictRoutingHeadersInputMatchTest < Minitest::Test
   def test_encoding
     routing_mock = OpenStruct.new(
       routing_parameters: [
-        OpenStruct.new(field: "table_name", path_template: "{project=projects/*}/**"),
-        OpenStruct.new(field: "table_name", path_template: "projects/*/{instance=instances/*}/**")
+        OpenStruct.new(field: "table_name", path_template: "{project_id=projects/*}/**"),
+        OpenStruct.new(field: "table_name", path_template: "projects/*/{instance_id=instances/*}/**")
       ]
     )
 
@@ -372,11 +378,11 @@ class ExplictRoutingHeadersInputMatchTest < Minitest::Test
     test_cases = [
       {
         request: OpenStruct.new(table_name: "projects/100/instances/200"),
-        expected: "project=projects%2F100&instance=instances%2F200"
+        expected: "project_id=projects%2F100&instance_id=instances%2F200"
       },
       {
         request: OpenStruct.new(table_name: "projects/_-_._/instances/_=_#_"),
-        expected: "project=projects%2F_-_._&instance=instances%2F_%3D_%23_"
+        expected: "project_id=projects%2F_-_._&instance_id=instances%2F_%3D_%23_"
       }
     ]
 

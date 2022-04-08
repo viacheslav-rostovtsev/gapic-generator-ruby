@@ -17,10 +17,13 @@ require "minitest/autorun"
 require "minitest/focus"
 require "minitest/rg"
 
+require "pp"
+
 require "gapic/common"
 require "gapic/rest"
 require "google/protobuf/any_pb"
 require_relative "./fixtures/fixture_pb"
+require_relative "./fixtures/routing_example_pb"
 
 class FakeCodeError < StandardError
   attr_reader :code

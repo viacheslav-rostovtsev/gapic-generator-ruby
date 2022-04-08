@@ -47,4 +47,30 @@ class RegexPathPatternTest < PathPatternTest
       assert_equal value, Gapic::PathPattern.parse(key).to_regex_str, "Pattern: #{key}\n"
     end
   end
+
+  # Tests patterns that are used in the routing header tests
+  # in gapic-generator and gapic-common
+  def test_matching_path_patterns
+    path_pattern_to_regex_str = {
+      "{app_profile_id=**}" => "(?<app_profile_id>.*)",
+      "{routing_id=**}" => "(?<routing_id>.*)",
+      "subs/{sub_name}" => "subs/(?<sub_name>[^/]+)",
+      "{legacy.routing_id=**}" => "(?<legacy.routing_id>.*)",
+      "{table_name=projects/*/instances/*/**}" => "(?<table_name>projects/[^/]+/instances/[^/]+(?:/.*)?)",
+      "{table_name=regions/*/zones/*/**}" => "(?<table_name>regions/[^/]+/zones/[^/]+(?:/.*)?)",
+      "{routing_id=projects/*}/**" => "(?<routing_id>projects/[^/]+)(?:/.*)?",
+      "{routing_id=projects/*/instances/*}/**" => "(?<routing_id>projects/[^/]+/instances/[^/]+)(?:/.*)?",
+      "{project_id=projects/*}/instances/*/**" => "(?<project_id>projects/[^/]+)/instances/[^/]+(?:/.*)?",
+      "projects/*/{instance_id=instances/*}/**" => "projects/[^/]+/(?<instance_id>instances/[^/]+)(?:/.*)?",
+      "{project_id=projects/*}/**" => "(?<project_id>projects/[^/]+)(?:/.*)?",
+      "{routing_id=regions/*}/**" => "(?<routing_id>regions/[^/]+)(?:/.*)?",
+      "projects/*/{table_location=instances/*}/tables/*" => "projects/[^/]+/(?<table_location>instances/[^/]+)/tables/[^/]+",
+      "{table_location=regions/*/zones/*}/tables/*" => "(?<table_location>regions/[^/]+/zones/[^/]+)/tables/[^/]+",
+      "profiles/{routing_id=*}" => "profiles/(?<routing_id>[^/]+)",
+    }
+
+    path_pattern_to_regex_str.each do |key, value|
+      assert_equal value, Gapic::PathPattern.parse(key).to_, "Pattern: #{key}\n"
+    end
+  end
 end

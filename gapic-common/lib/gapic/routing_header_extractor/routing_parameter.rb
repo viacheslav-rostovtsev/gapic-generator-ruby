@@ -1,4 +1,4 @@
-# Copyright 2019 Google LLC
+# Copyright 2022 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,22 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "grpc/errors"
-require "grpc/core/status_codes"
-
-require "gapic/call_options"
-require "gapic/headers"
-require "gapic/operation"
-require "gapic/paged_enumerable"
-require "gapic/protobuf"
-require "gapic/stream_input"
-require "gapic/common/version"
-require "gapic/routing_header_extractor"
-
-# Gapic is Google's API client generator
 module Gapic
-  # The gapic-common gem includes various common libraries for clients built
-  # with Gapic.
-  module Common
+  # @private
+  class RoutingHeaderExtractor
+    # A collection of connected parameters for creating a routing header
+    class RoutingParameter
+      attr_reader :field_path
+      attr_reader :regex
+      attr_reader :key
+
+      def initialize field_path, regex, key
+        @field_path = field_path
+
+        if regex.named_captures.count != 1
+          raise "A routing parameter regex should contain exactly one named segment"
+        end
+
+        @regex = regex
+        @key = key
+      end
+    end
   end
 end
