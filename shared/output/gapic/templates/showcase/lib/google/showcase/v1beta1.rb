@@ -33,12 +33,20 @@ require "google/showcase/version"
 module Google
   module Showcase
     ##
-    # To load this package, including all its services, and instantiate a client:
+    # To load this package, including all its services, and instantiate a GRPC client:
     #
     # @example
     #
     #     require "google/showcase/v1beta1"
     #     client = ::Google::Showcase::V1beta1::Echo::Client.new
+    #
+    ##
+    # To load this package, including all its services, and instantiate a REST client:
+    #
+    # @example
+    #
+    #     require "google/showcase/v1beta1"
+    #     client = ::Google::Showcase::V1beta1::Echo::Rest::Client.new
     #
     module V1beta1
     end

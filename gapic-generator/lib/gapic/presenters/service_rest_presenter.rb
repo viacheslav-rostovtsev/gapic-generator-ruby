@@ -153,7 +153,7 @@ module Gapic
       # @return [String]
       #
       def test_client_file_path
-        main_service.service_file_path.sub ".rb", "_test.rb"
+        main_service.service_file_path.sub ".rb", "_rest_test.rb"
       end
 
       ##
