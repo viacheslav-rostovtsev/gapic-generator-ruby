@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require "test_helper"
+require "minitest/autorun"
+require "minitest/focus"
 require "google/showcase/v1beta1/echo"
-require "grpc"
 
-class EchoTest < ShowcaseTest
+class EchoTest < Minitest::Test
   def setup client=nil
     @client = client
   end
@@ -34,6 +34,12 @@ end
 class EchoGRPCTest < EchoTest
   def setup
     super new_echo_client
+  end
+
+  def new_echo_client
+    Google::Showcase::V1beta1::Echo::Client.new do |config|
+      config.credentials = GRPC::Core::Channel.new "localhost:7469", nil, :this_channel_is_insecure
+    end
   end
 
   def test_echo_with_block
