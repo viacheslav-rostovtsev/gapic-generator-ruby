@@ -160,6 +160,44 @@ module Google
             end
 
             ##
+            # Baseline implementation for the repeat_data_path_mux REST call
+            #
+            # @param request_pb [::Google::Showcase::V1beta1::RepeatRequest]
+            #   A request object representing the call parameters. Required.
+            # @param options [::Gapic::CallOptions]
+            #   Overrides the default settings for this call, e.g, timeout, retries etc. Optional.
+            #
+            # @yield [result, response] Access the result along with the Faraday response object
+            # @yieldparam result [::Google::Showcase::V1beta1::RepeatResponse]
+            # @yieldparam response [::Faraday::Response]
+            #
+            # @return [::Google::Showcase::V1beta1::RepeatResponse]
+            #   A result object deserialized from the server's reply
+            def repeat_data_path_mux request_pb, options = nil
+              raise ::ArgumentError, "request must be provided" if request_pb.nil?
+
+              verb, uri, query_string_params, body = transcode_repeat_data_path_mux_request request_pb
+              query_string_params = if query_string_params.any?
+                                      query_string_params.map { |p| p.split("=", 2) }.to_h
+                                    else
+                                      {}
+                                    end
+
+              response = @client_stub.make_http_request(
+                verb,
+                uri:     uri,
+                body:    body || "",
+                params:  query_string_params,
+                options: options
+              )
+              result = ::Google::Showcase::V1beta1::RepeatResponse.decode_json response.body,
+                                                                               ignore_unknown_fields: true
+
+              yield result, response if block_given?
+              result
+            end
+
+            ##
             # Baseline implementation for the repeat_data_simple_path REST call
             #
             # @param request_pb [::Google::Showcase::V1beta1::RepeatRequest]
@@ -407,6 +445,31 @@ module Google
                                                         uri_method: :get,
                                                         uri_template: "/v1beta1/repeat:query",
                                                         matches: []
+                                                      )
+              transcoder.transcode request_pb
+            end
+
+            ##
+            # @private
+            #
+            # GRPC transcoding helper method for the repeat_data_path_mux REST call
+            #
+            # @param request_pb [::Google::Showcase::V1beta1::RepeatRequest]
+            #   A request object representing the call parameters. Required.
+            # @return [Array(String, [String, nil], Hash{String => String})]
+            #   Uri, Body, Query string parameters
+            def transcode_repeat_data_path_mux_request request_pb
+              transcoder = Gapic::Rest::GrpcTranscoder.new
+                                                      .with_bindings(
+                                                        uri_method: :get,
+                                                        uri_template: "/v1beta1/repeat/{info.f_string}/{info.f_int32}/{info.f_double}/{info.f_bool}/{info.f_kingdom}:simplepath",
+                                                        matches: [
+                                                          ["info.f_string", %r{[^/]+}, false],
+                                                          ["info.f_int32", %r{[^/]+}, false],
+                                                          ["info.f_double", %r{[^/]+}, false],
+                                                          ["info.f_bool", %r{[^/]+}, false],
+                                                          ["info.f_kingdom", %r{[^/]+}, false]
+                                                        ]
                                                       )
               transcoder.transcode request_pb
             end
