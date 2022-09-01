@@ -24,14 +24,14 @@ require "googleauth"
 # Tests for the REST server stream.
 #
 class FirestoreServerStreamTest < Minitest::Test
-  def test_array_enumerable_stream
-    enumerable = "[{\"foo\":1},{\"bar\":1}]".chars.to_enum
+  # def test_array_enumerable_stream
+  #   enumerable = "[{\"foo\":1},{\"bar\":1}]".chars.to_enum
 
-    rest_stream = Gapic::Rest::ServerStream.new(
-      enumerable
-    )
-    assert_equal rest_stream.count, 2
-  end
+  #   rest_stream = Gapic::Rest::ServerStream.new(
+  #     enumerable
+  #   )
+  #   assert_equal rest_stream.count, 2
+  # end
 
   # Example client illustrating how final Ruby client code will be generated.
   class FirestoreClient
@@ -49,13 +49,14 @@ class FirestoreServerStreamTest < Minitest::Test
     # Example method for server streaming code generation.
     def runQuery request
       rest_stream = Gapic::Rest::ServerStream.new(
-        Gapic::Rest::ThreadedFiberEnumerator.new do 
+        Gapic::Rest::FiberEnumerator.new do 
+          Fiber.yield "["
           @conn.post(@endpoint, request) do |req|
             req.options.on_data = Proc.new do |chunk, overall_received_bytes|
+              binding.pry
               Fiber.yield chunk
             end
           end
-          nil
         end
       )
       return rest_stream
@@ -69,7 +70,7 @@ class FirestoreServerStreamTest < Minitest::Test
         endAt: {
           before: true,
           values: [{
-            referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/tGmmVU9OCL3xRXhLokq9"
+            referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/V3AeKDzil93uEDN2Kl1S"
           }]
         },
         from: [{
@@ -88,42 +89,42 @@ class FirestoreServerStreamTest < Minitest::Test
 
     firestore = FirestoreClient.new
     rest_stream = firestore.runQuery(request)
-    assert_equal 9, rest_stream.count
+    assert_equal 99, rest_stream.count
   end
 
-  def test_firestore_stream_separate_thread
-    request = <<-JSON 
-    { parent: "projects/client-debugging/databases/(default)/documents",
-      structuredQuery: {
-        endAt: {
-          before: true,
-          values: [{
-            referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/tGmmVU9OCL3xRXhLokq9"
-          }]
-        },
-        from: [{
-          allDescendants: true,
-          collectionId: "ruby_enumberable_stream",
-        }],
-        orderBy: [{
-          direction: 'ASCENDING',
-          field: {
-            fieldPath: '__name__'
-          }
-        }],
-      }
-    }
-    JSON
-    firestore = FirestoreClient.new
-    rest_stream = firestore.runQuery(request)
+  # def test_firestore_stream_separate_thread
+  #   request = <<-JSON 
+  #   { parent: "projects/client-debugging/databases/(default)/documents",
+  #     structuredQuery: {
+  #       endAt: {
+  #         before: true,
+  #         values: [{
+  #           referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/tGmmVU9OCL3xRXhLokq9"
+  #         }]
+  #       },
+  #       from: [{
+  #         allDescendants: true,
+  #         collectionId: "ruby_enumberable_stream",
+  #       }],
+  #       orderBy: [{
+  #         direction: 'ASCENDING',
+  #         field: {
+  #           fieldPath: '__name__'
+  #         }
+  #       }],
+  #     }
+  #   }
+  #   JSON
+  #   firestore = FirestoreClient.new
+  #   rest_stream = firestore.runQuery(request)
 
-    queue = Queue.new
-    Thread.new do
-      ix = rest_stream.count
-      queue << ix
-    end
+  #   queue = Queue.new
+  #   Thread.new do
+  #     ix = rest_stream.count
+  #     queue << ix
+  #   end
 
-    count = queue.pop
-    assert_equal 9, count
-  end
+  #   count = queue.pop
+  #   assert_equal 9, count
+  # end
 end

@@ -28,7 +28,6 @@ module Gapic
       # @param fiber Enumerable<String>
       def initialize enumerable
         @enumerable = enumerable
-        @_level = 0
         @_obj = ""
         @ready_objs = [] # List of strings
       end
@@ -44,6 +43,10 @@ module Gapic
           if @_obj[0] == "[" || @_obj[0] == "," || @_obj[0] == "]"
             @_obj = @_obj[1..-1]
           end
+
+          #binding.pry if char == "}"
+          next unless char == "}"
+
           begin
             # Two choices here: append a Ruby object into
             # ready_objs or a string. Going with the latter here.
