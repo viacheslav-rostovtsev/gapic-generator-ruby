@@ -70,7 +70,7 @@ class FirestoreServerStreamTest < Minitest::Test
         endAt: {
           before: true,
           values: [{
-            referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/V3AeKDzil93uEDN2Kl1S"
+            referenceValue: "projects/client-debugging/databases/(default)/documents/ruby_enumberable_stream/zExBtw6XGsPv39HLfITO"
           }]
         },
         from: [{
