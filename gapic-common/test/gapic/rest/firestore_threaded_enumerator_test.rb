@@ -138,6 +138,9 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
 
     # Example method for server streaming code generation.
     def runQuery request
+      #headers
+      #proto from hash
+
       in_q = Queue.new
       out_q = Queue.new
 
@@ -152,6 +155,9 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
 
       return rest_stream
     end
+
+    
+
   end
 
   class FirestoreServiceStub
@@ -168,7 +174,16 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
     end
 
     def runQuery request
-      @conn.post(@endpoint, request) do |req|
+      #transcoding
+
+      @client_stub.make_http_request(
+        verb,
+        uri:     uri,
+        body:    body || "",
+        params:  query_string_params,
+        is_streaming: true,
+        options: options
+      ) do |req|
         req.options.on_data = Proc.new do |chunk, overall_received_bytes|
           yield chunk if block_given?
         end

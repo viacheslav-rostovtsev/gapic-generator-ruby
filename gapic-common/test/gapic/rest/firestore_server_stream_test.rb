@@ -53,7 +53,7 @@ class FirestoreServerStreamTest < Minitest::Test
           Fiber.yield "["
           @conn.post(@endpoint, request) do |req|
             req.options.on_data = Proc.new do |chunk, overall_received_bytes|
-              binding.pry
+              #binding.pry
               Fiber.yield chunk
             end
           end

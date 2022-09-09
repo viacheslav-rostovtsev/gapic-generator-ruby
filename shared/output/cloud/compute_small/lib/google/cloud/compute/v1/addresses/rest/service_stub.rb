@@ -104,7 +104,9 @@ module Google
                   uri:     uri,
                   body:    body || "",
                   params:  query_string_params,
-                  options: options
+                  options: options,
+                  is_streaming: true
+
                 )
                 result = ::Google::Cloud::Compute::V1::Operation.decode_json response.body, ignore_unknown_fields: true
 

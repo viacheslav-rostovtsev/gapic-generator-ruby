@@ -57,13 +57,13 @@ class FirestoreSimpleTest < Minitest::Test
     }
     JSON
 
-    # @conn.post(@endpoint, request) do |req|
-    #   i = 0
-    #   req.options.on_data = Proc.new do |chunk, overall_received_bytes|
-    #     i += 1
-    #     p "Chunk #{i}/??, size: #{chunk.length}"
-    #   end
-    # end
+    @conn.post(@endpoint, request) do |req|
+      i = 0
+      req.options.on_data = Proc.new do |chunk, overall_received_bytes|
+        i += 1
+        p "Chunk #{i}/??, size: #{chunk.length}"
+      end
+    end
 
     fiber = Fiber.new do
       @conn.post(@endpoint, request) do |req|

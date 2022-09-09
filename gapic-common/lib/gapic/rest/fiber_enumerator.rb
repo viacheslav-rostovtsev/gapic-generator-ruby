@@ -32,9 +32,9 @@ module Gapic
       end
 
       def next
-        binding.pry
+        #binding.pry
         chunk = fiber.resume
-        binding.pry
+        #binding.pry
         raise StopIteration if chunk.nil?
         chunk
       end
