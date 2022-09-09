@@ -20,6 +20,8 @@ require "pp"
 require 'pry'
 require "googleauth"
 
+ENV["GOOGLE_AUTH_SUPPRESS_CREDENTIALS_WARNINGS"] = "1"
+
 #
 # Tests for the REST server stream.
 #
@@ -28,7 +30,7 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
     in_q = Queue.new
     out_q = Queue.new
 
-    te = Gapic::Rest::ThreadedEnumerator.new(in_q, out_q) do
+    te = Gapic::Rest::ThreadedEnumerator.new do |in_q, out_q|
       (0..9).each do |i|
         in_q.deq
         out_q.enq i
@@ -82,7 +84,7 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
     in_q = Queue.new
     out_q = Queue.new
 
-    te = Gapic::Rest::ThreadedEnumerator.new(in_q, out_q) do 
+    te = Gapic::Rest::ThreadedEnumerator.new do |in_q, out_q|
       @conn.post(@endpoint, request) do |req|
         req.options.on_data = Proc.new do |chunk, overall_received_bytes|
           in_q.deq
@@ -132,7 +134,7 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
 
   class FirestoreClient
     def initialize
-      endpoint = "https://firestore.googleapis.com/v1/projects/client-debugging/databases/(default)/documents:runQuery"
+      endpoint = "https://firestore.googleapis.com/"
       @service_stub = FirestoreServiceStub.new endpoint
     end
 
@@ -141,11 +143,8 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
       #headers
       #proto from hash
 
-      in_q = Queue.new
-      out_q = Queue.new
-
       rest_stream = Gapic::Rest::ServerStream.new(
-        Gapic::Rest::ThreadedEnumerator.new(in_q, out_q) do 
+        Gapic::Rest::ThreadedEnumerator.new do |in_q, out_q|
           @service_stub.runQuery(request) do |chunk|
             in_q.deq
             out_q.enq chunk
@@ -162,32 +161,22 @@ class FirestoreThreadedEnumeratorTest < Minitest::Test
 
   class FirestoreServiceStub
     def initialize endpoint
+      @client_stub = ::Gapic::Rest::ClientStub.new endpoint: endpoint, credentials: ::Google::Auth::Credentials.default
       @endpoint = endpoint
-
-      @conn = Faraday.new url: @endpoint do |conn|
-        conn.headers = { "Content-Type" => "application/json" }
-        conn.request :google_authorization,  ::Google::Auth::Credentials.default
-        conn.request :retry
-        conn.response :raise_error
-        conn.adapter :net_http
-      end
     end
 
-    def runQuery request
-      #transcoding
+    def runQuery request, &block
+      # instead of transcoding for test
+      uri = "v1/projects/client-debugging/databases/(default)/documents:runQuery"
+      body = request
 
-      @client_stub.make_http_request(
-        verb,
-        uri:     uri,
-        body:    body || "",
-        params:  query_string_params,
-        is_streaming: true,
-        options: options
-      ) do |req|
-        req.options.on_data = Proc.new do |chunk, overall_received_bytes|
-          yield chunk if block_given?
-        end
-      end
+      @client_stub.make_http_request(:post, uri: uri,
+        body: body,
+        params: [],
+        options: ::Gapic::CallOptions.new,
+        is_streaming: true, 
+        &block
+      )
     end
   end
 end
