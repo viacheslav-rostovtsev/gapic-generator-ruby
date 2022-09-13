@@ -7,6 +7,7 @@ import "google/api/client.proto";
 import "google/api/field_behavior.proto";
 import "google/api/resource.proto";
 import "google/longrunning/operations.proto";
+import "google/protobuf/any.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 
@@ -497,4 +498,14 @@ message GarbageMap {
 message GarbageNode {
   string data = 1;
   GarbageNode parent = 2;
+}
+
+message WithAny {
+  string name = 1;
+  google.protobuf.Any content = 2;
+}
+
+message WithRepeatedAny {
+  string name = 1;
+  repeated google.protobuf.Any contents = 2;
 }

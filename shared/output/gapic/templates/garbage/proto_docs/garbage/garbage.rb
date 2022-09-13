@@ -438,6 +438,24 @@ module So
         extend ::Google::Protobuf::MessageExts::ClassMethods
       end
 
+      # @!attribute [rw] name
+      #   @return [::String]
+      # @!attribute [rw] content
+      #   @return [::Google::Protobuf::Any]
+      class WithAny
+        include ::Google::Protobuf::MessageExts
+        extend ::Google::Protobuf::MessageExts::ClassMethods
+      end
+
+      # @!attribute [rw] name
+      #   @return [::String]
+      # @!attribute [rw] contents
+      #   @return [::Array<::Google::Protobuf::Any>]
+      class WithRepeatedAny
+        include ::Google::Protobuf::MessageExts
+        extend ::Google::Protobuf::MessageExts::ClassMethods
+      end
+
       # The type of garbage you are dealing with.
       #
       # All garbage is not treated equal. Some garbage is better than others.

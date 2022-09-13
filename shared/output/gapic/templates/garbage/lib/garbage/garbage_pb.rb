@@ -8,6 +8,7 @@ require 'google/api/client_pb'
 require 'google/api/field_behavior_pb'
 require 'google/api/resource_pb'
 require 'google/longrunning/operations_pb'
+require 'google/protobuf/any_pb'
 require 'google/protobuf/timestamp_pb'
 require 'google/protobuf/duration_pb'
 Google::Protobuf::DescriptorPool.generated_pool.build do
@@ -152,6 +153,14 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :data, :string, 1
       optional :parent, :message, 2, "endless.trash.forever.GarbageNode"
     end
+    add_message "endless.trash.forever.WithAny" do
+      optional :name, :string, 1
+      optional :content, :message, 2, "google.protobuf.Any"
+    end
+    add_message "endless.trash.forever.WithRepeatedAny" do
+      optional :name, :string, 1
+      repeated :contents, :message, 2, "google.protobuf.Any"
+    end
     add_enum "endless.trash.forever.GarbageEnum" do
       value :DEFAULT_GARBAGE, 0
       value :GARBAGE_BAG, 1
@@ -186,6 +195,8 @@ module So
       ComplexGarbage::Layer3Garbage = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.ComplexGarbage.Layer3Garbage").msgclass
       GarbageMap = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.GarbageMap").msgclass
       GarbageNode = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.GarbageNode").msgclass
+      WithAny = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.WithAny").msgclass
+      WithRepeatedAny = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.WithRepeatedAny").msgclass
       GarbageEnum = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("endless.trash.forever.GarbageEnum").enummodule
     end
   end
