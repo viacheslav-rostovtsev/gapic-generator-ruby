@@ -16,6 +16,7 @@
 
 require "tmpdir"
 require "fileutils"
+require "open3"
 
 module Gapic
   ##
@@ -35,15 +36,57 @@ module Gapic
     protected
 
     def format! configuration, files
-      Dir.mktmpdir do |dir|
-        files.each do |file|
-          write_file dir, file
+      starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+
+      add_args = ""
+      out_files = if ENV["GAPIC_RUBOCOP_SERVER"]
+        # STDERR.puts "Spawning and using rubocop server"
+        # system("pkill -f rubocop")
+        #Open3.capture2("rubocop", "--stop-server")
+
+        #Process.spawn("rubocop --start-server")
+
+        #STDERR.puts "Running inner format"
+        #return inner_format! configuration, files, " --server"
+
+        out_files = []
+        binding.pry
+        stdout, status = Open3.popen3("rubocop", "--start-server", "--config #{configuration}") do |stdin, stdout, stderr, wait_thr|
+          STDERR.puts "Running inner format"
+          out_files = inner_format! configuration, files, " --server"
+          STDERR.puts "stdout"
+          STDERR.puts stdout.readlines
+          STDERR.puts "stderr"
+          STDERR.puts stderr.readlines
         end
 
-        system "rubocop --cache false -x #{dir} -o #{dir}/rubocop.out -c #{configuration}"
+        #STDERR.puts "Success: #{wait_thr.success?}, stdout: #{stdout}"
+        # STDERR.puts "Running stop rubocop server"
+        # system("pkill -f rubocop")
+        out_files
+      else
+        inner_format! configuration, files
+      end
 
-        files.each do |file|
-          read_file dir, file
+      elapsed = (Process.clock_gettime(Process::CLOCK_MONOTONIC) - starting).round(2)
+      STDERR.puts "formatting took #{elapsed}s"
+      out_files
+    end
+
+    def inner_format! configuration, files, add_args=""
+      Dir.mktmpdir do |dir|
+        Dir.mktmpdir do |dir2|
+          files.each do |file|
+            write_file dir, file
+          end
+
+          stdout_str, status = Open3.capture2("rubocop#{add_args} -o /dev/null --cache false --fix-layout --config #{configuration} #{dir}")
+          STDERR.puts "status: #{status.success?}"
+          # STDERR.puts File.readlines("#{dir}/foo")
+
+          files.each do |file|
+            read_file dir, file
+          end
         end
       end
     end
