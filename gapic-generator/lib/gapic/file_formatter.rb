@@ -50,10 +50,19 @@ module Gapic
         #return inner_format! configuration, files, " --server"
 
         out_files = []
-        binding.pry
-        stdout, status = Open3.popen3("rubocop", "--start-server", "--config #{configuration}") do |stdin, stdout, stderr, wait_thr|
+        Open3.popen3("rubocop --stdin --stderr --fix-layout --config #{configuration}") do |stdin, stdout, stderr, wait_thr|
           STDERR.puts "Running inner format"
-          out_files = inner_format! configuration, files, " --server"
+          
+          files.each do |file|
+            STDERR.puts "#{file.name}"
+            binding.pry
+            stdin.write file.content
+            content = stdout.read
+
+            binding.pry
+            content
+          end
+
           STDERR.puts "stdout"
           STDERR.puts stdout.readlines
           STDERR.puts "stderr"
