@@ -86,3 +86,85 @@ ruby_grpc_library(
   srcs = ["@com_google_googleapis//google/cloud/language/v1:language_proto"],
   deps = [":language_ruby_proto"],
 )
+
+#-----------------------------------------------------------------------------
+
+ruby_proto_library(
+    name = "translation_ruby_proto",
+    deps = [
+      "@com_google_googleapis//google/cloud/translate/v3:translation_proto",
+    ],
+)
+
+ruby_grpc_library(
+    name = "translation_ruby_grpc",
+    srcs = ["@com_google_googleapis//google/cloud/translate/v3:translation_proto"],
+    deps = [":translation_ruby_proto"],
+)
+
+ruby_cloud_gapic_library(
+    name = "translation_ruby_gapic",
+    srcs = ["@com_google_googleapis//google/cloud/translate/v3:translation_proto_with_info"],
+    extra_protoc_parameters = [
+        "ruby-cloud-api-id=translate.googleapis.com",
+        "ruby-cloud-api-shortname=translate",
+        "ruby-cloud-env-prefix=TRANSLATE",
+        "ruby-cloud-gem-name=google-cloud-translate-v3",
+        "ruby-cloud-product-url=https://cloud.google.com/translate",
+        "ruby-cloud-generate-transports=grpc;rest",
+    ],
+    grpc_service_config = "translate_grpc_service_config.json",
+    service_yaml = "translate_v3.yaml",
+    rest_numeric_enums = False,
+    ruby_cloud_description = "Cloud Translation can dynamically translate text between thousands of language pairs. Translation lets websites and programs programmatically integrate with the translation service.",
+    ruby_cloud_title = "Cloud Translation V3",
+    deps = [
+        ":translation_ruby_grpc",
+        ":translation_ruby_proto",
+    ],
+)
+
+ruby_gapic_assembly_pkg(
+    name = "google-cloud-translation-v3-ruby",
+    deps = [
+        ":translation_ruby_gapic",
+        ":translation_ruby_grpc",
+        ":translation_ruby_proto",
+    ],
+)
+
+#-----------------------------------------------------------------------------
+ruby_proto_library(
+    name = "location_ruby_proto",
+    deps = ["@com_google_googleapis//google/cloud/location:location_proto"],
+)
+ruby_grpc_library(
+    name = "location_ruby_grpc",
+    srcs = ["@com_google_googleapis//google/cloud/location:location_proto"],
+    deps = [":location_ruby_proto"],
+)
+ruby_cloud_gapic_library(
+    name = "location_ruby_gapic",
+    srcs = ["@com_google_googleapis//google/cloud/location:location_proto_with_info"],
+    extra_protoc_parameters = [
+        "ruby-cloud-gem-name=google-cloud-location",
+        "ruby-cloud-generate-transports=grpc;rest",
+    ],
+    rest_numeric_enums = False,
+    ruby_cloud_description = "An add-on interface used by some Google API clients to provide location management calls.",
+    ruby_cloud_title = "Locations",
+    deps = [
+        ":location_ruby_grpc",
+        ":location_ruby_proto",
+    ],
+)
+
+# Open Source Packages
+ruby_gapic_assembly_pkg(
+    name = "google-cloud-location-ruby",
+    deps = [
+        ":location_ruby_gapic",
+        ":location_ruby_grpc",
+        ":location_ruby_proto",
+    ],
+)

@@ -21,12 +21,12 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 ##
 # googleapis for the common protos
 #
-_googleapis_commit = "00158485835c7d3bad0b84b3ca09a7b3292a1f15"
+_googleapis_commit = "9140e5546470d945fc741f27707aa68f562088f0"
 _googleapis_sha256 = "0c5ff93989c50f00221ec129ce06bcf682ef43aabdeaffb5c1bae3d86c5b0fae"
 
 http_archive(
     name = "com_google_googleapis",
-    sha256 = _googleapis_sha256,
+    #sha256 = _googleapis_sha256,
     strip_prefix = "googleapis-%s" % _googleapis_commit,
     urls = ["https://github.com/googleapis/googleapis/archive/%s.zip" % _googleapis_commit],
 )
