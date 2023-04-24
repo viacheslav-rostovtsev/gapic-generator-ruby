@@ -177,6 +177,61 @@ class ExplictRoutingHeadersModelTest < Minitest::Test
   end
 
   ##
+  # Test patterns with alternative segment delimiter `:`
+  #
+  def test_alternative_delimiter
+    routing_mock = OpenStruct.new(
+      routing_parameters: [
+        OpenStruct.new(field: "table_name", path_template: "projects/*:{table_location=instances/*}:tables/*"),
+        OpenStruct.new(field: "table_name", path_template: "{table_location=regions/*/zones/*}:tables/*"),
+        OpenStruct.new(field: "table_name", path_template: "{routing_id=projects/*}:**"),
+        OpenStruct.new(field: "app_profile_id", path_template: "{routing_id=**}"),
+        OpenStruct.new(field: "app_profile_id", path_template: "profiles:{routing_id=*}")
+      ]
+    )
+    routing = Gapic::Model::Method::Routing.new routing_mock, nil
+    assert routing.explicit_annotation?
+    expected = {
+      "table_location" => [
+        {
+          field: "table_name",
+          field_pattern: "projects/*/instances/*/tables/*",
+          value_pattern: "instances/*",
+          pattern_matching_not_needed?: false
+        },
+        {
+          field: "table_name",
+          field_pattern: "regions/*/zones/*/tables/*",
+          value_pattern: "regions/*/zones/*",
+          pattern_matching_not_needed?: false
+        }
+      ],
+      "routing_id" => [
+        {
+          field: "table_name",
+          field_pattern: "projects/*/**",
+          value_pattern: "projects/*",
+          pattern_matching_not_needed?: false
+        },
+        {
+          field: "app_profile_id",
+          field_pattern: "**",
+          value_pattern: "**",
+          pattern_matching_not_needed?: true
+        },
+        {
+          field: "app_profile_id",
+          field_pattern: "profiles/*",
+          value_pattern: "*",
+          pattern_matching_not_needed?: false
+        }
+      ]
+    }
+
+    assert_routing_matches expected, routing.explicit_params
+  end
+
+  ##
   # A helper to compare parsed routing header annotation to the expected.
   # In the `expected`, the parameters are grouped by the name of the routing header.
   def assert_routing_matches expected, actual

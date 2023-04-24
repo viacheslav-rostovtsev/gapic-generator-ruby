@@ -30,7 +30,7 @@ module Gapic
       # @param path_pattern [String] The path pattern to be parsed
       # @return [Gapic::PathPattern::Pattern]
       def self.parse path_pattern
-        remainder = path_pattern.sub(%r{^/}, "").sub(%r{/$}, "")
+        remainder = path_pattern.sub(%r{^[/:]}, "").sub(%r{[/:]$}, "")
 
         segments = []
         position = 0
@@ -67,7 +67,7 @@ module Gapic
       # The wildcard segment can be either * or **
       # @private
       def self.try_capture_wildcard_segment url_pattern, position
-        wildcard_capture_regex = %r{^(?<pattern>\*\*|\*)(?:/|$)}
+        wildcard_capture_regex = %r{^(?<pattern>\*\*|\*)(?:/|:|$)}
         return nil, url_pattern unless wildcard_capture_regex.match? url_pattern
 
         match = wildcard_capture_regex.match url_pattern
@@ -87,7 +87,7 @@ module Gapic
       # @private
       def self.try_capture_complex_resource_id_segment url_pattern
         complex_resource_id_regex =
-          %r/^(?<segment_pattern>{(?<name_first>[^\/}]+?)}(?:(?<separator>[_\-~.]){(?<name_seq>[^\/}]+?)})+)(?:\/|$)/
+          %r/^(?<segment_pattern>{(?<name_first>[^\/}]+?)}(?:(?<separator>[_\-~.]){(?<name_seq>[^\/}]+?)})+)(?:\/|:|$)/
 
         return nil, url_pattern unless complex_resource_id_regex.match? url_pattern
 
@@ -111,7 +111,7 @@ module Gapic
       # @private
       def self.try_capture_simple_resource_id_segment url_pattern
         simple_resource_id_regex =
-          %r/^(?<segment_pattern>{(?<resource_name>[^\/}]+?)(?:=(?<resource_pattern>.+?))?})(?:\/|$)/
+          %r/^(?<segment_pattern>{(?<resource_name>[^\/}]+?)(?:=(?<resource_pattern>.+?))?})(?:\/|:|$)/
         return nil, url_pattern unless simple_resource_id_regex.match? url_pattern
 
         match = simple_resource_id_regex.match url_pattern
@@ -132,7 +132,7 @@ module Gapic
       # except the path separator /
       # @private
       def self.capture_collection_id_segment url_pattern
-        collection_id_regex = %r{^(?<collection_name>[^/]+?)(?:/|$)}
+        collection_id_regex = %r{^(?<collection_name>[^/:]+?)(?:/|:|$)}
         match = collection_id_regex.match url_pattern
 
         collection_name = match[:collection_name]
