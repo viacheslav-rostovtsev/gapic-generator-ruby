@@ -1,8 +1,8 @@
 # `::Gapic::ResumableUpload` — the client-library upload handle
 
-The gapic-common half of resumable upload support in generated clients. The generator half is in [resumable-upload-2.md](resumable-upload-2.md).
+The gapic-common half of resumable upload support in generated clients. The generator half is in [resumable-upload-2-generator.md](resumable-upload-2-generator.md).
 
-This describes new code only. `Gapic::Rest::ResumableUpload::{Session,Driver,Core,Rules}` are untouched.
+This is almost entirely new code. The one exception is `method_name` (§2): threading it through `Session` and `Driver` so that log entries carry the RPC name is a small additive change to both. `Core` and `Rules` are untouched.
 
 ## 1. Why a handle
 
@@ -22,7 +22,8 @@ So the handle sits between them: it holds the initiation parameters and the resp
                              response_type:,
                              initial_headers: {},
                              start_retry_policy: nil,
-                             error_handler: nil
+                             error_handler: nil,
+                             method_name: nil
 ```
 
 The constructor is `@private`; instances come from generated client methods.
@@ -35,10 +36,22 @@ The constructor is `@private`; instances come from generated client methods.
 | `initial_headers` | `Hash` | forwarded as the initiation headers |
 | `start_retry_policy` | `Hash`, `RetryPolicy`, `nil` | forwarded to `Session#start` |
 | `error_handler` | `Proc` → `Exception`, `nil` | wraps run failures, see §6 |
+| `method_name` | `String`, `nil` | RPC name used in log entries |
 
 Both procs are deferred deliberately. `client_stub_proc` lets a client that cannot perform REST calls still hand back a working object and fail only when an upload is actually attempted. `initial_request_proc` means the initiation URL and body are computed on `#start` and never on `#resume`, so a handle built without a request message is still fully functional for resuming.
 
 `initial_headers` accepts the symbol-keyed metadata hash that generated clients carry; the handle stringifies keys and values before building the config, which rejects the reserved `X-Goog-Upload-*` names case-insensitively.
+
+`method_name` exists so that an upload's log entries identify the RPC that started it. Generated clients pass the method name they already use for logging on every other call (`"create_you_tube_video_upload"`). The handle forwards it to `Session`, which forwards it to `Driver`, which composes the per-request logging name it currently hardcodes:
+
+```ruby
+# Driver, today
+method_name: "ResumableUpload.start"
+# Driver, with the RPC name threaded through
+method_name: "#{@method_name || 'ResumableUpload'}.start"
+```
+
+That is the whole change on the `Session` and `Driver` side: one new optional keyword on each, and five interpolated strings. A `Session` built directly, without a `method_name`, logs exactly as it does today.
 
 ## 3. Runs
 
@@ -58,7 +71,7 @@ Order of operations in each run, before any byte is read from the stream:
 3. Build a fresh `Session`, retain it, invoke `#start` / `#resume` on it.
 4. Decode and return, or wrap and raise.
 
-The handle is reusable: one handle, many runs, one `Session` per run. A second run while one is in flight raises. Every optional keyword that both runs share is passed through untouched — in particular the whole-upload `timeout` is only forwarded when the caller sets it, otherwise the protocol implementation's own default applies.
+The handle is reusable: one handle, many runs, one `Session` per run. A second run started while one is in flight raises `Gapic::Rest::ResumableUpload::SessionStateError`. Because each run gets a fresh `Session`, that session's own single-run guard never fires for this case — the handle keeps its own mutex-guarded `running?` flag and raises the same error type, so callers see one consistent failure mode whether they misuse a handle or a session. Every optional keyword that both runs share is passed through untouched — in particular the whole-upload `timeout` is only forwarded when the caller sets it, otherwise the protocol implementation's own default applies.
 
 ### Resume forms
 
@@ -106,9 +119,11 @@ A handle constructed without an `error_handler` propagates protocol errors uncha
 ## 7. `start_retry_policy_for`
 
 ```ruby
-::Gapic::Rest::ResumableUpload.start_retry_policy_for options   # options: Gapic::CallOptions
-                                                                # => Hash
+::Gapic::ResumableUpload.start_retry_policy_for options   # options: Gapic::CallOptions
+                                                          # => Hash
 ```
+
+A class method on the handle, not on the `Gapic::Rest::ResumableUpload` protocol namespace. It exists to serve generated clients, it is meaningless without `Gapic::CallOptions`, and the protocol implementation has no business knowing about call options; keeping it next to the only thing that consumes it means the whole client-library surface is one constant.
 
 Converts the per-call options that generated clients already assemble into the initiation retry policy.
 
@@ -119,13 +134,25 @@ Converts the per-call options that generated clients already assemble into the i
 
 The whole-upload deadline is deliberately not derived here. It stays at the protocol implementation's default and is overridable per run via `timeout:`.
 
-## 8. Non-goals
+## 8. Packaging and release order
+
+The handle is a new file, `lib/gapic/resumable_upload.rb`, required from `lib/gapic/rest.rb` next to the existing `require "gapic/rest/resumable_upload"`. It is not under `gapic/rest/` because it is not part of the protocol implementation: it is the client-library surface built on top of it, and its constant is `::Gapic::ResumableUpload`. Requiring it from `gapic/rest.rb` means any generated client that already does `require "gapic/rest"` — which the upload stub does on construction — gets it for free, with no extra require in generated code.
+
+Release order is forced, and it is one way only:
+
+1. Ship this document's changes in a `gapic-common` release: the handle, plus the `method_name` keyword on `Session` and `Driver`. Both are additive, so this is a minor version bump with no migration.
+2. Only then raise the generated-gemspec dependency floor in the generator (`GemPresenter#dependencies`, currently `"gapic-common" => "~> 1.3"`) to that release.
+3. Then land the generator change and its goldens.
+
+Step 2 rewrites every golden gemspec in the repository, so it cannot be split from step 3 in practice — but it also cannot precede step 1, because generated clients would then declare a floor that does not exist on rubygems.
+
+## 9. Non-goals
 
 * The handle adds nothing to `on_progress`. The callback is passed straight through; whatever semantics its return value acquires (pausing, cancelling) are defined by the protocol implementation, not here.
 * No upload-size inference from the stream. If the caller wants `upload_size`, they pass it.
 * No changes to `Progress`, to the phase list, or to the driver's request construction.
 
-## 9. Tests
+## 10. Tests
 
 * Both procs are called in the right order and only when they should be: `initial_request_proc` on `#start`, never on `#resume`; `client_stub_proc` on both, before anything reads the stream.
 * A raising `client_stub_proc` surfaces before the stream is touched.
@@ -133,3 +160,4 @@ The whole-upload deadline is deliberately not derived here. It stays at the prot
 * Decoding: populated body, empty body, `nil` body, malformed body.
 * Error wrapping: wrapped error is raised, is rescuable as `HasResumeHandle`, and reports the original `#resume_handle`; a handler returning `nil` re-raises the original; an error with no resume handle is not decorated.
 * `start_retry_policy_for`: timeout injection, selective copying, empty retry codes, Proc rejection.
+* `method_name`: a handle built with one produces log entries named after the RPC; a `Session` built without one logs exactly as it does today.

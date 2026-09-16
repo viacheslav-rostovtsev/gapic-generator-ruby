@@ -1,6 +1,6 @@
 # Resumable upload generation in gapic-generator-ruby
 
-The generator half. The runtime handle it produces is described in [resumable-upload-gapic-common.md](resumable-upload-gapic-common.md).
+The generator half. The runtime handle it produces is described in [resumable-upload-2-gapic-common.md](resumable-upload-2-gapic-common.md).
 
 ## 1. What the user gets
 
@@ -79,7 +79,7 @@ class ResumableUploadStub
   end
 
   # @private
-  def transcode_create_you_tube_video_upload_request request_pb
+  def self.transcode_create_you_tube_video_upload_request request_pb
     transcoder = ::Gapic::Rest::GrpcTranscoder.new
                                               .with_bindings(
                                                 uri_method: :post,
@@ -88,13 +88,9 @@ class ResumableUploadStub
                                                 matches: [["customer_id", %r{^[^/]+/?$}, false]]
                                               )
     _verb, uri, query_string_params, body = transcoder.transcode request_pb
-    [self.class.upload_uri(CREATE_YOU_TUBE_VIDEO_UPLOAD_URL_PREFIX, uri, query_string_params), body]
-  end
-
-  # @private
-  def self.upload_uri prefix, uri, query_string_params
-    uri = "/#{prefix}#{uri}"
-    query_string_params.any? ? "#{uri}?#{query_string_params.join '&'}" : uri
+    uri = "/#{CREATE_YOU_TUBE_VIDEO_UPLOAD_URL_PREFIX}#{uri}"
+    uri = "#{uri}?#{query_string_params.join '&'}" if query_string_params.any?
+    [uri, body]
   end
 end
 ```
@@ -102,10 +98,26 @@ end
 Notes:
 
 * **Built eagerly** in both clients' `initialize`, in the same place and style as the LRO `@operations_client`. No lazy accessor; no gapic-common modules mixed into the client itself.
+* **The transcoder is a class method.** It is pure — request message in, `[url, body]` out — so it needs neither the client stub nor the credentials check, and a unit test can call it with no client at all. This also matches the existing REST service stub, whose `transcode_*_request` methods are class methods too.
+* **The transcoding partial cannot be reused as-is.** `grpc_transcoding_method/_def.text.erb` emits a method whose body ends in `transcoder.transcode request_pb`, i.e. the four-tuple `[verb, uri, query_string_params, body]`. What this stub needs is a two-element `[url, body]` with the prefix prepended and the query string folded in, because the driver sends initiation with `params: {}`. The verb is discarded outright — initiation is always `POST`, enforced at generation time. So: extract the `.with_bindings(…)` chain from `_def.text.erb` into a small shared sub-partial, have the existing partial render it, and add a second wrapper partial for the upload stub that renders the same chain and then folds the result. Binding emission keeps one source of truth; only the tail differs.
 * **`numeric_enums: false`** — nothing on this path decodes enums out of a query-form response.
 * `raise_faraday_errors: false`, `service_name:` and `logger:` match the ordinary REST service stub. (The LRO `OperationsServiceStub` passes none of those four; that inconsistency is not replicated here.)
-* The transcoder emission is exactly what `grpc_transcoding_method/_def.text.erb` produces today. The verb is discarded — initiation is always `POST`, enforced at generation time — and the helper folds the prefix and the query string into the returned URL, because the driver sends initiation with `params: {}`.
 * Endpoint handling is inherited: `ClientStub` prepends `https://` to a bare host. A user-set `config.endpoint = "localhost:7469"` behaves exactly as it does for any REST client today.
+
+### 3.1 What the REST service stub must *not* emit
+
+An upload RPC has no ordinary REST path. The REST client's upload method delegates to the handle exactly as the gRPC one does, so the plain `call_create_you_tube_video_upload` method on `Rest::ServiceStub`, and the plain transcoder next to it, would be dead code that also happens to be wrong — a non-resumable POST of the whole payload.
+
+The obstacle is that `ServiceRestPresenter#methods` is a single list driving three loops: the two in `service/rest/service_stub/_service_stub.text.erb` (method definitions, then transcoders) and the method loop in `rest/client/_client.text.erb`. Flipping `MethodPresenter#can_generate_rest?` to `false` for upload RPCs would silence all three and delete the REST client method as well.
+
+So the list forks rather than shrinks:
+
+| List | Content | Consumers |
+|---|---|---|
+| `ServiceRestPresenter#methods` | unchanged | REST client method loop, docs, snippets |
+| `ServiceRestPresenter#service_stub_methods` | `methods.reject(&:resumable_upload?)` | both loops in `_service_stub.text.erb` |
+
+The standard generated client tests take the same exclusion — `service/test/client.text.erb` iterates `service.methods` and its REST counterpart `service.rest.methods`; both skip upload RPCs, which get their own generated test file instead (§7, §8). Nothing else consumes either list.
 
 ## 4. The generated method
 
@@ -131,11 +143,12 @@ def create_you_tube_video_upload request = {}, options = nil
 
   ::Gapic::ResumableUpload.new(
     client_stub_proc:     -> { @resumable_upload_stub.client_stub },
-    initial_request_proc: -> { @resumable_upload_stub.transcode_create_you_tube_video_upload_request request },
+    initial_request_proc: -> { ::Google::Ads::…::ResumableUploadStub.transcode_create_you_tube_video_upload_request request },
     initial_headers:      options.metadata,
-    start_retry_policy:   ::Gapic::Rest::ResumableUpload.start_retry_policy_for(options),
+    start_retry_policy:   ::Gapic::ResumableUpload.start_retry_policy_for(options),
     response_type:        ::Google::Ads::…::CreateYouTubeVideoUploadResponse,
-    error_handler:        ->(e) { ::Google::Cloud::Error.from_error e }
+    method_name:          "create_you_tube_video_upload",
+    error_handler:        nil   # ads and default flavors; the cloud flavor emits a lambda here
   )
 end
 ```
@@ -143,8 +156,9 @@ end
 * **`request = {}`.** The ordinary request checks still run immediately — an explicit `nil` is an error, a Hash is coerced — but nothing is transcoded. Resuming needs no request, so the argument has a default and the coerced empty message is simply never used.
 * **Lazy transcoding.** The method hands over two procs rather than a URL and a body. Transcoding happens inside `#start`, never on the resume path.
 * **`transports_version_send: [:rest]`** even on the gRPC surface: the request this header describes is a REST request.
+* **`method_name`** is the same string the client already uses for logging on every other call, so upload log entries name the RPC instead of a bare `ResumableUpload.start`.
 * **The method builds the handle**, not the stub. Metadata assembly, the retry-policy conversion and the error handler stay visible in the client, where a reader expects to find them.
-* The error handler comes from a new, flavor-overridable partial. It must *return* the wrapped error rather than raise it; the existing `_rescue` partial emits a raising `rescue` clause and cannot be reused. The default flavor emits nothing; cloud emits `::Google::Cloud::Error.from_error`.
+* **The error handler** comes from a new, flavor-overridable partial, and it must *return* the wrapped error rather than raise it; the existing `_rescue` partial emits a raising `rescue` clause and cannot be reused. The default and ads flavors emit `nil` — neither wraps errors today — so the sketch above, which is an ads client, passes `nil`. Only the cloud flavor emits a lambda, `->(e) { ::Google::Cloud::Error.from_error e }`, matching what its `_rescue` partial raises for every other method.
 * Documentation: the request parameter gains "optional; ignored when resuming", the return value documents the handle, and the options docs state that headers, retry policy and timeout apply to the initiation request only.
 
 ## 5. Credentials
@@ -197,27 +211,44 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
 |---|---|
 | `lib/gapic/model/method/resumable_upload.rb` | new: match tables, prefix lookup, validation |
 | `lib/gapic/presenters/method_presenter.rb` | build the model; `#resumable_upload?`, `#upload_url_prefix` |
-| `lib/gapic/presenters/service_presenter.rb`, `service_rest_presenter.rb` | `#resumable_upload?`, stub name / file path / require helpers |
-| `lib/gapic/generators/default_generator.rb` | emit the stub file when the service has upload RPCs |
-| `gapic-generator-ads/lib/gapic/generators/ads_generator.rb` | the same emission line — the ads generator re-implements its own file list |
+| `lib/gapic/presenters/service_presenter.rb`, `service_rest_presenter.rb` | `#resumable_upload?`, stub name / file path / require helpers; `ServiceRestPresenter#service_stub_methods` (§3.1) |
+| `lib/gapic/presenters/gem_presenter.rb` | raise the generated `gapic-common` dependency floor to the release carrying `::Gapic::ResumableUpload` — rewrites every golden gemspec (§9) |
+| `lib/gapic/generators/default_generator.rb` | emit the stub file and the generated upload test file when the service has upload RPCs |
+| `gapic-generator-ads/lib/gapic/generators/ads_generator.rb` | the same two emission lines — the ads generator re-implements its own file list and emits no tests at all today, so the test file needs an explicit entry there. Cloud inherits both via `super`. |
 | `templates/default/service/resumable_upload_stub.text.erb` + partial | new |
+| `templates/default/service/rest/service_stub/grpc_transcoding_method/_bindings.text.erb` | new: the `.with_bindings(…)` chain extracted from `_def.text.erb`, so binding emission has one source of truth |
+| `templates/default/service/rest/service_stub/grpc_transcoding_method/_def.text.erb` | render the extracted partial instead of inlining the chain; otherwise unchanged |
+| `templates/default/service/rest/service_stub/_service_stub.text.erb` | both per-method loops iterate `service_stub_methods` instead of `methods` |
 | `templates/default/lib/_service.text.erb`, `lib/rest/_rest.text.erb` | require the stub |
 | `templates/default/service/{,rest/}client/_client.text.erb` | build the stub in `initialize` |
 | `templates/default/service/{,rest/}client/method/_def.text.erb` | `request = {}` for upload methods |
 | `templates/default/service/{,rest/}client/method/def/_response_resumable_upload.text.erb` | new dispatch arm |
 | `templates/default/service/{,rest/}client/method/def/_upload_error_handler.text.erb` | new, overridden by the cloud flavor |
 | `templates/default/service/{,rest/}client/method/docs/*` | request-optional and initiation-scope wording |
-| test and snippet templates | new |
+| `templates/default/service/test/client.text.erb`, `service/rest/test/client.text.erb` | skip upload RPCs; they are covered by the new dedicated test file |
+| `templates/default/service/test/resumable_upload.text.erb` and snippet templates | new |
 
 ## 8. Testing
 
 * **Showcase fixtures.** `shared/protos/google/showcase` is a symlink into the `shared/gapic-showcase` submodule (pinned at `b6c247f`), so: bump the submodule to a release containing the upload service, add the proto to the showcase entry in `shared/gem_defaults.rb`, then `cd shared && toys bin showcase && toys gen showcase`.
 * **Goldens.** Regenerated showcase and googleads output committed alongside the generator change; verified by `toys test` in `gapic-generator` and `gapic-generator-ads`.
-* **Model and presenter unit tests.** Exact and versioned matching (including several `v<N>` values and a near-miss that must not match), prefix lookup, and each validation failure: streaming, paginated, long-running, non-POST binding, missing body.
-* **Generated unit tests**, both transports, no network: the method returns a handle; the handle carries the expected initiation URL (prefix and query folding included), response type and initiation retry policy; a client built with channel credentials still returns a handle, and that handle raises on `start` without reading the stream.
+* **Model and presenter unit tests.** Exact and versioned matching (including several `v<N>` values and a near-miss that must not match), prefix lookup, and each validation failure: streaming, paginated, long-running, non-POST binding, missing body. Plus the two exclusion lists: an upload RPC appears in `ServiceRestPresenter#methods` and not in `#service_stub_methods`.
+* **Generated unit tests**, both transports, no network. The handle exposes no initiation URL — it is computed lazily inside `#start` — so the URL is asserted one level down, on the stub: `transcode_…_request` is a stateless class method, and the test calls it directly and asserts the `[url, body]` pair, prefix and folded query string included. What is asserted on the handle is behavioural: the method returns a `::Gapic::ResumableUpload` and performs no HTTP; `#upload_url` and `#chunk_size` are `nil` before the first run; and a client built with channel credentials still returns a handle, whose `#start` raises `ArgumentError` without reading the stream.
 * **Functional showcase tests** (`shared/test/showcase`), both transports: a multi-chunk upload end to end, the channel-credentials failure at `start`, and a start-fail-then-resume cycle. Modelled on the gapic-common acceptance tests rather than its full integration suite.
+* **Showcase is HTTP-only**, which the two transports hit differently.
+  * REST client: nothing to do. `Gapic::Rest::ClientStub` only prepends `https://` when the endpoint carries no scheme, so `config.endpoint = "http://localhost:7469"` reaches the upload stub intact, exactly as it does for ordinary REST showcase tests today.
+  * gRPC client: `config.endpoint` is consumed by the channel as well, and a channel endpoint cannot carry an `http://` scheme. The test therefore substitutes the whole stub around construction — `ResumableUploadStub.stub :new, a_stub_built_with_the_http_endpoint do Client.new … end` — which works precisely because the stub is built eagerly in `initialize` and the client holds nothing else upload-related. Test-only; no production seam, no generated hook.
 * **Snippets** for upload RPCs, opening a file for the stream.
 
 ## 9. Delivery
 
-A single change: ads and showcase, both transports, generated unit tests, functional tests, snippets, goldens. The only deferred item is annotation-based detection replacing the match tables.
+Ordering is forced by the gem dependency and runs one way only:
+
+1. `gapic-common` releases `::Gapic::ResumableUpload` and the `method_name` keyword on `Session`/`Driver`.
+2. `GemPresenter#dependencies` raises the generated floor from `"gapic-common" => "~> 1.3"` to that release.
+3. The generator change lands with its goldens.
+
+Step 2 rewrites every golden gemspec in the repository, so in practice it travels with step 3 in one PR — but neither can precede step 1, or generated clients would declare a floor that is not on rubygems.
+
+That PR is a single change: ads and showcase, both transports, generated unit tests, functional tests, snippets, goldens. The only deferred item is annotation-based detection replacing the match tables.
+
