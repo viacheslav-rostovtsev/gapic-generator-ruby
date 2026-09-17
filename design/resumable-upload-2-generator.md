@@ -244,7 +244,7 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
 
 Ordering is forced by the gem dependency and runs one way only:
 
-1. `gapic-common` releases `::Gapic::ResumableUpload` and the `method_name` keyword on `Session`/`Driver`.
+1. `gapic-common` releases `::Gapic::ResumableUpload` as the sole coordinator above `Driver`, deletes `Gapic::Rest::ResumableUpload::Session`, and adds the `method_name` and `chunk_size` members to `Driver`.
 2. `GemPresenter#dependencies` raises the generated floor from `"gapic-common" => "~> 1.3"` to that release.
 3. The generator change lands with its goldens.
 
