@@ -2,13 +2,13 @@
 
 The gapic-common half of resumable upload support in generated clients. The generator half is in [resumable-upload-2-generator.md](resumable-upload-2-generator.md).
 
-This revision collapses a layer. `Gapic::Rest::ResumableUpload::Session` is **deleted** and the handle becomes the single coordinator above `Driver`. The rest of the protocol implementation — `Driver`, `Core`, `Rules`, the config and data types, the errors — is untouched apart from two small additive changes on `Driver` (§9).
+This revision collapses a layer. `Gapic::Rest::ResumableUpload::Session` is **deleted** and the handle becomes the single coordinator above `Driver`. The rest of the protocol implementation — `Driver`, `Core`, `Rules`, the config and data types, the errors — is untouched apart from one small additive change on `Driver`: an optional `method_name` keyword for logging (§9).
 
 ## 1. Why `Session` goes
 
 `Session` does four things: it partitions constructor-shared arguments from per-run ones and builds the config `Data`; it resolves the resume argument forms; it enforces one run per object; and it exposes mutex-guarded readers that delegate to `Driver`.
 
-The handle, as designed, already does three of them. It has its own mutex-guarded lifecycle flag, its own three resume forms, and its own readers — and it has to, because each run gets a fresh `Session`, so the session's own single-run guard can never fire for a handle misuse. A layer whose invariant must be re-implemented one level up is not carrying its weight.
+The handle, as designed, already does three of them. It has its own mutex-guarded lifecycle flag, its own resume-argument resolution, and its own readers — and it has to, because each run gets a fresh `Session`, so the session's own single-run guard can never fire for a handle misuse. A layer whose invariant must be re-implemented one level up is not carrying its weight.
 
 `bound?` is the visible symptom. It exists only because `Driver` is single-use and `Session` chose to encode that as object identity: a session is spent once it has executed or learned an upload URL. A reusable handle solves the same problem by building a fresh `Driver` per run, at which point `bound?` describes nothing a caller can act on.
 
@@ -31,6 +31,8 @@ Driver → Core → Rules      @private, unchanged
                              response_type:,
                              initial_headers: {},
                              start_retry_policy: nil,
+                             control_plane_retry_policy: nil,
+                             data_plane_retry_policy: nil,
                              error_handler: nil,
                              method_name: nil
 ```
@@ -44,7 +46,9 @@ The constructor is `@private`; instances come from generated client methods.
 | `response_type` | `Class` | protobuf message class used to decode the final body |
 | `initial_headers` | `Hash` | forwarded as the initiation headers |
 | `start_retry_policy` | `Hash`, `RetryPolicy`, `nil` | forwarded into `StartUploadConfig` |
-| `error_handler` | `Proc` → `Exception`, `nil` | wraps run failures, see §7 |
+| `control_plane_retry_policy` | `Hash`, `RetryPolicy`, `nil` | `query` and `cancel`; `@private`, see §8 |
+| `data_plane_retry_policy` | `Hash`, `RetryPolicy`, `nil` | `upload` and `finalize`; `@private`, see §8 |
+| `error_handler` | `Proc` → `Exception`, `nil` | wraps run failures, see §6 |
 | `method_name` | `String`, `nil` | RPC name used in log entries |
 
 **Procs only; there is no value form.** Both are deferred deliberately. `client_stub_proc` lets a client that cannot perform REST calls still hand back a working object and fail only when an upload is actually attempted. `initial_request_proc` means the initiation URL and body are computed on `#start` and never on `#resume`, so a handle built without a request message is still fully functional for resuming. A caller holding a concrete stub writes `client_stub_proc: -> { stub }`; adding a second, value-shaped constructor path to save those characters would double the argument validation for no gain.
@@ -65,7 +69,7 @@ def resume stream:, resume_handle: nil, content_type: nil, upload_size: nil,
 
 Everything `Session` used to take in its constructor and share across a run — stream, `upload_size`, `content_type`, the upload budget, `on_progress` — is now a per-run keyword, because the object outlives the run. The stream is the first argument and is a keyword; there is no positional form. Both methods are synchronous and return the decoded response message.
 
-Two arguments are deliberately absent from both signatures. **`control_plane_retry_policy` and `data_plane_retry_policy` are not exposed by the handle at all**: generated clients have nothing to derive them from, the protocol defaults are what every real caller wants, and a test that needs to drive chunk-level retry behaviour constructs a `Driver` directly, which is the seam this design keeps open. **`chunk_size` is a `#start` argument only** — a resumed run takes its chunk size from the `ResumeHandle`, because the server reports its granularity during initiation and a resumed run skips initiation.
+Two arguments are deliberately not per-run. **`control_plane_retry_policy` and `data_plane_retry_policy` sit on the constructor** (§8): they describe how this upload path behaves, not what one run does, and no generated client sets them. **`chunk_size` is a `#start` argument only** — a resumed run takes its chunk size from the `ResumeHandle`, because the server reports its granularity during initiation and a resumed run skips initiation.
 
 Order of operations in each run, before any byte is read from the stream:
 
@@ -76,7 +80,7 @@ Order of operations in each run, before any byte is read from the stream:
 5. Build `StartUploadConfig` or `ResumeUploadConfig` directly — no `Driver` factory methods are added — then `Driver.new client_stub:, config:`, and retain it.
 6. Run it; decode and return, or wrap and raise.
 
-Step 6 clears the lifecycle flag in an `ensure`, not on the success and failure paths separately. Every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle is permanently unusable for exactly the callers who most need to resume. `Session` had this bug once already: it set `@running` before constructing the `Driver`, so a config `ArgumentError` left the session running forever.
+Two ordering rules make that sequence safe, both inherited from `Session`, which got them right. The flag is set only once `Driver.new` has returned, so a config or retry-policy `ArgumentError` raised during construction leaves the handle untouched and usable. And step 6 clears the flag in an `ensure`, not on the success and failure paths separately: every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle becomes permanently unusable for exactly the callers who most need to resume.
 
 Config construction is the one piece of `Session` that survives verbatim: the same shared members, the same two `Data` classes, the same `ArgumentError`s out of their constructors for reserved headers or a non-positive `chunk_size`. Those validations stay where they are.
 
@@ -165,17 +169,19 @@ The whole-upload budget is deliberately not derived here. It stays at the driver
 
 ## 8. Retry policy placement
 
-The three planes are unchanged in behaviour, but only one of them is reachable through the handle.
+All three planes reach the handle, all three on the **constructor**, and none of them per run. A retry policy describes how this upload path behaves against this backend; it is not something a caller should be re-deciding between a failed `#start` and the `#resume` that recovers it.
 
-| Policy | Governs | Reachable via | Notes |
+| Policy | Governs | Source | Visibility |
 |---|---|---|---|
-| `start_retry_policy` | initiation | the handle's **constructor** | derived from the generated method's `CallOptions` by §7 |
-| `control_plane_retry_policy` | `query`, `cancel` | **not exposed** | protocol default only; set it by constructing a `Driver` directly |
-| `data_plane_retry_policy` | `upload`, `finalize` | **not exposed** | same |
+| `start_retry_policy` | initiation | the generated method's `CallOptions`, via §7 | documented |
+| `control_plane_retry_policy` | `query`, `cancel` | caller-supplied; defaults to the protocol's own | **`@private`** |
+| `data_plane_retry_policy` | `upload`, `finalize` | caller-supplied; defaults to the protocol's own | **`@private`** |
 
-`Session` accepted all three, which made sense when it was the protocol's public face. The handle is a client-library coordinator: a generated method has no source for a chunk-level retry policy, and offering the knob anyway would mean carrying validation and documentation for an argument nothing generates. The capability is not lost, only relocated — `Driver.new client_stub:, config:` takes a fully populated config, and that is how the protocol tests exercise these planes.
+The two plane policies are `@private` rather than absent, and the distinction matters. No generated client passes them — a generated method has nothing to derive a chunk-level retry policy from — so publishing them would document a knob that nothing in the shipped surface produces. But they must exist, because `Gapic::Common`'s integration harness sets them: exercising recovery, retry exhaustion and control-plane failure against a live showcase server means shortening backoff and narrowing retry codes, and doing that through the handle keeps those tests on the same code path as production rather than on a hand-built `Driver`.
 
-The published documentation for what the three planes do, including the table of defaults and the differing treatment of a missing `X-Goog-Upload-Status` header, moves from the `Session` class doc onto the handle, with the two unexposed planes described as defaults rather than as arguments.
+`nil` in either slot means the protocol default applies, exactly as it did through `Session`. A `Hash` overrides named keys; a `Gapic::Common::RetryPolicy` replaces the policy wholesale. The handle forwards them into the config untouched and performs no validation of its own — the config `Data` constructors already reject anything that is neither.
+
+The published documentation for what the three planes do, including the table of defaults and the differing treatment of a missing `X-Goog-Upload-Status` header, moves from the `Session` class doc onto the handle. The two private planes are described there as the defaults they are, without documenting the arguments that override them.
 
 ## 9. Changes to `Driver`
 
@@ -212,7 +218,7 @@ The handle is a new file, `lib/gapic/resumable_upload.rb`, required from `lib/ga
 
 Release order is forced, and it is one way only:
 
-1. Ship this document's changes in a `gapic-common` release: the handle, the `Session` deletion, and the two `Driver` additions. Since the feature is unreleased, the deletion is invisible from the outside and this is a minor version bump.
+1. Ship this document's changes in a `gapic-common` release: the handle, the `Session` deletion, and `Driver`'s new `method_name` keyword. Since the feature is unreleased, the deletion is invisible from the outside and this is a minor version bump.
 2. Only then raise the generated-gemspec dependency floor in the generator (`GemPresenter#dependencies`, currently `"gapic-common" => "~> 1.3"`) to that release.
 3. Then land the generator change and its goldens.
 
@@ -231,7 +237,7 @@ The `Session` test files are ported, not deleted — the behaviour they cover st
 
 * `test/gapic/rest/resumable_upload/session_test.rb` → `resumable_upload_test.rb`, driving the handle. The `build_session` / `start_session` helper pair, which partitions overrides with `START_ONLY_KEYS`, collapses: the handle's constructor and run arguments are already partitioned the way the helper was faking.
 * `integration/resumable_upload/resume_test.rb` → the handle, using both resume forms against a live showcase server.
-* **Tests that need protocol detail keep driving `Driver` directly** — the control- and data-plane retry policies, unseekable streams, buffer realignment, deadline behaviour. The handle deliberately does not expose those seams, and `Driver.new client_stub:, config:, core:` remains the injection point it is today.
+* **Tests that need protocol detail keep driving `Driver` directly** — unseekable streams, buffer realignment, deadline behaviour, scripted `Core` decisions. `Driver.new client_stub:, config:, core:` remains the injection point it is today. The control- and data-plane retry policies are *not* in that list: the integration harness reaches them through the handle's `@private` constructor arguments (§8), so recovery and retry-exhaustion tests run on the production code path.
 
 New or reworked coverage on the handle:
 

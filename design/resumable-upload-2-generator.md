@@ -269,7 +269,8 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
 | `templates/default/service/{,rest/}client/method/def/_response_resumable_upload.text.erb` | new dispatch arm |
 | `templates/default/service/{,rest/}client/method/def/_upload_error_handler.text.erb` | new, overridden by the cloud flavor |
 | `templates/default/service/{,rest/}client/method/docs/*` | upload-specific `@param options`, `@param request`, `@return` and `@example` blocks (§4.1): initiation-only scope for `timeout`/`retry_policy`, request-optional, handle return |
-| `templates/default/service/{,rest/}client/_client.text.erb` (`Rpcs` config docs) and the client class overview | one line each restating that an upload RPC's configured `timeout` and `retry_policy` cover initiation only |
+| `templates/default/service/{,rest/}client/_config.text.erb` | `Rpcs` configuration docs: one line per upload RPC saying its configured `timeout` and `retry_policy` cover initiation only |
+| `templates/default/service/{,rest/}client/_client.text.erb` | client class overview: one line on the same split |
 | `templates/default/service/test/client.text.erb`, `service/rest/test/client.text.erb` | skip upload RPCs; they are covered by the new dedicated test file |
 | `templates/default/service/test/resumable_upload.text.erb` and snippet templates | new |
 
