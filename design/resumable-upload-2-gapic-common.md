@@ -56,18 +56,21 @@ The constructor is `@private`; instances come from generated client methods.
 ## 3. Runs
 
 ```ruby
-def start  stream:, content_type: nil, upload_size: nil, chunk_size: nil, timeout: nil,
-           on_progress: nil, control_plane_retry_policy: nil, data_plane_retry_policy: nil
+def start  stream:, content_type: nil, upload_size: nil, chunk_size: nil,
+           upload_timeout: nil, on_progress: nil
 
-def resume stream:, upload_url: nil, chunk_size: nil, resume_handle: nil, **same_options
+def resume stream:, resume_handle: nil, content_type: nil, upload_size: nil,
+           upload_timeout: nil, on_progress: nil
 ```
 
-Everything `Session` used to take in its constructor and share across a run — stream, `upload_size`, `content_type`, `timeout`, the control- and data-plane retry policies, `on_progress` — is now a per-run keyword, because the object outlives the run. The stream is the first argument and is a keyword; there is no positional form. Both methods are synchronous and return the decoded response message.
+Everything `Session` used to take in its constructor and share across a run — stream, `upload_size`, `content_type`, the upload budget, `on_progress` — is now a per-run keyword, because the object outlives the run. The stream is the first argument and is a keyword; there is no positional form. Both methods are synchronous and return the decoded response message.
+
+Two arguments are deliberately absent from both signatures. **`control_plane_retry_policy` and `data_plane_retry_policy` are not exposed by the handle at all**: generated clients have nothing to derive them from, the protocol defaults are what every real caller wants, and a test that needs to drive chunk-level retry behaviour constructs a `Driver` directly, which is the seam this design keeps open. **`chunk_size` is a `#start` argument only** — a resumed run takes its chunk size from the `ResumeHandle`, because the server reports its granularity during initiation and a resumed run skips initiation.
 
 Order of operations in each run, before any byte is read from the stream:
 
 1. Take the lifecycle guard: raise `SessionStateError` if a run is already in flight.
-2. `#resume` only: reject a stream that is not positioned at byte 0 (`stream.pos.zero?`, when the stream responds to `pos`), and resolve the resume arguments to `[upload_url, chunk_size]`.
+2. `#resume` only: reject a stream that is not positioned at byte 0 (`stream.pos.zero?`, when the stream responds to `pos`), then resolve the `ResumeHandle` — the argument if given, otherwise the retained driver's.
 3. `client_stub_proc.call` — raises here if REST is unavailable.
 4. `#start` only: `initial_request_proc.call` → `[url, body]`.
 5. Build `StartUploadConfig` or `ResumeUploadConfig` directly — no `Driver` factory methods are added — then `Driver.new client_stub:, config:`, and retain it.
@@ -75,21 +78,28 @@ Order of operations in each run, before any byte is read from the stream:
 
 Step 6 clears the lifecycle flag in an `ensure`, not on the success and failure paths separately. Every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle is permanently unusable for exactly the callers who most need to resume. `Session` had this bug once already: it set `@running` before constructing the `Driver`, so a config `ArgumentError` left the session running forever.
 
-Config construction is the one piece of `Session` that survives verbatim: the same shared members, the same two `Data` classes, the same `ArgumentError`s out of their constructors for reserved headers, a non-positive `chunk_size` or a malformed retry policy. Those validations stay where they are.
+Config construction is the one piece of `Session` that survives verbatim: the same shared members, the same two `Data` classes, the same `ArgumentError`s out of their constructors for reserved headers or a non-positive `chunk_size`. Those validations stay where they are.
 
-The handle is reusable: one handle, many runs, one `Driver` per run. A second run started while one is in flight raises `Gapic::Rest::ResumableUpload::SessionStateError` — the error name survives the class, because what it names is the server-side upload session, not a Ruby object. Unlike a `Session`, a handle that has completed a run may legitimately start another one; that is the point of reuse, and it is the caller's business whether a second `#start` means a second upload. Every optional keyword is passed through untouched — in particular the whole-upload `timeout` is only forwarded when the caller sets it, otherwise `Driver`'s own resolution applies (`upload_size / 1 MB per second`, floored at one hour; one hour flat when the size is unknown).
+The handle is reusable: one handle, many runs, one `Driver` per run. A second run started while one is in flight raises `Gapic::Rest::ResumableUpload::SessionStateError` — the error name survives the class, because what it names is the server-side upload session, not a Ruby object. Unlike a `Session`, a handle that has completed a run may legitimately start another one; that is the point of reuse, and it is the caller's business whether a second `#start` means a second upload. Every optional keyword is passed through untouched — in particular `upload_timeout` is only forwarded when the caller sets it, otherwise `Driver`'s own resolution applies (`upload_size / 1 MB per second`, floored at one hour; one hour flat when the size is unknown).
+
+### `upload_timeout`, not `timeout`
+
+The keyword that carries the whole-upload budget is named `upload_timeout` on both run methods, even though the config member behind it is `timeout`. Generated clients already have a `timeout` in scope on every call — the per-RPC one from `CallOptions`, which in an upload governs the initiation request alone and reaches the handle through `start_retry_policy` (§7). Two numbers, three orders of magnitude apart, silently substitutable for one another, is the kind of bug that only shows up on the slow uploads nobody tests. The names now say which is which.
+
+The naming is not the whole defence; the documentation has to state the split from both sides. The handle's YARD for `upload_timeout:` says it bounds the entire run — every request, every retry, every byte — and that the per-call `timeout` a generated client passes covers only the request that creates the upload session. The generated method's `@param options` block says the same thing from the other end and points here; the generator design carries the exact wording.
 
 ### Resume forms
 
 | Call | Behaviour |
 |---|---|
 | `resume stream: io` | takes the retained driver's `resume_handle` |
-| `resume stream: io, upload_url: u, chunk_size: c` | explicit, for a fresh process |
-| `resume stream: io, resume_handle: h` | takes both from a `ResumeHandle`, which is what the protocol's own errors carry |
+| `resume stream: io, resume_handle: h` | takes an explicit `ResumeHandle`, which is what the protocol's own errors carry and what a caller persists between processes |
 
-All three forms converge on a `ResumeHandle`: the bare form reads `Driver#resume_handle` off the retained driver, and raises `ArgumentError` when it is `nil`. That covers three situations with one rule — a handle that has never run, a run that finished successfully, and a run that failed in a way the protocol considers unresumable (rejected, cancelled). Reaching for the raw `upload_url` instead would let the handle resume against a finalized upload, whose behaviour is undefined and server-dependent; going through the resume handle means the protocol's own resumability judgement decides, and the caller gets a clear error instead of an arbitrary server response. A caller who genuinely wants to re-query a finalized URL can still pass `upload_url:` and `chunk_size:` explicitly.
+Both forms resolve to a `ResumeHandle`, and the bare form raises `ArgumentError` when the retained driver has none. That one rule covers three situations: a handle that has never run, a run that finished successfully, and a run that failed in a way the protocol considers unresumable (rejected, cancelled).
 
-Mixing `resume_handle:` with `upload_url:`/`chunk_size:` raises `ArgumentError`, as does `upload_url:` without `chunk_size:` and vice versa. The stream must be positioned at byte 0 of the whole object; the driver fast-forwards to the server's offset itself, by seeking or by reading and discarding.
+**There is no explicit `upload_url:` / `chunk_size:` form.** A raw URL and chunk size are exactly the two fields of a `ResumeHandle`, so the third form bought nothing but a second argument-validation path and the ability to aim a resume at a finalized upload, whose behaviour is undefined and server-dependent. A caller who has the two values in a database row constructs the handle: `ResumeHandle.new upload_url: row[:url], chunk_size: row[:chunk_size]`. Dropping the form is also what lets the handle's reader set shrink to three (§4) and keeps `Driver` at a single additive change (§9).
+
+The stream must be positioned at byte 0 of the whole object; the driver fast-forwards to the server's offset itself, by seeking or by reading and discarding.
 
 ## 4. Readers
 
@@ -97,11 +107,11 @@ All read from the retained driver under the handle's mutex, and are safe to call
 
 | Reader | Source |
 |---|---|
-| `#upload_url` | `Driver#upload_url` (raw state URL, established or not) |
-| `#chunk_size` | `Driver#chunk_size` (§9) — the resolved value, after the server's granularity has been applied |
-| `#resume_handle` | `Driver#resume_handle` — `nil` for finalized uploads |
+| `#resume_handle` | `Driver#resume_handle` — carries the upload URL and the resolved chunk size; `nil` for finalized uploads |
 | `#resumable?` | `!resume_handle.nil?` |
 | `#running?` | the handle's own lifecycle flag |
+
+`#upload_url` and `#chunk_size` are **not** exposed. Both are fields of the `ResumeHandle` this set already returns, and once the explicit resume form is gone, nothing a caller can do with them separately is anything but a worse way of resuming. Dropping them also removes the one reason to add a `#chunk_size` reader to `Driver`, leaving `method_name` as the entire driver-side change (§9).
 
 ## 5. Response decoding
 
@@ -138,11 +148,11 @@ A handle constructed without an `error_handler` propagates protocol errors uncha
 ## 7. `start_retry_policy_for`
 
 ```ruby
-::Gapic::ResumableUpload.start_retry_policy_for options   # options: Gapic::CallOptions
-                                                          # => Hash
+::Gapic::Rest::ResumableUpload.start_retry_policy_for options   # options: Gapic::CallOptions
+                                                                # => Hash
 ```
 
-A class method on the handle, not on the `Gapic::Rest::ResumableUpload` protocol namespace. It exists to serve generated clients, it is meaningless without `Gapic::CallOptions`, and the protocol implementation has no business knowing about call options.
+A **`@private`** module function on `Gapic::Rest::ResumableUpload`, called by generated clients and by nothing else. Marking it private settles the placement question that hanging it off the handle was previously answering: since it appears in no published documentation, the argument for keeping the public surface to a single constant no longer applies, and the remaining consideration is cohesion. It produces an override Hash for the initiation retry policy, so it belongs beside `RetryPolicies::START_DEFAULTS`, which defines what it is overriding.
 
 Converts the per-call options that generated clients already assemble into the initiation retry policy.
 
@@ -151,23 +161,25 @@ Converts the per-call options that generated clients already assemble into the i
 * **Copies backoff settings and retry codes only where the caller set them.** An empty `retry_codes` list counts as unset, so the initiation defaults survive a policy that only customises, say, `initial_delay`.
 * **Raises `ArgumentError` for a Proc** (or any other non-`Gapic::Common::RetryPolicy` callable) retry policy. A per-error predicate has no coherent meaning across the three retry planes of an upload, and silently ignoring it would be worse.
 
-The whole-upload deadline is deliberately not derived here. It stays at the driver's default and is overridable per run via `timeout:`.
+The whole-upload budget is deliberately not derived here. It stays at the driver's default and is overridable per run via `upload_timeout:` (§3).
 
 ## 8. Retry policy placement
 
-The three planes are unchanged in behaviour, but the collapse moves where a caller names them. `Session` took the control- and data-plane policies on its constructor and `start_retry_policy` on `#start`; the handle inverts that.
+The three planes are unchanged in behaviour, but only one of them is reachable through the handle.
 
-| Policy | Governs | Given to | Why there |
+| Policy | Governs | Reachable via | Notes |
 |---|---|---|---|
-| `start_retry_policy` | initiation | the **constructor** | derived from the generated method's `CallOptions` (§7), which the run does not see |
-| `control_plane_retry_policy` | `query`, `cancel` | each **run** | belongs to the caller performing the upload |
-| `data_plane_retry_policy` | `upload`, `finalize` | each **run** | same |
+| `start_retry_policy` | initiation | the handle's **constructor** | derived from the generated method's `CallOptions` by §7 |
+| `control_plane_retry_policy` | `query`, `cancel` | **not exposed** | protocol default only; set it by constructing a `Driver` directly |
+| `data_plane_retry_policy` | `upload`, `finalize` | **not exposed** | same |
 
-The published documentation for what the three planes do, including the table of defaults and the differing treatment of a missing `X-Goog-Upload-Status` header, moves from the `Session` class doc onto the handle.
+`Session` accepted all three, which made sense when it was the protocol's public face. The handle is a client-library coordinator: a generated method has no source for a chunk-level retry policy, and offering the knob anyway would mean carrying validation and documentation for an argument nothing generates. The capability is not lost, only relocated — `Driver.new client_stub:, config:` takes a fully populated config, and that is how the protocol tests exercise these planes.
+
+The published documentation for what the three planes do, including the table of defaults and the differing treatment of a missing `X-Goog-Upload-Status` header, moves from the `Session` class doc onto the handle, with the two unexposed planes described as defaults rather than as arguments.
 
 ## 9. Changes to `Driver`
 
-Two additive changes, both one-liners, and nothing else in `Driver`, `Core` or `Rules`:
+One additive change, and nothing else in `Driver`, `Core` or `Rules`.
 
 **`method_name`.** An upload's log entries should identify the RPC that started it. Generated clients pass the method name they already use for logging on every other call (`"create_you_tube_video_upload"`), the handle forwards it to `Driver`, and `Driver` interpolates it into the per-request logging name it currently hardcodes at five sites:
 
@@ -180,7 +192,7 @@ method_name: "#{@method_name || 'ResumableUpload'}.start"
 
 One new optional keyword, five interpolated strings. A `Driver` built without a `method_name` logs exactly as it does today. Because `Session` is gone, the keyword is threaded in one place rather than two.
 
-**`#chunk_size`.** A one-line reader, `@core.state.chunk_size`, sitting beside the existing `#upload_url` and `#resume_handle`. The handle needs the resolved chunk size for its own reader and for the bare-`resume` form; without this it would reach through the `@private` `core` accessor into `state` from another namespace.
+The existing `#upload_url` and `#resume_handle` readers are enough for everything the handle needs: `#resume_handle` backs the handle's reader and both resume forms, and `#upload_url` stays where it is, used by the driver's own logging. No `#chunk_size` reader is added — with the explicit resume form gone, the resolved chunk size is only ever wanted as part of a `ResumeHandle`, which already carries it.
 
 ## 10. Deletions
 
@@ -218,27 +230,28 @@ Step 2 rewrites every golden gemspec in the repository, so it cannot be split fr
 The `Session` test files are ported, not deleted — the behaviour they cover still exists, one layer up.
 
 * `test/gapic/rest/resumable_upload/session_test.rb` → `resumable_upload_test.rb`, driving the handle. The `build_session` / `start_session` helper pair, which partitions overrides with `START_ONLY_KEYS`, collapses: the handle's constructor and run arguments are already partitioned the way the helper was faking.
-* `integration/resumable_upload/resume_test.rb` → the handle, using the three resume forms against a live showcase server.
-* **Tests that need protocol detail keep driving `Driver` directly** — chunk-level retry policies, unseekable streams, buffer realignment, deadline behaviour. The handle deliberately does not expose those seams, and `Driver.new client_stub:, config:, core:` remains the injection point it is today.
+* `integration/resumable_upload/resume_test.rb` → the handle, using both resume forms against a live showcase server.
+* **Tests that need protocol detail keep driving `Driver` directly** — the control- and data-plane retry policies, unseekable streams, buffer realignment, deadline behaviour. The handle deliberately does not expose those seams, and `Driver.new client_stub:, config:, core:` remains the injection point it is today.
 
 New or reworked coverage on the handle:
 
 * Both procs are called in the right order and only when they should be: `initial_request_proc` on `#start`, never on `#resume`; `client_stub_proc` on both, before anything reads the stream.
 * A raising `client_stub_proc` surfaces before the stream is touched.
-* Config construction: a start run produces a `StartUploadConfig` carrying the initiation URL, body, headers and start policy; a resume run produces a `ResumeUploadConfig`; per-run keywords land on both.
-* Lifecycle: a second concurrent run raises `SessionStateError`; a completed handle can start again and builds a second driver; the flag is released after a failed run.
-* Resume: the three forms, the argument errors for the illegal combinations, the byte-0 precondition, and the bare form reading the retained driver after a failure.
-* Decoding: populated body, empty body, `nil` body, malformed body.
+* Config construction: a start run produces a `StartUploadConfig` carrying the initiation URL, body, headers and start policy; a resume run produces a `ResumeUploadConfig` carrying the handle's URL and chunk size; `upload_timeout` lands on `config.timeout` and is omitted when unset.
+* Lifecycle: a second concurrent run raises `SessionStateError`; a completed handle can start again and builds a second driver; the flag is released after a failed run, after an `on_progress` callback raises, and after a config `ArgumentError`.
+* Resume: both forms; the byte-0 precondition; the bare form reading the retained driver after a failure; the bare form raising `ArgumentError` with no previous run, after a success, and after an unresumable failure.
+* Decoding: populated body, empty body, `nil` body, malformed body, and `response_type: nil` returning the raw body.
 * Error wrapping: wrapped error is raised, is rescuable as `HasResumeHandle`, and reports the original `#resume_handle`; a handler returning `nil` re-raises the original; an error with no resume handle is not decorated.
 * `start_retry_policy_for`: timeout injection, selective copying, empty retry codes, Proc rejection.
-* `Driver`: `method_name` appears in log entries and defaults to `ResumableUpload.*` without it; `#chunk_size` reports the resolved value after granularity rounding.
+* `Driver`: `method_name` appears in log entries and defaults to `ResumableUpload.*` without it.
 
 ## 14. Documentation pass
 
 `Session`'s class comment is the current home of most of the feature's published narrative. It has to be relocated and rewritten, not simply moved:
 
 * The **two-state model** and the recovery-by-constructing-a-new-session example are obsolete. The replacement narrative is the reusable handle: one object, `#start`, then `#resume` on the same object after a failure.
-* The **retry policy** section, the **defaults** section and the **where arguments live** section move onto the handle, with the placement inversion from §8 spelled out.
+* The **retry policy** section, the **defaults** section and the **where arguments live** section move onto the handle, rewritten for the reduced surface in §8: one policy is an argument, two are defaults.
+* The **two timeouts** get explicit treatment wherever either appears: `upload_timeout:` on both run methods, the `timeout:` key inside a `start_retry_policy` Hash, and the class overview. Each says which requests it bounds and names the other.
 * `.yardopts` keeps `--no-private`; the published surface becomes `::Gapic::ResumableUpload`, `Progress`, `ResumeHandle`, `HasResumeHandle` and the error classes.
 * In-repo design docs must follow: `design/resumable_upload/implementation-guide.md` §1.5 is the `Session` contract and is currently out for review, and `design/resumable_upload/integration-test-plan.md` describes session-based tests. Both need the same collapse applied.
 * `README.md` and `CHANGELOG.md` remain deferred to release time.
