@@ -71,7 +71,9 @@ Order of operations in each run, before any byte is read from the stream:
 3. `client_stub_proc.call` — raises here if REST is unavailable.
 4. `#start` only: `initial_request_proc.call` → `[url, body]`.
 5. Build `StartUploadConfig` or `ResumeUploadConfig` directly — no `Driver` factory methods are added — then `Driver.new client_stub:, config:`, and retain it.
-6. Run it; decode and return, or wrap and raise. Release the lifecycle flag on both paths.
+6. Run it; decode and return, or wrap and raise.
+
+Step 6 clears the lifecycle flag in an `ensure`, not on the success and failure paths separately. Every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle is permanently unusable for exactly the callers who most need to resume. `Session` had this bug once already: it set `@running` before constructing the `Driver`, so a config `ArgumentError` left the session running forever.
 
 Config construction is the one piece of `Session` that survives verbatim: the same shared members, the same two `Data` classes, the same `ArgumentError`s out of their constructors for reserved headers, a non-positive `chunk_size` or a malformed retry policy. Those validations stay where they are.
 
@@ -81,11 +83,13 @@ The handle is reusable: one handle, many runs, one `Driver` per run. A second ru
 
 | Call | Behaviour |
 |---|---|
-| `resume stream: io` | reuses `upload_url` and `chunk_size` from this handle's retained driver |
+| `resume stream: io` | takes the retained driver's `resume_handle` |
 | `resume stream: io, upload_url: u, chunk_size: c` | explicit, for a fresh process |
 | `resume stream: io, resume_handle: h` | takes both from a `ResumeHandle`, which is what the protocol's own errors carry |
 
-Mixing `resume_handle:` with `upload_url:`/`chunk_size:` raises `ArgumentError`, as does `upload_url:` without `chunk_size:` and vice versa. So does a bare `resume` on a handle with no previous run. The bare form reads the retained driver's `upload_url` and resolved `chunk_size` rather than its `resume_handle`, which is `nil` once the upload is finalized; resuming a finalized upload remains undefined behaviour, decided by the server's response to the query. The stream must be positioned at byte 0 of the whole object; the driver fast-forwards to the server's offset itself, by seeking or by reading and discarding.
+All three forms converge on a `ResumeHandle`: the bare form reads `Driver#resume_handle` off the retained driver, and raises `ArgumentError` when it is `nil`. That covers three situations with one rule — a handle that has never run, a run that finished successfully, and a run that failed in a way the protocol considers unresumable (rejected, cancelled). Reaching for the raw `upload_url` instead would let the handle resume against a finalized upload, whose behaviour is undefined and server-dependent; going through the resume handle means the protocol's own resumability judgement decides, and the caller gets a clear error instead of an arbitrary server response. A caller who genuinely wants to re-query a finalized URL can still pass `upload_url:` and `chunk_size:` explicitly.
+
+Mixing `resume_handle:` with `upload_url:`/`chunk_size:` raises `ArgumentError`, as does `upload_url:` without `chunk_size:` and vice versa. The stream must be positioned at byte 0 of the whole object; the driver fast-forwards to the server's offset itself, by seeking or by reading and discarding.
 
 ## 4. Readers
 
@@ -102,13 +106,13 @@ All read from the retained driver under the handle's mutex, and are safe to call
 ## 5. Response decoding
 
 ```ruby
-response_type.decode_json body.to_s, ignore_unknown_fields: true
+return body if @response_type.nil?
+@response_type.decode_json body.to_s, ignore_unknown_fields: true
 ```
 
-Unconditional, identical to what a generated REST service stub does with a unary response. An empty or absent final body decodes to an empty message (`decode_json ""` returns an empty message); malformed JSON raises `Google::Protobuf::ParseError`. The `to_s` is only there because a bodiless `200` surfaces as `nil` out of `Driver#run`.
+Decoding is identical to what a generated REST service stub does with a unary response. An empty or absent final body decodes to an empty message (`decode_json ""` returns an empty message); malformed JSON raises `Google::Protobuf::ParseError`. The `to_s` is only there because a bodiless `200` surfaces as `nil` out of `Driver#run`.
 
-> [!IMPORTANT]
-> **Open decision: is `response_type` mandatory?** A single audience argues yes — every generated method has one. But gapic-common's own integration tests currently assert on the raw body, and the gem carries no protobuf message class to decode into. Either they decode into `Google::Protobuf::Struct` (available via the `google-protobuf` dependency, decodes any JSON object), or the handle treats `response_type: nil` as "return the raw body". The second is one line and keeps the protocol tests honest about what the server actually sent; it is also the only concession to the second audience. Recommendation: allow `nil`, document it as `@private` behaviour for the gem's own tests, and keep every generated call site passing a real type.
+**`response_type: nil` returns the raw body**, exactly as `Driver#run` produced it — a `String`, or `nil` when the final response carried none. This is `@private` behaviour and is documented as such: every generated call site passes a real message class, and the escape hatch exists so that gapic-common's own tests can assert on what the server actually sent without the gem needing a protobuf message class of its own to decode into. It is one branch, and it is cheaper than the alternative of routing the protocol tests through `Google::Protobuf::Struct`, which would make every assertion about the wire response an assertion about Struct's JSON mapping instead.
 
 ## 6. Error handling
 
@@ -206,7 +210,7 @@ Step 2 rewrites every golden gemspec in the repository, so it cannot be split fr
 
 * The handle adds nothing to `on_progress`. The callback is passed straight through; whatever semantics its return value acquires (pausing, cancelling) are defined by the protocol implementation, not here.
 * No upload-size inference from the stream. If the caller wants `upload_size`, they pass it.
-* No `#cancel`. The cancellation decision is not ready to ship, and collapsing the layer does not change that: when it lands, it lands on the handle rather than on a `Session`.
+* No `#cancel`. The cancellation decision is not ready to ship, and collapsing the layer does not change that: when it lands, it lands on the handle rather than on a `Session`. One placement consequence to note now — the sentinel constants that `on_progress` will return to pause or cancel a run belong on the `Gapic::Rest::ResumableUpload` module, not on any coordinator class, since there is no longer a `Session` to hang them off.
 * No changes to `Progress`, to the phase list, to the config `Data` types, or to the driver's request construction.
 
 ## 13. Tests
