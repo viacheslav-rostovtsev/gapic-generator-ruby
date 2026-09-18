@@ -272,9 +272,12 @@ Step 2 rewrites every golden gemspec in the repository, so it cannot be split fr
 
 The `Session` test files are ported, not deleted — the behaviour they cover still exists, one layer up.
 
+The rule is: **test at the layer that owns the property.** The collapse moved six things up — argument partitioning, config construction, the lifecycle guard, resume resolution, decoding, error wrapping — and those belong to the coordinator. Everything else is the protocol machine, and stays on `Driver`/`Core`/`Rules`.
+
 * `test/gapic/rest/resumable_upload/session_test.rb` → `resumable_upload_test.rb`, driving the handle. The `build_session` / `start_session` helper pair, which partitions overrides with `START_ONLY_KEYS`, collapses: the handle's constructor and run arguments are already partitioned the way the helper was faking.
-* `integration/resumable_upload/resume_test.rb` → the handle, using both resume forms against a live showcase server.
-* **Tests that need protocol detail keep driving `Driver` directly** — unseekable streams, buffer realignment, deadline behaviour, scripted `Core` decisions. `Driver.new client_stub:, config:, core:` remains the injection point it is today. The control- and data-plane retry policies are *not* in that list: the integration harness reaches them through the handle's `@private` constructor arguments (§8), so recovery and retry-exhaustion tests run on the production code path.
+* **Unit tests of the protocol keep driving `Driver` directly** — unseekable streams, buffer realignment, deadline behaviour, `resolve_timeout`, `resolve_retry_policy`, `start_headers`, logging, and everything in `rules_*` / `core_test` / `data_types_test`. `Driver.new client_stub:, config:, core:` remains the injection point it is today, and routing these through a coordinator would only insert a config builder between the scripted stub and the assertion. `retry_policies_test.rb` belongs to neither layer: it covers `START_DEFAULTS`, the plane predicates, and `start_retry_policy_for`.
+* **Every integration suite runs through the coordinator.** The suite's job is to prove the shipped path works against a live server, and after the collapse the shipped path is coordinator → driver; a Showcase test that builds a `Driver` by hand exercises a path no generated client takes. All five suites — golden path, chunk granularity, initiation errors, recovery, resume — go through `::Gapic::ResumableUpload`, and the harness's `build_config` is deleted. Nothing in the set needs driver-level injection: the scenarios are driven by Showcase headers, and the short retry policies the recovery and exhaustion tests need arrive through the coordinator's `@private` plane arguments (§8), which is the reason those arguments exist.
+* The harness keeps `raw_start` / `raw_upload`, which speak HTTP directly. The resume suite needs a server-side session that no coordinator created.
 
 New or reworked coverage on the handle:
 
@@ -305,7 +308,7 @@ New or reworked coverage on the handle:
 
 ## 16. As landed
 
-On `dev/virost/resumable-uploads`, oldest first. `toys ci` green at the tip: 62 files, no RuboCop offenses; 580 runs / 2479 assertions / 0 failures / 0 errors / 1 skip; yardoc clean.
+On `dev/virost/resumable-uploads`, oldest first. `toys ci` green at the tip: 62 files, no RuboCop offenses; 580 runs / 2479 assertions / 0 failures / 0 errors / 1 skip; yardoc clean. `toys test-integration` green against gapic-showcase 0.43.1: 25 runs / 99 assertions / 0 failures.
 
 | Commit | |
 |---|---|
@@ -315,5 +318,6 @@ On `dev/virost/resumable-uploads`, oldest first. `toys ci` green at the tip: 62 
 | `b8021f9` | `refactor(common): add RetryPolicy#overrides and derive initiation retries from it` — §10, §7 |
 | `f33b135` | `chore: ignore the temporary Gemfiles toys leaves behind` — unrelated to this brief; `toys ci` strands one `.toys-tmp-gemfile-*.lock` per step, because bundler rewrites the lock about a second after toys' `ensure` block deletes it |
 | `e5d081d` | `refactor(resumable-upload): let call options override the initiation retry predicate` — §7 |
+| `ec6841a` | `test(resumable-upload): run the integration suite through the coordinator` — §14; the four remaining Driver-level suites ported, `build_config` deleted, decode-into-a-message added |
 
 This document is not committed to the repository; it is working reference alongside [resumable-upload-2-generator.md](resumable-upload-2-generator.md).
