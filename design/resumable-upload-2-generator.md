@@ -124,7 +124,7 @@ So the list forks rather than shrinks:
 | `ServiceRestPresenter#methods` | unchanged | REST client method loop, docs, snippets |
 | `ServiceRestPresenter#service_stub_methods` | `methods.reject(&:resumable_upload?)` | both loops in `_service_stub.text.erb` |
 
-The standard generated client tests take the same exclusion — `service/test/client.text.erb` iterates `service.methods` and its REST counterpart `service.rest.methods`; both skip upload RPCs, which get their own generated test file instead (§7, §8). Nothing else consumes either list.
+The standard generated client tests take the same exclusion — `service/test/client.text.erb` iterates `service.methods` and its REST counterpart `service.rest.methods`; both skip upload RPCs, which get their own generated test file instead (§7, §9). Nothing else consumes either list.
 
 ## 4. The generated method
 
@@ -256,7 +256,7 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
 | `lib/gapic/model/method/resumable_upload.rb` | new: match tables, prefix lookup, validation |
 | `lib/gapic/presenters/method_presenter.rb` | build the model; `#resumable_upload?`, `#upload_url_prefix` |
 | `lib/gapic/presenters/service_presenter.rb`, `service_rest_presenter.rb` | `#resumable_upload?`, stub name / file path / require helpers; `ServiceRestPresenter#service_stub_methods` (§3.1) |
-| `lib/gapic/presenters/gem_presenter.rb` | raise the generated `gapic-common` dependency floor to the release carrying `::Gapic::ResumableUpload` — rewrites every golden gemspec (§9) |
+| `lib/gapic/presenters/gem_presenter.rb` | raise the generated `gapic-common` dependency floor to the release carrying `::Gapic::ResumableUpload` — rewrites every golden gemspec (§10) |
 | `lib/gapic/generators/default_generator.rb` | emit the stub file and the generated upload test file when the service has upload RPCs |
 | `gapic-generator-ads/lib/gapic/generators/ads_generator.rb` | the same two emission lines — the ads generator re-implements its own file list and emits no tests at all today, so the test file needs an explicit entry there. Cloud inherits both via `super`. |
 | `templates/default/service/resumable_upload_stub.text.erb` + partial | new |
@@ -274,9 +274,65 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
 | `templates/default/service/test/client.text.erb`, `service/rest/test/client.text.erb` | skip upload RPCs; they are covered by the new dedicated test file |
 | `templates/default/service/test/resumable_upload.text.erb` and snippet templates | new |
 
-## 8. Testing
+## 8. Prerequisite work items
 
-* **Showcase fixtures.** `shared/protos/google/showcase` is a symlink into the `shared/gapic-showcase` submodule (pinned at `b6c247f`), so: bump the submodule to a release containing the upload service, add the proto to the showcase entry in `shared/gem_defaults.rb`, then `cd shared && toys bin showcase && toys gen showcase`.
+Two of these are repository plumbing that has to land before any resumable-upload code, and the third is a development-time constraint that lasts until the gapic-common release.
+
+### 8.1 Ads goldens: bump `shared/googleapis`, migrate to v25 — first, and on its own
+
+`shared/googleapis` is a git submodule, used directly as a protoc include path (`shared/.toys.rb` passes `-I ../shared/protos -I ../shared/googleapis`). The ads golden is generated from exactly one proto, pinned in `shared/gem_defaults.rb`:
+
+```ruby
+googleads: {
+  protos: ["google/ads/googleads/v21/services/campaign_service.proto"],
+  generator: :ads
+}
+```
+
+v21 predates the YouTube video upload service, so today there is nothing for the detector to match and nothing to generate against. The work:
+
+1. Move the `shared/googleapis` submodule to a commit carrying `google/ads/googleads/v25/`.
+2. Repoint the `googleads` entry at v25 and add the YouTube video upload service proto alongside `campaign_service.proto`.
+3. Regenerate and commit: `cd shared && toys bin googleads && toys gen googleads`.
+4. Verify the new service generates as an ordinary unary surface *before* the feature work begins. That golden is the baseline the resumable-upload diff will be read against; if the upload RPC does not appear as a plain method first, the feature's diff shows nothing meaningful.
+
+**Land this as its own change.** The v21 → v25 move rewrites every file in the ads golden tree — namespaces, version constants, request and response messages — and adds a service on top. Mixed into the feature diff, neither is reviewable. Two further consequences to plan for:
+
+* The submodule bump moves the proto source for **every** golden resolved through `../shared/googleapis`, not just ads. Regenerate all goldens after the bump and carry whatever churn appears in the same change.
+* The version this lands on is what `VERSIONED_PREFIXES` (§6) must match in practice. The `V24` in this document's examples is illustrative; the regex is deliberately version-agnostic, but the golden and the model test fixtures should name the version actually pinned.
+
+### 8.2 Showcase: bump the server binary, and the submodule with it
+
+`shared/test/showcase/test_helper.rb` pins the server it downloads and runs:
+
+```ruby
+GAPIC_SHOWCASE_VERSION = '0.37.0'
+```
+
+That must rise to **at least `0.43.1`**, the first release whose server implements the resumable upload surface these tests exercise. The `shared/gapic-showcase` submodule — the proto source, reached through the `shared/protos/google/showcase` symlink — moves to the matching tag in the same change.
+
+The two pins must agree. Protos generate the client; the binary answers it. A client generated from protos the running server does not implement fails at request time, and the failure reads like a generator bug rather than a version skew.
+
+### 8.3 Developing against an unreleased `gapic-common`
+
+The release order (§10) puts the gapic-common release first, which means that for the whole of the generator work the handle this feature depends on exists only in a local checkout. Nothing generated here can be run against a published gem until then.
+
+During development, point the Gemfiles used to run the tests at that checkout:
+
+```ruby
+# shared/Gemfile, and any generated-library Gemfile used for showcase tests
+gem "gapic-common", path: "/path/to/ruby-core-libraries/gapic-common"
+```
+
+For an implementer, three things follow:
+
+* **Locate the checkout.** `gapic-common` lives in a separate repository from this one, and the copy on disk must be the one carrying `::Gapic::ResumableUpload`. A stale clone fails as a `NameError` at run time, which is a confusing way to discover a path problem — check the constant exists before trusting a test result.
+* **The path overrides are scaffolding, not deliverables.** They must not appear in the merged change.
+* **The PR does not merge until `gapic-common` is on rubygems.** The dependency floor bump in `GemPresenter#dependencies` cannot even be written until the version number exists, and merging without it would produce generated gemspecs that declare a floor no published gem satisfies.
+
+## 9. Testing
+
+* **Showcase fixtures.** The submodule and server-binary pins move first (§8.2). On top of that: add the upload service proto to the showcase entry in `shared/gem_defaults.rb`, then `cd shared && toys bin showcase && toys gen showcase`.
 * **Goldens.** Regenerated showcase and googleads output committed alongside the generator change; verified by `toys test` in `gapic-generator` and `gapic-generator-ads`.
 * **Model and presenter unit tests.** Exact and versioned matching (including several `v<N>` values and a near-miss that must not match), prefix lookup, and each validation failure: streaming, paginated, long-running, non-POST binding, missing body. Plus the two exclusion lists: an upload RPC appears in `ServiceRestPresenter#methods` and not in `#service_stub_methods`.
 * **Generated unit tests**, both transports, no network. The handle exposes no initiation URL — it is computed lazily inside `#start` — so the URL is asserted one level down, on the stub: `transcode_…_request` is a stateless class method, and the test calls it directly and asserts the `[url, body]` pair, prefix and folded query string included. What is asserted on the handle is behavioural: the method returns a `::Gapic::ResumableUpload` and performs no HTTP; `#resume_handle` is `nil` and `#resumable?` and `#running?` are `false` before the first run; and a client built with channel credentials still returns a handle, whose `#start` raises `ArgumentError` without reading the stream.
@@ -286,7 +342,7 @@ When the annotation lands, `url_prefix_for` keeps the table and detection moves 
   * gRPC client: `config.endpoint` is consumed by the channel as well, and a channel endpoint cannot carry an `http://` scheme. The test therefore substitutes the whole stub around construction — `ResumableUploadStub.stub :new, a_stub_built_with_the_http_endpoint do Client.new … end` — which works precisely because the stub is built eagerly in `initialize` and the client holds nothing else upload-related. Test-only; no production seam, no generated hook.
 * **Snippets** for upload RPCs, opening a file for the stream.
 
-## 9. Delivery
+## 10. Delivery
 
 Ordering is forced by the gem dependency and runs one way only:
 
