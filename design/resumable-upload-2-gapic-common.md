@@ -2,7 +2,7 @@
 
 The gapic-common half of resumable upload support in generated clients. The generator half is in [resumable-upload-2-generator.md](resumable-upload-2-generator.md).
 
-This revision collapses a layer. `Gapic::Rest::ResumableUpload::Session` is **deleted** and the handle becomes the single coordinator above `Driver`. The rest of the protocol implementation — `Driver`, `Core`, `Rules`, the config and data types, the errors — is untouched apart from one small additive change on `Driver`: an optional `method_name` keyword for logging (§9).
+This revision collapses a layer. `Gapic::Rest::ResumableUpload::Session` is **deleted** and the handle becomes the single coordinator above `Driver`. The rest of the protocol implementation — `Driver`, `Core`, `Rules`, the config and data types, the errors — is untouched apart from one small additive change on `Driver`: an optional `method_name` keyword for logging (§9). One change lands outside the upload namespace: `Gapic::Common::RetryPolicy` gains a `@private` `#overrides` reader (§10), which the initiation-policy conversion needs and which nothing else in the retry machinery is disturbed by.
 
 ## 1. Why `Session` goes
 
@@ -73,14 +73,18 @@ Two arguments are deliberately not per-run. **`control_plane_retry_policy` and `
 
 Order of operations in each run, before any byte is read from the stream:
 
-1. Take the lifecycle guard: raise `SessionStateError` if a run is already in flight.
+1. Claim the run slot: under the mutex, raise `SessionStateError` if a run is already in flight, otherwise set the flag. Check and set happen in one critical section.
 2. `#resume` only: reject a stream that is not positioned at byte 0 (`stream.pos.zero?`, when the stream responds to `pos`), then resolve the `ResumeHandle` — the argument if given, otherwise the retained driver's.
 3. `client_stub_proc.call` — raises here if REST is unavailable.
 4. `#start` only: `initial_request_proc.call` → `[url, body]`.
 5. Build `StartUploadConfig` or `ResumeUploadConfig` directly — no `Driver` factory methods are added — then `Driver.new client_stub:, config:`, and retain it.
 6. Run it; decode and return, or wrap and raise.
 
-Two ordering rules make that sequence safe, both inherited from `Session`, which got them right. The flag is set only once `Driver.new` has returned, so a config or retry-policy `ArgumentError` raised during construction leaves the handle untouched and usable. And step 6 clears the flag in an `ensure`, not on the success and failure paths separately: every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle becomes permanently unusable for exactly the callers who most need to resume.
+**The slot is claimed before the build, not after it.** An earlier draft of this brief said the flag is set only once `Driver.new` has returned, so that a config or retry-policy `ArgumentError` would leave the handle untouched. That is incompatible with the guard being step 1: a check at step 1 with the set at step 5 is a TOCTOU window in which two threads both pass the guard and both build a driver. The property that draft wanted comes from two other things instead, and is preserved: the flag is released in an `ensure`, so a failed build leaves `running?` false; and `@driver` is assigned only after the build block returns, so a run that dies during construction leaves the previous run's driver — and therefore its resume handle — in place.
+
+Step 6 clears the flag in an `ensure`, not on the success and failure paths separately: every exit — a clean return, a protocol error, an `on_progress` callback raising, a `Timeout`, a `Thread#kill` — must leave `running?` false and the driver retained, or the handle becomes permanently unusable for exactly the callers who most need to resume.
+
+Only the flag and the retained driver live inside the mutex. Steps 2 through 6 run outside it, so no user-supplied proc — `client_stub_proc`, `initial_request_proc`, `on_progress`, `error_handler` — is ever called while the lock is held. Ruby's `Mutex` is not reentrant, and a callback that re-entered the handle under the lock would deadlock rather than raise.
 
 Config construction is the one piece of `Session` that survives verbatim: the same shared members, the same two `Data` classes, the same `ArgumentError`s out of their constructors for reserved headers or a non-positive `chunk_size`. Those validations stay where they are.
 
@@ -116,6 +120,8 @@ All read from the retained driver under the handle's mutex, and are safe to call
 | `#running?` | the handle's own lifecycle flag |
 
 `#upload_url` and `#chunk_size` are **not** exposed. Both are fields of the `ResumeHandle` this set already returns, and once the explicit resume form is gone, nothing a caller can do with them separately is anything but a worse way of resuming. Dropping them also removes the one reason to add a `#chunk_size` reader to `Driver`, leaving `method_name` as the entire driver-side change (§9).
+
+**`#resume_handle` is replaced by each run, not accumulated, and there is no clearing step.** Replacing `@driver` is the clear. A second run's driver takes over the reader the moment it is retained, even if that run then fails before it has established an upload URL — so the earlier handle is genuinely gone rather than kept as a fallback. A caller who starts a second upload while the first still matters must persist the handle first; the reader's YARD says so. A run that dies before its driver is built does not count, per §3. The driver must not be cleared when the slot is claimed, because bare `resume` reads the *old* driver's handle while resolving its arguments.
 
 ## 5. Response decoding
 
@@ -156,14 +162,23 @@ A handle constructed without an `error_handler` propagates protocol errors uncha
                                                                 # => Hash
 ```
 
-A **`@private`** module function on `Gapic::Rest::ResumableUpload`, called by generated clients and by nothing else. Marking it private settles the placement question that hanging it off the handle was previously answering: since it appears in no published documentation, the argument for keeping the public surface to a single constant no longer applies, and the remaining consideration is cohesion. It produces an override Hash for the initiation retry policy, so it belongs beside `RetryPolicies::START_DEFAULTS`, which defines what it is overriding.
+A **`@private`** module function on `Gapic::Rest::ResumableUpload`, called by generated clients and by nothing else. Marking it private settles the placement question that hanging it off the handle was previously answering: since it appears in no published documentation, the argument for keeping the public surface to a single constant no longer applies, and the remaining consideration is cohesion.
 
-Converts the per-call options that generated clients already assemble into the initiation retry policy.
+Cohesion says beside `RetryPolicies::START_DEFAULTS`, which defines what it is overriding. YARD says otherwise, and YARD wins: it lives in `lib/gapic/rest/resumable_upload.rb`, the file that carries the module's docstring. `Gapic::Rest::ResumableUpload` is reopened in eleven files, and a module that gains a method stops being a pure namespace in whichever file that happens — which trips RuboCop's `Style/Documentation`. Every in-file way of silencing that cop destroys the module's published documentation (§15). Putting the one method in the one file that is supposed to document the module avoids the whole problem.
 
-* **Returns a Hash, never a policy object.** The protocol implementation treats a `RetryPolicy` object as a wholesale replacement and a Hash as a per-key override. Initiation's default policy carries a predicate that treats a response missing `X-Goog-Upload-Status` as retriable gateway noise; handing it an object would silently drop that.
-* **Always sets `timeout:`** from `options.timeout`. This becomes the local deadline of the initiation request only. Without it, initiation inherits `Gapic::Common::RetryPolicy::DEFAULT_TIMEOUT` (3600 s), because `Gapic::CallOptions::RetryPolicy` never populates `@timeout` even though it subclasses `Gapic::Common::RetryPolicy`.
-* **Copies backoff settings and retry codes only where the caller set them.** An empty `retry_codes` list counts as unset, so the initiation defaults survive a policy that only customises, say, `initial_delay`.
-* **Raises `ArgumentError` for a Proc** (or any other non-`Gapic::Common::RetryPolicy` callable) retry policy. A per-error predicate has no coherent meaning across the three retry planes of an upload, and silently ignoring it would be worse.
+Converts the per-call options that generated clients already assemble into the initiation retry policy:
+
+```ruby
+(policy&.overrides || {}).merge timeout: options&.timeout
+```
+
+* **Returns a Hash, never a policy object.** The protocol implementation treats a `RetryPolicy` object as a wholesale replacement and a Hash as a per-key override. Initiation's default policy carries a predicate that treats a response missing `X-Goog-Upload-Status` as retriable gateway noise; handing it an object would silently drop that, along with the initiation retry codes.
+* **Asks the policy what it carries** — `Gapic::Common::RetryPolicy#overrides` (§10) — rather than inferring it by comparing readers against a pristine policy. The comparison was the earlier design, and it was wrong in a way that only bites the careful caller: a setting that happens to equal the library default is indistinguishable from an unset one, so a caller who spells out `max_delay: 15` gets it dropped. An empty `retry_codes` list still counts as unset, since it retries nothing, which is exactly what silence does.
+* **Sets `timeout:` unconditionally** from `options.timeout`, overwriting any `timeout` the caller's policy carries. This becomes the local deadline of the initiation request only. A `timeout` inside a retry policy is inert at the call layer — `Gapic::CallOptions::RetryPolicy` never populates `@timeout`, and `RpcCall` deadlines on `CallOptions#timeout` — so honouring it here would invent a meaning it has nowhere else. With no call timeout, initiation falls back to `Gapic::Common::RetryPolicy::DEFAULT_TIMEOUT` (3600 s).
+* **A caller's `retry_predicate` lands, replacing the initiation one.** This reverses an earlier decision to drop it. A predicate is an explicit choice, and the conversion has no business discarding it; the cost is that the missing-`X-Goog-Upload-Status` handling goes with it, because `RetryPolicy` does not compose predicates — one that returns `nil` falls through to `retry_codes`, not to the predicate it displaced. That is the same all-or-nothing the caller gets from `retry_codes`, and it is documented on the method.
+* **Raises `ArgumentError` for a Proc** (or any other non-`Gapic::Common::RetryPolicy`) retry policy. `CallOptions` keeps a Proc as-is rather than converting it, and a bare per-error predicate has no coherent meaning across the three retry planes of an upload; silently ignoring it would be worse.
+
+One consequence worth knowing, because it decides what the tests can express: **`retry_predicate` and `timeout` cannot reach this function through a Hash at all.** `Gapic::CallOptions#initialize` converts any `to_h`-able policy into a `Gapic::CallOptions::RetryPolicy`, whose initializer accepts only `retry_codes`, `initial_delay`, `multiplier`, `max_delay` and `jitter` — anything else raises `unknown keyword`. `Gapic::Common::RetryPolicy` defines no `to_h`, so an instance passed in survives untouched, and that is the only route by which either setting arrives. Widening `Gapic::CallOptions::RetryPolicy`'s initializer is a separate change, outside this brief.
 
 The whole-upload budget is deliberately not derived here. It stays at the driver's default and is overridable per run via `upload_timeout:` (§3).
 
@@ -200,11 +215,33 @@ One new optional keyword, five interpolated strings. A `Driver` built without a 
 
 The existing `#upload_url` and `#resume_handle` readers are enough for everything the handle needs: `#resume_handle` backs the handle's reader and both resume forms, and `#upload_url` stays where it is, used by the driver's own logging. No `#chunk_size` reader is added — with the explicit resume form gone, the resolved chunk size is only ever wanted as part of a `ResumeHandle`, which already carries it.
 
-## 10. Deletions
+## 10. Changes to `Gapic::Common::RetryPolicy`
+
+One additive change, outside the upload namespace and the only one this brief makes to the shared retry machinery.
+
+```ruby
+# @private
+def overrides
+  # An empty list is unset: it retries nothing, which is what silence does.
+  retry_codes = @retry_codes unless @retry_codes.nil? || @retry_codes.empty?
+  { initial_delay: @initial_delay, max_delay: @max_delay, multiplier: @multiplier,
+    retry_codes: retry_codes, timeout: @timeout, jitter: @jitter,
+    retry_predicate: @retry_predicate }.compact
+end
+```
+
+`RetryPolicy` already stores every setting as `nil` until someone supplies it, and every reader substitutes the corresponding `DEFAULT_` constant. That invariant is what makes `apply_defaults` work, and until now it was nowhere stated: the class documentation described the readers, so the only way to ask a policy what it actually held was to read it and compare against a policy built with no arguments. §7 did exactly that, and the comparison is unsound — a caller who writes `max_delay: 15` gets the same answer as a caller who writes nothing.
+
+`#overrides` exposes the invariant instead of reconstructing it, keyed so the result drops straight into `RetryPolicy.new` or `Driver#resolve_retry_policy`. The class doc now states the invariant explicitly, since it is now part of the contract rather than an implementation detail. `DEFAULT_JITTER` stays a `private_constant`; `#overrides` reads the ivar, so nothing needs it to become public.
+
+Deliberately out of scope: `eql?`, `hash` and `dup` still work through readers or ivars directly, and are untouched. Rewriting `RetryPolicy` around a single settings hash is a larger change with its own compatibility surface, and this brief does not need it.
+
+## 11. Deletions
 
 | Item | Disposition |
 |---|---|
 | `lib/gapic/rest/resumable_upload/session.rb` | deleted |
+| `test/gapic/rest/resumable_upload/session_test.rb` | deleted; its coverage moves to `test/gapic/resumable_upload_test.rb` (§14) |
 | `require` in `lib/gapic/rest/resumable_upload.rb` | deleted |
 | `Session#bound?` and the two-state model | deleted; `#running?` is the whole lifecycle a caller can observe |
 | `SessionStateError` | **kept**, in place, renaming nothing; its YARD doc drops the reference to the deleted class |
@@ -212,7 +249,7 @@ The existing `#upload_url` and `#resume_handle` readers are enough for everythin
 
 With `Session` gone, the `Gapic::Rest::ResumableUpload` namespace contains no public entry point at all — everything in it is `@private` except the data types and errors. Its module documentation has to say, in as many words, that the entry point is `::Gapic::ResumableUpload`.
 
-## 11. Packaging and release order
+## 12. Packaging and release order
 
 The handle is a new file, `lib/gapic/resumable_upload.rb`, required from `lib/gapic/rest.rb` next to the existing `require "gapic/rest/resumable_upload"`. It is not under `gapic/rest/` because it is not part of the protocol implementation: it is the coordinator built on top of it, and its constant is `::Gapic::ResumableUpload`. Requiring it from `gapic/rest.rb` means any generated client that already does `require "gapic/rest"` — which the generated upload stub does on construction — gets it for free, with no extra require in generated code.
 
@@ -224,14 +261,14 @@ Release order is forced, and it is one way only:
 
 Step 2 rewrites every golden gemspec in the repository, so it cannot be split from step 3 in practice — but it also cannot precede step 1, because generated clients would then declare a floor that does not exist on rubygems.
 
-## 12. Non-goals
+## 13. Non-goals
 
 * The handle adds nothing to `on_progress`. The callback is passed straight through; whatever semantics its return value acquires (pausing, cancelling) are defined by the protocol implementation, not here.
 * No upload-size inference from the stream. If the caller wants `upload_size`, they pass it.
 * No `#cancel`. The cancellation decision is not ready to ship, and collapsing the layer does not change that: when it lands, it lands on the handle rather than on a `Session`. One placement consequence to note now — the sentinel constants that `on_progress` will return to pause or cancel a run belong on the `Gapic::Rest::ResumableUpload` module, not on any coordinator class, since there is no longer a `Session` to hang them off.
 * No changes to `Progress`, to the phase list, to the config `Data` types, or to the driver's request construction.
 
-## 13. Tests
+## 14. Tests
 
 The `Session` test files are ported, not deleted — the behaviour they cover still exists, one layer up.
 
@@ -244,14 +281,15 @@ New or reworked coverage on the handle:
 * Both procs are called in the right order and only when they should be: `initial_request_proc` on `#start`, never on `#resume`; `client_stub_proc` on both, before anything reads the stream.
 * A raising `client_stub_proc` surfaces before the stream is touched.
 * Config construction: a start run produces a `StartUploadConfig` carrying the initiation URL, body, headers and start policy; a resume run produces a `ResumeUploadConfig` carrying the handle's URL and chunk size; `upload_timeout` lands on `config.timeout` and is omitted when unset.
-* Lifecycle: a second concurrent run raises `SessionStateError`; a completed handle can start again and builds a second driver; the flag is released after a failed run, after an `on_progress` callback raises, and after a config `ArgumentError`.
-* Resume: both forms; the byte-0 precondition; the bare form reading the retained driver after a failure; the bare form raising `ArgumentError` with no previous run, after a success, and after an unresumable failure.
+* Lifecycle: a second concurrent run raises `SessionStateError`; a completed handle can start again and builds a second driver; the flag is released after a failed run, after an `on_progress` callback raises, and after a config `ArgumentError`. The construction-phase `ArgumentError` those tests use is an invalid `start_retry_policy`, or a `ResumeHandle` with a non-positive `chunk_size`: `StartUploadConfig` validates only `initial_url` presence and the reserved headers, not `chunk_size`.
+* Resume: both forms; the byte-0 precondition; the bare form reading the retained driver after a failure; the bare form raising `ArgumentError` with no previous run, after a success, and after an unresumable failure; a second run replacing the previous run's resume handle (§4).
 * Decoding: populated body, empty body, `nil` body, malformed body, and `response_type: nil` returning the raw body.
 * Error wrapping: wrapped error is raised, is rescuable as `HasResumeHandle`, and reports the original `#resume_handle`; a handler returning `nil` re-raises the original; an error with no resume handle is not decorated.
-* `start_retry_policy_for`: timeout injection, selective copying, empty retry codes, Proc rejection.
-* `Driver`: `method_name` appears in log entries and defaults to `ResumableUpload.*` without it.
+* `start_retry_policy_for`: timeout injection, selective copying, empty retry codes, Proc rejection, a setting that equals a library default still landing, and a caller predicate displacing the initiation one. The last two need a `Gapic::Common::RetryPolicy` instance rather than a Hash, for the reason given in §7.
+* `Gapic::Common::RetryPolicy#overrides`: two tests, one policy with every setting supplied, one with none. Two is the whole budget — the point is to pin the nil-means-unset contract from both directions, not to start a retry-policy test rewrite.
+* `Driver`: `method_name` appears in log entries and defaults to `ResumableUpload.*` without it. The `#upload_url` / `#resume_handle` readers are exercised across statuses through a `Core` double injected at `Driver.new client_stub:, config:, core:` — the designed seam — rather than by poking `core.instance_variable_set`. `Core` exposes no way to set a state, which is precisely why the seam exists.
 
-## 14. Documentation pass
+## 15. Documentation pass
 
 `Session`'s class comment is the current home of most of the feature's published narrative. It has to be relocated and rewritten, not simply moved:
 
@@ -259,5 +297,23 @@ New or reworked coverage on the handle:
 * The **retry policy** section, the **defaults** section and the **where arguments live** section move onto the handle, rewritten for the reduced surface in §8: one policy is an argument, two are defaults.
 * The **two timeouts** get explicit treatment wherever either appears: `upload_timeout:` on both run methods, the `timeout:` key inside a `start_retry_policy` Hash, and the class overview. Each says which requests it bounds and names the other.
 * `.yardopts` keeps `--no-private`; the published surface becomes `::Gapic::ResumableUpload`, `Progress`, `ResumeHandle`, `HasResumeHandle` and the error classes.
-* In-repo design docs must follow: `design/resumable_upload/implementation-guide.md` §1.5 is the `Session` contract and is currently out for review, and `design/resumable_upload/integration-test-plan.md` describes session-based tests. Both need the same collapse applied.
+* **`Gapic::Rest::ResumableUpload` is not tagged `@private`, deliberately.** It is tempting, since the namespace has no callable surface left. But `--no-private` installs the verifier `!object.tag(:private) && (object.namespace.is_a?(CodeObjects::Proxy) || !object.namespace.tag(:private))`, so a `@private` namespace takes every child with it: the whole doc subtree disappears, `Progress`, `ResumeHandle`, `HasResumeHandle` and the eight error classes included. Verified against yard 0.9.37. The module stays documented and says in its own docstring that it has no callable surface and that the entry point is `::Gapic::ResumableUpload`, with a rescue-and-resume example.
+* **A comment adjacent to a reopened `module` line becomes its docstring, and the last file parsed wins.** This bit: `data_types.rb` carried `# rubocop:disable Metrics/ModuleLength` directly above `module ResumableUpload`, and YARD had been publishing the literal text "rubocop:disable Metrics/ModuleLength" as the module's documentation, silently discarding the real docstring. Fixed by moving the directive to file scope with a blank line, matched by `# rubocop:enable` after the final `end`. `#--` / `#++` does *not* suppress this — it becomes the docstring too. The only safe placements are file scope or `.rubocop.yml`. Check with `YARD::Registry.at("Gapic::Rest::ResumableUpload").docstring` after a doc run; nothing else catches it, since a wrong docstring is not a warning.
+* Incidental corrections in the same pass: `HasResumeHandle`'s `@example` still showed `session.start initial_url: url`, and `SessionStateError`'s doc referenced the deleted class.
+* In-repo design docs must follow: `design/resumable_upload/implementation-guide.md` §1.5 is the `Session` contract and is currently out for review, and `design/resumable_upload/integration-test-plan.md` describes session-based tests. Both need the same collapse applied, including the coordinator in their architecture diagrams — but *not* in the guide's state-transition graph, which describes the protocol machine and knows nothing about a coordinator.
 * `README.md` and `CHANGELOG.md` remain deferred to release time.
+
+## 16. As landed
+
+On `dev/virost/resumable-uploads`, oldest first. `toys ci` green at the tip: 62 files, no RuboCop offenses; 580 runs / 2479 assertions / 0 failures / 0 errors / 1 skip; yardoc clean.
+
+| Commit | |
+|---|---|
+| `ce62f2d` | `feat: remove Session and replace with ::Gapic::ResumableUpload, and trim public surface` — §§1–9, §11, §12, and the `data_types.rb` docstring fix from §15 |
+| `70cb38c` | `docs(resumable-upload): fix stale resume example and document handle replacement` — §4, §15 |
+| `3403e6e` | `test(resumable-upload): pin handle replacement and inject a state double in driver_test` — §14 |
+| `b8021f9` | `refactor(common): add RetryPolicy#overrides and derive initiation retries from it` — §10, §7 |
+| `f33b135` | `chore: ignore the temporary Gemfiles toys leaves behind` — unrelated to this brief; `toys ci` strands one `.toys-tmp-gemfile-*.lock` per step, because bundler rewrites the lock about a second after toys' `ensure` block deletes it |
+| `e5d081d` | `refactor(resumable-upload): let call options override the initiation retry predicate` — §7 |
+
+This document is not committed to the repository; it is working reference alongside [resumable-upload-2-generator.md](resumable-upload-2-generator.md).
